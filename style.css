@@ -46,13 +46,14 @@ header .subtitle {
 header .description {
     max-width: 580px;
     margin: 1.5rem auto 0 auto;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: #6e6e73;
 }
 
 main {
     padding: 3rem 0;
+    margin-bottom: 1.5rem;
 }
 
 .app-grid {
@@ -84,12 +85,12 @@ main {
 
 .app-info h3 {
     font-size: 1.5rem;
-    font-weight: 500;
-    margin: 0 0 0.5rem 0;
+    font-weight: 400;
+    margin: 0 0 0.25rem 0;
 }
 
 .app-info p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #6e6e73;
     margin: 0;
 }
@@ -103,18 +104,8 @@ footer {
     padding: 3rem 0;
     text-align: center;
     margin-top: 4rem;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: #6e6e73;
-}
-
-footer .contact-link {
-    color: #6e6e73;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-footer .contact-link:hover {
-    color: #1d1d1f;
 }
 
 @media (max-width: 768px) {
@@ -128,13 +119,16 @@ footer .contact-link:hover {
         font-size: 1.2rem;
     }
     header .description {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
     .app-grid {
         grid-template-columns: 1fr;
         gap: 4rem;
     }
     .app-info h3 {
+        font-size: 1.4rem;
+    }
+    .app-info p {
         font-size: 1.4rem;
     }
 } 
