@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             name: '3 Tasks - Daily Productivity',
             category: 'Productivity',
-            image: 'images/3 tasks.png',
+            image: 'images/3%20tasks.png',
             description: 'Focus on what matters most with a simple three-task daily system. Boost your productivity by limiting your daily goals to just three meaningful tasks.',
             link: 'https://apps.apple.com/au/app/3-tasks-daily-productivity/id1553693943'
         },
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             name: 'Only Gallery - Keeper',
             category: 'Utilities',
-            image: 'images/photo lock.png',
+            image: 'images/photo%20lock.png',
             description: 'Keep your private photos and videos secure with advanced encryption. Your personal memories stay private and protected from prying eyes.',
             link: 'https://apps.apple.com/au/app/only-gallery-keeper/id1532670722'
         },
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             name: 'Chat with Fast AI',
             category: 'Productivity',
-            image: 'images/chat ai.png',
+            image: 'images/chat%20ai.png',
             description: 'Experience lightning-fast AI conversations that help you brainstorm, solve problems, and get instant answers to your questions.',
             link: 'https://apps.apple.com/au/app/chat-with-fast-ai/id1662608035'
         }
