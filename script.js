@@ -3,42 +3,42 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             name: '3 Tasks - Daily Productivity',
             category: 'Productivity',
-            image: 'images/3 Tasks - Daily.png',
+            image: 'images/3 tasks.png',
             description: 'Focus on what matters most with a simple three-task daily system. Boost your productivity by limiting your daily goals to just three meaningful tasks.',
             link: 'https://apps.apple.com/au/app/3-tasks-daily-productivity/id1553693943'
         },
         {
             name: 'Drop: Relax Focus & Sleep',
             category: 'Health & Fitness',
-            image: 'images/Drop meditation.png',
+            image: 'images/drop.png',
             description: 'Find inner peace with guided meditations designed to help you relax, focus better, and sleep soundly. Perfect for busy minds seeking calm.',
             link: 'https://apps.apple.com/au/app/drop-relax-focus-sleep-well/id1462269642'
         },
         {
             name: 'Only Gallery - Keeper',
             category: 'Utilities',
-            image: 'images/Photo locker.png',
+            image: 'images/photo lock.png',
             description: 'Keep your private photos and videos secure with advanced encryption. Your personal memories stay private and protected from prying eyes.',
             link: 'https://apps.apple.com/au/app/only-gallery-keeper/id1532670722'
         },
         {
             name: 'Crypton - Crypto Tracker',
             category: 'Finance',
-            image: 'images/Crypto.png',
+            image: 'images/crypton.png',
             description: 'Track your cryptocurrency investments with real-time prices and portfolio insights. Stay informed about market trends and manage your crypto assets.',
             link: 'https://apps.apple.com/au/app/crypton-crypto-tracker/id1143691286'
         },
         {
             name: 'Brainy: Imagine AI Art',
             category: 'Productivity',
-            image: 'images/Brainy.png',
+            image: 'images/brainy.png',
             description: 'Transform your ideas into stunning AI-generated artwork. Create unique digital art pieces with the power of artificial intelligence.',
             link: 'https://apps.apple.com/au/app/brainy-imagine-ai-art/id1667947372'
         },
         {
             name: 'Chat with Fast AI',
             category: 'Productivity',
-            image: 'images/Chat AI.png',
+            image: 'images/chat ai.png',
             description: 'Experience lightning-fast AI conversations that help you brainstorm, solve problems, and get instant answers to your questions.',
             link: 'https://apps.apple.com/au/app/chat-with-fast-ai/id1662608035'
         }
