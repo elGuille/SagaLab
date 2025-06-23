@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    padding: 6rem 0 2rem 0;
+    padding: 6rem 0 3rem 0;
     text-align: center;
     position: relative;
     z-index: 10;
@@ -51,14 +51,14 @@ header .description {
 }
 
 main {
-    padding: 6rem 0 3rem 0;
-    margin-bottom: 2rem;
+    padding: 8rem 0 4rem 0;
+    margin-bottom: 3rem;
 }
 
 .app-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 8rem;
+    gap: 12rem;
     max-width: 1600px;
     margin: 0 auto;
 }
@@ -188,12 +188,11 @@ main {
 }
 
 footer {
-    padding: 4rem 0;
+    padding: 6rem 0;
     text-align: center;
-    margin-top: 6rem;
+    margin-top: 8rem;
     font-size: 1.1rem;
     color: #6e6e73;
-    border-top: 1px solid #f0f0f0;
 }
 
 /* Animations */
@@ -231,7 +230,7 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     header {
-        padding: 4rem 0 1rem 0;
+        padding: 4rem 0 2rem 0;
     }
     
     header h1 {
@@ -243,11 +242,11 @@ footer {
     }
     
     main {
-        padding: 4rem 0 2rem 0;
+        padding: 6rem 0 3rem 0;
     }
     
     .app-grid {
-        gap: 5rem;
+        gap: 8rem;
     }
     
     .app {
@@ -298,6 +297,11 @@ footer {
     .app-content .description {
         font-size: 1.3rem;
     }
+    
+    footer {
+        padding: 4rem 0;
+        margin-top: 6rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -310,11 +314,11 @@ footer {
     }
     
     main {
-        padding: 3rem 0 2rem 0;
+        padding: 4rem 0 2rem 0;
     }
     
     .app-grid {
-        gap: 3rem;
+        gap: 6rem;
     }
     
     .app-image {
@@ -355,5 +359,10 @@ footer {
     
     .app-content .description {
         font-size: 1.2rem;
+    }
+    
+    footer {
+        padding: 3rem 0;
+        margin-top: 4rem;
     }
 }
