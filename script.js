@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const apps = [
         {
-            name: '3 Tasks - Daily Productivity',
+            name: '3 Tasks: Daily Productivity',
             category: 'Productivity',
             image: 'images/3%20tasks.png',
             description: 'Focus on what matters most with a simple three-task daily system. Boost your productivity by limiting your daily goals to just three meaningful tasks.',
@@ -15,14 +15,14 @@ document.addEventListener('DOMContentLoaded', function() {
             link: 'https://apps.apple.com/au/app/drop-relax-focus-sleep-well/id1462269642'
         },
         {
-            name: 'Only Gallery - Keeper',
+            name: 'Only Gallery',
             category: 'Utilities',
             image: 'images/photo%20lock.png',
             description: 'Keep your private photos and videos secure with advanced encryption. Your personal memories stay private and protected from prying eyes.',
             link: 'https://apps.apple.com/au/app/only-gallery-keeper/id1532670722'
         },
         {
-            name: 'Crypton - Crypto Tracker',
+            name: 'Crypton: Crypto Tracker',
             category: 'Finance',
             image: 'images/crypton.png',
             description: 'Track your cryptocurrency investments with real-time prices and portfolio insights. Stay informed about market trends and manage your crypto assets.',
