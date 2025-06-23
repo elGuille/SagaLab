@@ -25,11 +25,15 @@ header h1 {
     font-weight: 700;
     font-size: 6rem;
     letter-spacing: -0.02em;
-    background: linear-gradient(135deg, #1d1d1f 0%, #6e6e73 100%);
+    color: #1d1d1f;
+    animation: slideInDown 1s ease-out;
+}
+
+header h1 .lab-gradient {
+    background: linear-gradient(135deg, #007AFF 0%, #0051D5 25%, #1E90FF 50%, #4169E1 75%, #0066CC 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    animation: slideInDown 1s ease-out;
 }
 
 header .subtitle {
@@ -41,10 +45,7 @@ header .description {
     margin: 2rem auto 0 auto;
     font-size: 2.4rem;
     font-weight: 600;
-    background: linear-gradient(135deg, #1d1d1f 0%, #6e6e73 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #1d1d1f;
     animation: slideInUp 1s ease-out 0.4s both;
     line-height: 1.3;
 }
@@ -99,30 +100,30 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 500px;
+    height: 720px;
 }
 
 .app img {
-    width: 100%;
-    height: 500px;
+    width: 120%;
+    height: 720px;
     object-fit: contain;
     transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     animation: float 4s ease-in-out infinite;
 }
 
-/* 3 Tasks image - 20% smaller */
+/* 3 Tasks image - still 20% smaller than the new larger base */
 .app[data-index="0"] img {
-    width: 80%;
-    height: 400px;
+    width: 96%;
+    height: 576px;
 }
 
 .app[data-index="0"] .app-image {
-    height: 400px;
+    height: 576px;
 }
 
-/* Brainy image - 20% larger */
+/* Brainy image - keep at original size (not enlarged) */
 .app[data-index="4"] img {
-    width: 120%;
+    width: 100%;
     height: 600px;
 }
 
@@ -143,18 +144,12 @@ main {
     font-weight: 600;
     margin: 0 0 1rem 0;
     line-height: 1.2;
-    background: linear-gradient(135deg, #1d1d1f 0%, #6e6e73 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #1d1d1f;
 }
 
 .app-content .category {
     font-size: 1rem;
-    background: linear-gradient(135deg, #1d1d1f 0%, #6e6e73 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #007AFF;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -163,10 +158,7 @@ main {
 
 .app-content .description {
     font-size: 1.5rem;
-    background: linear-gradient(135deg, #1d1d1f 0%, #6e6e73 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #6e6e73;
     margin-bottom: 2rem;
     line-height: 1.6;
 }
@@ -267,30 +259,31 @@ footer {
     
     .app-image {
         order: 1 !important;
-        height: 400px;
+        height: 600px;
     }
     
     .app img {
-        height: 400px;
+        width: 120%;
+        height: 600px;
     }
     
     /* Mobile adjustments for specific images */
     .app[data-index="0"] img {
-        width: 80%;
-        height: 320px;
+        width: 96%;
+        height: 480px;
     }
     
     .app[data-index="0"] .app-image {
-        height: 320px;
+        height: 480px;
     }
     
     .app[data-index="4"] img {
         width: 100%;
-        height: 480px;
+        height: 500px;
     }
     
     .app[data-index="4"] .app-image {
-        height: 480px;
+        height: 500px;
     }
     
     .app-content {
@@ -325,30 +318,31 @@ footer {
     }
     
     .app-image {
-        height: 300px;
+        height: 480px;
     }
     
     .app img {
-        height: 300px;
+        width: 120%;
+        height: 480px;
     }
     
     /* Mobile adjustments for specific images */
     .app[data-index="0"] img {
-        width: 80%;
-        height: 240px;
+        width: 96%;
+        height: 384px;
     }
     
     .app[data-index="0"] .app-image {
-        height: 240px;
+        height: 384px;
     }
     
     .app[data-index="4"] img {
         width: 100%;
-        height: 360px;
+        height: 400px;
     }
     
     .app[data-index="4"] .app-image {
-        height: 360px;
+        height: 400px;
     }
     
     .app {
