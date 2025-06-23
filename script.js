@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             name: 'Brainy: Imagine AI Art',
             category: 'Productivity',
-            image: 'images/brainy.png',
+            image: 'images/brainyapp.png',
             description: 'Transform your ideas into stunning AI-generated artwork. Create unique digital art pieces with the power of artificial intelligence.',
             link: 'https://apps.apple.com/au/app/brainy-imagine-ai-art/id1667947372'
         },
