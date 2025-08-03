@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
             name: 'Foro: AI Forum',
             category: 'AI Research',
             image: 'images/foro.png',
-            description: 'Watch two AI agents discuss any topic with four unique modes: **Dialog** for natural conversations, **Debate** for opposing arguments, **Brainstorm** for creative solutions, and **Prediction** for future insights. Supports 100+ models including local ones for complete privacy.',
+            description: 'Watch two AI agents discuss any topic with four unique modes: **Dialog**, **Debate**, **Brainstorm**, and **Prediction**. Supports 100+ models including local ones for complete privacy.',
             link: 'https://github.com/Saga-Labs/foro',
             isGitHub: true
         },
