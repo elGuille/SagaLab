@@ -93,7 +93,7 @@ main {
     min-height: 500px;
     opacity: 0;
     transform: translateY(50px);
-    transition: all 0.6s ease;
+    transition: all 0.4s ease;
 }
 
 .app.animate {
@@ -131,22 +131,22 @@ main {
 }
 
 /* 3 Tasks image - still 20% smaller than the new larger base */
-.app[data-index="0"] img {
+.app[data-index="1"] img {
     width: 96%;
     height: 576px;
 }
 
-.app[data-index="0"] .app-image {
+.app[data-index="1"] .app-image {
     height: 576px;
 }
 
 /* Brainy image - 15% larger than base size */
-.app[data-index="4"] img {
+.app[data-index="5"] img {
     width: 138%;
     height: 828px;
 }
 
-.app[data-index="4"] .app-image {
+.app[data-index="5"] .app-image {
     height: 828px;
 }
 
@@ -186,24 +186,33 @@ main {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: #1d1d1f;
+    gap: 8px;
+    background: #000;
     color: white;
-    padding: 14px 28px;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: 500;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
     border: none;
     cursor: pointer;
-    min-width: 120px;
+    min-width: 140px;
     text-align: center;
+    letter-spacing: -0.01em;
 }
 
 .download-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(29,29,31,0.3);
-    background: #333;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    background: #1a1a1a;
+}
+
+.download-btn svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
 }
 
 footer {
@@ -213,6 +222,98 @@ footer {
     font-size: 1.1rem;
     color: #6e6e73;
 }
+
+/* GitHub Project Styles */
+.github-project {
+    background: linear-gradient(135deg, rgba(0, 122, 255, 0.02) 0%, rgba(88, 86, 214, 0.02) 100%);
+    border-radius: 20px;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.github-project::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 122, 255, 0.1) 0%, rgba(88, 86, 214, 0.1) 100%);
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    pointer-events: none;
+    border-radius: 20px;
+}
+
+.github-project:hover::before {
+    opacity: 1;
+}
+
+.github-project .app-image {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.github-project img {
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.github-project:hover img {
+    transform: translateY(-15px) rotateX(8deg) rotateY(-5deg) scale(1.02);
+    box-shadow: 0 25px 60px rgba(0, 122, 255, 0.3);
+}
+
+
+
+.github-project .category {
+    background: linear-gradient(135deg, #007AFF 0%, #5856D6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 600;
+}
+
+.github-project .download-btn {
+    background: linear-gradient(135deg, #007AFF 0%, #5856D6 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.github-project .download-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.6s ease;
+}
+
+.github-project .download-btn:hover::before {
+    left: 100%;
+}
+
+.github-project .download-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 25px rgba(0, 122, 255, 0.4);
+}
+
+/* Foro specific styling */
+.app[data-index="0"] img {
+    width: 115%;
+    height: 690px;
+    border-radius: 16px;
+}
+
+.app[data-index="0"] .app-image {
+    height: 690px;
+}
+
+
 
 /* Animations */
 @keyframes slideInDown {
@@ -309,22 +410,36 @@ footer {
     }
     
     /* Mobile adjustments for specific images */
-    .app[data-index="0"] img {
+    .app[data-index="1"] img {
         width: 96%;
         height: 480px;
     }
     
-    .app[data-index="0"] .app-image {
+    .app[data-index="1"] .app-image {
         height: 480px;
     }
     
-    .app[data-index="4"] img {
+    .app[data-index="5"] img {
         width: 138%;
         height: 690px;
     }
     
-    .app[data-index="4"] .app-image {
+    .app[data-index="5"] .app-image {
         height: 690px;
+    }
+    
+    /* Foro mobile adjustments */
+    .app[data-index="0"] img {
+        width: 115%;
+        height: 552px;
+    }
+    
+    .app[data-index="0"] .app-image {
+        height: 552px;
+    }
+    
+    .github-project {
+        padding: 1.5rem;
     }
     
     .app-content {
@@ -373,22 +488,36 @@ footer {
     }
     
     /* Mobile adjustments for specific images */
-    .app[data-index="0"] img {
+    .app[data-index="1"] img {
         width: 96%;
         height: 384px;
     }
     
-    .app[data-index="0"] .app-image {
+    .app[data-index="1"] .app-image {
         height: 384px;
     }
     
-    .app[data-index="4"] img {
+    .app[data-index="5"] img {
         width: 138%;
         height: 552px;
     }
     
-    .app[data-index="4"] .app-image {
+    .app[data-index="5"] .app-image {
         height: 552px;
+    }
+    
+    /* Foro small mobile adjustments */
+    .app[data-index="0"] img {
+        width: 115%;
+        height: 442px;
+    }
+    
+    .app[data-index="0"] .app-image {
+        height: 442px;
+    }
+    
+    .github-project {
+        padding: 1rem;
     }
     
     .app {
