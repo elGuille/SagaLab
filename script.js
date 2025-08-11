@@ -1,4 +1,50 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Theme handling
+    const THEME_KEY = 'theme';
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)');
+
+    const getStoredTheme = () => {
+        const t = localStorage.getItem(THEME_KEY);
+        return t === 'dark' || t === 'light' ? t : null;
+    };
+
+    const getPreferredTheme = () => {
+        const stored = getStoredTheme();
+        if (stored) return stored;
+        return prefersDark && prefersDark.matches ? 'dark' : 'light';
+    };
+
+    const applyTheme = (theme) => {
+        const isDark = theme === 'dark';
+        document.body.classList.toggle('dark', isDark);
+        const btn = document.querySelector('.theme-toggle');
+        if (btn) {
+            btn.setAttribute('aria-pressed', String(isDark));
+            btn.title = isDark ? 'Switch to light mode' : 'Switch to dark mode';
+        }
+    };
+
+    // Initialize theme
+    let currentTheme = getPreferredTheme();
+    applyTheme(currentTheme);
+
+    // Listen for system changes only if user hasn't chosen explicitly
+    if (!getStoredTheme() && prefersDark) {
+        prefersDark.addEventListener('change', (e) => {
+            currentTheme = e.matches ? 'dark' : 'light';
+            applyTheme(currentTheme);
+        });
+    }
+
+    // Toggle button handler
+    const toggleBtn = document.querySelector('.theme-toggle');
+    if (toggleBtn) {
+        toggleBtn.addEventListener('click', () => {
+            currentTheme = document.body.classList.contains('dark') ? 'light' : 'dark';
+            localStorage.setItem(THEME_KEY, currentTheme);
+            applyTheme(currentTheme);
+        });
+    }
     const apps = [
         {
             name: 'Foro: AI Forum',

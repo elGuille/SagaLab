@@ -5,6 +5,7 @@ body {
     color: #1d1d1f;
     line-height: 1.5;
     overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .container {
@@ -20,6 +21,47 @@ header {
     z-index: 10;
 }
 
+/* Theme toggle button */
+.theme-toggle {
+    position: absolute;
+    top: 24px;
+    right: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    color: #1d1d1f;
+    background: rgba(0,0,0,0.06);
+    border: 1px solid rgba(0,0,0,0.08);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+
+.theme-toggle:hover {
+    background: rgba(0,0,0,0.08);
+    transform: translateY(-1px);
+}
+
+.theme-toggle .sun { display: inline; }
+.theme-toggle .moon { display: none; }
+
+body.dark .theme-toggle {
+    color: #f5f5f7;
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(255,255,255,0.12);
+}
+
+body.dark .theme-toggle:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+body.dark .theme-toggle .sun { display: none; }
+body.dark .theme-toggle .moon { display: inline; }
+
 header h1 {
     margin: 0;
     font-weight: 700;
@@ -27,6 +69,10 @@ header h1 {
     letter-spacing: -0.02em;
     color: #1d1d1f;
     animation: slideInDown 1s ease-out;
+}
+
+body.dark header h1 {
+    color: #f5f5f7;
 }
 
 header h1 .lab-gradient {
@@ -65,6 +111,10 @@ header .subtitle {
     animation: slideInUp 1s ease-out 0.2s both;
 }
 
+body.dark header .subtitle {
+    color: #a1a1aa;
+}
+
 header .description {
     display: none;
 }
@@ -100,6 +150,10 @@ main {
     overflow: hidden;
 }
 
+body.dark .app {
+    background: linear-gradient(135deg, rgba(0, 122, 255, 0.06) 0%, rgba(88, 86, 214, 0.05) 100%);
+}
+
 .app.animate {
     opacity: 1;
     transform: translateY(0);
@@ -117,6 +171,10 @@ main {
     transition: opacity 0.6s ease;
     pointer-events: none;
     border-radius: 20px;
+}
+
+body.dark .app::before {
+    background: linear-gradient(135deg, rgba(0, 122, 255, 0.12) 0%, rgba(88, 86, 214, 0.1) 100%);
 }
 
 .app:hover::before {
@@ -242,6 +300,10 @@ main {
     color: #1d1d1f;
 }
 
+body.dark .app-content h3 {
+    color: #e5e7eb;
+}
+
 .app-content .category {
     font-size: 1rem;
     color: #007AFF;
@@ -256,6 +318,10 @@ main {
     color: #6e6e73;
     margin-bottom: 2rem;
     line-height: 1.6;
+}
+
+body.dark .app-content .description {
+    color: #a1a1aa;
 }
 
 .download-btn {
@@ -313,6 +379,16 @@ footer {
     margin-top: 8rem;
     font-size: 1.1rem;
     color: #6e6e73;
+}
+
+body.dark footer {
+    color: #9ca3af;
+}
+
+/* Dark mode base */
+body.dark {
+    background-color: #0b0b0c;
+    color: #e5e7eb;
 }
 
 /* GitHub Project Styles */
