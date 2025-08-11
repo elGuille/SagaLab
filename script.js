@@ -9,6 +9,15 @@ document.addEventListener('DOMContentLoaded', function() {
             isGitHub: true
         },
         {
+            name: 'Rebalancer: Crypto Portfolio Bot',
+            category: 'Finance',
+            image: 'images/balancero-telegram.jpeg',
+            gallery: ['images/balancero-telegram.jpeg', 'images/balancero.png'],
+            description: 'Automated portfolio rebalancing bot on Base using CoW Protocol. Maintains custom target allocations, tracks performance vs HODL, and sends Telegram alerts. Currently supports cbBTC, WETH, cbXRP, cbADA, cbDOGE, and AAVE — with more coins coming soon.',
+            link: 'https://github.com/Saga-Labs/rebalancer',
+            isGitHub: true
+        },
+        {
             name: '3 Tasks: Daily Productivity',
             category: 'Productivity',
             image: 'images/3tasks.png',
@@ -57,7 +66,14 @@ document.addEventListener('DOMContentLoaded', function() {
         appGrid.innerHTML = apps.map((app, index) => `
             <div class="app ${app.isGitHub ? 'github-project' : ''}" data-index="${index}">
                 <div class="app-image">
-                    <img src="${app.image}" alt="${app.name}" loading="lazy">
+                    ${app.gallery && app.gallery.length ? `
+                        <div class="dual-shot">
+                            <img class="shot primary" src="${app.gallery[0]}" alt="${app.name} screenshot 1" loading="lazy">
+                            <img class="shot secondary" src="${app.gallery[1] || app.gallery[0]}" alt="${app.name} screenshot 2" loading="lazy">
+                        </div>
+                    ` : `
+                        <img src="${app.image}" alt="${app.name}" loading="lazy">
+                    `}
                 </div>
                 <div class="app-content">
                     <div class="category">${app.category}</div>
