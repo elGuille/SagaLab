@@ -294,8 +294,8 @@ body.dark .app::before {
 
 /* AI Trading Bot specific styling - notification overlay effect */
 .app[data-index="1"] .dual-shot .primary {
-    left: 50%;
-    top: 25%;
+    left: 65%;
+    top: 20%;
     transform: translate(-50%, -50%);
     z-index: 3;
     /* notification on top */
@@ -320,7 +320,7 @@ body.dark .app::before {
 }
 
 .app[data-index="1"]:hover .dual-shot .primary {
-    transform: translate(-50%, -52%) scale(1.02);
+    transform: translate(-50%, -47%) scale(1.02);
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3), 0 12px 30px rgba(0, 0, 0, 0.2);
 }
 
@@ -626,8 +626,8 @@ body.dark {
 
     /* AI Trading Bot mobile adjustments */
     .app[data-index="1"] .dual-shot .primary {
-        left: 50%;
-        top: 25%;
+        left: 62%;
+        top: 22%;
         max-width: 45%;
         max-height: 55%;
     }
@@ -732,8 +732,8 @@ body.dark {
 
     /* AI Trading Bot small mobile adjustments */
     .app[data-index="1"] .dual-shot .primary {
-        left: 50%;
-        top: 25%;
+        left: 60%;
+        top: 22%;
         max-width: 50%;
         max-height: 60%;
     }

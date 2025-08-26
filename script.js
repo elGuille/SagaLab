@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category: 'AI Research',
             image: 'images/bot-running-screenshot.png',
             gallery: ['images/telegram-notifications.png', 'images/bot-running-screenshot.png'],
-            description: 'Intelligent cryptocurrency trading bot powered by advanced AI algorithms. Features automated trading strategies, real-time market analysis, risk management, and comprehensive performance tracking with Telegram notifications.',
+            description: 'Intelligent cryptocurrency trading bot powered by advanced AI algorithms. Uses **CoW Protocol** with optimized limit orders for maximum efficiency. Features automated trading strategies, real-time market analysis, risk management, and comprehensive performance tracking with Telegram notifications.',
             link: 'https://github.com/Saga-Labs/ai-trading-bot',
             isGitHub: true
         },
