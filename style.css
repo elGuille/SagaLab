@@ -33,8 +33,8 @@ header {
     height: 38px;
     border-radius: 12px;
     color: #1d1d1f;
-    background: rgba(0,0,0,0.06);
-    border: 1px solid rgba(0,0,0,0.08);
+    background: rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(0, 0, 0, 0.08);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
     cursor: pointer;
@@ -42,25 +42,35 @@ header {
 }
 
 .theme-toggle:hover {
-    background: rgba(0,0,0,0.08);
+    background: rgba(0, 0, 0, 0.08);
     transform: translateY(-1px);
 }
 
-.theme-toggle .sun { display: inline; }
-.theme-toggle .moon { display: none; }
+.theme-toggle .sun {
+    display: inline;
+}
+
+.theme-toggle .moon {
+    display: none;
+}
 
 body.dark .theme-toggle {
     color: #f5f5f7;
-    background: rgba(255,255,255,0.06);
-    border-color: rgba(255,255,255,0.12);
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.12);
 }
 
 body.dark .theme-toggle:hover {
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
 }
 
-body.dark .theme-toggle .sun { display: none; }
-body.dark .theme-toggle .moon { display: inline; }
+body.dark .theme-toggle .sun {
+    display: none;
+}
+
+body.dark .theme-toggle .moon {
+    display: inline;
+}
 
 header h1 {
     margin: 0;
@@ -83,13 +93,13 @@ header h1 .lab-gradient {
 }
 
 header h1 .ai-gradient {
-    background: linear-gradient(135deg, 
-        #FF0080 0%, 
-        #7928CA 20%, 
-        #00D4FF 40%, 
-        #FF0080 60%, 
-        #7928CA 80%, 
-        #00D4FF 100%);
+    background: linear-gradient(135deg,
+            #FF0080 0%,
+            #7928CA 20%,
+            #00D4FF 40%,
+            #FF0080 60%,
+            #7928CA 80%,
+            #00D4FF 100%);
     background-size: 400% 400%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -223,12 +233,15 @@ body.dark .app::before {
     display: block;
     border-radius: 16px;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-    height: auto;           /* override generic .app img */
-    width: auto;            /* override generic .app img */
+    height: auto;
+    /* override generic .app img */
+    width: auto;
+    /* override generic .app img */
     max-width: 72%;
     max-height: 88%;
     object-fit: cover;
-    animation: none;        /* disable float for layered shots */
+    animation: none;
+    /* disable float for layered shots */
     transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -236,18 +249,28 @@ body.dark .app::before {
     left: 68%;
     top: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2;               /* on top */
-    max-width: 58%;           /* smaller and to the side */
+    z-index: 2;
+    /* on top */
+    max-width: 58%;
+    /* smaller and to the side */
 }
 
 .app .dual-shot .secondary {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) rotate(-2deg);
-    z-index: 1;               /* behind */
-    max-width: 110%;          /* much larger background */
+    z-index: 1;
+    /* behind */
+    max-width: 110%;
+    /* much larger background */
     max-height: 95%;
     opacity: 0.98;
+}
+
+/* Rebalancer specific styling - straight images */
+.app[data-index="2"] .dual-shot .secondary {
+    transform: translate(-50%, -50%);
+    /* remove rotation for straight alignment */
 }
 
 /* Neutralize global hover effect for layered shots */
@@ -261,6 +284,49 @@ body.dark .app::before {
 
 .app:hover .dual-shot .secondary {
     transform: translate(-50%, -50%) rotate(-2deg) scale(1.005);
+}
+
+/* Rebalancer hover effect - keep straight */
+.app[data-index="2"]:hover .dual-shot .secondary {
+    transform: translate(-50%, -50%) scale(1.005);
+    /* no rotation on hover */
+}
+
+/* AI Trading Bot specific styling - notification overlay effect */
+.app[data-index="1"] .dual-shot .primary {
+    left: 72%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    /* notification on top */
+    max-width: 42%;
+    /* slightly bigger notification */
+    max-height: 52%;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25), 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+}
+
+.app[data-index="1"] .dual-shot .secondary {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    /* main screenshot behind */
+    max-width: 95%;
+    /* larger main screenshot */
+    max-height: 90%;
+    opacity: 1;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.app[data-index="1"]:hover .dual-shot .primary {
+    transform: translate(-50%, -67%) scale(1.02);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3), 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.app[data-index="1"]:hover .dual-shot .secondary {
+    transform: translate(-50%, -50%) scale(1.01);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
 }
 
 /* 3 Tasks image - still 20% smaller than the new larger base */
@@ -449,6 +515,7 @@ body.dark {
         opacity: 0;
         transform: translateY(-50px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -460,6 +527,7 @@ body.dark {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -467,9 +535,12 @@ body.dark {
 }
 
 @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0px);
     }
+
     50% {
         transform: translateY(-8px);
     }
@@ -479,9 +550,11 @@ body.dark {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
@@ -492,6 +565,7 @@ body.dark {
         filter: brightness(1);
         transform: scale(1);
     }
+
     100% {
         filter: brightness(1.05);
         transform: scale(1.01);
@@ -503,23 +577,23 @@ body.dark {
     header {
         padding: 4rem 0 2rem 0;
     }
-    
+
     header h1 {
         font-size: 4rem;
     }
-    
+
     header .subtitle {
         font-size: 1.5rem;
     }
-    
+
     main {
         padding: 6rem 0 3rem 0;
     }
-    
+
     .app-grid {
         gap: 8rem;
     }
-    
+
     .app {
         grid-template-columns: 1fr !important;
         text-align: center;
@@ -527,12 +601,12 @@ body.dark {
         min-height: auto;
         padding: 1.5rem;
     }
-    
+
     .app-image {
         order: 1 !important;
         height: 600px;
     }
-    
+
     .app img {
         width: 120%;
         height: 600px;
@@ -544,58 +618,72 @@ body.dark {
         max-width: 66%;
         transform: translate(-50%, -50%);
     }
+
     .app .dual-shot .secondary {
         max-width: 102%;
         transform: translate(-50%, -50%) rotate(-2deg);
     }
-    
+
+    /* AI Trading Bot mobile adjustments */
+    .app[data-index="1"] .dual-shot .primary {
+        left: 70%;
+        top: 62%;
+        max-width: 45%;
+        max-height: 55%;
+    }
+
+    .app[data-index="1"] .dual-shot .secondary {
+        max-width: 98%;
+        max-height: 85%;
+    }
+
     /* Mobile adjustments for specific images */
     .app[data-index="1"] img {
         width: 96%;
         height: 480px;
         border-radius: 16px;
     }
-    
+
     .app[data-index="1"] .app-image {
         height: 480px;
     }
-    
+
     .app[data-index="5"] img {
         width: 126%;
         height: 630px;
     }
-    
+
     .app[data-index="5"] .app-image {
         height: 630px;
     }
-    
+
     /* Foro mobile adjustments */
     .app[data-index="0"] img {
         width: 115%;
         height: 552px;
     }
-    
+
     .app[data-index="0"] .app-image {
         height: 552px;
     }
-    
+
     .github-project {
         padding: 1.5rem;
     }
-    
+
     .app-content {
         order: 2 !important;
         padding: 1rem;
     }
-    
+
     .app-content h3 {
         font-size: 2.2rem;
     }
-    
+
     .app-content .description {
         font-size: 1.3rem;
     }
-    
+
     footer {
         padding: 4rem 0;
         margin-top: 6rem;
@@ -606,23 +694,23 @@ body.dark {
     header h1 {
         font-size: 3rem;
     }
-    
+
     header .subtitle {
         font-size: 1.3rem;
     }
-    
+
     main {
         padding: 4rem 0 2rem 0;
     }
-    
+
     .app-grid {
         gap: 6rem;
     }
-    
+
     .app-image {
         height: 480px;
     }
-    
+
     .app img {
         width: 120%;
         height: 480px;
@@ -634,58 +722,72 @@ body.dark {
         max-width: 72%;
         transform: translate(-50%, -50%);
     }
+
     .app .dual-shot .secondary {
         max-width: 104%;
         transform: translate(-50%, -50%) rotate(-2deg);
     }
-    
+
+    /* AI Trading Bot small mobile adjustments */
+    .app[data-index="1"] .dual-shot .primary {
+        left: 68%;
+        top: 60%;
+        max-width: 50%;
+        max-height: 60%;
+    }
+
+    .app[data-index="1"] .dual-shot .secondary {
+        max-width: 100%;
+        max-height: 82%;
+    }
+
     /* Mobile adjustments for specific images */
     .app[data-index="1"] img {
         width: 96%;
         height: 384px;
         border-radius: 16px;
     }
-    
+
     .app[data-index="1"] .app-image {
         height: 384px;
     }
-    
+
     .app[data-index="5"] img {
         width: 126%;
         height: 504px;
     }
-    
+
     .app[data-index="5"] .app-image {
         height: 504px;
     }
-    
+
     /* Foro small mobile adjustments */
     .app[data-index="0"] img {
         width: 115%;
         height: 442px;
     }
-    
+
     .app[data-index="0"] .app-image {
         height: 442px;
     }
-    
+
     .github-project {
         padding: 1rem;
     }
-    
+
     .app {
         gap: 1.5rem;
         padding: 1rem;
     }
-    
+
     .app-content h3 {
         font-size: 1.9rem;
     }
-    
+
     .app-content .description {
         font-size: 1.2rem;
     }
-    
+
     footer {
         padding: 3rem 0;
         margin-top: 4rem;

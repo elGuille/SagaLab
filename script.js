@@ -55,6 +55,15 @@ document.addEventListener('DOMContentLoaded', function() {
             isGitHub: true
         },
         {
+            name: 'AI Trading Bot',
+            category: 'AI Research',
+            image: 'images/bot-running-screenshot.png',
+            gallery: ['images/telegram-notifications.png', 'images/bot-running-screenshot.png'],
+            description: 'Intelligent cryptocurrency trading bot powered by advanced AI algorithms. Features automated trading strategies, real-time market analysis, risk management, and comprehensive performance tracking with Telegram notifications.',
+            link: 'https://github.com/Saga-Labs/ai-trading-bot',
+            isGitHub: true
+        },
+        {
             name: 'Rebalancer: Crypto Portfolio Bot',
             category: 'Finance',
             image: 'images/balancero-telegram.jpeg',
