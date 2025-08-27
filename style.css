@@ -330,23 +330,23 @@ body.dark .app::before {
 }
 
 /* 3 Tasks image - still 20% smaller than the new larger base */
-.app[data-index="1"] img {
+.app[data-index="4"] img {
     width: 96%;
     height: 576px;
     border-radius: 16px;
 }
 
-.app[data-index="1"] .app-image {
+.app[data-index="4"] .app-image {
     height: 576px;
 }
 
 /* Brainy image - reduced to fit container */
-.app[data-index="5"] img {
+.app[data-index="8"] img {
     width: 126%;
     height: 756px;
 }
 
-.app[data-index="5"] .app-image {
+.app[data-index="8"] .app-image {
     height: 756px;
 }
 
@@ -640,22 +640,22 @@ body.dark {
     }
 
     /* Mobile adjustments for specific images */
-    .app[data-index="1"] img {
+    .app[data-index="4"] img {
         width: 96%;
         height: 480px;
         border-radius: 16px;
     }
 
-    .app[data-index="1"] .app-image {
+    .app[data-index="4"] .app-image {
         height: 480px;
     }
 
-    .app[data-index="5"] img {
+    .app[data-index="8"] img {
         width: 126%;
         height: 630px;
     }
 
-    .app[data-index="5"] .app-image {
+    .app[data-index="8"] .app-image {
         height: 630px;
     }
 
@@ -746,22 +746,22 @@ body.dark {
     }
 
     /* Mobile adjustments for specific images */
-    .app[data-index="1"] img {
+    .app[data-index="4"] img {
         width: 96%;
         height: 384px;
         border-radius: 16px;
     }
 
-    .app[data-index="1"] .app-image {
+    .app[data-index="4"] .app-image {
         height: 384px;
     }
 
-    .app[data-index="5"] img {
+    .app[data-index="8"] img {
         width: 126%;
         height: 504px;
     }
 
-    .app[data-index="5"] .app-image {
+    .app[data-index="8"] .app-image {
         height: 504px;
     }
 

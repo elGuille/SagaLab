@@ -73,6 +73,14 @@ document.addEventListener('DOMContentLoaded', function() {
             isGitHub: true
         },
         {
+            name: 'Macro Crypto Dashboard',
+            category: 'Finance',
+            image: 'images/macro-dashboard1.png',
+            description: 'Comprehensive cryptocurrency market analysis dashboard featuring real-time macro indicators, market sentiment analysis, and advanced charting tools. Track key metrics, correlations, and market trends to make informed trading decisions with institutional-grade data visualization.',
+            link: 'https://github.com/Saga-Labs/macro-crypto-dashboard',
+            isGitHub: true
+        },
+        {
             name: '3 Tasks: Daily Productivity',
             category: 'Productivity',
             image: 'images/3tasks.png',
