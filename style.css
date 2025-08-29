@@ -341,12 +341,12 @@ body.dark .app::before {
 }
 
 /* Brainy image - reduced to fit container */
-.app[data-index="8"] img {
+.app[data-index="7"] img {
     width: 126%;
     height: 756px;
 }
 
-.app[data-index="8"] .app-image {
+.app[data-index="7"] .app-image {
     height: 756px;
 }
 
@@ -650,12 +650,12 @@ body.dark {
         height: 480px;
     }
 
-    .app[data-index="8"] img {
+    .app[data-index="7"] img {
         width: 126%;
         height: 630px;
     }
 
-    .app[data-index="8"] .app-image {
+    .app[data-index="7"] .app-image {
         height: 630px;
     }
 
@@ -756,12 +756,12 @@ body.dark {
         height: 384px;
     }
 
-    .app[data-index="8"] img {
+    .app[data-index="7"] img {
         width: 126%;
         height: 504px;
     }
 
-    .app[data-index="8"] .app-image {
+    .app[data-index="7"] .app-image {
         height: 504px;
     }
 
