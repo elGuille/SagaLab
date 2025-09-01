@@ -66,8 +66,62 @@ body.dark .nav-logo {
     gap: 2rem;
 }
 
+/* Lighter gray for menu links */
 .nav-menu a {
+    color: #6e6e73; /* Apple gray */
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-menu a:hover {
     color: #1d1d1f;
+}
+
+body.dark .nav-menu a {
+    color: #a1a1aa; /* Light gray in dark mode */
+}
+
+body.dark .nav-menu a:hover {
+    color: #f5f5f7;
+}
+
+/* Icon-only links sizing */
+.nav-menu a.icon-link svg {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+/* Footer social links */
+.footer-social {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.footer-social a {
+    color: #6e6e73;
+}
+
+body.dark .footer-social a {
+    color: #a1a1aa;
+}
+
+.footer-social a:hover {
+    color: #1d1d1f;
+}
+
+body.dark .footer-social a:hover {
+    color: #f5f5f7;
+}
+
+
+.nav-menu a {
+    color: inherit; /* inherit from earlier gray rules */
     text-decoration: none;
     font-weight: 500;
     font-size: 0.95rem;
