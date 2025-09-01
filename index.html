@@ -133,8 +133,26 @@
     
 </head>
 <body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Saga <span class="ai-gradient">AI</span> <span class="lab-gradient">Lab</span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#ai-tools">AI Tools</a></li>
+                <li><a href="#mobile-apps">Mobile Apps</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="https://github.com/Saga-Labs" target="_blank">GitHub</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
     
-    <header>
+    <header class="hero-section">
         <div class="container">
             <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode" aria-pressed="false">
                 <!-- Sun icon -->
@@ -146,18 +164,98 @@
                     <path d="M21.75 14.5A9.75 9.75 0 0110.03 2.78a.75.75 0 00-1.06-.8A10.5 10.5 0 1022.58 15.7a.75.75 0 00-.83-1.2z"/>
                 </svg>
             </button>
-            <h1>Saga <span class="ai-gradient">AI</span> <span class="lab-gradient">Lab</span></h1>
-            <p class="subtitle">AI Research Lab founded by creative technologists. We love experimenting with AI and building apps that blend cutting-edge tech with artistic expression.</p>
-            <p class="description">Run by creative technologists who love building simple, beautiful apps.</p>
+            <div class="hero-content">
+                <h1>Build the Future with <span class="ai-gradient">AI</span></h1>
+                <p class="hero-subtitle">Leading AI research lab creating cutting-edge tools for developers, traders, and innovators. From autonomous trading systems to productivity apps.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">8+</span>
+                        <span class="stat-label">AI Applications</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100K+</span>
+                        <span class="stat-label">Downloads</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">Open Source</span>
+                        <span class="stat-label">Research</span>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="#ai-tools" class="cta-primary">Explore AI Tools</a>
+                    <a href="https://github.com/Saga-Labs" target="_blank" class="cta-secondary">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
         </div>
     </header>
 
     <main>
-        <div class="container">
-            <div class="app-grid">
-                <!-- App items will be injected here -->
+        <section class="app-section" id="ai-tools">
+            <div class="container">
+                <div class="section-header">
+                    <h2>AI Research Tools</h2>
+                    <p>Advanced AI applications for research, trading, and automation</p>
+                </div>
+                <div class="app-grid ai-tools-grid">
+                    <!-- AI tools will be injected here -->
+                </div>
             </div>
-        </div>
+        </section>
+
+        <section class="app-section" id="mobile-apps">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Mobile Applications</h2>
+                    <p>Productivity and lifestyle apps designed for modern life</p>
+                </div>
+                <div class="app-grid mobile-apps-grid">
+                    <!-- Mobile apps will be injected here -->
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <h2>Leading AI Innovation</h2>
+                    <p class="about-intro">Founded by creative technologists, Saga AI Research Labs bridges cutting-edge research with practical applications. We specialize in autonomous systems, generative AI, and developer tools that push the boundaries of what's possible.</p>
+                    <div class="expertise-grid">
+                        <div class="expertise-item">
+                            <div class="expertise-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                            </div>
+                            <h3>AI Research</h3>
+                            <p>Advanced machine learning, autonomous systems, and multi-agent frameworks</p>
+                        </div>
+                        <div class="expertise-item">
+                            <div class="expertise-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                            </div>
+                            <h3>Trading Technology</h3>
+                            <p>DeFi protocols, algorithmic trading systems, and portfolio optimization</p>
+                        </div>
+                        <div class="expertise-item">
+                            <div class="expertise-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/>
+                                </svg>
+                            </div>
+                            <h3>Developer Tools</h3>
+                            <p>Open-source projects, productivity applications, and creative technology</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
