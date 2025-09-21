@@ -190,11 +190,11 @@ body.dark .nav-toggle span {
     text-align: center;
     position: relative;
     z-index: 10;
-    background: linear-gradient(135deg, rgba(0, 122, 255, 0.02) 0%, rgba(88, 86, 214, 0.01) 100%);
+    background: #E3F2FD;
 }
 
 body.dark .hero-section {
-    background: linear-gradient(135deg, rgba(0, 122, 255, 0.05) 0%, rgba(88, 86, 214, 0.03) 100%);
+    background: #1E3A8A;
 }
 
 .hero-content h1 {
@@ -207,7 +207,7 @@ body.dark .hero-section {
 }
 
 body.dark .hero-content h1 {
-    color: #f5f5f7;
+    color: #ffffff;
 }
 
 .hero-subtitle {
@@ -221,7 +221,7 @@ body.dark .hero-content h1 {
 }
 
 body.dark .hero-subtitle {
-    color: #a1a1aa;
+    color: rgba(255, 255, 255, 0.85);
 }
 
 .hero-stats {
@@ -250,8 +250,12 @@ body.dark .hero-subtitle {
     font-weight: 500;
 }
 
+body.dark .stat-number {
+    color: #ffffff;
+}
+
 body.dark .stat-label {
-    color: #a1a1aa;
+    color: rgba(255, 255, 255, 0.75);
 }
 
 .hero-actions {
