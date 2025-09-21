@@ -134,7 +134,7 @@ body {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 650px;
+    height: 575px;
     z-index: -1;
     background:
         radial-gradient(ellipse 1000px 600px at 20% 30%, #ff1744 0%, #ff1744 35%, rgba(255, 23, 68, 0.9) 60%, transparent 85%),
@@ -365,12 +365,14 @@ body {
 
 /* Gradient text styles for navigation and hero */
 .ai-gradient {
-    color: rgba(29, 29, 31, 0.8);
+    color: #1d1d1f;
     position: relative;
     display: inline-block;
     font-weight: 800;
     letter-spacing: 0.02em;
     text-decoration: none !important;
+    mix-blend-mode: multiply;
+    filter: contrast(1.1) saturate(0.9);
 }
 
 /* Section Styles */
