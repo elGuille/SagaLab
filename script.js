@@ -18,13 +18,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Smooth scrolling for anchor links
+    // Optimized smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
-                const offsetTop = target.offsetTop - 80; // Account for fixed nav
+                const offsetTop = target.getBoundingClientRect().top + window.pageYOffset - 80;
                 window.scrollTo({
                     top: offsetTop,
                     behavior: 'smooth'
@@ -263,18 +263,17 @@ document.addEventListener('DOMContentLoaded', function() {
         `).join('');
     }
 
-    // Intersection Observer for scroll animations
+    // Optimized Intersection Observer for scroll animations
     const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+        threshold: 0.15,
+        rootMargin: '0px 0px -30px 0px'
     };
 
     const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry, index) => {
+        entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                setTimeout(() => {
-                    entry.target.classList.add('animate');
-                }, index * 25);
+                entry.target.classList.add('animate');
+                observer.unobserve(entry.target); // Stop observing once animated
             }
         });
     }, observerOptions);

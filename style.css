@@ -6,6 +6,9 @@ body {
     line-height: 1.5;
     overflow-x: hidden;
     transition: background-color 0.3s ease, color 0.3s ease;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 /* Navigation Styles */
@@ -128,7 +131,7 @@ body {
     padding: 0 22px;
 }
 
-/* Dynamic Colorful Background */
+/* Optimized Dynamic Background */
 .hero-background {
     position: absolute;
     top: 0;
@@ -137,184 +140,35 @@ body {
     height: 575px;
     z-index: -1;
     background:
-        radial-gradient(ellipse 1200px 800px at 15% 25%, #ff0080 0%, #ff0080 25%, rgba(255, 0, 128, 0.8) 50%, transparent 75%),
-        radial-gradient(ellipse 900px 1000px at 85% 15%, #00ff80 0%, #00ff80 30%, rgba(0, 255, 128, 0.9) 60%, transparent 85%),
-        radial-gradient(ellipse 1400px 600px at 50% 80%, #8000ff 0%, #8000ff 35%, rgba(128, 0, 255, 0.85) 65%, transparent 90%),
-        radial-gradient(ellipse 800px 900px at 90% 70%, #ff8000 0%, #ff8000 40%, rgba(255, 128, 0, 0.9) 70%, transparent 95%),
-        radial-gradient(ellipse 1000px 700px at 10% 60%, #0080ff 0%, #0080ff 30%, rgba(0, 128, 255, 0.8) 55%, transparent 80%),
-        radial-gradient(ellipse 1300px 800px at 70% 30%, #ff4080 0%, #ff4080 25%, rgba(255, 64, 128, 0.75) 50%, transparent 75%),
-        radial-gradient(ellipse 700px 1100px at 30% 90%, #80ff40 0%, #80ff40 35%, rgba(128, 255, 64, 0.9) 65%, transparent 90%),
-        radial-gradient(ellipse 1100px 900px at 60% 10%, #4080ff 0%, #4080ff 30%, rgba(64, 128, 255, 0.85) 60%, transparent 85%),
-        radial-gradient(ellipse 900px 600px at 95% 50%, #ff8040 0%, #ff8040 40%, rgba(255, 128, 64, 0.8) 70%, transparent 95%),
-        radial-gradient(ellipse 1500px 1000px at 40% 60%, #8040ff 0%, #8040ff 20%, rgba(128, 64, 255, 0.7) 45%, transparent 70%),
-        conic-gradient(from 0deg at 50% 50%, #ff0080 0deg, #00ff80 72deg, #8000ff 144deg, #ff8000 216deg, #0080ff 288deg, #ff0080 360deg);
-    background-size:
-        160% 180%, 140% 160%, 180% 140%, 130% 150%,
-        150% 170%, 170% 160%, 140% 180%, 190% 200%,
-        145% 165%, 200% 220%, 300% 300%;
-    animation: dynamicColorFlow 25s ease-in-out infinite, pulseGlow 8s ease-in-out infinite alternate;
-    filter: blur(12px) saturate(1.2) brightness(1.1);
-    opacity: 0.9;
+        radial-gradient(ellipse 800px 600px at 20% 30%, #ff0080 0%, rgba(255, 0, 128, 0.6) 40%, transparent 70%),
+        radial-gradient(ellipse 700px 800px at 80% 20%, #00ff80 0%, rgba(0, 255, 128, 0.7) 45%, transparent 75%),
+        radial-gradient(ellipse 900px 500px at 50% 80%, #8000ff 0%, rgba(128, 0, 255, 0.6) 50%, transparent 80%),
+        linear-gradient(135deg, rgba(0, 122, 255, 0.3) 0%, rgba(88, 86, 214, 0.2) 100%);
+    background-size: 120% 140%, 110% 130%, 130% 120%, 100% 100%;
+    animation: simpleColorFlow 20s ease-in-out infinite;
+    filter: blur(8px) saturate(1.1) brightness(1.05);
+    opacity: 0.85;
     clip-path: polygon(0 0, 100% 0, 100% 35%, 0 100%);
+    will-change: transform;
+    transform: translateZ(0);
 }
 
-/* Secondary animated overlay */
-.hero-background-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 575px;
-    z-index: -1;
-    background:
-        radial-gradient(ellipse 800px 600px at 25% 75%, rgba(255, 20, 147, 0.4) 0%, transparent 60%),
-        radial-gradient(ellipse 1000px 800px at 75% 25%, rgba(0, 255, 255, 0.3) 0%, transparent 70%),
-        radial-gradient(ellipse 600px 900px at 90% 90%, rgba(255, 165, 0, 0.35) 0%, transparent 65%),
-        radial-gradient(ellipse 1200px 700px at 10% 10%, rgba(138, 43, 226, 0.4) 0%, transparent 75%),
-        linear-gradient(45deg, rgba(255, 0, 255, 0.1) 0%, rgba(0, 255, 255, 0.1) 50%, rgba(255, 255, 0, 0.1) 100%);
-    background-size: 120% 140%, 140% 120%, 100% 130%, 160% 110%, 200% 200%;
-    animation: overlayFlow 18s ease-in-out infinite reverse;
-    filter: blur(8px);
-    opacity: 0.7;
-    clip-path: polygon(0 0, 100% 0, 100% 35%, 0 100%);
-}
-
-@keyframes overlayFlow {
+/* Simplified Animation Keyframes */
+@keyframes simpleColorFlow {
     0% {
-        background-position: 0% 0%, 100% 100%, 50% 0%, 0% 100%, 0% 50%;
-        transform: scale(1) rotate(0deg);
-    }
-    33% {
-        background-position: 50% 50%, 50% 50%, 100% 50%, 50% 50%, 33% 66%;
-        transform: scale(1.05) rotate(120deg);
-    }
-    66% {
-        background-position: 100% 100%, 0% 0%, 0% 100%, 100% 0%, 66% 33%;
-        transform: scale(0.95) rotate(240deg);
-    }
-    100% {
-        background-position: 0% 0%, 100% 100%, 50% 0%, 0% 100%, 0% 50%;
-        transform: scale(1) rotate(360deg);
-    }
-}
-
-/* Add pulsing glow effect */
-@keyframes pulseGlow {
-    0% {
-        filter: blur(12px) saturate(1.2) brightness(1.1) contrast(1.0);
-        opacity: 0.9;
+        background-position: 0% 0%, 100% 100%, 50% 0%, 0% 0%;
+        transform: translateZ(0);
     }
     50% {
-        filter: blur(15px) saturate(1.4) brightness(1.25) contrast(1.1);
-        opacity: 0.95;
+        background-position: 100% 100%, 0% 0%, 0% 100%, 50% 50%;
+        transform: translateZ(0);
     }
     100% {
-        filter: blur(18px) saturate(1.6) brightness(1.4) contrast(1.2);
-        opacity: 1.0;
+        background-position: 0% 0%, 100% 100%, 50% 0%, 0% 0%;
+        transform: translateZ(0);
     }
 }
 
-@keyframes dynamicColorFlow {
-    0% {
-        background-position:
-            20% 30%, 80% 20%, 60% 70%, 90% 60%,
-            10% 80%, 40% 20%, 65% 85%, 55% 45%,
-            85% 75%, 45% 65%, 50% 50%;
-        background-size:
-            160% 180%, 140% 160%, 180% 140%, 130% 150%,
-            150% 170%, 170% 160%, 140% 180%, 190% 200%,
-            145% 165%, 200% 220%, 300% 300%;
-        filter: blur(12px) saturate(1.2) brightness(1.1) hue-rotate(0deg);
-    }
-    12.5% {
-        background-position:
-            30% 45%, 70% 35%, 45% 55%, 75% 45%,
-            25% 65%, 55% 35%, 50% 70%, 70% 60%,
-            70% 60%, 60% 80%, 50% 50%;
-        background-size:
-            175% 195%, 155% 175%, 195% 155%, 145% 165%,
-            165% 185%, 185% 175%, 155% 195%, 205% 215%,
-            160% 180%, 215% 235%, 320% 320%;
-        filter: blur(14px) saturate(1.3) brightness(1.15) hue-rotate(45deg);
-    }
-    25% {
-        background-position:
-            45% 60%, 55% 50%, 30% 40%, 60% 30%,
-            40% 50%, 70% 50%, 35% 55%, 85% 75%,
-            55% 45%, 75% 95%, 50% 50%;
-        background-size:
-            190% 210%, 170% 190%, 210% 170%, 160% 180%,
-            180% 200%, 200% 190%, 170% 210%, 220% 230%,
-            175% 195%, 230% 250%, 340% 340%;
-        filter: blur(16px) saturate(1.4) brightness(1.2) hue-rotate(90deg);
-    }
-    37.5% {
-        background-position:
-            60% 75%, 40% 65%, 15% 25%, 45% 15%,
-            55% 35%, 85% 65%, 20% 40%, 100% 90%,
-            40% 30%, 90% 110%, 50% 50%;
-        background-size:
-            205% 225%, 185% 205%, 225% 185%, 175% 195%,
-            195% 215%, 215% 205%, 185% 225%, 235% 245%,
-            190% 210%, 245% 265%, 360% 360%;
-        filter: blur(18px) saturate(1.5) brightness(1.25) hue-rotate(135deg);
-    }
-    50% {
-        background-position:
-            75% 90%, 25% 80%, 0% 10%, 30% 0%,
-            70% 20%, 100% 80%, 5% 25%, 115% 105%,
-            25% 15%, 105% 125%, 50% 50%;
-        background-size:
-            220% 240%, 200% 220%, 240% 200%, 190% 210%,
-            210% 230%, 230% 220%, 200% 240%, 250% 260%,
-            205% 225%, 260% 280%, 380% 380%;
-        filter: blur(20px) saturate(1.6) brightness(1.3) hue-rotate(180deg);
-    }
-    62.5% {
-        background-position:
-            90% 105%, 10% 95%, 85% 95%, 15% 85%,
-            85% 5%, 115% 95%, 90% 10%, 130% 120%,
-            10% 0%, 120% 140%, 50% 50%;
-        background-size:
-            205% 225%, 185% 205%, 225% 185%, 175% 195%,
-            195% 215%, 215% 205%, 185% 225%, 235% 245%,
-            190% 210%, 245% 265%, 360% 360%;
-        filter: blur(18px) saturate(1.5) brightness(1.25) hue-rotate(225deg);
-    }
-    75% {
-        background-position:
-            105% 120%, 95% 110%, 100% 110%, 0% 100%,
-            100% 90%, 130% 110%, 105% 95%, 145% 135%,
-            95% 85%, 135% 155%, 50% 50%;
-        background-size:
-            190% 210%, 170% 190%, 210% 170%, 160% 180%,
-            180% 200%, 200% 190%, 170% 210%, 220% 230%,
-            175% 195%, 230% 250%, 340% 340%;
-        filter: blur(16px) saturate(1.4) brightness(1.2) hue-rotate(270deg);
-    }
-    87.5% {
-        background-position:
-            120% 135%, 80% 125%, 115% 125%, 85% 115%,
-            115% 105%, 145% 125%, 120% 110%, 160% 150%,
-            80% 70%, 150% 170%, 50% 50%;
-        background-size:
-            175% 195%, 155% 175%, 195% 155%, 145% 165%,
-            165% 185%, 185% 175%, 155% 195%, 205% 215%,
-            160% 180%, 215% 235%, 320% 320%;
-        filter: blur(14px) saturate(1.3) brightness(1.15) hue-rotate(315deg);
-    }
-    100% {
-        background-position:
-            20% 30%, 80% 20%, 60% 70%, 90% 60%,
-            10% 80%, 40% 20%, 65% 85%, 55% 45%,
-            85% 75%, 45% 65%, 50% 50%;
-        background-size:
-            160% 180%, 140% 160%, 180% 140%, 130% 150%,
-            150% 170%, 170% 160%, 140% 180%, 190% 200%,
-            145% 165%, 200% 220%, 300% 300%;
-        filter: blur(12px) saturate(1.2) brightness(1.1) hue-rotate(360deg);
-    }
-}
 
 /* Hero Section Styles */
 .hero-section {
@@ -328,7 +182,7 @@ body {
     min-height: auto;
 }
 
-/* Dynamic Floating Particles */
+/* Simplified Particle Effect */
 .hero-section::before {
     content: '';
     position: absolute;
@@ -337,52 +191,23 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-image: 
-        radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.3) 1px, transparent 1px),
-        radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.2) 1px, transparent 1px),
-        radial-gradient(circle at 40% 70%, rgba(255, 255, 255, 0.25) 1px, transparent 1px),
-        radial-gradient(circle at 90% 60%, rgba(255, 255, 255, 0.15) 1px, transparent 1px),
-        radial-gradient(circle at 10% 80%, rgba(255, 255, 255, 0.35) 1px, transparent 1px),
-        radial-gradient(circle at 60% 10%, rgba(255, 255, 255, 0.2) 1px, transparent 1px),
-        radial-gradient(circle at 30% 90%, rgba(255, 255, 255, 0.3) 1px, transparent 1px),
-        radial-gradient(circle at 70% 40%, rgba(255, 255, 255, 0.25) 1px, transparent 1px);
-    background-size: 
-        200px 200px, 150px 150px, 180px 180px, 120px 120px,
-        160px 160px, 140px 140px, 170px 170px, 130px 130px;
-    animation: floatingParticles 20s linear infinite;
-    opacity: 0.6;
+    background-image:
+        radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.2) 1px, transparent 1px),
+        radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+    background-size: 150px 150px, 120px 120px;
+    animation: simpleParticles 15s ease-in-out infinite;
+    opacity: 0.4;
+    will-change: transform;
 }
 
-@keyframes floatingParticles {
-    0% {
-        background-position: 
-            0% 0%, 100% 0%, 50% 100%, 100% 50%,
-            0% 100%, 50% 0%, 0% 50%, 100% 100%;
-        transform: rotate(0deg);
-    }
-    25% {
-        background-position: 
-            25% 25%, 75% 25%, 25% 75%, 75% 75%,
-            25% 75%, 75% 25%, 25% 25%, 75% 75%;
-        transform: rotate(90deg);
+@keyframes simpleParticles {
+    0%, 100% {
+        background-position: 0% 0%, 100% 100%;
+        transform: translateZ(0);
     }
     50% {
-        background-position: 
-            50% 50%, 50% 50%, 0% 50%, 50% 0%,
-            50% 50%, 0% 50%, 50% 0%, 50% 50%;
-        transform: rotate(180deg);
-    }
-    75% {
-        background-position: 
-            75% 75%, 25% 75%, 75% 25%, 25% 25%,
-            75% 25%, 25% 75%, 75% 75%, 25% 25%;
-        transform: rotate(270deg);
-    }
-    100% {
-        background-position: 
-            0% 0%, 100% 0%, 50% 100%, 100% 50%,
-            0% 100%, 50% 0%, 0% 50%, 100% 100%;
-        transform: rotate(360deg);
+        background-position: 100% 100%, 0% 0%;
+        transform: translateZ(0);
     }
 }
 
@@ -548,13 +373,85 @@ body {
 /* About Section */
 .about-section {
     padding: 8rem 0;
-    background: linear-gradient(135deg, rgba(0, 122, 255, 0.02) 0%, rgba(88, 86, 214, 0.01) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.about-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background:
+        radial-gradient(ellipse 700px 500px at 25% 20%, #ff0080 0%, rgba(255, 0, 128, 0.4) 35%, transparent 65%),
+        radial-gradient(ellipse 600px 700px at 75% 80%, #00ff80 0%, rgba(0, 255, 128, 0.5) 40%, transparent 70%),
+        radial-gradient(ellipse 800px 400px at 50% 50%, #8000ff 0%, rgba(128, 0, 255, 0.4) 45%, transparent 75%),
+        linear-gradient(135deg, rgba(0, 122, 255, 0.2) 0%, rgba(88, 86, 214, 0.1) 100%);
+    background-size: 110% 120%, 100% 110%, 120% 100%, 100% 100%;
+    animation: aboutColorFlow 18s ease-in-out infinite;
+    filter: blur(6px) saturate(1.1) brightness(1.05);
+    opacity: 0.7;
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+.about-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-image:
+        radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.15) 1px, transparent 1px),
+        radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.12) 1px, transparent 1px),
+        radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 180px 180px, 140px 140px, 220px 220px;
+    animation: aboutParticles 20s ease-in-out infinite;
+    opacity: 0.5;
+    will-change: transform;
+}
+
+@keyframes aboutColorFlow {
+    0% {
+        background-position: 20% 20%, 80% 80%, 50% 30%, 0% 0%;
+        transform: translateZ(0);
+    }
+    50% {
+        background-position: 80% 80%, 20% 20%, 30% 70%, 50% 50%;
+        transform: translateZ(0);
+    }
+    100% {
+        background-position: 20% 20%, 80% 80%, 50% 30%, 0% 0%;
+        transform: translateZ(0);
+    }
+}
+
+@keyframes aboutParticles {
+    0%, 100% {
+        background-position: 0% 0%, 100% 100%, 50% 0%;
+        transform: translateZ(0);
+    }
+    33% {
+        background-position: 33% 33%, 67% 67%, 25% 50%;
+        transform: translateZ(0);
+    }
+    66% {
+        background-position: 66% 66%, 34% 34%, 75% 100%;
+        transform: translateZ(0);
+    }
 }
 
 .about-content {
     text-align: center;
     max-width: 1000px;
     margin: 0 auto;
+    position: relative;
+    z-index: 2;
 }
 
 .about-content h2 {
@@ -694,8 +591,9 @@ main {
     width: 120%;
     height: 720px;
     object-fit: contain;
-    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-    animation: float 4s ease-in-out infinite;
+    transition: transform 0.3s ease;
+    will-change: transform;
+    backface-visibility: hidden;
 }
 
 /* Dual-shot layout for projects with two images (e.g., Rebalancer) */
@@ -828,7 +726,7 @@ main {
 }
 
 .app:hover img {
-    transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
+    transform: translateY(-5px) scale(1.02);
 }
 
 .app-content {
@@ -1185,17 +1083,6 @@ body.dark {
     }
 }
 
-@keyframes float {
-
-    0%,
-    100% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(-8px);
-    }
-}
 
 @keyframes aiFlow {
     0% {
