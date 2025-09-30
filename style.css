@@ -31,21 +31,21 @@ body {
 }
 
 .nav-logo {
-    font-size: 0.975rem;
-    font-weight: 700;
-    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: #1d1d1f;
     text-decoration: none;
 }
 
 .nav-logo h1 {
     text-decoration: none !important;
-    color: #ffffff !important;
+    color: #1d1d1f !important;
 }
 
 .nav-logo h1 .ai-gradient,
 .nav-logo h1 .lab-gradient {
     text-decoration: none !important;
-    color: #ffffff !important;
+    color: #1d1d1f !important;
 }
 
 
@@ -57,17 +57,18 @@ body {
     gap: 2rem;
 }
 
-/* White menu links */
+/* Black menu links */
 .nav-menu a {
-    color: #ffffff;
+    color: #1d1d1f;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    font-weight: 500;
 }
 
 .nav-menu a:hover {
-    color: rgba(255, 255, 255, 0.85);
+    color: #6e6e73;
 }
 
 /* Icon-only links sizing */
@@ -96,7 +97,7 @@ body {
 
 
 .nav-menu a {
-    color: #ffffff;
+    color: #1d1d1f;
     text-decoration: none;
     font-weight: 500;
     font-size: 0.95rem;
@@ -104,7 +105,7 @@ body {
 }
 
 .nav-menu a:hover {
-    color: rgba(255, 255, 255, 0.85);
+    color: #6e6e73;
 }
 
 .nav-toggle {
@@ -133,56 +134,25 @@ body {
 
 /* Optimized Dynamic Background */
 .hero-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 575px;
-    z-index: -1;
-    background:
-        radial-gradient(ellipse 800px 600px at 20% 30%, #ff0080 0%, rgba(255, 0, 128, 0.6) 40%, transparent 70%),
-        radial-gradient(ellipse 700px 800px at 80% 20%, #00ff80 0%, rgba(0, 255, 128, 0.7) 45%, transparent 75%),
-        radial-gradient(ellipse 900px 500px at 50% 80%, #8000ff 0%, rgba(128, 0, 255, 0.6) 50%, transparent 80%),
-        linear-gradient(135deg, rgba(0, 122, 255, 0.3) 0%, rgba(88, 86, 214, 0.2) 100%);
-    background-size: 120% 140%, 110% 130%, 130% 120%, 100% 100%;
-    animation: simpleColorFlow 20s ease-in-out infinite;
-    filter: blur(8px) saturate(1.1) brightness(1.05);
-    opacity: 0.85;
-    clip-path: polygon(0 0, 100% 0, 100% 35%, 0 100%);
-    will-change: transform;
-    transform: translateZ(0);
-}
-
-/* Simplified Animation Keyframes */
-@keyframes simpleColorFlow {
-    0% {
-        background-position: 0% 0%, 100% 100%, 50% 0%, 0% 0%;
-        transform: translateZ(0);
-    }
-    50% {
-        background-position: 100% 100%, 0% 0%, 0% 100%, 50% 50%;
-        transform: translateZ(0);
-    }
-    100% {
-        background-position: 0% 0%, 100% 100%, 50% 0%, 0% 0%;
-        transform: translateZ(0);
-    }
+    display: none;
 }
 
 
 /* Hero Section Styles */
 .hero-section {
-    padding: 1rem 0 4rem 0;
+    padding: 8rem 0 10rem 0;
     text-align: center;
     position: relative;
     z-index: 10;
-    background: transparent;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
     overflow: hidden;
     margin-top: 0;
-    min-height: auto;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
 }
 
-/* Simplified Particle Effect */
+/* Floating particles container */
 .hero-section::before {
     content: '';
     position: absolute;
@@ -190,24 +160,47 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
-    background-image:
-        radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.2) 1px, transparent 1px),
-        radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.15) 1px, transparent 1px);
-    background-size: 150px 150px, 120px 120px;
-    animation: simpleParticles 15s ease-in-out infinite;
-    opacity: 0.4;
-    will-change: transform;
+    pointer-events: none;
+    z-index: 1;
 }
 
-@keyframes simpleParticles {
+/* Individual floating particles */
+.hero-section::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image:
+        radial-gradient(circle 5px at 20% 30%, rgba(255, 255, 255, 0.8) 100%, transparent 0),
+        radial-gradient(circle 4px at 80% 70%, rgba(255, 255, 255, 0.7) 100%, transparent 0),
+        radial-gradient(circle 6px at 40% 60%, rgba(255, 255, 255, 0.75) 100%, transparent 0),
+        radial-gradient(circle 4px at 60% 40%, rgba(255, 255, 255, 0.7) 100%, transparent 0),
+        radial-gradient(circle 5px at 30% 80%, rgba(255, 255, 255, 0.8) 100%, transparent 0),
+        radial-gradient(circle 4px at 70% 20%, rgba(255, 255, 255, 0.75) 100%, transparent 0),
+        radial-gradient(circle 7px at 50% 50%, rgba(255, 255, 255, 0.9) 100%, transparent 0),
+        radial-gradient(circle 4px at 90% 50%, rgba(255, 255, 255, 0.7) 100%, transparent 0),
+        radial-gradient(circle 5px at 10% 50%, rgba(255, 255, 255, 0.75) 100%, transparent 0),
+        radial-gradient(circle 4px at 25% 15%, rgba(255, 255, 255, 0.6) 100%, transparent 0);
+    background-size: 100% 100%;
+    animation: floatParticles 20s ease-in-out infinite;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+@keyframes floatParticles {
     0%, 100% {
-        background-position: 0% 0%, 100% 100%;
-        transform: translateZ(0);
+        background-position: 0% 0%, 100% 100%, 50% 50%, 80% 20%, 20% 80%, 70% 30%, 50% 50%, 90% 60%, 10% 40%, 30% 10%;
+    }
+    25% {
+        background-position: 15% 20%, 85% 80%, 45% 65%, 75% 35%, 25% 75%, 80% 25%, 55% 45%, 95% 55%, 5% 50%, 35% 15%;
     }
     50% {
-        background-position: 100% 100%, 0% 0%;
-        transform: translateZ(0);
+        background-position: 25% 30%, 75% 70%, 60% 55%, 65% 45%, 35% 85%, 85% 15%, 45% 60%, 88% 65%, 12% 35%, 28% 25%;
+    }
+    75% {
+        background-position: 10% 40%, 90% 60%, 55% 45%, 70% 30%, 30% 70%, 75% 40%, 50% 55%, 85% 50%, 15% 45%, 25% 20%;
     }
 }
 
@@ -218,96 +211,55 @@ body {
 }
 
 .hero-content h1 {
-    margin: 0;
+    margin: 0 auto;
     font-weight: 700;
-    font-size: 6rem;
-    letter-spacing: -0.02em;
-    color: rgb(10, 27, 49);
+    font-size: 6.5rem;
+    letter-spacing: -0.04em;
+    color: #ffffff;
     animation: slideInDown 1s ease-out;
+    line-height: 1.1;
+    max-width: 1100px;
 }
 
 .hero-subtitle {
-    max-width: 780px;
-    margin: 1.5rem auto 3rem auto;
-    font-size: 1.8rem;
+    max-width: 750px;
+    margin: 2rem auto 3rem auto;
+    font-size: 1.5rem;
     font-weight: 400;
-    color: rgb(10, 27, 49);
-    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.95);
+    line-height: 1.6;
     animation: slideInUp 1s ease-out 0.2s both;
-}
-
-.hero-stats {
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
-    margin: 3rem 0;
-    animation: slideInUp 1s ease-out 0.4s both;
-    flex-wrap: wrap;
-}
-
-.stat {
-    text-align: center;
-    min-width: 120px;
-}
-
-.stat-number {
-    display: block;
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: rgb(10, 27, 49);
-    margin-bottom: 0.5rem;
-}
-
-.stat-label {
-    font-size: 1rem;
-    color: rgb(10, 27, 49);
-    font-weight: 500;
 }
 
 .hero-actions {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
-    margin-top: 3rem;
-    animation: slideInUp 1s ease-out 0.6s both;
+    gap: 1rem;
+    margin-top: 2.5rem;
+    animation: slideInUp 1s ease-out 0.4s both;
 }
 
 .cta-primary {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #007AFF 0%, #5856D6 100%);
-    color: white;
-    padding: 16px 32px;
-    border-radius: 12px;
+    background: #ffffff;
+    color: #1d1d1f;
+    padding: 16px 40px;
+    border-radius: 10px;
     font-size: 1.1rem;
     font-weight: 600;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     border: none;
     cursor: pointer;
-    position: relative;
-    overflow: hidden;
-}
-
-.cta-primary::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transition: left 0.6s ease;
-}
-
-.cta-primary:hover::before {
-    left: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 .cta-primary:hover {
+    background: #f5f5f5;
     transform: translateY(-2px);
-    box-shadow: 0 8px 30px rgba(0, 122, 255, 0.4);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
 }
 
 .cta-secondary {
@@ -315,21 +267,90 @@ body {
     align-items: center;
     justify-content: center;
     gap: 8px;
-    background: rgba(0, 122, 255, 0.1);
-    color: #007AFF;
-    padding: 16px 32px;
-    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    padding: 16px 40px;
+    border-radius: 10px;
     font-size: 1.1rem;
     font-weight: 600;
     text-decoration: none;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(0, 122, 255, 0.2);
+    transition: all 0.2s ease;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
 }
 
 .cta-secondary:hover {
-    background: rgba(0, 122, 255, 0.15);
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 122, 255, 0.2);
+}
+
+/* Tech Logos Section */
+.tech-logos-section {
+    padding: 4rem 0 5rem 0;
+    background: #fafbfc;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.tech-logos-text {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #6e6e73;
+    margin: 0 0 2.5rem 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.tech-logos-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+    padding: 0 2rem;
+}
+
+.tech-logo-text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #86868b;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.tech-logo-text:hover {
+    color: #1d1d1f;
+}
+
+.trust-stats {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+    border-top: 1px solid #e5e7eb;
+}
+
+.trust-stat {
+    text-align: center;
+    min-width: 100px;
+}
+
+.trust-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1d1d1f;
+    margin-bottom: 0.25rem;
+    letter-spacing: -0.02em;
+}
+
+.trust-label {
+    font-size: 0.875rem;
+    color: #6e6e73;
+    font-weight: 500;
 }
 
 /* Gradient text styles for navigation and hero */
@@ -375,75 +396,32 @@ body {
     padding: 8rem 0;
     position: relative;
     overflow: hidden;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
 }
 
+/* Floating particles animation for about section */
 .about-section::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
-    background:
-        radial-gradient(ellipse 700px 500px at 25% 20%, #ff0080 0%, rgba(255, 0, 128, 0.4) 35%, transparent 65%),
-        radial-gradient(ellipse 600px 700px at 75% 80%, #00ff80 0%, rgba(0, 255, 128, 0.5) 40%, transparent 70%),
-        radial-gradient(ellipse 800px 400px at 50% 50%, #8000ff 0%, rgba(128, 0, 255, 0.4) 45%, transparent 75%),
-        linear-gradient(135deg, rgba(0, 122, 255, 0.2) 0%, rgba(88, 86, 214, 0.1) 100%);
-    background-size: 110% 120%, 100% 110%, 120% 100%, 100% 100%;
-    animation: aboutColorFlow 18s ease-in-out infinite;
-    filter: blur(6px) saturate(1.1) brightness(1.05);
-    opacity: 0.7;
-    will-change: transform;
-    transform: translateZ(0);
-}
-
-.about-section::after {
-    content: '';
-    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
     background-image:
-        radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.15) 1px, transparent 1px),
-        radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.12) 1px, transparent 1px),
-        radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-    background-size: 180px 180px, 140px 140px, 220px 220px;
-    animation: aboutParticles 20s ease-in-out infinite;
-    opacity: 0.5;
-    will-change: transform;
-}
-
-@keyframes aboutColorFlow {
-    0% {
-        background-position: 20% 20%, 80% 80%, 50% 30%, 0% 0%;
-        transform: translateZ(0);
-    }
-    50% {
-        background-position: 80% 80%, 20% 20%, 30% 70%, 50% 50%;
-        transform: translateZ(0);
-    }
-    100% {
-        background-position: 20% 20%, 80% 80%, 50% 30%, 0% 0%;
-        transform: translateZ(0);
-    }
-}
-
-@keyframes aboutParticles {
-    0%, 100% {
-        background-position: 0% 0%, 100% 100%, 50% 0%;
-        transform: translateZ(0);
-    }
-    33% {
-        background-position: 33% 33%, 67% 67%, 25% 50%;
-        transform: translateZ(0);
-    }
-    66% {
-        background-position: 66% 66%, 34% 34%, 75% 100%;
-        transform: translateZ(0);
-    }
+        radial-gradient(circle 5px at 20% 30%, rgba(255, 255, 255, 0.8) 100%, transparent 0),
+        radial-gradient(circle 4px at 80% 70%, rgba(255, 255, 255, 0.7) 100%, transparent 0),
+        radial-gradient(circle 6px at 40% 60%, rgba(255, 255, 255, 0.75) 100%, transparent 0),
+        radial-gradient(circle 4px at 60% 40%, rgba(255, 255, 255, 0.7) 100%, transparent 0),
+        radial-gradient(circle 5px at 30% 80%, rgba(255, 255, 255, 0.8) 100%, transparent 0),
+        radial-gradient(circle 4px at 70% 20%, rgba(255, 255, 255, 0.75) 100%, transparent 0),
+        radial-gradient(circle 7px at 50% 50%, rgba(255, 255, 255, 0.9) 100%, transparent 0),
+        radial-gradient(circle 4px at 90% 50%, rgba(255, 255, 255, 0.7) 100%, transparent 0),
+        radial-gradient(circle 5px at 10% 50%, rgba(255, 255, 255, 0.75) 100%, transparent 0),
+        radial-gradient(circle 4px at 25% 15%, rgba(255, 255, 255, 0.6) 100%, transparent 0);
+    background-size: 100% 100%;
+    animation: floatParticles 20s ease-in-out infinite;
+    opacity: 0.9;
+    z-index: 1;
 }
 
 .about-content {
@@ -457,14 +435,14 @@ body {
 .about-content h2 {
     font-size: 3.5rem;
     font-weight: 700;
-    color: #1d1d1f;
+    color: #ffffff;
     margin: 0 0 2rem 0;
     letter-spacing: -0.02em;
 }
 
 .about-intro {
     font-size: 1.4rem;
-    color: #6e6e73;
+    color: rgba(255, 255, 255, 0.95);
     line-height: 1.6;
     margin-bottom: 4rem;
     max-width: 800px;
@@ -482,31 +460,33 @@ body {
 .expertise-item {
     text-align: center;
     padding: 2rem;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.15);
     border-radius: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
 }
 
 .expertise-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 40px rgba(0, 122, 255, 0.1);
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
 }
 
 .expertise-icon {
     margin-bottom: 1.5rem;
-    color: #007AFF;
+    color: #ffffff;
 }
 
 .expertise-item h3 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #1d1d1f;
+    color: #ffffff;
     margin: 0 0 1rem 0;
 }
 
 .expertise-item p {
-    color: #6e6e73;
+    color: rgba(255, 255, 255, 0.9);
     line-height: 1.6;
     margin: 0;
 }
@@ -742,12 +722,42 @@ main {
 }
 
 .app-content .category {
-    font-size: 1rem;
-    color: #007AFF;
-    font-weight: 500;
+    font-size: 0.875rem;
+    color: #6366f1;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.8px;
     margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.tech-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    background: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #374151;
+    transition: all 0.2s ease;
+}
+
+.tech-badge:hover {
+    background: #e5e7eb;
+    border-color: #d1d5db;
+}
+
+.app-store-badge {
+    display: none;
 }
 
 .app-content .description {
@@ -807,30 +817,44 @@ main {
 }
 
 footer {
-    padding: 6rem 0;
+    padding: 4rem 0 3rem 0;
     text-align: center;
-    margin-top: 8rem;
-    font-size: 1.1rem;
-    color: #6e6e73;
+    margin-top: 6rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    border-top: none;
+}
+
+footer p {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0 0 1rem 0;
 }
 
 .footer-links {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     display: flex;
     justify-content: center;
     gap: 2rem;
 }
 
 .footer-links a {
-    color: #007AFF;
+    color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
-    font-size: 0.95rem;
+    font-size: 0.875rem;
     font-weight: 500;
     transition: color 0.2s ease;
 }
 
 .footer-links a:hover {
-    color: #5856D6;
+    color: #ffffff;
+}
+
+.footer-social a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-social a:hover {
+    color: #ffffff;
 }
 
 /* Contact Section */
@@ -1271,17 +1295,25 @@ body.dark {
         min-height: auto;
     }
 
+    .hero-section {
+        padding: 5rem 0 6rem 0;
+        min-height: 500px;
+    }
+
     .hero-content h1 {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .hero-subtitle {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
-    .hero-stats {
-        flex-direction: column;
+    .tech-logos-grid {
         gap: 2rem;
+    }
+
+    .trust-stats {
+        gap: 2.5rem;
     }
 
     .hero-actions {
@@ -1424,16 +1456,42 @@ body.dark {
 }
 
 @media (max-width: 480px) {
+    .hero-section {
+        padding: 4rem 0 5rem 0;
+        min-height: 400px;
+    }
+
     .hero-content h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .hero-subtitle {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
-    .stat-number {
-        font-size: 2rem;
+    .trust-number {
+        font-size: 1.75rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0 1rem;
+    }
+
+    .cta-primary,
+    .cta-secondary {
+        width: 100%;
+        padding: 14px 32px;
+        font-size: 1rem;
+    }
+
+    .tech-logos-grid {
+        gap: 1.5rem;
+    }
+
+    .tech-logo-text {
+        font-size: 0.85rem;
     }
 
     .section-header h2 {
