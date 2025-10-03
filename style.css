@@ -314,32 +314,83 @@ body {
     text-align: center;
     font-size: 0.9rem;
     color: #6e6e73;
-    margin: 0 0 2.5rem 0;
+    margin: 0 0 3rem 0;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
 
-.tech-logos-grid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2.5rem;
-    flex-wrap: wrap;
+/* Ticker Animation Container */
+.tech-logos-ticker {
+    overflow: hidden;
+    width: 100%;
     margin-bottom: 4rem;
-    padding: 0 2rem;
+    position: relative;
 }
 
-.tech-logo-text {
-    font-size: 1rem;
-    font-weight: 500;
-    color: #86868b;
-    text-align: center;
-    transition: color 0.3s ease;
+.tech-logos-track {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    animation: scroll-left 40s linear infinite;
+    width: fit-content;
 }
 
-.tech-logo-text:hover {
-    color: #1d1d1f;
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.tech-logo-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+.tech-logo-img {
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.7;
+}
+
+/* Logo size variations */
+.tech-logo-img.logo-small {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.tech-logo-img.logo-medium {
+    max-width: 60px;
+    max-height: 60px;
+}
+
+.tech-logo-img.logo-large {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.tech-logo-img.logo-xlarge {
+    max-width: 90px;
+    max-height: 90px;
+}
+
+.tech-logo-img.logo-xxlarge {
+    max-width: 110px;
+    max-height: 110px;
+}
+
+.tech-logo-label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #6e6e73;
+    white-space: nowrap;
 }
 
 .trust-stats {
@@ -1338,8 +1389,38 @@ body.dark {
         font-size: 1.3rem;
     }
 
-    .tech-logos-grid {
-        gap: 2rem;
+    .tech-logos-track {
+        gap: 3rem;
+    }
+    
+    .tech-logo-item {
+        height: 65px;
+    }
+    
+    .tech-logo-img.logo-small {
+        max-width: 35px;
+        max-height: 35px;
+    }
+    
+    .tech-logo-img.logo-medium {
+        max-width: 50px;
+        max-height: 50px;
+    }
+    
+    .tech-logo-img.logo-large {
+        max-height: 65px;
+    }
+    
+    .tech-logo-img.logo-xlarge {
+        max-height: 75px;
+    }
+    
+    .tech-logo-img.logo-xxlarge {
+        max-height: 90px;
+    }
+    
+    .tech-logo-label {
+        font-size: 1rem;
     }
 
     .trust-stats {
@@ -1516,12 +1597,39 @@ body.dark {
         font-size: 1rem;
     }
 
-    .tech-logos-grid {
-        gap: 1.5rem;
+    .tech-logos-track {
+        gap: 2.5rem;
     }
-
-    .tech-logo-text {
-        font-size: 0.85rem;
+    
+    .tech-logo-item {
+        height: 55px;
+        gap: 0.5rem;
+    }
+    
+    .tech-logo-img.logo-small {
+        max-width: 30px;
+        max-height: 30px;
+    }
+    
+    .tech-logo-img.logo-medium {
+        max-width: 45px;
+        max-height: 45px;
+    }
+    
+    .tech-logo-img.logo-large {
+        max-height: 55px;
+    }
+    
+    .tech-logo-img.logo-xlarge {
+        max-height: 65px;
+    }
+    
+    .tech-logo-img.logo-xxlarge {
+        max-height: 75px;
+    }
+    
+    .tech-logo-label {
+        font-size: 0.9rem;
     }
 
     .section-header h2 {
