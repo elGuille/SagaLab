@@ -323,9 +323,11 @@ body {
 /* Ticker Animation Container */
 .tech-logos-ticker {
     overflow: hidden;
-    width: 100%;
+    width: 100vw;
     margin-bottom: 4rem;
     position: relative;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
 }
 
 .tech-logos-track {
