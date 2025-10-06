@@ -305,7 +305,7 @@ body {
 
 /* Tech Logos Section */
 .tech-logos-section {
-    padding: 4rem 0 5rem 0;
+    padding: 4rem 0 2.5rem 0;
     background: #fafbfc;
     border-bottom: 1px solid #e5e7eb;
 }
@@ -324,7 +324,7 @@ body {
 .tech-logos-ticker {
     overflow: hidden;
     width: 100vw;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     position: relative;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
@@ -352,7 +352,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 0.6rem;
-    height: 80px;
+    height: 96px;
     flex-shrink: 0;
 }
 
@@ -364,28 +364,28 @@ body {
 
 /* Logo size variations */
 .tech-logo-img.logo-small {
-    max-width: 40px;
-    max-height: 40px;
+    max-width: 48px;
+    max-height: 48px;
 }
 
 .tech-logo-img.logo-medium {
-    max-width: 60px;
-    max-height: 60px;
+    max-width: 72px;
+    max-height: 72px;
 }
 
 .tech-logo-img.logo-large {
-    max-width: 80px;
-    max-height: 80px;
+    max-width: 92px;
+    max-height: 92px;
 }
 
 .tech-logo-img.logo-xlarge {
-    max-width: 90px;
-    max-height: 90px;
+    max-width: 104px;
+    max-height: 104px;
 }
 
 .tech-logo-img.logo-xxlarge {
-    max-width: 110px;
-    max-height: 110px;
+    max-width: 126px;
+    max-height: 126px;
 }
 
 .tech-logo-label {
@@ -1396,29 +1396,29 @@ body.dark {
     }
     
     .tech-logo-item {
-        height: 65px;
+        height: 78px;
     }
     
     .tech-logo-img.logo-small {
-        max-width: 35px;
-        max-height: 35px;
+        max-width: 42px;
+        max-height: 42px;
     }
     
     .tech-logo-img.logo-medium {
-        max-width: 50px;
-        max-height: 50px;
+        max-width: 60px;
+        max-height: 60px;
     }
     
     .tech-logo-img.logo-large {
-        max-height: 65px;
+        max-height: 78px;
     }
     
     .tech-logo-img.logo-xlarge {
-        max-height: 75px;
+        max-height: 90px;
     }
     
     .tech-logo-img.logo-xxlarge {
-        max-height: 90px;
+        max-height: 108px;
     }
     
     .tech-logo-label {
@@ -1604,30 +1604,30 @@ body.dark {
     }
     
     .tech-logo-item {
-        height: 55px;
+        height: 66px;
         gap: 0.5rem;
     }
     
     .tech-logo-img.logo-small {
-        max-width: 30px;
-        max-height: 30px;
+        max-width: 36px;
+        max-height: 36px;
     }
     
     .tech-logo-img.logo-medium {
-        max-width: 45px;
-        max-height: 45px;
+        max-width: 54px;
+        max-height: 54px;
     }
     
     .tech-logo-img.logo-large {
-        max-height: 55px;
+        max-height: 66px;
     }
     
     .tech-logo-img.logo-xlarge {
-        max-height: 65px;
+        max-height: 78px;
     }
     
     .tech-logo-img.logo-xxlarge {
-        max-height: 75px;
+        max-height: 90px;
     }
     
     .tech-logo-label {
