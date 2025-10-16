@@ -56,7 +56,7 @@
     .cta {
       display:inline-block;
       text-decoration:none;
-      background:rgb(43, 60, 158);
+      background:#007AFF;
       color:#fff;
       border-radius: 14px;
       padding: clamp(14px, 3.2vw, 22px) clamp(24px, 6vw, 40px);
@@ -80,9 +80,14 @@
       transform: translateX(-50%);
       z-index: 10;
       display: none;
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 122, 255, 0.3);
     }
     @media (max-width: 640px) {
       .sticky-cta { display: inline-block; }
+      .card .cta { display: none; }
       .logo-img {
         width: 160px;
         margin-bottom: 30px;
