@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>3 Tasks — Focus on what matters</title>
+  <meta name="description" content="Do 3 important tasks. Every day." />
+  <meta property="og:title" content="3 Tasks — Focus on what matters" />
+  <meta property="og:description" content="Do 3 important tasks. Every day." />
+  <meta property="og:type" content="website" />
+  <style>
+    :root { --bg:#fff; --fg:#0b0b0b; --muted:#5b5b5b; --btn:#111; --btnfg:#fff; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg:#0b0b0b; --fg:#f8f8f8; --muted:#b5b5b5; --btn:#fff; --btnfg:#111; }
+    }
+    * { box-sizing: border-box; }
+    html,body { height:100%; }
+    body {
+      margin:0;
+      background:var(--bg);
+      color:var(--fg);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      line-height:1.15;
+    }
+    .wrap {
+      min-height:100%;
+      display:grid;
+      place-items:center;
+      padding: clamp(16px, 4vw, 48px);
+    }
+    .card {
+      text-align:center;
+      max-width: 820px;
+      width:100%;
+    }
+    .logo-img {
+      width: 200px;
+      height: auto;
+      margin-bottom: 40px;
+      border-radius: 24px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      margin:0 0 20px;
+      font-weight:800;
+      letter-spacing:-0.02em;
+      font-size: clamp(40px, 8vw, 88px);
+      line-height: 0.97;
+    }
+    p {
+      margin:0 0 28px;
+      font-size: clamp(16px, 2.8vw, 24px);
+      color:var(--muted);
+    }
+    .cta {
+      display:inline-block;
+      text-decoration:none;
+      background:rgb(71, 97, 246);
+      color:#fff;
+      border-radius: 14px;
+      padding: clamp(14px, 3.2vw, 22px) clamp(24px, 6vw, 40px);
+      font-size: clamp(18px, 3.5vw, 28px);
+      font-weight: 800;
+      letter-spacing: 0.2px;
+      line-height:1;
+      transition: transform .06s ease;
+    }
+    .cta:active { transform: translateY(1px); }
+    footer {
+      margin-top: 28px;
+      font-size: 12px;
+      color: var(--muted);
+      opacity:.9;
+    }
+    .sticky-cta {
+      position: fixed;
+      left: 50%;
+      bottom: clamp(12px, 3vw, 24px);
+      transform: translateX(-50%);
+      z-index: 10;
+      display: none;
+    }
+    @media (max-width: 640px) {
+      .sticky-cta { display: inline-block; }
+      .logo-img {
+        width: 160px;
+        margin-bottom: 30px;
+      }
+    }
+    .sr-only {
+      position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden;
+      clip:rect(0,0,0,0); border:0;
+    }
+  </style>
+</head>
+<body>
+  <a class="cta sticky-cta" href="https://app.link/your-onelink?id=1553693943&utm_source=meta&utm_medium=cpc&utm_campaign=main" aria-label="Download on the App Store (sticky)">
+    Download on the App Store
+  </a>
+
+  <main class="wrap">
+    <div class="card">
+      <img src="images/3Things.jpg" alt="3 Tasks App" class="logo-img" />
+      <h1>Do 3 tasks.<br/>Every day.</h1>
+      <p>Simple focus. Real progress.</p>
+
+      <!-- Replace the href with your Branch/Appsflyer OneLink if available.
+           Fallback: direct App Store URL below. -->
+      <a class="cta" href="https://app.link/your-onelink?id=1553693943&utm_source=meta&utm_medium=cpc&utm_campaign=main">
+        Download on the App Store
+      </a>
+
+      <footer>
+        <span class="sr-only">Legal</span>
+        <span>Privacy • Terms</span>
+      </footer>
+    </div>
+  </main>
+
+  <!-- Optional: lightweight click tracking (no SDK). Replace with your GA/Pixel if needed. -->
+  <script>
+    (function(){
+      const params = new URLSearchParams(location.search);
+      const utm = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term']
+        .reduce((acc,k)=>{ if(params.get(k)) acc[k]=params.get(k); return acc; },{});
+      const links = document.querySelectorAll('.cta');
+      links.forEach(a=>{
+        try {
+          const url = new URL(a.href);
+          Object.entries(utm).forEach(([k,v])=> url.searchParams.set(k,v));
+          a.href = url.toString();
+        } catch(e){}
+      });
+    })();
+  </script>
+  <!-- Direct App Store fallback (use if you don't have OneLink):
+       https://apps.apple.com/au/app/3-tasks-daily-productivity/id1553693943?utm_source=meta&utm_medium=cpc&utm_campaign=main -->
+</body>
+</html>
