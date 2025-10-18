@@ -10,19 +10,19 @@
   <meta property="og:type" content="website" />
   <style>
     :root {
-      --bg: #ffffff;
-      --fg: #000000;
-      --accent: #0071e3;
-      --btn: #0071e3;
-      --btnfg: #fff;
+      --bg: #0071e3;
+      --fg: #ffffff;
+      --accent: #ffffff;
+      --btn: #ffffff;
+      --btnfg: #0071e3;
     }
     @media (prefers-color-scheme: dark) {
       :root {
-        --bg: #000000;
+        --bg: #0056b3;
         --fg: #ffffff;
-        --accent: #0a84ff;
-        --btn: #0a84ff;
-        --btnfg: #000;
+        --accent: #ffffff;
+        --btn: #ffffff;
+        --btnfg: #0056b3;
       }
     }
     * {
@@ -80,7 +80,7 @@
       font-weight: 700;
     }
     .benefits {
-      display: grid;
+      display: none;
       grid-template-columns: repeat(3, 1fr);
       gap: clamp(12px, 3vw, 24px);
       margin-bottom: clamp(16px, 2.5vw, 24px);
@@ -114,7 +114,7 @@
       font-size: clamp(13px, 2vw, 18px);
       font-weight: 900;
       margin: 0;
-      color: var(--fg);
+      color: #ffffff;
       letter-spacing: -0.5px;
     }
     .benefit-text {
