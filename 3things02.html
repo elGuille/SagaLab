@@ -35,7 +35,7 @@
       margin: 0;
       background: var(--bg);
       color: var(--fg);
-      font-family: 'Impact', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Segoe UI', Roboto, sans-serif;
       -webkit-font-smoothing: antialiased;
       line-height: 1.3;
       overflow-x: hidden;
@@ -81,9 +81,9 @@
     }
     .benefits {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: clamp(8px, 2vw, 16px);
-      margin-bottom: clamp(12px, 2vw, 20px);
+      grid-template-columns: repeat(3, 1fr);
+      gap: clamp(12px, 3vw, 24px);
+      margin-bottom: clamp(16px, 2.5vw, 24px);
       animation: fadeInUp 0.8s ease-out 0.2s backwards;
       flex-shrink: 0;
     }
@@ -236,9 +236,9 @@
         grid-template-columns: repeat(3, 1fr);
       }
     }
-    @media (max-width: 480px) {
+    @media (max-width: 580px) {
       .benefits {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
       }
     }
     @keyframes fadeInDown {
@@ -299,49 +299,25 @@
       <div class="benefit-card">
         <span class="benefit-icon">🎯</span>
         <h2 class="benefit-title">Crystal Clear Focus</h2>
-        <p class="benefit-text">Eliminate overwhelm. Three tasks. That's it. Your brain will thank you.</p>
-      </div>
-
-      <div class="benefit-card">
-        <span class="benefit-icon">⚡</span>
-        <h2 class="benefit-title">Unstoppable Momentum</h2>
-        <p class="benefit-text">Complete your daily wins and watch your confidence soar with every checkmark.</p>
       </div>
 
       <div class="benefit-card">
         <span class="benefit-icon">📈</span>
-        <h2 class="benefit-title">Real Progress Guaranteed</h2>
-        <p class="benefit-text">Consistency compounds. Track your journey and watch yourself transform.</p>
-      </div>
-
-      <div class="benefit-card">
-        <span class="benefit-icon">🧠</span>
-        <h2 class="benefit-title">Scientifically Proven</h2>
-        <p class="benefit-text">Based on proven productivity science. Three is the magic number.</p>
-      </div>
-
-      <div class="benefit-card">
-        <span class="benefit-icon">🌟</span>
-        <h2 class="benefit-title">Celebrate Daily Wins</h2>
-        <p class="benefit-text">Every day is a victory lap. Build an unstoppable winning streak.</p>
+        <h2 class="benefit-title">Real Progress</h2>
       </div>
 
       <div class="benefit-card">
         <span class="benefit-icon">🚀</span>
         <h2 class="benefit-title">Transform Your Life</h2>
-        <p class="benefit-text">In 90 days, you won't recognize your productivity and results.</p>
       </div>
     </section>
 
     <section class="highlights">
-      <h2 class="highlights-title">Why 3 Tasks Works:</h2>
+      <h2 class="highlights-title">Why 3 Tasks Works</h2>
       <ul class="highlights-list">
-        <li>No More Procrastination — Just Action</li>
-        <li>Build Unstoppable Habits</li>
-        <li>Track Progress Like Never Before</li>
-        <li>Achieve More in Less Time</li>
-        <li>Proven by Thousands of Users</li>
-        <li>Simple. Powerful. Results.</li>
+        <li>Eliminate Overwhelm</li>
+        <li>Build Real Habits</li>
+        <li>Proven & Loved</li>
       </ul>
     </section>
 
