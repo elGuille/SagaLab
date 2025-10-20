@@ -1,4 +1,7 @@
-<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100" height="100" fill="white"/>
-  <text fill="black" x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="85" font-weight="600">S</text>
-</svg> 
+<svg width="180" height="180" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+  <!-- Light blue rounded square background (Apple style) -->
+  <rect width="180" height="180" rx="38" fill="#60A5FA"/>
+
+  <!-- White elegant S -->
+  <text x="90" y="115" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="120" font-weight="700" text-anchor="middle" fill="white" letter-spacing="-2">S</text>
+</svg>

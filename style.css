@@ -461,10 +461,12 @@ body {
 
 /* About Section */
 .about-section {
-    padding: 8rem 0;
+    padding: 8rem 22px;
     position: relative;
     overflow: hidden;
-    background: #ffffff;
+    background: #374151;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
 }
 
 /* About section background - no animation */
@@ -478,19 +480,20 @@ body {
     margin: 0 auto;
     position: relative;
     z-index: 2;
+    padding: 0 22px;
 }
 
 .about-content h2 {
     font-size: 3.5rem;
     font-weight: 700;
-    color: #1d1d1f;
+    color: #ffffff;
     margin: 0 0 2rem 0;
     letter-spacing: -0.02em;
 }
 
 .about-intro {
     font-size: 1.4rem;
-    color: #6e6e73;
+    color: rgba(255, 255, 255, 0.9);
     line-height: 1.6;
     margin-bottom: 4rem;
     max-width: 800px;
@@ -508,58 +511,27 @@ body {
 .expertise-item {
     text-align: center;
     padding: 2rem;
-    background: linear-gradient(135deg, #1E40AF 0%, #2563EB 35%, #3B82F6 65%, #60A5FA 85%, #93C5FD 100%);
+    background: #ffffff;
     border-radius: 20px;
     border: none;
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 .expertise-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background:
-        radial-gradient(circle 2px, rgba(255, 255, 255, 0.9) 50%, transparent 50%),
-        radial-gradient(circle 2px, rgba(255, 255, 255, 0.8) 50%, transparent 50%),
-        radial-gradient(circle 2px, rgba(255, 255, 255, 0.7) 50%, transparent 50%),
-        radial-gradient(circle 2px, rgba(255, 255, 255, 0.85) 50%, transparent 50%),
-        radial-gradient(circle 2px, rgba(255, 255, 255, 0.75) 50%, transparent 50%),
-        radial-gradient(circle 2px, rgba(255, 255, 255, 0.9) 50%, transparent 50%),
-        radial-gradient(circle 2px, rgba(255, 255, 255, 0.8) 50%, transparent 50%),
-        radial-gradient(circle 2px, rgba(255, 255, 255, 0.7) 50%, transparent 50%),
-        radial-gradient(circle 2px, rgba(255, 255, 255, 0.85) 50%, transparent 50%),
-        radial-gradient(circle 2px, rgba(255, 255, 255, 0.75) 50%, transparent 50%);
-    background-size:
-        200px 200px, 250px 250px, 180px 180px, 220px 220px, 190px 190px,
-        210px 210px, 240px 240px, 170px 170px, 230px 230px, 195px 195px;
-    background-position:
-        0% 0%, 25% 25%, 50% 50%, 75% 75%, 100% 100%,
-        10% 90%, 40% 60%, 70% 30%, 90% 10%, 20% 80%;
-    animation: swarmMove 25s ease-in-out infinite;
-    opacity: 0.3;
-    transition: opacity 0.6s ease;
-    pointer-events: none;
-    border-radius: 20px;
-    z-index: 1;
-}
-
-.expertise-item:hover::before {
-    opacity: 1;
+    display: none;
 }
 
 .expertise-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
 
 .expertise-icon {
     margin-bottom: 1.5rem;
-    color: #ffffff;
+    color: #374151;
     position: relative;
     z-index: 2;
 }
@@ -567,14 +539,14 @@ body {
 .expertise-item h3 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #ffffff;
+    color: #1d1d1f;
     margin: 0 0 1rem 0;
     position: relative;
     z-index: 2;
 }
 
 .expertise-item p {
-    color: #ffffff;
+    color: #6b7280;
     line-height: 1.6;
     margin: 0;
     position: relative;
@@ -834,7 +806,7 @@ main {
 
 .app-content .category {
     font-size: 0.875rem;
-    color: #e0e7ff;
+    color: #ffffff;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.8px;
@@ -883,18 +855,18 @@ main {
     align-items: center;
     justify-content: center;
     gap: 8px;
-    background: #1a2f5a;
+    background: #2d3748;
     color: white;
-    padding: 12px 24px;
+    padding: 14px 32px;
     border-radius: 12px;
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
     border: none;
     cursor: pointer;
-    min-width: 140px;
+    min-width: 160px;
     text-align: center;
     letter-spacing: -0.01em;
     position: relative;
@@ -918,7 +890,7 @@ main {
 
 .download-btn:hover {
     transform: translateY(-1px);
-    background: #0f1a35;
+    background: #1a202c;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
 }
 
@@ -1172,7 +1144,7 @@ body.dark {
 
 
 .github-project .category {
-    color: #e0e7ff;
+    color: #ffffff;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.8px;
