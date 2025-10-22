@@ -310,12 +310,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Wait for content to be rendered, then observe elements
     setTimeout(() => {
-        document.querySelectorAll('.app').forEach(app => {
-            observer.observe(app);
+        const apps = document.querySelectorAll('.app');
+
+        // Animate the first product immediately without scroll
+        if (apps.length > 0) {
+            apps[0].classList.add('animate');
+        }
+
+        // Observe remaining products
+        apps.forEach((app, index) => {
+            if (index > 0) {
+                observer.observe(app);
+            }
         });
 
         // Add staggered animation delays
-        document.querySelectorAll('.app').forEach((app, index) => {
+        apps.forEach((app, index) => {
             app.style.transitionDelay = `${index * 0.025}s`;
         });
     }, 100);
