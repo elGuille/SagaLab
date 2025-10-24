@@ -624,8 +624,8 @@ main {
 
 .app {
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: 4rem;
+    grid-template-columns: 1.7fr 0.5fr;
+    gap: 3rem;
     align-items: center;
     text-decoration: none;
     color: inherit;
@@ -682,7 +682,7 @@ main {
 }
 
 .app:nth-child(even) {
-    grid-template-columns: 0.8fr 1.2fr;
+    grid-template-columns: 0.5fr 1.7fr;
 }
 
 .app:nth-child(even) .app-image {
