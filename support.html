@@ -66,47 +66,23 @@
             <div class="container">
                 <div class="support-container">
                     <div class="support-form-wrapper">
-                        <h2>Report an Issue</h2>
+                        <h2>Get Support</h2>
                         <form class="support-form" id="supportForm">
-                            <!-- Platform Field -->
-                            <div class="form-group">
-                                <label for="platform">Which platform are you experiencing the issue on?</label>
-                                <select id="platform" name="platform" required>
-                                    <option value="">Select a platform...</option>
-                                    <option value="ios">iOS</option>
-                                    <option value="android">Android</option>
-                                </select>
-                            </div>
-
-                            <!-- App Name Field -->
-                            <div class="form-group">
-                                <label for="appName">Which app or tool?</label>
-                                <select id="appName" name="appName" required>
-                                    <option value="">Select an app...</option>
-                                    <option value="3-tasks">3 Tasks</option>
-                                    <option value="fast-ai">Fast AI</option>
-                                    <option value="brainy-ai">Brainy AI Helper</option>
-                                    <option value="crypton">Crypton</option>
-                                    <option value="focus-meditation">Focus Meditation</option>
-                                    <option value="keeper">Keeper Private Folder</option>
-                                </select>
-                            </div>
-
                             <!-- Email Field -->
                             <div class="form-group">
                                 <label for="email">Your Email</label>
                                 <input type="email" id="email" name="email" required placeholder="you@example.com">
                             </div>
 
-                            <!-- Description Field -->
+                            <!-- Message Field -->
                             <div class="form-group">
-                                <label for="description">Describe the Issue</label>
-                                <textarea id="description" name="description" required placeholder="Please provide as much detail as possible. What were you trying to do? What happened instead? Any error messages?" rows="6"></textarea>
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" required placeholder="Tell us what you need help with..." rows="6"></textarea>
                             </div>
 
-                            <button type="submit" class="cta-primary">Submit Support Ticket</button>
+                            <button type="submit" class="cta-primary">Send Message</button>
                         </form>
-                        <p class="form-note">We'll get back to you as soon as possible at the email you provide.</p>
+                        <p class="form-note">We'll respond to your email shortly.</p>
                     </div>
                 </div>
             </div>
@@ -145,21 +121,17 @@
             e.preventDefault();
 
             // Collect form data
-            const formData = {
-                platform: document.getElementById('platform').value,
-                app: document.getElementById('appName').value,
-                email: document.getElementById('email').value,
-                description: document.getElementById('description').value
-            };
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
 
             // Create mailto link with form data
-            const mailtoLink = `mailto:sagalabs@proton.me?subject=Support Request - ${formData.app} (${formData.platform})&body=Platform: ${formData.platform}%0DApp: ${formData.app}%0DEmail: ${formData.email}%0D%0DDescription:%0D${encodeURIComponent(formData.description)}`;
+            const mailtoLink = `mailto:sagalabs@proton.me?subject=Support Request from ${encodeURIComponent(email)}&body=From: ${encodeURIComponent(email)}%0D%0D${encodeURIComponent(message)}`;
 
             // Open email client
             window.location.href = mailtoLink;
 
             // Show success message
-            alert('Thank you for your submission! Your email client will open to send the support request.');
+            alert('Thank you! Your email client will open to send the message.');
         });
     </script>
 </body>
