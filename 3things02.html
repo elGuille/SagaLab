@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" type="image/svg+xml" href="images/3tasks-favicon.svg" />
   <title>3 Tasks — Master Your Day, Everyday</title>
   <meta name="description" content="Transform your productivity. Focus on 3 tasks daily and watch your progress skyrocket." />
   <meta property="og:title" content="3 Tasks — Master Your Day, Everyday" />
@@ -42,25 +43,51 @@
     }
     .wrap {
       min-height: 100vh;
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 50px;
       padding: clamp(12px, 3vw, 30px);
-      max-width: 100%;
+      max-width: 1400px;
       margin: 0 auto;
+      align-items: start;
     }
     .hero {
       text-align: center;
-      margin-bottom: clamp(12px, 2vw, 20px);
+      margin-bottom: 0;
       animation: fadeInDown 0.8s ease-out;
       flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
     }
     .logo-img {
       width: clamp(80px, 15vw, 140px);
       height: auto;
-      margin-bottom: clamp(8px, 2vw, 16px);
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(109, 40, 217, 0.15);
+      margin-bottom: 0;
+      border-radius: 0;
+      box-shadow: none;
       transition: transform 0.3s ease;
+      order: -1;
+    }
+    @media (min-width: 1024px) {
+      .wrap {
+        grid-template-columns: 1fr 2fr;
+        gap: 80px;
+      }
+      .hero {
+        text-align: center;
+        align-items: center;
+        grid-column: 2;
+        grid-row: 1;
+        order: 0;
+      }
+      .logo-img {
+        width: clamp(400px, 50vw, 600px);
+        grid-column: 1;
+        grid-row: 1;
+        order: 0;
+      }
     }
     .logo-img:hover {
       transform: scale(1.03);
@@ -86,6 +113,11 @@
       margin-bottom: clamp(16px, 2.5vw, 24px);
       animation: fadeInUp 0.8s ease-out 0.2s backwards;
       flex-shrink: 0;
+    }
+    @media (min-width: 1024px) {
+      .benefits {
+        grid-column: 1 / -1;
+      }
     }
     .benefit-card {
       background: transparent;
@@ -130,11 +162,21 @@
       animation: fadeInUp 0.8s ease-out 0.4s backwards;
       flex-shrink: 0;
     }
+    @keyframes vibrate {
+      0%, 100% { transform: rotate(0deg); }
+      2%, 98% { transform: rotate(0deg); }
+      5% { transform: rotate(-3deg); }
+      8% { transform: rotate(3deg); }
+      11% { transform: rotate(-3deg); }
+      14% { transform: rotate(3deg); }
+      17% { transform: rotate(-3deg); }
+      20% { transform: rotate(0deg); }
+    }
     .cta {
       display: inline-block;
       text-decoration: none;
-      background: var(--btn);
-      color: var(--btnfg);
+      background: #3b82f6;
+      color: #fff;
       border-radius: 12px;
       padding: clamp(12px, 2.5vw, 16px) clamp(28px, 6vw, 48px);
       font-size: clamp(15px, 2.2vw, 20px);
@@ -146,29 +188,13 @@
       transition: all 0.2s ease;
       position: relative;
       overflow: hidden;
-      box-shadow: 0 6px 20px rgba(0, 113, 227, 0.25);
-    }
-    .cta::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 0;
-      height: 0;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.15);
-      transform: translate(-50%, -50%);
-      transition: width 0.6s, height 0.6s;
+      animation: vibrate 2.5s linear infinite;
     }
     .cta:hover {
-      box-shadow: 0 8px 25px rgba(0, 113, 227, 0.35);
+      box-shadow: 0 8px 25px rgba(59, 130, 246, 0.35);
     }
     .cta:active {
-      transform: scale(0.98);
-    }
-    .cta:active::before {
-      width: 300px;
-      height: 300px;
+      transform: translateY(1px);
     }
     .highlights {
       display: none;
@@ -179,6 +205,17 @@
       margin-bottom: clamp(8px, 1.5vw, 12px);
       animation: fadeInUp 0.8s ease-out 0.3s backwards;
       flex-shrink: 0;
+    }
+    @media (min-width: 1024px) {
+      .highlights {
+        grid-column: 1 / -1;
+      }
+      .cta-section {
+        grid-column: 1 / -1;
+      }
+      footer {
+        grid-column: 1 / -1;
+      }
     }
     .highlights-title {
       font-size: clamp(12px, 1.8vw, 15px);
@@ -209,7 +246,7 @@
       flex-shrink: 0;
     }
     footer {
-      margin-top: auto;
+      margin-top: 40px;
       padding-top: clamp(6px, 1vw, 10px);
       text-align: center;
       font-size: 10px;
@@ -291,7 +328,7 @@
 
   <main class="wrap">
     <section class="hero">
-      <img src="images/3Things.jpg" alt="3 Tasks App Icon" class="logo-img" />
+      <img src="images/3tasks.png" alt="3 Tasks App Icon" class="logo-img" />
       <h1>Master Your Day.<br/>Every Single Day.</h1>
       <p class="subtitle">The revolutionary way to achieve more by doing less.</p>
     </section>
