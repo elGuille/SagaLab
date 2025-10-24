@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Create email body
             const emailBody = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
-            const mailtoLink = `mailto:shogn@icloud.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+            const mailtoLink = `mailto:sagalabs@proton.me?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
             
             // Open email client
             window.location.href = mailtoLink;
