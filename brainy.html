@@ -129,7 +129,7 @@
     </div>
   </main>
 
-  <!-- Optional: lightweight click tracking (no SDK). Replace with your GA/Pixel if needed. -->
+  <!-- UTM Parameter Tracking and TikTok Pixel Events -->
   <script>
     (function(){
       const params = new URLSearchParams(location.search);
@@ -141,6 +141,16 @@
           const url = new URL(a.href);
           Object.entries(utm).forEach(([k,v])=> url.searchParams.set(k,v));
           a.href = url.toString();
+          // Track app download click with TikTok Pixel
+          a.addEventListener('click', function() {
+            ttq.track('CompleteRegistration', {
+              "contents": [{
+                "content_id": "brainy-app",
+                "content_type": "product",
+                "content_name": "Brainy - Imagine AI Art"
+              }]
+            });
+          });
         } catch(e){}
       });
     })();
