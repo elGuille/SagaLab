@@ -68,6 +68,21 @@
                     <div class="support-form-wrapper">
                         <h2>Get Support</h2>
                         <form class="support-form" id="supportForm">
+                            <!-- App Name Field -->
+                            <div class="form-group">
+                                <label for="appName">Which app?</label>
+                                <select id="appName" name="appName" required>
+                                    <option value="">Select an app...</option>
+                                    <option value="3-tasks">3 Tasks</option>
+                                    <option value="fast-ai">Fast AI</option>
+                                    <option value="brainy-ai">Brainy AI Helper</option>
+                                    <option value="crypton">Crypton</option>
+                                    <option value="focus-meditation">Focus Meditation</option>
+                                    <option value="keeper">Keeper Private Folder</option>
+                                    <option value="other">Other/General</option>
+                                </select>
+                            </div>
+
                             <!-- Email Field -->
                             <div class="form-group">
                                 <label for="email">Your Email</label>
@@ -77,7 +92,7 @@
                             <!-- Message Field -->
                             <div class="form-group">
                                 <label for="message">Your Message</label>
-                                <textarea id="message" name="message" required placeholder="Tell us what you need help with..." rows="6"></textarea>
+                                <textarea id="message" name="message" required placeholder="Describe your issue or question..." rows="6"></textarea>
                             </div>
 
                             <button type="submit" class="cta-primary">Send Message</button>
@@ -121,11 +136,12 @@
             e.preventDefault();
 
             // Collect form data
+            const app = document.getElementById('appName').value;
             const email = document.getElementById('email').value;
             const message = document.getElementById('message').value;
 
             // Create mailto link with form data
-            const mailtoLink = `mailto:sagalabs@proton.me?subject=Support Request from ${encodeURIComponent(email)}&body=From: ${encodeURIComponent(email)}%0D%0D${encodeURIComponent(message)}`;
+            const mailtoLink = `mailto:sagalabs@proton.me?subject=Support: ${encodeURIComponent(app)}&body=App: ${encodeURIComponent(app)}%0DEmail: ${encodeURIComponent(email)}%0D%0D${encodeURIComponent(message)}`;
 
             // Open email client
             window.location.href = mailtoLink;
