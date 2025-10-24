@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             name: 'Fast AI',
             category: 'Education',
-            image: 'images/fastai.png',
+            image: 'images/fastAI.jpg',
             description: 'Learn machine learning from beginner to advanced. Access practical courses and tools for building AI models with PyTorch.',
             link: 'https://apps.apple.com/app/fast-ai/id',
             cta: 'Start Learning',
