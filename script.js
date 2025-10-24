@@ -183,23 +183,24 @@ document.addEventListener('DOMContentLoaded', function() {
             appStoreFeatured: true
         },
         {
-            name: 'Drop: Relax Focus & Sleep',
-            category: 'Health & Fitness',
-            image: 'images/drop.png',
-            description: 'Find inner peace with guided meditations. Designed to help you relax, focus better, and sleep soundly. Perfect for busy minds seeking calm.',
-            link: 'https://apps.apple.com/au/app/drop-relax-focus-sleep-well/id1462269642',
-            cta: 'Start Meditating',
-            techStack: ['Swift', 'AVFoundation', 'HealthKit', 'Core Audio', 'iOS'],
-            appStoreFeatured: true
+            name: 'Fast AI',
+            category: 'Education',
+            image: 'images/fastai.png',
+            description: 'Learn machine learning from beginner to advanced. Access practical courses and tools for building AI models with PyTorch.',
+            link: 'https://apps.apple.com/app/fast-ai/id',
+            cta: 'Start Learning',
+            techStack: ['Swift', 'Python', 'PyTorch', 'Core ML', 'iOS'],
+            appStoreFeatured: false
         },
         {
-            name: 'Only Gallery',
-            category: 'Utilities',
-            image: 'images/photolock.png',
-            description: 'Protect your private moments with military-grade encryption. Keep your personal photos and videos secure from prying eyes.',
-            link: 'https://apps.apple.com/au/app/only-gallery-keeper/id1532670722',
-            cta: 'Secure Photos',
-            techStack: ['Swift', 'CryptoKit', 'PhotoKit', 'Biometrics', 'iOS']
+            name: 'Brainy: AI Helper',
+            category: 'Productivity',
+            image: 'images/brainyapp.png',
+            description: 'Your personal AI assistant for writing, brainstorming, and creative tasks. Powered by advanced language models.',
+            link: 'https://apps.apple.com/au/app/brainy-imagine-ai-art/id1667947372',
+            cta: 'Get Help',
+            techStack: ['Swift', 'OpenAI', 'Claude API', 'Core ML', 'iOS'],
+            appStoreFeatured: true
         },
         {
             name: 'Crypton: Crypto Tracker',
@@ -208,17 +209,28 @@ document.addEventListener('DOMContentLoaded', function() {
             description: 'Stay ahead of crypto markets with real-time tracking and portfolio insights. Monitor trends and manage your digital assets with confidence.',
             link: 'https://apps.apple.com/au/app/crypton-crypto-tracker/id1143691286',
             cta: 'Track Portfolio',
-            techStack: ['Swift', 'CoinGecko API', 'Charts', 'Push Notifications', 'iOS']
+            techStack: ['Swift', 'CoinGecko API', 'Charts', 'Push Notifications', 'iOS'],
+            appStoreFeatured: false
         },
         {
-            name: 'Brainy: Imagine AI Art',
-            category: 'Productivity',
-            image: 'images/brainyapp.png',
-            description: 'Transform your ideas into stunning AI-generated artwork. Create unique digital art pieces with the power of artificial intelligence.',
-            link: 'https://apps.apple.com/au/app/brainy-imagine-ai-art/id1667947372',
-            cta: 'Create Art',
-            techStack: ['Swift', 'OpenAI', 'Stable Diffusion', 'Core ML', 'iOS'],
+            name: 'Focus Meditation',
+            category: 'Health & Wellness',
+            image: 'images/drop.png',
+            description: 'Find inner peace with guided meditations and sleep sounds. Reduce stress, improve focus, and sleep better.',
+            link: 'https://apps.apple.com/au/app/drop-relax-focus-sleep-well/id1462269642',
+            cta: 'Start Meditating',
+            techStack: ['Swift', 'AVFoundation', 'HealthKit', 'Core Audio', 'iOS'],
             appStoreFeatured: true
+        },
+        {
+            name: 'Keeper: Private Folder',
+            category: 'Security',
+            image: 'images/photolock.png',
+            description: 'Protect your private moments with military-grade encryption. Keep your photos, videos, and documents completely secure.',
+            link: 'https://apps.apple.com/au/app/only-gallery-keeper/id1532670722',
+            cta: 'Secure Files',
+            techStack: ['Swift', 'CryptoKit', 'PhotoKit', 'Biometrics', 'iOS'],
+            appStoreFeatured: false
         }
     ];
 
