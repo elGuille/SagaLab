@@ -64,6 +64,11 @@
       font-size: clamp(16px, 2.8vw, 24px);
       color:var(--muted);
     }
+    @keyframes vibrate {
+      0%, 100% { transform: translateX(0); }
+      25% { transform: translateX(-2px); }
+      75% { transform: translateX(2px); }
+    }
     .cta {
       display:inline-block;
       text-decoration:none;
@@ -76,6 +81,7 @@
       letter-spacing: 0.2px;
       line-height:1;
       transition: transform .06s ease;
+      animation: vibrate 0.4s ease-in-out 2s infinite;
     }
     .cta:active { transform: translateY(1px); }
     footer {
