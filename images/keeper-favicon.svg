@@ -1,3 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <text x="32" y="48" font-size="48" font-weight="900" font-family="system-ui, -apple-system, sans-serif" fill="#3b82f6" text-anchor="middle">K</text>
-</svg>
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><text fill="#3b82f6" font-family="system-ui, -apple-system, sans-serif" font-size="48" font-weight="900" text-anchor="middle" x="32" y="48">K</text></svg>

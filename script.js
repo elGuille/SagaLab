@@ -173,6 +173,16 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const mobileApps = [
         {
+            name: 'Dora Make Videos with Sora 2',
+            category: 'Video Creation',
+            image: 'images/dora.png',
+            description: 'Make stunning videos with OpenAI\'s powerful Sora 2. Transform your imagination into reality with AI-powered video generation in seconds.',
+            link: 'https://apps.apple.com/us/app/id6754180384',
+            cta: 'Make Videos',
+            techStack: ['SwiftUI', 'Sora 2', 'OpenAI', 'Video Processing', 'iOS'],
+            appStoreFeatured: true
+        },
+        {
             name: '3 Tasks: Daily Productivity',
             category: 'Productivity',
             image: 'images/3tasks.png',

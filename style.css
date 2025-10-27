@@ -752,7 +752,7 @@ main {
 }
 
 /* Rebalancer specific styling - straight images */
-.app[data-index="2"] .dual-shot .secondary {
+.app[data-index="8"] .dual-shot .secondary {
     transform: translate(-50%, -50%);
     /* remove rotation for straight alignment */
 }
@@ -771,13 +771,13 @@ main {
 }
 
 /* Rebalancer hover effect - keep straight */
-.app[data-index="2"]:hover .dual-shot .secondary {
+.app[data-index="8"]:hover .dual-shot .secondary {
     transform: translate(-50%, -50%) scale(1.005);
     /* no rotation on hover */
 }
 
 /* AI Trading Bot specific styling - notification overlay effect */
-.app[data-index="1"] .dual-shot .primary {
+.app[data-index="7"] .dual-shot .primary {
     left: 65%;
     top: 20%;
     transform: translate(-50%, -50%);
@@ -790,7 +790,7 @@ main {
     border-radius: 12px;
 }
 
-.app[data-index="1"] .dual-shot .secondary {
+.app[data-index="7"] .dual-shot .secondary {
     left: 50%;
     top: 60%;
     transform: translate(-50%, -50%);
@@ -803,12 +803,12 @@ main {
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
 }
 
-.app[data-index="1"]:hover .dual-shot .primary {
+.app[data-index="7"]:hover .dual-shot .primary {
     transform: translate(-50%, -47%) scale(1.02);
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3), 0 12px 30px rgba(0, 0, 0, 0.2);
 }
 
-.app[data-index="1"]:hover .dual-shot .secondary {
+.app[data-index="7"]:hover .dual-shot .secondary {
     transform: translate(-50%, -50%) scale(1.01);
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
 }
@@ -1554,14 +1554,21 @@ body.dark {
 
 
 
-/* Foro specific styling */
+/* DORA specific styling - prevent image cutoff */
 .app[data-index="0"] img {
+    width: 100%;
+    height: 800px;
+    object-fit: contain;
+}
+
+/* Foro specific styling */
+.app[data-index="1"] img {
     width: 115%;
     height: 690px;
     border-radius: 16px;
 }
 
-.app[data-index="0"] .app-image {
+.app[data-index="1"] .app-image {
     height: 690px;
 }
 
@@ -1903,14 +1910,14 @@ body.dark {
     }
 
     /* AI Trading Bot mobile adjustments */
-    .app[data-index="1"] .dual-shot .primary {
+    .app[data-index="7"] .dual-shot .primary {
         left: 62%;
         top: 22%;
         max-width: 45%;
         max-height: 60%;
     }
 
-    .app[data-index="1"] .dual-shot .secondary {
+    .app[data-index="7"] .dual-shot .secondary {
         left: 50%;
         top: 60%;
         max-width: 100%;
@@ -1918,32 +1925,32 @@ body.dark {
     }
 
     /* Mobile adjustments for specific images */
-    .app[data-index="4"] img {
+    .app[data-index="5"] img {
         width: 96%;
         height: 480px;
         border-radius: 16px;
     }
 
-    .app[data-index="4"] .app-image {
+    .app[data-index="5"] .app-image {
         height: 480px;
     }
 
-    .app[data-index="7"] img {
+    .app[data-index="8"] img {
         width: 126%;
         height: 630px;
     }
 
-    .app[data-index="7"] .app-image {
+    .app[data-index="8"] .app-image {
         height: 630px;
     }
 
     /* Foro mobile adjustments */
-    .app[data-index="0"] img {
+    .app[data-index="1"] img {
         width: 115%;
         height: 552px;
     }
 
-    .app[data-index="0"] .app-image {
+    .app[data-index="1"] .app-image {
         height: 552px;
     }
 
@@ -2074,14 +2081,14 @@ body.dark {
     }
 
     /* AI Trading Bot small mobile adjustments */
-    .app[data-index="1"] .dual-shot .primary {
+    .app[data-index="7"] .dual-shot .primary {
         left: 60%;
         top: 22%;
         max-width: 50%;
         max-height: 60%;
     }
 
-    .app[data-index="1"] .dual-shot .secondary {
+    .app[data-index="7"] .dual-shot .secondary {
         left: 50%;
         top: 60%;
         max-width: 100%;
@@ -2089,32 +2096,32 @@ body.dark {
     }
 
     /* Mobile adjustments for specific images */
-    .app[data-index="4"] img {
+    .app[data-index="5"] img {
         width: 96%;
         height: 384px;
         border-radius: 16px;
     }
 
-    .app[data-index="4"] .app-image {
+    .app[data-index="5"] .app-image {
         height: 384px;
     }
 
-    .app[data-index="7"] img {
+    .app[data-index="8"] img {
         width: 126%;
         height: 504px;
     }
 
-    .app[data-index="7"] .app-image {
+    .app[data-index="8"] .app-image {
         height: 504px;
     }
 
     /* Foro small mobile adjustments */
-    .app[data-index="0"] img {
+    .app[data-index="1"] img {
         width: 115%;
         height: 442px;
     }
 
-    .app[data-index="0"] .app-image {
+    .app[data-index="1"] .app-image {
         height: 442px;
     }
 
