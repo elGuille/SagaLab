@@ -1,27 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Home Page -->
   <url>
-    <loc>https://sagalab.ai/</loc>
-    <lastmod>2025-01-21</lastmod>
+    <loc>https://sagalab.co/</loc>
+    <lastmod>2025-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://sagalab.co/images/preview.jpg</image:loc>
+      <image:title>Saga AI Research Labs</image:title>
+    </image:image>
   </url>
+
+  <!-- App Landing Pages -->
   <url>
-    <loc>https://sagalab.ai/privacy.html</loc>
-    <lastmod>2025-01-21</lastmod>
+    <loc>https://sagalab.co/dora.html</loc>
+    <lastmod>2025-10-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
-    <loc>https://sagalab.ai/terms.html</loc>
-    <lastmod>2025-01-21</lastmod>
+    <loc>https://sagalab.co/keeper.html</loc>
+    <lastmod>2025-10-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://sagalab.ai/contact.html</loc>
-    <lastmod>2025-01-21</lastmod>
+    <loc>https://sagalab.co/brainy.html</loc>
+    <lastmod>2025-10-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.8</priority>
   </url>
+
+  <url>
+    <loc>https://sagalab.co/3things.html</loc>
+    <lastmod>2025-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://sagalab.co/3things02.html</loc>
+    <lastmod>2025-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://sagalab.co/fastai.html</loc>
+    <lastmod>2025-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://sagalab.co/privacy.html</loc>
+    <lastmod>2025-10-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://sagalab.co/terms.html</loc>
+    <lastmod>2025-10-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://sagalab.co/contact.html</loc>
+    <lastmod>2025-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://sagalab.co/support.html</loc>
+    <lastmod>2025-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
