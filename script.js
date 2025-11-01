@@ -317,4 +317,161 @@ document.addEventListener('DOMContentLoaded', function() {
             app.style.transitionDelay = `${index * 0.025}s`;
         });
     }, 100);
+
+    // ===== DARK MODE TOGGLE =====
+    function toggleTheme() {
+        const isDark = document.body.classList.toggle('dark-mode');
+        const icon = document.getElementById('theme-icon');
+        const text = document.getElementById('theme-text');
+
+        if (isDark) {
+            icon.textContent = '☀️';
+            text.textContent = 'Light';
+            localStorage.setItem('theme', 'dark');
+        } else {
+            icon.textContent = '🌙';
+            text.textContent = 'Dark';
+            localStorage.setItem('theme', 'light');
+        }
+    }
+
+    // Initialize theme from saved preference
+    window.toggleTheme = toggleTheme;
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark' ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches && !savedTheme)) {
+        document.body.classList.add('dark-mode');
+        document.getElementById('theme-icon').textContent = '☀️';
+        document.getElementById('theme-text').textContent = 'Light';
+    }
+
+    // ===== NEURAL NETWORK CANVAS =====
+    class NeuralNetwork {
+        constructor(canvasId) {
+            this.canvas = document.getElementById(canvasId);
+            if (!this.canvas) return;
+
+            this.ctx = this.canvas.getContext('2d');
+            this.width = this.canvas.offsetWidth;
+            this.height = this.canvas.offsetHeight;
+
+            this.nodes = [];
+            this.mouse = { x: this.width / 2, y: this.height / 2 };
+            this.connectionDistance = 150;
+            this.nodeCount = 25;
+            this.time = 0;
+
+            this.resizeCanvas();
+            this.initNodes();
+            this.animate();
+
+            window.addEventListener('resize', () => this.resizeCanvas());
+            document.addEventListener('mousemove', (e) => this.handleMouseMove(e));
+        }
+
+        resizeCanvas() {
+            this.width = this.canvas.width = this.canvas.offsetWidth;
+            this.height = this.canvas.height = this.canvas.offsetHeight;
+        }
+
+        initNodes() {
+            this.nodes = [];
+            for (let i = 0; i < this.nodeCount; i++) {
+                this.nodes.push({
+                    x: Math.random() * this.width,
+                    y: Math.random() * this.height,
+                    vx: (Math.random() - 0.5) * 0.3,
+                    vy: (Math.random() - 0.5) * 0.3,
+                    radius: 2 + Math.random() * 2,
+                    baseOpacity: 0.3 + Math.random() * 0.3
+                });
+            }
+        }
+
+        handleMouseMove(e) {
+            const rect = this.canvas.getBoundingClientRect();
+            this.mouse.x = e.clientX - rect.left;
+            this.mouse.y = e.clientY - rect.top;
+        }
+
+        animate() {
+            this.time++;
+            this.ctx.clearRect(0, 0, this.width, this.height);
+
+            // Update nodes
+            this.nodes.forEach(node => {
+                node.x += node.vx;
+                node.y += node.vy;
+
+                // Bounce off edges with smooth wrapping
+                if (node.x < 0) node.x = this.width;
+                if (node.x > this.width) node.x = 0;
+                if (node.y < 0) node.y = this.height;
+                if (node.y > this.height) node.y = 0;
+
+                // Add subtle sine wave motion
+                node.vx += Math.sin(this.time * 0.01 + node.x * 0.01) * 0.001;
+                node.vy += Math.cos(this.time * 0.01 + node.y * 0.01) * 0.001;
+
+                // Limit velocity
+                const speed = Math.sqrt(node.vx * node.vx + node.vy * node.vy);
+                if (speed > 0.5) {
+                    node.vx = (node.vx / speed) * 0.5;
+                    node.vy = (node.vy / speed) * 0.5;
+                }
+            });
+
+            // Draw connections
+            this.nodes.forEach((node1, i) => {
+                this.nodes.forEach((node2, j) => {
+                    if (i < j) {
+                        const dx = node1.x - node2.x;
+                        const dy = node1.y - node2.y;
+                        const distance = Math.sqrt(dx * dx + dy * dy);
+
+                        if (distance < this.connectionDistance) {
+                            const opacity = (1 - distance / this.connectionDistance) * 0.2;
+                            const isDark = document.body.classList.contains('dark-mode');
+                            const color = isDark
+                                ? `rgba(0, 122, 255, ${opacity})`
+                                : `rgba(0, 122, 255, ${opacity * 0.6})`;
+
+                            this.ctx.strokeStyle = color;
+                            this.ctx.lineWidth = 0.5;
+                            this.ctx.beginPath();
+                            this.ctx.moveTo(node1.x, node1.y);
+                            this.ctx.lineTo(node2.x, node2.y);
+                            this.ctx.stroke();
+                        }
+                    }
+                });
+            });
+
+            // Draw nodes
+            this.nodes.forEach(node => {
+                const dx = node.x - this.mouse.x;
+                const dy = node.y - this.mouse.y;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+                const influence = Math.max(0, 1 - distance / 200);
+                const pulsate = 0.5 + Math.sin(this.time * 0.02 + node.x * 0.01) * 0.5;
+
+                const isDark = document.body.classList.contains('dark-mode');
+                const baseOpacity = node.baseOpacity * pulsate;
+                const totalOpacity = Math.min(1, baseOpacity + influence * 0.5);
+                const color = isDark
+                    ? `rgba(0, 122, 255, ${totalOpacity})`
+                    : `rgba(0, 122, 255, ${totalOpacity * 0.7})`;
+
+                this.ctx.fillStyle = color;
+                this.ctx.beginPath();
+                this.ctx.arc(node.x, node.y, node.radius + influence * 1.5, 0, Math.PI * 2);
+                this.ctx.fill();
+            });
+
+            requestAnimationFrame(() => this.animate());
+        }
+    }
+
+    // Initialize neural network
+    new NeuralNetwork('neural-network-canvas');
 });

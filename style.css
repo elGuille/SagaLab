@@ -11,6 +11,101 @@ body {
     text-rendering: optimizeLegibility;
 }
 
+/* ===== DARK MODE STYLES ===== */
+body.dark-mode {
+    background-color: #0b0b0c;
+    color: #e5e7eb;
+}
+
+body.dark-mode .nav-logo h1,
+body.dark-mode .nav-logo,
+body.dark-mode .nav-menu a {
+    color: #e5e7eb;
+}
+
+body.dark-mode .nav-menu a:hover {
+    color: #a1a1a6;
+}
+
+body.dark-mode .hero-section {
+    background: #0b0b0c;
+}
+
+body.dark-mode footer {
+    background-color: #1a1a1b;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode footer p {
+    color: #a1a1a6;
+}
+
+body.dark-mode .footer-links a,
+body.dark-mode .footer-social a {
+    color: #a1a1a6;
+    transition: color 0.2s ease;
+}
+
+body.dark-mode .footer-links a:hover,
+body.dark-mode .footer-social a:hover {
+    color: #e5e7eb;
+}
+
+/* ===== THEME TOGGLE BUTTON ===== */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    padding: 10px 18px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #1d1d1f;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.theme-toggle:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 122, 255, 0.15);
+}
+
+.theme-toggle:active {
+    transform: scale(0.95);
+}
+
+body.dark-mode .theme-toggle {
+    background: rgba(30, 30, 32, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #e5e7eb;
+}
+
+body.dark-mode .theme-toggle:hover {
+    box-shadow: 0 8px 20px rgba(0, 122, 255, 0.25);
+}
+
+/* ===== NEURAL NETWORK CANVAS ===== */
+#neural-network-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.08;
+    z-index: 1;
+}
+
+body.dark-mode #neural-network-canvas {
+    opacity: 0.12;
+}
+
 /* Navigation Styles */
 .main-nav {
     position: relative;
@@ -126,6 +221,10 @@ body {
     border-radius: 2px;
 }
 
+body.dark-mode .nav-toggle span {
+    background: #e5e7eb;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -150,6 +249,10 @@ body {
     min-height: auto;
     display: flex;
     align-items: center;
+}
+
+body.dark-mode .hero-section {
+    background: #0b0b0c;
 }
 
 /* Swarm particles animation removed from hero */
@@ -570,18 +673,25 @@ body {
 .expertise-item {
     text-align: center;
     padding: 2.5rem;
-    background: linear-gradient(135deg, #1E40AF 0%, #2563EB 35%, #3B82F6 65%, #60A5FA 85%, #93C5FD 100%);
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 20px;
-    border: none;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
     position: relative;
     overflow: hidden;
-    box-shadow: 0 12px 30px rgba(30, 64, 175, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 122, 255, 0.08);
     min-height: 280px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+body.dark-mode .expertise-item {
+    background: rgba(30, 30, 32, 0.6);
+    border: 1px solid rgba(0, 122, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 122, 255, 0.12);
 }
 
 /* Animated particles background for expertise items */
@@ -593,8 +703,8 @@ body {
     right: 0;
     bottom: 0;
     background:
-        radial-gradient(circle 2px, rgba(255, 255, 255, 0.15) 50%, transparent 50%),
-        radial-gradient(circle 2px, rgba(255, 255, 255, 0.1) 50%, transparent 50%);
+        radial-gradient(circle 2px, rgba(0, 122, 255, 0.08) 50%, transparent 50%),
+        radial-gradient(circle 2px, rgba(0, 122, 255, 0.05) 50%, transparent 50%);
     background-size: 200px 200px, 250px 250px;
     background-position: 0% 0%, 25% 25%;
     animation: swarmMove 25s ease-in-out infinite;
@@ -602,9 +712,21 @@ body {
     z-index: 1;
 }
 
+body.dark-mode .expertise-item::before {
+    background:
+        radial-gradient(circle 2px, rgba(0, 122, 255, 0.12) 50%, transparent 50%),
+        radial-gradient(circle 2px, rgba(0, 122, 255, 0.08) 50%, transparent 50%);
+}
+
 .expertise-item:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 50px rgba(30, 64, 175, 0.3);
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 16px 48px rgba(0, 122, 255, 0.15);
+}
+
+body.dark-mode .expertise-item:hover {
+    background: rgba(30, 30, 32, 0.8);
+    box-shadow: 0 16px 48px rgba(0, 122, 255, 0.25);
 }
 
 .expertise-icon {
@@ -617,18 +739,26 @@ body {
 .expertise-item h3 {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #ffffff;
+    color: #1d1d1f;
     margin: 0 0 1rem 0;
     position: relative;
     z-index: 2;
 }
 
+body.dark-mode .expertise-item h3 {
+    color: #e5e7eb;
+}
+
 .expertise-item p {
-    color: rgba(255, 255, 255, 0.95);
+    color: rgba(29, 29, 31, 0.75);
     line-height: 1.6;
     margin: 0;
     position: relative;
     z-index: 2;
+}
+
+body.dark-mode .expertise-item p {
+    color: rgba(229, 231, 235, 0.85);
 }
 
 main {
@@ -656,10 +786,19 @@ main {
     opacity: 0;
     transform: translateY(50px);
     transition: all 0.4s ease;
-    background: #ffffff;
-    border-radius: 0;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
     padding: 3rem 4rem;
     overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 122, 255, 0.06);
+}
+
+body.dark-mode .app {
+    background: rgba(30, 30, 32, 0.5);
+    border: 1px solid rgba(0, 122, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 122, 255, 0.1);
 }
 
 .app.animate {
@@ -857,6 +996,10 @@ main {
     color: #1d1d1f;
 }
 
+body.dark-mode .app-content h3 {
+    color: #e5e7eb;
+}
+
 .app-content .category {
     font-size: 0.875rem;
     color: #6e6e73;
@@ -865,6 +1008,10 @@ main {
     letter-spacing: 0.8px;
     margin-bottom: 1.5rem;
     display: block;
+}
+
+body.dark-mode .app-content .category {
+    color: #a1a1a6;
 }
 
 .tech-stack {
@@ -878,18 +1025,28 @@ main {
     display: inline-flex;
     align-items: center;
     padding: 6px 12px;
-    background: rgba(255, 255, 255, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(0, 122, 255, 0.1);
+    border: 1px solid rgba(0, 122, 255, 0.2);
     border-radius: 6px;
     font-size: 0.8rem;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.9);
+    color: #007AFF;
     transition: all 0.2s ease;
 }
 
+body.dark-mode .tech-badge {
+    background: rgba(0, 122, 255, 0.15);
+    border-color: rgba(0, 122, 255, 0.3);
+}
+
 .tech-badge:hover {
-    background: rgba(255, 255, 255, 0.25);
-    border-color: rgba(255, 255, 255, 0.4);
+    background: rgba(0, 122, 255, 0.2);
+    border-color: rgba(0, 122, 255, 0.4);
+}
+
+body.dark-mode .tech-badge:hover {
+    background: rgba(0, 122, 255, 0.25);
+    border-color: rgba(0, 122, 255, 0.5);
 }
 
 .app-store-badge {
@@ -901,6 +1058,10 @@ main {
     color: #6e6e73;
     margin-bottom: 2.5rem;
     line-height: 1.6;
+}
+
+body.dark-mode .app-content .description {
+    color: #a1a1a6;
 }
 
 .download-btn {
