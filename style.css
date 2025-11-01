@@ -57,26 +57,30 @@ body.dark-mode .footer-social a:hover {
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 1.2rem;
-    color: #6e6e73;
-    padding: 4px 8px;
-    transition: all 0.2s ease;
+    font-size: 1rem;
+    color: #8e8e93;
+    padding: 2px 6px;
+    transition: color 0.2s ease, opacity 0.2s ease;
     display: flex;
     align-items: center;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 .nav-theme-toggle:hover {
-    opacity: 1;
-    transform: scale(1.15);
+    opacity: 0.9;
+    color: #555555;
 }
 
 .nav-theme-toggle:active {
-    transform: scale(0.95);
+    opacity: 1;
 }
 
 body.dark-mode .nav-theme-toggle {
-    color: #a1a1a6;
+    color: #888888;
+}
+
+body.dark-mode .nav-theme-toggle:hover {
+    color: #cccccc;
 }
 
 /* ===== NEURAL NETWORK CANVAS - FULL PAGE ===== */
@@ -86,14 +90,14 @@ body.dark-mode .nav-theme-toggle {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.4;
+    opacity: 0.55;
     z-index: 0;
     display: block;
     pointer-events: none;
 }
 
 body.dark-mode #neural-network-canvas {
-    opacity: 0.5;
+    opacity: 0.65;
 }
 
 /* Navigation Styles */
@@ -434,7 +438,7 @@ body.dark-mode .hero-subtitle {
 .cta {
     display: inline-block;
     text-decoration: none;
-    background: #3b82f6;
+    background: linear-gradient(135deg, #007AFF 0%, #0084FF 100%);
     color: #fff;
     border-radius: 14px;
     padding: 14px 32px;
@@ -442,13 +446,51 @@ body.dark-mode .hero-subtitle {
     font-weight: 800;
     letter-spacing: 0.2px;
     line-height: 1;
-    transition: transform 0.06s ease;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
     border: none;
     cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 122, 255, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.cta::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+    pointer-events: none;
+}
+
+.cta:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 122, 255, 0.4), 0 0 20px rgba(0, 150, 255, 0.2);
+    background: linear-gradient(135deg, #0084FF 0%, #00A3FF 100%);
+}
+
+.cta:hover::before {
+    width: 300px;
+    height: 300px;
 }
 
 .cta:active {
-    transform: translateY(1px);
+    transform: translateY(0) scale(0.98);
+    box-shadow: 0 2px 8px rgba(0, 122, 255, 0.3);
+}
+
+body.dark-mode .cta {
+    box-shadow: 0 4px 20px rgba(0, 150, 255, 0.4);
+}
+
+body.dark-mode .cta:hover {
+    box-shadow: 0 8px 30px rgba(0, 150, 255, 0.5), 0 0 30px rgba(0, 180, 255, 0.3);
+    background: linear-gradient(135deg, #00A3FF 0%, #00CCFF 100%);
 }
 
 /* Tech Logos Section */

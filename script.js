@@ -356,8 +356,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
             this.nodes = [];
             this.mouse = { x: this.width / 2, y: this.height / 2 };
-            this.connectionDistance = 180;
-            this.nodeCount = 40;
+            this.connectionDistance = 220;
+            this.nodeCount = 70;
             this.time = 0;
 
             this.resizeCanvas();
@@ -381,8 +381,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     y: Math.random() * this.height,
                     vx: (Math.random() - 0.5) * 0.3,
                     vy: (Math.random() - 0.5) * 0.3,
-                    radius: 2.5 + Math.random() * 2.5,
-                    baseOpacity: 0.5 + Math.random() * 0.4
+                    radius: 3 + Math.random() * 4,
+                    baseOpacity: 0.65 + Math.random() * 0.3
                 });
             }
         }
@@ -429,11 +429,11 @@ document.addEventListener('DOMContentLoaded', function() {
                         const distance = Math.sqrt(dx * dx + dy * dy);
 
                         if (distance < this.connectionDistance) {
-                            const opacity = (1 - distance / this.connectionDistance) * 0.4;
+                            const opacity = (1 - distance / this.connectionDistance) * 0.5;
                             const isDark = document.body.classList.contains('dark-mode');
                             const color = isDark
-                                ? `rgba(0, 122, 255, ${opacity})`
-                                : `rgba(0, 122, 255, ${opacity * 0.8})`;
+                                ? `rgba(0, 150, 255, ${opacity})`
+                                : `rgba(0, 150, 255, ${opacity * 0.9})`;
 
                             this.ctx.strokeStyle = color;
                             this.ctx.lineWidth = 1;
@@ -458,8 +458,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 const baseOpacity = node.baseOpacity * pulsate;
                 const totalOpacity = Math.min(1, baseOpacity + influence * 0.6);
                 const color = isDark
-                    ? `rgba(0, 122, 255, ${totalOpacity * 0.9})`
-                    : `rgba(0, 122, 255, ${totalOpacity * 0.85})`;
+                    ? `rgba(0, 180, 255, ${totalOpacity * 0.95})`
+                    : `rgba(0, 150, 255, ${totalOpacity * 0.9})`;
 
                 this.ctx.fillStyle = color;
                 this.ctx.beginPath();
