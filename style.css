@@ -9,6 +9,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    position: relative;
 }
 
 /* ===== DARK MODE STYLES ===== */
@@ -89,16 +90,17 @@ body.dark-mode .theme-toggle {
     color: #a1a1a6;
 }
 
-/* ===== NEURAL NETWORK CANVAS ===== */
+/* ===== NEURAL NETWORK CANVAS - FULL PAGE ===== */
 #neural-network-canvas {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     opacity: 0.25;
-    z-index: 1;
+    z-index: 0;
     display: block;
+    pointer-events: none;
 }
 
 body.dark-mode #neural-network-canvas {
@@ -111,6 +113,7 @@ body.dark-mode #neural-network-canvas {
     z-index: 1000;
     background: transparent;
     transition: all 0.3s ease;
+    pointer-events: auto;
 }
 
 
@@ -241,7 +244,7 @@ body.dark-mode .nav-toggle span {
     padding: 4rem 0 2rem 0;
     text-align: center;
     position: relative;
-    z-index: 10;
+    z-index: 1;
     background: #ffffff;
     overflow: hidden;
     margin-top: 0;
@@ -787,6 +790,8 @@ body.dark-mode .expertise-item p {
 main {
     padding: 0;
     margin-bottom: 3rem;
+    position: relative;
+    z-index: 1;
 }
 
 .app-grid {
@@ -1135,6 +1140,8 @@ footer {
     margin-top: 6rem;
     background: #3B82F6;
     border-top: none;
+    position: relative;
+    z-index: 1;
 }
 
 body.dark-mode footer {
