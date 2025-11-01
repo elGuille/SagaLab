@@ -321,16 +321,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // ===== DARK MODE TOGGLE =====
     function toggleTheme() {
         const isDark = document.body.classList.toggle('dark-mode');
-        const icon = document.getElementById('theme-icon');
-        const text = document.getElementById('theme-text');
+        const icon = document.getElementById('nav-theme-icon');
 
         if (isDark) {
             icon.textContent = '☀️';
-            text.textContent = 'Light';
             localStorage.setItem('theme', 'dark');
         } else {
             icon.textContent = '🌙';
-            text.textContent = 'Dark';
             localStorage.setItem('theme', 'light');
         }
     }
@@ -341,8 +338,10 @@ document.addEventListener('DOMContentLoaded', function() {
     if (savedTheme === 'dark' ||
         (window.matchMedia('(prefers-color-scheme: dark)').matches && !savedTheme)) {
         document.body.classList.add('dark-mode');
-        document.getElementById('theme-icon').textContent = '☀️';
-        document.getElementById('theme-text').textContent = 'Light';
+        const icon = document.getElementById('nav-theme-icon');
+        if (icon) {
+            icon.textContent = '☀️';
+        }
     }
 
     // ===== NEURAL NETWORK CANVAS =====

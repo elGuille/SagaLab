@@ -52,41 +52,30 @@ body.dark-mode .footer-social a:hover {
     color: #e5e7eb;
 }
 
-/* ===== THEME TOGGLE BUTTON ===== */
-.theme-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1001;
-    background: transparent;
+/* ===== THEME TOGGLE IN NAV MENU ===== */
+.nav-theme-toggle {
+    background: none;
     border: none;
-    border-radius: 50%;
-    padding: 8px;
     cursor: pointer;
-    font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #6e6e73;
+    padding: 4px 8px;
     transition: all 0.2s ease;
     display: flex;
     align-items: center;
-    gap: 0;
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
-#theme-text {
-    display: none;
-}
-
-.theme-toggle:hover {
+.nav-theme-toggle:hover {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
 
-.theme-toggle:active {
+.nav-theme-toggle:active {
     transform: scale(0.95);
 }
 
-body.dark-mode .theme-toggle {
+body.dark-mode .nav-theme-toggle {
     color: #a1a1a6;
 }
 
@@ -97,14 +86,14 @@ body.dark-mode .theme-toggle {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.25;
+    opacity: 0.4;
     z-index: 0;
     display: block;
     pointer-events: none;
 }
 
 body.dark-mode #neural-network-canvas {
-    opacity: 0.35;
+    opacity: 0.5;
 }
 
 /* Navigation Styles */
@@ -695,14 +684,14 @@ body.dark-mode .section-header p {
 .expertise-item {
     text-align: center;
     padding: 2.5rem;
-    background: rgba(255, 255, 255, 0.7);
+    background: linear-gradient(135deg, rgba(173, 216, 255, 0.85) 0%, rgba(224, 240, 255, 0.9) 100%);
     backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(0, 122, 255, 0.4);
     border-radius: 20px;
     transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
     position: relative;
     overflow: hidden;
-    box-shadow: 0 8px 32px rgba(0, 122, 255, 0.08);
+    box-shadow: 0 8px 32px rgba(0, 122, 255, 0.15);
     min-height: 280px;
     display: flex;
     flex-direction: column;
@@ -711,9 +700,9 @@ body.dark-mode .section-header p {
 }
 
 body.dark-mode .expertise-item {
-    background: rgba(30, 30, 32, 0.6);
-    border: 1px solid rgba(0, 122, 255, 0.2);
-    box-shadow: 0 8px 32px rgba(0, 122, 255, 0.12);
+    background: linear-gradient(135deg, rgba(0, 122, 255, 0.5) 0%, rgba(0, 150, 255, 0.4) 100%);
+    border: 1px solid rgba(0, 150, 255, 0.5);
+    box-shadow: 0 8px 32px rgba(0, 122, 255, 0.2);
 }
 
 /* Animated particles background for expertise items */
@@ -742,13 +731,13 @@ body.dark-mode .expertise-item::before {
 
 .expertise-item:hover {
     transform: translateY(-8px);
-    background: rgba(255, 255, 255, 0.85);
-    box-shadow: 0 16px 48px rgba(0, 122, 255, 0.15);
+    background: linear-gradient(135deg, rgba(135, 206, 250, 0.9) 0%, rgba(200, 230, 255, 0.95) 100%);
+    box-shadow: 0 16px 48px rgba(0, 122, 255, 0.25);
 }
 
 body.dark-mode .expertise-item:hover {
-    background: rgba(30, 30, 32, 0.8);
-    box-shadow: 0 16px 48px rgba(0, 122, 255, 0.25);
+    background: linear-gradient(135deg, rgba(0, 122, 255, 0.65) 0%, rgba(0, 170, 255, 0.55) 100%);
+    box-shadow: 0 16px 48px rgba(0, 150, 255, 0.35);
 }
 
 .expertise-icon {
@@ -814,7 +803,7 @@ main {
     opacity: 0;
     transform: translateY(50px);
     transition: all 0.4s ease;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 20px;
@@ -824,7 +813,7 @@ main {
 }
 
 body.dark-mode .app {
-    background: rgba(30, 30, 32, 0.5);
+    background: rgba(30, 30, 32, 0.85);
     border: 1px solid rgba(0, 122, 255, 0.15);
     box-shadow: 0 8px 32px rgba(0, 122, 255, 0.1);
 }
