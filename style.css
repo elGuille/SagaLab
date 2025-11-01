@@ -57,18 +57,18 @@ body.dark-mode .footer-social a:hover {
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 1rem;
-    color: #8e8e93;
-    padding: 2px 6px;
-    transition: color 0.2s ease, opacity 0.2s ease;
+    font-size: 0.95rem;
+    color: #4a4a4a;
+    padding: 2px 4px;
+    transition: color 0.2s ease;
     display: flex;
     align-items: center;
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
 .nav-theme-toggle:hover {
-    opacity: 0.9;
-    color: #555555;
+    opacity: 0.85;
+    color: #2a2a2a;
 }
 
 .nav-theme-toggle:active {
@@ -76,11 +76,11 @@ body.dark-mode .footer-social a:hover {
 }
 
 body.dark-mode .nav-theme-toggle {
-    color: #888888;
+    color: #555555;
 }
 
 body.dark-mode .nav-theme-toggle:hover {
-    color: #cccccc;
+    color: #999999;
 }
 
 /* ===== NEURAL NETWORK CANVAS - FULL PAGE ===== */
@@ -90,14 +90,14 @@ body.dark-mode .nav-theme-toggle:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.55;
+    opacity: 0.7;
     z-index: 0;
     display: block;
     pointer-events: none;
 }
 
 body.dark-mode #neural-network-canvas {
-    opacity: 0.65;
+    opacity: 0.8;
 }
 
 /* Navigation Styles */
