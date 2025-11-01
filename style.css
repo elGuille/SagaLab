@@ -96,12 +96,13 @@ body.dark-mode .theme-toggle {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.08;
+    opacity: 0.25;
     z-index: 1;
+    display: block;
 }
 
 body.dark-mode #neural-network-canvas {
-    opacity: 0.12;
+    opacity: 0.35;
 }
 
 /* Navigation Styles */

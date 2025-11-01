@@ -357,8 +357,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
             this.nodes = [];
             this.mouse = { x: this.width / 2, y: this.height / 2 };
-            this.connectionDistance = 150;
-            this.nodeCount = 25;
+            this.connectionDistance = 180;
+            this.nodeCount = 40;
             this.time = 0;
 
             this.resizeCanvas();
@@ -382,8 +382,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     y: Math.random() * this.height,
                     vx: (Math.random() - 0.5) * 0.3,
                     vy: (Math.random() - 0.5) * 0.3,
-                    radius: 2 + Math.random() * 2,
-                    baseOpacity: 0.3 + Math.random() * 0.3
+                    radius: 2.5 + Math.random() * 2.5,
+                    baseOpacity: 0.5 + Math.random() * 0.4
                 });
             }
         }
@@ -430,14 +430,14 @@ document.addEventListener('DOMContentLoaded', function() {
                         const distance = Math.sqrt(dx * dx + dy * dy);
 
                         if (distance < this.connectionDistance) {
-                            const opacity = (1 - distance / this.connectionDistance) * 0.2;
+                            const opacity = (1 - distance / this.connectionDistance) * 0.4;
                             const isDark = document.body.classList.contains('dark-mode');
                             const color = isDark
                                 ? `rgba(0, 122, 255, ${opacity})`
-                                : `rgba(0, 122, 255, ${opacity * 0.6})`;
+                                : `rgba(0, 122, 255, ${opacity * 0.8})`;
 
                             this.ctx.strokeStyle = color;
-                            this.ctx.lineWidth = 0.5;
+                            this.ctx.lineWidth = 1;
                             this.ctx.beginPath();
                             this.ctx.moveTo(node1.x, node1.y);
                             this.ctx.lineTo(node2.x, node2.y);
@@ -457,10 +457,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 const isDark = document.body.classList.contains('dark-mode');
                 const baseOpacity = node.baseOpacity * pulsate;
-                const totalOpacity = Math.min(1, baseOpacity + influence * 0.5);
+                const totalOpacity = Math.min(1, baseOpacity + influence * 0.6);
                 const color = isDark
-                    ? `rgba(0, 122, 255, ${totalOpacity})`
-                    : `rgba(0, 122, 255, ${totalOpacity * 0.7})`;
+                    ? `rgba(0, 122, 255, ${totalOpacity * 0.9})`
+                    : `rgba(0, 122, 255, ${totalOpacity * 0.85})`;
 
                 this.ctx.fillStyle = color;
                 this.ctx.beginPath();
