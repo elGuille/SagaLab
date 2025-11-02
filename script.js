@@ -322,12 +322,15 @@ document.addEventListener('DOMContentLoaded', function() {
     function toggleTheme() {
         const isDark = document.body.classList.toggle('dark-mode');
         const icon = document.getElementById('nav-theme-icon');
+        const iconPath = icon.querySelector('path');
 
         if (isDark) {
-            icon.textContent = '☀️';
+            // Sun icon
+            iconPath.setAttribute('d', 'M12 17.5c3.038 0 5.5-2.462 5.5-5.5S15.038 6.5 12 6.5 6.5 8.962 6.5 12s2.462 5.5 5.5 5.5zm0-13V3m0 18v-1.5m6.364-13.864L17.657 6.343M6.343 17.657l-.707.707m12.728 0l.707.707M6.343 6.343l-.707-.707M21 12h1.5M3 12H1.5');
             localStorage.setItem('theme', 'dark');
         } else {
-            icon.textContent = '🌙';
+            // Moon icon
+            iconPath.setAttribute('d', 'M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z');
             localStorage.setItem('theme', 'light');
         }
     }
@@ -340,7 +343,10 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.classList.add('dark-mode');
         const icon = document.getElementById('nav-theme-icon');
         if (icon) {
-            icon.textContent = '☀️';
+            const iconPath = icon.querySelector('path');
+            if (iconPath) {
+                iconPath.setAttribute('d', 'M12 17.5c3.038 0 5.5-2.462 5.5-5.5S15.038 6.5 12 6.5 6.5 8.962 6.5 12s2.462 5.5 5.5 5.5zm0-13V3m0 18v-1.5m6.364-13.864L17.657 6.343M6.343 17.657l-.707.707m12.728 0l.707.707M6.343 6.343l-.707-.707M21 12h1.5M3 12H1.5');
+            }
         }
     }
 
