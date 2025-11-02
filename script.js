@@ -388,8 +388,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     y: Math.random() * this.height,
                     vx: (Math.random() - 0.5) * 0.3,
                     vy: (Math.random() - 0.5) * 0.3,
-                    radius: 3.5 + Math.random() * 4.5,
-                    baseOpacity: 0.75 + Math.random() * 0.25
+                    radius: 3 + Math.random() * 3.5,
+                    baseOpacity: 0.55 + Math.random() * 0.35
                 });
             }
         }
@@ -436,14 +436,14 @@ document.addEventListener('DOMContentLoaded', function() {
                         const distance = Math.sqrt(dx * dx + dy * dy);
 
                         if (distance < this.connectionDistance) {
-                            const opacity = (1 - distance / this.connectionDistance) * 0.65;
+                            const opacity = (1 - distance / this.connectionDistance) * 0.4;
                             const isDark = document.body.classList.contains('dark-mode');
                             const color = isDark
                                 ? `rgba(50, 180, 255, ${opacity})`
                                 : `rgba(30, 170, 255, ${opacity})`;
 
                             this.ctx.strokeStyle = color;
-                            this.ctx.lineWidth = 1.5;
+                            this.ctx.lineWidth = 1;
                             this.ctx.beginPath();
                             this.ctx.moveTo(node1.x, node1.y);
                             this.ctx.lineTo(node2.x, node2.y);
@@ -463,14 +463,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 const isDark = document.body.classList.contains('dark-mode');
                 const baseOpacity = node.baseOpacity * pulsate;
-                const totalOpacity = Math.min(1, baseOpacity + influence * 0.7);
+                const totalOpacity = Math.min(0.85, baseOpacity + influence * 0.5);
                 const color = isDark
                     ? `rgba(80, 200, 255, ${totalOpacity})`
                     : `rgba(50, 180, 255, ${totalOpacity})`;
 
                 this.ctx.fillStyle = color;
                 this.ctx.beginPath();
-                this.ctx.arc(node.x, node.y, node.radius + influence * 2, 0, Math.PI * 2);
+                this.ctx.arc(node.x, node.y, node.radius + influence * 1.5, 0, Math.PI * 2);
                 this.ctx.fill();
             });
 

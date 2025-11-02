@@ -90,14 +90,14 @@ body.dark-mode .nav-theme-toggle:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.7;
+    opacity: 0.35;
     z-index: 0;
     display: block;
     pointer-events: none;
 }
 
 body.dark-mode #neural-network-canvas {
-    opacity: 0.8;
+    opacity: 0.45;
 }
 
 /* Navigation Styles */
