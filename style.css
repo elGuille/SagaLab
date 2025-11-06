@@ -1018,7 +1018,7 @@ body.dark-mode .app {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     padding: 20px 0;
 }
 
@@ -1028,7 +1028,7 @@ body.dark-mode .app {
     top: auto;
     transform: none;
     z-index: 1;
-    max-width: 45%;
+    max-width: 56%;
     max-height: 85%;
     border-radius: 28px;
     /* iPhone-like rounded corners */
@@ -1041,7 +1041,7 @@ body.dark-mode .app {
     top: auto;
     transform: none;
     z-index: 1;
-    max-width: 45%;
+    max-width: 56%;
     max-height: 85%;
     border-radius: 28px;
     /* iPhone-like rounded corners */
@@ -2187,14 +2187,14 @@ body.dark {
         height: 600px;
     }
 
-    /* Dual-shot mobile sizing */
-    .app .dual-shot .primary {
+    /* Dual-shot mobile sizing - exclude Pinku */
+    .app:not([data-index="1"]) .dual-shot .primary {
         left: 68%;
         max-width: 66%;
         transform: translate(-50%, -50%);
     }
 
-    .app .dual-shot .secondary {
+    .app:not([data-index="1"]) .dual-shot .secondary {
         max-width: 104%;
         transform: translate(-50%, -50%) rotate(-2deg);
     }
@@ -2267,11 +2267,21 @@ body.dark {
         flex-direction: column;
         gap: 15px;
         padding: 10px 0;
+        position: relative;
+        height: auto;
+    }
+
+    .app[data-index="1"] .app-image {
+        height: auto !important;
     }
 
     .app[data-index="1"] .dual-shot .primary,
     .app[data-index="1"] .dual-shot .secondary {
-        max-width: 80%;
+        position: relative !important;
+        left: auto !important;
+        top: auto !important;
+        transform: none !important;
+        max-width: 100%;
         max-height: none;
     }
 

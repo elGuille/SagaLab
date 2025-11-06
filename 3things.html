@@ -143,12 +143,17 @@
       position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden;
       clip:rect(0,0,0,0); border:0;
     }
+    @media (max-width: 640px) {
+      .card {
+        text-align: center;
+      }
+      h1, p, .cta {
+        text-align: center;
+      }
+    }
   </style>
 </head>
 <body>
-  <a class="cta sticky-cta" href="https://apps.apple.com/au/app/id1553693943" aria-label="Download on the App Store (sticky)">
-    Download on the App Store
-  </a>
 
   <main class="wrap">
     <div class="card">

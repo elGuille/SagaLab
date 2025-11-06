@@ -153,16 +153,57 @@
       position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden;
       clip:rect(0,0,0,0); border:0;
     }
+    .screenshots-gallery {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: clamp(20px, 4vw, 40px);
+      width: 100%;
+      order: -1;
+    }
+    .screenshot {
+      width: clamp(160px, 22vw, 280px);
+      height: auto;
+      border-radius: 28px;
+      box-shadow: 0 15px 45px rgba(255, 105, 180, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+    .screenshot:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 20px 55px rgba(255, 105, 180, 0.25), 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+    @media (min-width: 1024px) {
+      .screenshots-gallery {
+        grid-column: 1;
+        grid-row: 1;
+        order: 0;
+      }
+    }
+    @media (max-width: 640px) {
+      .card {
+        text-align: center;
+      }
+      h1, p, .cta {
+        text-align: center;
+      }
+      .screenshots-gallery {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 20px;
+      }
+      .screenshot {
+        width: clamp(240px, 75vw, 320px);
+      }
+    }
   </style>
 </head>
 <body>
-  <a class="cta sticky-cta" href="https://apps.apple.com/us/app/pinku-private-ai/id6754878073" aria-label="Download on the App Store (sticky)">
-    Download on the App Store
-  </a>
-
   <main class="wrap">
     <div class="card">
-      <img src="images/pinku logo.png" alt="Pinku Private AI Assistant" class="logo-img" loading="lazy" />
+      <div class="screenshots-gallery">
+        <img src="images/pinku chat.PNG" alt="Pinku AI Chat Interface" class="screenshot" loading="lazy" />
+        <img src="images/pinku installing.PNG" alt="Pinku Installing AI Models" class="screenshot" loading="lazy" />
+      </div>
       <div class="card-content">
         <h1>Pinku<br/>Private AI<br/>Assistant</h1>
         <p>Your personal AI that runs entirely on-device. Fast, private conversations with zero data collection. Works offline with complete privacy.</p>
