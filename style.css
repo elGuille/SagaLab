@@ -1013,6 +1013,52 @@ body.dark-mode .app {
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
 }
 
+/* Pinku Private AI specific styling - Side-by-side iPhone mockups */
+.app[data-index="1"] .dual-shot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.app[data-index="1"] .dual-shot .primary {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    z-index: 1;
+    max-width: 45%;
+    max-height: 85%;
+    border-radius: 28px;
+    /* iPhone-like rounded corners */
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.app[data-index="1"] .dual-shot .secondary {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    z-index: 1;
+    max-width: 45%;
+    max-height: 85%;
+    border-radius: 28px;
+    /* iPhone-like rounded corners */
+    opacity: 1;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.app[data-index="1"]:hover .dual-shot .primary {
+    transform: scale(1.02);
+    box-shadow: 0 20px 55px rgba(0, 0, 0, 0.2), 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.app[data-index="1"]:hover .dual-shot .secondary {
+    transform: scale(1.02);
+    box-shadow: 0 20px 55px rgba(0, 0, 0, 0.2), 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
 /* 3 Tasks image - still 20% smaller than the new larger base */
 .app[data-index="4"] img {
     width: 96%;
@@ -2205,6 +2251,7 @@ body.dark {
     .app-content {
         order: 2 !important;
         padding: 1rem;
+        align-items: center;
     }
 
     .app-content h3 {
@@ -2213,6 +2260,19 @@ body.dark {
 
     .app-content .description {
         font-size: 1.3rem;
+    }
+
+    /* Pinku side-by-side mobile - stack vertically */
+    .app[data-index="1"] .dual-shot {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px 0;
+    }
+
+    .app[data-index="1"] .dual-shot .primary,
+    .app[data-index="1"] .dual-shot .secondary {
+        max-width: 80%;
+        max-height: none;
     }
 
     footer {
