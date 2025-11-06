@@ -1013,52 +1013,6 @@ body.dark-mode .app {
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
 }
 
-/* Pinku Private AI specific styling - Side-by-side iPhone mockups */
-.app[data-index="1"] .dual-shot {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    padding: 20px 0;
-}
-
-.app[data-index="1"] .dual-shot .primary {
-    position: relative;
-    left: auto;
-    top: auto;
-    transform: none;
-    z-index: 1;
-    max-width: 56%;
-    max-height: 85%;
-    border-radius: 28px;
-    /* iPhone-like rounded corners */
-    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.app[data-index="1"] .dual-shot .secondary {
-    position: relative;
-    left: auto;
-    top: auto;
-    transform: none;
-    z-index: 1;
-    max-width: 56%;
-    max-height: 85%;
-    border-radius: 28px;
-    /* iPhone-like rounded corners */
-    opacity: 1;
-    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.app[data-index="1"]:hover .dual-shot .primary {
-    transform: scale(1.02);
-    box-shadow: 0 20px 55px rgba(0, 0, 0, 0.2), 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-.app[data-index="1"]:hover .dual-shot .secondary {
-    transform: scale(1.02);
-    box-shadow: 0 20px 55px rgba(0, 0, 0, 0.2), 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
 /* Crypton: Crypto Tracker - 25% bigger */
 .app[data-index="4"] img {
     width: 120%;
@@ -1851,7 +1805,7 @@ body.dark {
     object-fit: contain;
 }
 
-/* Foro specific styling */
+/* Pinku specific styling - combined horizontal screenshot */
 .app[data-index="1"] img {
     width: 115%;
     height: 690px;
@@ -2187,14 +2141,14 @@ body.dark {
         height: 600px;
     }
 
-    /* Dual-shot mobile sizing - exclude Pinku */
-    .app:not([data-index="1"]) .dual-shot .primary {
+    /* Dual-shot mobile sizing */
+    .app .dual-shot .primary {
         left: 68%;
         max-width: 66%;
         transform: translate(-50%, -50%);
     }
 
-    .app:not([data-index="1"]) .dual-shot .secondary {
+    .app .dual-shot .secondary {
         max-width: 104%;
         transform: translate(-50%, -50%) rotate(-2deg);
     }

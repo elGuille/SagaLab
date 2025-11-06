@@ -185,8 +185,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             name: 'Pinku Private AI',
             category: 'Productivity',
-            image: 'images/pinku logo.png',
-            gallery: ['images/pinku chat.PNG', 'images/pinku installing.PNG'],
+            image: 'images/pinku.png',
             description: 'Your personal AI assistant that runs entirely on-device. Fast, private conversations powered by advanced language models with zero data collection. Works offline with complete privacy.',
             link: 'https://apps.apple.com/us/app/pinku-private-ai/id6754878073',
             cta: 'Get Pinku',
