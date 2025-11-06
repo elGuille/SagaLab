@@ -726,14 +726,14 @@ body.dark-mode .section-header p {
 .expertise-item {
     text-align: center;
     padding: 2.5rem;
-    background: linear-gradient(135deg, rgba(173, 216, 255, 0.85) 0%, rgba(224, 240, 255, 0.9) 100%);
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
     backdrop-filter: blur(12px);
-    border: 1px solid rgba(0, 122, 255, 0.4);
+    border: 1px solid rgba(59, 130, 246, 0.8);
     border-radius: 20px;
     transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
     position: relative;
     overflow: hidden;
-    box-shadow: 0 8px 32px rgba(0, 122, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(59, 130, 246, 0.3);
     min-height: 280px;
     display: flex;
     flex-direction: column;
@@ -742,9 +742,9 @@ body.dark-mode .section-header p {
 }
 
 body.dark-mode .expertise-item {
-    background: linear-gradient(135deg, rgba(0, 122, 255, 0.5) 0%, rgba(0, 150, 255, 0.4) 100%);
-    border: 1px solid rgba(0, 150, 255, 0.5);
-    box-shadow: 0 8px 32px rgba(0, 122, 255, 0.2);
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+    border: 1px solid rgba(37, 99, 235, 0.8);
+    box-shadow: 0 8px 32px rgba(37, 99, 235, 0.4);
 }
 
 /* Animated particles background for expertise items */
@@ -756,8 +756,8 @@ body.dark-mode .expertise-item {
     right: 0;
     bottom: 0;
     background:
-        radial-gradient(circle 2px, rgba(0, 122, 255, 0.08) 50%, transparent 50%),
-        radial-gradient(circle 2px, rgba(0, 122, 255, 0.05) 50%, transparent 50%);
+        radial-gradient(circle 2px, rgba(255, 255, 255, 0.15) 50%, transparent 50%),
+        radial-gradient(circle 2px, rgba(255, 255, 255, 0.1) 50%, transparent 50%);
     background-size: 200px 200px, 250px 250px;
     background-position: 0% 0%, 25% 25%;
     animation: swarmMove 25s ease-in-out infinite;
@@ -767,47 +767,47 @@ body.dark-mode .expertise-item {
 
 body.dark-mode .expertise-item::before {
     background:
-        radial-gradient(circle 2px, rgba(0, 122, 255, 0.12) 50%, transparent 50%),
-        radial-gradient(circle 2px, rgba(0, 122, 255, 0.08) 50%, transparent 50%);
+        radial-gradient(circle 2px, rgba(255, 255, 255, 0.12) 50%, transparent 50%),
+        radial-gradient(circle 2px, rgba(255, 255, 255, 0.08) 50%, transparent 50%);
 }
 
 .expertise-item:hover {
     transform: translateY(-8px);
-    background: linear-gradient(135deg, rgba(135, 206, 250, 0.9) 0%, rgba(200, 230, 255, 0.95) 100%);
-    box-shadow: 0 16px 48px rgba(0, 122, 255, 0.25);
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    box-shadow: 0 16px 48px rgba(37, 99, 235, 0.45);
 }
 
 body.dark-mode .expertise-item:hover {
-    background: linear-gradient(135deg, rgba(0, 122, 255, 0.65) 0%, rgba(0, 170, 255, 0.55) 100%);
-    box-shadow: 0 16px 48px rgba(0, 150, 255, 0.35);
+    background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+    box-shadow: 0 16px 48px rgba(30, 64, 175, 0.55);
 }
 
 .expertise-icon {
     margin-bottom: 1.5rem;
-    color: #007AFF;
+    color: #ffffff;
     position: relative;
     z-index: 2;
 }
 
 body.dark-mode .expertise-icon {
-    color: #60A5FA;
+    color: #ffffff;
 }
 
 .expertise-item h3 {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #1d1d1f;
+    color: #ffffff;
     margin: 0 0 1rem 0;
     position: relative;
     z-index: 2;
 }
 
 body.dark-mode .expertise-item h3 {
-    color: #e5e7eb;
+    color: #ffffff;
 }
 
 .expertise-item p {
-    color: rgba(29, 29, 31, 0.75);
+    color: rgba(255, 255, 255, 0.9);
     line-height: 1.6;
     margin: 0;
     position: relative;
@@ -815,7 +815,7 @@ body.dark-mode .expertise-item h3 {
 }
 
 body.dark-mode .expertise-item p {
-    color: rgba(229, 231, 235, 0.85);
+    color: rgba(255, 255, 255, 0.9);
 }
 
 main {
@@ -1059,15 +1059,15 @@ body.dark-mode .app {
     box-shadow: 0 20px 55px rgba(0, 0, 0, 0.2), 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* 3 Tasks image - still 20% smaller than the new larger base */
+/* Crypton: Crypto Tracker - 25% bigger */
 .app[data-index="4"] img {
-    width: 96%;
-    height: 576px;
+    width: 120%;
+    height: 720px;
     border-radius: 16px;
 }
 
 .app[data-index="4"] .app-image {
-    height: 576px;
+    height: 720px;
 }
 
 /* Brainy image - reduced to fit container */
@@ -2215,6 +2215,16 @@ body.dark {
     }
 
     /* Mobile adjustments for specific images */
+    .app[data-index="4"] img {
+        width: 120%;
+        height: 576px;
+        border-radius: 16px;
+    }
+
+    .app[data-index="4"] .app-image {
+        height: 576px;
+    }
+
     .app[data-index="5"] img {
         width: 96%;
         height: 480px;
@@ -2410,6 +2420,16 @@ body.dark {
     }
 
     /* Mobile adjustments for specific images */
+    .app[data-index="4"] img {
+        width: 120%;
+        height: 460px;
+        border-radius: 16px;
+    }
+
+    .app[data-index="4"] .app-image {
+        height: 460px;
+    }
+
     .app[data-index="5"] img {
         width: 96%;
         height: 384px;

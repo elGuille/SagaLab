@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="icon" type="image/svg+xml" href="images/3tasks-favicon.svg" />
-  <title>3 Tasks — Focus on what matters</title>
-  <meta name="description" content="Do 3 important tasks. Every day." />
-  <meta property="og:title" content="3 Tasks — Focus on what matters" />
-  <meta property="og:description" content="Do 3 important tasks. Every day." />
+  <link rel="icon" type="image/png" href="images/crypton.png" />
+  <title>Crypton — Crypto Portfolio Tracker</title>
+  <meta name="description" content="Stay ahead of crypto markets with real-time tracking and portfolio insights. Monitor trends and manage your digital assets with confidence." />
+  <meta property="og:title" content="Crypton — Crypto Portfolio Tracker" />
+  <meta property="og:description" content="Stay ahead of crypto markets with real-time tracking and portfolio insights. Monitor trends and manage your digital assets with confidence." />
   <meta property="og:type" content="website" />
-  <link rel="canonical" href="https://sagalab.co/3things/">
+  <link rel="canonical" href="https://sagalab.co/crypton/">
   <style>
     :root { --bg:#fff; --fg:#0b0b0b; --muted:#5b5b5b; --btn:#111; --btnfg:#fff; }
     @media (prefers-color-scheme: dark) {
@@ -47,7 +47,7 @@
       gap: 20px;
     }
     .logo-img {
-      width: 280px;
+      width: clamp(380px, 50vw, 520px);
       height: auto;
       margin-bottom: 0;
       border-radius: 0;
@@ -56,18 +56,19 @@
       margin-left: auto;
       margin-right: auto;
     }
-    footer a {
-      color: var(--muted);
-      text-decoration: none;
-      transition: color 0.2s ease;
+    .logo-img img {
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      transition: box-shadow 0.3s ease;
     }
-    footer a:hover {
-      color: var(--fg);
-      text-decoration: underline;
+    .logo-img img:hover {
+      box-shadow: 0 20px 50px rgba(59, 130, 246, 0.2);
     }
     @media (min-width: 1024px) {
       .card {
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 1fr;
         max-width: 1400px;
         gap: 80px;
       }
@@ -79,7 +80,7 @@
         grid-row: 1;
       }
       .logo-img {
-        width: clamp(400px, 50vw, 600px);
+        width: 100%;
         grid-column: 1;
         grid-row: 1;
         order: 0;
@@ -153,49 +154,41 @@
       display: none;
     }
     @media (max-width: 640px) {
-      .sticky-cta { display: inline-block; }
-      .logo-img {
-        width: 280px;
-        margin-bottom: 30px;
-      }
-    }
-    .sr-only {
-      position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden;
-      clip:rect(0,0,0,0); border:0;
-    }
-    @media (max-width: 640px) {
       .card {
         text-align: center;
       }
       h1, p, .cta {
         text-align: center;
       }
+      .logo-img {
+        width: 280px;
+      }
+    }
+    .sr-only {
+      position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden;
+      clip:rect(0,0,0,0); border:0;
     }
   </style>
 </head>
 <body>
-
   <main class="wrap">
     <div class="card">
-      <img src="images/3tasks.png" alt="3 Tasks App" class="logo-img" />
+      <img src="images/crypton.png" alt="Crypton Crypto Portfolio Tracker" class="logo-img" loading="lazy" />
       <div class="card-content">
-        <h1>Do 3 tasks.<br/>Every day.</h1>
-        <p>Simple focus. Real progress.</p>
+        <h1>Crypton<br/>Crypto<br/>Tracker</h1>
+        <p>Stay ahead of crypto markets with real-time tracking and portfolio insights. Monitor trends and manage your digital assets with confidence.</p>
 
-        <!-- Replace the href with your Branch/Appsflyer OneLink if available.
-             Fallback: direct App Store URL below. -->
-        <a class="cta" href="https://apps.apple.com/au/app/id1553693943">
+        <a class="cta" href="https://apps.apple.com/au/app/crypton-crypto-tracker/id1143691286">
           Download on the App Store
         </a>
       </div>
       <footer>
-        
         <a href="privacy.html">Privacy</a> • <a href="terms.html">Terms</a>
       </footer>
     </div>
   </main>
 
-  <!-- Optional: lightweight click tracking (no SDK). Replace with your GA/Pixel if needed. -->
+  <!-- UTM Parameter Tracking -->
   <script>
     (function(){
       const params = new URLSearchParams(location.search);
@@ -211,7 +204,5 @@
       });
     })();
   </script>
-  <!-- Direct App Store fallback (use if you don't have OneLink):
-       https://apps.apple.com/au/app/3-tasks-daily-productivity/id1553693943?utm_source=meta&utm_medium=cpc&utm_campaign=main -->
 </body>
 </html>
