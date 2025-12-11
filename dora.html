@@ -1,51 +1,79 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="icon" type="image/svg+xml" href="images/Dora Logo.png" />
   <title>DORA — Create Videos with Sora 2</title>
-  <meta name="description" content="Create stunning videos with OpenAI's Sora 2. Transform your imagination into reality with AI-powered video generation." />
+  <meta name="description"
+    content="Create stunning videos with OpenAI's Sora 2. Transform your imagination into reality with AI-powered video generation." />
   <meta property="og:title" content="DORA — Create Videos with Sora 2" />
-  <meta property="og:description" content="Create stunning videos with OpenAI's Sora 2. Transform your imagination into reality with AI-powered video generation." />
+  <meta property="og:description"
+    content="Create stunning videos with OpenAI's Sora 2. Transform your imagination into reality with AI-powered video generation." />
   <meta property="og:type" content="website" />
   <link rel="canonical" href="https://sagalab.co/dora/">
   <style>
-    :root { --bg:#fff; --fg:#0b0b0b; --muted:#5b5b5b; --btn:#111; --btnfg:#fff; }
-    @media (prefers-color-scheme: dark) {
-      :root { --bg:#0b0b0b; --fg:#f8f8f8; --muted:#b5b5b5; --btn:#fff; --btnfg:#111; }
+    :root {
+      --bg: #fff;
+      --fg: #0b0b0b;
+      --muted: #5b5b5b;
+      --btn: #111;
+      --btnfg: #fff;
     }
-    * { box-sizing: border-box; }
-    html,body { height:100%; }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b0b0b;
+        --fg: #f8f8f8;
+        --muted: #b5b5b5;
+        --btn: #fff;
+        --btnfg: #111;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
     body {
-      margin:0;
-      background:var(--bg);
-      color:var(--fg);
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif;
       -webkit-font-smoothing: antialiased;
-      line-height:1.15;
+      line-height: 1.15;
     }
+
     .wrap {
-      min-height:100%;
-      display:grid;
-      place-items:center;
+      min-height: 100%;
+      display: grid;
+      place-items: center;
       padding: clamp(16px, 4vw, 48px);
     }
+
     .card {
-      text-align:center;
+      text-align: center;
       max-width: 1400px;
-      width:100%;
+      width: 100%;
       display: grid;
       grid-template-columns: 1fr;
       gap: 50px;
       align-items: center;
     }
+
     .card-content {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 20px;
     }
+
     .logo-img {
       width: clamp(380px, 50vw, 520px);
       height: auto;
@@ -56,6 +84,7 @@
       margin-left: auto;
       margin-right: auto;
     }
+
     .logo-img img {
       width: 100%;
       height: auto;
@@ -63,15 +92,18 @@
       box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
       transition: box-shadow 0.3s ease;
     }
+
     .logo-img img:hover {
       box-shadow: 0 20px 50px rgba(0, 122, 255, 0.2);
     }
+
     @media (min-width: 1024px) {
       .card {
         grid-template-columns: 1fr 1fr;
         max-width: 1400px;
         gap: 80px;
       }
+
       .card-content {
         gap: 28px;
         text-align: center;
@@ -79,6 +111,7 @@
         grid-column: 2;
         grid-row: 1;
       }
+
       .logo-img {
         width: 100%;
         grid-column: 1;
@@ -86,58 +119,95 @@
         order: 0;
       }
     }
+
     h1 {
-      margin:0 0 20px;
-      font-weight:800;
-      letter-spacing:-0.02em;
+      margin: 0 0 20px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
       font-size: clamp(40px, 8vw, 88px);
       line-height: 0.97;
     }
+
     p {
-      margin:0 0 28px;
+      margin: 0 0 28px;
       font-size: clamp(16px, 2.8vw, 24px);
-      color:var(--muted);
+      color: var(--muted);
     }
+
     @keyframes vibrate {
-      0%, 100% { transform: rotate(0deg); }
-      2%, 98% { transform: rotate(0deg); }
-      5% { transform: rotate(-3deg); }
-      8% { transform: rotate(3deg); }
-      11% { transform: rotate(-3deg); }
-      14% { transform: rotate(3deg); }
-      17% { transform: rotate(-3deg); }
-      20% { transform: rotate(0deg); }
+
+      0%,
+      100% {
+        transform: rotate(0deg);
+      }
+
+      2%,
+      98% {
+        transform: rotate(0deg);
+      }
+
+      5% {
+        transform: rotate(-3deg);
+      }
+
+      8% {
+        transform: rotate(3deg);
+      }
+
+      11% {
+        transform: rotate(-3deg);
+      }
+
+      14% {
+        transform: rotate(3deg);
+      }
+
+      17% {
+        transform: rotate(-3deg);
+      }
+
+      20% {
+        transform: rotate(0deg);
+      }
     }
+
     .cta {
-      display:inline-block;
-      text-decoration:none;
-      background:#3b82f6;
-      color:#fff;
+      display: inline-block;
+      text-decoration: none;
+      background: #3b82f6;
+      color: #fff;
       border-radius: 14px;
       padding: clamp(14px, 3.2vw, 22px) clamp(24px, 6vw, 40px);
       font-size: clamp(18px, 3.5vw, 28px);
       font-weight: 800;
       letter-spacing: 0.2px;
-      line-height:1;
+      line-height: 1;
       transition: transform .06s ease;
       animation: vibrate 2.5s linear infinite;
     }
-    .cta:active { transform: translateY(1px); }
+
+    .cta:active {
+      transform: translateY(1px);
+    }
+
     footer {
       margin-top: 28px;
       font-size: 12px;
       color: var(--muted);
-      opacity:.9;
+      opacity: .9;
     }
+
     footer a {
       color: var(--muted);
       text-decoration: none;
       transition: color 0.2s ease;
     }
+
     footer a:hover {
       color: var(--fg);
       text-decoration: underline;
     }
+
     @media (min-width: 1024px) {
       footer {
         grid-column: 1 / -1;
@@ -145,6 +215,7 @@
         text-align: center;
       }
     }
+
     .sticky-cta {
       position: fixed;
       left: 50%;
@@ -153,36 +224,53 @@
       z-index: 10;
       display: none;
     }
+
     @media (max-width: 640px) {
-      .sticky-cta { display: inline-block; }
+      .sticky-cta {
+        display: inline-block;
+      }
+
       .logo-img {
         width: 280px;
         margin-bottom: 30px;
       }
     }
+
     .sr-only {
-      position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden;
-      clip:rect(0,0,0,0); border:0;
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
     }
+
     @media (max-width: 640px) {
       .card {
         text-align: center;
       }
-      h1, p, .cta {
+
+      h1,
+      p,
+      .cta {
         text-align: center;
       }
     }
   </style>
 </head>
+
 <body>
   <main class="wrap">
     <div class="card">
       <img src="images/dora.png" alt="DORA Create Videos with Sora 2" class="logo-img" loading="lazy" />
       <div class="card-content">
-        <h1>Dora<br/>Make Videos<br/>with Sora 2</h1>
+        <h1>Dora<br />Make Videos<br />with Sora 2</h1>
         <p>Transform your imagination into stunning videos powered by OpenAI's advanced Sora 2 technology.</p>
 
-        <a class="cta" href="https://apps.apple.com/us/app/id6754180384">
+        <a class="cta"
+          href="https://apps.apple.com/us/app/id6754180384?utm_source=meta&utm_medium=paid_social&utm_campaign=meta_ads&utm_content=app_store_button">
           Download on the App Store
         </a>
       </div>
@@ -194,19 +282,20 @@
 
   <!-- UTM Parameter Tracking -->
   <script>
-    (function(){
+    (function () {
       const params = new URLSearchParams(location.search);
-      const utm = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term']
-        .reduce((acc,k)=>{ if(params.get(k)) acc[k]=params.get(k); return acc; },{});
+      const utm = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term']
+        .reduce((acc, k) => { if (params.get(k)) acc[k] = params.get(k); return acc; }, {});
       const links = document.querySelectorAll('.cta');
-      links.forEach(a=>{
+      links.forEach(a => {
         try {
           const url = new URL(a.href);
-          Object.entries(utm).forEach(([k,v])=> url.searchParams.set(k,v));
+          Object.entries(utm).forEach(([k, v]) => url.searchParams.set(k, v));
           a.href = url.toString();
-        } catch(e){}
+        } catch (e) { }
       });
     })();
   </script>
 </body>
+
 </html>
