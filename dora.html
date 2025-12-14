@@ -333,10 +333,55 @@
         width: 100px;
       }
 
+      /* Mobile Gallery Adjustments */
+      .gallery-container {
+        height: 70vh;
+        /* Taller on mobile to fill vertical space */
+        perspective: 800px;
+        /* Stronger perspective for small screen */
+        top: -10vh;
+      }
+
+      .gallery-track {
+        transform: rotateX(20deg) rotateY(0deg) rotateZ(-12deg) translateY(-20px) translateX(-20%);
+        padding: 40px 40px;
+      }
+
+      .gallery-item {
+        height: 300px;
+        /* Smaller images for mobile */
+        border-radius: 16px;
+        box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.25);
+      }
+
+      .card {
+        margin-top: 15vh;
+        /* Push content down more on mobile */
+        gap: 24px;
+      }
+
+      h1 {
+        font-size: clamp(36px, 11vw, 52px);
+        /* Tighter control on mobile heading */
+        padding: 0 10px;
+      }
+
+      p {
+        font-size: 18px;
+        padding: 0 10px;
+      }
+
+      .mini-logo {
+        top: 20px;
+        left: 20px;
+        font-size: 24px;
+      }
+
       .cta {
         padding: 14px 24px;
         width: 100%;
         border-radius: 14px;
+        justify-content: center;
       }
 
       .apple-icon {
@@ -347,9 +392,17 @@
       .cta-store {
         font-size: 22px;
       }
+    }
 
-      h1 {
-        font-size: 42px;
+    /* Extra small screens fix */
+    @media (max-width: 380px) {
+      .cta-store {
+        font-size: 20px;
+      }
+
+      .feature-pill {
+        font-size: 13px;
+        padding: 6px 12px;
       }
     }
   </style>
