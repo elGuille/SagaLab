@@ -39,21 +39,10 @@
 
   <style>
     :root {
-      --bg: #fff;
-      --fg: #0b0b0b;
-      --muted: #5b5b5b;
-      --btn: #111;
-      --btnfg: #fff;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #0b0b0b;
-        --fg: #f8f8f8;
-        --muted: #b5b5b5;
-        --btn: #fff;
-        --btnfg: #111;
-      }
+      --bg: #ffffff;
+      --fg: #111111;
+      --muted: #666666;
+      --accent-gradient: linear-gradient(135deg, #7c3aed 0%, #db2777 100%);
     }
 
     * {
@@ -69,195 +58,263 @@
       margin: 0;
       background: var(--bg);
       color: var(--fg);
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif;
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       -webkit-font-smoothing: antialiased;
       line-height: 1.15;
     }
 
     .wrap {
       min-height: 100%;
-      display: grid;
-      place-items: center;
-      padding: clamp(16px, 4vw, 48px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(24px, 5vw, 60px);
     }
 
     .card {
       text-align: center;
-      max-width: 1400px;
+      max-width: 1000px;
       width: 100%;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 50px;
-      align-items: center;
-    }
-
-    .card-content {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 20px;
+      gap: 40px;
     }
 
     .logo-img {
-      width: clamp(380px, 50vw, 520px);
+      width: clamp(120px, 20vw, 180px);
       height: auto;
-      margin-bottom: 0;
-      border-radius: 0;
-      box-shadow: none;
-      order: -1;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .logo-img img {
-      width: 100%;
-      height: auto;
-      border-radius: 16px;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-      transition: box-shadow 0.3s ease;
-    }
-
-    .logo-img img:hover {
-      box-shadow: 0 20px 50px rgba(0, 122, 255, 0.2);
-    }
-
-    @media (min-width: 1024px) {
-      .card {
-        grid-template-columns: 1fr 1fr;
-        max-width: 1400px;
-        gap: 80px;
-      }
-
-      .card-content {
-        gap: 28px;
-        text-align: center;
-        align-items: center;
-        grid-column: 2;
-        grid-row: 1;
-      }
-
-      .logo-img {
-        width: 100%;
-        grid-column: 1;
-        grid-row: 1;
-        order: 0;
-      }
+      border-radius: 24px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      margin-bottom: 10px;
     }
 
     h1 {
-      margin: 0 0 20px;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      font-size: clamp(40px, 8vw, 88px);
-      line-height: 0.97;
+      margin: 0;
+      font-weight: 850;
+      letter-spacing: -0.04em;
+      font-size: clamp(40px, 9vw, 80px);
+      line-height: 0.95;
+      color: #000;
+    }
+
+    .gradient-text {
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
 
     p {
-      margin: 0 0 28px;
-      font-size: clamp(16px, 2.8vw, 24px);
+      margin: 0 auto;
+      font-size: clamp(18px, 4vw, 24px);
       color: var(--muted);
+      font-weight: 500;
+      line-height: 1.4;
+      max-width: 720px;
+      letter-spacing: -0.01em;
     }
 
-    @keyframes vibrate {
-
-      0%,
-      100% {
-        transform: rotate(0deg);
-      }
-
-      2%,
-      98% {
-        transform: rotate(0deg);
-      }
-
-      5% {
-        transform: rotate(-3deg);
-      }
-
-      8% {
-        transform: rotate(3deg);
-      }
-
-      11% {
-        transform: rotate(-3deg);
-      }
-
-      14% {
-        transform: rotate(3deg);
-      }
-
-      17% {
-        transform: rotate(-3deg);
-      }
-
-      20% {
-        transform: rotate(0deg);
-      }
-    }
-
+    /* Large App Store Button */
     .cta {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
       text-decoration: none;
-      background: #3b82f6;
+      background: #000;
       color: #fff;
-      border-radius: 14px;
-      padding: clamp(14px, 3.2vw, 22px) clamp(24px, 6vw, 40px);
-      font-size: clamp(18px, 3.5vw, 28px);
-      font-weight: 800;
-      letter-spacing: 0.2px;
-      line-height: 1;
-      transition: transform .06s ease;
-      animation: vibrate 2.5s linear infinite;
+      border-radius: 16px;
+      padding: 16px 32px;
+      transition: all 0.2s ease;
+      border: 1px solid #000;
+      margin-top: 10px;
+    }
+
+    .cta:hover {
+      background: #222;
+      transform: scale(1.02);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
     }
 
     .cta:active {
-      transform: translateY(1px);
+      transform: scale(0.98);
+    }
+
+    .apple-icon {
+      width: 38px;
+      height: 38px;
+      fill: white;
+      flex-shrink: 0;
+    }
+
+    .cta-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      line-height: 1;
+    }
+
+    .cta-label {
+      font-size: 13px;
+      opacity: 0.9;
+      margin-bottom: 4px;
+      font-weight: 400;
+      letter-spacing: 0.2px;
+    }
+
+    .cta-store {
+      font-size: 26px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+
+    /* 3D Fan Gallery Styles */
+    .gallery-container {
+      position: absolute;
+      top: -5vh;
+      left: 0;
+      width: 100%;
+      height: 65vh;
+      overflow: hidden;
+      z-index: -1;
+      /* Behind content */
+      display: flex;
+      align-items: flex-start;
+      /* Align top */
+      justify-content: center;
+      perspective: 1200px;
+      /* Mask to fade out properly at bottom and sides */
+      mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+      pointer-events: none;
+      /* Let clicks pass through to content if needed */
+      opacity: 0.6;
+      /* Slightly translucent to not bold over text */
+    }
+
+    .gallery-track {
+      display: flex;
+      gap: 30px;
+      /* The "Fan" / Stream Effect */
+      transform-style: preserve-3d;
+      /* Angled to look like a fan opening from top */
+      transform: rotateX(20deg) rotateY(0deg) rotateZ(-15deg) translateY(-50px) translateX(-20%);
+      width: max-content;
+      animation: scroll-fan 45s linear infinite;
+    }
+
+    .gallery-item {
+      height: 450px;
+      width: auto;
+      border-radius: 24px;
+      box-shadow: -20px 20px 60px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      background: #fff;
+    }
+
+    @keyframes scroll-fan {
+      0% {
+        transform: rotateX(20deg) rotateY(0deg) rotateZ(-15deg) translateY(-50px) translateX(0);
+      }
+
+      100% {
+        transform: rotateX(20deg) rotateY(0deg) rotateZ(-15deg) translateY(-50px) translateX(-33.333%);
+      }
+    }
+
+    /* Dora Mini Logo */
+    .mini-logo {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      font-family: "Outfit", "Inter", sans-serif;
+      /* Playful modern font assumption */
+      font-weight: 700;
+      font-size: 28px;
+      /* Increased from 20px */
+      letter-spacing: -0.03em;
+      color: #000;
+      z-index: 20;
+      opacity: 0.9;
+      cursor: default;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .mini-logo span {
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* Adjust wrap */
+    .wrap {
+      min-height: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(24px, 5vw, 60px);
+      overflow: hidden;
+    }
+
+    .card {
+      /* Ensure text is readable */
+      text-align: center;
+      max-width: 1000px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+      margin-top: 10vh;
+      /* Reduced slightly */
+      position: relative;
+      z-index: 10;
+    }
+
+    /* Simplified Features Grid */
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 10px;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    .feature-pill {
+      background: #f3f4f6;
+      color: #333;
+      padding: 8px 16px;
+      border-radius: 100px;
+      font-size: 14px;
+      font-weight: 600;
+      border: 1px solid transparent;
     }
 
     footer {
-      margin-top: 28px;
-      font-size: 12px;
-      color: var(--muted);
-      opacity: .9;
+      margin-top: 60px;
+      font-size: 13px;
+      color: #999;
     }
 
     footer a {
-      color: var(--muted);
+      color: #999;
       text-decoration: none;
-      transition: color 0.2s ease;
+      transition: color 0.2s;
     }
 
     footer a:hover {
-      color: var(--fg);
+      color: #000;
       text-decoration: underline;
-    }
-
-    @media (min-width: 1024px) {
-      footer {
-        grid-column: 1 / -1;
-        margin-top: 40px;
-        text-align: center;
-      }
-    }
-
-    .sticky-cta {
-      position: fixed;
-      left: 50%;
-      bottom: clamp(12px, 3vw, 24px);
-      transform: translateX(-50%);
-      z-index: 10;
-      display: none;
-    }
-
-    @media (max-width: 640px) {
-      .sticky-cta {
-        display: inline-block;
-      }
-
-      .logo-img {
-        width: 280px;
-        margin-bottom: 30px;
-      }
     }
 
     .sr-only {
@@ -272,34 +329,108 @@
     }
 
     @media (max-width: 640px) {
-      .card {
-        text-align: center;
+      .logo-img {
+        width: 100px;
       }
 
-      h1,
-      p,
       .cta {
-        text-align: center;
+        padding: 14px 24px;
+        width: 100%;
+        border-radius: 14px;
+      }
+
+      .apple-icon {
+        width: 32px;
+        height: 32px;
+      }
+
+      .cta-store {
+        font-size: 22px;
+      }
+
+      h1 {
+        font-size: 42px;
       }
     }
   </style>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <main class="wrap">
-    <div class="card">
-      <img src="images/dora.png" alt="DORA Create Videos with Sora 2" class="logo-img" loading="lazy" />
-      <div class="card-content">
-        <h1>Dora<br />Make Videos<br />with Sora 2</h1>
-        <p>Transform your imagination into stunning videos powered by OpenAI's advanced Sora 2 technology.</p>
+    <!-- Mini Logo Top Left -->
+    <a href="#" class="mini-logo">
+      <span>✦</span> Dora
+    </a>
 
-        <a class="cta"
-          href="https://apps.apple.com/us/app/id6754180384?utm_source=meta&utm_medium=paid_social&utm_campaign=meta_ads&utm_content=app_store_button">
-          Download on the App Store
-        </a>
+    <!-- 3D Scrolling Gallery -->
+    <div class="gallery-container">
+      <div class="gallery-track">
+        <!-- Set 1 -->
+        <img src="images/dora/460x998bb.webp" class="gallery-item" alt="Dora Interface 1" />
+        <img src="images/dora/460x998bb (1).webp" class="gallery-item" alt="Dora Interface 2" />
+        <img src="images/dora/460x998bb (2).webp" class="gallery-item" alt="Dora Interface 3" />
+        <img src="images/dora/460x998bb (3).webp" class="gallery-item" alt="Dora Interface 4" />
+        <img src="images/dora/460x998bb (4).webp" class="gallery-item" alt="Dora Interface 5" />
+        <img src="images/dora/460x998bb (5).webp" class="gallery-item" alt="Dora Interface 6" />
+        <img src="images/dora/460x998bb (6).webp" class="gallery-item" alt="Dora Interface 7" />
+        <img src="images/dora/460x998bb (7).webp" class="gallery-item" alt="Dora Interface 8" />
+        <img src="images/dora/460x998bb (8).webp" class="gallery-item" alt="Dora Interface 9" />
+
+        <!-- Set 2 (Seamless Loop) -->
+        <img src="images/dora/460x998bb.webp" class="gallery-item" alt="Dora Interface 1" />
+        <img src="images/dora/460x998bb (1).webp" class="gallery-item" alt="Dora Interface 2" />
+        <img src="images/dora/460x998bb (2).webp" class="gallery-item" alt="Dora Interface 3" />
+        <img src="images/dora/460x998bb (3).webp" class="gallery-item" alt="Dora Interface 4" />
+        <img src="images/dora/460x998bb (4).webp" class="gallery-item" alt="Dora Interface 5" />
+        <img src="images/dora/460x998bb (5).webp" class="gallery-item" alt="Dora Interface 6" />
+        <img src="images/dora/460x998bb (6).webp" class="gallery-item" alt="Dora Interface 7" />
+        <img src="images/dora/460x998bb (7).webp" class="gallery-item" alt="Dora Interface 8" />
+        <img src="images/dora/460x998bb (8).webp" class="gallery-item" alt="Dora Interface 9" />
+
+        <!-- Set 3 (Extra buffer) -->
+        <img src="images/dora/460x998bb.webp" class="gallery-item" alt="Dora Interface 1" />
+        <img src="images/dora/460x998bb (1).webp" class="gallery-item" alt="Dora Interface 2" />
+        <img src="images/dora/460x998bb (2).webp" class="gallery-item" alt="Dora Interface 3" />
+        <img src="images/dora/460x998bb (3).webp" class="gallery-item" alt="Dora Interface 4" />
+        <img src="images/dora/460x998bb (4).webp" class="gallery-item" alt="Dora Interface 5" />
+        <img src="images/dora/460x998bb (5).webp" class="gallery-item" alt="Dora Interface 6" />
+        <img src="images/dora/460x998bb (6).webp" class="gallery-item" alt="Dora Interface 7" />
+        <img src="images/dora/460x998bb (7).webp" class="gallery-item" alt="Dora Interface 8" />
+        <img src="images/dora/460x998bb (8).webp" class="gallery-item" alt="Dora Interface 9" />
       </div>
+    </div>
+
+    <div class="card">
+
+
+      <h1>Turn Any Idea<br />Into <span class="gradient-text">Stunning AI Videos</span></h1>
+
+      <p>Type a sentence. Get a cinematic video. Animate grandma's old photos. Create viral content in seconds—not
+        hours. Powered by Sora 2, Veo 3, Nano Banana Pro, Grok, Kling & more.</p>
+
+      <div class="features">
+        <div class="feature-pill">Christmas Videos 🎄</div>
+        <div class="feature-pill">Lip Sync 💋</div>
+        <div class="feature-pill">Restoration 📸</div>
+        <div class="feature-pill">Text to Video ✍️</div>
+        <div class="feature-pill">AI Video Studio 🎥</div>
+        <div class="feature-pill">Holiday Cards 🎅</div>
+      </div>
+
+      <a class="cta" href="https://apps.apple.com/app/apple-store/id6754180384?pt=118348020&ct=landingA&mt=8">
+        <svg class="apple-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
+        </svg>
+        <div class="cta-text">
+          <span class="cta-label">Download on the</span>
+          <span class="cta-store">App Store</span>
+        </div>
+      </a>
+
       <footer>
-        <a href="privacy.html">Privacy</a> • <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy Policy</a> • <a href="terms.html">Terms of Service</a>
       </footer>
     </div>
   </main>
