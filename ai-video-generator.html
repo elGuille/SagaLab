@@ -206,12 +206,15 @@
     }
 
     .gallery-item {
-      height: 450px;
+      height: 540px;
+      /* 20% larger than 450px */
       width: auto;
       border-radius: 24px;
       box-shadow: -20px 20px 60px rgba(0, 0, 0, 0.3);
       border: 1px solid rgba(255, 255, 255, 0.8);
       background: #fff;
+      will-change: transform;
+      /* Performance optimization for animation */
     }
 
     @keyframes scroll-fan {
@@ -348,8 +351,8 @@
       }
 
       .gallery-item {
-        height: 300px;
-        /* Smaller images for mobile */
+        height: 360px;
+        /* 20% larger than 300px */
         border-radius: 16px;
         box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.25);
       }
@@ -419,41 +422,41 @@
     <!-- 3D Scrolling Gallery -->
     <div class="gallery-container">
       <div class="gallery-track">
-        <!-- Set 1 -->
+        <!-- Set 1 - First set loads eagerly for immediate display -->
         <img src="images/dora/01.webp" class="gallery-item" alt="AI Video Generator Interface 1" />
         <img src="images/dora/02.webp" class="gallery-item" alt="AI Video Generator Interface 2" />
-        <img src="images/dora/03.webp" class="gallery-item" alt="AI Video Generator Interface 3" />
-        <img src="images/dora/04.webp" class="gallery-item" alt="AI Video Generator Interface 4" />
-        <img src="images/dora/05.webp" class="gallery-item" alt="AI Video Generator Interface 5" />
-        <img src="images/dora/06.webp" class="gallery-item" alt="AI Video Generator Interface 6" />
-        <img src="images/dora/07.webp" class="gallery-item" alt="AI Video Generator Interface 7" />
-        <img src="images/dora/08.webp" class="gallery-item" alt="AI Video Generator Interface 8" />
-        <img src="images/dora/09.webp" class="gallery-item" alt="AI Video Generator Interface 9" />
-        <img src="images/dora/10.webp" class="gallery-item" alt="AI Video Generator Interface 10" />
+        <img src="images/dora/03.webp" class="gallery-item" alt="AI Video Generator Interface 3" loading="lazy" />
+        <img src="images/dora/04.webp" class="gallery-item" alt="AI Video Generator Interface 4" loading="lazy" />
+        <img src="images/dora/05.webp" class="gallery-item" alt="AI Video Generator Interface 5" loading="lazy" />
+        <img src="images/dora/06.webp" class="gallery-item" alt="AI Video Generator Interface 6" loading="lazy" />
+        <img src="images/dora/07.webp" class="gallery-item" alt="AI Video Generator Interface 7" loading="lazy" />
+        <img src="images/dora/08.webp" class="gallery-item" alt="AI Video Generator Interface 8" loading="lazy" />
+        <img src="images/dora/09.webp" class="gallery-item" alt="AI Video Generator Interface 9" loading="lazy" />
+        <img src="images/dora/10.webp" class="gallery-item" alt="AI Video Generator Interface 10" loading="lazy" />
 
-        <!-- Set 2 (Seamless Loop) -->
-        <img src="images/dora/01.webp" class="gallery-item" alt="AI Video Generator Interface 1" />
-        <img src="images/dora/02.webp" class="gallery-item" alt="AI Video Generator Interface 2" />
-        <img src="images/dora/03.webp" class="gallery-item" alt="AI Video Generator Interface 3" />
-        <img src="images/dora/04.webp" class="gallery-item" alt="AI Video Generator Interface 4" />
-        <img src="images/dora/05.webp" class="gallery-item" alt="AI Video Generator Interface 5" />
-        <img src="images/dora/06.webp" class="gallery-item" alt="AI Video Generator Interface 6" />
-        <img src="images/dora/07.webp" class="gallery-item" alt="AI Video Generator Interface 7" />
-        <img src="images/dora/08.webp" class="gallery-item" alt="AI Video Generator Interface 8" />
-        <img src="images/dora/09.webp" class="gallery-item" alt="AI Video Generator Interface 9" />
-        <img src="images/dora/10.webp" class="gallery-item" alt="AI Video Generator Interface 10" />
+        <!-- Set 2 (Seamless Loop) - All lazy loaded -->
+        <img src="images/dora/01.webp" class="gallery-item" alt="AI Video Generator Interface 1" loading="lazy" />
+        <img src="images/dora/02.webp" class="gallery-item" alt="AI Video Generator Interface 2" loading="lazy" />
+        <img src="images/dora/03.webp" class="gallery-item" alt="AI Video Generator Interface 3" loading="lazy" />
+        <img src="images/dora/04.webp" class="gallery-item" alt="AI Video Generator Interface 4" loading="lazy" />
+        <img src="images/dora/05.webp" class="gallery-item" alt="AI Video Generator Interface 5" loading="lazy" />
+        <img src="images/dora/06.webp" class="gallery-item" alt="AI Video Generator Interface 6" loading="lazy" />
+        <img src="images/dora/07.webp" class="gallery-item" alt="AI Video Generator Interface 7" loading="lazy" />
+        <img src="images/dora/08.webp" class="gallery-item" alt="AI Video Generator Interface 8" loading="lazy" />
+        <img src="images/dora/09.webp" class="gallery-item" alt="AI Video Generator Interface 9" loading="lazy" />
+        <img src="images/dora/10.webp" class="gallery-item" alt="AI Video Generator Interface 10" loading="lazy" />
 
-        <!-- Set 3 (Extra buffer) -->
-        <img src="images/dora/01.webp" class="gallery-item" alt="AI Video Generator Interface 1" />
-        <img src="images/dora/02.webp" class="gallery-item" alt="AI Video Generator Interface 2" />
-        <img src="images/dora/03.webp" class="gallery-item" alt="AI Video Generator Interface 3" />
-        <img src="images/dora/04.webp" class="gallery-item" alt="AI Video Generator Interface 4" />
-        <img src="images/dora/05.webp" class="gallery-item" alt="AI Video Generator Interface 5" />
-        <img src="images/dora/06.webp" class="gallery-item" alt="AI Video Generator Interface 6" />
-        <img src="images/dora/07.webp" class="gallery-item" alt="AI Video Generator Interface 7" />
-        <img src="images/dora/08.webp" class="gallery-item" alt="AI Video Generator Interface 8" />
-        <img src="images/dora/09.webp" class="gallery-item" alt="AI Video Generator Interface 9" />
-        <img src="images/dora/10.webp" class="gallery-item" alt="AI Video Generator Interface 10" />
+        <!-- Set 3 (Extra buffer) - All lazy loaded -->
+        <img src="images/dora/01.webp" class="gallery-item" alt="AI Video Generator Interface 1" loading="lazy" />
+        <img src="images/dora/02.webp" class="gallery-item" alt="AI Video Generator Interface 2" loading="lazy" />
+        <img src="images/dora/03.webp" class="gallery-item" alt="AI Video Generator Interface 3" loading="lazy" />
+        <img src="images/dora/04.webp" class="gallery-item" alt="AI Video Generator Interface 4" loading="lazy" />
+        <img src="images/dora/05.webp" class="gallery-item" alt="AI Video Generator Interface 5" loading="lazy" />
+        <img src="images/dora/06.webp" class="gallery-item" alt="AI Video Generator Interface 6" loading="lazy" />
+        <img src="images/dora/07.webp" class="gallery-item" alt="AI Video Generator Interface 7" loading="lazy" />
+        <img src="images/dora/08.webp" class="gallery-item" alt="AI Video Generator Interface 8" loading="lazy" />
+        <img src="images/dora/09.webp" class="gallery-item" alt="AI Video Generator Interface 9" loading="lazy" />
+        <img src="images/dora/10.webp" class="gallery-item" alt="AI Video Generator Interface 10" loading="lazy" />
       </div>
     </div>
 
