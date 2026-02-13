@@ -14,6 +14,11 @@
   <meta property="og:type" content="website" />
   <link rel="canonical" href="https://sagalab.co/ai-video-generator/">
 
+  <!-- Preload critical images for instant display -->
+  <link rel="preload" as="image" href="images/dora/01.webp">
+  <link rel="preload" as="image" href="images/dora/02.webp">
+  <link rel="preload" as="image" href="images/dora/03.webp">
+
   <!-- Firebase Analytics -->
   <script type="module">
     // Import the functions you need from the SDKs you need
@@ -282,26 +287,7 @@
       z-index: 10;
     }
 
-    /* Simplified Features Grid */
-    .features {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px;
-      margin-top: 10px;
-      width: 100%;
-      max-width: 800px;
-    }
 
-    .feature-pill {
-      background: #f3f4f6;
-      color: #333;
-      padding: 8px 16px;
-      border-radius: 100px;
-      font-size: 14px;
-      font-weight: 600;
-      border: 1px solid transparent;
-    }
 
     footer {
       margin-top: 60px;
@@ -403,10 +389,6 @@
         font-size: 20px;
       }
 
-      .feature-pill {
-        font-size: 13px;
-        padding: 6px 12px;
-      }
     }
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -467,15 +449,6 @@
 
       <p>Type a sentence. Get a cinematic video. Animate grandma's old photos. Create viral content in seconds—not
         hours. Powered by Sora 2, Veo 3, Nano Banana Pro, Grok, Kling & more.</p>
-
-      <div class="features">
-        <div class="feature-pill">Christmas Videos 🎄</div>
-        <div class="feature-pill">Lip Sync 💋</div>
-        <div class="feature-pill">Restoration 📸</div>
-        <div class="feature-pill">Text to Video ✍️</div>
-        <div class="feature-pill">AI Video Studio 🎥</div>
-        <div class="feature-pill">Holiday Cards 🎅</div>
-      </div>
 
       <a class="cta" href="https://apps.apple.com/app/apple-store/id6754180384?pt=118348020&ct=landingA&mt=8">
         <svg class="apple-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
