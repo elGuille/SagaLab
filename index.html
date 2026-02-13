@@ -169,6 +169,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <!-- Preload critical CSS and images -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="images/dora.png" as="image">
+    <link rel="preload" href="images/pinku.png" as="image">
+
 </head>
 
 <body>
@@ -427,7 +432,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
