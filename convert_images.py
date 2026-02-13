@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Convert JPEG images to WebP format"""
+"""Optimize WebP images for faster loading"""
 from PIL import Image
 import os
 
-def convert_images():
+def optimize_images():
     source_dir = 'images/dora/new'
     dest_dir = 'images/dora'
     
@@ -24,12 +24,16 @@ def convert_images():
         source_path = os.path.join(source_dir, source)
         dest_path = os.path.join(dest_dir, dest)
         
-        print(f"Converting {source} -> {dest}")
+        print(f"Optimizing {source} -> {dest}")
         img = Image.open(source_path)
-        img.save(dest_path, 'WEBP', quality=85)
-        print(f"  ✓ Created {dest_path}")
+        # Lower quality for faster loading: 60 instead of 85
+        img.save(dest_path, 'WEBP', quality=60, method=6)
+        
+        # Get file size
+        size_kb = os.path.getsize(dest_path) / 1024
+        print(f"  ✓ Created {dest_path} ({size_kb:.1f} KB)")
     
-    print(f"\n✓ Successfully converted {len(images)} images to WebP")
+    print(f"\n✓ Successfully optimized {len(images)} images")
 
 if __name__ == "__main__":
-    convert_images()
+    optimize_images()
