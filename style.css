@@ -74,22 +74,22 @@ h1, h2, h3 {
 }
 
 .nav-container {
-    max-width: 1200px;
+    max-width: 1024px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 22px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 52px;
+    height: 44px;
 }
 
 .nav-logo h1 {
-    font-size: 20px;
+    font-size: 19px;
     color: var(--text-primary);
     text-decoration: none;
     margin: 0;
     font-weight: 600;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
 }
 
 .nav-logo {
@@ -167,13 +167,13 @@ h1, h2, h3 {
 
 /* Hero Section */
 .hero-section {
-    padding: 200px 0 100px;
+    padding: 120px 0 60px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 60vh;
+    min-height: auto;
     position: relative;
     z-index: 1;
 }
@@ -185,17 +185,17 @@ h1, h2, h3 {
     text-transform: uppercase;
     letter-spacing: 0.12em;
     color: var(--text-secondary);
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     opacity: 0.8;
 }
 
 .hero-content h1 {
-    font-size: clamp(40px, 7vw, 76px);
-    font-weight: 700;
+    font-size: clamp(40px, 8vw, 80px);
+    font-weight: 600;
     line-height: 1.05;
-    letter-spacing: -0.04em;
-    max-width: 900px;
-    margin: 0 auto 24px;
+    letter-spacing: -0.015em;
+    max-width: 800px;
+    margin: 0 auto 16px;
     animation: slideInDown 1s ease-out;
 }
 
@@ -277,7 +277,7 @@ body.dark-mode .footer-tech-logos img {
 
 /* App Showcases - Alternating Layout */
 .app-section {
-    padding: 60px 0;
+    padding: 40px 0 80px;
     position: relative;
     z-index: 1;
 }
@@ -285,20 +285,20 @@ body.dark-mode .footer-tech-logos img {
 .app-showcase-container {
     display: flex;
     flex-direction: column;
-    gap: 120px;
-    padding-bottom: 80px;
+    gap: 80px;
+    padding-bottom: 60px;
 }
 
 .app-showcase-row {
     display: grid;
-    grid-template-columns: 1fr 1.2fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 60px;
-    max-width: 1200px;
+    gap: 48px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 24px;
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(30px);
     transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -308,7 +308,7 @@ body.dark-mode .footer-tech-logos img {
 }
 
 .app-showcase-row.reverse {
-    grid-template-columns: 1.2fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .app-showcase-row.reverse .app-showcase-visual {
@@ -317,32 +317,32 @@ body.dark-mode .footer-tech-logos img {
 
 .app-showcase-content {
     flex: 1;
-    max-width: 480px;
+    max-width: 440px;
 }
 
 .app-showcase-category {
-    font-size: 13px;
+    font-size: 12px;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.05em;
     color: var(--accent-color);
     font-weight: 600;
     display: block;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 .app-showcase-title {
-    font-size: clamp(28px, 3.5vw, 44px);
-    font-weight: 700;
-    letter-spacing: -0.025em;
-    margin-bottom: 16px;
-    line-height: 1.08;
+    font-size: clamp(28px, 3.5vw, 40px);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin-bottom: 12px;
+    line-height: 1.1;
 }
 
 .app-showcase-desc {
     font-size: 17px;
     color: var(--text-secondary);
-    margin-bottom: 28px;
-    line-height: 1.55;
+    margin-bottom: 24px;
+    line-height: 1.47;
 }
 
 .app-showcase-btn {
