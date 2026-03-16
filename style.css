@@ -46,21 +46,7 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Neural Network Canvas */
-#neural-network-canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    opacity: 0.35;
-    pointer-events: none;
-}
-
-body.dark-mode #neural-network-canvas {
-    opacity: 0.45;
-}
+/* Neural Network Canvas - REMOVED for Apple-style simplification */
 
 .container {
     max-width: 1200px;
@@ -181,25 +167,26 @@ h1, h2, h3 {
 
 /* Hero Section */
 .hero-section {
-    padding: 160px 0 60px;
+    padding: 200px 0 100px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 50vh;
+    min-height: 60vh;
     position: relative;
     z-index: 1;
 }
 
 .hero-tag {
     display: inline-block;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--accent-color);
-    margin-bottom: 24px;
+    letter-spacing: 0.12em;
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+    opacity: 0.8;
 }
 
 .hero-content h1 {
@@ -226,7 +213,7 @@ h1, h2, h3 {
 .hero-actions {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
     margin-top: 2.5rem;
     animation: slideInUp 1s ease-out 0.4s both;
 }
@@ -237,19 +224,18 @@ h1, h2, h3 {
     gap: 8px;
     background: var(--accent-color);
     color: #ffffff;
-    padding: 14px 32px;
+    padding: 12px 28px;
     border-radius: 980px;
     font-size: 17px;
-    font-weight: 400;
+    font-weight: 500;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: background 0.3s ease;
     border: none;
     cursor: pointer;
 }
 
 .cta-primary:hover {
     background: var(--accent-hover);
-    transform: scale(1.02);
 }
 
 /* Animations */
@@ -263,50 +249,30 @@ h1, h2, h3 {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Tech Logos Ticker */
-.tech-logos-section {
-    padding: 40px 0;
-    overflow: hidden;
-    position: relative;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    z-index: 1;
-}
-
-.tech-logos-track {
+/* Tech Logos Footer - Simplified */
+.footer-tech-logos {
     display: flex;
-    width: fit-content;
-    animation: ticker 50s linear infinite;
-    gap: 60px;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 50px;
+    padding: 0 24px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
 }
 
-.tech-logo-item img {
-    height: 48px;
+.footer-tech-logos:hover {
+    opacity: 0.8;
+}
+
+.footer-tech-logos img {
+    height: 32px;
     width: auto;
     filter: grayscale(1);
-    opacity: 0.5;
-    transition: all 0.3s ease;
 }
 
-body.dark-mode .tech-logo-item img {
+body.dark-mode .footer-tech-logos img {
     filter: grayscale(1) invert(1);
-    opacity: 0.35;
-}
-
-.tech-logo-item:hover img {
-    opacity: 0.8;
-    filter: grayscale(0.3);
-}
-
-body.dark-mode .tech-logo-item:hover img {
-    opacity: 0.7;
-    filter: grayscale(0.3) invert(1);
-}
-
-@keyframes ticker {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
 }
 
 /* App Showcases - Alternating Layout */
@@ -385,18 +351,17 @@ body.dark-mode .tech-logo-item:hover img {
     gap: 8px;
     background: var(--accent-color);
     color: #ffffff;
-    padding: 12px 24px;
+    padding: 11px 24px;
     border-radius: 980px;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 15px;
-    transition: all 0.3s ease;
+    transition: background 0.3s ease;
     border: none;
 }
 
 .app-showcase-btn:hover {
     background: var(--accent-hover);
-    transform: scale(1.02);
 }
 
 .app-showcase-btn:focus-visible {
