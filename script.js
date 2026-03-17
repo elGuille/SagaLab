@@ -75,7 +75,8 @@ document.addEventListener('DOMContentLoaded', function () {
             description: 'Your personal AI assistant for writing, brainstorming, and creative tasks. Powered by advanced language models.',
             link: 'https://apps.apple.com/au/app/brainy-imagine-ai-art/id1667947372',
             cta: 'Get Help',
-            appStoreFeatured: true
+            appStoreFeatured: true,
+            customClass: 'brainy-app'
         },
         {
             name: 'Crypton: Crypto Tracker',
@@ -111,8 +112,9 @@ document.addEventListener('DOMContentLoaded', function () {
     if (combinedGrid) {
         combinedGrid.innerHTML = mobileApps.map((app, index) => {
             const layoutClass = index % 2 === 0 ? 'app-showcase-row' : 'app-showcase-row reverse';
+            const extraClass = app.customClass ? ` ${app.customClass}` : '';
             return `
-            <div class="${layoutClass}">
+            <div class="${layoutClass}${extraClass}">
                 <div class="app-showcase-content">
                     <span class="app-showcase-category">${app.category}</span>
                     <h3 class="app-showcase-title">${app.name}</h3>

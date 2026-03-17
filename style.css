@@ -254,25 +254,33 @@ h1, h2, h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
+    align-items: center;
+    gap: 36px;
     margin-bottom: 50px;
     padding: 0 24px;
-    opacity: 0.5;
+    opacity: 0.7;
     transition: opacity 0.3s ease;
 }
 
 .footer-tech-logos:hover {
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .footer-tech-logos img {
-    height: 32px;
     width: auto;
     filter: grayscale(1);
 }
 
+.footer-tech-logos .logo-icon {
+    height: 20px;
+}
+
+.footer-tech-logos .logo-wide {
+    height: 24px;
+}
+
 body.dark-mode .footer-tech-logos img {
-    filter: grayscale(1) invert(1);
+    filter: grayscale(1) invert(1) brightness(0.9);
 }
 
 /* App Showcases - Alternating Layout */
@@ -383,6 +391,11 @@ body.dark-mode .footer-tech-logos img {
     box-shadow: none;
     filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.1));
     transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Brainy App Specific - 20% size increase */
+.brainy-app .app-showcase-img {
+    max-width: 120%;
 }
 
 body.dark-mode .app-showcase-img {
