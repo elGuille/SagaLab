@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'Pinku Private AI',
             category: 'Productivity',
             image: 'images/pinku.webp',
-            description: 'Your personal AI assistant that runs entirely on-device. Fast, private conversations powered by advanced language models with zero data collection. Works offline with complete privacy.',
+            description: 'We believe the future of AI is edge AI — your own device, your own private AI that you can trust and that knows you. Pinku runs entirely on-device with zero data collection.',
             link: 'https://apps.apple.com/us/app/pinku-private-ai/id6754878073',
             cta: 'Get Pinku',
             appStoreFeatured: true
