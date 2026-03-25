@@ -167,7 +167,7 @@ h1, h2, h3 {
 
 /* Hero Section */
 .hero-section {
-    padding: 120px 0 60px;
+    padding: 140px 0 120px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -251,16 +251,16 @@ h1, h2, h3 {
 
 /* Featured Project */
 .featured-project {
-    padding: 40px 0 100px;
+    padding: 0 0 140px;
     position: relative;
     z-index: 1;
 }
 
 .featured-project-row {
     display: grid;
-    grid-template-columns: 1fr 1.2fr;
+    grid-template-columns: 1.2fr 1fr;
     align-items: center;
-    gap: 60px;
+    gap: 100px;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -295,8 +295,8 @@ h1, h2, h3 {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: var(--text-primary);
-    color: var(--bg-color);
+    background: var(--accent-color);
+    color: #ffffff;
     padding: 12px 32px;
     border-radius: 980px;
     text-decoration: none;
@@ -306,7 +306,7 @@ h1, h2, h3 {
 }
 
 .featured-project-btn:hover {
-    opacity: 0.8;
+    background: var(--accent-hover);
 }
 
 .featured-project-visual {
@@ -333,7 +333,7 @@ body.dark-mode .featured-project-img {
 
 /* App Showcases - Alternating Layout */
 .app-section {
-    padding: 40px 0 80px;
+    padding: 40px 0 120px;
     position: relative;
     z-index: 1;
 }
@@ -341,15 +341,15 @@ body.dark-mode .featured-project-img {
 .app-showcase-container {
     display: flex;
     flex-direction: column;
-    gap: 120px;
-    padding-bottom: 60px;
+    gap: 160px;
+    padding-bottom: 80px;
 }
 
 .app-showcase-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 48px;
+    gap: 100px;
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 24px;
@@ -613,7 +613,7 @@ footer p {
     }
 
     .featured-project {
-        padding: 20px 0 60px;
+        padding: 0 0 80px;
     }
 
     .app-showcase-row,
@@ -658,7 +658,7 @@ footer p {
     }
 
     .app-showcase-container {
-        gap: 100px;
+        gap: 120px;
     }
 }
 
@@ -676,7 +676,7 @@ footer p {
     }
 
     .app-showcase-container {
-        gap: 80px;
+        gap: 100px;
     }
 
     .about-section {
