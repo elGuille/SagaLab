@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
             category: 'Video Creation',
             image: 'images/dora.webp',
             description: 'Create any type of video with AI using top-tier models like Sora, Kling, Luma, Nano Banana Pro, Seedance, and Grok. Transform your imagination into cinematic reality in seconds.',
-            link: 'https://apps.apple.com/us/app/id6754180384',
+            link: 'ai-video-generator.html?utm_source=sagalab&utm_medium=homepage&utm_campaign=dora',
             cta: 'Make Videos',
             appStoreFeatured: true
         },
