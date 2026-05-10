@@ -250,30 +250,90 @@
     <header class="hero-section">
         <div class="container">
             <div class="hero-content">
-                <span class="hero-tag">Saga AI Studio</span>
-                <h1>Agentic AI, MCP servers, and apps that ship.</h1>
-                <p class="hero-subtitle">AI engineering studio. We design agent flows, build MCP servers, run AI automations &mdash; and ship our own apps as proof of execution.</p>
+                <span class="hero-tag">Saga Labs · AI Engineering Studio</span>
+                <h1>Agentic AI. AI workflows. The plumbing in between.</h1>
+                <p class="hero-subtitle">We build agent flows, AI automations, MCP servers, iOS and web apps for companies serious about putting AI into production.</p>
                 <div style="margin-top: 28px; display: inline-flex; gap: 12px; flex-wrap: wrap; justify-content: center;">
                     <a href="agentic-ai.html" style="display: inline-block; padding: 12px 24px; background: #111; color: #fff; border-radius: 999px; text-decoration: none; font-weight: 500;">See services</a>
-                    <a href="#apps" style="display: inline-block; padding: 12px 24px; border: 1px solid currentColor; color: inherit; border-radius: 999px; text-decoration: none; font-weight: 500;">See apps</a>
+                    <a href="mailto:sagalabs@proton.me?subject=Project%20enquiry" style="display: inline-block; padding: 12px 24px; border: 1px solid currentColor; color: inherit; border-radius: 999px; text-decoration: none; font-weight: 500;">Send a brief</a>
                 </div>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="featured-project" id="foro">
+        <!-- Services overview -->
+        <section class="services-overview" style="padding: 72px 0;">
             <div class="container">
-                <div class="featured-project-row">
-                    <div class="featured-project-visual">
-                        <img src="images/foro.webp" alt="foro.club interface" loading="lazy" class="featured-project-img">
+                <div style="text-align: center; max-width: 720px; margin: 0 auto 48px;">
+                    <h2 style="margin: 0 0 12px; font-size: clamp(1.6rem, 3vw, 2.2rem);">What we build for companies</h2>
+                    <p style="opacity: 0.8; line-height: 1.55;">Four shapes the work usually takes. We can pick one or do them together. Reach out with a brief.</p>
+                </div>
+
+                <style>
+                    .svc-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+                    .svc-tile {
+                        border: 1px solid rgba(127,127,127,0.25);
+                        border-radius: 16px;
+                        padding: 24px;
+                        background: rgba(255,255,255,0.02);
+                        transition: border-color 0.2s ease;
+                    }
+                    .svc-tile:hover { border-color: rgba(127,127,127,0.5); }
+                    .svc-tile h3 { margin: 0 0 8px; font-size: 1.05rem; }
+                    .svc-tile p { margin: 0; opacity: 0.78; font-size: 0.92rem; line-height: 1.5; }
+                    .proof-row {
+                        margin-top: 56px;
+                        max-width: 820px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        border: 1px solid rgba(127,127,127,0.25);
+                        border-radius: 16px;
+                        padding: 28px 32px;
+                        text-align: left;
+                    }
+                    .proof-row h3 { margin: 0 0 8px; font-size: 1.1rem; }
+                    .proof-row p { margin: 0 0 14px; opacity: 0.85; line-height: 1.55; }
+                    .proof-row .badges { display: flex; gap: 6px; flex-wrap: wrap; }
+                    .proof-row .badge {
+                        font-size: 0.75rem; padding: 3px 10px; border: 1px solid rgba(127,127,127,0.35);
+                        border-radius: 999px; opacity: 0.85;
+                    }
+                </style>
+
+                <div class="svc-row">
+                    <article class="svc-tile">
+                        <h3>Agentic AI flows</h3>
+                        <p>Multi-step agents that plan, call tools, recover from failure, and stay reliable in production.</p>
+                    </article>
+                    <article class="svc-tile">
+                        <h3>AI automations</h3>
+                        <p>Workflows that quietly replace manual ops: lead enrichment, ticket triage, content pipelines, internal copilots.</p>
+                    </article>
+                    <article class="svc-tile">
+                        <h3>MCP servers</h3>
+                        <p>Custom Model Context Protocol servers wired into Claude, ChatGPT, Cursor and any MCP-compatible client.</p>
+                    </article>
+                    <article class="svc-tile">
+                        <h3>Custom apps & bots</h3>
+                        <p>iOS, web, Telegram and Slack bots, agents — whatever surface the AI work needs to run on.</p>
+                    </article>
+                </div>
+
+                <!-- Proof of execution -->
+                <div class="proof-row">
+                    <h3>Proof: Dora MCP</h3>
+                    <p>Multi-model AI image and video generation server we built and run. Fourteen models behind one OAuth-secured endpoint at <a href="https://doravideo.com/mcp" target="_blank" rel="noopener noreferrer">doravideo.com/mcp</a>. Used today from Claude, ChatGPT Pro and Enterprise, Cursor and other MCP clients.</p>
+                    <div class="badges">
+                        <span class="badge">Official MCP Registry</span>
+                        <span class="badge">Smithery</span>
+                        <span class="badge">Cursor Directory</span>
+                        <span class="badge">14 models</span>
                     </div>
-                    <div class="featured-project-content">
-                        <span class="featured-project-tag">Web</span>
-                        <h2 class="featured-project-title">foro.club</h2>
-                        <p class="featured-project-desc">Three AIs discuss your question and reach a conclusion together. Fast model for quick answers, frontier SOTA models for deep thinking.</p>
-                        <a href="https://foro.club" target="_blank" class="featured-project-btn" rel="noopener noreferrer">Try</a>
-                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 36px;">
+                    <a href="agentic-ai.html" style="display: inline-block; padding: 11px 22px; border: 1px solid currentColor; border-radius: 999px; color: inherit; text-decoration: none; font-weight: 500;">See full services</a>
                 </div>
             </div>
         </section>
@@ -282,11 +342,28 @@
             <div class="app-showcase-container combined-apps-grid"></div>
         </section>
 
+        <!-- foro.club moved here as a small experimental tile -->
+        <section class="featured-project" id="foro" style="padding: 32px 0;">
+            <div class="container">
+                <div style="max-width: 760px; margin: 0 auto; border: 1px solid rgba(127,127,127,0.25); border-radius: 16px; padding: 24px; display: flex; gap: 24px; align-items: center; flex-wrap: wrap;">
+                    <div style="flex: 0 0 120px;">
+                        <img src="images/foro.webp" alt="foro.club" loading="lazy" style="width: 120px; height: auto; border-radius: 8px;">
+                    </div>
+                    <div style="flex: 1; min-width: 240px;">
+                        <span style="font-size: 0.75rem; opacity: 0.6; letter-spacing: 0.08em; text-transform: uppercase;">Experimental tool · Web</span>
+                        <h3 style="margin: 6px 0; font-size: 1.05rem;">foro.club</h3>
+                        <p style="margin: 0 0 12px; opacity: 0.8; font-size: 0.92rem; line-height: 1.5;">Three AIs discuss your question and reach a conclusion together.</p>
+                        <a href="https://foro.club" target="_blank" rel="noopener noreferrer" style="font-size: 0.9rem;">Try foro.club &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="about-section" id="about">
             <div class="container">
                 <div class="about-content">
-                    <h2>About Saga AI Studio</h2>
-                    <p class="about-intro">We build at the intersection of generative AI, on-device machine learning, and thoughtful design. Every app is crafted to respect your privacy and elevate how you work.</p>
+                    <h2>About Saga Labs</h2>
+                    <p class="about-intro">Independent AI engineering studio. We design agent flows, build MCP servers, and ship AI automations for companies that need their AI to actually work in production. Our own apps double as proof we can finish what we start.</p>
                 </div>
             </div>
         </section>
