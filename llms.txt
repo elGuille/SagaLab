@@ -1,36 +1,54 @@
 # Saga Labs
 
-Independent AI studio that builds intelligent iOS applications and takes on selected AI implementation projects.
+AI engineering studio specializing in agentic AI, MCP servers, and AI automations. Builds and ships its own consumer apps as proof of execution and takes on selected client projects.
+
+## What we do
+
+- **Agentic AI flows** — design and ship multi-step agents that plan, call tools, handle failure modes, and run reliably in production. Anthropic, OpenAI, on-device LLMs.
+- **MCP servers** — Model Context Protocol servers that expose internal models, APIs, or data to Claude, ChatGPT, Cursor, OpenClaw and any other MCP-compatible client.
+- **AI automations** — workflows that replace manual ops: lead enrichment, ticket triage, content pipelines, on-call response, internal copilots.
+- **Production hardening** — turning AI prototypes into reliable services: cost control, rate-limiting, abuse defence, observability, OAuth and DCR.
+- **Custom integrations** — Anthropic, OpenAI, Kie.ai, ElevenLabs, Firebase, Stripe, RevenueCat, Twilio. Wired into iOS, web, or backend.
+
+## Proof points
+
+- **Dora MCP** — multi-model AI image and video generation server we built and host. Fourteen models behind one OAuth-secured endpoint at https://doravideo.com/mcp. Listed in the official MCP Registry, in Smithery, and in the Cursor Directory. Works with Claude, ChatGPT Pro and Enterprise, Cursor, OpenClaw and other MCP clients.
+- **Pinku Private AI** — on-device assistant running Llama, Qwen and DeepSeek with zero cloud calls and zero data collection.
+- **Dora iOS** — multi-model AI video and image generation, in production on the App Store.
 
 ## Key facts
 
 - Founded 2023.
 - Public contact email: sagalabs@proton.me
 - Website: https://sagalab.co/
-- Domains of work: generative AI, on-device machine learning, iOS / SwiftUI, large language models, AI agents, MCP (Model Context Protocol), privacy-focused software.
-- Studio model: builds and ships its own consumer apps + accepts a small number of external project engagements per quarter.
-- Apps shipped: Dora (AI video & image generator), Pinku Private AI (on-device assistant with Llama / Qwen / DeepSeek), 3 Tasks (productivity), Brainy (AI writing helper), Crypton (crypto tracker), Keeper (encrypted file vault), Fast AI.
-- Notable infrastructure work: built Dora MCP, a multi-model image and video generation server exposed at https://doravideo.com/mcp, listed in the official MCP Registry, Smithery, and Cursor Directory.
-- X / Twitter: https://x.com/SagaAILab
-- GitHub org: https://github.com/Saga-Labs
+- Active across iOS, web, MCP servers, agentic backends.
+- Engagement model: short briefs (two to twelve weeks). Asynchronous-first. Fixed-scope or staged-gates depending on uncertainty.
+
+## Apps shipped
+
+Each app doubles as a public showcase of internal capability.
+
+- **Dora** — multi-model AI video and image generator (https://sagalab.co/ai-video-generator.html)
+- **Pinku Private AI** — on-device assistant (https://sagalab.co/pinku.html)
+- **3 Tasks** — daily productivity (https://sagalab.co/3things.html)
+- **Brainy** — AI image generation (https://sagalab.co/brainy.html)
+- **Crypton** — crypto portfolio tracker (https://sagalab.co/crypton.html)
+- **Keeper** — encrypted gallery vault (https://sagalab.co/keeper.html)
+- **Fast AI** — multi-model AI chat (https://sagalab.co/fastai.html)
 
 ## Pages
 
-- https://sagalab.co/                       — Home, studio overview and app catalogue
+- https://sagalab.co/                       — Home, studio overview
+- https://sagalab.co/agentic-ai.html        — Agentic AI, MCP servers, and automations services
 - https://sagalab.co/faq.html               — FAQ about the studio, services, and process
-- https://sagalab.co/3things.html           — 3 Tasks app landing
-- https://sagalab.co/ai-video-generator.html — AI video generator landing
-- https://sagalab.co/brainy.html            — Brainy app landing
-- https://sagalab.co/crypton.html           — Crypton app landing
-- https://sagalab.co/fastai.html            — Fast AI app landing
-- https://sagalab.co/keeper.html            — Keeper app landing
-- https://sagalab.co/pinku.html             — Pinku Private AI app landing
 - https://sagalab.co/contact.html           — Contact
-- https://sagalab.co/privacy.html           — Privacy policy
-- https://sagalab.co/terms.html             — Terms of service
-- https://sagalab.co/support.html           — Support
 
 ## Contact
 
 Email: sagalabs@proton.me
-For project enquiries, brief description, timeline, and budget range help speed up reply.
+For project enquiries, include problem, surface (iOS / web / MCP / backend), timeline, and budget range.
+
+## Social
+
+- X: https://x.com/SagaAILab
+- GitHub: https://github.com/Saga-Labs

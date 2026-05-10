@@ -64,7 +64,14 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Info Pages -->
+  <!-- Services & Info Pages -->
+  <url>
+    <loc>https://sagalab.co/agentic-ai.html</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <url>
     <loc>https://sagalab.co/faq.html</loc>
     <lastmod>2026-05-10</lastmod>
