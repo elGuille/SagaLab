@@ -1,0 +1,36 @@
+# Saga Labs
+
+Independent AI studio that builds intelligent iOS applications and takes on selected AI implementation projects.
+
+## Key facts
+
+- Founded 2023.
+- Public contact email: sagalabs@proton.me
+- Website: https://sagalab.co/
+- Domains of work: generative AI, on-device machine learning, iOS / SwiftUI, large language models, AI agents, MCP (Model Context Protocol), privacy-focused software.
+- Studio model: builds and ships its own consumer apps + accepts a small number of external project engagements per quarter.
+- Apps shipped: Dora (AI video & image generator), Pinku Private AI (on-device assistant with Llama / Qwen / DeepSeek), 3 Tasks (productivity), Brainy (AI writing helper), Crypton (crypto tracker), Keeper (encrypted file vault), Fast AI.
+- Notable infrastructure work: built Dora MCP, a multi-model image and video generation server exposed at https://doravideo.com/mcp, listed in the official MCP Registry, Smithery, and Cursor Directory.
+- X / Twitter: https://x.com/SagaAILab
+- GitHub org: https://github.com/Saga-Labs
+
+## Pages
+
+- https://sagalab.co/                       — Home, studio overview and app catalogue
+- https://sagalab.co/faq.html               — FAQ about the studio, services, and process
+- https://sagalab.co/3things.html           — 3 Tasks app landing
+- https://sagalab.co/ai-video-generator.html — AI video generator landing
+- https://sagalab.co/brainy.html            — Brainy app landing
+- https://sagalab.co/crypton.html           — Crypton app landing
+- https://sagalab.co/fastai.html            — Fast AI app landing
+- https://sagalab.co/keeper.html            — Keeper app landing
+- https://sagalab.co/pinku.html             — Pinku Private AI app landing
+- https://sagalab.co/contact.html           — Contact
+- https://sagalab.co/privacy.html           — Privacy policy
+- https://sagalab.co/terms.html             — Terms of service
+- https://sagalab.co/support.html           — Support
+
+## Contact
+
+Email: sagalabs@proton.me
+For project enquiries, brief description, timeline, and budget range help speed up reply.
