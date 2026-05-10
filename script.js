@@ -60,6 +60,15 @@ document.addEventListener('DOMContentLoaded', function () {
             appStoreFeatured: true
         },
         {
+            name: 'Keeper: Private Folder',
+            category: 'Security',
+            image: 'images/photolock.webp',
+            description: 'Protect your private moments with military-grade encryption. Keep your photos, videos, and documents completely secure.',
+            link: 'https://apps.apple.com/au/app/only-gallery-keeper/id1532670722',
+            cta: 'Secure Files',
+            appStoreFeatured: false
+        },
+        {
             name: '3 Tasks: Daily Productivity',
             category: 'Productivity',
             image: 'images/3tasks.webp',
@@ -95,15 +104,6 @@ document.addEventListener('DOMContentLoaded', function () {
             link: 'https://apps.apple.com/au/app/drop-relax-focus-sleep-well/id1462269642',
             cta: 'Start Meditating',
             appStoreFeatured: true
-        },
-        {
-            name: 'Keeper: Private Folder',
-            category: 'Security',
-            image: 'images/photolock.webp',
-            description: 'Protect your private moments with military-grade encryption. Keep your photos, videos, and documents completely secure.',
-            link: 'https://apps.apple.com/au/app/only-gallery-keeper/id1532670722',
-            cta: 'Secure Files',
-            appStoreFeatured: false
         }
     ];
 
