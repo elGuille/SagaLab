@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'Dora AI Video Generator',
             category: 'Video Creation',
             image: 'images/dora.webp',
-            description: 'Create any type of video with AI using top-tier models like Sora, Kling, Luma, Nano Banana Pro, Seedance, and Grok. Transform your imagination into cinematic reality in seconds.',
+            description: 'AI video generation with Sora, Kling, Luma, Nano Banana Pro, and more. Cinema-grade video from a text prompt.',
             link: 'ai-video-generator.html?utm_source=sagalab&utm_medium=homepage&utm_campaign=dora',
             cta: 'Make Videos',
             appStoreFeatured: true
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'Pinku Private AI',
             category: 'Productivity',
             image: 'images/pinku.webp',
-            description: 'We believe the future of AI is edge AI — your own device, your own private AI that you can trust and that knows you. Pinku runs entirely on-device with zero data collection.',
+            description: 'On-device AI assistant running Llama, Qwen, and DeepSeek locally. Zero data collection, works offline.',
             link: 'https://apps.apple.com/us/app/pinku-private-ai/id6754878073',
             cta: 'Get Pinku',
             appStoreFeatured: true
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'Keeper: Private Folder',
             category: 'Security',
             image: 'images/photolock.webp',
-            description: 'Protect your private moments with military-grade encryption. Keep your photos, videos, and documents completely secure.',
+            description: 'Encrypted photo and document vault with biometric authentication.',
             link: 'https://apps.apple.com/au/app/only-gallery-keeper/id1532670722',
             cta: 'Secure Files',
             appStoreFeatured: false
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
             name: '3 Tasks: Daily Productivity',
             category: 'Productivity',
             image: 'images/3tasks.webp',
-            description: 'Achieve more by doing less. Focus on what matters most with a simple three-task daily system that boosts productivity and reduces overwhelm.',
+            description: 'A simple three-task daily system. Do less, focus on what matters.',
             link: 'https://apps.apple.com/au/app/3-tasks-daily-productivity/id1553693943',
             cta: 'Download App',
             appStoreFeatured: true
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'Brainy: AI Helper',
             category: 'Productivity',
             image: 'images/brainyapp.webp',
-            description: 'Your personal AI assistant for writing, brainstorming, and creative tasks. Powered by advanced language models.',
+            description: 'AI assistant for writing, brainstorming, and creative tasks.',
             link: 'https://apps.apple.com/au/app/brainy-imagine-ai-art/id1667947372',
             cta: 'Get Help',
             appStoreFeatured: true,
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'Crypton: Crypto Tracker',
             category: 'Finance',
             image: 'images/crypton.webp',
-            description: 'Stay ahead of crypto markets with real-time tracking and portfolio insights. Monitor trends and manage your digital assets with confidence.',
+            description: 'Real-time crypto tracking with price alerts and portfolio insights.',
             link: 'https://apps.apple.com/au/app/crypton-crypto-tracker/id1143691286',
             cta: 'Track Portfolio',
             appStoreFeatured: false
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'Focus Meditation',
             category: 'Health & Wellness',
             image: 'images/drop.webp',
-            description: 'Find inner peace with guided meditations and sleep sounds. Reduce stress, improve focus, and sleep better.',
+            description: 'Guided meditations and sleep sounds. Reduce stress, sleep better.',
             link: 'https://apps.apple.com/au/app/drop-relax-focus-sleep-well/id1462269642',
             cta: 'Start Meditating',
             appStoreFeatured: true
