@@ -20,7 +20,7 @@ AI engineering studio specializing in agentic AI, MCP servers, and AI automation
 
 - Founded 2023.
 - Public contact email: sagalabs@proton.me
-- Website: https://sagalab.co/
+- Website: https://aisagalab.com/
 - Active across iOS, web, MCP servers, agentic backends.
 - Engagement model: short briefs (two to twelve weeks). Asynchronous-first. Fixed-scope or staged-gates depending on uncertainty.
 
@@ -28,20 +28,20 @@ AI engineering studio specializing in agentic AI, MCP servers, and AI automation
 
 Each app doubles as a public showcase of internal capability.
 
-- **Dora** — multi-model AI video and image generator (https://sagalab.co/ai-video-generator.html)
-- **Pinku Private AI** — on-device assistant (https://sagalab.co/pinku.html)
-- **3 Tasks** — daily productivity (https://sagalab.co/3things.html)
-- **Brainy** — AI image generation (https://sagalab.co/brainy.html)
-- **Crypton** — crypto portfolio tracker (https://sagalab.co/crypton.html)
-- **Keeper** — encrypted gallery vault (https://sagalab.co/keeper.html)
-- **Fast AI** — multi-model AI chat (https://sagalab.co/fastai.html)
+- **Dora** — multi-model AI video and image generator (https://aisagalab.com/ai-video-generator.html)
+- **Pinku Private AI** — on-device assistant (https://aisagalab.com/pinku.html)
+- **3 Tasks** — daily productivity (https://aisagalab.com/3things.html)
+- **Brainy** — AI image generation (https://aisagalab.com/brainy.html)
+- **Crypton** — crypto portfolio tracker (https://aisagalab.com/crypton.html)
+- **Keeper** — encrypted gallery vault (https://aisagalab.com/keeper.html)
+- **Fast AI** — multi-model AI chat (https://aisagalab.com/fastai.html)
 
 ## Pages
 
-- https://sagalab.co/                       — Home, studio overview
-- https://sagalab.co/agentic-ai.html        — Agentic AI, MCP servers, and automations services
-- https://sagalab.co/faq.html               — FAQ about the studio, services, and process
-- https://sagalab.co/contact.html           — Contact
+- https://aisagalab.com/                       — Home, studio overview
+- https://aisagalab.com/agentic-ai.html        — Agentic AI, MCP servers, and automations services
+- https://aisagalab.com/faq.html               — FAQ about the studio, services, and process
+- https://aisagalab.com/contact.html           — Contact
 
 ## Contact
 

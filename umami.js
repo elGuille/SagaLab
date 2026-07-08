@@ -1,7 +1,7 @@
 /* ───────────────────────────────────────────────────────────
    Umami analytics loader (self-hosted, cookieless, no banner)
    Dashboard: https://analytics.kilmaru.com
-   Site: sagalab.co
+   Site: aisagalab.com
    ─────────────────────────────────────────────────────────── */
 (function () {
   var WEBSITE_ID = 'eb0ef22e-f9a7-4493-8852-aeed689aa013';

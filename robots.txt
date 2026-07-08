@@ -6,7 +6,7 @@ Allow: /
 Disallow:
 
 # Sitemap
-Sitemap: https://sagalab.co/sitemap.xml
+Sitemap: https://aisagalab.com/sitemap.xml
 
 # Specific rules for AI crawlers
 User-agent: GPTBot
