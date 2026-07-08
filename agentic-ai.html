@@ -54,220 +54,135 @@
     <script src="/umami.js" defer></script>
 </head>
 <body>
-    <!-- Particle Background -->
-    <div class="particle-bg">
-        <div class="wrap">
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-        </div>
-    </div>
-
-    <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="main-nav">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <h1>Saga <span class="ai-gradient">AI</span> <span class="lab-gradient">Lab</span></h1>
+            <a href="index.html" class="nav-logo" id="home-logo">
+                <h1>Saga Labs</h1>
             </a>
-            <div class="nav-menu">
-                <a href="agentic-ai.html" class="nav-link active">Agentic AI</a>
-                <a href="index.html#mobile-apps" class="nav-link">Apps</a>
-                <a href="faq.html" class="nav-link">FAQ</a>
-                <a href="mailto:sagalabs@proton.me" class="nav-link">Contact</a>
-                <a href="https://x.com/SagaAILab" target="_blank" class="icon-link" aria-label="X (Twitter)">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
-                        <path d="M18.244 2H21l-6.5 7.43L22.5 22H15.9l-4.7-6.2L5.7 22H3l7-8.02L1.8 2h6.8l4.3 5.7L18.244 2zm-2.43 18h1.64L8.29 4H6.57l9.244 16z"/>
-                    </svg>
-                </a>
-                <a href="https://github.com/Saga-Labs" target="_blank" class="icon-link" aria-label="GitHub">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
-                        <path d="M12 2C6.477 2 2 6.486 2 12.017c0 4.424 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.238-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.464-1.11-1.464-.908-.62.069-.607.069-.607 1.004.071 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.833.092-.647.35-1.088.636-1.338-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.748-1.026 2.748-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.337 4.695-4.565 4.943.359.31.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .268.18.58.688.481A10.019 10.019 0 0 0 22 12.017C22 6.486 17.523 2 12 2z"/>
-                    </svg>
-                </a>
-            </div>
+            <ul class="nav-menu">
+                <li><a href="agentic-ai.html">Agentic AI</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="mailto:sagalabs@proton.me">Contact</a></li>
+                <li>
+                    <button class="nav-theme-toggle" id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+                        <svg id="nav-theme-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
-    <!-- Hero -->
-    <section class="contact-section">
+    <header class="hero-section">
         <div class="container">
-            <div class="contact-content">
-                <h2>Agentic AI, MCP servers, and AI automations.</h2>
-                <p class="contact-intro">
-                    Saga Labs is an AI engineering studio. We design and ship agent flows, MCP servers, and AI automations that hold up in production. We also build and run our own consumer apps so the work you see in our portfolio reflects what we actually run, not what we promise.
-                </p>
+            <div class="hero-content">
+                <h1>Agentic AI, MCP servers, and automations.</h1>
+                <p class="hero-subtitle">We design and ship agent flows, MCP servers, and AI automations that hold up in production.</p>
+            </div>
+        </div>
+    </header>
 
+    <main>
+        <section style="padding: 24px 0 0;">
+            <div class="container">
                 <style>
                     .svc-grid {
                         display: grid;
-                        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-                        gap: 24px;
-                        margin: 40px auto 0;
+                        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+                        gap: 20px;
                         max-width: 960px;
-                        text-align: left;
+                        margin: 0 auto;
                     }
-                    .svc-card {
+                    .svc-tile {
                         border: 1px solid rgba(127,127,127,0.25);
                         border-radius: 16px;
                         padding: 24px;
                         background: rgba(255,255,255,0.02);
+                        transition: border-color 0.2s ease;
                     }
-                    .svc-card h3 { margin: 0 0 8px; font-size: 1.1rem; }
-                    .svc-card p { margin: 0 0 12px; opacity: 0.85; font-size: 0.95rem; line-height: 1.55; }
-                    .svc-card ul { margin: 0; padding-left: 1.2em; font-size: 0.9rem; opacity: 0.8; line-height: 1.6; }
-                    .proof-block {
-                        max-width: 760px;
-                        margin: 56px auto 0;
+                    .svc-tile:hover { border-color: rgba(127,127,127,0.5); }
+                    .svc-tile h3 { margin: 0 0 8px; font-size: 1.05rem; }
+                    .svc-tile p { margin: 0; opacity: 0.78; font-size: 0.92rem; line-height: 1.5; }
+                    .proof-card {
+                        max-width: 1000px;
+                        margin: 48px auto 0;
+                        border-radius: 20px;
+                        padding: 48px 52px;
                         text-align: left;
-                        border: 1px solid rgba(127,127,127,0.25);
-                        border-radius: 16px;
-                        padding: 28px;
-                    }
-                    .proof-block h3 { margin-top: 0; font-size: 1.15rem; }
-                    .proof-block p { line-height: 1.6; opacity: 0.9; }
-                    .proof-block .badges { margin-top: 16px; display: flex; gap: 8px; flex-wrap: wrap; }
-                    .proof-block .badge {
-                        font-size: 0.78rem; padding: 4px 10px; border: 1px solid rgba(127,127,127,0.35);
-                        border-radius: 999px; opacity: 0.85;
-                    }
-                    .process-list {
-                        max-width: 720px;
-                        margin: 56px auto 0;
-                        text-align: left;
-                        list-style: none;
-                        padding: 0;
-                        counter-reset: step;
-                    }
-                    .process-list li {
-                        counter-increment: step;
-                        padding: 16px 0 16px 56px;
+                        background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+                        color: #f1f5f9;
                         position: relative;
-                        border-top: 1px solid rgba(127,127,127,0.2);
+                        overflow: hidden;
                     }
-                    .process-list li:last-child { border-bottom: 1px solid rgba(127,127,127,0.2); }
-                    .process-list li::before {
-                        content: counter(step, decimal-leading-zero);
-                        position: absolute; left: 0; top: 16px;
-                        font-variant-numeric: tabular-nums;
-                        font-weight: 600;
-                        opacity: 0.55;
+                    .proof-card::before {
+                        content: "";
+                        position: absolute;
+                        top: -50%; right: -20%;
+                        width: 400px; height: 400px;
+                        background: radial-gradient(circle, rgba(99,102,241,0.2) 0%, transparent 70%);
+                        pointer-events: none;
                     }
-                    .process-list strong { display: block; margin-bottom: 4px; }
+                    .proof-card h3 {
+                        margin: 0 0 12px; font-size: 1.3rem; font-weight: 600;
+                        color: #fff; letter-spacing: -0.01em;
+                    }
+                    .proof-card p {
+                        margin: 0; opacity: 0.85; line-height: 1.6;
+                        font-size: 1.02rem; max-width: 52ch;
+                    }
+                    .proof-card p a {
+                        color: #93c5fd;
+                        text-decoration: none;
+                        border-bottom: 1px solid rgba(147,197,253,0.4);
+                    }
                 </style>
 
-                <!-- Services -->
-                <h3 style="margin-top: 56px; font-size: 1.4rem;">What we ship</h3>
-
                 <div class="svc-grid">
-                    <article class="svc-card">
+                    <article class="svc-tile">
                         <h3>Agentic AI flows</h3>
-                        <p>Multi-step agents that plan, call tools, handle failure, and stay reliable when traffic ramps.</p>
-                        <ul>
-                            <li>Tool-calling and function dispatch</li>
-                            <li>Memory and state across turns</li>
-                            <li>Error recovery and retries</li>
-                            <li>Cost ceilings and abuse defence</li>
-                        </ul>
+                        <p>Multi-step agents that plan, call tools, and recover from failure.</p>
                     </article>
-
-                    <article class="svc-card">
+                    <article class="svc-tile">
                         <h3>MCP servers</h3>
-                        <p>Model Context Protocol servers that connect your data, models, and APIs to Claude, ChatGPT, Cursor and any MCP-compatible client.</p>
-                        <ul>
-                            <li>OAuth 2.1 + PKCE + Dynamic Client Registration</li>
-                            <li>Streamable HTTP transport</li>
-                            <li>RFC 9728 protected resource metadata</li>
-                            <li>Listings: MCP Registry, Smithery, Cursor</li>
-                        </ul>
+                        <p>Custom Model Context Protocol servers for Claude, ChatGPT, Cursor.</p>
                     </article>
-
-                    <article class="svc-card">
+                    <article class="svc-tile">
                         <h3>AI automations</h3>
-                        <p>Workflows that quietly replace manual ops. Either standalone or wired into existing tools.</p>
-                        <ul>
-                            <li>Lead enrichment and outbound</li>
-                            <li>Ticket triage and routing</li>
-                            <li>Content and asset pipelines</li>
-                            <li>Internal copilots and dashboards</li>
-                        </ul>
+                        <p>Workflows that replace manual ops: triage, enrichment, pipelines.</p>
                     </article>
-
-                    <article class="svc-card">
+                    <article class="svc-tile">
                         <h3>Production hardening</h3>
-                        <p>Take an AI prototype that works on a laptop and turn it into something a paying customer can rely on.</p>
-                        <ul>
-                            <li>Cost control and rate-limiting</li>
-                            <li>Observability and tracing</li>
-                            <li>Abuse defence and content policy</li>
-                            <li>Migration from synchronous to job queue</li>
-                        </ul>
+                        <p>Cost control, rate-limiting, observability, abuse defence.</p>
                     </article>
                 </div>
 
-                <!-- Proof -->
-                <h3 style="margin-top: 64px; font-size: 1.4rem;">Proof of execution</h3>
-
-                <div class="proof-block">
-                    <h3>Dora MCP — multi-model AI generation server</h3>
-                    <p>Saga Labs designed, built and runs <a href="https://doravideo.com/mcp" target="_blank" rel="noopener">doravideo.com/mcp</a>, an MCP server exposing fourteen image and video models behind one OAuth-secured endpoint. Used today from Claude, ChatGPT Pro and Enterprise, Cursor, OpenClaw and any other MCP-compatible client.</p>
-                    <div class="badges">
-                        <span class="badge">Official MCP Registry</span>
-                        <span class="badge">Smithery</span>
-                        <span class="badge">Cursor Directory</span>
-                        <span class="badge">OAuth 2.1 + DCR</span>
-                        <span class="badge">14 models</span>
-                    </div>
+                <div class="proof-card">
+                    <h3>Proof: Dora for Claude</h3>
+                    <p>Six models behind one OAuth-secured endpoint — used today from Claude, ChatGPT, and Cursor. <a href="https://doravideo.com/claude" target="_blank" rel="noopener noreferrer">doravideo.com/claude</a></p>
                 </div>
 
-                <!-- Process -->
-                <h3 style="margin-top: 64px; font-size: 1.4rem;">How an engagement looks</h3>
-
-                <ol class="process-list">
-                    <li>
-                        <strong>Brief and fit check</strong>
-                        Reply within a few business days with a fit assessment, scope notes, and a referral if the project belongs elsewhere.
-                    </li>
-                    <li>
-                        <strong>Discovery sprint</strong>
-                        One to two weeks. Shape the problem, document the system around it, agree what success looks like.
-                    </li>
-                    <li>
-                        <strong>Build</strong>
-                        Two to twelve weeks depending on scope. Asynchronous-first. Weekly review. Working software at every checkpoint.
-                    </li>
-                    <li>
-                        <strong>Production handover</strong>
-                        Documentation, runbook, monitoring, on-call notes. Optional retainer for incident support.
-                    </li>
-                </ol>
-
-                <!-- CTA -->
-                <div style="margin-top: 64px; text-align: center;">
-                    <a href="mailto:sagalabs@proton.me?subject=Project%20enquiry" class="download-btn">Email a project brief</a>
-                    <p style="margin-top: 16px; opacity: 0.7; font-size: 0.9rem;">
-                        Include problem, surface (iOS / web / MCP / backend), timeline, and budget range.
-                    </p>
+                <div style="text-align: center; margin-top: 56px; padding-bottom: 80px;">
+                    <a href="mailto:sagalabs@proton.me?subject=Project%20enquiry" style="display: inline-block; padding: 14px 28px; background: #111; color: #fff; border-radius: 10px; text-decoration: none; font-weight: 500; font-size: 1.05rem;">Email a project brief</a>
+                    <p style="margin-top: 16px; opacity: 0.7; font-size: 0.9rem;">Include problem, surface, timeline, and budget range.</p>
                 </div>
-
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2026 Saga Labs.</p>
-            <div class="footer-social">
-                <a href="https://x.com/SagaAILab" target="_blank" aria-label="X (Twitter)">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
-                        <path d="M18.244 2H21l-6.5 7.43L22.5 22H15.9l-4.7-6.2L5.7 22H3l7-8.02L1.8 2h6.8l4.3 5.7L18.244 2zm-2.43 18h1.64L8.29 4H6.57l9.244 16z"/>
-                    </svg>
-                </a>
-                <a href="https://github.com/Saga-Labs" target="_blank" aria-label="GitHub">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
-                        <path d="M12 2C6.477 2 2 6.486 2 12.017c0 4.424 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.238-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.464-1.11-1.464-.908-.62.069-.607.069-.607 1.004.071 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.833.092-.647.35-1.088.636-1.338-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.748-1.026 2.748-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.337 4.695-4.565 4.943.359.31.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .268.18.58.688.481A10.019 10.019 0 0 0 22 12.017C22 6.486 17.523 2 12 2z"/>
-                    </svg>
-                </a>
+        <div class="container footer-container">
+            <p>&copy; 2026 Saga Labs. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+                <a href="support.html">Support</a>
             </div>
         </div>
     </footer>
