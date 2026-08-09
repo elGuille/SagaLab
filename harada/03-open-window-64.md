@@ -49,6 +49,9 @@ Reglas:
 - Al menos uno debe **neutralizar un patrón de fracaso** de tu pieza 02.
 - Ningún pilar puede ser un resultado ("facturar 50k"). Un pilar es un **frente de trabajo**.
 
+> ¿Sin ideas para los ocho? [`07-principios.md`](07-principios.md) tiene un banco de
+> candidatos ya repartidos por dominio, con sus acciones concretas.
+
 | # | Pilar | Dominio (心/技/体/生活) | Por qué es imprescindible |
 |---|-------|------------------------|---------------------------|
 | 1 | | | |
@@ -201,8 +204,14 @@ Antes de dar por buena la rejilla:
 
 ## Un ejemplo real
 
-La carta que **Shohei Ohtani** rellenó a los 16 años en el instituto Hanamaki Higashi,
-con su entrenador Hiroshi Sasaki. Centro: *"ser elegido nº 1 en el draft por 8 equipos"*.
+La carta que **Shohei Ohtani** rellenó a los 16 años, en primero de bachillerato en el
+instituto Hanamaki Higashi, con su entrenador Hiroshi Sasaki. Centro: *"ser elegido nº 1 en
+el draft por 8 equipos"*.
+
+**Horizonte: dos años y medio** — los tres cursos del instituto, con diana en el draft de la
+NPB de octubre de 2012. La fecha no la eligió él: era el día en que un tercero iba a evaluarlo,
+quisiera o no. Eso es lo que la sección 2 de la pieza 01 llama *evento o testigo*, y es la
+razón por la que aquel plazo aguantó donde un "en unos dos años" se habría deslizado.
 
 Sus 8 pilares:
 
@@ -219,7 +228,12 @@ fueran cosas como *recoger la basura del suelo*, *saludar el primero*, *cuidar e
 
 No es superstición. Es la casilla ③④ del objetivo cuatripartito ejecutada literalmente:
 la suerte, entendida como la disposición de otros a ayudarte, se fabrica con acciones diarias
-observables. Ohtani fue elegido en primera ronda en 2012.
+observables.
+
+Y un detalle que suele omitirse al contar la historia: **falló el objetivo literal.** En el
+draft de 2012 lo eligió en primera ronda **un** equipo, no ocho — había anunciado que se iba
+directo a la MLB y eso disuadió al resto. Falló el número y el proceso hizo su trabajo igual.
+Que es exactamente la tesis del método: la meta es el vehículo, no el destino.
 
 ---
 

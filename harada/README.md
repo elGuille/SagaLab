@@ -45,9 +45,15 @@ Tres ideas que lo diferencian de casi cualquier otro sistema de productividad:
 | 5 | Diario (日誌 _nisshi_) | [`05-diario.md`](05-diario.md) | **Todos los días, 5 min.** |
 | 6 | Revisiones semanal / mensual / trimestral | [`06-revisiones.md`](06-revisiones.md) | Domingo, fin de mes, fin de trimestre. |
 
-Además: [`tracker.html`](tracker.html) — herramienta local autocontenida (abre el archivo en el
-navegador) con la carta de 64 editable, el marcador de rutinas con racha, el diario y
-export/import en JSON. Guarda en `localStorage`, no envía nada a ningún servidor.
+Además, dos anexos que **no son piezas del método**:
+
+- [`07-principios.md`](07-principios.md) — los trece principios de Sam Altman
+  (*How to Be Successful*, 2019) traducidos a candidatos de pilar y de casilla del 64.
+  Materia prima para las piezas 01 y 03, no un paso más. Incluye las tres tensiones reales
+  con Harada, sin disimularlas.
+- [`tracker.html`](tracker.html) — herramienta local autocontenida (abre el archivo en el
+  navegador) con la carta de 64 editable, el marcador de rutinas con racha, el diario y
+  export/import en JSON. Guarda en `localStorage`, no envía nada a ningún servidor.
 
 ---
 
@@ -61,8 +67,8 @@ servicio de un objetivo que no aguanta seis meses.
         ↓
 01 Propósito y objetivo  →  para qué, y qué número con qué fecha
         ↓
-03 Open Window 64        →  8 pilares × 8 acciones
-        ↓
+03 Open Window 64        →  8 pilares × 8 acciones          ←  07 Principios
+        ↓                                                       (banco de ideas)
 04 Rutinas               →  las 8-10 acciones del 64 que se hacen a diario
         ↓
 05 Diario  +  06 Revisiones   →  el bucle que lo sostiene
