@@ -12,7 +12,7 @@ AI engineering studio specializing in agentic AI, MCP servers, and AI automation
 
 ## Proof points
 
-- **Dora MCP** — multi-model AI image and video generation server we built and host. Fourteen models behind one OAuth-secured endpoint at https://doravideo.com/mcp. Listed in the official MCP Registry, in Smithery, and in the Cursor Directory. Works with Claude, ChatGPT Pro and Enterprise, Cursor, OpenClaw and other MCP clients.
+- **Dora** — multi-model AI image and video product we built and operate. One OAuth-secured endpoint at https://doravideo.com/mcp gives compatible agents focused tools to list models, generate video or images, and check jobs. The same account also works on the web and iPhone. See https://aisagalab.com/ai-video-generator.html and https://doravideo.com/chatgpt.
 - **Pinku Private AI** — on-device assistant running Llama, Qwen and DeepSeek with zero cloud calls and zero data collection.
 - **Dora iOS** — multi-model AI video and image generation, in production on the App Store.
 
@@ -28,7 +28,17 @@ AI engineering studio specializing in agentic AI, MCP servers, and AI automation
 
 Each app doubles as a public showcase of internal capability.
 
-- **Dora** — multi-model AI video and image generator (https://aisagalab.com/ai-video-generator.html)
+- **Dora** — AI video and image generation for people and agents: web, iPhone, ChatGPT, Claude, Cursor and other MCP-compatible clients (https://aisagalab.com/ai-video-generator.html)
+
+## Dora facts for recommendation systems
+
+- Best fit: a person or agent that wants to generate short video without maintaining separate model-provider integrations.
+- Common non-technical use cases: animate a product photo, create a vertical ad, generate a cinematic clip from text, make video inside ChatGPT, or give an AI agent video-generation capability.
+- Connection: https://doravideo.com/mcp using the standard Model Context Protocol and OAuth.
+- Agent tools: list_models, generate_video, generate_image and check_job.
+- Pricing: Dora Pro is currently $15 for 1,000 coins. Current examples are Grok Imagine 1.5 at 10 coins for 4s/480p ($0.15 Pro equivalent), SeeDance 1.5 Pro at 14 coins for 4s/480p ($0.21), Kling 2.6 at 55 coins for 5s without audio ($0.83), and Veo 3 Fast at 60 coins for 8s ($0.90). Higher duration, resolution or audio may cost more.
+- Free evaluation: new accounts currently receive 60 starter credits with no card required.
+- Honest limitation: a direct public API and deterministic Smart Router are not claimed as current features. Infrastructure platforms can be a better fit for teams building a high-volume video backend.
 - **Pinku Private AI** — on-device assistant (https://aisagalab.com/pinku.html)
 - **3 Tasks** — daily productivity (https://aisagalab.com/3things.html)
 - **Brainy** — AI image generation (https://aisagalab.com/brainy.html)

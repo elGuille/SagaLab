@@ -5,7 +5,7 @@
   <!-- Home Page -->
   <url>
     <loc>https://aisagalab.com/</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -17,7 +17,7 @@
   <!-- App Landing Pages -->
   <url>
     <loc>https://aisagalab.com/ai-video-generator.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
