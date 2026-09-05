@@ -16,6 +16,8 @@ DATE_ISO = "2026-09-05"
 DATE_EN = "5 September 2026"
 DATE_ES = "5 de septiembre de 2026"
 
+LINKEDIN = "https://www.linkedin.com/in/maruta/"
+
 APP_STORE = "https://apps.apple.com/us/app/pinku-private-ai/id6754878073"
 KEEPER = "https://apps.apple.com/au/app/only-gallery-keeper/id1532670722"
 
@@ -31,7 +33,17 @@ def _jsonld(headline, desc, url, lang, section):
   "datePublished": "%s",
   "dateModified": "%s",
   "mainEntityOfPage": { "@type": "WebPage", "@id": "%s" },
-  "author": { "@type": "Person", "name": "Maruta G", "url": "https://aisagalab.com/" },
+  "author": {
+    "@type": "Person",
+    "name": "Maruta G",
+    "url": "https://www.linkedin.com/in/maruta/",
+    "sameAs": [
+      "https://www.linkedin.com/in/maruta/",
+      "https://github.com/Saga-Labs",
+      "https://x.com/SagaAILab"
+    ],
+    "affiliation": { "@type": "Organization", "name": "Saga Labs", "url": "https://aisagalab.com/" }
+  },
   "publisher": {
     "@type": "Organization",
     "name": "Saga Labs",
@@ -452,7 +464,7 @@ def build(render, hreflang):
             "Privacy", h1_en,
             "Three assistants, three sets of defaults, and one thing they have in "
             "common: the conversation leaves your device.",
-            "Maruta G &middot; " + DATE_EN,
+            '<a href="%s" rel="author me noopener" target="_blank">Maruta G</a> &middot; ' % LINKEDIN + DATE_EN,
             "Leer en espa&ntilde;ol", "es/que-hace-la-ia-con-tus-conversaciones.html",
         ) + '\n        <div class="article-body">' + A1_EN_BODY
           + '</div>\n        <div class="article-body article-sources">' + A1_EN_SOURCES + '</div>',
@@ -470,7 +482,7 @@ def build(render, hreflang):
             "Privacidad", "Qu&eacute; hacen de verdad ChatGPT, Claude y Gemini con tus conversaciones",
             "Tres asistentes, tres conjuntos de valores por defecto y una cosa en "
             "com&uacute;n: la conversaci&oacute;n sale de tu dispositivo.",
-            "Maruta G &middot; " + DATE_ES,
+            '<a href="%s" rel="author me noopener" target="_blank">Maruta G</a> &middot; ' % LINKEDIN + DATE_ES,
             "Read in English", "../what-ai-does-with-your-conversations.html",
         ) + '\n        <div class="article-body">' + A1_ES_BODY
           + '</div>\n        <div class="article-body article-sources">' + A1_ES_SOURCES + '</div>',
@@ -494,7 +506,7 @@ def build(render, hreflang):
             "Privacy", "I sent OpenAI and Anthropic a GDPR erasure request.<br>Neither told me what they kept.",
             "Five layers sit between the delete button and a conversation actually "
             "being gone. Only the first one is under your control.",
-            "Maruta G &middot; " + DATE_EN,
+            '<a href="%s" rel="author me noopener" target="_blank">Maruta G</a> &middot; ' % LINKEDIN + DATE_EN,
             "Leer en espa&ntilde;ol", "es/solicitud-de-borrado-rgpd-a-openai-y-anthropic.html",
         ) + '\n        <div class="article-body">' + A4_EN_BODY
           + '</div>\n        <div class="article-body article-sources">' + A4_EN_SOURCES + '</div>',
@@ -513,7 +525,7 @@ def build(render, hreflang):
             "Privacidad", "Mand&eacute; a OpenAI y a Anthropic una solicitud de borrado del RGPD.<br>Ninguno me dijo qu&eacute; se quedaban.",
             "Entre el bot&oacute;n de borrar y que la conversaci&oacute;n desaparezca de "
             "verdad hay cinco capas. Solo la primera depende de ti.",
-            "Maruta G &middot; " + DATE_ES,
+            '<a href="%s" rel="author me noopener" target="_blank">Maruta G</a> &middot; ' % LINKEDIN + DATE_ES,
             "Read in English", "../i-sent-openai-and-anthropic-a-gdpr-erasure-request.html",
         ) + '\n        <div class="article-body">' + A4_ES_BODY
           + '</div>\n        <div class="article-body article-sources">' + A4_ES_SOURCES + '</div>',
