@@ -31,7 +31,7 @@ def _jsonld(headline, desc, url, lang, section):
   "datePublished": "%s",
   "dateModified": "%s",
   "mainEntityOfPage": { "@type": "WebPage", "@id": "%s" },
-  "author": { "@type": "Organization", "name": "Saga Labs", "url": "https://aisagalab.com/" },
+  "author": { "@type": "Person", "name": "Maruta G", "url": "https://aisagalab.com/" },
   "publisher": {
     "@type": "Organization",
     "name": "Saga Labs",
@@ -340,10 +340,10 @@ y corregimos la p&aacute;gina.</p>
 
 INDEX_EN = """
         <p class="article-kicker">Saga Labs</p>
-        <h1>Writing</h1>
+        <h1>Blog</h1>
         <p class="article-standfirst">Notes on private and on-device AI. Every
         number we publish comes from a primary source, linked in the article.</p>
-        <p class="article-meta">Saga Labs
+        <p class="article-meta">Maruta G
             <span class="lang-switch"> &middot; <a href="es/">Leer en espa&ntilde;ol</a></span>
         </p>
         <div class="article-body">
@@ -367,11 +367,11 @@ INDEX_EN = """
 
 INDEX_ES = """
         <p class="article-kicker">Saga Labs</p>
-        <h1>Art&iacute;culos</h1>
+        <h1>Blog</h1>
         <p class="article-standfirst">Notas sobre IA privada y en el dispositivo.
         Cada cifra que publicamos sale de una fuente primaria enlazada en el
         art&iacute;culo.</p>
-        <p class="article-meta">Saga Labs
+        <p class="article-meta">Maruta G
             <span class="lang-switch"> &middot; <a href="../">Read in English</a></span>
         </p>
         <div class="article-body">
@@ -401,15 +401,15 @@ def build(render, hreflang):
     # --- indices -----------------------------------------------------------
     out.append(render(
         path="blog/index.html", lang="en",
-        title="Writing — Saga Labs",
+        title="Blog — Saga Labs",
         desc="Notes on private and on-device AI from Saga Labs, the studio behind Pinku Private AI. Sourced from primary policy documents.",
-        og_title="Writing — Saga Labs",
+        og_title="Blog — Saga Labs",
         alternates=hreflang("blog/", "blog/es/"),
         og_type="website",
         jsonld="""{
   "@context": "https://schema.org",
   "@type": "Blog",
-  "name": "Saga Labs Writing",
+  "name": "Saga Labs Blog",
   "url": "https://aisagalab.com/blog/",
   "inLanguage": "en",
   "publisher": { "@type": "Organization", "name": "Saga Labs", "url": "https://aisagalab.com/" }
@@ -419,15 +419,15 @@ def build(render, hreflang):
 
     out.append(render(
         path="blog/es/index.html", lang="es",
-        title="Artículos — Saga Labs",
+        title="Blog — Saga Labs",
         desc="Notas sobre IA privada y en el dispositivo, del estudio detrás de Pinku Private AI. Con fuentes primarias.",
-        og_title="Artículos — Saga Labs",
+        og_title="Blog — Saga Labs",
         alternates=hreflang("blog/", "blog/es/"),
         og_type="website",
         jsonld="""{
   "@context": "https://schema.org",
   "@type": "Blog",
-  "name": "Saga Labs Artículos",
+  "name": "Saga Labs Blog",
   "url": "https://aisagalab.com/blog/es/",
   "inLanguage": "es",
   "publisher": { "@type": "Organization", "name": "Saga Labs", "url": "https://aisagalab.com/" }
@@ -452,7 +452,7 @@ def build(render, hreflang):
             "Privacy", h1_en,
             "Three assistants, three sets of defaults, and one thing they have in "
             "common: the conversation leaves your device.",
-            "Saga Labs &middot; " + DATE_EN,
+            "Maruta G &middot; " + DATE_EN,
             "Leer en espa&ntilde;ol", "es/que-hace-la-ia-con-tus-conversaciones.html",
         ) + '\n        <div class="article-body">' + A1_EN_BODY
           + '</div>\n        <div class="article-body article-sources">' + A1_EN_SOURCES + '</div>',
@@ -470,7 +470,7 @@ def build(render, hreflang):
             "Privacidad", "Qu&eacute; hacen de verdad ChatGPT, Claude y Gemini con tus conversaciones",
             "Tres asistentes, tres conjuntos de valores por defecto y una cosa en "
             "com&uacute;n: la conversaci&oacute;n sale de tu dispositivo.",
-            "Saga Labs &middot; " + DATE_ES,
+            "Maruta G &middot; " + DATE_ES,
             "Read in English", "../what-ai-does-with-your-conversations.html",
         ) + '\n        <div class="article-body">' + A1_ES_BODY
           + '</div>\n        <div class="article-body article-sources">' + A1_ES_SOURCES + '</div>',
@@ -494,7 +494,7 @@ def build(render, hreflang):
             "Privacy", "I sent OpenAI and Anthropic a GDPR erasure request.<br>Neither told me what they kept.",
             "Five layers sit between the delete button and a conversation actually "
             "being gone. Only the first one is under your control.",
-            "Saga Labs &middot; " + DATE_EN,
+            "Maruta G &middot; " + DATE_EN,
             "Leer en espa&ntilde;ol", "es/solicitud-de-borrado-rgpd-a-openai-y-anthropic.html",
         ) + '\n        <div class="article-body">' + A4_EN_BODY
           + '</div>\n        <div class="article-body article-sources">' + A4_EN_SOURCES + '</div>',
@@ -513,7 +513,7 @@ def build(render, hreflang):
             "Privacidad", "Mand&eacute; a OpenAI y a Anthropic una solicitud de borrado del RGPD.<br>Ninguno me dijo qu&eacute; se quedaban.",
             "Entre el bot&oacute;n de borrar y que la conversaci&oacute;n desaparezca de "
             "verdad hay cinco capas. Solo la primera depende de ti.",
-            "Saga Labs &middot; " + DATE_ES,
+            "Maruta G &middot; " + DATE_ES,
             "Read in English", "../i-sent-openai-and-anthropic-a-gdpr-erasure-request.html",
         ) + '\n        <div class="article-body">' + A4_ES_BODY
           + '</div>\n        <div class="article-body article-sources">' + A4_ES_SOURCES + '</div>',
@@ -662,11 +662,9 @@ and a court can suspend it for everyone at once.</strong></p>
 
 <h2>I sent both companies a GDPR erasure request</h2>
 
-<p>A note on voice: the rest of this article is written by Saga Labs, but this
-section is mine personally. From my own personal accounts &mdash; the consumer
-tier this article is about, not a business plan with different defaults &mdash; I
-sent OpenAI and Anthropic a formal request under the GDPR, and kept what came
-back.</p>
+<p>From my own personal accounts &mdash; the consumer tier this article is
+about, not a business plan with different defaults &mdash; I sent OpenAI and
+Anthropic a formal request under the GDPR, and kept what came back.</p>
 
 <p>Not a support ticket. A request under Article 15, the right of access, and
 Article 17, the right to erasure, asking specifically for the things this article
@@ -954,12 +952,10 @@ suspenderla para todo el mundo a la vez.</strong></p>
 
 <h2>Les mand&eacute; una solicitud de borrado del RGPD</h2>
 
-<p>Un apunte sobre la voz: el resto del art&iacute;culo lo firma Saga Labs, pero
-esta secci&oacute;n es m&iacute;a personalmente. Desde mis propias cuentas
-personales &mdash; el nivel de consumo del que va este art&iacute;culo, no un plan
-de empresa con otros valores por defecto &mdash; mand&eacute; a OpenAI y a
-Anthropic una solicitud formal al amparo del RGPD, y guard&eacute; lo que
-volvi&oacute;.</p>
+<p>Desde mis propias cuentas personales &mdash; el nivel de consumo del que va
+este art&iacute;culo, no un plan de empresa con otros valores por defecto &mdash;
+mand&eacute; a OpenAI y a Anthropic una solicitud formal al amparo del RGPD, y
+guard&eacute; lo que volvi&oacute;.</p>
 
 <p>No un ticket de soporte. Una solicitud por el art&iacute;culo 15, derecho de
 acceso, y el art&iacute;culo 17, derecho de supresi&oacute;n, pidiendo justo lo
