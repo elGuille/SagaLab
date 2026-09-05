@@ -1,14 +1,13 @@
 # Saga Labs
 
-AI engineering studio specializing in agentic AI, MCP servers, and AI automations. Builds and ships its own consumer apps as proof of execution and takes on selected client projects.
+Independent app studio. Builds and runs its own software — seven apps on the App Store across AI video, on-device assistants, productivity and privacy — and takes on a small number of client projects each quarter.
 
 ## What we do
 
-- **Agentic AI flows** — design and ship multi-step agents that plan, call tools, handle failure modes, and run reliably in production. Anthropic, OpenAI, on-device LLMs.
-- **MCP servers** — Model Context Protocol servers that expose internal models, APIs, or data to Claude, ChatGPT, Cursor, OpenClaw and any other MCP-compatible client.
-- **AI automations** — workflows that replace manual ops: lead enrichment, ticket triage, content pipelines, on-call response, internal copilots.
-- **Production hardening** — turning AI prototypes into reliable services: cost control, rate-limiting, abuse defence, observability, OAuth and DCR.
-- **Custom integrations** — Anthropic, OpenAI, Kie.ai, ElevenLabs, Firebase, Stripe, RevenueCat, Twilio. Wired into iOS, web, or backend.
+- **We build and run our own apps.** Seven on the App Store, plus the web products behind them. Dora Video is the biggest.
+- **iOS and web development** — Swift and SwiftUI, Next.js, Firebase. Shipped and maintained, not prototyped.
+- **Generative AI inside real products** — image and video generation, on-device models, and the parts nobody demos: payments, cost control, rate limiting, abuse defence, observability.
+- **Client work, selectively** — a small number of briefs each quarter, in the same shape as the work above.
 
 ## Proof points
 
@@ -21,7 +20,7 @@ AI engineering studio specializing in agentic AI, MCP servers, and AI automation
 - Founded 2023.
 - Public contact email: sagalabs@proton.me
 - Website: https://aisagalab.com/
-- Active across iOS, web, MCP servers, agentic backends.
+- Active across iOS and web. Seven apps on the App Store.
 - Engagement model: short briefs (two to twelve weeks). Asynchronous-first. Fixed-scope or staged-gates depending on uncertainty.
 
 ## Apps shipped
@@ -64,7 +63,6 @@ Each app doubles as a public showcase of internal capability.
 
 - https://aisagalab.com/                       — Home, studio overview
 - https://aisagalab.com/blog/                  — Writing on private and on-device AI (sourced)
-- https://aisagalab.com/agentic-ai.html        — Agentic AI, MCP servers, and automations services
 - https://aisagalab.com/faq.html               — FAQ about the studio, services, and process
 - https://aisagalab.com/contact.html           — Contact
 
