@@ -261,15 +261,19 @@
             <div class="container">
                 <style>
                     .proof-row {
-                        max-width: 820px;
+                        max-width: 900px;
                         margin: 0 auto;
                         border-radius: 20px;
-                        padding: 40px 44px;
+                        padding: 28px 32px;
                         text-align: left;
                         background: linear-gradient(135deg, #0a0a0b 0%, #1a1a1f 100%);
                         color: #f5f5f7;
                         position: relative;
                         overflow: hidden;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 28px;
                     }
                     .proof-row::before {
                         content: "";
@@ -280,12 +284,12 @@
                         pointer-events: none;
                     }
                     .proof-row h3 {
-                        margin: 0 0 12px; font-size: 1.3rem; font-weight: 600;
+                        margin: 0 0 8px; font-size: 1.2rem; font-weight: 600;
                         color: #fff; letter-spacing: -0.01em;
                     }
                     .proof-row p {
-                        margin: 0 0 20px; opacity: 0.8; line-height: 1.6;
-                        font-size: 1.02rem; max-width: 52ch;
+                        margin: 0; opacity: 0.72; line-height: 1.5;
+                        font-size: .98rem; max-width: 62ch;
                     }
                     .proof-row p a {
                         color: #818cf8;
@@ -294,6 +298,15 @@
                         transition: border-color 0.2s ease;
                     }
                     .proof-row p a:hover { border-color: #818cf8; }
+                    .proof-row__link {
+                        flex: 0 0 auto; padding: 10px 16px; border-radius: 9px;
+                        border: 1px solid rgba(129,140,248,.6); color: #a5b4fc;
+                        text-decoration: none; font-weight: 600; white-space: nowrap;
+                    }
+                    .proof-row__link:hover { background: rgba(129,140,248,.12); }
+                    @media (max-width: 700px) {
+                        .proof-row { align-items: flex-start; flex-direction: column; gap: 18px; }
+                    }
                     .proof-row .badges { display: flex; gap: 8px; flex-wrap: wrap; }
                     .proof-row .badge {
                         font-size: 0.78rem; padding: 6px 14px;
@@ -306,8 +319,11 @@
 
                 <!-- Proof of execution -->
                 <div class="proof-row">
-                    <h3>Proof: Dora for people and AI agents</h3>
-                    <p>A production AI video and image layer with one OAuth-secured MCP endpoint, transparent generation costs, and the same account across web, iPhone, ChatGPT, Claude, Cursor, and Google Antigravity. <a href="ai-video-generator.html">See how Dora works</a></p>
+                    <div>
+                        <h3>Proof: Dora MCP</h3>
+                        <p>AI video and image generation through one OAuth-secured connection for ChatGPT, Claude, Cursor, and other compatible agents.</p>
+                    </div>
+                    <a class="proof-row__link" href="ai-video-generator.html">See Dora →</a>
                 </div>
             </div>
         </section>
