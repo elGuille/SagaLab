@@ -595,6 +595,34 @@ scores for <strong>up to seven years</strong>.</p>
 <p>Note the asymmetry. The classification score &mdash; a machine's judgement
 about you &mdash; outlives the conversation that produced it by five years.</p>
 
+<p>Which conversations get flagged is not published. What is published is the
+policy the flag keys off, and it names four domains as
+&ldquo;High-Risk Use Cases&rdquo;:</p>
+
+<blockquote>Legal: Use cases related to legal interpretation, legal guidance, or
+decisions with legal implications. Healthcare: Use cases related to healthcare
+decisions, medical diagnosis, patient care, therapy, mental health, or other
+medical guidance. Insurance: […] Finance: Use cases related to financial
+decisions, including investment advice, loan approvals […]</blockquote>
+
+<p>Be careful with what that does and does not say. Those requirements are
+addressed to developers building products on Claude: they must put a qualified
+professional in the loop and disclose that AI was involved. They are not a
+statement that asking about your own health flags your chat, and we are not
+claiming that they are.</p>
+
+<p>The precise position is this. The seven-year clock starts when an automated
+system decides a conversation may violate the Usage Policy. The Usage Policy is
+the document that names those four domains. Whether conversations in them are
+more likely to be flagged is not disclosed, and there is no mechanism for you to
+find out whether any particular conversation of yours was.</p>
+
+<p>So the categories where you would most want to know &mdash; your health, your
+money, your legal exposure &mdash; are exactly the categories where you cannot.
+That is not an accusation. It is the honest shape of the information available to
+you, and it is the reason some conversations are worth keeping off a network
+entirely.</p>
+
 <h2>Layer 5 — the court</h2>
 
 <p>The clearest demonstration that the delete button is not the last word came out
@@ -701,43 +729,30 @@ produce it, because no third party ever had it.</p>
 many parties are involved. Five of the layers above exist because the conversation
 travelled somewhere. A conversation that never leaves the device has one layer.</p>
 
-<h2>This is why we made Pinku</h2>
+<h2>Where this leaves you</h2>
 
-<p>We started with the problem in this article, not with an app. Every control the
-cloud providers offer narrows the exposure and none of them removes it, because
-none of them changes where the conversation goes. Turn off training and human
-review still applies. Use a temporary chat and it is still retained for safety.
-Ask for deletion and you get the replies above.</p>
+<p>None of this is an argument for abandoning cloud assistants. They are better
+at almost everything, and for most of what people use them for, the retention
+question is not worth the trade. It is an argument for one narrower habit:
+knowing which of your conversations you would mind someone reading, and treating
+those differently from the rest.</p>
 
-<p><a href="%s">Pinku</a> is the version with none of those layers. It runs open
-language models entirely on an iPhone or a Mac. The model file downloads once;
-after that nothing leaves the device. No account, no server, no retention window,
-no reviewer, and nothing anyone could be ordered to produce, because nobody else
-ever has it.</p>
-
-<p>It will not replace a frontier model and we would not pretend otherwise: no web
-access, shorter context, and it is exactly as fast as your device. What it is
-instead is the one arrangement where the five layers above do not exist at all.
-Use the cloud for most of your work. Keep this for the part you would think twice
-about typing into a shared machine.</p>
-
-<p><strong><a href="%s">Get Pinku free on the App Store &rarr;</a></strong></p>
-
-<p>If this is the way you think about your files as well as your chats,
-<a href="%s">Keeper</a> works on the same principle: an encrypted photo and video
-vault where the files stay on the device. Everything we make is at
-<a href="../index.html#mobile-apps">aisagalab.com</a>.</p>
+<p>For those, the only arrangement in which none of the five layers exists is a
+model that runs on hardware you own. That is the kind of thing we build &mdash;
+<a href="%s">Pinku</a> for chat on an iPhone or a Mac, <a href="%s">Keeper</a> for
+photos and files. Both free, both offline.</p>
 
 <p class="article-note">Every figure in this article is quoted from a provider's
 own published policy or a court filing, all linked below. Check them rather than
 taking our word for it &mdash; and if one is out of date,
 <a href="mailto:sagalabs@proton.me">tell us</a> and we will correct the page.</p>
-""" % (APP_STORE, APP_STORE, KEEPER)
+""" % (APP_STORE, KEEPER)
 
 A4_EN_SOURCES = """
 <h2>Sources</h2>
 <ul>
 <li><a href="https://privacy.anthropic.com/en/articles/10023548-how-long-do-you-store-my-data" rel="nofollow noopener" target="_blank">How long do you store my data?</a> &mdash; Anthropic Privacy Center, updated 1 July 2026. The 30-day, 2-year, 5-year and 7-year windows.</li>
+<li><a href="https://www.anthropic.com/legal/aup" rel="nofollow noopener" target="_blank">Usage Policy</a> &mdash; Anthropic. The High-Risk Use Case Requirements naming legal, healthcare, insurance and finance.</li>
 <li><a href="https://support.google.com/gemini/answer/13594961" rel="nofollow noopener" target="_blank">Gemini Apps Privacy Notice</a> &mdash; Google. Human review and the three-year retention of reviewed chats.</li>
 <li><a href="https://help.openai.com/en/articles/8983778-chat-and-file-retention-policies-in-chatgpt" rel="nofollow noopener" target="_blank">Chat and file retention policies in ChatGPT</a> &mdash; OpenAI Help Center.</li>
 <li><a href="https://openai.com/index/response-to-nyt-data-demands/" rel="nofollow noopener" target="_blank">How we're responding to The New York Times' data demands</a> &mdash; OpenAI, on the May 2025 preservation order.</li>
@@ -814,6 +829,36 @@ puntuaciones de clasificaci&oacute;n <strong>hasta siete a&ntilde;os</strong>.</
 <p>F&iacute;jate en la asimetr&iacute;a. La puntuaci&oacute;n &mdash; el juicio de
 una m&aacute;quina sobre ti &mdash; sobrevive cinco a&ntilde;os m&aacute;s que la
 conversaci&oacute;n que la produjo.</p>
+
+<p>Qu&eacute; conversaciones se marcan no se publica. Lo que s&iacute; se publica
+es la pol&iacute;tica de la que depende esa marca, y nombra cuatro dominios como
+&laquo;casos de uso de alto riesgo&raquo;:</p>
+
+<blockquote>Legal: casos relacionados con interpretaci&oacute;n legal,
+asesoramiento legal o decisiones con implicaciones legales. Sanidad: casos
+relacionados con decisiones sanitarias, diagn&oacute;stico m&eacute;dico,
+atenci&oacute;n al paciente, terapia, salud mental u otra orientaci&oacute;n
+m&eacute;dica. Seguros: […] Finanzas: casos relacionados con decisiones
+financieras, incluido el asesoramiento de inversi&oacute;n y la
+aprobaci&oacute;n de pr&eacute;stamos […]</blockquote>
+
+<p>Cuidado con lo que eso dice y lo que no. Esos requisitos van dirigidos a quien
+construye productos sobre Claude: tiene que poner a un profesional cualificado a
+revisar y avisar de que hay IA de por medio. No dicen que preguntar por tu propia
+salud marque tu chat, y no estamos afirmando que lo hagan.</p>
+
+<p>La posici&oacute;n exacta es esta. El reloj de siete a&ntilde;os arranca cuando
+un sistema autom&aacute;tico decide que una conversaci&oacute;n puede incumplir la
+Usage Policy. La Usage Policy es el documento que nombra esos cuatro dominios. Si
+las conversaciones de esos dominios tienen m&aacute;s probabilidad de marcarse no
+se dice, y no existe ning&uacute;n mecanismo para que t&uacute; averig&uuml;es si
+alguna conversaci&oacute;n tuya lo est&aacute;.</p>
+
+<p>As&iacute; que las categor&iacute;as en las que m&aacute;s te gustar&iacute;a
+saberlo &mdash; tu salud, tu dinero, tu exposici&oacute;n legal &mdash; son justo
+aquellas en las que no puedes. No es una acusaci&oacute;n. Es la forma honesta de
+la informaci&oacute;n que tienes disponible, y es la raz&oacute;n por la que
+algunas conversaciones merecen no salir a una red.</p>
 
 <h2>Capa 5 &mdash; el juzgado</h2>
 
@@ -935,43 +980,26 @@ afirmaci&oacute;n sobre cu&aacute;ntas partes intervienen. Cinco de las capas de
 arriba existen porque la conversaci&oacute;n viaj&oacute; a alg&uacute;n sitio. Una
 conversaci&oacute;n que nunca sale del dispositivo tiene una capa.</p>
 
-<h2>Por esto hicimos Pinku</h2>
+<h2>D&oacute;nde te deja esto</h2>
 
-<p>Empezamos con el problema de este art&iacute;culo, no con una app. Todos los
-controles que ofrecen los proveedores en la nube estrechan la exposici&oacute;n y
-ninguno la elimina, porque ninguno cambia a d&oacute;nde va la conversaci&oacute;n.
-Desactivas el entrenamiento y sigue habiendo revisi&oacute;n humana. Usas un chat
-temporal y se conserva igual por seguridad. Pides el borrado y recibes las
-respuestas de arriba.</p>
+<p>Nada de esto es un argumento para dejar los asistentes en la nube. Son mejores
+en casi todo, y para la mayor parte de lo que la gente hace con ellos, la
+cuesti&oacute;n de la retenci&oacute;n no compensa el cambio. Es un argumento
+para una costumbre m&aacute;s estrecha: saber cu&aacute;les de tus conversaciones
+te importar&iacute;a que alguien leyera, y tratarlas distinto que al resto.</p>
 
-<p><a href="%s">Pinku</a> es la versi&oacute;n sin ninguna de esas capas. Ejecuta
-modelos de lenguaje abiertos enteros en un iPhone o un Mac. El archivo del modelo
-se descarga una vez; a partir de ah&iacute; no sale nada del dispositivo. Sin
-cuenta, sin servidor, sin ventana de retenci&oacute;n, sin revisor, y sin nada que
-nadie pueda verse obligado a entregar, porque nadie m&aacute;s lo ha tenido
-nunca.</p>
-
-<p>No sustituye a un modelo puntero y no vamos a fingir lo contrario: sin acceso a
-la web, con menos contexto, y va exactamente igual de r&aacute;pido que tu
-dispositivo. Lo que s&iacute; es: la &uacute;nica disposici&oacute;n en la que las
-cinco capas de arriba no existen. Usa la nube para la mayor parte de tu trabajo.
-Deja esto para lo que te lo pensar&iacute;as dos veces antes de escribir en un
-ordenador compartido.</p>
-
-<p><strong><a href="%s">Descarga Pinku gratis en la App Store &rarr;</a></strong></p>
-
-<p>Si piensas as&iacute; tambi&eacute;n de tus archivos y no solo de tus chats,
-<a href="%s">Keeper</a> funciona con el mismo principio: una galer&iacute;a cifrada
-de fotos y v&iacute;deos en la que los archivos se quedan en el dispositivo. Todo
-lo que hacemos est&aacute; en
-<a href="../../index.html#mobile-apps">aisagalab.com</a>.</p>
+<p>Para esas, la &uacute;nica disposici&oacute;n en la que no existe ninguna de
+las cinco capas es un modelo que corre en hardware tuyo. Es el tipo de cosa que
+hacemos: <a href="%s">Pinku</a> para chatear en un iPhone o un Mac, y
+<a href="%s">Keeper</a> para fotos y archivos. Los dos gratis, los dos sin
+conexi&oacute;n.</p>
 
 <p class="article-note">Toda cifra de este art&iacute;culo est&aacute; citada de la
 pol&iacute;tica publicada por el proveedor o de una resoluci&oacute;n judicial,
 enlazadas abajo. Compru&eacute;balas en vez de creernos &mdash; y si alguna
 est&aacute; desactualizada, <a href="mailto:sagalabs@proton.me">av&iacute;sanos</a>
 y corregimos la p&aacute;gina.</p>
-""" % (APP_STORE, APP_STORE, KEEPER)
+""" % (APP_STORE, KEEPER)
 
 A4_ES_SOURCES = A4_EN_SOURCES.replace("<h2>Sources</h2>", "<h2>Fuentes</h2>").replace(
     "<p>Checked on 5 September 2026.</p>", "<p>Comprobado el 5 de septiembre de 2026.</p>")
