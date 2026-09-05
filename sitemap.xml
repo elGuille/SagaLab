@@ -122,6 +122,20 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://aisagalab.com/blog/what-deleting-a-chat-means.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aisagalab.com/blog/es/que-significa-borrar-un-chat.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Legal Pages -->
   <url>
     <loc>https://aisagalab.com/privacy.html</loc>

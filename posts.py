@@ -143,10 +143,13 @@ into a chat is a professional using the consumer app on their own phone.</p>
 
 <p>Deleted conversations are removed from OpenAI's systems within 30 days, with
 an exception for de-identified data and legal obligations. That exception is not
-theoretical, and it is the subject of
-an article of its own, which we are still writing: in the
-copyright litigation brought by The New York Times, a court ordered OpenAI to
-preserve output logs that would otherwise have been deleted.</p>
+theoretical: in the copyright litigation brought by The New York Times, a court
+ordered OpenAI for five months to preserve output logs that would otherwise have
+been deleted, and a sample of twenty million of them was later handed to the
+plaintiffs' lawyers. The order itself was lifted in October 2025. We go through
+the whole timeline in
+<a href="what-deleting-a-chat-means.html">what &ldquo;delete&rdquo; actually
+means</a>.</p>
 
 <h2>What none of this means</h2>
 
@@ -275,10 +278,13 @@ m&oacute;vil.</p>
 
 <p>Las conversaciones borradas salen de los sistemas de OpenAI en 30 d&iacute;as,
 con una excepci&oacute;n para datos anonimizados y obligaciones legales. Esa
-excepci&oacute;n no es te&oacute;rica, y tiene
-art&iacute;culo propio, que estamos escribiendo:
-en el pleito de derechos de autor del New York Times, un tribunal orden&oacute; a
-OpenAI conservar registros que de otro modo se habr&iacute;an borrado.</p>
+excepci&oacute;n no es te&oacute;rica: en el pleito de derechos de autor del New
+York Times, un tribunal oblig&oacute; a OpenAI durante cinco meses a conservar
+registros que de otro modo se habr&iacute;an borrado, y una muestra de veinte
+millones acab&oacute; en manos de los abogados de la parte contraria. La orden se
+levant&oacute; en octubre de 2025. Repasamos la cronolog&iacute;a entera en
+<a href="que-significa-borrar-un-chat.html">qu&eacute; significa de verdad borrar
+un chat</a>.</p>
 
 <h2>Lo que nada de esto significa</h2>
 
@@ -348,6 +354,12 @@ INDEX_EN = """
                 Google keeps human-reviewed chats for three years after you
                 delete them.</p>
             </li>
+            <li>
+                <a href="what-deleting-a-chat-means.html">What &ldquo;delete&rdquo; actually means when you delete an AI chat</a>
+                <p>Five layers sit between the button and the conversation being
+                gone. We asked OpenAI and Anthropic to delete our data; neither
+                said it was gone, and both were being accurate.</p>
+            </li>
         </ul>
         </div>
 """
@@ -369,6 +381,13 @@ INDEX_ES = """
                 defecto de entrenamiento de los tres asistentes principales, sacados
                 de sus propias pol&iacute;ticas. Google conserva tres a&ntilde;os los
                 chats revisados por humanos despu&eacute;s de que los borres.</p>
+            </li>
+            <li>
+                <a href="que-significa-borrar-un-chat.html">Qu&eacute; significa de verdad borrar un chat de IA</a>
+                <p>Entre el bot&oacute;n y que la conversaci&oacute;n desaparezca
+                hay cinco capas. Pedimos a OpenAI y a Anthropic que borraran
+                nuestros datos: ninguno dijo que estuvieran borrados, y los dos
+                estaban siendo exactos.</p>
             </li>
         </ul>
         </div>
@@ -456,4 +475,452 @@ def build(render, hreflang):
           + '</div>\n        <div class="article-body article-sources">' + A1_ES_SOURCES + '</div>',
     ))
 
+    # --- 4: que significa borrar un chat ----------------------------------
+    en_path = "blog/what-deleting-a-chat-means.html"
+    es_path = "blog/es/que-significa-borrar-un-chat.html"
+    alt = hreflang(en_path, es_path)
+
+    h1_en = "What \u201cdelete\u201d actually means when you delete an AI chat"
+    d_en = ("Five layers sit between the delete button and the conversation being gone: "
+            "storage, model weights, the reviewer's copy, the safety flag and the court. "
+            "With the OpenAI privacy team's reply, and Anthropic's.")
+    out.append(render(
+        path=en_path, lang="en",
+        title="What \u201cdelete\u201d actually means when you delete an AI chat — Saga Labs",
+        desc=d_en, og_title=h1_en, alternates=alt,
+        jsonld=_jsonld(h1_en, d_en, "https://aisagalab.com/" + en_path, "en", "Privacy"),
+        body=_head(
+            "Privacy", "What &ldquo;delete&rdquo; actually means when you delete an AI chat",
+            "We asked OpenAI and Anthropic to delete our data. Neither of them said "
+            "it was gone &mdash; and both were being accurate.",
+            "Saga Labs &middot; " + DATE_EN,
+            "Leer en espa&ntilde;ol", "es/que-significa-borrar-un-chat.html",
+        ) + '\n        <div class="article-body">' + A4_EN_BODY
+          + '</div>\n        <div class="article-body article-sources">' + A4_EN_SOURCES + '</div>',
+    ))
+
+    h1_es = "Qu\u00e9 significa de verdad borrar un chat de IA"
+    d_es = ("Entre el bot\u00f3n de borrar y que la conversaci\u00f3n desaparezca hay cinco capas: "
+            "almacenamiento, pesos del modelo, la copia del revisor, la marca de seguridad y el "
+            "juzgado. Con la respuesta del equipo de privacidad de OpenAI, y la de Anthropic.")
+    out.append(render(
+        path=es_path, lang="es",
+        title=h1_es + " — Saga Labs",
+        desc=d_es, og_title=h1_es, alternates=alt,
+        jsonld=_jsonld(h1_es, d_es, "https://aisagalab.com/" + es_path, "es", "Privacidad"),
+        body=_head(
+            "Privacidad", "Qu&eacute; significa de verdad borrar un chat de IA",
+            "Pedimos a OpenAI y a Anthropic que borraran nuestros datos. Ninguno dijo "
+            "que estuvieran borrados &mdash; y los dos estaban siendo exactos.",
+            "Saga Labs &middot; " + DATE_ES,
+            "Read in English", "../what-deleting-a-chat-means.html",
+        ) + '\n        <div class="article-body">' + A4_ES_BODY
+          + '</div>\n        <div class="article-body article-sources">' + A4_ES_SOURCES + '</div>',
+    ))
+
     return out
+
+
+# --------------------------------------------------------------------------
+# 4 — Que significa borrar un chat
+# --------------------------------------------------------------------------
+#
+# Cronologia NYT v. OpenAI verificada el 5 sep 2026. La orden de conservacion
+# NO sigue vigente: se levanto en octubre de 2025. Lo que si ocurrio es que los
+# registros conservados durante esos cinco meses se acabaron entregando.
+# Contarlo mal en cualquiera de las dos direcciones es un problema.
+
+A4_EN_BODY = """
+<p>Every AI assistant has a delete button. Pressing it makes a row disappear
+from a list, immediately and satisfyingly. Whether it makes anything else happen
+is a different question, with a different answer for each layer of the system the
+conversation passed through.</p>
+
+<p>None of what follows is a scandal. It is mostly the ordinary consequence of
+running software at scale, and some of it is legally required. But the gap
+between what the button looks like it does and what it does is wide enough to be
+worth writing down.</p>
+
+<h2>Layer 1 — your view, and then the storage</h2>
+
+<p>The row vanishing is instant and local. Behind it, both OpenAI and Anthropic
+publish the same window: a deleted conversation is removed from back-end systems
+<strong>within 30 days</strong>. Anthropic's wording is &ldquo;deleted from our
+back-end storage systems within 30 days&rdquo;; OpenAI's is that deleted chats are
+permanently removed within 30 days, unless de-identification or legal exceptions
+apply.</p>
+
+<p>Thirty days is a reasonable number. Backups have to roll over, and a system
+that deleted from every replica synchronously would be a system that could not be
+restored after an incident. But it does mean that &ldquo;deleted&rdquo; means
+&ldquo;scheduled for deletion&rdquo; for a month.</p>
+
+<h2>Layer 2 — the weights, which cannot be edited</h2>
+
+<p>If your conversation was used in a training run that has already finished,
+deleting the conversation does not remove its influence from the resulting model.
+There is no known technique for reaching into a trained network and extracting one
+conversation.</p>
+
+<p>Anthropic states this plainly rather than hiding it: turning the setting off
+means your data will not be used for <em>future</em> training, but
+&ldquo;your data will still be included in model training runs that are already in
+progress, or in models that have been trained.&rdquo;</p>
+
+<p>This is the layer people underestimate. Deletion is a storage operation.
+Training is not storage.</p>
+
+<h2>Layer 3 — the copy a person read</h2>
+
+<p>All three major providers use human reviewers on some fraction of
+conversations. Google's Gemini Apps Privacy Notice is the only one that spells out
+what that means for deletion, and the sentence deserves to be read twice:</p>
+
+<blockquote>Chats reviewed by human reviewers (and related data like your
+language, device type, location info, or feedback) are not deleted when you delete
+your activity. Instead, they are retained for up to three years.</blockquote>
+
+<p>Your delete does not reach that copy. It has its own three-year clock, running
+independently of anything in your account settings, and there is no control
+surface for it.</p>
+
+<h2>Layer 4 — the safety flag</h2>
+
+<p>If an automated system decides a conversation might violate a usage policy,
+different rules apply. Anthropic publishes the numbers: inputs and outputs kept
+for <strong>up to two years</strong>, and the trust-and-safety classification
+scores for <strong>up to seven years</strong>.</p>
+
+<p>Note the asymmetry. The classification score &mdash; a machine's judgement
+about you &mdash; outlives the conversation that produced it by five years.</p>
+
+<h2>Layer 5 — the court</h2>
+
+<p>The clearest demonstration that the delete button is not the last word came out
+of the copyright litigation brought against OpenAI by The New York Times and
+others. The timeline is worth stating precisely, because it is widely
+misreported in both directions.</p>
+
+<ul>
+<li><strong>13 May 2025.</strong> Magistrate Judge Ona T. Wang orders OpenAI to
+preserve and segregate all output log data that would otherwise be deleted &mdash;
+including conversations users had deleted.</li>
+<li><strong>June 2025.</strong> District Judge Sidney Stein rejects OpenAI's
+objection. The order stands.</li>
+<li><strong>July 2025.</strong> Plaintiffs move to compel a 120-million-log
+sample. OpenAI counter-proposes 20 million de-identified conversations.</li>
+<li><strong>October 2025.</strong> Judge Wang terminates the going-forward
+preservation obligation. Logs already preserved stay preserved, and data tied to
+accounts the plaintiffs flagged must still be retained.</li>
+<li><strong>5 January 2026.</strong> The Southern District of New York upholds the
+orders requiring OpenAI to produce the 20-million-log sample. The first wave is
+delivered to the plaintiffs' legal team that month.</li>
+</ul>
+
+<p>So the sweeping preservation order is <em>over</em>. Anyone still saying
+&ldquo;OpenAI has to keep your deleted chats forever&rdquo; is a year out of date.</p>
+
+<p>But the part that actually matters is not over. For roughly five months, chats
+that users had deleted were retained because a court said so. A sample of twenty
+million of them, de-identified, has since been handed to the opposing side's
+lawyers in a copyright case. Nobody in that sample was asked, and nobody in it can
+tell whether they are in it.</p>
+
+<p>OpenAI fought the order and says the preserved data sits behind a small audited
+legal and security team. There is no reason to doubt that. The point is
+structural, not moral: <strong>a retention policy is a promise a company makes,
+and a court can suspend it for everyone at once.</strong></p>
+
+<h2>We asked both companies directly</h2>
+
+<p>In September 2026 we did the obvious experiment. Using our own accounts, we
+asked OpenAI and Anthropic to delete the data associated with us, and we kept the
+replies. Both answered within a day, both were polite, and neither did anything
+wrong. That is what makes the answers useful.</p>
+
+<p>OpenAI's privacy team replied with instructions rather than a confirmation,
+and with one qualifier worth isolating:</p>
+
+<blockquote>We acknowledge receipt of your request to delete any data associated
+with you processed by OpenAI, but keep your OpenAI account. For security and
+privacy reasons, the quickest way to delete <strong>data that is not necessary to
+maintain your account or our services</strong>, while keeping your ChatGPT account
+active, is to use our self-service tools outlined below.</blockquote>
+
+<p>Read the clause we emphasised. The self-service tools cover data that is
+<em>not necessary to maintain the account or the service</em>. That phrasing
+implies a second category &mdash; data that is necessary &mdash; and the reply
+does not say what is in it, how large it is, or how long it lasts. The answer to
+&ldquo;delete everything about me&rdquo; was a link to a Delete all chats
+button.</p>
+
+<p>Anthropic's reply was more specific, and lands on a qualifier of its own:</p>
+
+<blockquote>When you delete a conversation it will be removed from your chat
+history immediately, and deleted from our back-end storage systems within 30 days
+<strong>in accordance with our retention periods</strong>. […] When you choose to
+delete your account, your personal data connected to your account will also be
+deleted <strong>in accordance with our retention periods</strong>.</blockquote>
+
+<p>&ldquo;In accordance with our retention periods&rdquo; is not an answer to the
+question; it is a pointer back to the question. Those periods are the ones earlier
+in this article: 30 days for ordinary storage, up to two years for a flagged
+conversation, up to five years for de-identified training data, up to seven years
+for a safety classification score. Deleting your account does not reset those
+clocks &mdash; it hands you to them.</p>
+
+<p>The same reply added something most people have never considered:</p>
+
+<blockquote>if you are accessing Claude through a third party service (e.g.
+Quora's Poe or Cursor), you will need to request account deletion through that
+third party service provider.</blockquote>
+
+<p>Which means that deleting your account at the model provider does not delete
+the copies held by whatever else you piped it through, and you are expected to
+know the list.</p>
+
+<p>Neither company was evasive. Both replied faster than most companies would.
+The point is narrower: <strong>we asked two of the most sophisticated privacy
+teams in the industry whether our data was gone, and neither said yes.</strong>
+Not because they were hiding something, but because &ldquo;yes&rdquo; is not a
+thing either of them is in a position to say.</p>
+
+<p class="article-note">The two replies are quoted verbatim except that we removed
+the support agents' names. They answered their tickets correctly and should not be
+identifiable from this page.</p>
+
+<h2>What deletion means somewhere else</h2>
+
+<p>For contrast, consider what &ldquo;delete&rdquo; means for a file on your own
+machine. The operating system unlinks it. There is no thirty-day window, no
+reviewer's copy, no training pipeline, and no third party who could be ordered to
+produce it, because no third party ever had it.</p>
+
+<p>That is not a claim about anyone's trustworthiness. It is a claim about how
+many parties are involved. Five of the layers above exist because the conversation
+travelled somewhere. A conversation that never leaves the device has one layer.</p>
+
+<div class="article-note">
+<strong>Disclosure.</strong> We build <a href="%s">Pinku</a>, a free app that runs
+open language models entirely on an iPhone or a Mac, so we have an obvious
+interest in this argument. Every figure above is quoted from a provider's own
+published policy or a court filing, all linked below. Check them rather than
+taking our word for it &mdash; and if one is out of date,
+<a href="mailto:sagalabs@proton.me">tell us</a> and we will correct the page.
+</div>
+""" % APP_STORE
+
+A4_EN_SOURCES = """
+<h2>Sources</h2>
+<ul>
+<li><a href="https://privacy.anthropic.com/en/articles/10023548-how-long-do-you-store-my-data" rel="nofollow noopener" target="_blank">How long do you store my data?</a> &mdash; Anthropic Privacy Center, updated 1 July 2026. The 30-day, 2-year, 5-year and 7-year windows.</li>
+<li><a href="https://support.google.com/gemini/answer/13594961" rel="nofollow noopener" target="_blank">Gemini Apps Privacy Notice</a> &mdash; Google. Human review and the three-year retention of reviewed chats.</li>
+<li><a href="https://help.openai.com/en/articles/8983778-chat-and-file-retention-policies-in-chatgpt" rel="nofollow noopener" target="_blank">Chat and file retention policies in ChatGPT</a> &mdash; OpenAI Help Center.</li>
+<li><a href="https://openai.com/index/response-to-nyt-data-demands/" rel="nofollow noopener" target="_blank">How we're responding to The New York Times' data demands</a> &mdash; OpenAI, on the May 2025 preservation order.</li>
+<li><a href="https://www.engadget.com/ai/openai-no-longer-has-to-preserve-all-of-its-chatgpt-data-with-some-exceptions-192422093.html" rel="nofollow noopener" target="_blank">OpenAI no longer has to preserve all of its ChatGPT data, with some exceptions</a> &mdash; Engadget, October 2025, on the order being terminated.</li>
+<li><a href="https://www.dataprivacyandsecurityinsider.com/2026/01/when-chats-become-evidence-court-affirms-order-requiring-openai-to-produce-20-million-de-identified-chatgpt-logs/" rel="nofollow noopener" target="_blank">Court affirms order requiring OpenAI to produce 20 million de-identified ChatGPT logs</a> &mdash; January 2026.</li>
+</ul>
+<p>Checked on 5 September 2026.</p>
+"""
+
+
+A4_ES_BODY = """
+<p>Todo asistente de IA tiene un bot&oacute;n de borrar. Pulsarlo hace desaparecer
+una fila de una lista, al instante y de forma satisfactoria. Si hace algo
+m&aacute;s es otra pregunta, con una respuesta distinta para cada capa del sistema
+por la que pas&oacute; la conversaci&oacute;n.</p>
+
+<p>Nada de lo que sigue es un esc&aacute;ndalo. Casi todo es la consecuencia
+normal de operar software a escala, y parte es obligaci&oacute;n legal. Pero la
+distancia entre lo que parece que hace el bot&oacute;n y lo que hace es lo bastante
+grande como para merecer que se escriba.</p>
+
+<h2>Capa 1 &mdash; tu vista, y luego el almacenamiento</h2>
+
+<p>Que la fila desaparezca es inmediato y local. Detr&aacute;s, OpenAI y Anthropic
+publican la misma ventana: una conversaci&oacute;n borrada sale de los sistemas
+<strong>en 30 d&iacute;as</strong>. Anthropic dice &laquo;eliminada de nuestros
+sistemas de almacenamiento en 30 d&iacute;as&raquo;; OpenAI, que los chats borrados
+se eliminan definitivamente en 30 d&iacute;as, salvo anonimizaci&oacute;n u
+obligaciones legales.</p>
+
+<p>Treinta d&iacute;as es una cifra razonable. Las copias de seguridad tienen que
+rotar, y un sistema que borrase de cada r&eacute;plica de forma s&iacute;ncrona
+ser&iacute;a un sistema que no se puede restaurar tras un incidente. Pero implica
+que &laquo;borrado&raquo; significa &laquo;programado para borrarse&raquo; durante
+un mes.</p>
+
+<h2>Capa 2 &mdash; los pesos, que no se editan</h2>
+
+<p>Si tu conversaci&oacute;n se us&oacute; en un entrenamiento que ya
+termin&oacute;, borrarla no quita su influencia del modelo resultante. No existe
+t&eacute;cnica conocida para meter la mano en una red entrenada y extraer una
+conversaci&oacute;n.</p>
+
+<p>Anthropic lo dice claro en vez de esconderlo: desactivar el ajuste significa
+que tus datos no se usar&aacute;n en entrenamientos <em>futuros</em>, pero
+&laquo;tus datos segu&iacute;an incluidos en los entrenamientos ya en curso, o en
+los modelos ya entrenados&raquo;.</p>
+
+<p>Esta es la capa que la gente subestima. Borrar es una operaci&oacute;n de
+almacenamiento. Entrenar no es almacenamiento.</p>
+
+<h2>Capa 3 &mdash; la copia que ley&oacute; una persona</h2>
+
+<p>Los tres grandes proveedores usan revisores humanos sobre una parte de las
+conversaciones. El aviso de Gemini Apps es el &uacute;nico que deletrea qu&eacute;
+significa eso para el borrado, y la frase merece leerse dos veces:</p>
+
+<blockquote>Los chats revisados por revisores humanos (y datos asociados como tu
+idioma, tipo de dispositivo, informaci&oacute;n de ubicaci&oacute;n o comentarios)
+no se eliminan cuando borras tu actividad. En su lugar se conservan hasta tres
+a&ntilde;os.</blockquote>
+
+<p>Tu borrado no llega a esa copia. Tiene su propio reloj de tres a&ntilde;os, que
+corre al margen de cualquier ajuste de tu cuenta, y no hay ning&uacute;n control
+para &eacute;l.</p>
+
+<h2>Capa 4 &mdash; la marca de seguridad</h2>
+
+<p>Si un sistema autom&aacute;tico decide que una conversaci&oacute;n puede
+incumplir la pol&iacute;tica de uso, se aplican otras reglas. Anthropic publica las
+cifras: entradas y salidas <strong>hasta dos a&ntilde;os</strong>, y las
+puntuaciones de clasificaci&oacute;n <strong>hasta siete a&ntilde;os</strong>.</p>
+
+<p>F&iacute;jate en la asimetr&iacute;a. La puntuaci&oacute;n &mdash; el juicio de
+una m&aacute;quina sobre ti &mdash; sobrevive cinco a&ntilde;os m&aacute;s que la
+conversaci&oacute;n que la produjo.</p>
+
+<h2>Capa 5 &mdash; el juzgado</h2>
+
+<p>La demostraci&oacute;n m&aacute;s clara de que el bot&oacute;n de borrar no
+tiene la &uacute;ltima palabra sali&oacute; del pleito de derechos de autor contra
+OpenAI del New York Times y otros. Conviene dar la cronolog&iacute;a exacta, porque
+se cuenta mal en las dos direcciones.</p>
+
+<ul>
+<li><strong>13 de mayo de 2025.</strong> La jueza Ona T. Wang ordena a OpenAI
+conservar y segregar todos los registros de salida que de otro modo se
+borrar&iacute;an &mdash; incluidas conversaciones que los usuarios hab&iacute;an
+borrado.</li>
+<li><strong>Junio de 2025.</strong> El juez Sidney Stein rechaza la
+objeci&oacute;n de OpenAI. La orden se mantiene.</li>
+<li><strong>Julio de 2025.</strong> Los demandantes piden una muestra de 120
+millones de registros. OpenAI contrapropone 20 millones anonimizados.</li>
+<li><strong>Octubre de 2025.</strong> La jueza Wang levanta la obligaci&oacute;n de
+conservaci&oacute;n hacia delante. Lo ya conservado sigue conservado, y hay que
+seguir reteniendo los datos de las cuentas se&ntilde;aladas por los
+demandantes.</li>
+<li><strong>5 de enero de 2026.</strong> El tribunal del Distrito Sur de Nueva York
+confirma las &oacute;rdenes que obligan a entregar la muestra de 20 millones. La
+primera tanda llega al equipo legal de los demandantes ese mismo mes.</li>
+</ul>
+
+<p>As&iacute; que la orden general de conservaci&oacute;n <em>se acab&oacute;</em>.
+Quien siga diciendo que &laquo;OpenAI tiene que guardar tus chats borrados para
+siempre&raquo; lleva un a&ntilde;o de retraso.</p>
+
+<p>Pero la parte que de verdad importa no se ha acabado. Durante unos cinco meses,
+chats que los usuarios hab&iacute;an borrado se conservaron porque lo dijo un
+tribunal. Una muestra de veinte millones, anonimizada, se ha entregado desde
+entonces a los abogados de la parte contraria en un pleito de copyright. A nadie de
+esa muestra se le pregunt&oacute;, y nadie de esa muestra puede saber si est&aacute;
+dentro.</p>
+
+<p>OpenAI pele&oacute; la orden y dice que los datos conservados est&aacute;n tras
+un equipo legal y de seguridad reducido y auditado. No hay motivo para dudarlo. El
+argumento es estructural, no moral: <strong>una pol&iacute;tica de
+retenci&oacute;n es una promesa que hace una empresa, y un tribunal puede
+suspenderla para todo el mundo a la vez.</strong></p>
+
+<h2>Se lo preguntamos a las dos empresas</h2>
+
+<p>En septiembre de 2026 hicimos el experimento obvio. Desde nuestras propias
+cuentas, pedimos a OpenAI y a Anthropic que borraran los datos asociados a
+nosotros, y guardamos las respuestas. Las dos contestaron en menos de un
+d&iacute;a, las dos fueron correctas, y ninguna hizo nada mal. Eso es justo lo que
+hace &uacute;tiles las respuestas.</p>
+
+<p>El equipo de privacidad de OpenAI respondi&oacute; con instrucciones en vez de
+con una confirmaci&oacute;n, y con una coletilla que merece aislarse:</p>
+
+<blockquote>Acusamos recibo de tu solicitud de borrar cualquier dato asociado a ti
+procesado por OpenAI, manteniendo tu cuenta. Por motivos de seguridad y
+privacidad, la forma m&aacute;s r&aacute;pida de borrar <strong>los datos que no
+son necesarios para mantener tu cuenta o nuestros servicios</strong>, conservando
+la cuenta de ChatGPT activa, es usar nuestras herramientas de
+autoservicio.</blockquote>
+
+<p>Lee la cl&aacute;usula que hemos destacado. Las herramientas de autoservicio
+cubren los datos que <em>no son necesarios para mantener la cuenta o el
+servicio</em>. Esa formulaci&oacute;n implica una segunda categor&iacute;a &mdash;
+los que s&iacute; lo son &mdash; y la respuesta no dice qu&eacute; hay dentro,
+cu&aacute;nto ocupa ni cu&aacute;nto dura. La respuesta a &laquo;borrad todo lo
+m&iacute;o&raquo; fue un enlace a un bot&oacute;n de borrar todos los chats.</p>
+
+<p>La de Anthropic fue m&aacute;s concreta, y aterriza en una coletilla
+propia:</p>
+
+<blockquote>Cuando borras una conversaci&oacute;n se elimina de tu historial de
+inmediato, y de nuestros sistemas de almacenamiento en 30 d&iacute;as
+<strong>de acuerdo con nuestros plazos de retenci&oacute;n</strong>. […] Cuando
+eliges borrar tu cuenta, tus datos personales vinculados a ella tambi&eacute;n se
+borran <strong>de acuerdo con nuestros plazos de retenci&oacute;n</strong>.</blockquote>
+
+<p>&laquo;De acuerdo con nuestros plazos de retenci&oacute;n&raquo; no es una
+respuesta a la pregunta: es un puntero de vuelta a la pregunta. Esos plazos son
+los de antes en este art&iacute;culo: 30 d&iacute;as de almacenamiento normal,
+hasta dos a&ntilde;os si la conversaci&oacute;n se marc&oacute;, hasta cinco
+a&ntilde;os de datos anonimizados de entrenamiento, hasta siete a&ntilde;os de
+puntuaci&oacute;n de seguridad. Borrar la cuenta no reinicia esos relojes: te
+entrega a ellos.</p>
+
+<p>La misma respuesta a&ntilde;ad&iacute;a algo en lo que casi nadie ha
+pensado:</p>
+
+<blockquote>si accedes a Claude a trav&eacute;s de un servicio de terceros (por
+ejemplo Poe de Quora o Cursor), tendr&aacute;s que solicitar el borrado de la
+cuenta a ese proveedor.</blockquote>
+
+<p>Es decir: borrar tu cuenta en el proveedor del modelo no borra las copias que
+tenga aquello por lo que lo canalizaste, y se da por hecho que t&uacute; te sabes
+la lista.</p>
+
+<p>Ninguna de las dos empresas fue evasiva. Contestaron m&aacute;s r&aacute;pido
+de lo que contesta la mayor&iacute;a. El punto es m&aacute;s estrecho:
+<strong>preguntamos a dos de los equipos de privacidad m&aacute;s competentes del
+sector si nuestros datos estaban borrados, y ninguno dijo que s&iacute;.</strong>
+No porque escondieran nada, sino porque &laquo;s&iacute;&raquo; no es algo que
+ninguno de los dos est&eacute; en posici&oacute;n de decir.</p>
+
+<p class="article-note">Las dos respuestas est&aacute;n citadas literalmente salvo
+que hemos quitado los nombres de los agentes de soporte. Atendieron sus tickets
+correctamente y no deber&iacute;an ser identificables desde esta p&aacute;gina.
+La de OpenAI est&aacute; traducida del ingl&eacute;s.</p>
+
+<h2>Qu&eacute; significa borrar en otro sitio</h2>
+
+<p>Como contraste, piensa en qu&eacute; significa &laquo;borrar&raquo; para un
+archivo de tu propia m&aacute;quina. El sistema operativo lo desenlaza. No hay
+ventana de treinta d&iacute;as, ni copia de un revisor, ni tuber&iacute;a de
+entrenamiento, ni un tercero al que se le pueda ordenar que lo entregue, porque
+ning&uacute;n tercero lo tuvo nunca.</p>
+
+<p>Esto no es una afirmaci&oacute;n sobre la honradez de nadie. Es una
+afirmaci&oacute;n sobre cu&aacute;ntas partes intervienen. Cinco de las capas de
+arriba existen porque la conversaci&oacute;n viaj&oacute; a alg&uacute;n sitio. Una
+conversaci&oacute;n que nunca sale del dispositivo tiene una capa.</p>
+
+<div class="article-note">
+<strong>Aviso.</strong> Hacemos <a href="%s">Pinku</a>, una app gratuita que
+ejecuta modelos de lenguaje abiertos enteros en un iPhone o un Mac, as&iacute; que
+tenemos un inter&eacute;s evidente en este argumento. Toda cifra de arriba est&aacute;
+citada de la pol&iacute;tica publicada por el proveedor o de una resoluci&oacute;n
+judicial, enlazadas abajo. Compru&eacute;balas en vez de creernos &mdash; y si
+alguna est&aacute; desactualizada, <a href="mailto:sagalabs@proton.me">av&iacute;sanos</a>
+y corregimos la p&aacute;gina.
+</div>
+""" % APP_STORE
+
+A4_ES_SOURCES = A4_EN_SOURCES.replace("<h2>Sources</h2>", "<h2>Fuentes</h2>").replace(
+    "<p>Checked on 5 September 2026.</p>", "<p>Comprobado el 5 de septiembre de 2026.</p>")
