@@ -17,6 +17,7 @@ DATE_EN = "5 September 2026"
 DATE_ES = "5 de septiembre de 2026"
 
 APP_STORE = "https://apps.apple.com/us/app/pinku-private-ai/id6754878073"
+KEEPER = "https://apps.apple.com/au/app/only-gallery-keeper/id1532670722"
 
 
 def _jsonld(headline, desc, url, lang, section):
@@ -702,42 +703,36 @@ travelled somewhere. A conversation that never leaves the device has one layer.<
 
 <h2>This is why we made Pinku</h2>
 
-<p>We did not start with an app. We started with the problem in this article: we
-wanted to use an assistant for a few things &mdash; the kind of thing you would
-not paste into a shared machine &mdash; and every option we had meant accepting all
-five layers above, for material where accepting them was not reasonable.</p>
+<p>We started with the problem in this article, not with an app. Every control the
+cloud providers offer narrows the exposure and none of them removes it, because
+none of them changes where the conversation goes. Turn off training and human
+review still applies. Use a temporary chat and it is still retained for safety.
+Ask for deletion and you get the replies above.</p>
 
-<p>The available answers were all partial. Turn off training, and human review and
-retention still apply. Use a temporary chat, and the provider still keeps it for
-safety. Delete everything, and you get the replies we published above. Each control
-narrows the exposure; none removes it, because none of them changes where the
-conversation goes.</p>
-
-<p><a href="%s">Pinku</a> is what falls out of taking that seriously. It runs open
-language models entirely on an iPhone or a Mac: the model file downloads once, and
+<p><a href="%s">Pinku</a> is the version with none of those layers. It runs open
+language models entirely on an iPhone or a Mac. The model file downloads once;
 after that nothing leaves the device. No account, no server, no retention window,
 no reviewer, and nothing anyone could be ordered to produce, because nobody else
 ever has it.</p>
 
-<p>It is free, and we mean that in the boring literal sense: no price, no
-subscription, no in-app purchase, no ads, no telemetry. We make nothing from it.
-We built it because we wanted it, and we put it on the App Store because the
-problem it solves is not ours alone &mdash; anyone who has ever hesitated before
-typing something into a chat box has the same problem, and most of them have no
-reason to know how the five layers above work.</p>
+<p>It will not replace a frontier model and we would not pretend otherwise: no web
+access, shorter context, and it is exactly as fast as your device. What it is
+instead is the one arrangement where the five layers above do not exist at all.
+Use the cloud for most of your work. Keep this for the part you would think twice
+about typing into a shared machine.</p>
 
-<p>The trade-off is real and we would rather state it than hide it: a model small
-enough to run on a phone is materially weaker than a frontier cloud model. No web
-access, shorter context, slower on older hardware. For a lot of work the cloud
-model is simply the better tool. For the things this article is about, the
-question is not which model is smarter &mdash; it is how many parties are
-involved.</p>
+<p><strong><a href="%s">Get Pinku free on the App Store &rarr;</a></strong></p>
+
+<p>If this is the way you think about your files as well as your chats,
+<a href="%s">Keeper</a> works on the same principle: an encrypted photo and video
+vault where the files stay on the device. Everything we make is at
+<a href="../index.html#mobile-apps">aisagalab.com</a>.</p>
 
 <p class="article-note">Every figure in this article is quoted from a provider's
 own published policy or a court filing, all linked below. Check them rather than
 taking our word for it &mdash; and if one is out of date,
 <a href="mailto:sagalabs@proton.me">tell us</a> and we will correct the page.</p>
-""" % APP_STORE
+""" % (APP_STORE, APP_STORE, KEEPER)
 
 A4_EN_SOURCES = """
 <h2>Sources</h2>
@@ -942,48 +937,41 @@ conversaci&oacute;n que nunca sale del dispositivo tiene una capa.</p>
 
 <h2>Por esto hicimos Pinku</h2>
 
-<p>No empezamos con una app. Empezamos con el problema de este art&iacute;culo:
-quer&iacute;amos usar un asistente para unas cuantas cosas &mdash; de esas que no
-escribir&iacute;as en un ordenador compartido &mdash; y todas las opciones
-pasaban por aceptar las cinco capas de arriba, para material en el que aceptarlas
-no era razonable.</p>
+<p>Empezamos con el problema de este art&iacute;culo, no con una app. Todos los
+controles que ofrecen los proveedores en la nube estrechan la exposici&oacute;n y
+ninguno la elimina, porque ninguno cambia a d&oacute;nde va la conversaci&oacute;n.
+Desactivas el entrenamiento y sigue habiendo revisi&oacute;n humana. Usas un chat
+temporal y se conserva igual por seguridad. Pides el borrado y recibes las
+respuestas de arriba.</p>
 
-<p>Las respuestas disponibles eran todas parciales. Desactivas el entrenamiento, y
-siguen aplicando la revisi&oacute;n humana y la retenci&oacute;n. Usas un chat
-temporal, y el proveedor lo conserva igual por seguridad. Lo borras todo, y
-recibes las respuestas que hemos publicado arriba. Cada control estrecha la
-exposici&oacute;n; ninguno la elimina, porque ninguno cambia a d&oacute;nde va la
-conversaci&oacute;n.</p>
-
-<p><a href="%s">Pinku</a> es lo que sale de tomarse eso en serio. Ejecuta modelos
-de lenguaje abiertos enteros en un iPhone o un Mac: el archivo del modelo se
-descarga una vez y a partir de ah&iacute; no sale nada del dispositivo. Sin
+<p><a href="%s">Pinku</a> es la versi&oacute;n sin ninguna de esas capas. Ejecuta
+modelos de lenguaje abiertos enteros en un iPhone o un Mac. El archivo del modelo
+se descarga una vez; a partir de ah&iacute; no sale nada del dispositivo. Sin
 cuenta, sin servidor, sin ventana de retenci&oacute;n, sin revisor, y sin nada que
 nadie pueda verse obligado a entregar, porque nadie m&aacute;s lo ha tenido
 nunca.</p>
 
-<p>Es gratis, y lo decimos en el sentido literal y aburrido: sin precio, sin
-suscripci&oacute;n, sin compras dentro de la app, sin anuncios y sin
-telemetr&iacute;a. No ganamos nada con ella. La hicimos porque la
-quer&iacute;amos, y la publicamos en la App Store porque el problema que resuelve
-no es solo nuestro: cualquiera que alguna vez haya dudado antes de escribir algo
-en una caja de chat tiene el mismo problema, y la mayor&iacute;a no tiene por
-qu&eacute; saber c&oacute;mo funcionan las cinco capas de arriba.</p>
+<p>No sustituye a un modelo puntero y no vamos a fingir lo contrario: sin acceso a
+la web, con menos contexto, y va exactamente igual de r&aacute;pido que tu
+dispositivo. Lo que s&iacute; es: la &uacute;nica disposici&oacute;n en la que las
+cinco capas de arriba no existen. Usa la nube para la mayor parte de tu trabajo.
+Deja esto para lo que te lo pensar&iacute;as dos veces antes de escribir en un
+ordenador compartido.</p>
 
-<p>El intercambio es real y preferimos decirlo a esconderlo: un modelo lo bastante
-peque&ntilde;o para caber en un m&oacute;vil es sensiblemente peor que un modelo
-puntero en la nube. Sin acceso a la web, con menos contexto, m&aacute;s lento en
-hardware antiguo. Para mucho trabajo, el modelo en la nube es sencillamente la
-mejor herramienta. Para las cosas de las que va este art&iacute;culo, la pregunta
-no es qu&eacute; modelo es m&aacute;s listo: es cu&aacute;ntas partes
-intervienen.</p>
+<p><strong><a href="%s">Descarga Pinku gratis en la App Store &rarr;</a></strong></p>
+
+<p>Si piensas as&iacute; tambi&eacute;n de tus archivos y no solo de tus chats,
+<a href="%s">Keeper</a> funciona con el mismo principio: una galer&iacute;a cifrada
+de fotos y v&iacute;deos en la que los archivos se quedan en el dispositivo. Todo
+lo que hacemos est&aacute; en
+<a href="../../index.html#mobile-apps">aisagalab.com</a>.</p>
 
 <p class="article-note">Toda cifra de este art&iacute;culo est&aacute; citada de la
 pol&iacute;tica publicada por el proveedor o de una resoluci&oacute;n judicial,
 enlazadas abajo. Compru&eacute;balas en vez de creernos &mdash; y si alguna
 est&aacute; desactualizada, <a href="mailto:sagalabs@proton.me">av&iacute;sanos</a>
 y corregimos la p&aacute;gina.</p>
-""" % APP_STORE
+""" % (APP_STORE, APP_STORE, KEEPER)
 
 A4_ES_SOURCES = A4_EN_SOURCES.replace("<h2>Sources</h2>", "<h2>Fuentes</h2>").replace(
     "<p>Checked on 5 September 2026.</p>", "<p>Comprobado el 5 de septiembre de 2026.</p>")
