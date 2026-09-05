@@ -45,10 +45,10 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'Dora AI Video Generator',
             category: 'Video Creation',
             image: 'images/dora.webp',
-            description: 'AI video generation with Sora, Kling, Luma, Nano Banana Pro, and more. Cinema-grade video from a text prompt.',
+            description: 'Turn a prompt or a photo into video, with Veo, Kling, SeeDance, Grok and Nano Banana Pro. Works on the web, on iPhone, and inside AI assistants like Claude, ChatGPT, Google Antigravity and Cursor.',
             link: 'ai-video-generator.html?utm_source=sagalab&utm_medium=homepage&utm_campaign=dora',
-            cta: 'Make Videos',
-            appStoreFeatured: true
+            cta: 'See Dora',
+            appStoreFeatured: false
         },
         {
             name: 'Pinku Private AI',
@@ -113,6 +113,12 @@ document.addEventListener('DOMContentLoaded', function () {
         combinedGrid.innerHTML = mobileApps.map((app, index) => {
             const layoutClass = index % 2 === 0 ? 'app-showcase-row' : 'app-showcase-row reverse';
             const extraClass = app.customClass ? ` ${app.customClass}` : '';
+            const isAppStore = app.link.includes('apps.apple.com');
+            const linkAttrs = app.link.startsWith('http') ? ' target="_blank" rel="noopener noreferrer"' : '';
+            const icon = isAppStore ? `
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                            </svg>` : '';
             return `
             <div class="${layoutClass}${extraClass}">
                 <div class="app-showcase-content">
@@ -120,10 +126,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <h3 class="app-showcase-title">${app.name}</h3>
                     <p class="app-showcase-desc">${app.description}</p>
                     <div class="app-showcase-actions">
-                        <a href="${app.link}" target="_blank" class="app-showcase-btn" rel="noopener noreferrer">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
-                            </svg>
+                        <a href="${app.link}"${linkAttrs} class="app-showcase-btn">${icon}
                             ${app.cta}
                         </a>
                     </div>
