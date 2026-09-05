@@ -1,0 +1,109 @@
+/* Long-form article styles. Kept in its own file so the landing pages that
+   already exist keep rendering exactly as they did. */
+
+.article-wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 140px 24px 80px;
+}
+
+.article-kicker {
+    font-size: 0.82rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin: 0 0 14px;
+}
+
+.article-wrap h1 {
+    font-size: clamp(1.9rem, 4.5vw, 2.7rem);
+    line-height: 1.15;
+    margin: 0 0 18px;
+}
+
+.article-standfirst {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    opacity: 0.85;
+    margin: 0 0 28px;
+}
+
+.article-meta {
+    font-size: 0.85rem;
+    opacity: 0.55;
+    margin: 0 0 44px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+}
+
+.article-body h2 {
+    font-size: 1.45rem;
+    line-height: 1.25;
+    margin: 48px 0 16px;
+}
+
+.article-body h3 {
+    font-size: 1.1rem;
+    margin: 32px 0 12px;
+}
+
+.article-body p,
+.article-body li {
+    font-size: 1.03rem;
+    line-height: 1.72;
+}
+
+.article-body p { margin: 0 0 20px; }
+.article-body ul, .article-body ol { margin: 0 0 20px; padding-left: 22px; }
+.article-body li { margin-bottom: 10px; }
+
+.article-body a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+.article-body a:hover { opacity: 0.65; }
+
+.article-body blockquote {
+    margin: 28px 0;
+    padding: 4px 0 4px 20px;
+    border-left: 3px solid rgba(128, 128, 128, 0.4);
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.table-scroll { overflow-x: auto; margin: 0 0 24px; }
+
+.article-body table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.93rem;
+    min-width: 520px;
+}
+
+.article-body th,
+.article-body td {
+    text-align: left;
+    padding: 11px 14px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.22);
+    vertical-align: top;
+}
+
+.article-body th { font-weight: 600; white-space: nowrap; }
+
+.article-note {
+    margin: 36px 0;
+    padding: 18px 20px;
+    border: 1px solid rgba(128, 128, 128, 0.28);
+    border-radius: 10px;
+    font-size: 0.95rem;
+    line-height: 1.65;
+}
+
+.article-sources { margin-top: 56px; font-size: 0.9rem; opacity: 0.75; }
+.article-sources h2 { font-size: 1.05rem; margin-bottom: 12px; }
+.article-sources li { font-size: 0.9rem; margin-bottom: 8px; }
+
+.post-list { list-style: none; padding: 0; margin: 40px 0 0; }
+.post-list li { margin-bottom: 34px; }
+.post-list a { font-size: 1.2rem; font-weight: 600; text-decoration: none; color: inherit; }
+.post-list a:hover { opacity: 0.7; }
+.post-list p { margin: 8px 0 0; opacity: 0.75; line-height: 1.6; }
+
+.lang-switch { font-size: 0.88rem; opacity: 0.7; margin-top: 8px; }

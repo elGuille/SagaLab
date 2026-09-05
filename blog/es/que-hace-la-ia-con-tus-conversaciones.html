@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qué hacen de verdad ChatGPT, Claude y Gemini con tus conversaciones — Saga Labs</title>
+    <meta name="description" content="Plazos de retención, revisión humana y valores por defecto de entrenamiento de los tres asistentes principales, citados de sus propias políticas y comprobados en septiembre de 2026.">
+    <link rel="canonical" href="https://aisagalab.com/blog/es/que-hace-la-ia-con-tus-conversaciones.html">
+    <link rel="alternate" hreflang="en" href="https://aisagalab.com/blog/what-ai-does-with-your-conversations.html">
+    <link rel="alternate" hreflang="es" href="https://aisagalab.com/blog/es/que-hace-la-ia-con-tus-conversaciones.html">
+    <link rel="alternate" hreflang="x-default" href="https://aisagalab.com/blog/what-ai-does-with-your-conversations.html">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../blog.css">
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+
+    <meta property="og:title" content="Qué hacen de verdad ChatGPT, Claude y Gemini con tus conversaciones">
+    <meta property="og:description" content="Plazos de retención, revisión humana y valores por defecto de entrenamiento de los tres asistentes principales, citados de sus propias políticas y comprobados en septiembre de 2026.">
+    <meta property="og:url" content="https://aisagalab.com/blog/es/que-hace-la-ia-con-tus-conversaciones.html">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://aisagalab.com/images/preview.jpg">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Qué hacen de verdad ChatGPT, Claude y Gemini con tus conversaciones">
+    <meta property="twitter:description" content="Plazos de retención, revisión humana y valores por defecto de entrenamiento de los tres asistentes principales, citados de sus propias políticas y comprobados en septiembre de 2026.">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Qué hacen de verdad ChatGPT, Claude y Gemini con tus conversaciones",
+  "description": "Plazos de retención, revisión humana y valores por defecto de entrenamiento de los tres asistentes principales, citados de sus propias políticas y comprobados en septiembre de 2026.",
+  "inLanguage": "es",
+  "articleSection": "Privacidad",
+  "datePublished": "2026-09-05",
+  "dateModified": "2026-09-05",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://aisagalab.com/blog/es/que-hace-la-ia-con-tus-conversaciones.html" },
+  "author": { "@type": "Organization", "name": "Saga Labs", "url": "https://aisagalab.com/" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Saga Labs",
+    "url": "https://aisagalab.com/",
+    "sameAs": [
+      "https://aisagalab.com/",
+      "https://x.com/SagaAILab",
+      "https://github.com/Saga-Labs"
+    ]
+  }
+}
+    </script>
+</head>
+<body>
+<nav class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="nav-logo">
+                <h1>Saga <span class="ai-gradient">AI</span> <span class="lab-gradient">Lab</span></h1>
+            </a>
+            <div class="nav-menu">
+                <a href="../../agentic-ai.html" class="nav-link">Agentic AI</a>
+                <a href="../../index.html#mobile-apps" class="nav-link">Apps</a>
+                <a href="../../faq.html" class="nav-link">FAQ</a>
+                <a href="mailto:sagalabs@proton.me" class="nav-link">Contact</a>
+                <a href="https://x.com/SagaAILab" target="_blank" class="icon-link" aria-label="X (Twitter)">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                        <path d="M18.244 2H21l-6.5 7.43L22.5 22H15.9l-4.7-6.2L5.7 22H3l7-8.02L1.8 2h6.8l4.3 5.7L18.244 2zm-2.43 18h1.64L8.29 4H6.57l9.244 16z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/Saga-Labs" target="_blank" class="icon-link" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                        <path d="M12 2C6.477 2 2 6.486 2 12.017c0 4.424 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.238-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.464-1.11-1.464-.908-.62.069-.607.069-.607 1.004.071 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.833.092-.647.35-1.088.636-1.338-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.748-1.026 2.748-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.337 4.695-4.565 4.943.359.31.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .268.18.58.688.481A10.019 10.019 0 0 0 22 12.017C22 6.486 17.523 2 12 2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="article-wrap">
+        <p class="article-kicker">Privacidad</p>
+        <h1>Qu&eacute; hacen de verdad ChatGPT, Claude y Gemini con tus conversaciones</h1>
+        <p class="article-standfirst">Tres asistentes, tres conjuntos de valores por defecto y una cosa en com&uacute;n: la conversaci&oacute;n sale de tu dispositivo.</p>
+        <p class="article-meta">Saga Labs &middot; 5 de septiembre de 2026
+            <span class="lang-switch"> &middot; <a href="../what-ai-does-with-your-conversations.html">Read in English</a></span>
+        </p>
+        <div class="article-body">
+<p>Todos los asistentes de IA que usa la gente corren en el ordenador de otro.
+Escribes una pregunta, viaja a un centro de datos, y lo que pasa despu&eacute;s
+con ella lo decide un documento que casi con seguridad no has le&iacute;do.</p>
+
+<p>Este art&iacute;culo resume lo que dicen hoy esos documentos. Cada cifra sale
+de la pol&iacute;tica publicada por el propio proveedor, enlazada al final.
+Cuando un proveedor es ambiguo, lo decimos en vez de rellenar el hueco.</p>
+
+<h2>La versi&oacute;n corta</h2>
+
+<div class="table-scroll">
+<table>
+<thead>
+<tr><th>&nbsp;</th><th>ChatGPT (gratis/Plus)</th><th>Claude (gratis/Pro/Max)</th><th>Gemini Apps</th></tr>
+</thead>
+<tbody>
+<tr><th>Entrena con tus chats por defecto</th><td>S&iacute;, salvo que lo desactives en Data Controls</td><td>Solo si activas la mejora del modelo</td><td>S&iacute;, mientras Keep Activity est&eacute; encendido</td></tr>
+<tr><th>Al borrar un chat</th><td>Fuera de sus sistemas en 30 d&iacute;as</td><td>Fuera del almacenamiento en 30 d&iacute;as</td><td>Se borra &mdash; salvo lo que haya visto un revisor humano</td></tr>
+<tr><th>Se conserva aunque borres</th><td>Lo ya usado en un entrenamiento terminado; lo que est&eacute; bajo orden judicial</td><td>Hasta 5 a&ntilde;os anonimizado si el entrenamiento estaba activo; 2 a&ntilde;os si se marc&oacute;; 7 a&ntilde;os las puntuaciones de seguridad</td><td>Chats revisados por humanos: hasta 3 a&ntilde;os</td></tr>
+<tr><th>Puede leerlo una persona</th><td>S&iacute;, para revisi&oacute;n de abuso y seguridad</td><td>S&iacute;, si lo marcan los sistemas de seguridad</td><td>S&iacute; &mdash; una parte de los chats, por personal de Google y proveedores</td></tr>
+<tr><th>Retenci&oacute;n si no tocas nada</th><td>Hasta que borres</td><td>Hasta que borres</td><td>18 meses y se autoborra</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>Google lo dice sin rodeos</h2>
+
+<p>El aviso de privacidad de Gemini Apps es el m&aacute;s expl&iacute;cito de los
+tres y merece cita literal. Sobre qu&eacute; pasa cuando pulsas borrar:</p>
+
+<blockquote>Los chats revisados por revisores humanos (y datos asociados como tu
+idioma, tipo de dispositivo, informaci&oacute;n de ubicaci&oacute;n o
+comentarios) no se eliminan cuando borras tu actividad. En su lugar se conservan
+hasta tres a&ntilde;os.</blockquote>
+
+<p>L&eacute;elo despacio. Borrar tu actividad no borra la copia que ya mir&oacute;
+una persona. Esa copia tiene su propio reloj de tres a&ntilde;os y t&uacute; no
+tienes ning&uacute;n control sobre &eacute;l.</p>
+
+<p>Google es igual de directo sobre lo que no deber&iacute;as escribir:</p>
+
+<blockquote>Si ese ajuste est&aacute; activado, no introduzcas datos
+confidenciales ni nada que no quieras que vea un revisor o que Google use para
+mejorar sus servicios.</blockquote>
+
+<p>Y apagar el ajuste tampoco es una salida completa. El mismo aviso dice que,
+incluso con Keep Activity desactivado o en un chat temporal, Google sigue usando
+tus conversaciones para responderte y para proteger a Google, a sus usuarios y al
+p&uacute;blico, &laquo;incluso con ayuda de revisores humanos&raquo;.</p>
+
+<h2>Anthropic publica los relojes m&aacute;s largos</h2>
+
+<p>La p&aacute;gina de retenci&oacute;n de Anthropic, actualizada el 1 de julio
+de 2026, es inusualmente concreta, y eso hay que reconoc&eacute;rselo. Borrar una
+conversaci&oacute;n la quita del historial al momento y del almacenamiento en 30
+d&iacute;as. Pero en paralelo corren otros tres relojes:</p>
+
+<ul>
+<li>Si permites que tus chats se usen para mejorar Claude, pueden conservarse de
+forma anonimizada <strong>hasta cinco a&ntilde;os</strong> en las tuber&iacute;as
+de entrenamiento.</li>
+<li>Si un sistema autom&aacute;tico marca una conversaci&oacute;n, entradas y
+salidas se guardan <strong>hasta dos a&ntilde;os</strong>, y las puntuaciones de
+clasificaci&oacute;n <strong>hasta siete a&ntilde;os</strong>.</li>
+<li>Los comentarios que env&iacute;as &mdash; un pulgar arriba, un informe de
+error &mdash; se guardan <strong>cinco a&ntilde;os</strong>.</li>
+</ul>
+
+<p>Anthropic tambi&eacute;n dice con claridad lo que ning&uacute;n proveedor
+puede deshacer: si un entrenamiento ya us&oacute; tus datos, desactivar el ajuste
+despu&eacute;s no los saca de los modelos ya entrenados.</p>
+
+<h2>OpenAI: en consumo el defecto va al rev&eacute;s</h2>
+
+<p>En los planes de consumo de ChatGPT, tus conversaciones pueden usarse para
+mejorar los modelos de OpenAI salvo que lo desactives en Data Controls. En Team,
+Enterprise y API el defecto es el contrario: los datos de empresa no se usan para
+entrenar. La diferencia importa, porque quien m&aacute;s probablemente pegue algo
+sensible en un chat es un profesional usando la app de consumo en su
+m&oacute;vil.</p>
+
+<p>Las conversaciones borradas salen de los sistemas de OpenAI en 30 d&iacute;as,
+con una excepci&oacute;n para datos anonimizados y obligaciones legales. Esa
+excepci&oacute;n no es te&oacute;rica, y tiene
+art&iacute;culo propio, que estamos escribiendo:
+en el pleito de derechos de autor del New York Times, un tribunal orden&oacute; a
+OpenAI conservar registros que de otro modo se habr&iacute;an borrado.</p>
+
+<h2>Lo que nada de esto significa</h2>
+
+<p>No significa que estas empresas act&uacute;en de mala fe. Los plazos de
+retenci&oacute;n existen por motivos reales: investigar abusos, responder a
+incidentes, cumplir la ley. La revisi&oacute;n humana s&iacute; hace los modelos
+m&aacute;s seguros.</p>
+
+<p>Lo que significa es m&aacute;s estrecho y m&aacute;s dif&iacute;cil de
+discutir: <strong>en cuanto una conversaci&oacute;n sale de tu dispositivo, su
+vida la gobierna la pol&iacute;tica de otro, la seguridad de otro y,
+potencialmente, la orden judicial de otro</strong>. Puedes cambiar un ajuste. No
+puedes cambiar la arquitectura.</p>
+
+<h2>La &uacute;nica categor&iacute;a donde la pregunta no existe</h2>
+
+<p>Hay una disposici&oacute;n en la que ninguna fila de esa tabla aplica, porque
+no hay nada que retener: un modelo que corre en tu propio hardware y nunca abre
+una conexi&oacute;n de red.</p>
+
+<p>Es lo que hace <a href="https://apps.apple.com/us/app/pinku-private-ai/id6754878073">Pinku</a>. El archivo del modelo se descarga una
+vez y todo lo que viene despu&eacute;s lo genera tu iPhone o tu Mac. No hay
+cuenta, ni servidor, ni ventana de retenci&oacute;n, ni revisor humano, ni ajuste
+que puedas dejar mal puesto: la conversaci&oacute;n es un archivo en tu
+dispositivo y borrarla es borrar un archivo.</p>
+
+<p>El intercambio honesto es la capacidad: un modelo de 1 a 4&nbsp;GB en un
+m&oacute;vil no es GPT-5, y fingir lo contrario ser&iacute;a el mismo marketing
+contra el que argumenta este art&iacute;culo. Escribimos exactamente qu&eacute;
+se gana y qu&eacute; se pierde en
+un art&iacute;culo hermano sobre qu&eacute; corre de verdad en un iPhone en 2026
+(en camino).</p>
+</div>
+        <div class="article-body article-sources">
+<h2>Fuentes</h2>
+<ul>
+<li><a href="https://support.google.com/gemini/answer/13594961" rel="nofollow noopener" target="_blank">Aviso de privacidad de Gemini Apps</a> &mdash; Google. Retenci&oacute;n, revisi&oacute;n humana y la ventana de tres a&ntilde;os.</li>
+<li><a href="https://privacy.anthropic.com/en/articles/10023548-how-long-do-you-store-my-data" rel="nofollow noopener" target="_blank">How long do you store my data?</a> &mdash; Centro de privacidad de Anthropic, actualizado el 1 de julio de 2026.</li>
+<li><a href="https://help.openai.com/en/articles/8983778-chat-and-file-retention-policies-in-chatgpt" rel="nofollow noopener" target="_blank">Chat and file retention policies in ChatGPT</a> &mdash; Centro de ayuda de OpenAI.</li>
+<li><a href="https://openai.com/index/response-to-nyt-data-demands/" rel="nofollow noopener" target="_blank">How we're responding to The New York Times' data demands</a> &mdash; OpenAI.</li>
+</ul>
+<p>Cifras comprobadas el 5 de septiembre de 2026. Las pol&iacute;ticas cambian; si
+encuentras alguna desactualizada, <a href="mailto:sagalabs@proton.me">av&iacute;sanos</a>
+y corregimos la p&aacute;gina.</p>
+</div>
+    </main>
+
+<footer>
+        <div class="container">
+            <p>&copy; 2026 Saga Labs.</p>
+            <div class="footer-social">
+                <a href="https://x.com/SagaAILab" target="_blank" aria-label="X (Twitter)">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                        <path d="M18.244 2H21l-6.5 7.43L22.5 22H15.9l-4.7-6.2L5.7 22H3l7-8.02L1.8 2h6.8l4.3 5.7L18.244 2zm-2.43 18h1.64L8.29 4H6.57l9.244 16z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/Saga-Labs" target="_blank" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                        <path d="M12 2C6.477 2 2 6.486 2 12.017c0 4.424 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.238-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.464-1.11-1.464-.908-.62.069-.607.069-.607 1.004.071 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.833.092-.647.35-1.088.636-1.338-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.748-1.026 2.748-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.337 4.695-4.565 4.943.359.31.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .268.18.58.688.481A10.019 10.019 0 0 0 22 12.017C22 6.486 17.523 2 12 2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+</html>
