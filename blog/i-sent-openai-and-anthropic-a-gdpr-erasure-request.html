@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I sent OpenAI and Anthropic a GDPR erasure request. Neither told me what they kept. — Saga Labs</title>
+    <meta name="description" content="Five layers sit between the delete button and the conversation being gone: storage, model weights, the reviewer's copy, the safety flag and the court. With the OpenAI privacy team's reply, and Anthropic's.">
+    <link rel="canonical" href="https://aisagalab.com/blog/i-sent-openai-and-anthropic-a-gdpr-erasure-request.html">
+    <link rel="alternate" hreflang="en" href="https://aisagalab.com/blog/i-sent-openai-and-anthropic-a-gdpr-erasure-request.html">
+    <link rel="alternate" hreflang="es" href="https://aisagalab.com/blog/es/solicitud-de-borrado-rgpd-a-openai-y-anthropic.html">
+    <link rel="alternate" hreflang="x-default" href="https://aisagalab.com/blog/i-sent-openai-and-anthropic-a-gdpr-erasure-request.html">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../blog.css">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+
+    <meta property="og:title" content="I sent OpenAI and Anthropic a GDPR erasure request. Neither told me what they kept.">
+    <meta property="og:description" content="Five layers sit between the delete button and the conversation being gone: storage, model weights, the reviewer's copy, the safety flag and the court. With the OpenAI privacy team's reply, and Anthropic's.">
+    <meta property="og:url" content="https://aisagalab.com/blog/i-sent-openai-and-anthropic-a-gdpr-erasure-request.html">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://aisagalab.com/images/preview.jpg">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="I sent OpenAI and Anthropic a GDPR erasure request. Neither told me what they kept.">
+    <meta property="twitter:description" content="Five layers sit between the delete button and the conversation being gone: storage, model weights, the reviewer's copy, the safety flag and the court. With the OpenAI privacy team's reply, and Anthropic's.">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "I sent OpenAI and Anthropic a GDPR erasure request. Neither told me what they kept.",
+  "description": "Five layers sit between the delete button and the conversation being gone: storage, model weights, the reviewer's copy, the safety flag and the court. With the OpenAI privacy team's reply, and Anthropic's.",
+  "inLanguage": "en",
+  "articleSection": "Privacy",
+  "datePublished": "2026-09-05",
+  "dateModified": "2026-09-05",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://aisagalab.com/blog/i-sent-openai-and-anthropic-a-gdpr-erasure-request.html" },
+  "author": { "@type": "Organization", "name": "Saga Labs", "url": "https://aisagalab.com/" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Saga Labs",
+    "url": "https://aisagalab.com/",
+    "sameAs": [
+      "https://aisagalab.com/",
+      "https://x.com/SagaAILab",
+      "https://github.com/Saga-Labs"
+    ]
+  }
+}
+    </script>
+</head>
+<body>
+<nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <h1>Saga <span class="ai-gradient">AI</span> <span class="lab-gradient">Lab</span></h1>
+            </a>
+            <div class="nav-menu">
+                <a href="/blog/" class="nav-link">Writing</a>
+                <a href="../index.html#mobile-apps" class="nav-link">Apps</a>
+                <a href="../faq.html" class="nav-link">FAQ</a>
+                <a href="mailto:sagalabs@proton.me" class="nav-link">Contact</a>
+                <a href="https://x.com/SagaAILab" target="_blank" class="icon-link" aria-label="X (Twitter)">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                        <path d="M18.244 2H21l-6.5 7.43L22.5 22H15.9l-4.7-6.2L5.7 22H3l7-8.02L1.8 2h6.8l4.3 5.7L18.244 2zm-2.43 18h1.64L8.29 4H6.57l9.244 16z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/Saga-Labs" target="_blank" class="icon-link" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                        <path d="M12 2C6.477 2 2 6.486 2 12.017c0 4.424 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.238-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.464-1.11-1.464-.908-.62.069-.607.069-.607 1.004.071 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.833.092-.647.35-1.088.636-1.338-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.748-1.026 2.748-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.337 4.695-4.565 4.943.359.31.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .268.18.58.688.481A10.019 10.019 0 0 0 22 12.017C22 6.486 17.523 2 12 2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="article-wrap">
+        <p class="article-kicker">Privacy</p>
+        <h1>I sent OpenAI and Anthropic a GDPR erasure request.<br>Neither told me what they kept.</h1>
+        <p class="article-standfirst">Five layers sit between the delete button and a conversation actually being gone. Only the first one is under your control.</p>
+        <p class="article-meta">Saga Labs &middot; 5 September 2026
+            <span class="lang-switch"> &middot; <a href="es/solicitud-de-borrado-rgpd-a-openai-y-anthropic.html">Leer en espa&ntilde;ol</a></span>
+        </p>
+        <div class="article-body">
+<p>Every AI assistant has a delete button. Pressing it makes a row disappear
+from a list, immediately and satisfyingly. Whether it makes anything else happen
+is a different question, with a different answer for each layer of the system the
+conversation passed through.</p>
+
+<p>None of what follows is a scandal. It is mostly the ordinary consequence of
+running software at scale, and some of it is legally required. But the gap
+between what the button looks like it does and what it does is wide enough to be
+worth writing down.</p>
+
+<h2>Layer 1 — your view, and then the storage</h2>
+
+<p>The row vanishing is instant and local. Behind it, both OpenAI and Anthropic
+publish the same window: a deleted conversation is removed from back-end systems
+<strong>within 30 days</strong>. Anthropic's wording is &ldquo;deleted from our
+back-end storage systems within 30 days&rdquo;; OpenAI's is that deleted chats are
+permanently removed within 30 days, unless de-identification or legal exceptions
+apply.</p>
+
+<p>Thirty days is a reasonable number. Backups have to roll over, and a system
+that deleted from every replica synchronously would be a system that could not be
+restored after an incident. But it does mean that &ldquo;deleted&rdquo; means
+&ldquo;scheduled for deletion&rdquo; for a month.</p>
+
+<h2>Layer 2 — the weights, which cannot be edited</h2>
+
+<p>If your conversation was used in a training run that has already finished,
+deleting the conversation does not remove its influence from the resulting model.
+There is no known technique for reaching into a trained network and extracting one
+conversation.</p>
+
+<p>Anthropic states this plainly rather than hiding it: turning the setting off
+means your data will not be used for <em>future</em> training, but
+&ldquo;your data will still be included in model training runs that are already in
+progress, or in models that have been trained.&rdquo;</p>
+
+<p>This is the layer people underestimate. Deletion is a storage operation.
+Training is not storage.</p>
+
+<h2>Layer 3 — the copy a person read</h2>
+
+<p>All three major providers use human reviewers on some fraction of
+conversations. Google's Gemini Apps Privacy Notice is the only one that spells out
+what that means for deletion, and the sentence deserves to be read twice:</p>
+
+<blockquote>Chats reviewed by human reviewers (and related data like your
+language, device type, location info, or feedback) are not deleted when you delete
+your activity. Instead, they are retained for up to three years.</blockquote>
+
+<p>Your delete does not reach that copy. It has its own three-year clock, running
+independently of anything in your account settings, and there is no control
+surface for it.</p>
+
+<h2>Layer 4 — the safety flag</h2>
+
+<p>If an automated system decides a conversation might violate a usage policy,
+different rules apply. Anthropic publishes the numbers: inputs and outputs kept
+for <strong>up to two years</strong>, and the trust-and-safety classification
+scores for <strong>up to seven years</strong>.</p>
+
+<p>Note the asymmetry. The classification score &mdash; a machine's judgement
+about you &mdash; outlives the conversation that produced it by five years.</p>
+
+<p>Which conversations get flagged is not published. What is published is the
+policy the flag keys off, and it names four domains as
+&ldquo;High-Risk Use Cases&rdquo;:</p>
+
+<blockquote>Legal: Use cases related to legal interpretation, legal guidance, or
+decisions with legal implications. Healthcare: Use cases related to healthcare
+decisions, medical diagnosis, patient care, therapy, mental health, or other
+medical guidance. Insurance: […] Finance: Use cases related to financial
+decisions, including investment advice, loan approvals […]</blockquote>
+
+<p>Be careful with what that does and does not say. Those requirements are
+addressed to developers building products on Claude: they must put a qualified
+professional in the loop and disclose that AI was involved. They are not a
+statement that asking about your own health flags your chat, and we are not
+claiming that they are.</p>
+
+<p>The precise position is this. The seven-year clock starts when an automated
+system decides a conversation may violate the Usage Policy. The Usage Policy is
+the document that names those four domains. Whether conversations in them are
+more likely to be flagged is not disclosed, and there is no mechanism for you to
+find out whether any particular conversation of yours was.</p>
+
+<p>So the categories where you would most want to know &mdash; your health, your
+money, your legal exposure &mdash; are exactly the categories where you cannot.
+That is not an accusation. It is the honest shape of the information available to
+you, and it is the reason some conversations are worth keeping off a network
+entirely.</p>
+
+<h2>Layer 5 — the court</h2>
+
+<p>The clearest demonstration that the delete button is not the last word came out
+of the copyright litigation brought against OpenAI by The New York Times and
+others. The timeline is worth stating precisely, because it is widely
+misreported in both directions.</p>
+
+<ul>
+<li><strong>13 May 2025.</strong> Magistrate Judge Ona T. Wang orders OpenAI to
+preserve and segregate all output log data that would otherwise be deleted &mdash;
+including conversations users had deleted.</li>
+<li><strong>June 2025.</strong> District Judge Sidney Stein rejects OpenAI's
+objection. The order stands.</li>
+<li><strong>July 2025.</strong> Plaintiffs move to compel a 120-million-log
+sample. OpenAI counter-proposes 20 million de-identified conversations.</li>
+<li><strong>October 2025.</strong> Judge Wang terminates the going-forward
+preservation obligation. Logs already preserved stay preserved, and data tied to
+accounts the plaintiffs flagged must still be retained.</li>
+<li><strong>5 January 2026.</strong> The Southern District of New York upholds the
+orders requiring OpenAI to produce the 20-million-log sample. The first wave is
+delivered to the plaintiffs' legal team that month.</li>
+</ul>
+
+<p>So the sweeping preservation order is <em>over</em>. Anyone still saying
+&ldquo;OpenAI has to keep your deleted chats forever&rdquo; is a year out of date.</p>
+
+<p>But the part that actually matters is not over. For roughly five months, chats
+that users had deleted were retained because a court said so. A sample of twenty
+million of them, de-identified, has since been handed to the opposing side's
+lawyers in a copyright case. Nobody in that sample was asked, and nobody in it can
+tell whether they are in it.</p>
+
+<p>OpenAI fought the order and says the preserved data sits behind a small audited
+legal and security team. There is no reason to doubt that. The point is
+structural, not moral: <strong>a retention policy is a promise a company makes,
+and a court can suspend it for everyone at once.</strong></p>
+
+<h2>I sent both companies a GDPR erasure request</h2>
+
+<p>A note on voice: the rest of this article is written by Saga Labs, but this
+section is mine personally. From my own personal accounts &mdash; the consumer
+tier this article is about, not a business plan with different defaults &mdash; I
+sent OpenAI and Anthropic a formal request under the GDPR, and kept what came
+back.</p>
+
+<p>Not a support ticket. A request under Article 15, the right of access, and
+Article 17, the right to erasure, asking specifically for the things this article
+has been describing:</p>
+
+<blockquote>Any conversations flagged by your trust and safety classifiers, along
+with the specific reasons for flagging. Any data derived from my conversations
+(classification scores, metadata, logs). Any de-identified data that originated
+from my account, including any data used for model training. Information about
+how long each category of my data will be retained and the legal basis for such
+retention. […] Please confirm in writing what data has been deleted and, if any
+data is retained, provide the specific legal basis for each category of retained
+data as required under Article 17(3).</blockquote>
+
+<p>That last sentence is the test. It is not a favour to ask: under Article 12(3)
+a controller has one month to respond.</p>
+
+<h3>The timeline</h3>
+
+<ul>
+<li><strong>15 April 2026.</strong> Request sent to both companies.</li>
+<li><strong>15 April.</strong> Anthropic acknowledges automatically:
+&ldquo;We're transitioning your question to a human member of our Privacy
+Team.&rdquo;</li>
+<li><strong>17 April.</strong> OpenAI replies. Two days, which is faster than
+most companies manage.</li>
+<li><strong>16 May.</strong> Anthropic's human reply arrives &mdash; one month
+and one day after the request.</li>
+</ul>
+
+<h3>What OpenAI sent back</h3>
+
+<blockquote>We acknowledge receipt of your request to delete any data associated
+with you processed by OpenAI, but keep your OpenAI account. For security and
+privacy reasons, the quickest way to delete <strong>data that is not necessary to
+maintain your account or our services</strong>, while keeping your ChatGPT
+account active, is to use our self-service tools outlined below.</blockquote>
+
+<p>What followed were links: the Delete all chats button, the memory FAQ, the
+privacy portal. Read the clause emphasised above. The self-service tools cover
+data that is <em>not necessary to maintain the account or the service</em>. That
+implies a second category &mdash; data that is necessary &mdash; and the reply
+does not say what is in it, how long it is kept, or on what legal basis. Those
+were the questions.</p>
+
+<h3>What Anthropic sent back</h3>
+
+<blockquote>When you delete a conversation it will be removed from your chat
+history immediately, and deleted from our back-end storage systems within 30 days
+<strong>in accordance with our retention periods</strong>. […] When you choose to
+delete your account, your personal data connected to your account will also be
+deleted <strong>in accordance with our retention periods</strong>.</blockquote>
+
+<p>&ldquo;In accordance with our retention periods&rdquo; is not an answer to the
+question; it is a pointer back to it. Those periods are the ones earlier in this
+article: 30 days for ordinary storage, up to two years for a flagged
+conversation, up to five years for de-identified training data, up to seven years
+for a classification score. Deleting your account does not reset those clocks
+&mdash; it hands you to them.</p>
+
+<p>The same reply added something most people have never considered:</p>
+
+<blockquote>if you are accessing Claude through a third party service (e.g.
+Quora's Poe or Cursor), you will need to request account deletion through that
+third party service provider.</blockquote>
+
+<p>Deleting your account at the model provider does not delete the copies held by
+whatever else you piped it through, and you are expected to know the list.</p>
+
+<h3>What neither of them did</h3>
+
+<p>Neither reply confirmed in writing what had been deleted. Neither gave a legal
+basis for anything retained, which Article 17(3) requires when a controller keeps
+data despite an erasure request. Neither engaged with the access request at all:
+no list of flagged conversations, no classification scores, no retention schedule
+by category. Both answered a legal request with a link to a settings page.</p>
+
+<p>I am not claiming a proven breach. I did not escalate to a data protection
+authority, so nothing here has been adjudicated, and both companies' published
+policies do contain much of what I asked for. Both replied politely; one replied
+very fast. But the request was specific and the answers were generic, and that
+gap is the point: <strong>I asked two of the most sophisticated privacy teams in
+the industry, in the most formal terms available to a European citizen, whether
+my data was gone. Neither said yes.</strong></p>
+
+<p>Not because they were hiding something. Because &ldquo;yes&rdquo; is not a
+thing either of them is in a position to say.</p>
+
+<p class="article-note">The replies are quoted verbatim except that the support
+agents' names have been removed; they answered their tickets correctly and should
+not be identifiable from this page. They are personal correspondence, reproduced
+as received. Both companies' current published policies are linked at the end and
+say the same things.</p>
+
+<h2>What deletion means somewhere else</h2>
+
+<p>For contrast, consider what &ldquo;delete&rdquo; means for a file on your own
+machine. The operating system unlinks it. There is no thirty-day window, no
+reviewer's copy, no training pipeline, and no third party who could be ordered to
+produce it, because no third party ever had it.</p>
+
+<p>That is not a claim about anyone's trustworthiness. It is a claim about how
+many parties are involved. Five of the layers above exist because the conversation
+travelled somewhere. A conversation that never leaves the device has one layer.</p>
+
+<h2>Where this leaves you</h2>
+
+<p>We are not writing this from a position of purity. We use cloud assistants
+every day, by choice, and we build products on top of them. Claude and ChatGPT
+are better than anything that fits on a phone, and convenience wins more often
+than we would like to admit.</p>
+
+<p>So this is not an argument for quitting them. It is an argument for knowing
+which rules you are playing by, and then choosing deliberately for the
+conversations where it matters &mdash; the ones you would mind someone reading,
+which for most people is a small fraction of the total.</p>
+
+<p>For that fraction, the only arrangement in which none of the five layers
+exists is a model that runs on hardware you own. It is the problem we work on:
+<a href="https://apps.apple.com/us/app/pinku-private-ai/id6754878073">Pinku</a> runs language models on an iPhone or a Mac with no account
+and no network connection, and <a href="https://apps.apple.com/au/app/only-gallery-keeper/id1532670722">Keeper</a> keeps photos and files
+encrypted on the device. The rest of the time we are in the same boat as you,
+typing into someone else's computer because it is easier.</p>
+
+<p class="article-note">Every figure in this article is quoted from a provider's
+own published policy or a court filing, all linked below. Check them rather than
+taking our word for it &mdash; and if one is out of date,
+<a href="mailto:sagalabs@proton.me">tell us</a> and we will correct the page.</p>
+</div>
+        <div class="article-body article-sources">
+<h2>Sources</h2>
+<ul>
+<li><a href="https://privacy.anthropic.com/en/articles/10023548-how-long-do-you-store-my-data" rel="nofollow noopener" target="_blank">How long do you store my data?</a> &mdash; Anthropic Privacy Center, updated 1 July 2026. The 30-day, 2-year, 5-year and 7-year windows.</li>
+<li><a href="https://gdpr-info.eu/art-15-gdpr/" rel="nofollow noopener" target="_blank">Article 15</a>, <a href="https://gdpr-info.eu/art-17-gdpr/" rel="nofollow noopener" target="_blank">Article 17</a> and <a href="https://gdpr-info.eu/art-12-gdpr/" rel="nofollow noopener" target="_blank">Article 12(3)</a> GDPR &mdash; right of access, right to erasure, and the one-month deadline to respond.</li>
+<li><a href="https://www.anthropic.com/legal/aup" rel="nofollow noopener" target="_blank">Usage Policy</a> &mdash; Anthropic. The High-Risk Use Case Requirements naming legal, healthcare, insurance and finance.</li>
+<li><a href="https://support.google.com/gemini/answer/13594961" rel="nofollow noopener" target="_blank">Gemini Apps Privacy Notice</a> &mdash; Google. Human review and the three-year retention of reviewed chats.</li>
+<li><a href="https://help.openai.com/en/articles/8983778-chat-and-file-retention-policies-in-chatgpt" rel="nofollow noopener" target="_blank">Chat and file retention policies in ChatGPT</a> &mdash; OpenAI Help Center.</li>
+<li><a href="https://openai.com/index/response-to-nyt-data-demands/" rel="nofollow noopener" target="_blank">How we're responding to The New York Times' data demands</a> &mdash; OpenAI, on the May 2025 preservation order.</li>
+<li><a href="https://www.engadget.com/ai/openai-no-longer-has-to-preserve-all-of-its-chatgpt-data-with-some-exceptions-192422093.html" rel="nofollow noopener" target="_blank">OpenAI no longer has to preserve all of its ChatGPT data, with some exceptions</a> &mdash; Engadget, October 2025, on the order being terminated.</li>
+<li><a href="https://www.dataprivacyandsecurityinsider.com/2026/01/when-chats-become-evidence-court-affirms-order-requiring-openai-to-produce-20-million-de-identified-chatgpt-logs/" rel="nofollow noopener" target="_blank">Court affirms order requiring OpenAI to produce 20 million de-identified ChatGPT logs</a> &mdash; January 2026.</li>
+</ul>
+<p>Checked on 5 September 2026.</p>
+</div>
+    </main>
+
+<footer>
+        <div class="container">
+            <p>&copy; 2026 Saga Labs.</p>
+            <div class="footer-social">
+                <a href="https://x.com/SagaAILab" target="_blank" aria-label="X (Twitter)">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                        <path d="M18.244 2H21l-6.5 7.43L22.5 22H15.9l-4.7-6.2L5.7 22H3l7-8.02L1.8 2h6.8l4.3 5.7L18.244 2zm-2.43 18h1.64L8.29 4H6.57l9.244 16z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/Saga-Labs" target="_blank" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                        <path d="M12 2C6.477 2 2 6.486 2 12.017c0 4.424 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.238-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.464-1.11-1.464-.908-.62.069-.607.069-.607 1.004.071 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.833.092-.647.35-1.088.636-1.338-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.748-1.026 2.748-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.337 4.695-4.565 4.943.359.31.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .268.18.58.688.481A10.019 10.019 0 0 0 22 12.017C22 6.486 17.523 2 12 2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

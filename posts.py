@@ -149,7 +149,7 @@ ordered OpenAI for five months to preserve output logs that would otherwise have
 been deleted, and a sample of twenty million of them was later handed to the
 plaintiffs' lawyers. The order itself was lifted in October 2025. We go through
 the whole timeline in
-<a href="i-asked-openai-and-anthropic-to-delete-my-chats.html">what &ldquo;delete&rdquo;
+<a href="i-sent-openai-and-anthropic-a-gdpr-erasure-request.html">what &ldquo;delete&rdquo;
 actually means</a>.</p>
 
 <h2>What none of this means</h2>
@@ -284,7 +284,7 @@ York Times, un tribunal oblig&oacute; a OpenAI durante cinco meses a conservar
 registros que de otro modo se habr&iacute;an borrado, y una muestra de veinte
 millones acab&oacute; en manos de los abogados de la parte contraria. La orden se
 levant&oacute; en octubre de 2025. Repasamos la cronolog&iacute;a entera en
-<a href="pedi-a-openai-y-anthropic-que-borraran-mis-chats.html">qu&eacute;
+<a href="solicitud-de-borrado-rgpd-a-openai-y-anthropic.html">qu&eacute;
 significa de verdad borrar un chat</a>.</p>
 
 <h2>Lo que nada de esto significa</h2>
@@ -356,7 +356,7 @@ INDEX_EN = """
                 delete them.</p>
             </li>
             <li>
-                <a href="i-asked-openai-and-anthropic-to-delete-my-chats.html">I asked OpenAI and Anthropic to delete my chats. Neither said they were gone.</a>
+                <a href="i-sent-openai-and-anthropic-a-gdpr-erasure-request.html">I sent OpenAI and Anthropic a GDPR erasure request. Neither told me what they kept.</a>
                 <p>Five layers sit between the button and the conversation being
                 gone. We asked OpenAI and Anthropic to delete our data; neither
                 said it was gone, and both were being accurate.</p>
@@ -384,7 +384,7 @@ INDEX_ES = """
                 chats revisados por humanos despu&eacute;s de que los borres.</p>
             </li>
             <li>
-                <a href="pedi-a-openai-y-anthropic-que-borraran-mis-chats.html">Pedí a OpenAI y a Anthropic que borraran mis chats. Ninguno dijo que estuvieran borrados.</a>
+                <a href="solicitud-de-borrado-rgpd-a-openai-y-anthropic.html">Mandé a OpenAI y a Anthropic una solicitud de borrado del RGPD. Ninguno me dijo qué se quedaban.</a>
                 <p>Entre el bot&oacute;n y que la conversaci&oacute;n desaparezca
                 hay cinco capas. Pedimos a OpenAI y a Anthropic que borraran
                 nuestros datos: ninguno dijo que estuvieran borrados, y los dos
@@ -477,30 +477,30 @@ def build(render, hreflang):
     ))
 
     # --- 4: que significa borrar un chat ----------------------------------
-    en_path = "blog/i-asked-openai-and-anthropic-to-delete-my-chats.html"
-    es_path = "blog/es/pedi-a-openai-y-anthropic-que-borraran-mis-chats.html"
+    en_path = "blog/i-sent-openai-and-anthropic-a-gdpr-erasure-request.html"
+    es_path = "blog/es/solicitud-de-borrado-rgpd-a-openai-y-anthropic.html"
     alt = hreflang(en_path, es_path)
 
-    h1_en = "I asked OpenAI and Anthropic to delete my chats. Neither said they were gone."
+    h1_en = "I sent OpenAI and Anthropic a GDPR erasure request. Neither told me what they kept."
     d_en = ("Five layers sit between the delete button and the conversation being gone: "
             "storage, model weights, the reviewer's copy, the safety flag and the court. "
             "With the OpenAI privacy team's reply, and Anthropic's.")
     out.append(render(
         path=en_path, lang="en",
-        title="I asked OpenAI and Anthropic to delete my chats. Neither said they were gone. — Saga Labs",
+        title="I sent OpenAI and Anthropic a GDPR erasure request. Neither told me what they kept. — Saga Labs",
         desc=d_en, og_title=h1_en, alternates=alt,
         jsonld=_jsonld(h1_en, d_en, "https://aisagalab.com/" + en_path, "en", "Privacy"),
         body=_head(
-            "Privacy", "I asked OpenAI and Anthropic to delete my chats.<br>Neither said they were gone.",
+            "Privacy", "I sent OpenAI and Anthropic a GDPR erasure request.<br>Neither told me what they kept.",
             "Five layers sit between the delete button and a conversation actually "
             "being gone. Only the first one is under your control.",
             "Saga Labs &middot; " + DATE_EN,
-            "Leer en espa&ntilde;ol", "es/pedi-a-openai-y-anthropic-que-borraran-mis-chats.html",
+            "Leer en espa&ntilde;ol", "es/solicitud-de-borrado-rgpd-a-openai-y-anthropic.html",
         ) + '\n        <div class="article-body">' + A4_EN_BODY
           + '</div>\n        <div class="article-body article-sources">' + A4_EN_SOURCES + '</div>',
     ))
 
-    h1_es = "Pedí a OpenAI y a Anthropic que borraran mis chats. Ninguno dijo que estuvieran borrados."
+    h1_es = "Mandé a OpenAI y a Anthropic una solicitud de borrado del RGPD. Ninguno me dijo qué se quedaban."
     d_es = ("Entre el bot\u00f3n de borrar y que la conversaci\u00f3n desaparezca hay cinco capas: "
             "almacenamiento, pesos del modelo, la copia del revisor, la marca de seguridad y el "
             "juzgado. Con la respuesta del equipo de privacidad de OpenAI, y la de Anthropic.")
@@ -510,11 +510,11 @@ def build(render, hreflang):
         desc=d_es, og_title=h1_es, alternates=alt,
         jsonld=_jsonld(h1_es, d_es, "https://aisagalab.com/" + es_path, "es", "Privacidad"),
         body=_head(
-            "Privacidad", "Ped&iacute; a OpenAI y a Anthropic que borraran mis chats.<br>Ninguno dijo que estuvieran borrados.",
+            "Privacidad", "Mand&eacute; a OpenAI y a Anthropic una solicitud de borrado del RGPD.<br>Ninguno me dijo qu&eacute; se quedaban.",
             "Entre el bot&oacute;n de borrar y que la conversaci&oacute;n desaparezca de "
             "verdad hay cinco capas. Solo la primera depende de ti.",
             "Saga Labs &middot; " + DATE_ES,
-            "Read in English", "../i-asked-openai-and-anthropic-to-delete-my-chats.html",
+            "Read in English", "../i-sent-openai-and-anthropic-a-gdpr-erasure-request.html",
         ) + '\n        <div class="article-body">' + A4_ES_BODY
           + '</div>\n        <div class="article-body article-sources">' + A4_ES_SOURCES + '</div>',
     ))
