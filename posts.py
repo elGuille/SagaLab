@@ -660,34 +660,59 @@ legal and security team. There is no reason to doubt that. The point is
 structural, not moral: <strong>a retention policy is a promise a company makes,
 and a court can suspend it for everyone at once.</strong></p>
 
-<h2>We asked both companies directly</h2>
+<h2>I sent both companies a GDPR erasure request</h2>
 
 <p>A note on voice: the rest of this article is written by Saga Labs, but this
-section is mine personally. I did the obvious experiment. From my own personal
-accounts &mdash; the consumer tier this article is about, not a business plan
-with different defaults &mdash; I asked OpenAI and Anthropic to delete the data
-associated with me, and kept the replies.</p>
+section is mine personally. From my own personal accounts &mdash; the consumer
+tier this article is about, not a business plan with different defaults &mdash; I
+sent OpenAI and Anthropic a formal request under the GDPR, and kept what came
+back.</p>
 
-<p>Both answered within a day, both were polite, and neither did anything wrong.
-That is what makes the answers useful.</p>
+<p>Not a support ticket. A request under Article 15, the right of access, and
+Article 17, the right to erasure, asking specifically for the things this article
+has been describing:</p>
 
-<p>OpenAI's privacy team replied with instructions rather than a confirmation,
-and with one qualifier worth isolating:</p>
+<blockquote>Any conversations flagged by your trust and safety classifiers, along
+with the specific reasons for flagging. Any data derived from my conversations
+(classification scores, metadata, logs). Any de-identified data that originated
+from my account, including any data used for model training. Information about
+how long each category of my data will be retained and the legal basis for such
+retention. […] Please confirm in writing what data has been deleted and, if any
+data is retained, provide the specific legal basis for each category of retained
+data as required under Article 17(3).</blockquote>
+
+<p>That last sentence is the test. It is not a favour to ask: under Article 12(3)
+a controller has one month to respond.</p>
+
+<h3>The timeline</h3>
+
+<ul>
+<li><strong>15 April.</strong> Request sent to both companies.</li>
+<li><strong>15 April.</strong> Anthropic acknowledges automatically:
+&ldquo;We're transitioning your question to a human member of our Privacy
+Team.&rdquo;</li>
+<li><strong>17 April.</strong> OpenAI replies. Two days, which is faster than
+most companies manage.</li>
+<li><strong>16 May.</strong> Anthropic's human reply arrives &mdash; one month
+and one day after the request.</li>
+</ul>
+
+<h3>What OpenAI sent back</h3>
 
 <blockquote>We acknowledge receipt of your request to delete any data associated
 with you processed by OpenAI, but keep your OpenAI account. For security and
 privacy reasons, the quickest way to delete <strong>data that is not necessary to
-maintain your account or our services</strong>, while keeping your ChatGPT account
-active, is to use our self-service tools outlined below.</blockquote>
+maintain your account or our services</strong>, while keeping your ChatGPT
+account active, is to use our self-service tools outlined below.</blockquote>
 
-<p>Read the clause we emphasised. The self-service tools cover data that is
-<em>not necessary to maintain the account or the service</em>. That phrasing
+<p>What followed were links: the Delete all chats button, the memory FAQ, the
+privacy portal. Read the clause emphasised above. The self-service tools cover
+data that is <em>not necessary to maintain the account or the service</em>. That
 implies a second category &mdash; data that is necessary &mdash; and the reply
-does not say what is in it, how large it is, or how long it lasts. The answer to
-&ldquo;delete everything about me&rdquo; was a link to a Delete all chats
-button.</p>
+does not say what is in it, how long it is kept, or on what legal basis. Those
+were the questions.</p>
 
-<p>Anthropic's reply was more specific, and lands on a qualifier of its own:</p>
+<h3>What Anthropic sent back</h3>
 
 <blockquote>When you delete a conversation it will be removed from your chat
 history immediately, and deleted from our back-end storage systems within 30 days
@@ -696,11 +721,11 @@ delete your account, your personal data connected to your account will also be
 deleted <strong>in accordance with our retention periods</strong>.</blockquote>
 
 <p>&ldquo;In accordance with our retention periods&rdquo; is not an answer to the
-question; it is a pointer back to the question. Those periods are the ones earlier
-in this article: 30 days for ordinary storage, up to two years for a flagged
+question; it is a pointer back to it. Those periods are the ones earlier in this
+article: 30 days for ordinary storage, up to two years for a flagged
 conversation, up to five years for de-identified training data, up to seven years
-for a safety classification score. Deleting your account does not reset those
-clocks &mdash; it hands you to them.</p>
+for a classification score. Deleting your account does not reset those clocks
+&mdash; it hands you to them.</p>
 
 <p>The same reply added something most people have never considered:</p>
 
@@ -708,21 +733,33 @@ clocks &mdash; it hands you to them.</p>
 Quora's Poe or Cursor), you will need to request account deletion through that
 third party service provider.</blockquote>
 
-<p>Which means that deleting your account at the model provider does not delete
-the copies held by whatever else you piped it through, and you are expected to
-know the list.</p>
+<p>Deleting your account at the model provider does not delete the copies held by
+whatever else you piped it through, and you are expected to know the list.</p>
 
-<p>Neither company was evasive. Both replied faster than most companies would.
-The point is narrower: <strong>I asked two of the most sophisticated privacy
-teams in the industry whether my data was gone, and neither said yes.</strong>
-Not because they were hiding something, but because &ldquo;yes&rdquo; is not a
+<h3>What neither of them did</h3>
+
+<p>Neither reply confirmed in writing what had been deleted. Neither gave a legal
+basis for anything retained, which Article 17(3) requires when a controller keeps
+data despite an erasure request. Neither engaged with the access request at all:
+no list of flagged conversations, no classification scores, no retention schedule
+by category. Both answered a legal request with a link to a settings page.</p>
+
+<p>I am not claiming a proven breach. I did not escalate to a data protection
+authority, so nothing here has been adjudicated, and both companies' published
+policies do contain much of what I asked for. Both replied politely; one replied
+very fast. But the request was specific and the answers were generic, and that
+gap is the point: <strong>I asked two of the most sophisticated privacy teams in
+the industry, in the most formal terms available to a European citizen, whether
+my data was gone. Neither said yes.</strong></p>
+
+<p>Not because they were hiding something. Because &ldquo;yes&rdquo; is not a
 thing either of them is in a position to say.</p>
 
-<p class="article-note">The two replies are quoted verbatim except that the
-support agents' names have been removed; they answered their tickets correctly and
-should not be identifiable from this page. They are personal correspondence and
-are reproduced as received. Both companies' current published policies are linked
-at the end of this article and say the same things.</p>
+<p class="article-note">The replies are quoted verbatim except that the support
+agents' names have been removed; they answered their tickets correctly and should
+not be identifiable from this page. They are personal correspondence, reproduced
+as received. Both companies' current published policies are linked at the end and
+say the same things.</p>
 
 <h2>What deletion means somewhere else</h2>
 
@@ -764,6 +801,7 @@ A4_EN_SOURCES = """
 <h2>Sources</h2>
 <ul>
 <li><a href="https://privacy.anthropic.com/en/articles/10023548-how-long-do-you-store-my-data" rel="nofollow noopener" target="_blank">How long do you store my data?</a> &mdash; Anthropic Privacy Center, updated 1 July 2026. The 30-day, 2-year, 5-year and 7-year windows.</li>
+<li><a href="https://gdpr-info.eu/art-15-gdpr/" rel="nofollow noopener" target="_blank">Article 15</a>, <a href="https://gdpr-info.eu/art-17-gdpr/" rel="nofollow noopener" target="_blank">Article 17</a> and <a href="https://gdpr-info.eu/art-12-gdpr/" rel="nofollow noopener" target="_blank">Article 12(3)</a> GDPR &mdash; right of access, right to erasure, and the one-month deadline to respond.</li>
 <li><a href="https://www.anthropic.com/legal/aup" rel="nofollow noopener" target="_blank">Usage Policy</a> &mdash; Anthropic. The High-Risk Use Case Requirements naming legal, healthcare, insurance and finance.</li>
 <li><a href="https://support.google.com/gemini/answer/13594961" rel="nofollow noopener" target="_blank">Gemini Apps Privacy Notice</a> &mdash; Google. Human review and the three-year retention of reviewed chats.</li>
 <li><a href="https://help.openai.com/en/articles/8983778-chat-and-file-retention-policies-in-chatgpt" rel="nofollow noopener" target="_blank">Chat and file retention policies in ChatGPT</a> &mdash; OpenAI Help Center.</li>
@@ -914,20 +952,47 @@ argumento es estructural, no moral: <strong>una pol&iacute;tica de
 retenci&oacute;n es una promesa que hace una empresa, y un tribunal puede
 suspenderla para todo el mundo a la vez.</strong></p>
 
-<h2>Se lo preguntamos a las dos empresas</h2>
+<h2>Les mand&eacute; una solicitud de borrado del RGPD</h2>
 
 <p>Un apunte sobre la voz: el resto del art&iacute;culo lo firma Saga Labs, pero
-esta secci&oacute;n es m&iacute;a personalmente. Hice el experimento obvio. Desde
-mis propias cuentas personales &mdash; el nivel de consumo del que va este
-art&iacute;culo, no un plan de empresa con otros valores por defecto &mdash;
-ped&iacute; a OpenAI y a Anthropic que borraran los datos asociados a m&iacute;, y
-guard&eacute; las respuestas.</p>
+esta secci&oacute;n es m&iacute;a personalmente. Desde mis propias cuentas
+personales &mdash; el nivel de consumo del que va este art&iacute;culo, no un plan
+de empresa con otros valores por defecto &mdash; mand&eacute; a OpenAI y a
+Anthropic una solicitud formal al amparo del RGPD, y guard&eacute; lo que
+volvi&oacute;.</p>
 
-<p>Las dos contestaron en menos de un d&iacute;a, las dos fueron correctas, y
-ninguna hizo nada mal. Eso es justo lo que hace &uacute;tiles las respuestas.</p>
+<p>No un ticket de soporte. Una solicitud por el art&iacute;culo 15, derecho de
+acceso, y el art&iacute;culo 17, derecho de supresi&oacute;n, pidiendo justo lo
+que este art&iacute;culo lleva describiendo:</p>
 
-<p>El equipo de privacidad de OpenAI respondi&oacute; con instrucciones en vez de
-con una confirmaci&oacute;n, y con una coletilla que merece aislarse:</p>
+<blockquote>Cualquier conversaci&oacute;n marcada por vuestros clasificadores de
+trust and safety, junto con los motivos concretos del marcado. Cualquier dato
+derivado de mis conversaciones (puntuaciones de clasificaci&oacute;n, metadatos,
+registros). Cualquier dato anonimizado que se originara en mi cuenta, incluido el
+usado para entrenar modelos. Informaci&oacute;n sobre cu&aacute;nto tiempo se
+conservar&aacute; cada categor&iacute;a de mis datos y la base jur&iacute;dica de
+esa conservaci&oacute;n. […] Confirmad por escrito qu&eacute; datos se han
+suprimido y, si se conserva alguno, indicad la base jur&iacute;dica concreta de
+cada categor&iacute;a conservada, tal como exige el art&iacute;culo
+17(3).</blockquote>
+
+<p>Esa &uacute;ltima frase es la prueba. No es un favor que se pide: el
+art&iacute;culo 12(3) da al responsable un mes para contestar.</p>
+
+<h3>La cronolog&iacute;a</h3>
+
+<ul>
+<li><strong>15 de abril.</strong> Solicitud enviada a las dos empresas.</li>
+<li><strong>15 de abril.</strong> Anthropic acusa recibo autom&aacute;ticamente:
+&laquo;Estamos derivando tu consulta a una persona de nuestro equipo de
+privacidad&raquo;.</li>
+<li><strong>17 de abril.</strong> Contesta OpenAI. Dos d&iacute;as, m&aacute;s
+r&aacute;pido de lo que consigue la mayor&iacute;a.</li>
+<li><strong>16 de mayo.</strong> Llega la respuesta humana de Anthropic: un mes y
+un d&iacute;a despu&eacute;s de la solicitud.</li>
+</ul>
+
+<h3>Lo que contest&oacute; OpenAI</h3>
 
 <blockquote>Acusamos recibo de tu solicitud de borrar cualquier dato asociado a ti
 procesado por OpenAI, manteniendo tu cuenta. Por motivos de seguridad y
@@ -936,29 +1001,29 @@ son necesarios para mantener tu cuenta o nuestros servicios</strong>, conservand
 la cuenta de ChatGPT activa, es usar nuestras herramientas de
 autoservicio.</blockquote>
 
-<p>Lee la cl&aacute;usula que hemos destacado. Las herramientas de autoservicio
-cubren los datos que <em>no son necesarios para mantener la cuenta o el
-servicio</em>. Esa formulaci&oacute;n implica una segunda categor&iacute;a &mdash;
-los que s&iacute; lo son &mdash; y la respuesta no dice qu&eacute; hay dentro,
-cu&aacute;nto ocupa ni cu&aacute;nto dura. La respuesta a &laquo;borrad todo lo
-m&iacute;o&raquo; fue un enlace a un bot&oacute;n de borrar todos los chats.</p>
+<p>Lo que segu&iacute;a eran enlaces: el bot&oacute;n de borrar todos los chats,
+las preguntas frecuentes de la memoria, el portal de privacidad. Lee la
+cl&aacute;usula destacada. Las herramientas de autoservicio cubren los datos que
+<em>no son necesarios para mantener la cuenta o el servicio</em>. Eso implica una
+segunda categor&iacute;a &mdash; los que s&iacute; lo son &mdash; y la respuesta
+no dice qu&eacute; hay dentro, cu&aacute;nto se guarda ni con qu&eacute; base
+jur&iacute;dica. Esas eran las preguntas.</p>
 
-<p>La de Anthropic fue m&aacute;s concreta, y aterriza en una coletilla
-propia:</p>
+<h3>Lo que contest&oacute; Anthropic</h3>
 
 <blockquote>Cuando borras una conversaci&oacute;n se elimina de tu historial de
-inmediato, y de nuestros sistemas de almacenamiento en 30 d&iacute;as
-<strong>de acuerdo con nuestros plazos de retenci&oacute;n</strong>. […] Cuando
-eliges borrar tu cuenta, tus datos personales vinculados a ella tambi&eacute;n se
-borran <strong>de acuerdo con nuestros plazos de retenci&oacute;n</strong>.</blockquote>
+inmediato, y de nuestros sistemas de almacenamiento en 30 d&iacute;as <strong>de
+acuerdo con nuestros plazos de retenci&oacute;n</strong>. […] Cuando eliges borrar
+tu cuenta, tus datos personales vinculados a ella tambi&eacute;n se borran
+<strong>de acuerdo con nuestros plazos de retenci&oacute;n</strong>.</blockquote>
 
 <p>&laquo;De acuerdo con nuestros plazos de retenci&oacute;n&raquo; no es una
-respuesta a la pregunta: es un puntero de vuelta a la pregunta. Esos plazos son
-los de antes en este art&iacute;culo: 30 d&iacute;as de almacenamiento normal,
-hasta dos a&ntilde;os si la conversaci&oacute;n se marc&oacute;, hasta cinco
-a&ntilde;os de datos anonimizados de entrenamiento, hasta siete a&ntilde;os de
-puntuaci&oacute;n de seguridad. Borrar la cuenta no reinicia esos relojes: te
-entrega a ellos.</p>
+respuesta a la pregunta: es un puntero de vuelta a ella. Esos plazos son los de
+antes en este art&iacute;culo: 30 d&iacute;as de almacenamiento normal, hasta dos
+a&ntilde;os si la conversaci&oacute;n se marc&oacute;, hasta cinco a&ntilde;os de
+datos anonimizados de entrenamiento, hasta siete a&ntilde;os de puntuaci&oacute;n
+de clasificaci&oacute;n. Borrar la cuenta no reinicia esos relojes: te entrega a
+ellos.</p>
 
 <p>La misma respuesta a&ntilde;ad&iacute;a algo en lo que casi nadie ha
 pensado:</p>
@@ -967,23 +1032,40 @@ pensado:</p>
 ejemplo Poe de Quora o Cursor), tendr&aacute;s que solicitar el borrado de la
 cuenta a ese proveedor.</blockquote>
 
-<p>Es decir: borrar tu cuenta en el proveedor del modelo no borra las copias que
-tenga aquello por lo que lo canalizaste, y se da por hecho que t&uacute; te sabes
-la lista.</p>
+<p>Borrar tu cuenta en el proveedor del modelo no borra las copias que tenga
+aquello por lo que lo canalizaste, y se da por hecho que t&uacute; te sabes la
+lista.</p>
 
-<p>Ninguna de las dos empresas fue evasiva. Contestaron m&aacute;s r&aacute;pido
-de lo que contesta la mayor&iacute;a. El punto es m&aacute;s estrecho:
+<h3>Lo que no hizo ninguna de las dos</h3>
+
+<p>Ninguna respuesta confirm&oacute; por escrito qu&eacute; se hab&iacute;a
+borrado. Ninguna dio una base jur&iacute;dica para lo conservado, que es lo que
+exige el art&iacute;culo 17(3) cuando un responsable retiene datos pese a una
+solicitud de supresi&oacute;n. Ninguna entr&oacute; en el derecho de acceso: ni
+lista de conversaciones marcadas, ni puntuaciones de clasificaci&oacute;n, ni
+calendario de conservaci&oacute;n por categor&iacute;a. Las dos respondieron a una
+solicitud legal con un enlace a una pantalla de ajustes.</p>
+
+<p>No estoy afirmando que haya un incumplimiento probado. No lo llev&eacute; a
+una autoridad de protecci&oacute;n de datos, as&iacute; que aqu&iacute; no hay
+nada dirimido, y las pol&iacute;ticas publicadas de las dos empresas s&iacute;
+contienen buena parte de lo que ped&iacute;a. Las dos contestaron con
+educaci&oacute;n; una, muy r&aacute;pido. Pero la solicitud era concreta y las
+respuestas fueron gen&eacute;ricas, y esa distancia es el asunto:
 <strong>pregunt&eacute; a dos de los equipos de privacidad m&aacute;s competentes
-del sector si mis datos estaban borrados, y ninguno dijo que s&iacute;.</strong>
-No porque escondieran nada, sino porque &laquo;s&iacute;&raquo; no es algo que
+del sector, en los t&eacute;rminos m&aacute;s formales de que dispone una
+ciudadana europea, si mis datos estaban borrados. Ninguno dijo que
+s&iacute;.</strong></p>
+
+<p>No porque escondieran nada. Porque &laquo;s&iacute;&raquo; no es algo que
 ninguno de los dos est&eacute; en posici&oacute;n de decir.</p>
 
-<p class="article-note">Las dos respuestas est&aacute;n citadas literalmente salvo
-que se han quitado los nombres de los agentes de soporte: atendieron sus tickets
+<p class="article-note">Las respuestas est&aacute;n citadas literalmente salvo que
+se han quitado los nombres de los agentes de soporte: atendieron sus tickets
 correctamente y no deber&iacute;an ser identificables desde esta p&aacute;gina. Son
 correspondencia personal y se reproducen tal como se recibieron. Las
 pol&iacute;ticas publicadas hoy por las dos empresas est&aacute;n enlazadas al
-final y dicen lo mismo. La de OpenAI est&aacute; traducida del ingl&eacute;s.</p>
+final y dicen lo mismo. Los textos originales est&aacute;n en ingl&eacute;s.</p>
 
 <h2>Qu&eacute; significa borrar en otro sitio</h2>
 
