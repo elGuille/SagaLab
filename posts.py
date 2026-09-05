@@ -738,9 +738,10 @@ knowing which of your conversations you would mind someone reading, and treating
 those differently from the rest.</p>
 
 <p>For those, the only arrangement in which none of the five layers exists is a
-model that runs on hardware you own. That is the kind of thing we build &mdash;
-<a href="%s">Pinku</a> for chat on an iPhone or a Mac, <a href="%s">Keeper</a> for
-photos and files. Both free, both offline.</p>
+model that runs on hardware you own. That is the problem we work on:
+<a href="%s">Pinku</a> runs language models on an iPhone or a Mac without an
+account or a network connection, and <a href="%s">Keeper</a> keeps photos and
+files encrypted on the device.</p>
 
 <p class="article-note">Every figure in this article is quoted from a provider's
 own published policy or a court filing, all linked below. Check them rather than
@@ -989,10 +990,10 @@ para una costumbre m&aacute;s estrecha: saber cu&aacute;les de tus conversacione
 te importar&iacute;a que alguien leyera, y tratarlas distinto que al resto.</p>
 
 <p>Para esas, la &uacute;nica disposici&oacute;n en la que no existe ninguna de
-las cinco capas es un modelo que corre en hardware tuyo. Es el tipo de cosa que
-hacemos: <a href="%s">Pinku</a> para chatear en un iPhone o un Mac, y
-<a href="%s">Keeper</a> para fotos y archivos. Los dos gratis, los dos sin
-conexi&oacute;n.</p>
+las cinco capas es un modelo que corre en hardware tuyo. Es el problema en el que
+trabajamos: <a href="%s">Pinku</a> ejecuta modelos de lenguaje en un iPhone o un
+Mac sin cuenta y sin conexi&oacute;n, y <a href="%s">Keeper</a> mantiene fotos y
+archivos cifrados en el dispositivo.</p>
 
 <p class="article-note">Toda cifra de este art&iacute;culo est&aacute; citada de la
 pol&iacute;tica publicada por el proveedor o de una resoluci&oacute;n judicial,
