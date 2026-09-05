@@ -149,7 +149,7 @@ ordered OpenAI for five months to preserve output logs that would otherwise have
 been deleted, and a sample of twenty million of them was later handed to the
 plaintiffs' lawyers. The order itself was lifted in October 2025. We go through
 the whole timeline in
-<a href="we-asked-openai-and-anthropic-to-delete-our-data.html">what &ldquo;delete&rdquo;
+<a href="i-asked-openai-and-anthropic-to-delete-my-chats.html">what &ldquo;delete&rdquo;
 actually means</a>.</p>
 
 <h2>What none of this means</h2>
@@ -284,7 +284,7 @@ York Times, un tribunal oblig&oacute; a OpenAI durante cinco meses a conservar
 registros que de otro modo se habr&iacute;an borrado, y una muestra de veinte
 millones acab&oacute; en manos de los abogados de la parte contraria. La orden se
 levant&oacute; en octubre de 2025. Repasamos la cronolog&iacute;a entera en
-<a href="pedimos-a-openai-y-anthropic-que-borraran-nuestros-datos.html">qu&eacute;
+<a href="pedi-a-openai-y-anthropic-que-borraran-mis-chats.html">qu&eacute;
 significa de verdad borrar un chat</a>.</p>
 
 <h2>Lo que nada de esto significa</h2>
@@ -356,7 +356,7 @@ INDEX_EN = """
                 delete them.</p>
             </li>
             <li>
-                <a href="we-asked-openai-and-anthropic-to-delete-our-data.html">We asked OpenAI and Anthropic to delete our data. Neither said it was gone.</a>
+                <a href="i-asked-openai-and-anthropic-to-delete-my-chats.html">I asked OpenAI and Anthropic to delete my chats. Neither said they were gone.</a>
                 <p>Five layers sit between the button and the conversation being
                 gone. We asked OpenAI and Anthropic to delete our data; neither
                 said it was gone, and both were being accurate.</p>
@@ -384,7 +384,7 @@ INDEX_ES = """
                 chats revisados por humanos despu&eacute;s de que los borres.</p>
             </li>
             <li>
-                <a href="pedimos-a-openai-y-anthropic-que-borraran-nuestros-datos.html">Pedimos a OpenAI y a Anthropic que borraran nuestros datos. Ninguno dijo que estuvieran borrados.</a>
+                <a href="pedi-a-openai-y-anthropic-que-borraran-mis-chats.html">Pedí a OpenAI y a Anthropic que borraran mis chats. Ninguno dijo que estuvieran borrados.</a>
                 <p>Entre el bot&oacute;n y que la conversaci&oacute;n desaparezca
                 hay cinco capas. Pedimos a OpenAI y a Anthropic que borraran
                 nuestros datos: ninguno dijo que estuvieran borrados, y los dos
@@ -477,30 +477,30 @@ def build(render, hreflang):
     ))
 
     # --- 4: que significa borrar un chat ----------------------------------
-    en_path = "blog/we-asked-openai-and-anthropic-to-delete-our-data.html"
-    es_path = "blog/es/pedimos-a-openai-y-anthropic-que-borraran-nuestros-datos.html"
+    en_path = "blog/i-asked-openai-and-anthropic-to-delete-my-chats.html"
+    es_path = "blog/es/pedi-a-openai-y-anthropic-que-borraran-mis-chats.html"
     alt = hreflang(en_path, es_path)
 
-    h1_en = "We asked OpenAI and Anthropic to delete our data. Neither said it was gone."
+    h1_en = "I asked OpenAI and Anthropic to delete my chats. Neither said they were gone."
     d_en = ("Five layers sit between the delete button and the conversation being gone: "
             "storage, model weights, the reviewer's copy, the safety flag and the court. "
             "With the OpenAI privacy team's reply, and Anthropic's.")
     out.append(render(
         path=en_path, lang="en",
-        title="We asked OpenAI and Anthropic to delete our data. Neither said it was gone. — Saga Labs",
+        title="I asked OpenAI and Anthropic to delete my chats. Neither said they were gone. — Saga Labs",
         desc=d_en, og_title=h1_en, alternates=alt,
         jsonld=_jsonld(h1_en, d_en, "https://aisagalab.com/" + en_path, "en", "Privacy"),
         body=_head(
-            "Privacy", "We asked OpenAI and Anthropic to delete our data.<br>Neither said it was gone.",
+            "Privacy", "I asked OpenAI and Anthropic to delete my chats.<br>Neither said they were gone.",
             "Five layers sit between the delete button and a conversation actually "
             "being gone. Only the first one is under your control.",
             "Saga Labs &middot; " + DATE_EN,
-            "Leer en espa&ntilde;ol", "es/pedimos-a-openai-y-anthropic-que-borraran-nuestros-datos.html",
+            "Leer en espa&ntilde;ol", "es/pedi-a-openai-y-anthropic-que-borraran-mis-chats.html",
         ) + '\n        <div class="article-body">' + A4_EN_BODY
           + '</div>\n        <div class="article-body article-sources">' + A4_EN_SOURCES + '</div>',
     ))
 
-    h1_es = "Pedimos a OpenAI y a Anthropic que borraran nuestros datos. Ninguno dijo que estuvieran borrados."
+    h1_es = "Pedí a OpenAI y a Anthropic que borraran mis chats. Ninguno dijo que estuvieran borrados."
     d_es = ("Entre el bot\u00f3n de borrar y que la conversaci\u00f3n desaparezca hay cinco capas: "
             "almacenamiento, pesos del modelo, la copia del revisor, la marca de seguridad y el "
             "juzgado. Con la respuesta del equipo de privacidad de OpenAI, y la de Anthropic.")
@@ -510,11 +510,11 @@ def build(render, hreflang):
         desc=d_es, og_title=h1_es, alternates=alt,
         jsonld=_jsonld(h1_es, d_es, "https://aisagalab.com/" + es_path, "es", "Privacidad"),
         body=_head(
-            "Privacidad", "Pedimos a OpenAI y a Anthropic que borraran nuestros datos.<br>Ninguno dijo que estuvieran borrados.",
+            "Privacidad", "Ped&iacute; a OpenAI y a Anthropic que borraran mis chats.<br>Ninguno dijo que estuvieran borrados.",
             "Entre el bot&oacute;n de borrar y que la conversaci&oacute;n desaparezca de "
             "verdad hay cinco capas. Solo la primera depende de ti.",
             "Saga Labs &middot; " + DATE_ES,
-            "Read in English", "../we-asked-openai-and-anthropic-to-delete-our-data.html",
+            "Read in English", "../i-asked-openai-and-anthropic-to-delete-my-chats.html",
         ) + '\n        <div class="article-body">' + A4_ES_BODY
           + '</div>\n        <div class="article-body article-sources">' + A4_ES_SOURCES + '</div>',
     ))
@@ -662,10 +662,14 @@ and a court can suspend it for everyone at once.</strong></p>
 
 <h2>We asked both companies directly</h2>
 
-<p>In September 2026 we did the obvious experiment. Using our own accounts, we
-asked OpenAI and Anthropic to delete the data associated with us, and we kept the
-replies. Both answered within a day, both were polite, and neither did anything
-wrong. That is what makes the answers useful.</p>
+<p>A note on voice: the rest of this article is written by Saga Labs, but this
+section is mine personally. I did the obvious experiment. From my own personal
+accounts &mdash; the consumer tier this article is about, not a business plan
+with different defaults &mdash; I asked OpenAI and Anthropic to delete the data
+associated with me, and kept the replies.</p>
+
+<p>Both answered within a day, both were polite, and neither did anything wrong.
+That is what makes the answers useful.</p>
 
 <p>OpenAI's privacy team replied with instructions rather than a confirmation,
 and with one qualifier worth isolating:</p>
@@ -709,14 +713,16 @@ the copies held by whatever else you piped it through, and you are expected to
 know the list.</p>
 
 <p>Neither company was evasive. Both replied faster than most companies would.
-The point is narrower: <strong>we asked two of the most sophisticated privacy
-teams in the industry whether our data was gone, and neither said yes.</strong>
+The point is narrower: <strong>I asked two of the most sophisticated privacy
+teams in the industry whether my data was gone, and neither said yes.</strong>
 Not because they were hiding something, but because &ldquo;yes&rdquo; is not a
 thing either of them is in a position to say.</p>
 
-<p class="article-note">The two replies are quoted verbatim except that we removed
-the support agents' names. They answered their tickets correctly and should not be
-identifiable from this page.</p>
+<p class="article-note">The two replies are quoted verbatim except that the
+support agents' names have been removed; they answered their tickets correctly and
+should not be identifiable from this page. They are personal correspondence and
+are reproduced as received. Both companies' current published policies are linked
+at the end of this article and say the same things.</p>
 
 <h2>What deletion means somewhere else</h2>
 
@@ -731,17 +737,22 @@ travelled somewhere. A conversation that never leaves the device has one layer.<
 
 <h2>Where this leaves you</h2>
 
-<p>None of this is an argument for abandoning cloud assistants. They are better
-at almost everything, and for most of what people use them for, the retention
-question is not worth the trade. It is an argument for one narrower habit:
-knowing which of your conversations you would mind someone reading, and treating
-those differently from the rest.</p>
+<p>We are not writing this from a position of purity. We use cloud assistants
+every day, by choice, and we build products on top of them. Claude and ChatGPT
+are better than anything that fits on a phone, and convenience wins more often
+than we would like to admit.</p>
 
-<p>For those, the only arrangement in which none of the five layers exists is a
-model that runs on hardware you own. That is the problem we work on:
-<a href="%s">Pinku</a> runs language models on an iPhone or a Mac without an
-account or a network connection, and <a href="%s">Keeper</a> keeps photos and
-files encrypted on the device.</p>
+<p>So this is not an argument for quitting them. It is an argument for knowing
+which rules you are playing by, and then choosing deliberately for the
+conversations where it matters &mdash; the ones you would mind someone reading,
+which for most people is a small fraction of the total.</p>
+
+<p>For that fraction, the only arrangement in which none of the five layers
+exists is a model that runs on hardware you own. It is the problem we work on:
+<a href="%s">Pinku</a> runs language models on an iPhone or a Mac with no account
+and no network connection, and <a href="%s">Keeper</a> keeps photos and files
+encrypted on the device. The rest of the time we are in the same boat as you,
+typing into someone else's computer because it is easier.</p>
 
 <p class="article-note">Every figure in this article is quoted from a provider's
 own published policy or a court filing, all linked below. Check them rather than
@@ -905,11 +916,15 @@ suspenderla para todo el mundo a la vez.</strong></p>
 
 <h2>Se lo preguntamos a las dos empresas</h2>
 
-<p>En septiembre de 2026 hicimos el experimento obvio. Desde nuestras propias
-cuentas, pedimos a OpenAI y a Anthropic que borraran los datos asociados a
-nosotros, y guardamos las respuestas. Las dos contestaron en menos de un
-d&iacute;a, las dos fueron correctas, y ninguna hizo nada mal. Eso es justo lo que
-hace &uacute;tiles las respuestas.</p>
+<p>Un apunte sobre la voz: el resto del art&iacute;culo lo firma Saga Labs, pero
+esta secci&oacute;n es m&iacute;a personalmente. Hice el experimento obvio. Desde
+mis propias cuentas personales &mdash; el nivel de consumo del que va este
+art&iacute;culo, no un plan de empresa con otros valores por defecto &mdash;
+ped&iacute; a OpenAI y a Anthropic que borraran los datos asociados a m&iacute;, y
+guard&eacute; las respuestas.</p>
+
+<p>Las dos contestaron en menos de un d&iacute;a, las dos fueron correctas, y
+ninguna hizo nada mal. Eso es justo lo que hace &uacute;tiles las respuestas.</p>
 
 <p>El equipo de privacidad de OpenAI respondi&oacute; con instrucciones en vez de
 con una confirmaci&oacute;n, y con una coletilla que merece aislarse:</p>
@@ -958,15 +973,17 @@ la lista.</p>
 
 <p>Ninguna de las dos empresas fue evasiva. Contestaron m&aacute;s r&aacute;pido
 de lo que contesta la mayor&iacute;a. El punto es m&aacute;s estrecho:
-<strong>preguntamos a dos de los equipos de privacidad m&aacute;s competentes del
-sector si nuestros datos estaban borrados, y ninguno dijo que s&iacute;.</strong>
+<strong>pregunt&eacute; a dos de los equipos de privacidad m&aacute;s competentes
+del sector si mis datos estaban borrados, y ninguno dijo que s&iacute;.</strong>
 No porque escondieran nada, sino porque &laquo;s&iacute;&raquo; no es algo que
 ninguno de los dos est&eacute; en posici&oacute;n de decir.</p>
 
 <p class="article-note">Las dos respuestas est&aacute;n citadas literalmente salvo
-que hemos quitado los nombres de los agentes de soporte. Atendieron sus tickets
-correctamente y no deber&iacute;an ser identificables desde esta p&aacute;gina.
-La de OpenAI est&aacute; traducida del ingl&eacute;s.</p>
+que se han quitado los nombres de los agentes de soporte: atendieron sus tickets
+correctamente y no deber&iacute;an ser identificables desde esta p&aacute;gina. Son
+correspondencia personal y se reproducen tal como se recibieron. Las
+pol&iacute;ticas publicadas hoy por las dos empresas est&aacute;n enlazadas al
+final y dicen lo mismo. La de OpenAI est&aacute; traducida del ingl&eacute;s.</p>
 
 <h2>Qu&eacute; significa borrar en otro sitio</h2>
 
@@ -983,17 +1000,24 @@ conversaci&oacute;n que nunca sale del dispositivo tiene una capa.</p>
 
 <h2>D&oacute;nde te deja esto</h2>
 
-<p>Nada de esto es un argumento para dejar los asistentes en la nube. Son mejores
-en casi todo, y para la mayor parte de lo que la gente hace con ellos, la
-cuesti&oacute;n de la retenci&oacute;n no compensa el cambio. Es un argumento
-para una costumbre m&aacute;s estrecha: saber cu&aacute;les de tus conversaciones
-te importar&iacute;a que alguien leyera, y tratarlas distinto que al resto.</p>
+<p>No escribimos esto desde ninguna superioridad moral. Usamos asistentes en la
+nube todos los d&iacute;as, por gusto, y adem&aacute;s hacemos productos que se
+apoyan en ellos. Claude y ChatGPT son mejores que cualquier cosa que quepa en un
+m&oacute;vil, y la comodidad gana m&aacute;s veces de las que nos
+gustar&iacute;a reconocer.</p>
 
-<p>Para esas, la &uacute;nica disposici&oacute;n en la que no existe ninguna de
-las cinco capas es un modelo que corre en hardware tuyo. Es el problema en el que
-trabajamos: <a href="%s">Pinku</a> ejecuta modelos de lenguaje en un iPhone o un
-Mac sin cuenta y sin conexi&oacute;n, y <a href="%s">Keeper</a> mantiene fotos y
-archivos cifrados en el dispositivo.</p>
+<p>As&iacute; que esto no es un argumento para dejarlos. Es un argumento para
+saber a qu&eacute; reglas est&aacute;s jugando y elegir a conciencia en las
+conversaciones donde importa: aquellas que te fastidiar&iacute;a que alguien
+leyera, que para casi todo el mundo son una parte peque&ntilde;a del total.</p>
+
+<p>Para esa parte, la &uacute;nica disposici&oacute;n en la que no existe ninguna
+de las cinco capas es un modelo que corre en hardware tuyo. Es el problema en el
+que trabajamos: <a href="%s">Pinku</a> ejecuta modelos de lenguaje en un iPhone o
+un Mac sin cuenta y sin conexi&oacute;n, y <a href="%s">Keeper</a> mantiene fotos
+y archivos cifrados en el dispositivo. El resto del tiempo estamos en el mismo
+barco que t&uacute;, escribiendo en el ordenador de otro porque es m&aacute;s
+c&oacute;modo.</p>
 
 <p class="article-note">Toda cifra de este art&iacute;culo est&aacute; citada de la
 pol&iacute;tica publicada por el proveedor o de una resoluci&oacute;n judicial,
