@@ -687,7 +687,7 @@ a controller has one month to respond.</p>
 <h3>The timeline</h3>
 
 <ul>
-<li><strong>15 April.</strong> Request sent to both companies.</li>
+<li><strong>15 April 2026.</strong> Request sent to both companies.</li>
 <li><strong>15 April.</strong> Anthropic acknowledges automatically:
 &ldquo;We're transitioning your question to a human member of our Privacy
 Team.&rdquo;</li>
@@ -982,7 +982,7 @@ art&iacute;culo 12(3) da al responsable un mes para contestar.</p>
 <h3>La cronolog&iacute;a</h3>
 
 <ul>
-<li><strong>15 de abril.</strong> Solicitud enviada a las dos empresas.</li>
+<li><strong>15 de abril de 2026.</strong> Solicitud enviada a las dos empresas.</li>
 <li><strong>15 de abril.</strong> Anthropic acusa recibo autom&aacute;ticamente:
 &laquo;Estamos derivando tu consulta a una persona de nuestro equipo de
 privacidad&raquo;.</li>
