@@ -115,36 +115,58 @@ document.addEventListener('DOMContentLoaded', function () {
     ];
 
     // Render Apps
+    //
+    // Dora is the business; the other six are shipped work. Rendering all
+    // seven as identical full-height rows gave a paused meditation app the
+    // same weight as the product that pays, and left the page mostly
+    // whitespace. Dora keeps the big row, the rest go in a compact grid.
+    const APPLE_ICON = `
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                            </svg>`;
+
+    const externalAttrs = (href) =>
+        href.startsWith('http') ? ' target="_blank" rel="noopener noreferrer"' : '';
+
     const combinedGrid = document.querySelector('.combined-apps-grid');
     if (combinedGrid) {
-        combinedGrid.innerHTML = mobileApps.map((app, index) => {
-            const layoutClass = index % 2 === 0 ? 'app-showcase-row' : 'app-showcase-row reverse';
-            const extraClass = app.customClass ? ` ${app.customClass}` : '';
-            const isAppStore = app.link.includes('apps.apple.com');
-            const linkAttrs = app.link.startsWith('http') ? ' target="_blank" rel="noopener noreferrer"' : '';
-            const icon = isAppStore ? `
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
-                            </svg>` : '';
-            return `
-            <div class="${layoutClass}${extraClass}">
+        const [lead, ...rest] = mobileApps;
+
+        const leadHtml = `
+            <div class="app-showcase-row">
                 <div class="app-showcase-content">
-                    <span class="app-showcase-category">${app.category}</span>
-                    <h3 class="app-showcase-title">${app.name}</h3>
-                    <p class="app-showcase-desc">${app.description}</p>
+                    <span class="app-showcase-category">${lead.category}</span>
+                    <h3 class="app-showcase-title">${lead.name}</h3>
+                    <p class="app-showcase-desc">${lead.description}</p>
                     <div class="app-showcase-actions">
-                        <a href="${app.link}"${linkAttrs} class="app-showcase-btn">${icon}
-                            ${app.cta}
-                        </a>${(app.secondaryLinks || []).map((l) => `
-                        <a href="${l.href}"${l.href.startsWith('http') ? ' target="_blank" rel="noopener noreferrer"' : ''} class="app-showcase-link">${l.label}</a>`).join('')}
+                        <a href="${lead.link}"${externalAttrs(lead.link)} class="app-showcase-btn">
+                            ${lead.cta}
+                        </a>${(lead.secondaryLinks || []).map((l) => `
+                        <a href="${l.href}"${externalAttrs(l.href)} class="app-showcase-link">${l.label}</a>`).join('')}
                     </div>
                 </div>
                 <div class="app-showcase-visual">
-                    <img src="${app.image}" alt="${app.name} interface" loading="lazy" class="app-showcase-img">
+                    <img src="${lead.image}" alt="${lead.name} interface" class="app-showcase-img">
                 </div>
-            </div>
-            `;
-        }).join('');
+            </div>`;
+
+        const restHtml = `
+            <section class="also-shipped">
+                <h2 class="also-shipped__title">Also shipped</h2>
+                <p class="also-shipped__lead">Six more apps on the App Store. Each one started as a way to try something we wanted to understand.</p>
+                <div class="also-shipped__grid">
+                    ${rest.map((app) => `
+                    <a class="also-shipped__card" href="${app.link}"${externalAttrs(app.link)}>
+                        <img src="${app.image}" alt="${app.name}" loading="lazy" class="also-shipped__img">
+                        <span class="also-shipped__cat">${app.category}</span>
+                        <h3 class="also-shipped__name">${app.name}</h3>
+                        <p class="also-shipped__desc">${app.description}</p>
+                        <span class="also-shipped__cta">${app.link.includes('apps.apple.com') ? APPLE_ICON : ''}${app.cta}</span>
+                    </a>`).join('')}
+                </div>
+            </section>`;
+
+        combinedGrid.innerHTML = leadHtml + restHtml;
     }
 
     // Scroll animations with IntersectionObserver

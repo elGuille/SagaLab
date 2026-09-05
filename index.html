@@ -194,27 +194,28 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What is Saga AI Studio?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Saga AI Studio is an independent app studio that builds intelligent iOS applications using generative AI, on-device machine learning, and privacy-first design. Our apps include AI video generators, private AI assistants, and smart productivity tools."
-          }
+          "name": "What is Saga Labs?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Saga Labs is an independent AI engineering studio founded in 2023. It designs and ships its own products across iOS, web and agent infrastructure, and takes on a small number of external engagements each quarter. Seven apps are live on the App Store." }
         },
         {
           "@type": "Question",
-          "name": "What AI apps does Saga Labs make?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Saga Labs builds Dora (AI video and image generation for web, iPhone, ChatGPT, Claude and compatible agents), Pinku Private AI (on-device AI assistant), 3 Tasks, Brainy, Crypton, Focus Meditation, and Keeper."
-          }
+          "name": "What is Dora?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Dora is Saga Labs' AI video and image generator. You upload a photo or write a prompt and get a finished clip back in about two minutes. It runs on the web at doravideo.com, on iPhone, and from inside AI assistants including Claude, ChatGPT, Cursor and Google Antigravity. One account and one balance across all of them." }
+        },
+        {
+          "@type": "Question",
+          "name": "Did Saga Labs build the Dora MCP server?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Dora MCP is a hosted Model Context Protocol server built and operated by Saga Labs. One OAuth-secured endpoint at doravideo.com/mcp gives a connected agent four tools and sixteen models, each with its cost listed before generating. It is in the official MCP Registry, Smithery and the Cursor Directory. The full specification, limitations included, is published at doravideo.com/compare." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Saga Labs take on outside projects?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes, selectively. Typical work is designing and shipping AI agents, building MCP servers that expose your own models or data to AI clients, wiring generative APIs into iOS or web apps, and the unglamorous production parts: OAuth, cost control, rate limiting, abuse defence and observability. Briefs of two to twelve weeks. Email sagalabs@proton.me." }
         },
         {
           "@type": "Question",
           "name": "Does Pinku Private AI work offline?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Pinku Private AI runs entirely on-device using models like Llama, Qwen, and DeepSeek. It requires no internet connection, collects zero data, and keeps all conversations completely private on your iPhone."
-          }
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Pinku runs entirely on-device using models like Llama, Qwen and DeepSeek. It needs no internet connection, collects no data, and keeps every conversation on your iPhone." }
         }
       ]
     }
@@ -271,22 +272,30 @@
             <div class="app-showcase-container combined-apps-grid"></div>
         </section>
 
-        <!-- foro.club: agentic AI made playable -->
-        <section class="featured-project" id="foro" style="padding: 56px 0;">
+        <section class="home-faq" id="faq">
             <div class="container">
-                <div style="max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 48px; align-items: center;">
-                    <div>
-                        <img src="images/foro.webp" alt="foro.club: three AIs reaching a conclusion together" loading="lazy" style="width: 100%; height: auto; border-radius: 18px;">
-                    </div>
-                    <div>
-                        <span style="font-size: 0.78rem; opacity: 0.7; letter-spacing: 0.1em; text-transform: uppercase;">Featured · Agentic AI in the wild</span>
-                        <h2 style="margin: 12px 0 16px; font-size: clamp(1.6rem, 2.6vw, 2rem); line-height: 1.2;">Three AIs debate your question and reach a conclusion together.</h2>
-                        <p style="margin: 0 0 20px; opacity: 0.88; line-height: 1.6;">foro.club is our public sandbox for multi-agent reasoning. A fast model takes a quick first pass, frontier models go deep, and the agents argue until they converge. The same pattern we ship for clients.</p>
-                        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-                            <a href="https://foro.club" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 14px 28px; background: #111; color: #fff; border-radius: 10px; text-decoration: none; font-weight: 500; font-size: 1.05rem;">Try foro.club</a>
-                        </div>
-                    </div>
-                </div>
+                <h2>Questions</h2>
+                <details>
+                    <summary>What is Saga Labs?</summary>
+                    <p>Saga Labs is an independent AI engineering studio founded in 2023. It designs and ships its own products across iOS, web and agent infrastructure, and takes on a small number of external engagements each quarter. Seven apps are live on the App Store.</p>
+                </details>
+                <details>
+                    <summary>What is Dora?</summary>
+                    <p>Dora is Saga Labs' AI video and image generator. You upload a photo or write a prompt and get a finished clip back in about two minutes. It runs on the web at doravideo.com, on iPhone, and from inside AI assistants including Claude, ChatGPT, Cursor and Google Antigravity. One account and one balance across all of them.</p>
+                </details>
+                <details>
+                    <summary>Did Saga Labs build the Dora MCP server?</summary>
+                    <p>Yes. Dora MCP is a hosted Model Context Protocol server built and operated by Saga Labs. One OAuth-secured endpoint at doravideo.com/mcp gives a connected agent four tools and sixteen models, each with its cost listed before generating. It is in the official MCP Registry, Smithery and the Cursor Directory. The full specification, limitations included, is published at doravideo.com/compare.</p>
+                </details>
+                <details>
+                    <summary>Does Saga Labs take on outside projects?</summary>
+                    <p>Yes, selectively. Typical work is designing and shipping AI agents, building MCP servers that expose your own models or data to AI clients, wiring generative APIs into iOS or web apps, and the unglamorous production parts: OAuth, cost control, rate limiting, abuse defence and observability. Briefs of two to twelve weeks. Email sagalabs@proton.me.</p>
+                </details>
+                <details>
+                    <summary>Does Pinku Private AI work offline?</summary>
+                    <p>Yes. Pinku runs entirely on-device using models like Llama, Qwen and DeepSeek. It needs no internet connection, collects no data, and keeps every conversation on your iPhone.</p>
+                </details>
+                <p class="home-faq__more"><a href="faq.html">More questions about the studio and how we work &rarr;</a></p>
             </div>
         </section>
 
@@ -296,6 +305,7 @@
                     <h2>About Saga Labs</h2>
                     <p class="about-intro">Saga Labs is an independent AI engineering studio, founded in 2023 and working across iOS, web and agent infrastructure. We do not only advise on this work &mdash; we run it. <a href="https://doravideo.com/">Dora Video</a> is ours: an AI video and image generator with an OAuth-secured Model Context Protocol server at <a href="https://doravideo.com/mcp">doravideo.com/mcp</a>, four tools, sixteen models exposed to agents and the coin cost of every one published before you spend it. Its <a href="https://doravideo.com/compare">full specification is public</a>, limitations included. The same account works on the web, on iPhone and inside Claude, ChatGPT, Cursor and Google Antigravity.</p>
                     <p class="about-intro">That is the shape of the work we take on: agent flows that survive contact with production, MCP servers that expose your own models and data to AI clients, and the unglamorous parts &mdash; OAuth, dynamic client registration, cost control, rate limiting, abuse defence, observability. Written briefs of two to twelve weeks. <a href="mailto:sagalabs@proton.me">sagalabs@proton.me</a>.</p>
+                    <p class="about-intro">We also keep <a href="https://foro.club" target="_blank" rel="noopener noreferrer">foro.club</a> open as a public sandbox for multi-agent reasoning: three models argue a question until they converge. It is where we test the patterns before they go into client work.</p>
                 </div>
             </div>
         </section>
