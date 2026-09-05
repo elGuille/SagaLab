@@ -45,10 +45,17 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'Dora AI Video Generator',
             category: 'Video Creation',
             image: 'images/dora.webp',
-            description: 'Turn a prompt or a photo into video, with Veo, Kling, SeeDance, Grok and Nano Banana Pro. Works on the web, on iPhone, and inside AI assistants like Claude, ChatGPT, Google Antigravity and Cursor.',
-            link: 'ai-video-generator.html?utm_source=sagalab&utm_medium=homepage&utm_campaign=dora',
-            cta: 'See Dora',
-            appStoreFeatured: false
+            description: 'Upload a photo, describe the shot, get a finished video back in a couple of minutes. On the web, on iPhone, and soon on Android — and from inside the AI assistant you already use.',
+            link: 'https://doravideo.com/?utm_source=sagalab&utm_medium=homepage&utm_campaign=dora',
+            cta: 'Open Dora',
+            appStoreFeatured: false,
+            // Dora ships on three surfaces. The card used to send everyone to
+            // the MCP page, which reads as a developer product and lost the
+            // App Store link entirely. Android goes in when Play approves it.
+            secondaryLinks: [
+                { label: 'iPhone app', href: 'https://apps.apple.com/app/id6754180384' },
+                { label: 'Use it in ChatGPT, Claude or Cursor', href: 'ai-video-generator.html?utm_source=sagalab&utm_medium=homepage&utm_campaign=dora_agents' }
+            ]
         },
         {
             name: 'Pinku Private AI',
@@ -128,7 +135,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     <div class="app-showcase-actions">
                         <a href="${app.link}"${linkAttrs} class="app-showcase-btn">${icon}
                             ${app.cta}
-                        </a>
+                        </a>${(app.secondaryLinks || []).map((l) => `
+                        <a href="${l.href}"${l.href.startsWith('http') ? ' target="_blank" rel="noopener noreferrer"' : ''} class="app-showcase-link">${l.label}</a>`).join('')}
                     </div>
                 </div>
                 <div class="app-showcase-visual">
