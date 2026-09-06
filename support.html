@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Support - SagaLab</title>
-    <link rel="canonical" href="https://aisagalab.com/support/">
+    <link rel="canonical" href="https://aisagalab.com/support.html">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <script src="/umami.js" defer></script>
@@ -16,29 +16,27 @@
     <nav class="main-nav">
         <div class="nav-container">
             <a href="index.html" class="nav-logo" id="home-logo">
-                <h1>saga <span class="ai-gradient">ai</span> <span class="lab-gradient">lab</span></h1>
+                <h1>Saga Labs</h1>
             </a>
             <ul class="nav-menu">
-                <li><a href="index.html#ai-tools">AI Tools</a></li>
-                <li><a href="index.html#mobile-apps">Mobile Apps</a></li>
+                <li><a href="ai-video-generator.html">Dora</a></li>
                 <li><a href="/blog/">Blog</a></li>
+                <li><a href="faq.html">FAQ</a></li>
                 <li><a href="index.html#about">About</a></li>
-                <li><a href="support.html" class="nav-link active">Support</a></li>
+                <li><a href="mailto:sagalabs@proton.me" class="nav-link">Contact</a></li>
                 <li>
                     <a href="https://x.com/SagaAILab" target="_blank" class="icon-link" aria-label="X (Twitter)">
                         <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
-                            <path
-                                d="M18.244 2H21l-6.5 7.43L22.5 22H15.9l-4.7-6.2L5.7 22H3l7-8.02L1.8 2h6.8l4.3 5.7L18.244 2zm-2.43 18h1.64L8.29 4H6.57l9.244 16z" />
+                            <path d="M18.244 2H21l-6.5 7.43L22.5 22H15.9l-4.7-6.2L5.7 22H3l7-8.02L1.8 2h6.8l4.3 5.7L18.244 2zm-2.43 18h1.64L8.29 4H6.57l9.244 16z" />
                         </svg>
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/Saga-Labs" target="_blank" class="icon-link" aria-label="GitHub">
-                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
-                            <path
-                                d="M12 2C6.477 2 2 6.486 2 12.017c0 4.424 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.238-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.464-1.11-1.464-.908-.62.069-.607.069-.607 1.004.071 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.833.092-.647.35-1.088.636-1.338-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.748-1.026 2.748-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.337 4.695-4.565 4.943.359.31.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .268.18.58.688.481A10.019 10.019 0 0 0 22 12.017C22 6.486 17.523 2 12 2z" />
+                    <button class="nav-theme-toggle" id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+                        <svg id="nav-theme-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
                         </svg>
-                    </a>
+                    </button>
                 </li>
             </ul>
             <button class="nav-toggle" aria-label="Toggle navigation menu">
@@ -70,22 +68,44 @@
                 <div class="support-container">
                     <div class="support-form-wrapper">
                         <h2>Get Support</h2>
-                        <form class="support-form" id="supportForm">
-                            <!-- Email Field -->
+                        <form class="support-form" id="supportForm" novalidate>
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required maxlength="100" placeholder="Jane">
+                            </div>
+
                             <div class="form-group">
                                 <label for="email">Your Email</label>
                                 <input type="email" id="email" name="email" required placeholder="you@example.com">
                             </div>
 
-                            <!-- Message Field -->
                             <div class="form-group">
-                                <label for="message">Your Message</label>
-                                <textarea id="message" name="message" required placeholder="Tell us what you need help with..." rows="6"></textarea>
+                                <label for="topic">What is it about?</label>
+                                <select id="topic" name="topic" required>
+                                    <option>Billing</option>
+                                    <option>Generation issue</option>
+                                    <option>Refund</option>
+                                    <option>Account</option>
+                                    <option>API &amp; MCP</option>
+                                    <option selected>Other</option>
+                                </select>
                             </div>
 
-                            <button type="submit" class="cta-primary">Send Message</button>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" required minlength="20" maxlength="5000" placeholder="Tell us what you need help with. What were you doing, and what happened?" rows="6"></textarea>
+                            </div>
+
+                            <!-- Honeypot: a real person never sees this, a bot fills it in. -->
+                            <div class="hp-field" aria-hidden="true">
+                                <label for="hp">Leave this empty</label>
+                                <input type="text" id="hp" name="hp" tabindex="-1" autocomplete="off">
+                            </div>
+
+                            <button type="submit" class="cta-primary" id="supportSubmit">Send Message</button>
+                            <p class="form-status" id="supportStatus" role="status" aria-live="polite"></p>
                         </form>
-                        <p class="form-note">We'll respond to your email shortly.</p>
+                        <p class="form-note">We read every message and reply to the address you give us. You can also write to <a href="mailto:sagalabs@proton.me">sagalabs@proton.me</a> directly.</p>
                     </div>
                 </div>
             </div>
@@ -119,23 +139,70 @@
 
     <script src="script.js"></script>
     <script>
-        // Handle support form submission
-        document.getElementById('supportForm').addEventListener('submit', function(e) {
-            e.preventDefault();
+        // Send the message to the same endpoint Dora's support form uses, which
+        // emails sagalabs@proton.me through Resend and rate-limits by IP.
+        //
+        // Until 6 Sep 2026 this form built a `mailto:` link and opened the
+        // visitor's email client, then showed an alert saying the message had
+        // been sent. On a phone, or on any machine with no mail client set up,
+        // nothing happened at all — the person typed out their problem, pressed
+        // Send, and it went nowhere while the page told them it had worked.
+        (function () {
+            var form = document.getElementById('supportForm');
+            var statusEl = document.getElementById('supportStatus');
+            var button = document.getElementById('supportSubmit');
+            if (!form) return;
 
-            // Collect form data
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
+            var ENDPOINT = 'https://submitsupportrequest-couhmpdtva-uc.a.run.app';
 
-            // Create mailto link with form data
-            const mailtoLink = `mailto:sagalabs@proton.me?subject=Support Request&body=From: ${encodeURIComponent(email)}%0D%0D${encodeURIComponent(message)}`;
+            function say(text, kind) {
+                statusEl.textContent = text;
+                statusEl.className = 'form-status' + (kind ? ' form-status--' + kind : '');
+            }
 
-            // Open email client
-            window.location.href = mailtoLink;
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
 
-            // Show success message
-            alert('Thank you! Your email client will open to send the message.');
-        });
+                var payload = {
+                    name: document.getElementById('name').value.trim(),
+                    email: document.getElementById('email').value.trim(),
+                    topic: document.getElementById('topic').value,
+                    message: document.getElementById('message').value.trim(),
+                    hp: document.getElementById('hp').value
+                };
+
+                // Checked here as well as on the server, so the person is told
+                // what is wrong before waiting on a round trip.
+                if (!payload.name) { say('Please tell us your name.', 'error'); return; }
+                if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(payload.email)) { say('That email address does not look right.', 'error'); return; }
+                if (payload.message.length < 20) { say('Please add a little more detail — at least a sentence.', 'error'); return; }
+
+                button.disabled = true;
+                say('Sending…');
+
+                fetch(ENDPOINT, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                }).then(function (res) {
+                    if (res.ok) {
+                        form.reset();
+                        say('Sent. We will reply to the address you gave us.', 'ok');
+                        return;
+                    }
+                    if (res.status === 429) {
+                        say('That is a few messages in a short time. Please try again in an hour, or write to sagalabs@proton.me.', 'error');
+                        return;
+                    }
+                    // Never claim success we cannot see. Give them the address.
+                    say('That did not go through. Please write to sagalabs@proton.me and we will pick it up there.', 'error');
+                }).catch(function () {
+                    say('That did not go through. Please write to sagalabs@proton.me and we will pick it up there.', 'error');
+                }).finally(function () {
+                    button.disabled = false;
+                });
+            });
+        })();
     </script>
 </body>
 </html>
