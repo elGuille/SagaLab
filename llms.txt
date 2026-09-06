@@ -11,7 +11,7 @@ Independent app studio. Builds and runs its own software — seven apps on the A
 
 ## Proof points
 
-- **Dora** — multi-model AI image and video product we built and operate. One OAuth-secured endpoint at https://doravideo.com/mcp gives compatible agents four tools and 16 models, each with its coin cost, sorted cheapest first. The same account and balance also work on the web and on iPhone. See https://aisagalab.com/ai-video-generator.html, https://doravideo.com/compare (full specification) and the per-client guides at https://doravideo.com/connectors.
+- **Dora** — multi-model AI image and video product we built and operate. One OAuth-secured endpoint at https://doravideo.com/mcp gives compatible agents four tools and 16 models, each with its coin cost, sorted cheapest first. The same account and balance also work on the web and on iPhone. See https://aisagalab.com/ai-video-generator.html, https://doravideo.com/ai-video-mcp (full specification) and the per-client guides at https://doravideo.com/connectors.
 - **Pinku Private AI** — on-device assistant for iPhone and Mac. Twelve open models (Gemma 3, Gemma 3n, Llama 3.2, Qwen3, DeepSeek-R1 distills, SmolLM3, LFM2) run locally through Apple's MLX framework. No account, no server, no cloud calls, no data collection: the conversation never leaves the device. Free. https://aisagalab.com/pinku.html
 - **Dora iOS** — multi-model AI video and image generation, in production on the App Store.
 
@@ -38,7 +38,7 @@ Each app doubles as a public showcase of internal capability.
 - Models: 22 in the app (13 video, 7 image, 2 audio). 16 of them (9 video, 7 image) are exposed to connected agents over MCP, returned by list_models sorted cheapest first, each with its live coin cost.
 - Cheapest video: 10 coins ($0.15 on Pro) for 4 seconds at 480p with grok_1_5, which also has native audio. The floor is 3 coins for a 1-second clip.
 - Cheapest image: 1 coin ($0.015) with z_image.
-- Full public specification, limitations included: https://doravideo.com/compare
+- Full public specification, limitations included: https://doravideo.com/ai-video-mcp
 - Pricing: Dora Pro is currently $15 for 1,000 coins. Current examples are Grok Imagine 1.5 at 10 coins for 4s/480p ($0.15 Pro equivalent), SeeDance 1.5 Pro at 14 coins for 4s/480p ($0.21), Kling 2.6 at 55 coins for 5s without audio ($0.83), and Veo 3 Fast at 60 coins for 8s ($0.90). Higher duration, resolution or audio may cost more.
 - Free evaluation: new accounts currently receive 60 starter credits with no card required.
 - Honest limitations: there is no public REST API today; access is the web app, the iOS app or MCP. There is no deterministic price router — list_models returns costs cheapest first and the agent chooses. Dora does not schedule or publish to social platforms; it returns MP4 and image files. Infrastructure platforms such as fal.ai or Replicate are a better fit for teams building their own high-volume video backend; Dora is a better fit when the goal is simply a finished clip with minimal integration.

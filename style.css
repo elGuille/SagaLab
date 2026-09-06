@@ -557,6 +557,11 @@ body.dark-mode .featured-project-img {
 
 .app-showcase-img {
     max-width: 100%;
+    /* Capped since 6 Sep 2026: the Dora frame is a full-height App Store
+       screenshot (9:19.5), and width-only sizing made the row twice as tall
+       as the copy beside it. */
+    max-height: 560px;
+    width: auto;
     height: auto;
     border-radius: 0;
     box-shadow: none;

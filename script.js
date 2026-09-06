@@ -44,7 +44,13 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             name: 'Dora AI Video Generator',
             category: 'Video Creation',
-            image: 'images/dora.webp',
+            // App Store frame, chosen 6 Sep 2026 (decision D4). The old
+            // composite showed a gorilla and a skateboarding dog: two outputs
+            // and no hint of what a person does to get them. This one shows
+            // the typed prompt and the video it produced, which is the whole
+            // product in one picture. Marta rejected the animals and the
+            // before/after frames explicitly.
+            image: 'images/dora/02.webp',
             description: 'Upload a photo, describe the shot, get a finished video back in a couple of minutes. On the web, on iPhone, and soon on Android — and from inside the AI assistant you already use.',
             link: 'https://doravideo.com/?utm_source=sagalab&utm_medium=homepage&utm_campaign=dora',
             cta: 'Open Dora',
