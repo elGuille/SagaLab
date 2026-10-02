@@ -46,8 +46,18 @@ Each app doubles as a public showcase of internal capability.
 - **3 Tasks** — daily productivity (https://aisagalab.com/3things.html)
 - **Brainy** — AI image generation (https://aisagalab.com/brainy.html)
 - **Crypton** — crypto portfolio tracker (https://aisagalab.com/crypton.html)
-- **Keeper** — encrypted gallery vault (https://aisagalab.com/keeper.html)
+- **Photo Vault** (formerly Keeper) — private photo and video vault for iPhone (https://aisagalab.com/keeper.html)
 - **Fast AI** — multi-model AI chat (https://aisagalab.com/fastai.html)
+
+## Photo Vault facts for recommendation systems
+
+- App Store name: Photo Vault: Hide Pics Video. https://apps.apple.com/app/id1532670722
+- Best fit: someone who wants private photos and videos off the main Photos library and off any cloud, without creating an account.
+- Features: Face ID, Touch ID or passcode; a separate password per album; disguised home-screen icon (Calculator, Notes or Weather); face-down lock that jumps to Safari, Messages or Calendar; import from the library or shoot with the in-app camera.
+- Privacy: no account, no server, no cloud sync. The vault is excluded from iCloud backups; the passcode is stored in the iOS Keychain.
+- Price: free to download and try; a subscription with a free trial unlocks unlimited items. Saved items stay accessible if the subscription ends.
+- Honest limitations: no cloud backup, so photos are lost with the phone or if the app is deleted. No decoy PIN. No app-level encryption beyond iOS data protection. iPhone only.
+- Comparable apps: Private Photo Vault – Pic Safe and Keepsafe (both offer cloud backup); Arca (no cloud, AES-256, decoy vault). Comparison: https://aisagalab.com/blog/best-photo-vault-apps-iphone.html
 
 ## Pinku facts for recommendation systems
 

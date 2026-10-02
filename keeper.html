@@ -4,232 +4,118 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="icon" type="image/svg+xml" href="images/keeper-favicon.svg" />
-  <title>Keeper — Only Gallery Keeper</title>
-  <meta name="description" content="The ultimate gallery keeper. Protect, organize and preserve your memories with Keeper." />
-  <meta property="og:title" content="Keeper — Only Gallery Keeper" />
-  <meta property="og:description" content="Protect, organize and preserve your memories with Keeper." />
+  <title>Photo Vault: hide photos and videos on iPhone — no account, no cloud</title>
+  <meta name="description" content="Photo Vault keeps private photos and videos on your iPhone behind Face ID, with a password per album and a disguised app icon. No account, no cloud, nothing uploaded." />
+  <link rel="canonical" href="https://aisagalab.com/keeper.html">
+  <meta property="og:title" content="Photo Vault — hide photos and videos on iPhone" />
+  <meta property="og:description" content="Face ID, a password per album and a disguised icon. No account, no cloud." />
   <meta property="og:type" content="website" />
-  <link rel="canonical" href="https://aisagalab.com/keeper/">
+  <meta property="og:url" content="https://aisagalab.com/keeper.html" />
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:title" content="Keeper — Only Gallery Keeper" />
-  <meta property="twitter:description" content="Protect, organize and preserve your memories with Keeper." />
+  <meta property="twitter:title" content="Photo Vault — hide photos and videos on iPhone" />
+  <meta property="twitter:description" content="Face ID, a password per album and a disguised icon. No account, no cloud." />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Keeper",
-    "alternateName": "Only Gallery Keeper",
-    "description": "Protect, organize and preserve your memories with Keeper. The ultimate gallery keeper for iPhone.",
-    "applicationCategory": "MultimediaApplication",
+    "name": "Photo Vault: Hide Pics Video",
+    "alternateName": ["Photo Vault", "Keeper"],
+    "description": "Private photo and video vault for iPhone. Face ID, Touch ID or passcode; a separate password per album; a disguised app icon (Calculator, Notes or Weather); face-down lock. No account, no cloud, and the vault is excluded from iCloud backups.",
+    "applicationCategory": "UtilitiesApplication",
     "operatingSystem": "iOS",
     "url": "https://aisagalab.com/keeper.html",
-    "downloadUrl": "https://apps.apple.com/au/app/only-gallery-keeper/id1532670722",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Saga Labs",
-      "url": "https://aisagalab.com/"
-    }
+    "downloadUrl": "https://apps.apple.com/app/apple-store/id1532670722?pt=118348020&ct=sagalab-web&mt=8",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free to download. A subscription with a free trial unlocks unlimited items." },
+    "publisher": { "@type": "Organization", "name": "Saga Labs", "url": "https://aisagalab.com/" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Do I need an account?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. There is no sign-up, no email and no server. Photo Vault works entirely on the iPhone." } },
+      { "@type": "Question", "name": "Are my photos uploaded anywhere?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. There is no cloud sync. The vault is also excluded from iCloud and iTunes backups, so your private photos do not end up in a backup either." } },
+      { "@type": "Question", "name": "What happens if I lose my phone or delete the app?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The photos are gone, because they only ever existed on that phone. That is the trade-off for nothing leaving the device. Export anything you cannot afford to lose." } },
+      { "@type": "Question", "name": "Can I hide the app itself?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. You can switch the home-screen icon to Calculator, Notes or Weather." } },
+      { "@type": "Question", "name": "How is this different from the Hidden album in the Photos app?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The Hidden album is free and built in, and for many people it is enough. Photo Vault adds a separate password per album, a disguised icon, a face-down lock, and keeps the photos out of your main library and its backups." } },
+      { "@type": "Question", "name": "How much does it cost?",
+        "acceptedAnswer": { "@type": "Answer", "text": "It is free to download and try. A subscription, with a free trial, unlocks unlimited photos and videos. Anything already saved stays accessible even if the subscription ends." } }
+    ]
   }
   </script>
   <style>
-    :root { --bg:#fff; --fg:#0b0b0b; --muted:#5b5b5b; --btn:#111; --btnfg:#fff; }
+    :root { --bg:#fff; --fg:#0b0b0b; --muted:#5b5b5b; --line:#e7e7e7; --card:#f6f6f7; --accent:#3b82f6; }
     @media (prefers-color-scheme: dark) {
-      :root { --bg:#0b0b0b; --fg:#f8f8f8; --muted:#b5b5b5; --btn:#fff; --btnfg:#111; }
+      :root { --bg:#0b0b0b; --fg:#f8f8f8; --muted:#b5b5b5; --line:#262626; --card:#151517; }
     }
     * { box-sizing: border-box; }
-    html,body { height:100%; }
     body {
-      margin:0;
-      background:var(--bg);
-      color:var(--fg);
+      margin:0; background:var(--bg); color:var(--fg);
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif;
-      -webkit-font-smoothing: antialiased;
-      line-height:1.15;
+      -webkit-font-smoothing: antialiased; line-height:1.55;
     }
-    .wrap {
-      min-height:100%;
-      display:grid;
-      place-items:center;
-      padding: clamp(16px, 4vw, 48px);
-    }
-    .card {
-      text-align:center;
-      max-width: 1400px;
-      width:100%;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 50px;
-      align-items: center;
-    }
-    .card-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-    }
-    .logo-img {
-      width: 280px;
-      height: auto;
-      margin-bottom: 0;
-      border-radius: 0;
-      box-shadow: none;
-      order: -1;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    footer a {
-      color: var(--muted);
-      text-decoration: none;
-      transition: color 0.2s ease;
-    }
-    footer a:hover {
-      color: var(--fg);
-      text-decoration: underline;
-    }
-    @media (min-width: 1024px) {
-      .card {
-        grid-template-columns: 1fr 2fr;
-        max-width: 1400px;
-        gap: 80px;
-      }
-      .card-content {
-        gap: 28px;
-        text-align: center;
-        align-items: center;
-        grid-column: 2;
-        grid-row: 1;
-      }
-      .logo-img {
-        width: clamp(400px, 50vw, 600px);
-        grid-column: 1;
-        grid-row: 1;
-        order: 0;
-      }
-    }
-    h1 {
-      margin:0 0 20px;
-      font-weight:800;
-      letter-spacing:-0.02em;
-      font-size: clamp(40px, 8vw, 88px);
-      line-height: 0.97;
-    }
-    p {
-      margin:0 0 28px;
-      font-size: clamp(16px, 2.8vw, 24px);
-      color:var(--muted);
-    }
-    @keyframes vibrate {
-      0%, 100% { transform: rotate(0deg); }
-      2%, 98% { transform: rotate(0deg); }
-      5% { transform: rotate(-3deg); }
-      8% { transform: rotate(3deg); }
-      11% { transform: rotate(-3deg); }
-      14% { transform: rotate(3deg); }
-      17% { transform: rotate(-3deg); }
-      20% { transform: rotate(0deg); }
-    }
+    main { max-width: 760px; margin: 0 auto; padding: clamp(24px, 5vw, 64px) 16px 96px; }
+    .hero { text-align:center; }
+    .hero img { width: 160px; height:auto; }
+    h1 { margin: 16px 0 12px; font-weight:800; letter-spacing:-0.02em; font-size: clamp(34px, 6vw, 56px); line-height:1.05; }
+    .lede { margin:0 auto 28px; max-width: 34em; font-size: clamp(17px, 2.4vw, 21px); color:var(--muted); }
     .cta {
-      display:inline-block;
-      text-decoration:none;
-      background:#3b82f6;
-      color:#fff;
-      border-radius: 14px;
-      padding: clamp(14px, 3.2vw, 22px) clamp(24px, 6vw, 40px);
-      font-size: clamp(18px, 3.5vw, 28px);
-      font-weight: 800;
-      letter-spacing: 0.2px;
-      line-height:1;
-      transition: transform .06s ease;
-      animation: vibrate 2.5s linear infinite;
+      display:inline-block; text-decoration:none; background:var(--accent); color:#fff;
+      border-radius: 14px; padding: 16px 28px; font-size: 19px; font-weight: 800;
     }
-    .cta:active { transform: translateY(1px); }
-    footer {
-      margin-top: 28px;
-      font-size: 12px;
-      color: var(--muted);
-      opacity:.9;
-    }
-    footer a {
-      color: var(--muted);
-      text-decoration: none;
-      transition: color 0.2s ease;
-    }
-    footer a:hover {
-      color: var(--fg);
-      text-decoration: underline;
-    }
-    @media (min-width: 1024px) {
-      footer {
-        grid-column: 1 / -1;
-        margin-top: 40px;
-        text-align: center;
-      }
-    }
-    .sticky-cta {
-      position: fixed;
-      left: 50%;
-      bottom: clamp(12px, 3vw, 24px);
-      transform: translateX(-50%);
-      z-index: 10;
-      display: none;
-    }
-    @media (max-width: 640px) {
-      .sticky-cta { display: inline-block; }
-      .logo-img {
-        width: 280px;
-        margin-bottom: 30px;
-      }
-    }
-    .sr-only {
-      position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden;
-      clip:rect(0,0,0,0); border:0;
-    }
-    @media (max-width: 640px) {
-      .card {
-        text-align: center;
-      }
-      h1, p, .cta {
-        text-align: center;
-      }
-    }
+    h2 { margin: 56px 0 14px; font-size: 26px; letter-spacing:-0.01em; }
+    ul.features { list-style:none; padding:0; margin:0; display:grid; gap:12px; }
+    ul.features li { background:var(--card); border-radius:12px; padding:14px 16px; }
+    ul.features b { display:block; }
+    .note { color:var(--muted); font-size:15px; }
+    details { border-bottom:1px solid var(--line); padding: 14px 0; }
+    summary { cursor:pointer; font-weight:700; }
+    details p { margin: 10px 0 0; color:var(--muted); }
+    a { color: var(--accent); }
+    footer { margin-top: 64px; font-size: 13px; color: var(--muted); text-align:center; }
+    footer a { color: var(--muted); }
   </style>
-    <script src="/umami.js" defer></script>
+  <script src="/umami.js" defer></script>
 </head>
 <body>
+  <main>
+    <section class="hero">
+      <img src="images/photolock.png" alt="Photo Vault app icon" width="160" height="160" />
+      <h1>Photo Vault</h1>
+      <p class="lede">Hide private photos and videos on your iPhone behind Face ID. No account, no cloud, nothing uploaded.</p>
+      <a class="cta" href="https://apps.apple.com/app/apple-store/id1532670722?pt=118348020&amp;ct=sagalab-web&amp;mt=8">Download on the App Store</a>
+    </section>
 
-  <main class="wrap">
-    <div class="card">
-      <img src="images/photolock.png" alt="Keeper App Logo" class="logo-img" />
-      <div class="card-content">
-        <h1>Only Gallery<br/>Keeper</h1>
-        <p>Protect, organize and preserve your memories</p>
+    <h2>What it does</h2>
+    <ul class="features">
+      <li><b>Face ID, Touch ID or passcode</b>The vault locks every time you leave the app.</li>
+      <li><b>A password per album</b>Lock a single album with its own password, on top of the app lock.</li>
+      <li><b>Disguised app icon</b>Swap the home-screen icon for Calculator, Notes or Weather.</li>
+      <li><b>Face-down lock</b>Turn the phone face down and the app jumps to Safari, Messages or Calendar.</li>
+      <li><b>Import or shoot inside the vault</b>Bring photos and videos in from your library, or take them with the built-in camera so they never touch the camera roll.</li>
+      <li><b>Nothing leaves the phone</b>No sign-up, no server, no cloud sync. The vault is excluded from iCloud backups and the passcode is kept in the iOS Keychain.</li>
+    </ul>
 
-        <a class="cta" href="https://apps.apple.com/au/app/only-gallery-keeper/id1532670722">
-          Download on the App Store
-        </a>
-      </div>
-      <footer>
-        
-        <a href="privacy.html">Privacy</a> • <a href="terms.html">Terms</a>
-      </footer>
-    </div>
+    <h2>Who it is for</h2>
+    <p>People who want private photos out of the main Photos library, and out of anything that syncs, without creating an account with yet another company. If you want your vault backed up to a cloud, Photo Vault is not the right app: it deliberately has no cloud.</p>
+
+    <h2>Questions</h2>
+    <details open><summary>Do I need an account?</summary><p>No. There is no sign-up, no email and no server. Photo Vault works entirely on the iPhone.</p></details>
+    <details><summary>Are my photos uploaded anywhere?</summary><p>No. There is no cloud sync. The vault is also excluded from iCloud and iTunes backups, so your private photos do not end up in a backup either.</p></details>
+    <details><summary>What happens if I lose my phone or delete the app?</summary><p>The photos are gone, because they only ever existed on that phone. That is the trade-off for nothing leaving the device. Export anything you cannot afford to lose.</p></details>
+    <details><summary>Can I hide the app itself?</summary><p>Yes. You can switch the home-screen icon to Calculator, Notes or Weather.</p></details>
+    <details><summary>How is this different from the Hidden album in the Photos app?</summary><p>The Hidden album is free and built in, and for many people it is enough. Photo Vault adds a separate password per album, a disguised icon, a face-down lock, and keeps the photos out of your main library and its backups.</p></details>
+    <details><summary>How much does it cost?</summary><p>It is free to download and try. A subscription, with a free trial, unlocks unlimited photos and videos. Anything already saved stays accessible even if the subscription ends.</p></details>
+
+    <p class="note">Photo Vault is made by <a href="index.html">Saga Labs</a>, an independent app studio. Formerly called Keeper.</p>
+
+    <footer><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="support.html">Support</a></footer>
   </main>
-
-  <!-- Optional: lightweight click tracking (no SDK). Replace with your GA/Pixel if needed. -->
-  <script>
-    (function(){
-      const params = new URLSearchParams(location.search);
-      const utm = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term']
-        .reduce((acc,k)=>{ if(params.get(k)) acc[k]=params.get(k); return acc; },{});
-      const links = document.querySelectorAll('.cta');
-      links.forEach(a=>{
-        try {
-          const url = new URL(a.href);
-          Object.entries(utm).forEach(([k,v])=> url.searchParams.set(k,v));
-          a.href = url.toString();
-        } catch(e){}
-      });
-    })();
-  </script>
 </body>
 </html>
