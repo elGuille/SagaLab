@@ -1178,15 +1178,15 @@ A4_ES_SOURCES = A4_EN_SOURCES.replace("<h2>Sources</h2>", "<h2>Fuentes</h2>").re
 # --------------------------------------------------------------------------
 #
 # Photo Vault es nuestra: el aviso va arriba del todo, no al final.
-# Valoraciones sacadas de la API publica de iTunes (country=us) el 2 oct 2026.
+# Valoraciones sacadas de la API publica de iTunes (country=us) el 4 oct 2026.
 # Las funciones de la competencia salen de su propia descripcion en el App Store;
 # no afirmar nada que su ficha no diga. Las de Photo Vault estan comprobadas en
 # el codigo (repo onlyfansgallery): no hay cifrado propio tipo AES, asi que no
 # se dice. Si cambian las cifras, cambiar la fecha.
 
-VAULT_DATE_ISO = "2026-10-02"
-VAULT_DATE_EN = "2 October 2026"
-VAULT_DATE_ES = "2 de octubre de 2026"
+VAULT_DATE_ISO = "2026-10-04"
+VAULT_DATE_EN = "4 October 2026"
+VAULT_DATE_ES = "4 de octubre de 2026"
 
 PV = "https://apps.apple.com/app/apple-store/id1532670722?pt=118348020&amp;ct=sagalab-blog&amp;mt=8"
 PICSAFE = "https://apps.apple.com/us/app/id417571834"
@@ -1214,12 +1214,12 @@ itself stays in plain sight. If that is fine, stop here.</p>
 <h2>The four vault apps most often recommended</h2>
 
 <div class="table-scroll"><table>
-<thead><tr><th></th><th>Cloud backup</th><th>Account</th><th>Decoy PIN</th><th>Disguised icon</th><th>Rating (US)</th></tr></thead>
+<thead><tr><th></th><th>Cloud backup</th><th>Backup file you keep</th><th>Account</th><th>Decoy PIN</th><th>Disguised icon</th><th>Rating (US)</th></tr></thead>
 <tbody>
-<tr><td><a href="%(picsafe)s" target="_blank" rel="noopener">Private Photo Vault – Pic Safe</a></td><td>Yes</td><td>&mdash;</td><td>Yes</td><td>&mdash;</td><td>4.8 &middot; 1,016,176</td></tr>
-<tr><td><a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a></td><td>Yes, up to 10,000 items</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>4.7 &middot; 383,645</td></tr>
-<tr><td><a href="%(arca)s" target="_blank" rel="noopener">Arca</a></td><td>No</td><td>No</td><td>Yes</td><td>Yes</td><td>4.8 &middot; 29</td></tr>
-<tr><td><a href="%(pv)s">Photo Vault</a> (ours)</td><td>No</td><td>No</td><td>No</td><td>Yes</td><td>4.0 &middot; 5</td></tr>
+<tr><td><a href="%(picsafe)s" target="_blank" rel="noopener">Private Photo Vault – Pic Safe</a></td><td>Yes</td><td>&mdash;</td><td>&mdash;</td><td>Yes</td><td>&mdash;</td><td>4.8 &middot; 1,016,216</td></tr>
+<tr><td><a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a></td><td>Yes, up to 10,000 items</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>4.7 &middot; 383,718</td></tr>
+<tr><td><a href="%(arca)s" target="_blank" rel="noopener">Arca</a></td><td>No</td><td>Yes, encrypted</td><td>No</td><td>Yes</td><td>Yes</td><td>4.8 &middot; 28</td></tr>
+<tr><td><a href="%(pv)s">Photo Vault</a> (ours)</td><td>No</td><td>Yes, encrypted</td><td>No</td><td>No</td><td>Yes</td><td>4.0 &middot; 5</td></tr>
 </tbody>
 </table></div>
 
@@ -1235,9 +1235,12 @@ backup is that your private photos are stored on someone's servers.</p>
 
 <h2>Arca and Photo Vault: if you want nothing to leave the phone</h2>
 
-<p>Both have no account, no server and no cloud. Arca's page states that
-everything is encrypted on the device with AES-256, and it has a decoy vault
-that opens with a second PIN. Photo Vault does not have a decoy vault today.</p>
+<p>Both have no account, no server and no cloud. Arca's page states that every
+photo, video and thumbnail is encrypted individually with AES-256, with keys
+protected by the Secure Enclave, and it has a decoy vault that opens with a
+second PIN. Photo Vault relies on iOS Data Protection instead: the iPhone
+encrypts the files and they can't be read while it's locked, but there is no
+separate per-file encryption and no decoy vault today.</p>
 
 <p>What Photo Vault adds: a separate password for each album on top of the app
 lock, a face-down lock that jumps to Safari, Messages or Calendar when you turn
@@ -1245,8 +1248,10 @@ the phone over, a built-in camera so new photos never touch the camera roll,
 and a vault excluded from iCloud backups. The icon can pass as Calculator, Notes
 or Weather.</p>
 
-<p>The trade-off for both: no cloud means that if the phone is lost or the app
-deleted, the photos are gone.</p>
+<p>Neither backs up on its own, because neither syncs to a cloud. Both let you
+export an encrypted backup file and keep it where you want, in Files, on a
+computer or in your own iCloud Drive. Without one, a lost phone means lost
+photos.</p>
 
 <h2>How to choose</h2>
 
@@ -1286,12 +1291,12 @@ y la app Fotos sigue a la vista. Si eso te vale, no sigas leyendo.</p>
 <h2>Las cuatro apps que m&aacute;s se recomiendan</h2>
 
 <div class="table-scroll"><table>
-<thead><tr><th></th><th>Copia en la nube</th><th>Cuenta</th><th>PIN se&ntilde;uelo</th><th>Icono disfrazado</th><th>Valoraci&oacute;n (EE. UU.)</th></tr></thead>
+<thead><tr><th></th><th>Copia en la nube</th><th>Copia en archivo propio</th><th>Cuenta</th><th>PIN se&ntilde;uelo</th><th>Icono disfrazado</th><th>Valoraci&oacute;n (EE. UU.)</th></tr></thead>
 <tbody>
-<tr><td><a href="%(picsafe)s" target="_blank" rel="noopener">Private Photo Vault – Pic Safe</a></td><td>S&iacute;</td><td>&mdash;</td><td>S&iacute;</td><td>&mdash;</td><td>4,8 &middot; 1.016.176</td></tr>
-<tr><td><a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a></td><td>S&iacute;, hasta 10.000 elementos</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>4,7 &middot; 383.645</td></tr>
-<tr><td><a href="%(arca)s" target="_blank" rel="noopener">Arca</a></td><td>No</td><td>No</td><td>S&iacute;</td><td>S&iacute;</td><td>4,8 &middot; 29</td></tr>
-<tr><td><a href="%(pv)s">Photo Vault</a> (nuestra)</td><td>No</td><td>No</td><td>No</td><td>S&iacute;</td><td>4,0 &middot; 5</td></tr>
+<tr><td><a href="%(picsafe)s" target="_blank" rel="noopener">Private Photo Vault – Pic Safe</a></td><td>S&iacute;</td><td>&mdash;</td><td>&mdash;</td><td>S&iacute;</td><td>&mdash;</td><td>4,8 &middot; 1.016.216</td></tr>
+<tr><td><a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a></td><td>S&iacute;, hasta 10.000 elementos</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>4,7 &middot; 383.718</td></tr>
+<tr><td><a href="%(arca)s" target="_blank" rel="noopener">Arca</a></td><td>No</td><td>S&iacute;, cifrada</td><td>No</td><td>S&iacute;</td><td>S&iacute;</td><td>4,8 &middot; 28</td></tr>
+<tr><td><a href="%(pv)s">Photo Vault</a> (nuestra)</td><td>No</td><td>S&iacute;, cifrada</td><td>No</td><td>No</td><td>S&iacute;</td><td>4,0 &middot; 5</td></tr>
 </tbody>
 </table></div>
 
@@ -1310,9 +1315,12 @@ de otra empresa.</p>
 <h2>Arca y Photo Vault: si no quieres que nada salga del m&oacute;vil</h2>
 
 <p>Ninguna de las dos tiene cuenta, servidor ni nube. La ficha de Arca dice que
-todo se cifra en el dispositivo con AES-256, y tiene una b&oacute;veda
-se&ntilde;uelo que se abre con un segundo PIN. Photo Vault hoy no tiene
-b&oacute;veda se&ntilde;uelo.</p>
+cada foto, v&iacute;deo y miniatura se cifra por separado con AES-256, con las
+claves protegidas por el Secure Enclave, y tiene una b&oacute;veda se&ntilde;uelo
+que se abre con un segundo PIN. Photo Vault se apoya en la protecci&oacute;n de
+datos de iOS: el iPhone cifra los archivos y no se pueden leer mientras est&aacute;
+bloqueado, pero no hay un cifrado propio por archivo ni b&oacute;veda
+se&ntilde;uelo, de momento.</p>
 
 <p>Lo que a&ntilde;ade Photo Vault: una contrase&ntilde;a distinta para cada
 &aacute;lbum, adem&aacute;s del bloqueo de la app; bloqueo boca abajo, que salta a
@@ -1320,8 +1328,10 @@ Safari, Mensajes o Calendario al girar el m&oacute;vil; c&aacute;mara propia par
 que las fotos nuevas no pasen por el carrete; y la b&oacute;veda fuera de las
 copias de iCloud. El icono puede pasar por Calculadora, Notas o Tiempo.</p>
 
-<p>Lo que cuesta, en las dos: sin nube, si pierdes el m&oacute;vil o borras la
-app, las fotos se pierden.</p>
+<p>Ninguna hace copia sola, porque ninguna sincroniza con una nube. Las dos
+permiten exportar una copia cifrada en un archivo y guardarla donde quieras: en
+Archivos, en el ordenador o en tu propio iCloud Drive. Sin ella, perder el
+m&oacute;vil es perder las fotos.</p>
 
 <h2>C&oacute;mo elegir</h2>
 
