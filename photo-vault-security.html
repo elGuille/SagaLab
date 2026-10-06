@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" type="image/svg+xml" href="images/keeper-favicon.svg" />
+  <title>How Photo Vault protects your files — Saga Labs</title>
+  <meta name="description" content="What Photo Vault encrypts, how, and what it doesn't do: iOS Data Protection for the vault, AES-256-GCM with PBKDF2 for backups, no account, no server, and the limits stated plainly." />
+  <link rel="canonical" href="https://aisagalab.com/photo-vault-security.html">
+  <meta property="og:title" content="How Photo Vault protects your files" />
+  <meta property="og:description" content="What is encrypted, how, and what isn't — stated plainly." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://aisagalab.com/photo-vault-security.html" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "How Photo Vault protects your files",
+    "description": "What Photo Vault encrypts, how, and what it doesn't do.",
+    "datePublished": "2026-10-06",
+    "dateModified": "2026-10-06",
+    "about": { "@type": "SoftwareApplication", "name": "Photo Vault: Hide Pics Video", "operatingSystem": "iOS", "url": "https://aisagalab.com/keeper.html" },
+    "publisher": { "@type": "Organization", "name": "Saga Labs", "url": "https://aisagalab.com/" },
+    "mainEntityOfPage": "https://aisagalab.com/photo-vault-security.html"
+  }
+  </script>
+  <style>
+    :root { --bg:#fff; --fg:#0b0b0b; --muted:#5b5b5b; --line:#e7e7e7; --card:#f6f6f7; --accent:#3b82f6; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg:#0b0b0b; --fg:#f8f8f8; --muted:#b5b5b5; --line:#262626; --card:#151517; }
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--bg); color:var(--fg);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased; line-height:1.6; }
+    main { max-width: 760px; margin: 0 auto; padding: clamp(24px, 5vw, 64px) 16px 96px; }
+    .kicker { color:var(--muted); font-size:14px; text-transform:uppercase; letter-spacing:.06em; margin:0; }
+    h1 { margin: 8px 0 12px; font-weight:800; letter-spacing:-0.02em; font-size: clamp(32px, 6vw, 48px); line-height:1.08; }
+    .lede { margin:0 0 8px; font-size: clamp(17px, 2.4vw, 20px); color:var(--muted); }
+    h2 { margin: 48px 0 12px; font-size: 24px; letter-spacing:-0.01em; }
+    p, li { font-size: 17px; }
+    code { font-size: 15px; background: var(--card); padding: 1px 6px; border-radius: 6px; }
+    .table-scroll { overflow-x:auto; margin: 0 0 16px; }
+    table { border-collapse: collapse; width: 100%; min-width: 560px; font-size: 15px; }
+    th, td { text-align:left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+    th { font-weight:700; }
+    .note { color:var(--muted); font-size:15px; }
+    a { color: var(--accent); }
+    footer { margin-top: 64px; font-size: 13px; color: var(--muted); text-align:center; }
+    footer a { color: var(--muted); }
+  </style>
+  <script src="/umami.js" defer></script>
+</head>
+<body>
+  <main>
+    <p class="kicker">Photo Vault · Security</p>
+    <h1>How Photo Vault protects your files</h1>
+    <p class="lede">What is encrypted, by whom, and what Photo Vault does not do. Written for people deciding whether to trust it with private photos, and checked against the app's code for version 1.2.6 (October 2026).</p>
+
+    <h2>The short version</h2>
+    <ul>
+      <li>There is no account and no server. Your photos and videos are never uploaded, so there is nothing of yours on any computer of ours.</li>
+      <li>The vault is encrypted by the iPhone itself with iOS Data Protection, and the files can't be read while the iPhone is locked.</li>
+      <li>Backups are a file you create and keep, encrypted with AES-256-GCM under a password only you know.</li>
+      <li>Photo Vault does not add its own per-file encryption on top of iOS. Some vault apps do; we say so plainly below.</li>
+    </ul>
+
+    <h2>The files in your vault</h2>
+    <p>Every file on an iPhone is encrypted with its own 256-bit key by the hardware AES engine. What differs between apps is <em>when</em> that key is available, which iOS calls the protection class (<a href="https://support.apple.com/guide/security/data-protection-overview-secf6276da8a/web" target="_blank" rel="noopener">Apple Platform Security: Data Protection</a>).</p>
+    <p>By default, iOS uses <em>Protected Until First User Authentication</em>: after you unlock the phone once after a restart, the files stay readable even when it locks again. Photo Vault sets every file in the vault to <em>Protected Unless Open</em> (<code>NSFileProtectionCompleteUnlessOpen</code>): its key is derived from your iPhone passcode and discarded shortly after the phone locks, so the files are unreadable while it's locked (<a href="https://support.apple.com/guide/security/data-protection-classes-secb010e978a/web" target="_blank" rel="noopener">Apple: Data Protection classes</a>). The one exception is a file that is still being written at the moment you lock the phone, such as a long video import, which finishes saving.</p>
+    <p>The vault is also excluded from iCloud and computer backups, so your private photos don't end up in a backup you didn't intend.</p>
+
+    <h2>Locks</h2>
+    <ul>
+      <li><strong>App lock.</strong> Face ID, Touch ID or a passcode, asked every time the app comes back to the foreground. The passcode is stored in the iOS Keychain as <em>this device only, when unlocked</em>: it is never written to app storage and never leaves the phone.</li>
+      <li><strong>Album passwords.</strong> An album can have its own password, stored in the iOS Keychain. It controls who can open the album inside the app; the files in that album are protected the same way as the rest of the vault, not encrypted again with that password.</li>
+      <li><strong>Face-down exit and app switcher (optional, in Settings).</strong> Turning the phone face down jumps to Safari, Messages or Calendar, and the vault can be covered in the app switcher.</li>
+    </ul>
+
+    <h2>Backups</h2>
+    <p>Because the vault stays out of iCloud backups, Photo Vault lets you export one yourself (Settings → Backup). The file contains every photo and video, your albums and their passwords, and is encrypted as follows:</p>
+    <ul>
+      <li>The key is derived from the backup password you choose with PBKDF2-HMAC-SHA256, 310,000 iterations and a random 16-byte salt. The password is never stored.</li>
+      <li>Content is sealed with AES-256-GCM in 1 MB records. Each record authenticates its position, and the file ends with a closing record, so a backup that was reordered, tampered with or cut short is rejected instead of restored half-way.</li>
+      <li>You decide where the file goes: Files, a computer, or your own iCloud Drive. It never passes through a server of ours, and without the password nobody can open it, us included. If you forget the password, the backup can't be recovered.</li>
+    </ul>
+
+    <h2>What Photo Vault connects to</h2>
+    <p>Only Apple's App Store and RevenueCat, the service that handles subscriptions. Neither receives your photos or videos. There is no analytics or advertising SDK, and the App Store privacy label is <em>Data Not Collected</em>.</p>
+
+    <h2>What Photo Vault does not do</h2>
+    <ul>
+      <li><strong>No per-file encryption of its own.</strong> Vault files rely on iOS Data Protection. While your iPhone is unlocked, iOS can read them like other app files; an app with its own encryption layer adds a second key that the vault passcode controls.</li>
+      <li><strong>No decoy vault and no intruder photo.</strong> Some other vault apps have one or both.</li>
+      <li><strong>No automatic backup.</strong> If you lose the phone without having exported a backup, the vault is gone.</li>
+    </ul>
+
+    <h2>Who it protects you from</h2>
+    <div class="table-scroll"><table>
+      <thead><tr><th>Situation</th><th>What happens</th></tr></thead>
+      <tbody>
+        <tr><td>Someone picks up your unlocked iPhone</td><td>The vault asks for Face ID or its own passcode. With face-down exit on, turning the phone over jumps to another app.</td></tr>
+        <tr><td>Someone has your locked iPhone</td><td>The vault files can't be read: their keys are unavailable until the iPhone passcode is entered.</td></tr>
+        <tr><td>Someone gets your iCloud or computer backup</td><td>The vault isn't in it.</td></tr>
+        <tr><td>Someone gets your Photo Vault backup file</td><td>It's AES-256-GCM encrypted; without your backup password it can't be opened.</td></tr>
+        <tr><td>Someone knows your iPhone passcode and has the phone</td><td>They still meet the vault's own lock in the app, but Photo Vault has no extra encryption layer against forensic tools. Use a vault passcode different from your iPhone passcode.</td></tr>
+      </tbody>
+    </table></div>
+
+    <p class="note">Questions or a security report: <a href="mailto:sagalabs@proton.me">sagalabs@proton.me</a>. More about the app: <a href="keeper.html">Photo Vault</a> · <a href="blog/best-photo-vault-apps-iphone.html">how it compares</a>.</p>
+
+    <footer><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="support.html">Support</a></footer>
+  </main>
+</body>
+</html>
