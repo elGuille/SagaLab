@@ -46,7 +46,7 @@ Each app doubles as a public showcase of internal capability.
 - **Pinku Private AI** — on-device AI chat for iPhone and Mac, 12 local models, 8 interface languages (https://aisagalab.com/pinku.html)
 - **3 Tasks** — to-do app limited to three tasks, a stopwatch per task and a home screen widget; free, no in-app purchases, iPhone and iPad (https://aisagalab.com/3things.html). Ranking, disclosed as ours: https://aisagalab.com/blog/best-3-task-todo-apps-iphone.html
 - **Brainy** — AI chat assistant with camera text scan; subscribers can also create images with Google's Nano Banana (https://aisagalab.com/brainy.html)
-- **Crypton** — crypto price list (top 250 coins, refreshed every few hours, not real-time), favourites and a manual portfolio in USD; free, account optional (https://aisagalab.com/crypton.html)
+- **Crypton** — crypto price list (top 250 coins, refreshed every few hours, not real-time), favourites and a manual portfolio in USD; free, account optional (https://aisagalab.com/crypton.html). Ranking of crypto portfolio trackers for iPhone, disclosed as ours: https://aisagalab.com/blog/best-crypto-portfolio-tracker-apps-iphone.html
 - **Photo Vault** (formerly Keeper) — private photo and video vault for iPhone (https://aisagalab.com/keeper.html)
 - **Fast AI** — multi-model AI chat (https://aisagalab.com/fastai.html)
 

@@ -362,6 +362,12 @@ INDEX_EN = """
         <div class="article-body">
         <ul class="post-list">
             <li>
+                <a href="best-crypto-portfolio-tracker-apps-iphone.html">Best crypto portfolio tracker apps for iPhone in 2026</a>
+                <p>Crypton, Crypto Pro, CoinGecko, CoinMarketCap, CoinStats, Delta and
+                CoinTracker ranked: prices, portfolios, wallet sync, taxes and privacy
+                labels. Ours is first, disclosed.</p>
+            </li>
+            <li>
                 <a href="best-3-task-todo-apps-iphone.html">Best to-do apps that limit you to 3 tasks a day (2026)</a>
                 <p>3 Tasks, Three Todo, Top 3, Structured and TickTick ranked: the
                 limit, timers, price and privacy label. Ours is first, disclosed.</p>
@@ -435,6 +441,12 @@ INDEX_ES = """
         </p>
         <div class="article-body">
         <ul class="post-list">
+            <li>
+                <a href="mejores-apps-cartera-cripto-iphone.html">Las mejores apps para seguir tu cartera de criptomonedas en iPhone (2026)</a>
+                <p>Crypton, Crypto Pro, CoinGecko, CoinMarketCap, CoinStats, Delta y
+                CoinTracker ordenadas: precios, cartera, conexi&oacute;n con monederos,
+                impuestos y etiquetas de privacidad. La primera es nuestra, y lo decimos.</p>
+            </li>
             <li>
                 <a href="mejores-apps-3-tareas-al-dia-iphone.html">Las mejores apps de tareas que te limitan a 3 al d&iacute;a (2026)</a>
                 <p>3 Tasks, Three Todo, Top 3, Structured y TickTick ordenadas: el
@@ -776,9 +788,12 @@ def build(render, hreflang):
                 title=L["h1"] + " | Saga Labs",
                 desc=L["desc"], og_title=L["h1"], alternates=alt,
                 jsonld=_jsonld_rank(_jsonld(L["h1"], L["desc"], "https://aisagalab.com/" + path, lang,
-                                            L["section"], RANK_DATE_ISO), L["h1"], L["rank"]),
+                                            L["section"], RANK_DATE_ISO), L["h1"], L["rank"],
+                                    faq=L.get("faq")),
                 body=_head(L["kicker"], L["h1"], L["standfirst"], _byline + date, other[0], other[1])
                   + '\n        <div class="article-body">' + L["body"]
+                  + (_faq_html(L["faq"], "Questions people ask" if lang == "en" else "Preguntas frecuentes")
+                     if L.get("faq") else "")
                   + '</div>\n        <div class="article-body article-sources">' + L["sources"] + '</div>',
             ))
 
@@ -1582,8 +1597,8 @@ def _rank_box(title, points):
             % (title, "\n".join("<li>%s</li>" % p for p in points)))
 
 
-def _jsonld_rank(article_jsonld, name, items, modified=None):
-    """BlogPosting + ItemList del ranking en un @graph."""
+def _jsonld_rank(article_jsonld, name, items, modified=None, faq=None):
+    """BlogPosting + ItemList del ranking en un @graph (+ FAQPage si hay faq)."""
     import json
     art = json.loads(article_jsonld)
     art.pop("@context")
@@ -1599,7 +1614,17 @@ def _jsonld_rank(article_jsonld, name, items, modified=None):
             for i, (n, u) in enumerate(items)
         ],
     }
-    return json.dumps({"@context": "https://schema.org", "@graph": [art, lst]},
+    graph = [art, lst]
+    if faq:
+        graph.append({
+            "@type": "FAQPage",
+            "mainEntity": [
+                {"@type": "Question", "name": q,
+                 "acceptedAnswer": {"@type": "Answer", "text": a}}
+                for q, a in faq
+            ],
+        })
+    return json.dumps({"@context": "https://schema.org", "@graph": graph},
                       ensure_ascii=False, indent=2)
 
 
@@ -4002,4 +4027,437 @@ RANK_ARTICLES.append(dict(
         standfirst=("Las listas largas hacen que todo parezca urgente. Un l&iacute;mite fijo de tres obliga a elegir. "
                     "Cinco apps para trabajar as&iacute;, ordenadas."),
         body=A12_ES_BODY, sources=A12_ES_SOURCES, rank=T3_RANK),
+))
+
+
+# --------------------------------------------------------------------------
+# 13 — Apps para seguir una cartera cripto en iPhone (ranking, Crypton 1.a)
+# --------------------------------------------------------------------------
+#
+# Crypton: solo lo que dice su pagina en este sitio (crypton.html), la linea
+# de llms.txt comprobada contra el codigo el 7 oct 2026 (top 250, precios que
+# se refrescan cada pocas horas, no en tiempo real, cartera manual en USD,
+# cuenta opcional) y su ficha del App Store (EE. UU.): gratis, sin compras
+# dentro de la app, graficas de 1D a 1A (texto promocional), solo ingles,
+# iOS 18+, iPhone y iPad, etiqueta "Data Used to Track You" (datos de uso).
+# Fuera: "real-time prices" de su propia ficha (no es verdad segun el codigo).
+# Competidores: ficha del App Store (EE. UU.), compras dentro de la app,
+# etiquetas de privacidad y API de lookup, 7 oct 2026. Sin precios: solo como
+# cobran. Sin rayas en el texto.
+
+CRYPTON = "https://apps.apple.com/app/apple-store/id1143691286?pt=118348020&amp;ct=sagalab-blog&amp;mt=8"
+CRYPTOPRO = "https://apps.apple.com/us/app/id980888073"
+COINGECKO = "https://apps.apple.com/us/app/id1390323960"
+CMC = "https://apps.apple.com/us/app/id1282107098"
+COINSTATS = "https://apps.apple.com/us/app/id1247849330"
+DELTA = "https://apps.apple.com/us/app/id1288676542"
+COINTRACKER = "https://apps.apple.com/us/app/id1401499763"
+_CR = dict(crypton=CRYPTON, cryptopro=CRYPTOPRO, coingecko=COINGECKO, cmc=CMC,
+           coinstats=COINSTATS, delta=DELTA, cointracker=COINTRACKER)
+
+CR_RANK = [
+    ("Crypton: Crypto Tracker", "https://apps.apple.com/app/id1143691286"),
+    ("Crypto Pro - Live Coin Tracker", CRYPTOPRO),
+    ("CoinGecko: Crypto Tracker", COINGECKO),
+    ("CoinMarketCap: Crypto Tracker", CMC),
+    ("CoinStats: Crypto Portfolio", COINSTATS),
+    ("Delta by etoro", DELTA),
+    ("CoinTracker: Portfolio & Taxes", COINTRACKER),
+]
+
+_CR_WHY_EN = _rank_box("Why Crypton is #1", [
+    "It does one job: prices for the top 250 coins, favourites and a portfolio you type in yourself.",
+    "Free, with no in-app purchases and no subscription. Nothing is held back for a paid tier.",
+    "No account needed, and nothing to connect: no wallet address, no exchange API key.",
+    "Price charts from one day to one year on each coin.",
+    "On iPhone and iPad.",
+])
+
+_CR_WHY_ES = _rank_box("Por qué Crypton es la n.º 1", [
+    "Hace una sola cosa: precios de las 250 principales monedas, favoritas y una cartera que apuntas tú.",
+    "Gratis, sin compras dentro de la app y sin suscripción. No hay nada reservado para un plan de pago.",
+    "Sin cuenta y sin nada que conectar: ni dirección de monedero ni clave de API de un exchange.",
+    "Gráficas de precio de un día a un año en cada moneda.",
+    "En iPhone y iPad.",
+])
+
+CR_FAQ_EN = [
+    ("What is the best free crypto portfolio tracker for iPhone?",
+     "It depends on how you hold crypto. If you only want prices and a portfolio you enter by hand, "
+     "Crypton is free with no in-app purchases (we make it). Crypto Pro, CoinGecko and CoinMarketCap are "
+     "free to download with optional premium subscriptions, and Delta's free plan tracks up to 10 assets."),
+    ("Can I track my crypto without connecting a wallet or exchange?",
+     "Yes. Crypton, CoinGecko and CoinMarketCap let you add holdings by hand. Apps such as CoinStats, "
+     "Delta and CoinTracker are built around connecting wallets and exchanges so the numbers update themselves."),
+    ("Which crypto tracker app works without an account?",
+     "Crypton needs no account. CoinMarketCap says you can stay logged out and keep your data on the device. "
+     "Crypto Pro says it stores personal data on your device, with optional iCloud sync."),
+    ("Which crypto app helps with taxes?",
+     "CoinTracker calculates cost basis and capital gains and says you can file with TurboTax, H&R Block or "
+     "your own accountant. CoinStats exports your transaction history for tax tools, and Delta PRO+ includes "
+     "gains reporting. Crypton does not do taxes."),
+    ("Is it safe to connect an exchange to a portfolio tracker?",
+     "Trackers that sync with exchanges usually ask for read-only access; CoinTracker states that it uses "
+     "read-only access to wallets. Read each app's privacy label and policy first, or avoid the question by "
+     "entering holdings by hand."),
+    ("Can one app track crypto and stocks together?",
+     "Delta by etoro tracks stocks, ETFs, forex and commodities alongside crypto. The other apps here are "
+     "crypto only, and Crypto Pro also covers precious metals and fiat currencies."),
+]
+
+CR_FAQ_ES = [
+    ("¿Cuál es la mejor app gratis para seguir una cartera cripto en iPhone?",
+     "Depende de cómo tengas tus criptomonedas. Si solo quieres precios y una cartera que apuntas a mano, "
+     "Crypton es gratis y sin compras dentro de la app (la hacemos nosotros). Crypto Pro, CoinGecko y "
+     "CoinMarketCap se descargan gratis y tienen suscripciones premium opcionales, y el plan gratis de "
+     "Delta sigue hasta 10 activos."),
+    ("¿Puedo seguir mis criptomonedas sin conectar un monedero ni un exchange?",
+     "Sí. Crypton, CoinGecko y CoinMarketCap te dejan añadir lo que tienes a mano. Apps como CoinStats, "
+     "Delta y CoinTracker están pensadas para conectar monederos y exchanges y que las cifras se actualicen solas."),
+    ("¿Qué app de criptomonedas funciona sin cuenta?",
+     "Crypton no pide cuenta. CoinMarketCap dice que puedes usarla sin iniciar sesión y guardar los datos en "
+     "el dispositivo. Crypto Pro dice que guarda los datos personales en tu dispositivo, con sincronización "
+     "opcional por iCloud."),
+    ("¿Qué app de criptomonedas ayuda con los impuestos?",
+     "CoinTracker calcula el coste de adquisición y las ganancias y dice que puedes presentar con TurboTax, "
+     "H&R Block o tu propio gestor (formularios de EE. UU.). CoinStats exporta tu historial de operaciones para "
+     "herramientas fiscales, y Delta PRO+ incluye informes de ganancias. Crypton no hace impuestos."),
+    ("¿Es seguro conectar un exchange a una app de seguimiento?",
+     "Las apps que sincronizan con exchanges suelen pedir acceso de solo lectura; CoinTracker dice que usa "
+     "acceso de solo lectura a los monederos. Lee antes la etiqueta de privacidad y la política de cada app, "
+     "o evita la cuestión apuntando lo que tienes a mano."),
+    ("¿Hay alguna app que siga criptomonedas y acciones a la vez?",
+     "Delta by etoro sigue acciones, ETF, divisas y materias primas además de criptomonedas. Las demás apps de "
+     "esta lista son solo de cripto, y Crypto Pro también cubre metales preciosos y monedas tradicionales."),
+]
+
+A13_EN_BODY = ("""
+<p><strong>Disclosure: we make Crypton, the app ranked first here.</strong>
+Everything we say about the other apps comes from their own App Store pages, and
+we say plainly where they beat us. Ratings and in-app purchases are from the US
+App Store on %(date)s.</p>
+
+<p>"Portfolio tracker" covers two different jobs. One is glancing at prices and
+keeping a rough tally of what you own. The other is pulling in every wallet and
+exchange you use so the app knows your real balance, profit and loss, and
+taxes. This ranking is for the first job: seeing prices and a simple portfolio
+quickly, without paying, signing up or connecting anything. If you need the
+second, CoinStats, Delta and CoinTracker below are built for it.</p>
+
+<h2>The ranking</h2>
+
+<ol>
+<li><a href="%(crypton)s">Crypton</a>: best overall for prices and a simple portfolio, free, no account.</li>
+<li><a href="%(cryptopro)s" target="_blank" rel="noopener">Crypto Pro</a>: best for privacy across iPhone, Mac and Apple Watch.</li>
+<li><a href="%(coingecko)s" target="_blank" rel="noopener">CoinGecko</a>: best for market data, categories and NFT floor prices.</li>
+<li><a href="%(cmc)s" target="_blank" rel="noopener">CoinMarketCap</a>: best for watchlists, comparisons and news.</li>
+<li><a href="%(coinstats)s" target="_blank" rel="noopener">CoinStats</a>: best for syncing many wallets and exchanges, DeFi included.</li>
+<li><a href="%(delta)s" target="_blank" rel="noopener">Delta</a>: best if you also hold stocks, ETFs or forex.</li>
+<li><a href="%(cointracker)s" target="_blank" rel="noopener">CoinTracker</a>: best for crypto taxes.</li>
+</ol>
+""" + _CR_WHY_EN + """
+<h2>The seven apps at a glance</h2>
+
+<div class="table-scroll"><table>
+<thead><tr><th></th><th>Portfolio</th><th>Connects wallets / exchanges</th><th>How it charges (US)</th><th>Privacy label</th><th>Rating (US)</th></tr></thead>
+<tbody>
+<tr><td>1. <a href="%(crypton)s">Crypton</a> (ours)</td><td>Entered by hand, top 250 coins</td><td>No</td><td>Free, no in-app purchases</td><td>Data Used to Track You (usage data)</td><td>4.7 &middot; 182</td></tr>
+<tr><td>2. <a href="%(cryptopro)s" target="_blank" rel="noopener">Crypto Pro</a></td><td>By hand or imported</td><td>Wallet addresses and exchange API keys</td><td>Free; Premium subscription</td><td>Data Not Linked to You</td><td>4.7 &middot; 46,609</td></tr>
+<tr><td>3. <a href="%(coingecko)s" target="_blank" rel="noopener">CoinGecko</a></td><td>From your transactions, several portfolios</td><td>Not in its listing</td><td>Free; Premium subscription</td><td>Data Linked to You (email)</td><td>4.8 &middot; 27,104</td></tr>
+<tr><td>4. <a href="%(cmc)s" target="_blank" rel="noopener">CoinMarketCap</a></td><td>Portfolio and watchlists</td><td>Not in its listing</td><td>Free; subscription plans</td><td>Data Used to Track You (usage data)</td><td>4.8 &middot; 172,884</td></tr>
+<tr><td>5. <a href="%(coinstats)s" target="_blank" rel="noopener">CoinStats</a></td><td>Synced, with profit and loss</td><td>300+ wallets and exchanges</td><td>Free; Premium subscription</td><td>Data Not Linked to You</td><td>4.8 &middot; 85,783</td></tr>
+<tr><td>6. <a href="%(delta)s" target="_blank" rel="noopener">Delta</a></td><td>Crypto, stocks, ETFs, forex</td><td>200+ exchanges, brokers and wallets</td><td>Free up to 10 assets; PRO and PRO+ subscriptions</td><td>Data Used to Track You (identifiers, usage data)</td><td>4.7 &middot; 11,366</td></tr>
+<tr><td>7. <a href="%(cointracker)s" target="_blank" rel="noopener">CoinTracker</a></td><td>Net worth, gains and losses</td><td>500+ integrations</td><td>Free app, no in-app purchases listed</td><td>Data Not Linked to You</td><td>4.7 &middot; 14,351</td></tr>
+</tbody>
+</table></div>
+
+<p class="article-note">Privacy labels are what each developer declares on the
+App Store; Apple does not verify them. "Not in its listing" means the App Store
+description does not mention it, not that the app cannot do it. Ratings are
+from Apple's public lookup API on %(date)s.</p>
+
+<h2>1. Crypton: prices and a simple portfolio, nothing else</h2>
+
+<p><a href="%(crypton)s">Crypton</a> lists prices for the top 250 coins with
+their 24-hour change and market rank, lets you pin favourites, and shows price
+charts from one day to one year. The portfolio is one you type in: add a coin and
+how much you hold, and it shows the total in US dollars. It is free, with no
+in-app purchases and no subscription, and it needs no account. It runs on iPhone
+and iPad with iOS 18 or later.</p>
+
+<p>Where others beat it: prices refresh every few hours rather than streaming
+live, so it is no tool for trading. It covers 250 coins, where CoinGecko and
+CoinStats cover thousands. It does not connect to wallets or exchanges, and its
+listing mentions no price alerts, widgets, news, Apple Watch app or tax reports.
+The portfolio is in US dollars only, and the app is in English only. Its privacy
+label reads <em>Data Used to Track You</em> (usage data); Crypto Pro, CoinStats
+and CoinTracker declare no data linked to you.</p>
+
+<h2>2. Crypto Pro: private, ad-free, everywhere Apple</h2>
+
+<p>Crypto Pro has been on the App Store since 2015 and leans on privacy: its
+listing says it does no user monitoring or analytics, keeps personal data on your
+device, stores keys in the Apple keychain and syncs through iCloud only if you
+choose. It covers cryptocurrencies, precious metals and fiat, imports holdings
+from wallet addresses or exchange API keys, and has widgets, an Apple Watch app
+with complications, a Mac menu bar widget, Face ID lock and price notifications.
+It is free and ad-free; a Premium subscription with a 7-day free trial adds
+candlestick charts and automatic portfolio sync, and the listing says inviting
+friends can unlock it too. Best if you want more than Crypton without giving up
+privacy.</p>
+
+<h2>3. CoinGecko: the market, in depth</h2>
+
+<p>CoinGecko tracks prices, market cap, volume and charts for more than 10,000
+cryptocurrencies, plus floor prices for over 3,000 NFT collections, 100+ coin
+categories and data on 700+ exchanges. You can build several portfolios from
+your transactions, synced between the app and the website, set price and large
+mover alerts, and add home screen widgets. It is free; Premium is a subscription
+that its listing describes as ad-free with extra perks. Best for researching the
+market, not just checking it.</p>
+
+<h2>4. CoinMarketCap: watchlists, comparisons and news</h2>
+
+<p>CoinMarketCap pairs prices with crypto news, shareable watchlists, price
+alerts, a converter and side-by-side comparisons of two coins over periods from
+one hour to all time. You can view your portfolio in 90+ fiat currencies, crypto
+or precious metals, and its listing says you can stay logged out and keep your
+data on the device. It is free, with monthly and yearly subscription plans. Best
+if you follow the whole market and the news around it.</p>
+
+<h2>5. CoinStats: every wallet and exchange in one place</h2>
+
+<p>CoinStats connects to 300+ wallets and exchanges, or takes a pasted wallet
+address, and syncs Bitcoin, Ethereum, Solana and EVM chains so CeFi and DeFi sit
+on one screen. It shows realised and unrealised profit and loss, tracks
+perpetual futures, has AI answers about your holdings, alerts, news from 140+
+sources, widgets and an Apple Watch app, and exports your transaction history for
+tax tools. It is free, with Premium subscriptions. Best if your crypto is spread
+across many places and you want it reconciled automatically.</p>
+
+<h2>6. Delta: crypto next to stocks</h2>
+
+<p>Delta by etoro tracks crypto alongside stocks, ETFs, forex and commodities,
+syncing with 200+ exchanges, brokers and wallets. Its free plan tracks up to 10
+assets with unlimited connections; PRO and PRO+ subscriptions raise the limit,
+add AI summaries, auto-refreshing and real-time prices and, on PRO+, gains
+reporting. It syncs across iPhone, iPad and the web. Best if crypto is only part
+of what you invest in.</p>
+
+<h2>7. CoinTracker: built for tax time</h2>
+
+<p>CoinTracker is a portfolio tracker and tax tool: add wallets and exchanges
+(500+ integrations) to see net worth, gains and losses, and it calculates cost
+basis and capital gains, categorises DeFi transactions, supports tax loss
+harvesting and generates tax forms you can file with TurboTax, H&amp;R Block or
+your own accountant. Its listing states read-only access to wallets, end-to-end
+encryption and SOC 1 and SOC 2 certification. The app is free with no in-app
+purchases listed; its listing does not give prices for tax reports. Best if your
+main worry is the tax return.</p>
+
+<h2>How to choose</h2>
+
+<ul>
+<li><strong>Prices and a quick tally, free, no account, nothing connected:</strong> <a href="%(crypton)s">Crypton</a>.</li>
+<li><strong>Privacy first, with Apple Watch and Mac:</strong> Crypto Pro.</li>
+<li><strong>Researching coins, categories and NFTs:</strong> CoinGecko.</li>
+<li><strong>Watchlists, comparisons and news:</strong> CoinMarketCap.</li>
+<li><strong>Many wallets and exchanges, synced automatically:</strong> CoinStats.</li>
+<li><strong>Crypto plus stocks and ETFs:</strong> Delta.</li>
+<li><strong>Taxes:</strong> CoinTracker.</li>
+</ul>
+
+<p>None of these apps is investment advice, and a tracker that shows a number is
+only as accurate as the data behind it. Before connecting an exchange, read the
+privacy label and use read-only access.</p>
+""") % dict(_CR, date=RANK_DATE_EN)
+
+A13_EN_SOURCES = """
+<h2>Sources</h2>
+<ul>
+<li>App Store pages (US): <a href="%(crypton)s">Crypton</a>, <a href="%(cryptopro)s" target="_blank" rel="noopener">Crypto Pro</a>, <a href="%(coingecko)s" target="_blank" rel="noopener">CoinGecko</a>, <a href="%(cmc)s" target="_blank" rel="noopener">CoinMarketCap</a>, <a href="%(coinstats)s" target="_blank" rel="noopener">CoinStats</a>, <a href="%(delta)s" target="_blank" rel="noopener">Delta by etoro</a>, <a href="%(cointracker)s" target="_blank" rel="noopener">CoinTracker</a>. Descriptions, in-app purchases and privacy labels as shown on %(date)s.</li>
+<li>Ratings: Apple's public iTunes lookup API, %(date)s.</li>
+<li>Crypton: <a href="../crypton.html">its page on this site</a> and <a href="../llms.txt">our llms.txt</a>, %(date)s.</li>
+</ul>
+<p>If anything here is out of date, <a href="mailto:sagalabs@proton.me">tell us</a>
+and we will correct the page.</p>
+""" % dict(_CR, date=RANK_DATE_EN)
+
+A13_ES_BODY = ("""
+<p><strong>Aviso: Crypton, la app que va primera, es nuestra.</strong> Todo lo
+que decimos de las demás sale de su propia ficha del App Store, y decimos
+claramente en qué nos ganan. Valoraciones y compras dentro de la app de la App
+Store de EE. UU. a %(date)s.</p>
+
+<p>"Seguir una cartera" son dos trabajos distintos. Uno es mirar precios y llevar
+una cuenta aproximada de lo que tienes. El otro es conectar todos tus monederos y
+exchanges para que la app sepa tu saldo real, tus ganancias y pérdidas y tus
+impuestos. Este ranking es para el primero: ver precios y una cartera sencilla
+rápido, sin pagar, sin registrarte y sin conectar nada. Si necesitas lo segundo,
+CoinStats, Delta y CoinTracker, más abajo, están hechas para eso.</p>
+
+<h2>El ranking</h2>
+
+<ol>
+<li><a href="%(crypton)s">Crypton</a>: la mejor en conjunto para precios y una cartera sencilla, gratis y sin cuenta.</li>
+<li><a href="%(cryptopro)s" target="_blank" rel="noopener">Crypto Pro</a>: la mejor para la privacidad en iPhone, Mac y Apple Watch.</li>
+<li><a href="%(coingecko)s" target="_blank" rel="noopener">CoinGecko</a>: la mejor para datos de mercado, categorías y precios mínimos de NFT.</li>
+<li><a href="%(cmc)s" target="_blank" rel="noopener">CoinMarketCap</a>: la mejor para listas de seguimiento, comparaciones y noticias.</li>
+<li><a href="%(coinstats)s" target="_blank" rel="noopener">CoinStats</a>: la mejor para sincronizar muchos monederos y exchanges, DeFi incluido.</li>
+<li><a href="%(delta)s" target="_blank" rel="noopener">Delta</a>: la mejor si también tienes acciones, ETF o divisas.</li>
+<li><a href="%(cointracker)s" target="_blank" rel="noopener">CoinTracker</a>: la mejor para los impuestos de cripto.</li>
+</ol>
+""" + _CR_WHY_ES + """
+<h2>Las siete apps de un vistazo</h2>
+
+<div class="table-scroll"><table>
+<thead><tr><th></th><th>Cartera</th><th>Conecta monederos / exchanges</th><th>Cómo cobra (EE. UU.)</th><th>Etiqueta de privacidad</th><th>Valoración (EE. UU.)</th></tr></thead>
+<tbody>
+<tr><td>1. <a href="%(crypton)s">Crypton</a> (nuestra)</td><td>Apuntada a mano, 250 principales monedas</td><td>No</td><td>Gratis, sin compras dentro de la app</td><td>Datos usados para rastrearte (datos de uso)</td><td>4,7 &middot; 182</td></tr>
+<tr><td>2. <a href="%(cryptopro)s" target="_blank" rel="noopener">Crypto Pro</a></td><td>A mano o importada</td><td>Direcciones de monedero y claves de API de exchanges</td><td>Gratis; Premium por suscripción</td><td>Datos no vinculados a ti</td><td>4,7 &middot; 46.609</td></tr>
+<tr><td>3. <a href="%(coingecko)s" target="_blank" rel="noopener">CoinGecko</a></td><td>A partir de tus operaciones, varias carteras</td><td>No lo dice su ficha</td><td>Gratis; Premium por suscripción</td><td>Datos vinculados a ti (correo)</td><td>4,8 &middot; 27.104</td></tr>
+<tr><td>4. <a href="%(cmc)s" target="_blank" rel="noopener">CoinMarketCap</a></td><td>Cartera y listas de seguimiento</td><td>No lo dice su ficha</td><td>Gratis; planes por suscripción</td><td>Datos usados para rastrearte (datos de uso)</td><td>4,8 &middot; 172.884</td></tr>
+<tr><td>5. <a href="%(coinstats)s" target="_blank" rel="noopener">CoinStats</a></td><td>Sincronizada, con ganancias y pérdidas</td><td>Más de 300 monederos y exchanges</td><td>Gratis; Premium por suscripción</td><td>Datos no vinculados a ti</td><td>4,8 &middot; 85.783</td></tr>
+<tr><td>6. <a href="%(delta)s" target="_blank" rel="noopener">Delta</a></td><td>Cripto, acciones, ETF, divisas</td><td>Más de 200 exchanges, brókers y monederos</td><td>Gratis hasta 10 activos; PRO y PRO+ por suscripción</td><td>Datos usados para rastrearte (identificadores, datos de uso)</td><td>4,7 &middot; 11.366</td></tr>
+<tr><td>7. <a href="%(cointracker)s" target="_blank" rel="noopener">CoinTracker</a></td><td>Patrimonio, ganancias y pérdidas</td><td>Más de 500 integraciones</td><td>App gratis, sin compras dentro de la app en su ficha</td><td>Datos no vinculados a ti</td><td>4,7 &middot; 14.351</td></tr>
+</tbody>
+</table></div>
+
+<p class="article-note">Las etiquetas de privacidad son lo que declara cada
+desarrollador en el App Store; Apple no las verifica. "No lo dice su ficha"
+significa que la descripción del App Store no lo menciona, no que la app no
+pueda hacerlo. Valoraciones de la API pública de Apple a %(date)s.</p>
+
+<h2>1. Crypton: precios y una cartera sencilla, nada más</h2>
+
+<p><a href="%(crypton)s">Crypton</a> muestra los precios de las 250 principales
+monedas con su variación en 24 horas y su posición en el mercado, te deja marcar
+favoritas y enseña gráficas de precio de un día a un año. La cartera la apuntas
+tú: añades una moneda y cuánto tienes, y te da el total en dólares. Es gratis,
+sin compras dentro de la app y sin suscripción, y no pide cuenta. Funciona en
+iPhone y iPad con iOS 18 o posterior.</p>
+
+<p>En qué le ganan las demás: los precios se actualizan cada pocas horas, no en
+tiempo real, así que no sirve para operar. Cubre 250 monedas, cuando CoinGecko y
+CoinStats cubren miles. No se conecta a monederos ni exchanges, y su ficha no
+menciona alertas de precio, widgets, noticias, app para Apple Watch ni informes
+fiscales. La cartera va solo en dólares y la app está solo en inglés. Su
+etiqueta de privacidad dice <em>Datos usados para rastrearte</em> (datos de uso);
+Crypto Pro, CoinStats y CoinTracker declaran que no vinculan datos a ti.</p>
+
+<h2>2. Crypto Pro: privada, sin anuncios, en todo el ecosistema de Apple</h2>
+
+<p>Crypto Pro está en el App Store desde 2015 y apuesta por la privacidad: su
+ficha dice que no vigila al usuario ni usa analítica, que guarda los datos
+personales en tu dispositivo, las claves en el llavero de Apple y que solo
+sincroniza por iCloud si tú quieres. Cubre criptomonedas, metales preciosos y
+monedas tradicionales, importa lo que tienes desde direcciones de monedero o
+claves de API de exchanges, y tiene widgets, app para Apple Watch con
+complicaciones, widget en la barra de menús del Mac, bloqueo con Face ID y avisos
+de precio. Es gratis y sin anuncios; una suscripción Premium con 7 días de prueba
+añade gráficas de velas y sincronización automática de la cartera, y su ficha
+dice que también se desbloquea invitando a amigos. Ideal si quieres más que
+Crypton sin renunciar a la privacidad.</p>
+
+<h2>3. CoinGecko: el mercado, a fondo</h2>
+
+<p>CoinGecko sigue precios, capitalización, volumen y gráficas de más de 10.000
+criptomonedas, además del precio mínimo de más de 3.000 colecciones de NFT, más
+de 100 categorías de monedas y datos de más de 700 exchanges. Puedes crear varias
+carteras a partir de tus operaciones, sincronizadas entre la app y la web, poner
+alertas de precio y de grandes movimientos, y añadir widgets. Es gratis; Premium
+es una suscripción que su ficha describe como sin anuncios y con ventajas extra.
+Ideal para investigar el mercado, no solo para mirarlo.</p>
+
+<h2>4. CoinMarketCap: listas, comparaciones y noticias</h2>
+
+<p>CoinMarketCap junta precios con noticias de cripto, listas de seguimiento que
+se pueden compartir, alertas de precio, un conversor y comparaciones de dos
+monedas en periodos de una hora a todo su historial. Puedes ver tu cartera en más
+de 90 monedas tradicionales, en cripto o en metales preciosos, y su ficha dice
+que puedes usarla sin iniciar sesión y guardar los datos en el dispositivo. Es
+gratis, con planes por suscripción mensuales y anuales. Ideal si sigues todo el
+mercado y las noticias.</p>
+
+<h2>5. CoinStats: todos tus monederos y exchanges en un sitio</h2>
+
+<p>CoinStats se conecta a más de 300 monederos y exchanges, o acepta una dirección
+de monedero pegada, y sincroniza Bitcoin, Ethereum, Solana y cadenas EVM para que
+CeFi y DeFi estén en una sola pantalla. Muestra ganancias y pérdidas realizadas y
+no realizadas, sigue futuros perpetuos, responde con IA sobre lo que tienes, y
+tiene alertas, noticias de más de 140 fuentes, widgets y app para Apple Watch, y
+exporta tu historial de operaciones para herramientas fiscales. Es gratis, con
+suscripciones Premium. Ideal si tus criptomonedas están repartidas en muchos
+sitios y quieres que se cuadren solas.</p>
+
+<h2>6. Delta: cripto junto a tus acciones</h2>
+
+<p>Delta by etoro sigue criptomonedas junto a acciones, ETF, divisas y materias
+primas, sincronizando con más de 200 exchanges, brókers y monederos. Su plan
+gratis sigue hasta 10 activos con conexiones ilimitadas; las suscripciones PRO y
+PRO+ suben el límite, añaden resúmenes con IA, precios que se actualizan solos y
+en tiempo real y, en PRO+, informes de ganancias. Sincroniza entre iPhone, iPad y
+la web. Ideal si la cripto es solo una parte de lo que inviertes.</p>
+
+<h2>7. CoinTracker: pensada para la declaración</h2>
+
+<p>CoinTracker es a la vez seguimiento de cartera y herramienta fiscal: añades
+monederos y exchanges (más de 500 integraciones) para ver patrimonio, ganancias y
+pérdidas, y calcula el coste de adquisición y las ganancias de capital, clasifica
+operaciones DeFi, ayuda a compensar pérdidas y genera formularios fiscales que
+puedes presentar con TurboTax, H&amp;R Block o tu gestor (pensados para EE. UU.).
+Su ficha habla de acceso de solo lectura a los monederos, cifrado de extremo a
+extremo y certificación SOC 1 y SOC 2. La app es gratis y su ficha no muestra
+compras dentro de la app ni precios de los informes fiscales. Ideal si lo que te
+preocupa es la declaración.</p>
+
+<h2>Cómo elegir</h2>
+
+<ul>
+<li><strong>Precios y una cuenta rápida, gratis, sin cuenta y sin conectar nada:</strong> <a href="%(crypton)s">Crypton</a>.</li>
+<li><strong>La privacidad primero, con Apple Watch y Mac:</strong> Crypto Pro.</li>
+<li><strong>Investigar monedas, categorías y NFT:</strong> CoinGecko.</li>
+<li><strong>Listas de seguimiento, comparaciones y noticias:</strong> CoinMarketCap.</li>
+<li><strong>Muchos monederos y exchanges, sincronizados solos:</strong> CoinStats.</li>
+<li><strong>Cripto más acciones y ETF:</strong> Delta.</li>
+<li><strong>Impuestos:</strong> CoinTracker.</li>
+</ul>
+
+<p>Ninguna de estas apps es asesoramiento de inversión, y una cifra en pantalla es
+tan fiable como los datos que hay detrás. Antes de conectar un exchange, mira la
+etiqueta de privacidad y usa acceso de solo lectura.</p>
+""") % dict(_CR, date=RANK_DATE_ES)
+
+A13_ES_SOURCES = """
+<h2>Fuentes</h2>
+<ul>
+<li>Fichas del App Store (EE. UU.): <a href="%(crypton)s">Crypton</a>, <a href="%(cryptopro)s" target="_blank" rel="noopener">Crypto Pro</a>, <a href="%(coingecko)s" target="_blank" rel="noopener">CoinGecko</a>, <a href="%(cmc)s" target="_blank" rel="noopener">CoinMarketCap</a>, <a href="%(coinstats)s" target="_blank" rel="noopener">CoinStats</a>, <a href="%(delta)s" target="_blank" rel="noopener">Delta by etoro</a>, <a href="%(cointracker)s" target="_blank" rel="noopener">CoinTracker</a>. Descripciones, compras dentro de la app y etiquetas de privacidad a %(date)s.</li>
+<li>Valoraciones: API pública de búsqueda de iTunes de Apple, %(date)s.</li>
+<li>Crypton: <a href="../../crypton.html">su página en este sitio</a> y <a href="../../llms.txt">nuestro llms.txt</a>, %(date)s.</li>
+</ul>
+<p>Si algo está desactualizado, <a href="mailto:sagalabs@proton.me">avísanos</a> y
+corregimos la página.</p>
+""" % dict(_CR, date=RANK_DATE_ES)
+
+RANK_ARTICLES.append(dict(
+    en_path="blog/best-crypto-portfolio-tracker-apps-iphone.html",
+    es_path="blog/es/mejores-apps-cartera-cripto-iphone.html",
+    en=dict(
+        h1="Best crypto portfolio tracker apps for iPhone in 2026",
+        desc=("Crypton, Crypto Pro, CoinGecko, CoinMarketCap, CoinStats, Delta and CoinTracker ranked: "
+              "prices, portfolios, wallet and exchange sync, taxes, how each charges and its privacy label, "
+              "from their App Store pages. Written by Crypton's maker, disclosed."),
+        kicker="Crypto", section="Crypto",
+        standfirst=("Some trackers want every wallet you own; some just show prices and a tally. "
+                    "Seven apps for both jobs, ranked, with where each one wins."),
+        body=A13_EN_BODY, sources=A13_EN_SOURCES, rank=CR_RANK, faq=CR_FAQ_EN),
+    es=dict(
+        h1="Las mejores apps para seguir tu cartera de criptomonedas en iPhone (2026)",
+        desc=("Crypton, Crypto Pro, CoinGecko, CoinMarketCap, CoinStats, Delta y CoinTracker ordenadas: "
+              "precios, cartera, conexión con monederos y exchanges, impuestos, cómo cobra cada una y su "
+              "etiqueta de privacidad, según su ficha del App Store. Escrito por quien hace Crypton, y lo decimos."),
+        kicker="Cripto", section="Cripto",
+        standfirst=("Unas apps quieren todos tus monederos; otras solo te ense&ntilde;an precios y una cuenta. "
+                    "Siete apps para los dos trabajos, ordenadas, con d&oacute;nde gana cada una."),
+        body=A13_ES_BODY, sources=A13_ES_SOURCES, rank=CR_RANK, faq=CR_FAQ_ES),
 ))
