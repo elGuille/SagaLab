@@ -368,10 +368,27 @@ INDEX_EN = """
                 charges, and who it is for.</p>
             </li>
             <li>
+                <a href="best-chatgpt-alternatives-offline-iphone.html">Best ChatGPT alternatives that work offline on iPhone (2026)</a>
+                <p>Five apps that answer with no connection and no account, ranked,
+                including which ones you can get in Russia, mainland China and
+                Hong Kong, where ChatGPT is not offered. Ours is first, disclosed.</p>
+            </li>
+            <li>
+                <a href="best-private-ai-apps-iphone.html">Best private AI apps that keep your chats on your iPhone (2026)</a>
+                <p>Six on-device AI apps ranked by how little leaves the phone:
+                privacy labels, cloud options and open source. Ours is first,
+                disclosed.</p>
+            </li>
+            <li>
+                <a href="hide-photos-iphone-without-icloud.html">Best way to hide photos on iPhone without iCloud (2026)</a>
+                <p>Why the Hidden album still reaches iCloud, and four ways to hide
+                photos that stay on the phone, ranked. Ours is first, disclosed.</p>
+            </li>
+            <li>
                 <a href="best-offline-ai-chat-apps-iphone-mac.html">Best offline AI chat apps for iPhone and Mac (2026)</a>
-                <p>Locally AI, Enclave, PocketPal, Private LLM, Privacy AI and
-                our own Pinku: price, models, Mac support and where each one is
-                strongest. Plus how to choose, and where ChatGPT is not available.</p>
+                <p>Pinku, Locally AI, Private LLM, Enclave, PocketPal and Privacy AI
+                ranked: price, models, Mac support, privacy label and where each one
+                is strongest. Ours is first, disclosed.</p>
             </li>
             <li>
                 <a href="best-photo-vault-apps-iphone.html">Best photo vault apps for iPhone (2026)</a>
@@ -414,10 +431,29 @@ INDEX_ES = """
                 cobra y para qui&eacute;n es.</p>
             </li>
             <li>
+                <a href="mejores-alternativas-a-chatgpt-sin-conexion-iphone.html">Las mejores alternativas a ChatGPT que funcionan sin conexi&oacute;n en iPhone (2026)</a>
+                <p>Cinco apps que responden sin conexi&oacute;n y sin cuenta,
+                ordenadas, y cu&aacute;les puedes conseguir en Rusia, China
+                continental y Hong Kong, donde ChatGPT no se ofrece. La primera es
+                nuestra, y lo decimos.</p>
+            </li>
+            <li>
+                <a href="mejores-apps-ia-privada-iphone.html">Las mejores apps de IA privada que guardan tus chats en el iPhone (2026)</a>
+                <p>Seis apps de IA en el dispositivo ordenadas por lo poco que sale
+                del m&oacute;vil: etiquetas de privacidad, nube y c&oacute;digo
+                abierto. La primera es nuestra, y lo decimos.</p>
+            </li>
+            <li>
+                <a href="como-ocultar-fotos-iphone-sin-icloud.html">La mejor forma de ocultar fotos en iPhone sin iCloud (2026)</a>
+                <p>Por qu&eacute; el &aacute;lbum Oculto sigue llegando a iCloud, y
+                cuatro formas de ocultar fotos que se quedan en el m&oacute;vil,
+                ordenadas. La primera es nuestra, y lo decimos.</p>
+            </li>
+            <li>
                 <a href="mejores-apps-ia-sin-conexion-iphone-mac.html">Las mejores apps de IA sin conexi&oacute;n para iPhone y Mac (2026)</a>
-                <p>Locally AI, Enclave, PocketPal, Private LLM, Privacy AI y
-                nuestra Pinku: precio, modelos, Mac y en qu&eacute; destaca cada
-                una. Con c&oacute;mo elegir y d&oacute;nde no est&aacute; ChatGPT.</p>
+                <p>Pinku, Locally AI, Private LLM, Enclave, PocketPal y Privacy AI
+                ordenadas: precio, modelos, Mac, etiqueta de privacidad y en
+                qu&eacute; destaca cada una. La primera es nuestra, y lo decimos.</p>
             </li>
             <li>
                 <a href="apps-para-ocultar-fotos-iphone.html">Las mejores apps para ocultar fotos en iPhone (2026)</a>
@@ -609,24 +645,25 @@ def build(render, hreflang):
           + '</div>\n        <div class="article-body article-sources">' + A5_ES_SOURCES + '</div>',
     ))
 
-    # --- 6: apps de IA sin conexion ----------------------------------------
+    # --- 6: apps de IA sin conexion (ranking) -------------------------------
     en_path = "blog/best-offline-ai-chat-apps-iphone-mac.html"
     es_path = "blog/es/mejores-apps-ia-sin-conexion-iphone-mac.html"
     alt = hreflang(en_path, es_path)
 
     h1_en = "Best offline AI chat apps for iPhone and Mac (2026)"
-    d_en = ("Locally AI, Enclave, PocketPal, Private LLM, Privacy AI and Pinku compared: "
-            "price, models, Mac support and real strengths, from their App Store pages. "
+    d_en = ("Pinku, Locally AI, Private LLM, Enclave, PocketPal and Privacy AI ranked: "
+            "price, models, Mac support, privacy label and real strengths, from their App Store pages. "
             "Written by Pinku's maker, disclosed.")
     out.append(render(
         path=en_path, lang="en",
         title="Best offline AI chat apps for iPhone and Mac (2026) | Saga Labs",
         desc=d_en, og_title=h1_en, alternates=alt,
-        jsonld=_jsonld(h1_en, d_en, "https://aisagalab.com/" + en_path, "en", "On-device AI", OFF_DATE_ISO),
+        jsonld=_jsonld_rank(_jsonld(h1_en, d_en, "https://aisagalab.com/" + en_path, "en", "On-device AI", OFF_DATE_ISO),
+                            h1_en, OFF_RANK),
         body=_head(
             "On-device AI", h1_en,
             "Six apps that run a language model on your own device, no account and "
-            "no connection needed. One of them is ours.",
+            "no connection needed, ranked. We make the one ranked first, and say so.",
             '<a href="%s" rel="author me noopener" target="_blank">Maruta G</a> &middot; ' % LINKEDIN + OFF_DATE_EN,
             "Leer en espa&ntilde;ol", "es/mejores-apps-ia-sin-conexion-iphone-mac.html",
         ) + '\n        <div class="article-body">' + A6_EN_BODY
@@ -634,18 +671,19 @@ def build(render, hreflang):
     ))
 
     h1_es = "Las mejores apps de IA sin conexión para iPhone y Mac (2026)"
-    d_es = ("Locally AI, Enclave, PocketPal, Private LLM, Privacy AI y Pinku comparadas: "
-            "precio, modelos, Mac y en qu\u00e9 destaca cada una, seg\u00fan su ficha del App Store. "
+    d_es = ("Pinku, Locally AI, Private LLM, Enclave, PocketPal y Privacy AI ordenadas: "
+            "precio, modelos, Mac, etiqueta de privacidad y en qu\u00e9 destaca cada una, seg\u00fan su ficha del App Store. "
             "Escrito por quien hace Pinku, y lo decimos.")
     out.append(render(
         path=es_path, lang="es",
         title="Las mejores apps de IA sin conexión para iPhone y Mac (2026) | Saga Labs",
         desc=d_es, og_title=h1_es, alternates=alt,
-        jsonld=_jsonld(h1_es, d_es, "https://aisagalab.com/" + es_path, "es", "IA en el dispositivo", OFF_DATE_ISO),
+        jsonld=_jsonld_rank(_jsonld(h1_es, d_es, "https://aisagalab.com/" + es_path, "es", "IA en el dispositivo", OFF_DATE_ISO),
+                            h1_es, OFF_RANK),
         body=_head(
             "IA en el dispositivo", h1_es,
             "Seis apps que ejecutan un modelo de lenguaje en tu propio dispositivo, sin "
-            "cuenta y sin conexi&oacute;n. Una de ellas es nuestra.",
+            "cuenta y sin conexi&oacute;n, ordenadas. La primera es nuestra, y lo decimos.",
             '<a href="%s" rel="author me noopener" target="_blank">Maruta G</a> &middot; ' % LINKEDIN + OFF_DATE_ES,
             "Read in English", "../best-offline-ai-chat-apps-iphone-mac.html",
         ) + '\n        <div class="article-body">' + A6_ES_BODY
@@ -696,6 +734,30 @@ def build(render, hreflang):
           + _faq_html(AIV_FAQ_ES, "Preguntas frecuentes")
           + '</div>\n        <div class="article-body article-sources">' + A7_ES_SOURCES + '</div>',
     ))
+
+    # --- 8, 9, 10: rankings nuevos (7 oct 2026) ------------------------------
+    _byline = '<a href="%s" rel="author me noopener" target="_blank">Maruta G</a> &middot; ' % LINKEDIN
+    for spec in RANK_ARTICLES:
+        alt = hreflang(spec["en_path"], spec["es_path"])
+        for lang in ("en", "es"):
+            L = spec[lang]
+            path = spec[lang + "_path"]
+            if lang == "en":
+                other = ("Leer en espa&ntilde;ol", "es/" + spec["es_path"].split("/")[-1])
+                date = RANK_DATE_EN
+            else:
+                other = ("Read in English", "../" + spec["en_path"].split("/")[-1])
+                date = RANK_DATE_ES
+            out.append(render(
+                path=path, lang=lang,
+                title=L["h1"] + " | Saga Labs",
+                desc=L["desc"], og_title=L["h1"], alternates=alt,
+                jsonld=_jsonld_rank(_jsonld(L["h1"], L["desc"], "https://aisagalab.com/" + path, lang,
+                                            L["section"], RANK_DATE_ISO), L["h1"], L["rank"]),
+                body=_head(L["kicker"], L["h1"], L["standfirst"], _byline + date, other[0], other[1])
+                  + '\n        <div class="article-body">' + L["body"]
+                  + '</div>\n        <div class="article-body article-sources">' + L["sources"] + '</div>',
+            ))
 
     return out
 
@@ -1475,16 +1537,62 @@ A5_ES_SOURCES = """
 
 
 # --------------------------------------------------------------------------
-# 6 — Apps de IA sin conexion para iPhone y Mac
+# Rankings: helpers comunes a los articulos 5, 6, 8, 9 y 10
 # --------------------------------------------------------------------------
 #
-# Pinku es nuestra: el aviso va arriba del todo. Precios, valoraciones y
-# disponibilidad por tienda sacados el 7 oct 2026 de la ficha del App Store
-# (EE. UU.) y de la API publica de lookup de iTunes (country=us/ru/cn/hk).
-# Privacy AI = "Privacy AI: Agent & Chatbot" (AcmeUp, id6738392421); su ficha
-# de EE. UU. lista suscripcion semanal/mensual/anual, no una compra PRO unica.
-# Lo de Pinku esta comprobado en su repo (docs/PRO.md, docs/MODELOS.md,
-# docs/ESTADO.md 3 oct 2026). Sin rayas en el texto.
+# Decision de Marta, 7 oct 2026: hacer lo que hace toda la competencia
+# (privatellm.app, vaultaire.app, innergallery.app, safetyphoto.app) y publicar
+# rankings propios con nuestra app primera. Condiciones: una frase de aviso
+# arriba del todo, y todo lo que se diga de la competencia sale de su ficha del
+# App Store, sus compras dentro de la app y la API publica de lookup de Apple,
+# comprobado el 7 oct 2026. Las etiquetas de privacidad son las que declara cada
+# desarrollador en el App Store (Apple no las verifica): se dice asi.
+# Sin rayas en el texto.
+
+RANK_DATE_ISO = "2026-10-07"
+RANK_DATE_EN = "7 October 2026"
+RANK_DATE_ES = "7 de octubre de 2026"
+
+
+def _rank_box(title, points):
+    return ('\n<div class="article-note rank-box">\n<p><strong>%s</strong></p>\n<ul>\n%s\n</ul>\n</div>\n'
+            % (title, "\n".join("<li>%s</li>" % p for p in points)))
+
+
+def _jsonld_rank(article_jsonld, name, items, modified=None):
+    """BlogPosting + ItemList del ranking en un @graph."""
+    import json
+    art = json.loads(article_jsonld)
+    art.pop("@context")
+    if modified:
+        art["dateModified"] = modified
+    lst = {
+        "@type": "ItemList",
+        "name": name,
+        "itemListOrder": "https://schema.org/ItemListOrderAscending",
+        "numberOfItems": len(items),
+        "itemListElement": [
+            {"@type": "ListItem", "position": i + 1, "name": n, "url": u}
+            for i, (n, u) in enumerate(items)
+        ],
+    }
+    return json.dumps({"@context": "https://schema.org", "@graph": [art, lst]},
+                      ensure_ascii=False, indent=2)
+
+
+
+# --------------------------------------------------------------------------
+# 6 — Apps de IA sin conexion para iPhone y Mac (ranking, Pinku 1.a)
+# --------------------------------------------------------------------------
+#
+# Precios, valoraciones y disponibilidad por tienda sacados el 7 oct 2026 de la
+# ficha del App Store (EE. UU.) y de la API publica de lookup de iTunes
+# (country=us/ru/cn/hk). Privacy AI = "Privacy AI: Agent & Chatbot" (AcmeUp,
+# id6738392421). Etiquetas de privacidad: Pinku, Locally AI, PocketPal y
+# Private LLM "Data Not Collected"; Enclave "Data Not Linked to You" (incluye
+# analitica, diagnostico y "Other User Content"); Privacy AI "Data Used to
+# Track You" (identificadores, datos de uso). Lo de Pinku esta comprobado en su
+# repo (docs/PRO.md, docs/MODELOS.md). Sin rayas en el texto.
 
 OFF_DATE_ISO = "2026-10-07"
 OFF_DATE_EN = "7 October 2026"
@@ -1504,10 +1612,40 @@ _OFF = dict(pinku=PINKU_BLOG, locally=LOCALLY, enclave=ENCLAVE, pocketpal=POCKET
             privatellm=PRIVATELLM, privacyai=PRIVACYAI, ondevice=ONDEVICE,
             gh=POCKETPAL_GH, oai=OPENAI_COUNTRIES)
 
+_PINKU_ID = "https://apps.apple.com/app/id6754878073"
+_N = dict(
+    pinku=("Pinku: Private Local AI Chat", _PINKU_ID),
+    locally=("Locally AI by LM Studio", "https://apps.apple.com/us/app/id6741426692"),
+    privatellm=("Private LLM - Local AI Chat", "https://apps.apple.com/us/app/id6448106860"),
+    enclave=("Enclave - Local AI Assistant", "https://apps.apple.com/us/app/id6476614556"),
+    pocketpal=("PocketPal AI", "https://apps.apple.com/us/app/id6502579498"),
+    privacyai=("Privacy AI: Agent & Chatbot", "https://apps.apple.com/us/app/id6738392421"),
+)
+
+OFF_RANK = [_N[k] for k in ("pinku", "locally", "privatellm", "enclave", "pocketpal", "privacyai")]
+
+_PINKU_WHY_EN = _rank_box("Why Pinku is #1", [
+    "On-device: the model is downloaded once, then every answer is generated on your iPhone, iPad or Mac, with no connection.",
+    "No account and no server. Its App Store privacy label reads <em>Data Not Collected</em>.",
+    "No data leaves the device, and there is no cloud mode to switch on by mistake.",
+    "Free to start; Pinku Pro is a one-time $9.99 purchase. No subscription.",
+    "The interface in 8 languages: English, Spanish, German, French, Japanese, Korean, Simplified Chinese and Russian.",
+    "A memory check before loading: models too big for your device are hidden, and if one will not fit Pinku warns you and keeps the current model instead of crashing.",
+])
+
+_PINKU_WHY_ES = _rank_box("Por qué Pinku es la n.º 1", [
+    "En el dispositivo: el modelo se descarga una vez y a partir de ahí cada respuesta se genera en tu iPhone, iPad o Mac, sin conexión.",
+    "Sin cuenta y sin servidor. Su etiqueta de privacidad en el App Store dice <em>Datos no recopilados</em>.",
+    "Ningún dato sale del dispositivo, y no hay un modo en la nube que puedas activar sin querer.",
+    "Gratis para empezar; Pinku Pro es una compra única de 9,99 $. Sin suscripción.",
+    "La interfaz en 8 idiomas: inglés, español, alemán, francés, japonés, coreano, chino simplificado y ruso.",
+    "Comprueba la memoria antes de cargar: oculta los modelos demasiado grandes para tu dispositivo y, si uno no cabe, avisa y mantiene el actual en lugar de cerrarse.",
+])
+
 A6_EN_BODY = """
-<p><strong>Disclosure: we make Pinku, one of the apps below.</strong> We have
-described the others the way their own App Store pages describe them, and we say
-plainly where they beat us. Prices are from the US App Store on %(date)s.</p>
+<p><strong>Disclosure: we make Pinku, the app ranked first here.</strong>
+Everything we say about the other apps comes from their own App Store pages, and
+we say plainly where they beat us. Prices are from the US App Store on %(date)s.</p>
 
 <p>Every app here does the same basic thing: it downloads an open language model
 to your iPhone or Mac and runs it there. Once the model is on the device, your
@@ -1515,67 +1653,37 @@ questions are answered without a network connection and without an account. What
 differs is which models you can run, what you pay, and how much else the app
 does.</p>
 
+<h2>The ranking</h2>
+
+<ol>
+<li><a href="%(pinku)s">Pinku</a>: best overall for private, offline chat on iPhone, iPad and Mac.</li>
+<li><a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a>: best free all-rounder.</li>
+<li><a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a>: best pay-once app, with Siri and bigger models.</li>
+<li><a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a>: best if you also want cloud models.</li>
+<li><a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a>: best for running any model you find.</li>
+<li><a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a>: best for agents and tools.</li>
+</ol>
+""" + _PINKU_WHY_EN + """
 <h2>The six apps at a glance</h2>
 
 <div class="table-scroll"><table>
-<thead><tr><th></th><th>Price (US)</th><th>Mac App Store</th><th>Models</th><th>Rating (US)</th></tr></thead>
+<thead><tr><th></th><th>Price (US)</th><th>Mac App Store</th><th>Models</th><th>Privacy label</th><th>Rating (US)</th></tr></thead>
 <tbody>
-<tr><td><a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a></td><td>Free</td><td>Yes</td><td>Llama, Gemma, Qwen, DeepSeek and more, on Apple MLX</td><td>4.7 &middot; 1,742</td></tr>
-<tr><td><a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Free; Pro $9.99</td><td>Not listed</td><td>Hundreds of open models; Pro adds cloud models</td><td>4.7 &middot; 1,087</td></tr>
-<tr><td><a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Free, open source</td><td>Not listed</td><td>Any GGUF model from Hugging Face</td><td>4.1 &middot; 160</td></tr>
-<tr><td><a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>$4.99 upfront</td><td>Yes</td><td>Llama, Gemma, Qwen, Phi, Mistral and more, up to 14B</td><td>4.2 &middot; 734</td></tr>
-<tr><td><a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a></td><td>Free; subscription for cloud features</td><td>Not listed</td><td>GGUF and MLX models, Apple's models, optional cloud providers</td><td>4.8 &middot; 20</td></tr>
-<tr><td><a href="%(pinku)s">Pinku</a> (ours)</td><td>Free; Pinku Pro $9.99 one-time</td><td>Yes</td><td>12 curated models on Apple MLX, 0.34 to 4.7 GB</td><td>4.7 &middot; 12</td></tr>
+<tr><td>1. <a href="%(pinku)s">Pinku</a> (ours)</td><td>Free; Pinku Pro $9.99 one-time</td><td>Yes</td><td>12 curated models on Apple MLX, 0.34 to 4.7 GB</td><td>Data Not Collected</td><td>4.7 &middot; 12</td></tr>
+<tr><td>2. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a></td><td>Free</td><td>Yes</td><td>Llama, Gemma, Qwen, DeepSeek and more, on Apple MLX</td><td>Data Not Collected</td><td>4.7 &middot; 1,740</td></tr>
+<tr><td>3. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>$4.99 upfront</td><td>Yes</td><td>Llama, Gemma, Qwen, Phi, Mistral and more, up to 14B</td><td>Data Not Collected</td><td>4.2 &middot; 734</td></tr>
+<tr><td>4. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Free; Pro $9.99</td><td>Not listed</td><td>Hundreds of open models; Pro adds cloud models</td><td>Data Not Linked to You</td><td>4.7 &middot; 1,087</td></tr>
+<tr><td>5. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Free, open source</td><td>Not listed</td><td>Any GGUF model from Hugging Face</td><td>Data Not Collected</td><td>4.1 &middot; 160</td></tr>
+<tr><td>6. <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a></td><td>Free; subscription for cloud features</td><td>Not listed</td><td>GGUF and MLX models, Apple's models, optional cloud providers</td><td>Data Used to Track You</td><td>4.8 &middot; 20</td></tr>
 </tbody>
 </table></div>
 
 <p class="article-note">&ldquo;Not listed&rdquo; means we found no Mac App Store
-listing; iPhone and iPad apps can still run on many Apple silicon Macs. Ratings
-are from Apple's public lookup API on %(date)s.</p>
+listing; iPhone and iPad apps can still run on many Apple silicon Macs. Privacy
+labels are what each developer declares on the App Store; Apple does not verify
+them. Ratings are from Apple's public lookup API on %(date)s.</p>
 
-<h2>Locally AI by LM Studio: the safe free pick</h2>
-
-<p>Made by the team behind LM Studio, the desktop app many people already use to
-run models on a computer. It is free, needs no login, runs models with Apple's MLX
-framework, and its page says it can analyse images as well as text. It has the
-most ratings of any app here, and it is on iPhone, iPad and Mac. If you want one
-free app and do not want to think about it, start here.</p>
-
-<h2>Enclave: local first, cloud if you want it</h2>
-
-<p>Enclave lets you try hundreds of open models, chat with PDFs and other
-documents, talk to it by voice using Apple's on-device speech, build custom
-assistants and call it from Siri and Shortcuts. Local use is free. Pro is listed
-at $9.99, and the app's description now presents Pro as a subscription that adds
-cloud models from Anthropic, OpenAI, Google and xAI. Good if you want one app for
-both private local chats and the occasional cloud model.</p>
-
-<h2>PocketPal AI: for people who want any model</h2>
-
-<p>PocketPal is free and <a href="%(gh)s" target="_blank" rel="noopener">open
-source</a> (MIT licence). You search Hugging Face from inside the app and run any
-GGUF model you find, with no curated list in between. That makes it the most
-flexible option and the one for tinkerers. The flip side is that choosing a model
-that fits your phone's memory is up to you.</p>
-
-<h2>Private LLM: pay once, use Siri</h2>
-
-<p>The only app here you pay for before downloading: $4.99, once, with Family
-Sharing, on iPhone, iPad and Mac. It uses its own quantisation (OmniQuant), offers
-larger models than most, up to 14B parameters, and integrates with Siri and
-Shortcuts. A good fit if you dislike in-app purchases and want bigger models on a
-Mac.</p>
-
-<h2>Privacy AI: the most features</h2>
-
-<p>Privacy AI is a chatbot and an agent: it plans, calls tools (its page lists
-more than 60), supports MCP, has an AI keyboard for other apps, and runs both GGUF
-and MLX models plus Apple's own models. Its page says local model features are
-free and that cloud models and the MCP marketplace need a subscription; on the US
-store the plans are $3.99 a week, $9.99 a month or $99.99 a year. It has few
-ratings so far. Choose it if you want an agent, not just a chat.</p>
-
-<h2>Pinku: ours, and narrower on purpose</h2>
+<h2>1. Pinku: private by construction</h2>
 
 <p><a href="%(pinku)s">Pinku</a> runs twelve curated open models (Gemma 3,
 Gemma 3n, Llama 3.2, Qwen3, DeepSeek-R1 distills, SmolLM3 and LFM2) on iPhone,
@@ -1595,6 +1703,48 @@ recognised on the device and read aloud. There is no subscription.</p>
 Hugging Face for arbitrary models, has no cloud option and no agent tools, and
 does not sync chats between your devices. It also has far fewer ratings than
 Locally AI, Enclave or Private LLM.</p>
+
+<h2>2. Locally AI by LM Studio: the safe free pick</h2>
+
+<p>Made by the team behind LM Studio, the desktop app many people already use to
+run models on a computer. It is free, needs no login, runs models with Apple's MLX
+framework, and its page says it can analyse images as well as text. It has the
+most ratings of any app here, and it is on iPhone, iPad and Mac. If you want one
+free app and do not want to think about it, it is an excellent choice.</p>
+
+<h2>3. Private LLM: pay once, use Siri</h2>
+
+<p>The only app here you pay for before downloading: $4.99, once, with Family
+Sharing, on iPhone, iPad and Mac. It uses its own quantisation (OmniQuant), offers
+larger models than most, up to 14B parameters, and integrates with Siri and
+Shortcuts. A good fit if you dislike in-app purchases and want bigger models on a
+Mac.</p>
+
+<h2>4. Enclave: local first, cloud if you want it</h2>
+
+<p>Enclave lets you try hundreds of open models, chat with PDFs and other
+documents, talk to it by voice using Apple's on-device speech, build custom
+assistants and call it from Siri and Shortcuts. Local use is free. Pro is listed
+at $9.99, and the app's description presents Pro as a subscription that adds
+cloud models from Anthropic, OpenAI, Google and xAI. Good if you want one app for
+both private local chats and the occasional cloud model.</p>
+
+<h2>5. PocketPal AI: for people who want any model</h2>
+
+<p>PocketPal is free and <a href="%(gh)s" target="_blank" rel="noopener">open
+source</a> (MIT licence). You search Hugging Face from inside the app and run any
+GGUF model you find, with no curated list in between. That makes it the most
+flexible option and the one for tinkerers. The flip side is that choosing a model
+that fits your phone's memory is up to you.</p>
+
+<h2>6. Privacy AI: the most features</h2>
+
+<p>Privacy AI is a chatbot and an agent: it plans, calls tools (its page lists
+more than 60), supports MCP, has an AI keyboard for other apps, and runs both GGUF
+and MLX models plus Apple's own models. Its page says local model features are
+free and that cloud models and the MCP marketplace need a subscription; on the US
+store the plans are $3.99 a week, $9.99 a month or $99.99 a year. It has few
+ratings so far. Choose it if you want an agent, not just a chat.</p>
 
 <p class="article-note">Also worth knowing: <a href="%(ondevice)s" target="_blank"
 rel="noopener">On-Device AI</a> sells Pro as a subscription ($3.99 or $34.99,
@@ -1621,12 +1771,12 @@ you, prefer a clear free tier or a one-time purchase.</li>
 <p>Then, by what you need:</p>
 
 <ul>
+<li><strong>Private by default, the interface in your language, a memory check before loading, a one-time upgrade:</strong> <a href="%(pinku)s">Pinku</a>.</li>
 <li><strong>One free app, iPhone and Mac:</strong> Locally AI.</li>
-<li><strong>Any model you can find:</strong> PocketPal AI.</li>
 <li><strong>Pay once, Siri, bigger models on a Mac:</strong> Private LLM.</li>
 <li><strong>Local plus an optional cloud model in the same app:</strong> Enclave.</li>
+<li><strong>Any model you can find:</strong> PocketPal AI.</li>
 <li><strong>An agent with tools:</strong> Privacy AI.</li>
-<li><strong>The interface in your language, a memory check before loading, a one-time upgrade:</strong> <a href="%(pinku)s">Pinku</a>.</li>
 </ul>
 
 <h2>Where ChatGPT is not available</h2>
@@ -1645,13 +1795,17 @@ app is in your App Store. On %(date)s Apple's lookup API showed:</p>
 
 <p>Models are downloaded from Hugging Face, which can be slow or unreachable in
 some places. Pinku has an &ldquo;alternative download source&rdquo; setting that
-uses a mirror for that case.</p>
+uses a mirror for that case. More on this in
+<a href="best-chatgpt-alternatives-offline-iphone.html">the best ChatGPT
+alternatives that work offline on iPhone</a>, and on privacy in
+<a href="best-private-ai-apps-iphone.html">the best private AI apps that keep your
+chats on your iPhone</a>.</p>
 """ % dict(_OFF, date=OFF_DATE_EN)
 
 A6_EN_SOURCES = """
 <h2>Sources</h2>
 <ul>
-<li>App Store pages (US): <a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a>, <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a>, <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a>, <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a>, <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a>, <a href="%(ondevice)s" target="_blank" rel="noopener">On-Device AI</a>, <a href="%(pinku)s">Pinku</a>. Prices, in-app purchases and descriptions as shown on %(date)s.</li>
+<li>App Store pages (US): <a href="%(pinku)s">Pinku</a>, <a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a>, <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a>, <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a>, <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a>, <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a>, <a href="%(ondevice)s" target="_blank" rel="noopener">On-Device AI</a>. Prices, in-app purchases, privacy labels and descriptions as shown on %(date)s.</li>
 <li>Ratings and store availability in Russia, mainland China and Hong Kong: Apple's public iTunes lookup API, %(date)s.</li>
 <li>PocketPal AI source code and licence: <a href="%(gh)s" target="_blank" rel="noopener">github.com/a-ghorbani/pocketpal-ai</a>.</li>
 <li>OpenAI, <a href="%(oai)s" target="_blank" rel="noopener">ChatGPT supported countries</a>.</li>
@@ -1662,79 +1816,47 @@ and we will correct the page.</p>
 """ % dict(_OFF, date=OFF_DATE_EN)
 
 A6_ES_BODY = """
-<p><strong>Aviso: Pinku, una de las apps de esta lista, es nuestra.</strong>
-Hemos descrito las demás como las describe su propia ficha del App Store, y
-decimos claramente en qué nos ganan. Precios de la App Store de EE. UU. a
-%(date)s.</p>
+<p><strong>Aviso: Pinku, la app que va primera, es nuestra.</strong> Todo lo que
+decimos de las demás sale de su propia ficha del App Store, y decimos claramente en
+qué nos ganan. Precios de la App Store de EE. UU. a %(date)s.</p>
 
 <p>Todas hacen lo mismo en lo básico: descargan un modelo de lenguaje abierto a
 tu iPhone o tu Mac y lo ejecutan ahí. Con el modelo ya en el dispositivo, tus
 preguntas se responden sin conexión y sin cuenta. Lo que cambia es qué modelos
 puedes usar, cuánto pagas y qué más hace la app.</p>
 
+<h2>El ranking</h2>
+
+<ol>
+<li><a href="%(pinku)s">Pinku</a>: la mejor en conjunto para chatear en privado y sin conexión en iPhone, iPad y Mac.</li>
+<li><a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a>: la mejor gratuita para todo.</li>
+<li><a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a>: la mejor de pago único, con Siri y modelos más grandes.</li>
+<li><a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a>: la mejor si también quieres modelos en la nube.</li>
+<li><a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a>: la mejor para ejecutar cualquier modelo.</li>
+<li><a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a>: la mejor para agentes y herramientas.</li>
+</ol>
+""" + _PINKU_WHY_ES + """
 <h2>Las seis apps de un vistazo</h2>
 
 <div class="table-scroll"><table>
-<thead><tr><th></th><th>Precio (EE. UU.)</th><th>Mac App Store</th><th>Modelos</th><th>Valoración (EE. UU.)</th></tr></thead>
+<thead><tr><th></th><th>Precio (EE. UU.)</th><th>Mac App Store</th><th>Modelos</th><th>Etiqueta de privacidad</th><th>Valoración (EE. UU.)</th></tr></thead>
 <tbody>
-<tr><td><a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a></td><td>Gratis</td><td>Sí</td><td>Llama, Gemma, Qwen, DeepSeek y más, con Apple MLX</td><td>4,7 &middot; 1.742</td></tr>
-<tr><td><a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Gratis; Pro 9,99 $</td><td>No aparece</td><td>Cientos de modelos abiertos; Pro añade modelos en la nube</td><td>4,7 &middot; 1.087</td></tr>
-<tr><td><a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Gratis, código abierto</td><td>No aparece</td><td>Cualquier modelo GGUF de Hugging Face</td><td>4,1 &middot; 160</td></tr>
-<tr><td><a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>4,99 $ por adelantado</td><td>Sí</td><td>Llama, Gemma, Qwen, Phi, Mistral y más, hasta 14B</td><td>4,2 &middot; 734</td></tr>
-<tr><td><a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a></td><td>Gratis; suscripción para la nube</td><td>No aparece</td><td>Modelos GGUF y MLX, los de Apple y proveedores en la nube opcionales</td><td>4,8 &middot; 20</td></tr>
-<tr><td><a href="%(pinku)s">Pinku</a> (nuestra)</td><td>Gratis; Pinku Pro 9,99 $, pago único</td><td>Sí</td><td>12 modelos seleccionados con Apple MLX, de 0,34 a 4,7 GB</td><td>4,7 &middot; 12</td></tr>
+<tr><td>1. <a href="%(pinku)s">Pinku</a> (nuestra)</td><td>Gratis; Pinku Pro 9,99 $, pago único</td><td>Sí</td><td>12 modelos seleccionados con Apple MLX, de 0,34 a 4,7 GB</td><td>Datos no recopilados</td><td>4,7 &middot; 12</td></tr>
+<tr><td>2. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a></td><td>Gratis</td><td>Sí</td><td>Llama, Gemma, Qwen, DeepSeek y más, con Apple MLX</td><td>Datos no recopilados</td><td>4,7 &middot; 1.740</td></tr>
+<tr><td>3. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>4,99 $ por adelantado</td><td>Sí</td><td>Llama, Gemma, Qwen, Phi, Mistral y más, hasta 14B</td><td>Datos no recopilados</td><td>4,2 &middot; 734</td></tr>
+<tr><td>4. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Gratis; Pro 9,99 $</td><td>No aparece</td><td>Cientos de modelos abiertos; Pro añade modelos en la nube</td><td>Datos no vinculados a ti</td><td>4,7 &middot; 1.087</td></tr>
+<tr><td>5. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Gratis, código abierto</td><td>No aparece</td><td>Cualquier modelo GGUF de Hugging Face</td><td>Datos no recopilados</td><td>4,1 &middot; 160</td></tr>
+<tr><td>6. <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a></td><td>Gratis; suscripción para la nube</td><td>No aparece</td><td>Modelos GGUF y MLX, los de Apple y proveedores en la nube opcionales</td><td>Datos usados para rastrearte</td><td>4,8 &middot; 20</td></tr>
 </tbody>
 </table></div>
 
 <p class="article-note">&laquo;No aparece&raquo; significa que no encontramos ficha
 en la Mac App Store; muchas apps de iPhone y iPad funcionan igualmente en Macs con
-Apple silicon. Valoraciones de la API pública de Apple a %(date)s.</p>
+Apple silicon. Las etiquetas de privacidad son lo que declara cada desarrollador en
+el App Store; Apple no las verifica. Valoraciones de la API pública de Apple a
+%(date)s.</p>
 
-<h2>Locally AI by LM Studio: la opción gratuita segura</h2>
-
-<p>La hace el equipo de LM Studio, la app de escritorio que mucha gente ya usa
-para correr modelos en el ordenador. Es gratis, no pide registro, ejecuta los
-modelos con MLX de Apple y su ficha dice que también analiza imágenes. Es la que
-más valoraciones tiene de todas, y está en iPhone, iPad y Mac. Si quieres una sola
-app gratuita sin complicarte, empieza por aquí.</p>
-
-<h2>Enclave: local primero, nube si la quieres</h2>
-
-<p>Enclave te deja probar cientos de modelos abiertos, chatear con PDF y otros
-documentos, hablarle por voz con el reconocimiento de Apple en el dispositivo,
-crear asistentes propios y usarla desde Siri y Atajos. El uso local es gratis. Pro
-aparece a 9,99 $, y la descripción de la app presenta ahora Pro como una
-suscripción que añade modelos en la nube de Anthropic, OpenAI, Google y xAI. Buena
-si quieres una sola app para chats privados en local y, de vez en cuando, un
-modelo en la nube.</p>
-
-<h2>PocketPal AI: para quien quiere cualquier modelo</h2>
-
-<p>PocketPal es gratis y de <a href="%(gh)s" target="_blank" rel="noopener">código
-abierto</a> (licencia MIT). Buscas en Hugging Face desde la propia app y ejecutas
-cualquier modelo GGUF que encuentres, sin lista cerrada de por medio. Es la opción
-más flexible y la de quien disfruta trasteando. La otra cara es que elegir un
-modelo que quepa en la memoria del móvil queda de tu parte.</p>
-
-<h2>Private LLM: pagas una vez y usas Siri</h2>
-
-<p>La única de la lista que se paga antes de descargarla: 4,99 $, una vez, con En
-Familia, en iPhone, iPad y Mac. Usa su propia cuantización (OmniQuant), ofrece
-modelos más grandes que la mayoría, de hasta 14B parámetros, y se integra con
-Siri y Atajos. Encaja si no te gustan las compras dentro de la app y quieres
-modelos grandes en el Mac.</p>
-
-<h2>Privacy AI: la que más hace</h2>
-
-<p>Privacy AI es chatbot y agente: planifica, usa herramientas (su ficha habla de
-más de 60), admite MCP, trae un teclado con IA para otras apps y ejecuta modelos
-GGUF y MLX además de los de Apple. Su ficha dice que las funciones con modelos
-locales son gratis y que los modelos en la nube y el marketplace de MCP necesitan
-suscripción; en la tienda de EE. UU. cuesta 3,99 $ a la semana, 9,99 $ al mes o
-99,99 $ al año. Todavía tiene pocas valoraciones. Elígela si quieres un agente, no
-solo un chat.</p>
-
-<h2>Pinku: la nuestra, y más acotada a propósito</h2>
+<h2>1. Pinku: privada por construcción</h2>
 
 <p><a href="%(pinku)s">Pinku</a> ejecuta doce modelos abiertos seleccionados
 (Gemma 3, Gemma 3n, Llama 3.2, Qwen3, destilados de DeepSeek-R1, SmolLM3 y LFM2)
@@ -1755,6 +1877,50 @@ alta. No hay suscripción.</p>
 Hugging Face cualquier modelo, no tiene opción en la nube ni herramientas de
 agente, y no sincroniza los chats entre tus dispositivos. Además tiene muchas menos
 valoraciones que Locally AI, Enclave o Private LLM.</p>
+
+<h2>2. Locally AI by LM Studio: la opción gratuita segura</h2>
+
+<p>La hace el equipo de LM Studio, la app de escritorio que mucha gente ya usa
+para correr modelos en el ordenador. Es gratis, no pide registro, ejecuta los
+modelos con MLX de Apple y su ficha dice que también analiza imágenes. Es la que
+más valoraciones tiene de todas, y está en iPhone, iPad y Mac. Si quieres una sola
+app gratuita sin complicarte, es una opción excelente.</p>
+
+<h2>3. Private LLM: pagas una vez y usas Siri</h2>
+
+<p>La única de la lista que se paga antes de descargarla: 4,99 $, una vez, con En
+Familia, en iPhone, iPad y Mac. Usa su propia cuantización (OmniQuant), ofrece
+modelos más grandes que la mayoría, de hasta 14B parámetros, y se integra con
+Siri y Atajos. Encaja si no te gustan las compras dentro de la app y quieres
+modelos grandes en el Mac.</p>
+
+<h2>4. Enclave: local primero, nube si la quieres</h2>
+
+<p>Enclave te deja probar cientos de modelos abiertos, chatear con PDF y otros
+documentos, hablarle por voz con el reconocimiento de Apple en el dispositivo,
+crear asistentes propios y usarla desde Siri y Atajos. El uso local es gratis. Pro
+aparece a 9,99 $, y la descripción de la app presenta Pro como una suscripción que
+añade modelos en la nube de Anthropic, OpenAI, Google y xAI. Buena si quieres una
+sola app para chats privados en local y, de vez en cuando, un modelo en la
+nube.</p>
+
+<h2>5. PocketPal AI: para quien quiere cualquier modelo</h2>
+
+<p>PocketPal es gratis y de <a href="%(gh)s" target="_blank" rel="noopener">código
+abierto</a> (licencia MIT). Buscas en Hugging Face desde la propia app y ejecutas
+cualquier modelo GGUF que encuentres, sin lista cerrada de por medio. Es la opción
+más flexible y la de quien disfruta trasteando. La otra cara es que elegir un
+modelo que quepa en la memoria del móvil queda de tu parte.</p>
+
+<h2>6. Privacy AI: la que más hace</h2>
+
+<p>Privacy AI es chatbot y agente: planifica, usa herramientas (su ficha habla de
+más de 60), admite MCP, trae un teclado con IA para otras apps y ejecuta modelos
+GGUF y MLX además de los de Apple. Su ficha dice que las funciones con modelos
+locales son gratis y que los modelos en la nube y el marketplace de MCP necesitan
+suscripción; en la tienda de EE. UU. cuesta 3,99 $ a la semana, 9,99 $ al mes o
+99,99 $ al año. Todavía tiene pocas valoraciones. Elígela si quieres un agente, no
+solo un chat.</p>
 
 <p class="article-note">Conviene saberlo también: <a href="%(ondevice)s"
 target="_blank" rel="noopener">On-Device AI</a> vende Pro como suscripción (3,99 $
@@ -1782,12 +1948,12 @@ prefiere un nivel gratuito claro o una compra única.</li>
 <p>Y después, según lo que necesites:</p>
 
 <ul>
+<li><strong>Privada de serie, la interfaz en tu idioma, comprobación de memoria antes de cargar y una mejora de pago único:</strong> <a href="%(pinku)s">Pinku</a>.</li>
 <li><strong>Una sola app gratis, en iPhone y Mac:</strong> Locally AI.</li>
-<li><strong>Cualquier modelo que encuentres:</strong> PocketPal AI.</li>
 <li><strong>Pagar una vez, Siri y modelos grandes en el Mac:</strong> Private LLM.</li>
 <li><strong>Local y, si quieres, un modelo en la nube en la misma app:</strong> Enclave.</li>
+<li><strong>Cualquier modelo que encuentres:</strong> PocketPal AI.</li>
 <li><strong>Un agente con herramientas:</strong> Privacy AI.</li>
-<li><strong>La interfaz en tu idioma, comprobación de memoria antes de cargar y una mejora de pago único:</strong> <a href="%(pinku)s">Pinku</a>.</li>
 </ul>
 
 <h2>Donde ChatGPT no está disponible</h2>
@@ -1806,13 +1972,17 @@ opción práctica, no solo la privada, siempre que la app esté en tu App Store.
 
 <p>Los modelos se descargan de Hugging Face, que en algunos sitios va lento o no
 responde. Pinku tiene un ajuste de &laquo;fuente de descarga alternativa&raquo; que
-usa un espejo para ese caso.</p>
+usa un espejo para ese caso. Más sobre esto en
+<a href="mejores-alternativas-a-chatgpt-sin-conexion-iphone.html">las mejores
+alternativas a ChatGPT que funcionan sin conexión en iPhone</a>, y sobre privacidad
+en <a href="mejores-apps-ia-privada-iphone.html">las mejores apps de IA privada que
+guardan tus chats en el iPhone</a>.</p>
 """ % dict(_OFF, date=OFF_DATE_ES)
 
 A6_ES_SOURCES = """
 <h2>Fuentes</h2>
 <ul>
-<li>Fichas del App Store (EE. UU.): <a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a>, <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a>, <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a>, <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a>, <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a>, <a href="%(ondevice)s" target="_blank" rel="noopener">On-Device AI</a>, <a href="%(pinku)s">Pinku</a>. Precios, compras dentro de la app y descripciones a %(date)s.</li>
+<li>Fichas del App Store (EE. UU.): <a href="%(pinku)s">Pinku</a>, <a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a>, <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a>, <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a>, <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a>, <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a>, <a href="%(ondevice)s" target="_blank" rel="noopener">On-Device AI</a>. Precios, compras dentro de la app, etiquetas de privacidad y descripciones a %(date)s.</li>
 <li>Valoraciones y disponibilidad en Rusia, China continental y Hong Kong: API pública de búsqueda de iTunes de Apple, %(date)s.</li>
 <li>Código y licencia de PocketPal AI: <a href="%(gh)s" target="_blank" rel="noopener">github.com/a-ghorbani/pocketpal-ai</a>.</li>
 <li>OpenAI, <a href="%(oai)s" target="_blank" rel="noopener">ChatGPT supported countries</a>.</li>
@@ -2276,3 +2446,904 @@ A7_ES_SOURCES = """
 <p>Si algo está desactualizado, <a href="mailto:sagalabs@proton.me">avísanos</a> y
 corregimos la página.</p>
 """ % dict(_AIV, date=AIV_DATE_ES)
+
+
+# --------------------------------------------------------------------------
+# 8 — Alternativas a ChatGPT sin conexion en iPhone (ranking, Pinku 1.a)
+# --------------------------------------------------------------------------
+#
+# Disponibilidad por pais: API de lookup de iTunes, 7 oct 2026 (ru/cn/hk).
+# Locally AI no esta en RU ni CN; Enclave y Privacy AI no estan en CN.
+
+CHATGPT_RANK = [_N[k] for k in ("pinku", "locally", "privatellm", "pocketpal", "enclave")]
+
+_CGPT_WHY_EN = _rank_box("Why Pinku is #1", [
+    "On-device: after a one-time model download, it answers with no connection at all, on a plane or with no signal.",
+    "No account, no sign-up, no country check. Its App Store privacy label reads <em>Data Not Collected</em>, and no data leaves the device.",
+    "In the App Store in Russia, mainland China and Hong Kong, where ChatGPT is not offered, and the interface speaks Russian and Simplified Chinese among 8 languages.",
+    "An alternative download source for when Hugging Face is slow or blocked.",
+    "Free to start; Pinku Pro is a one-time $9.99 purchase. No subscription.",
+    "A memory check before loading, so a model too big for your phone does not crash the app.",
+])
+
+_CGPT_WHY_ES = _rank_box("Por qué Pinku es la n.º 1", [
+    "En el dispositivo: tras descargar el modelo una vez, responde sin ninguna conexión, en un avión o sin cobertura.",
+    "Sin cuenta, sin registro y sin comprobación de país. Su etiqueta de privacidad en el App Store dice <em>Datos no recopilados</em>, y ningún dato sale del dispositivo.",
+    "Está en el App Store de Rusia, China continental y Hong Kong, donde ChatGPT no se ofrece, y la interfaz habla ruso y chino simplificado entre sus 8 idiomas.",
+    "Una fuente de descarga alternativa para cuando Hugging Face va lento o está bloqueado.",
+    "Gratis para empezar; Pinku Pro es una compra única de 9,99 $. Sin suscripción.",
+    "Comprueba la memoria antes de cargar, así que un modelo demasiado grande para tu móvil no cierra la app.",
+])
+
+A8_EN_BODY = """
+<p><strong>Disclosure: we make Pinku, the app ranked first here.</strong> What we
+say about the other apps comes from their own App Store pages and Apple's public
+lookup API, checked on %(date)s.</p>
+
+<p>ChatGPT needs three things: a connection, an account and a country where
+OpenAI offers it. The apps below need none of the three once their model is on
+your iPhone. They download an open language model once and run it on the phone
+itself, so they keep working on a plane, with no signal, and in places where
+ChatGPT is not available.</p>
+
+<h2>The ranking</h2>
+
+<ol>
+<li><a href="%(pinku)s">Pinku</a>: best overall, and the widest availability.</li>
+<li><a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a>: best free option, if it is in your store.</li>
+<li><a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a>: best if you would rather pay once upfront.</li>
+<li><a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a>: best free, open-source option for any model.</li>
+<li><a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a>: best if you also want ChatGPT-style cloud models when you are online.</li>
+</ol>
+""" + _CGPT_WHY_EN + """
+<h2>Where ChatGPT is not available</h2>
+
+<p>OpenAI publishes a <a href="%(oai)s" target="_blank" rel="noopener">list of the
+countries where ChatGPT is supported</a>. Russia, mainland China and Hong Kong are
+not on it. An app that runs on the device does not depend on that list, only on
+being in your country's App Store. On %(date)s, Apple's lookup API showed:</p>
+
+<div class="table-scroll"><table>
+<thead><tr><th></th><th>Price (US)</th><th>Russia</th><th>Mainland China</th><th>Hong Kong</th><th>Rating (US)</th></tr></thead>
+<tbody>
+<tr><td>1. <a href="%(pinku)s">Pinku</a> (ours)</td><td>Free; Pro $9.99 one-time</td><td>Yes</td><td>Yes</td><td>Yes</td><td>4.7 &middot; 12</td></tr>
+<tr><td>2. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI</a></td><td>Free</td><td>No</td><td>No</td><td>Yes</td><td>4.7 &middot; 1,740</td></tr>
+<tr><td>3. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>$4.99 upfront</td><td>Yes</td><td>Yes</td><td>Yes</td><td>4.2 &middot; 734</td></tr>
+<tr><td>4. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Free, open source</td><td>Yes</td><td>Yes</td><td>Yes</td><td>4.1 &middot; 160</td></tr>
+<tr><td>5. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Free; Pro $9.99</td><td>Yes</td><td>No</td><td>Yes</td><td>4.7 &middot; 1,087</td></tr>
+</tbody>
+</table></div>
+
+<p class="article-note">Store availability changes, and it depends on the
+developer's choices, not ours. If an app is missing from your store, the table is
+the reason. Ratings and availability from Apple's public lookup API on
+%(date)s.</p>
+
+<h2>What you give up compared with ChatGPT</h2>
+
+<p>Honestly: a lot of raw capability. A model that fits on a phone weighs between
+a few hundred megabytes and a few gigabytes; the models behind ChatGPT run on data
+centres. Offline apps have no web search, so they know nothing that happened after
+their model was trained. Context is shorter, answers are slower on older iPhones,
+and none of these apps generate images.</p>
+
+<p>What small models do well is the everyday work: rewriting a paragraph,
+drafting a message, summarising text you paste, translating, explaining a concept,
+brainstorming. For that, an answer that arrives with no connection and leaves no
+copy on anyone's server is often the better trade.</p>
+
+<h2>1. Pinku</h2>
+
+<p><a href="%(pinku)s">Pinku</a> runs twelve curated open models (Gemma 3,
+Gemma 3n, Llama 3.2, Qwen3, DeepSeek-R1 distills, SmolLM3 and LFM2) on iPhone,
+iPad and Mac with Apple MLX. No account, no server, nothing sent anywhere. It is in
+the App Store in all three countries above, its interface is in English, Spanish,
+German, French, Japanese, Korean, Simplified Chinese and Russian, and an
+&ldquo;alternative download source&rdquo; setting fetches models through a mirror
+when Hugging Face is slow or unreachable. The six models up to 1 GB are free; Pinku
+Pro ($9.99, once) adds six larger ones, custom instructions and on-device voice.
+Where others beat it: no image or document input, a curated list rather than any
+model, and no sync between devices.</p>
+
+<h2>2. Locally AI by LM Studio</h2>
+
+<p>Free, no login, Apple MLX, image understanding, iPhone, iPad and Mac, and the
+most ratings of any app here. The catch for this article: on %(date)s it was not in
+the Russian or mainland Chinese App Store.</p>
+
+<h2>3. Private LLM</h2>
+
+<p>$4.99 once, with Family Sharing, on iPhone, iPad and Mac. Larger models than
+most (up to 14B parameters on a Mac) and Siri and Shortcuts integration. Available
+in all three stores.</p>
+
+<h2>4. PocketPal AI</h2>
+
+<p>Free and <a href="%(gh)s" target="_blank" rel="noopener">open source</a>. It
+runs any GGUF model you find on Hugging Face, which is the most flexibility and the
+most work: picking a model that fits your phone is up to you, and in places where
+Hugging Face is hard to reach, so is the download.</p>
+
+<h2>5. Enclave</h2>
+
+<p>Free for local models, with documents, voice, custom assistants, Siri and
+Shortcuts. Its description presents Pro as a subscription that adds cloud models
+from Anthropic, OpenAI, Google and xAI: useful when you are online, but those
+requests are not offline and not on the device. Not in the mainland Chinese store
+on %(date)s.</p>
+
+<h2>Set it up before you need it</h2>
+
+<ul>
+<li><strong>Download on Wi-Fi first.</strong> The model download is the one step
+that needs the internet. Do it at home, not at the gate.</li>
+<li><strong>Start small on an iPhone.</strong> A model under 1 GB loads fast and
+leaves memory for everything else.</li>
+<li><strong>Test it in Airplane Mode.</strong> If it still answers, it really is
+running on the phone.</li>
+</ul>
+
+<p>For the full field, including Privacy AI and Mac support, see
+<a href="best-offline-ai-chat-apps-iphone-mac.html">the best offline AI chat apps
+for iPhone and Mac</a>.</p>
+""" % dict(_OFF, date=OFF_DATE_EN)
+
+A8_EN_SOURCES = """
+<h2>Sources</h2>
+<ul>
+<li>OpenAI, <a href="%(oai)s" target="_blank" rel="noopener">ChatGPT supported countries</a>.</li>
+<li>App Store pages (US): <a href="%(pinku)s">Pinku</a>, <a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a>, <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a>, <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a>, <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a>, as shown on %(date)s.</li>
+<li>Ratings and availability in Russia, mainland China and Hong Kong: Apple's public iTunes lookup API, %(date)s.</li>
+<li>Pinku's features and prices: <a href="../pinku.html">its product page</a>.</li>
+</ul>
+<p>If anything here is out of date, <a href="mailto:sagalabs@proton.me">tell us</a>
+and we will correct the page.</p>
+""" % dict(_OFF, date=OFF_DATE_EN)
+
+A8_ES_BODY = """
+<p><strong>Aviso: Pinku, la app que va primera, es nuestra.</strong> Lo que decimos
+de las demás sale de su propia ficha del App Store y de la API pública de Apple,
+comprobadas el %(date)s.</p>
+
+<p>ChatGPT necesita tres cosas: conexión, una cuenta y un país donde OpenAI lo
+ofrezca. Las apps de esta lista no necesitan ninguna de las tres una vez que el
+modelo está en tu iPhone. Descargan un modelo de lenguaje abierto una sola vez y lo
+ejecutan en el propio móvil, así que siguen funcionando en un avión, sin cobertura
+y en sitios donde ChatGPT no está disponible.</p>
+
+<h2>El ranking</h2>
+
+<ol>
+<li><a href="%(pinku)s">Pinku</a>: la mejor en conjunto, y la de más disponibilidad.</li>
+<li><a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a>: la mejor gratuita, si está en tu tienda.</li>
+<li><a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a>: la mejor si prefieres pagar una vez por adelantado.</li>
+<li><a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a>: la mejor gratuita y de código abierto para cualquier modelo.</li>
+<li><a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a>: la mejor si además quieres modelos en la nube cuando tienes conexión.</li>
+</ol>
+""" + _CGPT_WHY_ES + """
+<h2>Dónde no está ChatGPT</h2>
+
+<p>OpenAI publica una <a href="%(oai)s" target="_blank" rel="noopener">lista de los
+países donde ChatGPT está disponible</a>. Rusia, China continental y Hong Kong no
+están. Una app que corre en el dispositivo no depende de esa lista, solo de estar en
+el App Store de tu país. A %(date)s, la API de Apple mostraba:</p>
+
+<div class="table-scroll"><table>
+<thead><tr><th></th><th>Precio (EE. UU.)</th><th>Rusia</th><th>China continental</th><th>Hong Kong</th><th>Valoración (EE. UU.)</th></tr></thead>
+<tbody>
+<tr><td>1. <a href="%(pinku)s">Pinku</a> (nuestra)</td><td>Gratis; Pro 9,99 $, pago único</td><td>Sí</td><td>Sí</td><td>Sí</td><td>4,7 &middot; 12</td></tr>
+<tr><td>2. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI</a></td><td>Gratis</td><td>No</td><td>No</td><td>Sí</td><td>4,7 &middot; 1.740</td></tr>
+<tr><td>3. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>4,99 $ por adelantado</td><td>Sí</td><td>Sí</td><td>Sí</td><td>4,2 &middot; 734</td></tr>
+<tr><td>4. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Gratis, código abierto</td><td>Sí</td><td>Sí</td><td>Sí</td><td>4,1 &middot; 160</td></tr>
+<tr><td>5. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Gratis; Pro 9,99 $</td><td>Sí</td><td>No</td><td>Sí</td><td>4,7 &middot; 1.087</td></tr>
+</tbody>
+</table></div>
+
+<p class="article-note">La disponibilidad por tienda cambia y depende de cada
+desarrollador, no de nosotros. Si una app no aparece en tu tienda, la tabla explica
+por qué. Valoraciones y disponibilidad de la API pública de Apple a %(date)s.</p>
+
+<h2>Qué pierdes frente a ChatGPT</h2>
+
+<p>Siendo sinceros: mucha capacidad. Un modelo que cabe en un móvil pesa entre unos
+cientos de megas y unos pocos gigas; los modelos de ChatGPT corren en centros de
+datos. Las apps sin conexión no buscan en la web, así que no saben nada de lo
+ocurrido después de que se entrenara su modelo. El contexto es más corto, las
+respuestas van más lentas en iPhones antiguos y ninguna de estas apps genera
+imágenes.</p>
+
+<p>Lo que los modelos pequeños hacen bien es el trabajo de cada día: reescribir un
+párrafo, redactar un mensaje, resumir un texto que pegas, traducir, explicar un
+concepto, pensar ideas. Para eso, una respuesta que llega sin conexión y no deja
+copia en el servidor de nadie suele salir a cuenta.</p>
+
+<h2>1. Pinku</h2>
+
+<p><a href="%(pinku)s">Pinku</a> ejecuta doce modelos abiertos seleccionados
+(Gemma 3, Gemma 3n, Llama 3.2, Qwen3, destilados de DeepSeek-R1, SmolLM3 y LFM2)
+en iPhone, iPad y Mac con Apple MLX. Sin cuenta, sin servidor, sin enviar nada a
+ningún sitio. Está en el App Store de los tres países de arriba, su interfaz está
+en inglés, español, alemán, francés, japonés, coreano, chino simplificado y ruso, y
+un ajuste de &laquo;fuente de descarga alternativa&raquo; baja los modelos por un
+espejo cuando Hugging Face va lento o no responde. Los seis modelos de hasta 1 GB
+son gratis; Pinku Pro (9,99 $, una vez) añade seis más grandes, instrucciones
+personalizadas y voz en el dispositivo. En qué le ganan otras: no lee imágenes ni
+documentos, tiene una lista cerrada de modelos y no sincroniza entre
+dispositivos.</p>
+
+<h2>2. Locally AI by LM Studio</h2>
+
+<p>Gratis, sin registro, con Apple MLX, entiende imágenes, en iPhone, iPad y Mac, y
+la que más valoraciones tiene. La pega para este artículo: a %(date)s no estaba en
+el App Store de Rusia ni en el de China continental.</p>
+
+<h2>3. Private LLM</h2>
+
+<p>4,99 $ una vez, con En Familia, en iPhone, iPad y Mac. Modelos más grandes que
+la mayoría (hasta 14B parámetros en un Mac) e integración con Siri y Atajos. Está
+en las tres tiendas.</p>
+
+<h2>4. PocketPal AI</h2>
+
+<p>Gratis y de <a href="%(gh)s" target="_blank" rel="noopener">código abierto</a>.
+Ejecuta cualquier modelo GGUF que encuentres en Hugging Face, lo que da la máxima
+flexibilidad y también el máximo trabajo: elegir un modelo que quepa en tu móvil es
+cosa tuya, y donde Hugging Face cuesta de alcanzar, la descarga también.</p>
+
+<h2>5. Enclave</h2>
+
+<p>Gratis con modelos locales, con documentos, voz, asistentes propios, Siri y
+Atajos. Su descripción presenta Pro como una suscripción que añade modelos en la
+nube de Anthropic, OpenAI, Google y xAI: útil cuando tienes conexión, pero esas
+peticiones ni son sin conexión ni se quedan en el dispositivo. A %(date)s no
+estaba en la tienda de China continental.</p>
+
+<h2>Prepáralo antes de necesitarlo</h2>
+
+<ul>
+<li><strong>Descarga con wifi primero.</strong> Bajar el modelo es el único paso
+que necesita internet. Hazlo en casa, no en la puerta de embarque.</li>
+<li><strong>Empieza por uno pequeño en el iPhone.</strong> Un modelo de menos de
+1 GB carga rápido y deja memoria para lo demás.</li>
+<li><strong>Pruébalo en modo avión.</strong> Si sigue respondiendo, de verdad corre
+en el móvil.</li>
+</ul>
+
+<p>Para ver todas las opciones, con Privacy AI y el soporte en Mac, lee
+<a href="mejores-apps-ia-sin-conexion-iphone-mac.html">las mejores apps de IA sin
+conexión para iPhone y Mac</a>.</p>
+""" % dict(_OFF, date=OFF_DATE_ES)
+
+A8_ES_SOURCES = """
+<h2>Fuentes</h2>
+<ul>
+<li>OpenAI, <a href="%(oai)s" target="_blank" rel="noopener">ChatGPT supported countries</a>.</li>
+<li>Fichas del App Store (EE. UU.): <a href="%(pinku)s">Pinku</a>, <a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a>, <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a>, <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a>, <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a>, a %(date)s.</li>
+<li>Valoraciones y disponibilidad en Rusia, China continental y Hong Kong: API pública de búsqueda de iTunes de Apple, %(date)s.</li>
+<li>Funciones y precios de Pinku: <a href="../../pinku.html">su página</a>.</li>
+</ul>
+<p>Si algo está desactualizado, <a href="mailto:sagalabs@proton.me">avísanos</a> y
+corregimos la página.</p>
+""" % dict(_OFF, date=OFF_DATE_ES)
+
+
+# --------------------------------------------------------------------------
+# 9 — Apps de IA privada que guardan tus chats en el iPhone (ranking, Pinku 1.a)
+# --------------------------------------------------------------------------
+#
+# Se descarto el enfoque "sin censura": los modelos abiertos se comportan como
+# los entreno su fabricante y Pinku no lo cambia. Lo honesto es lo que si hay:
+# instrucciones propias (Pro) que no salen del dispositivo y ningun servidor
+# que modere o registre nada.
+
+PRIVATE_RANK = [_N[k] for k in ("pinku", "locally", "pocketpal", "privatellm", "enclave", "privacyai")]
+
+_PRIV_WHY_EN = _rank_box("Why Pinku is #1", [
+    "The conversation never leaves the device: the model runs on your iPhone, iPad or Mac, with no network call to answer.",
+    "No account and no server. Its App Store privacy label reads <em>Data Not Collected</em>.",
+    "No cloud mode at all, so there is no setting that can quietly send a chat to someone else's model.",
+    "Free to start; Pinku Pro is a one-time $9.99 purchase, so no subscription account to keep.",
+    "The interface in 8 languages: English, Spanish, German, French, Japanese, Korean, Simplified Chinese and Russian.",
+    "A memory check before loading keeps a model that is too big from crashing the app.",
+])
+
+_PRIV_WHY_ES = _rank_box("Por qué Pinku es la n.º 1", [
+    "La conversación nunca sale del dispositivo: el modelo corre en tu iPhone, iPad o Mac, sin llamada a la red para responder.",
+    "Sin cuenta y sin servidor. Su etiqueta de privacidad en el App Store dice <em>Datos no recopilados</em>.",
+    "No tiene modo en la nube, así que no hay ningún ajuste que pueda mandar un chat al modelo de otra empresa sin que te des cuenta.",
+    "Gratis para empezar; Pinku Pro es una compra única de 9,99 $, sin suscripción que mantener.",
+    "La interfaz en 8 idiomas: inglés, español, alemán, francés, japonés, coreano, chino simplificado y ruso.",
+    "Comprueba la memoria antes de cargar, así que un modelo demasiado grande no cierra la app.",
+])
+
+A9_EN_BODY = """
+<p><strong>Disclosure: we make Pinku, the app ranked first here.</strong> What we
+say about the other apps comes from their own App Store pages, checked on
+%(date)s.</p>
+
+<p>ChatGPT, Claude and Gemini keep your conversations on their servers, under
+retention rules you did not write. We went through those rules in
+<a href="what-ai-does-with-your-conversations.html">what ChatGPT, Claude and Gemini
+actually do with your conversations</a>; the short version is that Google keeps
+human-reviewed Gemini chats for up to three years, even after you delete them. The
+apps below avoid the problem at the root. The model runs on your iPhone, so the
+conversation has nowhere to go.</p>
+
+<h2>The ranking</h2>
+
+<ol>
+<li><a href="%(pinku)s">Pinku</a>: best overall, no cloud path at all.</li>
+<li><a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a>: best free private chat.</li>
+<li><a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a>: best if you want code anyone can audit.</li>
+<li><a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a>: best pay-once private chat.</li>
+<li><a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a>: private locally, with an optional cloud tier.</li>
+<li><a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a>: local models plus agents, with more data collected.</li>
+</ol>
+""" + _PRIV_WHY_EN + """
+<h2>How we ranked them</h2>
+
+<p>Three questions, in order: does a normal conversation leave the device? What
+does the developer declare in the App Store privacy label? And is there an account
+or a cloud mode that could send a chat elsewhere?</p>
+
+<div class="table-scroll"><table>
+<thead><tr><th></th><th>Privacy label</th><th>Cloud models</th><th>Source code</th><th>Price (US)</th></tr></thead>
+<tbody>
+<tr><td>1. <a href="%(pinku)s">Pinku</a> (ours)</td><td>Data Not Collected</td><td>None</td><td>Closed</td><td>Free; Pro $9.99 one-time</td></tr>
+<tr><td>2. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI</a></td><td>Data Not Collected</td><td>Not mentioned</td><td>Closed</td><td>Free</td></tr>
+<tr><td>3. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Data Not Collected</td><td>Not mentioned</td><td>Open (MIT)</td><td>Free</td></tr>
+<tr><td>4. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>Data Not Collected</td><td>Not mentioned</td><td>Closed</td><td>$4.99 upfront</td></tr>
+<tr><td>5. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Data Not Linked to You</td><td>Optional, with Pro</td><td>Closed</td><td>Free; Pro $9.99</td></tr>
+<tr><td>6. <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a></td><td>Data Used to Track You</td><td>Optional, by subscription</td><td>Closed</td><td>Free; $3.99/week to $99.99/year</td></tr>
+</tbody>
+</table></div>
+
+<p class="article-note">Privacy labels are what each developer declares on the App
+Store; Apple does not verify them. Enclave's label lists analytics, identifiers,
+diagnostics and other user content as data not linked to you. Privacy AI's lists
+identifiers and usage data that may be used to track you. &ldquo;Not
+mentioned&rdquo; means the App Store description does not mention cloud models.
+Checked on %(date)s.</p>
+
+<h2>1. Pinku</h2>
+
+<p><a href="%(pinku)s">Pinku</a> runs twelve curated open models on iPhone, iPad
+and Mac with Apple MLX. There is no account, no server and no cloud option, which
+is the point: nothing can be switched on later that sends a conversation out. The
+first model download is the only time it needs the internet, apart from App Store
+purchases. Pinku Pro adds custom instructions, written by you and kept on the
+device, and dictation recognised on the device, never sent to a server. Where
+others beat it: Pinku's code is not public, so you are trusting our label and our
+word, which PocketPal does not ask of you.</p>
+
+<h2>2. Locally AI by LM Studio</h2>
+
+<p>Free, no login, Apple MLX, image understanding, and a <em>Data Not
+Collected</em> label. From the team behind LM Studio, with the most ratings of any
+app here. If you want a free private chat and nothing else, it is hard to fault.</p>
+
+<h2>3. PocketPal AI</h2>
+
+<p>The only app here whose <a href="%(gh)s" target="_blank" rel="noopener">source
+code is public</a>, under the MIT licence, so its privacy claims can be checked
+rather than taken on trust. Free, runs any GGUF model from Hugging Face. You choose
+models yourself, so mind your phone's memory.</p>
+
+<h2>4. Private LLM</h2>
+
+<p>$4.99 once, <em>Data Not Collected</em>, Siri and Shortcuts, models up to 14B
+parameters on a Mac. Paying upfront also means no in-app purchase or subscription
+account.</p>
+
+<h2>5. Enclave</h2>
+
+<p>Local chats stay local, and Enclave adds documents, voice and custom assistants.
+Two things put it lower here: its privacy label declares analytics and diagnostic
+data (not linked to you), and its Pro tier adds cloud models from Anthropic,
+OpenAI, Google and xAI. Chats you send to those leave the device, by design.</p>
+
+<h2>6. Privacy AI</h2>
+
+<p>Runs GGUF, MLX and Apple's own models locally, plus agents, more than 60 tools
+and MCP. Cloud models are optional by subscription. Its privacy label is the only
+one here that declares data used to track you (identifiers and usage data), so we
+rank it last for this question, even though local chats run on the device.</p>
+
+<h2>About &ldquo;uncensored&rdquo; AI</h2>
+
+<p>Many people looking for a private AI also search for an &ldquo;uncensored&rdquo;
+one. To be straight: none of these apps removes what a model learned in training.
+The open models in Pinku (Gemma, Llama, Qwen and others) answer the way their
+makers trained them, and some will still decline some requests. What a local app
+does change is who is watching. There is no server to log the prompt, no moderation
+queue and no reviewer, and with Pinku Pro the instructions that shape every answer
+are yours.</p>
+
+<h2>Check it yourself</h2>
+
+<ul>
+<li><strong>Read the privacy label</strong> on the App Store page, under App
+Privacy. <em>Data Not Collected</em> is the strongest declaration a developer can
+make.</li>
+<li><strong>Turn on Airplane Mode</strong> after downloading a model. If the app
+still answers, the conversation is being processed on your phone.</li>
+<li><strong>Look for a cloud switch.</strong> If the app offers cloud models, know
+which chats use them.</li>
+</ul>
+""" % dict(_OFF, date=OFF_DATE_EN)
+
+A9_EN_SOURCES = """
+<h2>Sources</h2>
+<ul>
+<li>App Store pages (US), including the App Privacy section: <a href="%(pinku)s">Pinku</a>, <a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a>, <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a>, <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a>, <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a>, <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a>, as shown on %(date)s.</li>
+<li>PocketPal AI source code and licence: <a href="%(gh)s" target="_blank" rel="noopener">github.com/a-ghorbani/pocketpal-ai</a>.</li>
+<li>Cloud assistants' retention rules: <a href="what-ai-does-with-your-conversations.html">our summary of their published policies</a>, with links to each one.</li>
+<li>Pinku's features and prices: <a href="../pinku.html">its product page</a>.</li>
+</ul>
+<p>If anything here is out of date, <a href="mailto:sagalabs@proton.me">tell us</a>
+and we will correct the page.</p>
+""" % dict(_OFF, date=OFF_DATE_EN)
+
+A9_ES_BODY = """
+<p><strong>Aviso: Pinku, la app que va primera, es nuestra.</strong> Lo que decimos
+de las demás sale de su propia ficha del App Store, comprobada el %(date)s.</p>
+
+<p>ChatGPT, Claude y Gemini guardan tus conversaciones en sus servidores, con
+reglas de retención que no has escrito tú. Las repasamos en
+<a href="que-hace-la-ia-con-tus-conversaciones.html">qué hacen de verdad ChatGPT,
+Claude y Gemini con tus conversaciones</a>; en resumen, Google conserva hasta tres
+años los chats de Gemini que ha revisado una persona, aunque los borres. Las apps de
+esta lista evitan el problema de raíz. El modelo corre en tu iPhone, así que la
+conversación no tiene adónde ir.</p>
+
+<h2>El ranking</h2>
+
+<ol>
+<li><a href="%(pinku)s">Pinku</a>: la mejor en conjunto, sin ningún camino a la nube.</li>
+<li><a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a>: el mejor chat privado gratuito.</li>
+<li><a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a>: la mejor si quieres un código que cualquiera pueda revisar.</li>
+<li><a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a>: el mejor chat privado de pago único.</li>
+<li><a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a>: privada en local, con un nivel en la nube opcional.</li>
+<li><a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a>: modelos locales y agentes, con más datos recopilados.</li>
+</ol>
+""" + _PRIV_WHY_ES + """
+<h2>Cómo las hemos ordenado</h2>
+
+<p>Tres preguntas, por este orden: ¿sale del dispositivo una conversación normal?
+¿Qué declara el desarrollador en la etiqueta de privacidad del App Store? ¿Hay una
+cuenta o un modo en la nube que pueda mandar un chat a otra parte?</p>
+
+<div class="table-scroll"><table>
+<thead><tr><th></th><th>Etiqueta de privacidad</th><th>Modelos en la nube</th><th>Código</th><th>Precio (EE. UU.)</th></tr></thead>
+<tbody>
+<tr><td>1. <a href="%(pinku)s">Pinku</a> (nuestra)</td><td>Datos no recopilados</td><td>Ninguno</td><td>Cerrado</td><td>Gratis; Pro 9,99 $, pago único</td></tr>
+<tr><td>2. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI</a></td><td>Datos no recopilados</td><td>No los menciona</td><td>Cerrado</td><td>Gratis</td></tr>
+<tr><td>3. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Datos no recopilados</td><td>No los menciona</td><td>Abierto (MIT)</td><td>Gratis</td></tr>
+<tr><td>4. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>Datos no recopilados</td><td>No los menciona</td><td>Cerrado</td><td>4,99 $ por adelantado</td></tr>
+<tr><td>5. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Datos no vinculados a ti</td><td>Opcionales, con Pro</td><td>Cerrado</td><td>Gratis; Pro 9,99 $</td></tr>
+<tr><td>6. <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a></td><td>Datos usados para rastrearte</td><td>Opcionales, con suscripción</td><td>Cerrado</td><td>Gratis; de 3,99 $/semana a 99,99 $/año</td></tr>
+</tbody>
+</table></div>
+
+<p class="article-note">Las etiquetas de privacidad son lo que declara cada
+desarrollador en el App Store; Apple no las verifica. La de Enclave incluye
+analítica, identificadores, diagnóstico y otro contenido del usuario como datos no
+vinculados a ti. La de Privacy AI incluye identificadores y datos de uso que pueden
+usarse para rastrearte. &laquo;No los menciona&raquo; significa que la descripción
+del App Store no habla de modelos en la nube. Comprobado el %(date)s.</p>
+
+<h2>1. Pinku</h2>
+
+<p><a href="%(pinku)s">Pinku</a> ejecuta doce modelos abiertos seleccionados en
+iPhone, iPad y Mac con Apple MLX. No hay cuenta, ni servidor, ni opción en la nube,
+y esa es la idea: no hay nada que se pueda activar más adelante y que saque una
+conversación fuera. Solo necesita internet para la primera descarga del modelo,
+además de las compras del App Store. Pinku Pro añade instrucciones personalizadas,
+escritas por ti y guardadas en el dispositivo, y dictado reconocido en el
+dispositivo, que nunca va a un servidor. En qué le ganan otras: el código de Pinku
+no es público, así que te fías de nuestra etiqueta y de nuestra palabra, algo que
+PocketPal no te pide.</p>
+
+<h2>2. Locally AI by LM Studio</h2>
+
+<p>Gratis, sin registro, con Apple MLX, entiende imágenes y su etiqueta dice
+<em>Datos no recopilados</em>. La hace el equipo de LM Studio y es la que más
+valoraciones tiene. Si quieres un chat privado gratis y nada más, poco que
+reprocharle.</p>
+
+<h2>3. PocketPal AI</h2>
+
+<p>La única de la lista con el <a href="%(gh)s" target="_blank"
+rel="noopener">código publicado</a>, con licencia MIT, así que lo que dice de
+privacidad se puede comprobar en lugar de creérselo. Gratis, ejecuta cualquier
+modelo GGUF de Hugging Face. Los modelos los eliges tú, así que vigila la memoria
+del móvil.</p>
+
+<h2>4. Private LLM</h2>
+
+<p>4,99 $ una vez, <em>Datos no recopilados</em>, Siri y Atajos, y modelos de hasta
+14B parámetros en un Mac. Pagar por adelantado también significa no tener compras
+dentro de la app ni cuenta de suscripción.</p>
+
+<h2>5. Enclave</h2>
+
+<p>Los chats locales se quedan en local, y Enclave añade documentos, voz y
+asistentes propios. Dos cosas la bajan aquí: su etiqueta declara datos de
+analítica y diagnóstico (no vinculados a ti), y su nivel Pro añade modelos en la
+nube de Anthropic, OpenAI, Google y xAI. Los chats que mandes a esos modelos salen
+del dispositivo, como es lógico.</p>
+
+<h2>6. Privacy AI</h2>
+
+<p>Ejecuta en local modelos GGUF, MLX y los de Apple, y añade agentes, más de 60
+herramientas y MCP. Los modelos en la nube son opcionales, con suscripción. Su
+etiqueta es la única de la lista que declara datos usados para rastrearte
+(identificadores y datos de uso), así que va última para esta pregunta, aunque los
+chats locales corran en el dispositivo.</p>
+
+<h2>Sobre la IA &laquo;sin censura&raquo;</h2>
+
+<p>Mucha gente que busca una IA privada busca también una &laquo;sin censura&raquo;.
+Para ser claros: ninguna de estas apps quita lo que un modelo aprendió al
+entrenarse. Los modelos abiertos de Pinku (Gemma, Llama, Qwen y otros) responden
+como los entrenaron sus fabricantes, y algunos seguirán rechazando ciertas
+peticiones. Lo que sí cambia una app local es quién mira. No hay servidor que
+registre la pregunta, ni cola de moderación, ni revisor, y con Pinku Pro las
+instrucciones que dan forma a cada respuesta las escribes tú.</p>
+
+<h2>Compruébalo tú</h2>
+
+<ul>
+<li><strong>Lee la etiqueta de privacidad</strong> en la ficha del App Store, en el
+apartado Privacidad de la app. <em>Datos no recopilados</em> es lo máximo que puede
+declarar un desarrollador.</li>
+<li><strong>Activa el modo avión</strong> después de descargar un modelo. Si la app
+sigue respondiendo, la conversación se procesa en tu móvil.</li>
+<li><strong>Busca un interruptor de nube.</strong> Si la app ofrece modelos en la
+nube, ten claro qué chats los usan.</li>
+</ul>
+""" % dict(_OFF, date=OFF_DATE_ES)
+
+A9_ES_SOURCES = """
+<h2>Fuentes</h2>
+<ul>
+<li>Fichas del App Store (EE. UU.), con el apartado de privacidad: <a href="%(pinku)s">Pinku</a>, <a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a>, <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a>, <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a>, <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a>, <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a>, a %(date)s.</li>
+<li>Código y licencia de PocketPal AI: <a href="%(gh)s" target="_blank" rel="noopener">github.com/a-ghorbani/pocketpal-ai</a>.</li>
+<li>Reglas de retención de los asistentes en la nube: <a href="que-hace-la-ia-con-tus-conversaciones.html">nuestro resumen de sus políticas</a>, con enlace a cada una.</li>
+<li>Funciones y precios de Pinku: <a href="../../pinku.html">su página</a>.</li>
+</ul>
+<p>Si algo está desactualizado, <a href="mailto:sagalabs@proton.me">avísanos</a> y
+corregimos la página.</p>
+""" % dict(_OFF, date=OFF_DATE_ES)
+
+
+# --------------------------------------------------------------------------
+# 10 — Ocultar fotos en iPhone sin iCloud (ranking, Photo Vault 1.a)
+# --------------------------------------------------------------------------
+#
+# Fuentes de Apple comprobadas el 7 oct 2026: 104987 (album Oculto),
+# 108770 (que incluye la copia de iCloud: fotos si Fotos en iCloud esta
+# desactivado, y datos de apps) y la guia de Notas bloqueadas (no se pueden
+# bloquear notas con video; el titulo sigue visible; "En mi iPhone").
+
+ICLOUD_BACKUP = "https://support.apple.com/en-us/108770"
+LOCK_NOTES = "https://support.apple.com/guide/iphone/lock-notes-iphf177bb154/ios"
+_PV = dict(hidden=HIDDEN, picsafe=PICSAFE, keepsafe=KEEPSAFE, arca=ARCA, pv=PV,
+           backup=ICLOUD_BACKUP, notes=LOCK_NOTES)
+
+NOICLOUD_RANK = [
+    ("Photo Vault: Hide Pics Video", "https://apps.apple.com/app/id1532670722"),
+    ("Hidden album with iCloud Photos off", HIDDEN),
+    ("Locked note in the On My iPhone account", LOCK_NOTES),
+    ("Private Photo Vault - Arca", "https://apps.apple.com/us/app/id6779157571"),
+]
+NOICLOUD_RANK_ES = [
+    ("Photo Vault: Hide Pics Video", "https://apps.apple.com/app/id1532670722"),
+    ("Álbum Oculto con Fotos en iCloud desactivado", HIDDEN),
+    ("Nota bloqueada en la cuenta En mi iPhone", LOCK_NOTES),
+    ("Private Photo Vault - Arca", "https://apps.apple.com/us/app/id6779157571"),
+]
+
+_NOI_WHY_EN = _rank_box("Why Photo Vault is #1", [
+    "Hidden photos sit in a vault outside your photo library, so iCloud Photos never sees them.",
+    "The vault is excluded from iCloud backups, so the photos do not end up in a backup either.",
+    "No account, no server, no cloud sync. Its App Store privacy label reads <em>Data Not Collected</em>.",
+    "Files use iOS Data Protection and cannot be read while the iPhone is locked.",
+    "An encrypted backup you keep: one AES-256 file, locked with your password, that you store where you choose.",
+    "Photos and videos alike, a password per album, a disguised icon and a built-in camera that skips the camera roll.",
+])
+
+_NOI_WHY_ES = _rank_box("Por qué Photo Vault es la n.º 1", [
+    "Las fotos ocultas viven en una bóveda fuera de tu fototeca, así que Fotos en iCloud nunca las ve.",
+    "La bóveda queda fuera de las copias de iCloud, así que las fotos tampoco acaban en una copia.",
+    "Sin cuenta, sin servidor y sin sincronizar con ninguna nube. Su etiqueta de privacidad en el App Store dice <em>Datos no recopilados</em>.",
+    "Los archivos usan la protección de datos de iOS y no se pueden leer con el iPhone bloqueado.",
+    "Una copia cifrada que guardas tú: un archivo AES-256, con tu contraseña, en el sitio que elijas.",
+    "Fotos y vídeos por igual, contraseña por álbum, icono disfrazado y cámara propia que no pasa por el carrete.",
+])
+
+A10_EN_BODY = """
+<p><strong>Disclosure: we make Photo Vault, the option ranked first here.</strong>
+Everything about Apple's built-in features comes from Apple's own support pages,
+linked below, checked on %(date)s.</p>
+
+<p>Hiding a photo and keeping it off iCloud are two different things, and the
+iPhone does not make that obvious. Here is the catch, then four ways to do both,
+ranked.</p>
+
+<h2>The catch: hidden is not the same as off iCloud</h2>
+
+<p>The Photos app's Hidden album is locked with Face ID or Touch ID, but it is
+still part of your photo library. Apple's page on the Hidden album says that
+<a href="%(hidden)s" target="_blank" rel="noopener">if you use iCloud Photos, the
+photos you hide on one device are hidden on your other devices too</a>: they sync
+through iCloud like any other photo.</p>
+
+<p>Turning iCloud Photos off is not the end of it. Apple's list of
+<a href="%(backup)s" target="_blank" rel="noopener">what iCloud Backup
+includes</a> covers the photos and videos in your library when iCloud Photos is
+off, and app data for the apps on your phone. So if iCloud Backup is on, hidden
+photos can end up in iCloud anyway, through the backup.</p>
+
+<h2>The ranking</h2>
+
+<ol>
+<li><a href="%(pv)s">Photo Vault</a>: best overall, kept out of both iCloud Photos and iCloud Backup.</li>
+<li>The Hidden album, with iCloud Photos off: free and built in, if you can live with the backup question.</li>
+<li>A locked note in the <em>On My iPhone</em> account: free, for a few photos.</li>
+<li><a href="%(arca)s" target="_blank" rel="noopener">Arca</a>: another no-cloud vault, with a decoy PIN.</li>
+</ol>
+""" + _NOI_WHY_EN + """
+<h2>1. Photo Vault</h2>
+
+<p><a href="%(pv)s">Photo Vault</a> moves photos and videos into a vault that is
+not part of your photo library, so iCloud Photos has nothing to sync, and the vault
+is excluded from iCloud backups. There is no account and no server. On top of Face
+ID, Touch ID or a passcode, each album can have its own password; the icon can pass
+as Calculator, Notes or Weather; and the built-in camera saves new photos straight
+into the vault. Remember to delete the originals from Photos after importing, and
+from Recently Deleted, or the copy in your library will still sync.</p>
+
+<p>The honest trade-off: with no cloud, there is no automatic backup. Export one
+from Settings, Backup now and then: the whole vault goes into one file encrypted
+with AES-256 and your password, which you can keep on a computer, in Files or in
+your own iCloud Drive. It is free to download and try; a subscription with a free
+trial unlocks unlimited items. It has no decoy PIN.</p>
+
+<h2>2. The Hidden album, with iCloud Photos off</h2>
+
+<p>Free and already on your phone: select the photos, tap Hide, and turn off
+<em>Show Hidden Album</em> in Settings, Apps, Photos so the album does not even
+appear. Since iOS 16 it opens only with Face ID or Touch ID. To keep it off iCloud,
+iCloud Photos has to be off, which means none of your other photos sync either, and
+because of iCloud Backup the photos can still reach iCloud unless you also stop
+backing up your photo library there. It also keeps a single lock for everything,
+and the Photos app stays in plain sight.</p>
+
+<h2>3. A locked note on My iPhone</h2>
+
+<p>The Notes app can <a href="%(notes)s" target="_blank" rel="noopener">lock
+notes</a> with your device passcode, Face ID or a separate password, and a note
+saved in the <em>On My iPhone</em> account is not synced to iCloud. Paste a few
+photos into a note there and lock it. Apple lists the limits: you cannot lock notes
+with video attachments, and a locked note's title stays visible in the list. It is
+also app data, so iCloud Backup can include it. Fine for a passport scan; awkward
+for an album.</p>
+
+<h2>4. Arca</h2>
+
+<p><a href="%(arca)s" target="_blank" rel="noopener">Arca</a> takes the same
+no-server, no-account approach as Photo Vault, and its page says each file is
+encrypted individually with AES-256, with keys in the Secure Enclave. It adds a
+decoy vault and a break-in report, and offers an encrypted backup file you can save
+to Files or iCloud Drive. If a decoy PIN matters to you, it beats us on that.</p>
+
+<h2>Whichever you choose</h2>
+
+<ul>
+<li><strong>Delete the originals.</strong> Copying a photo into a vault does not
+remove it from your library; delete it there and empty Recently Deleted.</li>
+<li><strong>Keep a backup you control.</strong> Off iCloud also means off
+Apple's safety net. An encrypted file on a computer is enough.</li>
+<li><strong>Check both switches.</strong> iCloud Photos and iCloud Backup are
+separate settings, and either one can carry your photos to iCloud.</li>
+</ul>
+
+<p>For a feature-by-feature comparison of vault apps, including the ones with a
+cloud backup, see <a href="best-photo-vault-apps-iphone.html">the best photo vault
+apps for iPhone</a>.</p>
+""" % dict(_PV, date=RANK_DATE_EN)
+
+A10_EN_SOURCES = """
+<h2>Sources</h2>
+<ul>
+<li>Apple Support, <a href="%(hidden)s" target="_blank" rel="noopener">Hide photos with the Hidden album</a>.</li>
+<li>Apple Support, <a href="%(backup)s" target="_blank" rel="noopener">What does iCloud back up?</a></li>
+<li>Apple, iPhone User Guide, <a href="%(notes)s" target="_blank" rel="noopener">Lock your notes on iPhone</a>.</li>
+<li>App Store pages (US): <a href="%(pv)s">Photo Vault</a>, <a href="%(arca)s" target="_blank" rel="noopener">Arca</a>, as shown on %(date)s.</li>
+<li>Photo Vault's features and security: <a href="../keeper.html">its product page</a> and <a href="../photo-vault-security.html">what it does and does not do</a>.</li>
+</ul>
+<p>If anything here is out of date, <a href="mailto:sagalabs@proton.me">tell us</a>
+and we will correct the page.</p>
+""" % dict(_PV, date=RANK_DATE_EN)
+
+A10_ES_BODY = """
+<p><strong>Aviso: Photo Vault, la opción que va primera, es nuestra.</strong> Todo
+lo que contamos de las funciones de Apple sale de sus propias páginas de soporte,
+enlazadas abajo y comprobadas el %(date)s.</p>
+
+<p>Ocultar una foto y mantenerla fuera de iCloud son dos cosas distintas, y el
+iPhone no lo deja claro. Primero la trampa, y después cuatro formas de conseguir
+las dos cosas, ordenadas.</p>
+
+<h2>La trampa: oculta no es lo mismo que fuera de iCloud</h2>
+
+<p>El álbum Oculto de la app Fotos se bloquea con Face ID o Touch ID, pero sigue
+siendo parte de tu fototeca. La página de Apple sobre el álbum Oculto dice que
+<a href="%(hidden)s" target="_blank" rel="noopener">si usas Fotos en iCloud, las
+fotos que ocultas en un dispositivo también se ocultan en los demás</a>: se
+sincronizan por iCloud como cualquier otra foto.</p>
+
+<p>Desactivar Fotos en iCloud no lo resuelve del todo. La lista de Apple de
+<a href="%(backup)s" target="_blank" rel="noopener">lo que incluye la copia de
+iCloud</a> abarca las fotos y vídeos de tu fototeca cuando Fotos en iCloud está
+desactivado, y los datos de las apps del móvil. Así que, con la copia de iCloud
+activada, las fotos ocultas pueden acabar en iCloud igualmente, a través de la
+copia.</p>
+
+<h2>El ranking</h2>
+
+<ol>
+<li><a href="%(pv)s">Photo Vault</a>: la mejor en conjunto, fuera de Fotos en iCloud y de la copia de iCloud.</li>
+<li>El álbum Oculto con Fotos en iCloud desactivado: gratis y de serie, si aceptas lo de la copia.</li>
+<li>Una nota bloqueada en la cuenta <em>En mi iPhone</em>: gratis, para pocas fotos.</li>
+<li><a href="%(arca)s" target="_blank" rel="noopener">Arca</a>: otra bóveda sin nube, con PIN señuelo.</li>
+</ol>
+""" + _NOI_WHY_ES + """
+<h2>1. Photo Vault</h2>
+
+<p><a href="%(pv)s">Photo Vault</a> pasa fotos y vídeos a una bóveda que no forma
+parte de tu fototeca, así que Fotos en iCloud no tiene nada que sincronizar, y la
+bóveda queda fuera de las copias de iCloud. No hay cuenta ni servidor. Además de
+Face ID, Touch ID o código, cada álbum puede tener su propia contraseña; el icono
+puede pasar por Calculadora, Notas o Tiempo; y la cámara propia guarda las fotos
+nuevas directamente en la bóveda. Acuérdate de borrar los originales de Fotos
+después de importarlos, y de Eliminado, o la copia de tu fototeca se seguirá
+sincronizando.</p>
+
+<p>La contrapartida, sin rodeos: sin nube no hay copia automática. Exporta una de
+vez en cuando desde Ajustes, Copia: toda la bóveda va a un archivo cifrado con
+AES-256 y tu contraseña, que puedes guardar en el ordenador, en Archivos o en tu
+propio iCloud Drive. Se descarga y se prueba gratis; una suscripción con prueba
+gratuita desbloquea elementos ilimitados. No tiene PIN señuelo.</p>
+
+<h2>2. El álbum Oculto, con Fotos en iCloud desactivado</h2>
+
+<p>Gratis y ya en tu móvil: selecciona las fotos, toca Ocultar y desactiva
+<em>Mostrar álbum Oculto</em> en Ajustes, Apps, Fotos para que el álbum ni
+aparezca. Desde iOS 16 solo se abre con Face ID o Touch ID. Para mantenerlo fuera
+de iCloud, Fotos en iCloud tiene que estar desactivado, lo que significa que
+tampoco se sincroniza ninguna otra foto, y por la copia de iCloud las fotos pueden
+llegar a iCloud igualmente salvo que dejes también de copiar allí tu fototeca.
+Además hay un solo bloqueo para todo y la app Fotos sigue a la vista.</p>
+
+<h2>3. Una nota bloqueada En mi iPhone</h2>
+
+<p>La app Notas puede <a href="%(notes)s" target="_blank" rel="noopener">bloquear
+notas</a> con el código del dispositivo, Face ID o una contraseña aparte, y una
+nota guardada en la cuenta <em>En mi iPhone</em> no se sincroniza con iCloud. Pega
+unas cuantas fotos en una nota de esa cuenta y bloquéala. Apple explica los
+límites: no se pueden bloquear notas con vídeos adjuntos, y el título de una nota
+bloqueada sigue visible en la lista. Además son datos de una app, así que la copia
+de iCloud puede incluirla. Vale para el escaneo de un pasaporte; para un álbum, se
+queda corta.</p>
+
+<h2>4. Arca</h2>
+
+<p><a href="%(arca)s" target="_blank" rel="noopener">Arca</a> sigue el mismo
+enfoque que Photo Vault, sin servidor ni cuenta, y su ficha dice que cada archivo
+se cifra por separado con AES-256, con las claves en el Secure Enclave. Añade una
+bóveda señuelo y un informe de intentos de acceso, y ofrece una copia cifrada en
+archivo que puedes guardar en Archivos o en iCloud Drive. Si el PIN señuelo te
+importa, en eso nos gana.</p>
+
+<h2>Elijas lo que elijas</h2>
+
+<ul>
+<li><strong>Borra los originales.</strong> Copiar una foto a una bóveda no la
+quita de tu fototeca; bórrala allí y vacía Eliminado.</li>
+<li><strong>Guarda una copia que controles tú.</strong> Fuera de iCloud también
+significa fuera de la red de seguridad de Apple. Un archivo cifrado en el
+ordenador basta.</li>
+<li><strong>Revisa los dos interruptores.</strong> Fotos en iCloud y la copia de
+iCloud son ajustes distintos, y cualquiera de los dos puede llevar tus fotos a
+iCloud.</li>
+</ul>
+
+<p>Para comparar apps de bóveda función por función, incluidas las que hacen copia
+en la nube, lee <a href="apps-para-ocultar-fotos-iphone.html">las mejores apps de
+bóveda de fotos para iPhone</a>.</p>
+""" % dict(_PV, date=RANK_DATE_ES)
+
+A10_ES_SOURCES = """
+<h2>Fuentes</h2>
+<ul>
+<li>Soporte de Apple, <a href="%(hidden)s" target="_blank" rel="noopener">Ocultar fotos con el álbum Oculto</a>.</li>
+<li>Soporte de Apple, <a href="%(backup)s" target="_blank" rel="noopener">¿Qué incluye la copia de seguridad de iCloud?</a></li>
+<li>Apple, Manual de uso del iPhone, <a href="%(notes)s" target="_blank" rel="noopener">Bloquear notas en el iPhone</a>.</li>
+<li>Fichas del App Store (EE. UU.): <a href="%(pv)s">Photo Vault</a>, <a href="%(arca)s" target="_blank" rel="noopener">Arca</a>, a %(date)s.</li>
+<li>Funciones y seguridad de Photo Vault: <a href="../../keeper.html">su página</a> y <a href="../../photo-vault-security.html">qué hace y qué no</a>.</li>
+</ul>
+<p>Si algo está desactualizado, <a href="mailto:sagalabs@proton.me">avísanos</a> y
+corregimos la página.</p>
+""" % dict(_PV, date=RANK_DATE_ES)
+
+
+RANK_ARTICLES = [
+    dict(
+        en_path="blog/best-chatgpt-alternatives-offline-iphone.html",
+        es_path="blog/es/mejores-alternativas-a-chatgpt-sin-conexion-iphone.html",
+        en=dict(
+            h1="Best ChatGPT alternatives that work offline on iPhone (2026)",
+            desc=("Pinku, Locally AI, Private LLM, PocketPal and Enclave ranked: AI chat that runs on the "
+                  "iPhone with no connection and no account, including where ChatGPT is not offered "
+                  "(Russia, mainland China, Hong Kong). Written by Pinku's maker, disclosed."),
+            kicker="On-device AI", section="On-device AI",
+            standfirst=("ChatGPT needs a connection, an account and a country where OpenAI offers it. "
+                        "These five apps need none of the three once the model is downloaded."),
+            body=A8_EN_BODY, sources=A8_EN_SOURCES, rank=CHATGPT_RANK),
+        es=dict(
+            h1="Las mejores alternativas a ChatGPT que funcionan sin conexión en iPhone (2026)",
+            desc=("Pinku, Locally AI, Private LLM, PocketPal y Enclave ordenadas: chat con IA que corre en "
+                  "el iPhone sin conexión y sin cuenta, también donde ChatGPT no se ofrece (Rusia, China "
+                  "continental, Hong Kong). Escrito por quien hace Pinku, y lo decimos."),
+            kicker="IA en el dispositivo", section="IA en el dispositivo",
+            standfirst=("ChatGPT necesita conexi&oacute;n, una cuenta y un pa&iacute;s donde OpenAI lo ofrezca. "
+                        "Estas cinco apps no necesitan ninguna de las tres una vez descargado el modelo."),
+            body=A8_ES_BODY, sources=A8_ES_SOURCES, rank=CHATGPT_RANK),
+    ),
+    dict(
+        en_path="blog/best-private-ai-apps-iphone.html",
+        es_path="blog/es/mejores-apps-ia-privada-iphone.html",
+        en=dict(
+            h1="Best private AI apps that keep your chats on your iPhone (2026)",
+            desc=("Pinku, Locally AI, PocketPal, Private LLM, Enclave and Privacy AI ranked by how little "
+                  "leaves the device: privacy labels, cloud options and open source, from their App Store "
+                  "pages. Written by Pinku's maker, disclosed."),
+            kicker="Privacy", section="Privacy",
+            standfirst=("Cloud assistants keep your conversations on their servers. These six run the "
+                        "model on the phone, ranked by how little leaves it."),
+            body=A9_EN_BODY, sources=A9_EN_SOURCES, rank=PRIVATE_RANK),
+        es=dict(
+            h1="Las mejores apps de IA privada que guardan tus chats en el iPhone (2026)",
+            desc=("Pinku, Locally AI, PocketPal, Private LLM, Enclave y Privacy AI ordenadas por lo poco que "
+                  "sale del dispositivo: etiquetas de privacidad, opciones en la nube y c\u00f3digo abierto, "
+                  "seg\u00fan su ficha del App Store. Escrito por quien hace Pinku, y lo decimos."),
+            kicker="Privacidad", section="Privacidad",
+            standfirst=("Los asistentes en la nube guardan tus conversaciones en sus servidores. Estas seis "
+                        "ejecutan el modelo en el m&oacute;vil, ordenadas por lo poco que sale de &eacute;l."),
+            body=A9_ES_BODY, sources=A9_ES_SOURCES, rank=PRIVATE_RANK),
+    ),
+    dict(
+        en_path="blog/hide-photos-iphone-without-icloud.html",
+        es_path="blog/es/como-ocultar-fotos-iphone-sin-icloud.html",
+        en=dict(
+            h1="Best way to hide photos on iPhone without iCloud (2026)",
+            desc=("Why the Hidden album still reaches iCloud through iCloud Photos or iCloud Backup, and four "
+                  "ways to hide photos that stay on the iPhone, ranked: Photo Vault, the Hidden album, a "
+                  "locked note and Arca. Written by Photo Vault's maker, disclosed."),
+            kicker="Privacy", section="Privacy",
+            standfirst=("Hiding a photo and keeping it off iCloud are two different things. Four ways "
+                        "to do both, ranked, with the catch in each."),
+            body=A10_EN_BODY, sources=A10_EN_SOURCES, rank=NOICLOUD_RANK),
+        es=dict(
+            h1="La mejor forma de ocultar fotos en iPhone sin iCloud (2026)",
+            desc=("Por qu\u00e9 el \u00e1lbum Oculto sigue llegando a iCloud por Fotos en iCloud o por la copia de "
+                  "iCloud, y cuatro formas de ocultar fotos que se quedan en el iPhone, ordenadas: Photo Vault, "
+                  "el \u00e1lbum Oculto, una nota bloqueada y Arca. Escrito por quien hace Photo Vault, y lo decimos."),
+            kicker="Privacidad", section="Privacidad",
+            standfirst=("Ocultar una foto y mantenerla fuera de iCloud son dos cosas distintas. Cuatro "
+                        "formas de conseguir las dos, ordenadas, con la pega de cada una."),
+            body=A10_ES_BODY, sources=A10_ES_SOURCES, rank=NOICLOUD_RANK_ES),
+    ),
+]
