@@ -362,6 +362,17 @@ INDEX_EN = """
         <div class="article-body">
         <ul class="post-list">
             <li>
+                <a href="best-3-task-todo-apps-iphone.html">Best to-do apps that limit you to 3 tasks a day (2026)</a>
+                <p>3 Tasks, Three Todo, Top 3, Structured and TickTick ranked: the
+                limit, timers, price and privacy label. Ours is first, disclosed.</p>
+            </li>
+            <li>
+                <a href="best-ai-apps-ugc-video-ads-iphone.html">Best AI apps to make UGC video ads on iPhone (2026)</a>
+                <p>Dora, HeyGen, Captions, Vmake Labs and Zeely ranked for UGC-style
+                ads: product scenes, talking avatars, editing and launching. Ours is
+                first, disclosed.</p>
+            </li>
+            <li>
                 <a href="best-ai-video-generator-apps-iphone.html">Best AI video generator apps for iPhone in 2026</a>
                 <p>Runway, Kling AI, Pika, PixVerse, Luma Dream Machine, invideo,
                 CapCut and our own Dora: what each one is best at, how it
@@ -424,6 +435,18 @@ INDEX_ES = """
         </p>
         <div class="article-body">
         <ul class="post-list">
+            <li>
+                <a href="mejores-apps-3-tareas-al-dia-iphone.html">Las mejores apps de tareas que te limitan a 3 al d&iacute;a (2026)</a>
+                <p>3 Tasks, Three Todo, Top 3, Structured y TickTick ordenadas: el
+                l&iacute;mite, el temporizador, el precio y la etiqueta de privacidad.
+                La primera es nuestra, y lo decimos.</p>
+            </li>
+            <li>
+                <a href="mejores-apps-ia-anuncios-ugc-iphone.html">Las mejores apps de IA para hacer anuncios UGC en iPhone (2026)</a>
+                <p>Dora, HeyGen, Captions, Vmake Labs y Zeely ordenadas para anuncios
+                estilo UGC: escenas de producto, avatares que hablan, edici&oacute;n y
+                lanzamiento. La primera es nuestra, y lo decimos.</p>
+            </li>
             <li>
                 <a href="mejores-apps-generador-video-ia-iphone.html">Las mejores apps para generar v&iacute;deo con IA en iPhone (2026)</a>
                 <p>Runway, Kling AI, Pika, PixVerse, Luma Dream Machine, invideo,
@@ -3347,3 +3370,636 @@ RANK_ARTICLES = [
             body=A10_ES_BODY, sources=A10_ES_SOURCES, rank=NOICLOUD_RANK_ES),
     ),
 ]
+
+
+# --------------------------------------------------------------------------
+# 11 — Apps de IA para hacer anuncios UGC en iPhone (ranking, Dora 1.a)
+# --------------------------------------------------------------------------
+#
+# Angulo distinto del articulo 7 (comparativa general de video con IA) y de los
+# rankings de doravideo.com (foto a video, TikTok/Reels, generador iPhone): aqui
+# el trabajo concreto es el anuncio estilo UGC. Competidores comprobados el
+# 7 oct 2026 en su ficha del App Store (EE. UU.) y la API de lookup de iTunes.
+# Fuera: "Creatify AI UGC Video Ad Maker" (id6755723951) lo publica PEPR AI
+# Limited con copyright "Make UGC", no parece la app oficial de Creatify.
+# Dora, comprobado en el repo Dora: Same Character (hasta 7 fotos, iOS y web),
+# Motion Control (necesita una persona en la foto), Lip Sync y voz ElevenLabs
+# solo en la web (web/lib/models.ts; no estan en Dora/AIModel.swift), mediana
+# de 115 s por video (docs/README.md), sin generaciones gratis. Sin precios ni
+# numero de modelos de Dora. Sin rayas en el texto.
+
+DORA_UGC_WEB = "https://doravideo.com/?utm_source=aisagalab&amp;utm_medium=referral&amp;utm_campaign=dora_blog_ugc"
+DORA_UGC_IOS = "https://apps.apple.com/app/apple-store/id6754180384?pt=118348020&amp;ct=sagalab-blog&amp;mt=8"
+DORA_UGC_CONNECTORS = "https://doravideo.com/connectors?utm_source=aisagalab&amp;utm_medium=referral&amp;utm_campaign=dora_blog_ugc"
+HEYGEN = "https://apps.apple.com/us/app/id6711356409"
+CAPTIONS = "https://apps.apple.com/us/app/id1541407007"
+VMAKE = "https://apps.apple.com/us/app/id6476962932"
+ZEELY = "https://apps.apple.com/us/app/id1586861768"
+
+_UGC = dict(dora=DORA_UGC_WEB, dora_ios=DORA_UGC_IOS, connectors=DORA_UGC_CONNECTORS,
+            heygen=HEYGEN, captions=CAPTIONS, vmake=VMAKE, zeely=ZEELY)
+
+UGC_RANK = [
+    ("DORA · AI Video Generator", "https://apps.apple.com/app/id6754180384"),
+    ("AI Avatar Generator - HeyGen", HEYGEN),
+    ("Captions: AI Edits Your Video", CAPTIONS),
+    ("Vmake Labs: create viral video", VMAKE),
+    ("Zeely: AI Marketing Platform", ZEELY),
+]
+
+_UGC_WHY_EN = _rank_box("Why Dora is #1", [
+    "Many of the leading video models in one app, so you can run the same product photo or the same hook through several and keep the best take.",
+    "Same Character: up to seven photos of one person, then any scene you describe, so the same &ldquo;creator&rdquo; appears across a whole batch of ads.",
+    "Motion Control: give it a photo of a person and a reference clip, and the person makes the gesture or the dance from the clip.",
+    "On the web, Lip Sync turns a face photo plus an audio track into a talking clip, and AI voice-over writes that audio from your script.",
+    "Works inside Claude and ChatGPT through an MCP connector, with the same account and balance, so an assistant can draft ten hooks and generate them for you.",
+    "You see what each generation costs before you tap Generate. A video takes about 2 minutes.",
+])
+
+_UGC_WHY_ES = _rank_box("Por qué Dora es la n.º 1", [
+    "Muchos de los principales modelos de vídeo en una sola app, así que puedes pasar la misma foto de producto o el mismo gancho por varios y quedarte con la mejor toma.",
+    "Same Character: hasta siete fotos de una persona y después cualquier escena que describas, para que el mismo &laquo;creador&raquo; salga en toda una tanda de anuncios.",
+    "Motion Control: le das la foto de una persona y un clip de referencia, y la persona hace el gesto o el baile del clip.",
+    "En la web, Lip Sync convierte una foto de una cara y una pista de audio en un clip hablado, y la voz con IA genera ese audio a partir de tu guion.",
+    "Funciona dentro de Claude y ChatGPT con un conector MCP, con la misma cuenta y el mismo saldo, así que un asistente puede escribir diez ganchos y generarlos por ti.",
+    "Ves lo que cuesta cada generación antes de tocar Generar. Un vídeo tarda unos 2 minutos.",
+])
+
+A11_EN_BODY = """
+<p><strong>Disclosure: we make Dora, the app ranked first here.</strong>
+Everything we say about the other apps comes from their own App Store pages, and
+we say plainly where they beat us. Ratings and in-app purchases are from the US
+App Store on %(date)s. We say how each app charges, not what it costs, because
+prices change by country and by week.</p>
+
+<p>A UGC ad is an ad that looks like a customer filmed it: a person holding the
+product, talking to the phone, in a kitchen or a car. Brands like the format
+because it does not look like an ad, and because the way to find one that works
+is to test many hooks, not to polish one. That is exactly where AI helps: ten
+versions of an opening line, the same face in each, without booking a creator
+ten times. These five apps do that job in different ways.</p>
+
+<h2>The ranking</h2>
+
+<ol>
+<li><a href="%(dora)s">Dora</a>: best for generating many scenes and hooks with your own product, on iPhone and on the web.</li>
+<li><a href="%(heygen)s" target="_blank" rel="noopener">HeyGen</a>: best for a talking avatar of you, in your own voice.</li>
+<li><a href="%(captions)s" target="_blank" rel="noopener">Captions</a>: best for editing and captioning the finished ad.</li>
+<li><a href="%(vmake)s" target="_blank" rel="noopener">Vmake Labs</a>: best ready-made UGC formats for a product photo.</li>
+<li><a href="%(zeely)s" target="_blank" rel="noopener">Zeely</a>: best if you also want the app to launch the ads for you.</li>
+</ol>
+""" + _UGC_WHY_EN + """
+<h2>The five apps at a glance</h2>
+
+<div class="table-scroll"><table>
+<thead><tr><th></th><th>Strongest at</th><th>How it charges</th><th>Rating (US)</th></tr></thead>
+<tbody>
+<tr><td>1. <a href="%(dora_ios)s">Dora</a> (ours)</td><td>Product scenes, a recurring character, Motion Control; also on the web and inside Claude and ChatGPT</td><td>Paid plans only, no free generations</td><td>4.3 &middot; 15</td></tr>
+<tr><td>2. <a href="%(heygen)s" target="_blank" rel="noopener">HeyGen</a></td><td>Your own avatar and voice reading a script; translation into 100+ languages</td><td>Weekly or monthly plans, plus credit packs</td><td>4.8 &middot; 26,783</td></tr>
+<tr><td>3. <a href="%(captions)s" target="_blank" rel="noopener">Captions</a></td><td>AI editing, subtitles, dubbing, AI actors and an AI twin from a selfie</td><td>Weekly, monthly or yearly subscriptions</td><td>4.7 &middot; 38,320</td></tr>
+<tr><td>4. <a href="%(vmake)s" target="_blank" rel="noopener">Vmake Labs</a></td><td>Templates: unboxing, before and after, product in hand, lip sync</td><td>Subscriptions and credit packs</td><td>4.8 &middot; 5,170</td></tr>
+<tr><td>5. <a href="%(zeely)s" target="_blank" rel="noopener">Zeely</a></td><td>Ads from a product link, launched on Facebook and Instagram from the app</td><td>Weekly or multi-month plans, plus credits</td><td>4.6 &middot; 22,813</td></tr>
+</tbody>
+</table></div>
+
+<p class="article-note">All five are free to download and charge through in-app
+purchases. Ratings are from Apple's public lookup API on %(date)s.</p>
+
+<h2>1. Dora: the scenes, the character and the variations</h2>
+
+<p><a href="%(dora)s">Dora</a> is an AI video and image generator on
+<a href="%(dora_ios)s">iPhone</a> and at doravideo.com. For a UGC ad, the useful
+parts are these. Start from a photo of your product, or make one with an image
+model (the product in a hand, on a bathroom shelf), then animate it with a
+prompt. Keep the same person across a batch with Same Character, which takes up
+to seven photos of one person and puts them in any scene you describe. Copy a
+gesture or a dance onto a person in a photo with Motion Control; it needs a
+real human in the photo. On the web you can also write a script, turn it into a
+voice-over with the AI voice tool and make a face say it with Lip Sync. Because
+you choose the model, you can try one hook on several and keep the take that
+looks most real.</p>
+
+<p>Dora also works inside Claude and ChatGPT through an
+<a href="%(connectors)s">MCP connector</a>, with the same account and balance as
+the app. That is handy for UGC: ask the assistant for ten hooks for your product
+and let it generate the clips while you do something else.</p>
+
+<p>Where others beat it: Dora does not write the script from a product link,
+does not cut, caption or dub the finished ad, does not have a library of stock
+actors or clone your voice, and does not launch ads. Lip Sync and the voice tool
+are on the web app, not yet in the iPhone app. Not every take is usable, so plan
+on a few per hook, and a video takes about 2 minutes, not seconds. There is no
+free plan: you need a paid plan to generate.</p>
+
+<h2>2. HeyGen: you, on camera, without filming</h2>
+
+<p>HeyGen builds an avatar of you from one short video: your face and your voice.
+After that you type a script and the avatar says it. Its page also lists avatars
+from photos, a photo to talking video mode (Avatar 4), thousands of stock
+avatars, AI voices with lip sync, captions, and video translation into more than
+100 languages. Its Video Agent turns a prompt and an image into a video with
+b-roll. It charges with weekly or monthly plans and credit packs. If the ad is a
+person talking to camera, and that person should be you, HeyGen is the
+specialist.</p>
+
+<h2>3. Captions: finish the ad</h2>
+
+<p>Captions (by Mirage) is an editor first: one tap AI edits, a chat editor that
+applies cuts, b-roll and pacing when you describe them, automatic subtitles in
+91+ languages, dubbing into 29 and noise removal. It also makes AI actors and an
+AI twin from a selfie. It charges with weekly, monthly or yearly subscriptions.
+It pairs well with any generator on this list: make the clips elsewhere, then
+cut and caption them here.</p>
+
+<h2>4. Vmake Labs: formats for a product photo</h2>
+
+<p>Vmake Labs starts from a product photo and offers ready-made social formats,
+including UGC style videos (unboxing, before and after, how-to, product in hand,
+podcast), &ldquo;AI hook&rdquo; videos and meme formats, plus lip sync, a
+teleprompter and an enhancer. It charges with subscriptions and credit packs. A
+good fit for online sellers who want a format to fill in rather than a blank
+prompt.</p>
+
+<h2>5. Zeely: from video to running ad</h2>
+
+<p>Zeely goes further than the video: it reads your product link, writes a
+script, makes a talking video with avatars it says are based on real UGC
+creators, and then launches and tracks the campaign on Facebook and Instagram
+from the app. It can even build a sales page if you have no store. It charges
+with weekly or multi-month plans plus credits. Choose it if you want one app for
+the whole campaign and are happy with its templates.</p>
+
+<h2>How to choose</h2>
+
+<ul>
+<li><strong>You want many different scenes with your product and the same face across them:</strong> <a href="%(dora)s">Dora</a>.</li>
+<li><strong>The ad is you talking to camera, in your voice:</strong> HeyGen.</li>
+<li><strong>You already have clips and need them cut, captioned or dubbed:</strong> Captions.</li>
+<li><strong>You want a template for a product photo:</strong> Vmake Labs.</li>
+<li><strong>You want the app to run the ads too:</strong> Zeely.</li>
+</ul>
+
+<p>Whatever you use: write five hooks before you generate anything, keep the
+video vertical and short, and test the hooks against each other before you
+polish one. For a wider look at AI video apps, not just ads, see
+<a href="best-ai-video-generator-apps-iphone.html">the best AI video generator
+apps for iPhone</a>.</p>
+""" % dict(_UGC, date=RANK_DATE_EN)
+
+A11_EN_SOURCES = """
+<h2>Sources</h2>
+<ul>
+<li>App Store pages (US): <a href="%(dora_ios)s">Dora</a>, <a href="%(heygen)s" target="_blank" rel="noopener">HeyGen</a>, <a href="%(captions)s" target="_blank" rel="noopener">Captions</a>, <a href="%(vmake)s" target="_blank" rel="noopener">Vmake Labs</a>, <a href="%(zeely)s" target="_blank" rel="noopener">Zeely</a>. Descriptions and in-app purchases as shown on %(date)s.</li>
+<li>Ratings: Apple's public iTunes lookup API, %(date)s.</li>
+<li>Dora's features and connectors: <a href="../ai-video-generator.html">its page on this site</a> and <a href="%(connectors)s">doravideo.com/connectors</a>.</li>
+</ul>
+<p>If anything here is out of date, <a href="mailto:sagalabs@proton.me">tell us</a>
+and we will correct the page.</p>
+""" % dict(_UGC, date=RANK_DATE_EN)
+
+A11_ES_BODY = """
+<p><strong>Aviso: Dora, la app que va primera, es nuestra.</strong> Todo lo que
+decimos de las demás sale de su propia ficha del App Store, y decimos claramente
+en qué nos ganan. Valoraciones y compras dentro de la app de la App Store de
+EE. UU. a %(date)s. Contamos cómo cobra cada una, no cuánto, porque los precios
+cambian según el país y la semana.</p>
+
+<p>Un anuncio UGC es un anuncio que parece grabado por un cliente: una persona
+con el producto en la mano, hablando al móvil, en la cocina o en el coche. A las
+marcas les gusta porque no parece un anuncio, y porque la forma de dar con uno
+que funcione es probar muchos ganchos, no pulir uno. Ahí es justo donde ayuda la
+IA: diez versiones de la primera frase, con la misma cara en todas, sin
+contratar diez veces a un creador. Estas cinco apps lo resuelven de formas
+distintas.</p>
+
+<h2>El ranking</h2>
+
+<ol>
+<li><a href="%(dora)s">Dora</a>: la mejor para generar muchas escenas y ganchos con tu producto, en iPhone y en la web.</li>
+<li><a href="%(heygen)s" target="_blank" rel="noopener">HeyGen</a>: la mejor para un avatar tuyo que habla, con tu propia voz.</li>
+<li><a href="%(captions)s" target="_blank" rel="noopener">Captions</a>: la mejor para editar y subtitular el anuncio terminado.</li>
+<li><a href="%(vmake)s" target="_blank" rel="noopener">Vmake Labs</a>: los mejores formatos UGC listos para una foto de producto.</li>
+<li><a href="%(zeely)s" target="_blank" rel="noopener">Zeely</a>: la mejor si además quieres que la app lance los anuncios.</li>
+</ol>
+""" + _UGC_WHY_ES + """
+<h2>Las cinco apps de un vistazo</h2>
+
+<div class="table-scroll"><table>
+<thead><tr><th></th><th>En qué destaca</th><th>Cómo cobra</th><th>Valoración (EE. UU.)</th></tr></thead>
+<tbody>
+<tr><td>1. <a href="%(dora_ios)s">Dora</a> (nuestra)</td><td>Escenas de producto, un personaje que se repite, Motion Control; también en la web y dentro de Claude y ChatGPT</td><td>Solo planes de pago, sin generaciones gratis</td><td>4,3 &middot; 15</td></tr>
+<tr><td>2. <a href="%(heygen)s" target="_blank" rel="noopener">HeyGen</a></td><td>Tu propio avatar y tu voz leyendo un guion; traducción a más de 100 idiomas</td><td>Planes semanales o mensuales y packs de créditos</td><td>4,8 &middot; 26.783</td></tr>
+<tr><td>3. <a href="%(captions)s" target="_blank" rel="noopener">Captions</a></td><td>Edición con IA, subtítulos, doblaje, actores con IA y un gemelo a partir de un selfie</td><td>Suscripciones semanales, mensuales o anuales</td><td>4,7 &middot; 38.320</td></tr>
+<tr><td>4. <a href="%(vmake)s" target="_blank" rel="noopener">Vmake Labs</a></td><td>Plantillas: unboxing, antes y después, producto en mano, lip sync</td><td>Suscripciones y packs de créditos</td><td>4,8 &middot; 5.170</td></tr>
+<tr><td>5. <a href="%(zeely)s" target="_blank" rel="noopener">Zeely</a></td><td>Anuncios a partir del enlace del producto, lanzados en Facebook e Instagram desde la app</td><td>Planes semanales o de varios meses y créditos</td><td>4,6 &middot; 22.813</td></tr>
+</tbody>
+</table></div>
+
+<p class="article-note">Las cinco se descargan gratis y cobran con compras dentro
+de la app. Valoraciones de la API pública de Apple a %(date)s.</p>
+
+<h2>1. Dora: las escenas, el personaje y las variaciones</h2>
+
+<p><a href="%(dora)s">Dora</a> es un generador de vídeo e imagen con IA en
+<a href="%(dora_ios)s">iPhone</a> y en doravideo.com. Para un anuncio UGC, lo
+útil es esto. Parte de una foto de tu producto, o crea una con un modelo de
+imagen (el producto en una mano, en la estantería del baño), y anímala con una
+descripción. Mantén a la misma persona en toda una tanda con Same Character, que
+admite hasta siete fotos de una persona y la pone en cualquier escena que
+describas. Copia un gesto o un baile en la persona de una foto con Motion
+Control; necesita a una persona real en la foto. En la web, además, puedes
+escribir un guion, convertirlo en locución con la voz con IA y hacer que una cara
+lo diga con Lip Sync. Como eliges el modelo, puedes probar un gancho en varios y
+quedarte con la toma que parezca más real.</p>
+
+<p>Dora también funciona dentro de Claude y ChatGPT con un
+<a href="%(connectors)s">conector MCP</a>, con la misma cuenta y el mismo saldo
+que la app. Para UGC viene bien: pide al asistente diez ganchos para tu producto
+y deja que genere los clips mientras haces otra cosa.</p>
+
+<p>En qué le ganan las demás: Dora no escribe el guion a partir del enlace del
+producto, no corta, subtitula ni dobla el anuncio terminado, no tiene una
+biblioteca de actores ni clona tu voz, y no lanza anuncios. Lip Sync y la voz
+están en la web, todavía no en la app de iPhone. No todas las tomas sirven, así
+que cuenta con varias por gancho, y un vídeo tarda unos 2 minutos, no segundos.
+No hay plan gratis: para generar necesitas un plan de pago.</p>
+
+<h2>2. HeyGen: tú, en cámara, sin grabar</h2>
+
+<p>HeyGen crea un avatar tuyo a partir de un vídeo corto: tu cara y tu voz.
+Después escribes un guion y el avatar lo dice. Su ficha incluye también avatares a
+partir de fotos, un modo de foto a vídeo hablado (Avatar 4), miles de avatares de
+catálogo, voces con IA con lip sync, subtítulos y traducción de vídeo a más de 100
+idiomas. Su Video Agent convierte una descripción y una imagen en un vídeo con
+recursos. Cobra con planes semanales o mensuales y packs de créditos. Si el
+anuncio es una persona hablando a cámara, y esa persona tienes que ser tú, HeyGen
+es la especialista.</p>
+
+<h2>3. Captions: terminar el anuncio</h2>
+
+<p>Captions (de Mirage) es ante todo un editor: ediciones con IA de un toque, un
+editor por chat que aplica cortes, recursos y ritmo cuando los describes,
+subtítulos automáticos en más de 91 idiomas, doblaje a 29 y eliminación de ruido.
+También crea actores con IA y un gemelo a partir de un selfie. Cobra con
+suscripciones semanales, mensuales o anuales. Combina bien con cualquiera de los
+generadores de la lista: haz los clips en otra app y córtalos y subtitúlalos
+aquí.</p>
+
+<h2>4. Vmake Labs: formatos para una foto de producto</h2>
+
+<p>Vmake Labs parte de una foto de producto y ofrece formatos sociales ya hechos,
+entre ellos vídeos estilo UGC (unboxing, antes y después, tutorial, producto en
+mano, pódcast), vídeos de &laquo;gancho&raquo; y formatos de meme, además de lip
+sync, teleprompter y un mejorador de calidad. Cobra con suscripciones y packs de
+créditos. Encaja con quien vende online y prefiere rellenar un formato a
+enfrentarse a una descripción en blanco.</p>
+
+<h2>5. Zeely: del vídeo al anuncio en marcha</h2>
+
+<p>Zeely va más allá del vídeo: lee el enlace de tu producto, escribe un guion,
+hace un vídeo hablado con avatares que, según su ficha, salen de creadores UGC
+reales, y luego lanza y sigue la campaña en Facebook e Instagram desde la app.
+Incluso monta una página de venta si no tienes tienda. Cobra con planes semanales
+o de varios meses y créditos. Elígela si quieres una sola app para toda la
+campaña y te valen sus plantillas.</p>
+
+<h2>Cómo elegir</h2>
+
+<ul>
+<li><strong>Quieres muchas escenas distintas con tu producto y la misma cara en todas:</strong> <a href="%(dora)s">Dora</a>.</li>
+<li><strong>El anuncio eres tú hablando a cámara, con tu voz:</strong> HeyGen.</li>
+<li><strong>Ya tienes los clips y hay que cortarlos, subtitularlos o doblarlos:</strong> Captions.</li>
+<li><strong>Quieres una plantilla para una foto de producto:</strong> Vmake Labs.</li>
+<li><strong>Quieres que la app también lleve los anuncios:</strong> Zeely.</li>
+</ul>
+
+<p>Uses la que uses: escribe cinco ganchos antes de generar nada, mantén el vídeo
+vertical y corto, y enfrenta los ganchos entre sí antes de pulir uno. Para una
+visión más amplia de las apps de vídeo con IA, no solo para anuncios, lee
+<a href="mejores-apps-generador-video-ia-iphone.html">las mejores apps para generar
+vídeo con IA en iPhone</a>.</p>
+""" % dict(_UGC, date=RANK_DATE_ES)
+
+A11_ES_SOURCES = """
+<h2>Fuentes</h2>
+<ul>
+<li>Fichas del App Store (EE. UU.): <a href="%(dora_ios)s">Dora</a>, <a href="%(heygen)s" target="_blank" rel="noopener">HeyGen</a>, <a href="%(captions)s" target="_blank" rel="noopener">Captions</a>, <a href="%(vmake)s" target="_blank" rel="noopener">Vmake Labs</a>, <a href="%(zeely)s" target="_blank" rel="noopener">Zeely</a>. Descripciones y compras dentro de la app a %(date)s.</li>
+<li>Valoraciones: API pública de búsqueda de iTunes de Apple, %(date)s.</li>
+<li>Funciones y conectores de Dora: <a href="../../ai-video-generator.html">su página en este sitio</a> y <a href="%(connectors)s">doravideo.com/connectors</a>.</li>
+</ul>
+<p>Si algo está desactualizado, <a href="mailto:sagalabs@proton.me">avísanos</a> y
+corregimos la página.</p>
+""" % dict(_UGC, date=RANK_DATE_ES)
+
+RANK_ARTICLES.append(dict(
+    en_path="blog/best-ai-apps-ugc-video-ads-iphone.html",
+    es_path="blog/es/mejores-apps-ia-anuncios-ugc-iphone.html",
+    en=dict(
+        h1="Best AI apps to make UGC video ads on iPhone (2026)",
+        desc=("Dora, HeyGen, Captions, Vmake Labs and Zeely ranked for making UGC-style video ads with AI: "
+              "product scenes, talking avatars, editing and launching, from their App Store pages. "
+              "Written by Dora's maker, disclosed."),
+        kicker="AI video", section="AI video",
+        standfirst=("UGC ads win by volume: many hooks, the same face, tested against each other. "
+                    "Five apps that make that possible without booking a creator, ranked."),
+        body=A11_EN_BODY, sources=A11_EN_SOURCES, rank=UGC_RANK),
+    es=dict(
+        h1="Las mejores apps de IA para hacer anuncios UGC en iPhone (2026)",
+        desc=("Dora, HeyGen, Captions, Vmake Labs y Zeely ordenadas para hacer anuncios en vídeo estilo UGC con IA: "
+              "escenas de producto, avatares que hablan, edición y lanzamiento, según su ficha del App Store. "
+              "Escrito por quien hace Dora, y lo decimos."),
+        kicker="Vídeo con IA", section="Vídeo con IA",
+        standfirst=("Los anuncios UGC ganan por volumen: muchos ganchos, la misma cara, enfrentados entre s&iacute;. "
+                    "Cinco apps que lo hacen posible sin contratar a un creador, ordenadas."),
+        body=A11_ES_BODY, sources=A11_ES_SOURCES, rank=UGC_RANK),
+))
+
+
+# --------------------------------------------------------------------------
+# 12 — Apps de tareas que te limitan a 3 al dia (ranking, 3 Tasks 1.a)
+# --------------------------------------------------------------------------
+#
+# 3 Tasks comprobado en su repo (productivity/): tres huecos fijos
+# (ContentView.swift ForEach(0..<3)), cronometro por tarea que cuenta hacia
+# arriba (no Pomodoro) y que NO se guarda al cerrar la app, widget de
+# WidgetKit pequeno/mediano/grande de solo lectura, sin reinicio diario, sin
+# StoreKit de pago, sin cuenta, Firebase Analytics + aviso de rastreo (su
+# etiqueta dice "Data Used to Track You"), iPhone y iPad, solo ingles.
+# Competidores: ficha del App Store (EE. UU.) y API de lookup, 7 oct 2026.
+# Sin rayas en el texto.
+
+THREE_TASKS = "https://apps.apple.com/app/apple-store/id1553693943?pt=118348020&amp;ct=sagalab-blog&amp;mt=8"
+THREE_TODO = "https://apps.apple.com/us/app/id882164264"
+TOP3 = "https://apps.apple.com/us/app/id1512989797"
+STRUCTURED = "https://apps.apple.com/us/app/id1499198946"
+TICKTICK = "https://apps.apple.com/us/app/id626144601"
+_T3 = dict(t3=THREE_TASKS, threetodo=THREE_TODO, top3=TOP3, structured=STRUCTURED, ticktick=TICKTICK)
+
+T3_RANK = [
+    ("3 Tasks - Daily", "https://apps.apple.com/app/id1553693943"),
+    ("Three Todo", THREE_TODO),
+    ("Top 3: Daily Focus Tasks", TOP3),
+    ("Structured: Daily Planner Todo", STRUCTURED),
+    ("TickTick: To-Do List & Calendar", TICKTICK),
+]
+
+_T3_WHY_EN = _rank_box("Why 3 Tasks is #1", [
+    "Three slots and no more, on one screen. There is no list to scroll and nothing to file.",
+    "A stopwatch on each task: tap to start, tap again to pause. Only one runs at a time, so you work on one thing.",
+    "A home screen widget, small, medium or large, that shows your three tasks.",
+    "Free, with no in-app purchases and no subscription. No account.",
+    "On iPhone and iPad, and it runs on Macs with Apple silicon.",
+])
+
+_T3_WHY_ES = _rank_box("Por qué 3 Tasks es la n.º 1", [
+    "Tres huecos y ni uno más, en una sola pantalla. No hay lista que recorrer ni nada que clasificar.",
+    "Un cronómetro en cada tarea: tocas para empezar y otra vez para pausar. Solo corre uno a la vez, así que trabajas en una sola cosa.",
+    "Un widget para la pantalla de inicio, pequeño, mediano o grande, con tus tres tareas.",
+    "Gratis, sin compras dentro de la app y sin suscripción. Sin cuenta.",
+    "En iPhone y iPad, y funciona en Macs con Apple silicon.",
+])
+
+A12_EN_BODY = """
+<p><strong>Disclosure: we make 3 Tasks, the app ranked first here.</strong>
+Everything we say about the other apps comes from their own App Store pages, and
+we say plainly where they beat us. Prices and ratings are from the US App Store
+on %(date)s.</p>
+
+<p>The idea is old and simple: write down the few things that matter today, do
+them, and ignore the rest. Long to-do lists fail because every task looks equally
+urgent; a hard limit of three forces the choice up front. Few apps actually
+enforce the limit. Three do, and two popular planners can be bent to it.</p>
+
+<h2>The ranking</h2>
+
+<ol>
+<li><a href="%(t3)s">3 Tasks</a>: best overall, three slots, a timer on each, free.</li>
+<li><a href="%(threetodo)s" target="_blank" rel="noopener">Three Todo</a>: best for a long backlog shown three at a time.</li>
+<li><a href="%(top3)s" target="_blank" rel="noopener">Top 3</a>: best if you want the list to start fresh every day.</li>
+<li><a href="%(structured)s" target="_blank" rel="noopener">Structured</a>: best if you would rather plan the day on a timeline.</li>
+<li><a href="%(ticktick)s" target="_blank" rel="noopener">TickTick</a>: best full to-do app with a focus timer.</li>
+</ol>
+""" + _T3_WHY_EN + """
+<h2>The five apps at a glance</h2>
+
+<div class="table-scroll"><table>
+<thead><tr><th></th><th>Limit of three</th><th>Timer</th><th>Price (US)</th><th>Privacy label</th><th>Rating (US)</th></tr></thead>
+<tbody>
+<tr><td>1. <a href="%(t3)s">3 Tasks</a> (ours)</td><td>Yes, three fixed slots</td><td>Stopwatch per task</td><td>Free, no in-app purchases</td><td>Data Used to Track You (usage data)</td><td>5.0 &middot; 5</td></tr>
+<tr><td>2. <a href="%(threetodo)s" target="_blank" rel="noopener">Three Todo</a></td><td>Yes, shows three at a time</td><td>No</td><td>$0.99 upfront</td><td>Data Not Collected</td><td>4.9 &middot; 16</td></tr>
+<tr><td>3. <a href="%(top3)s" target="_blank" rel="noopener">Top 3</a></td><td>Yes, three per day, daily reset</td><td>No</td><td>Free; premium one-time purchase</td><td>Data Not Collected</td><td>4.0 &middot; 5</td></tr>
+<tr><td>4. <a href="%(structured)s" target="_blank" rel="noopener">Structured</a></td><td>No</td><td>Pomodoro</td><td>Free; Pro subscription or lifetime</td><td>Data Linked to You</td><td>4.8 &middot; 167,145</td></tr>
+<tr><td>5. <a href="%(ticktick)s" target="_blank" rel="noopener">TickTick</a></td><td>No</td><td>Pomo timer</td><td>Free; Premium subscription</td><td>Data Linked to You</td><td>4.9 &middot; 46,242</td></tr>
+</tbody>
+</table></div>
+
+<p class="article-note">Privacy labels are what each developer declares on the
+App Store; Apple does not verify them. Ratings are from Apple's public lookup API
+on %(date)s.</p>
+
+<h2>1. 3 Tasks: three slots and a stopwatch</h2>
+
+<p><a href="%(t3)s">3 Tasks</a> is one screen with three slots. Type a task into
+each, tap one to start its stopwatch, tap again to pause, and mark it done when
+it is done; a ticking sound plays while the timer runs, and you can mute it. Only
+one timer runs at a time. A home screen widget in three sizes shows your three
+tasks. It is free, with no in-app purchases, and needs no account. It runs on
+iPhone and iPad, and on Macs with Apple silicon.</p>
+
+<p>Where others beat it: the list does not reset by itself each morning (Top 3
+does), the time on each task is not saved once you close the app, and there is no
+history or statistics. There is no sync between devices, no reminders and no
+Apple Watch app, and the app is in English only. It uses Firebase Analytics and
+asks for permission to track, which is why its privacy label reads <em>Data Used
+to Track You</em>; Three Todo and Top 3 declare <em>Data Not Collected</em>.</p>
+
+<h2>2. Three Todo: a backlog, three at a time</h2>
+
+<p>Three Todo lets you put in as many tasks as you like but only ever shows you
+three. Each one can be Done, Deferred or Dropped, and the app keeps track of how
+you are doing. It costs $0.99, once, and declares that it collects no data. Best
+if your problem is a long list you cannot face, not choosing three things.</p>
+
+<h2>3. Top 3: a fresh list every day</h2>
+
+<p>Top 3 is built on the same rule: three priority tasks a day, no more, and you
+cannot see several days at once. Each day starts fresh. It is free; a one-time
+premium purchase adds editing tasks and planning future days. It declares that it
+collects no data. Best if you want the daily reset that 3 Tasks does not have.</p>
+
+<h2>4. Structured: the day as a timeline</h2>
+
+<p>Structured is not a three-task app; it lays your tasks and calendar on a
+visual timeline so you can block out the day. It has a Pomodoro focus timer,
+interactive widgets, Live Activities and sync across iPhone, iPad, Apple Watch
+and Mac. It is free, with a Pro subscription or a lifetime purchase. If three
+tasks feels too blunt, time blocking is the next step.</p>
+
+<h2>5. TickTick: a full to-do app with a focus timer</h2>
+
+<p>TickTick is a complete task manager: sync across devices, reminders, calendar
+views, recurring tasks, shared lists, habits and a Pomo timer. It does not limit
+you to three, but its focus timer and a short &ldquo;today&rdquo; list get you
+close. It is free, with a Premium subscription. Pick it if you need reminders and
+sync more than you need a hard limit.</p>
+
+<h2>How to choose</h2>
+
+<ul>
+<li><strong>A hard limit of three, a timer on each, free:</strong> <a href="%(t3)s">3 Tasks</a>.</li>
+<li><strong>A long backlog you want shown three at a time:</strong> Three Todo.</li>
+<li><strong>A list that starts again every day:</strong> Top 3.</li>
+<li><strong>Planning the whole day on a timeline:</strong> Structured.</li>
+<li><strong>Reminders, sync and everything else:</strong> TickTick.</li>
+</ul>
+
+<p>Whichever you pick, write the three the night before or first thing in the
+morning, and make the first one the task you would most like to avoid.</p>
+""" % dict(_T3, date=RANK_DATE_EN)
+
+A12_EN_SOURCES = """
+<h2>Sources</h2>
+<ul>
+<li>App Store pages (US): <a href="%(t3)s">3 Tasks</a>, <a href="%(threetodo)s" target="_blank" rel="noopener">Three Todo</a>, <a href="%(top3)s" target="_blank" rel="noopener">Top 3</a>, <a href="%(structured)s" target="_blank" rel="noopener">Structured</a>, <a href="%(ticktick)s" target="_blank" rel="noopener">TickTick</a>. Prices, in-app purchases, privacy labels and descriptions as shown on %(date)s.</li>
+<li>Ratings: Apple's public iTunes lookup API, %(date)s.</li>
+<li>3 Tasks: <a href="../3things.html">its page on this site</a>.</li>
+</ul>
+<p>If anything here is out of date, <a href="mailto:sagalabs@proton.me">tell us</a>
+and we will correct the page.</p>
+""" % dict(_T3, date=RANK_DATE_EN)
+
+A12_ES_BODY = """
+<p><strong>Aviso: 3 Tasks, la app que va primera, es nuestra.</strong> Todo lo
+que decimos de las demás sale de su propia ficha del App Store, y decimos
+claramente en qué nos ganan. Precios y valoraciones de la App Store de EE. UU. a
+%(date)s.</p>
+
+<p>La idea es antigua y sencilla: apunta las pocas cosas que importan hoy, hazlas
+y olvídate del resto. Las listas largas fallan porque todas las tareas parecen
+igual de urgentes; un límite fijo de tres obliga a elegir antes de empezar. Pocas
+apps imponen ese límite de verdad. Tres lo hacen, y dos planificadores muy usados
+se pueden adaptar a ello.</p>
+
+<h2>El ranking</h2>
+
+<ol>
+<li><a href="%(t3)s">3 Tasks</a>: la mejor en conjunto, tres huecos, un cronómetro en cada uno, gratis.</li>
+<li><a href="%(threetodo)s" target="_blank" rel="noopener">Three Todo</a>: la mejor para una lista larga que se muestra de tres en tres.</li>
+<li><a href="%(top3)s" target="_blank" rel="noopener">Top 3</a>: la mejor si quieres que la lista empiece de cero cada día.</li>
+<li><a href="%(structured)s" target="_blank" rel="noopener">Structured</a>: la mejor si prefieres planificar el día en una línea de tiempo.</li>
+<li><a href="%(ticktick)s" target="_blank" rel="noopener">TickTick</a>: la mejor app de tareas completa con temporizador de concentración.</li>
+</ol>
+""" + _T3_WHY_ES + """
+<h2>Las cinco apps de un vistazo</h2>
+
+<div class="table-scroll"><table>
+<thead><tr><th></th><th>Límite de tres</th><th>Temporizador</th><th>Precio (EE. UU.)</th><th>Etiqueta de privacidad</th><th>Valoración (EE. UU.)</th></tr></thead>
+<tbody>
+<tr><td>1. <a href="%(t3)s">3 Tasks</a> (nuestra)</td><td>Sí, tres huecos fijos</td><td>Cronómetro por tarea</td><td>Gratis, sin compras dentro de la app</td><td>Datos usados para rastrearte (datos de uso)</td><td>5,0 &middot; 5</td></tr>
+<tr><td>2. <a href="%(threetodo)s" target="_blank" rel="noopener">Three Todo</a></td><td>Sí, muestra tres a la vez</td><td>No</td><td>0,99 $ por adelantado</td><td>Datos no recopilados</td><td>4,9 &middot; 16</td></tr>
+<tr><td>3. <a href="%(top3)s" target="_blank" rel="noopener">Top 3</a></td><td>Sí, tres al día, se reinicia cada día</td><td>No</td><td>Gratis; premium de pago único</td><td>Datos no recopilados</td><td>4,0 &middot; 5</td></tr>
+<tr><td>4. <a href="%(structured)s" target="_blank" rel="noopener">Structured</a></td><td>No</td><td>Pomodoro</td><td>Gratis; Pro por suscripción o de por vida</td><td>Datos vinculados a ti</td><td>4,8 &middot; 167.145</td></tr>
+<tr><td>5. <a href="%(ticktick)s" target="_blank" rel="noopener">TickTick</a></td><td>No</td><td>Pomo</td><td>Gratis; Premium por suscripción</td><td>Datos vinculados a ti</td><td>4,9 &middot; 46.242</td></tr>
+</tbody>
+</table></div>
+
+<p class="article-note">Las etiquetas de privacidad son lo que declara cada
+desarrollador en el App Store; Apple no las verifica. Valoraciones de la API
+pública de Apple a %(date)s.</p>
+
+<h2>1. 3 Tasks: tres huecos y un cronómetro</h2>
+
+<p><a href="%(t3)s">3 Tasks</a> es una pantalla con tres huecos. Escribe una tarea
+en cada uno, toca una para poner en marcha su cronómetro, vuelve a tocar para
+pausar y márcala cuando esté hecha; mientras corre suena un tictac, que puedes
+silenciar. Solo corre un cronómetro a la vez. Un widget para la pantalla de
+inicio, en tres tamaños, muestra tus tres tareas. Es gratis, sin compras dentro de
+la app, y no pide cuenta. Funciona en iPhone y iPad, y en Macs con Apple
+silicon.</p>
+
+<p>En qué le ganan las demás: la lista no se reinicia sola cada mañana (Top 3
+sí), el tiempo de cada tarea no se guarda al cerrar la app y no hay historial ni
+estadísticas. No sincroniza entre dispositivos, no tiene recordatorios ni app para
+Apple Watch, y está solo en inglés. Usa Firebase Analytics y pide permiso para
+rastrear, por eso su etiqueta de privacidad dice <em>Datos usados para
+rastrearte</em>; Three Todo y Top 3 declaran <em>Datos no recopilados</em>.</p>
+
+<h2>2. Three Todo: una lista larga, de tres en tres</h2>
+
+<p>Three Todo te deja meter todas las tareas que quieras, pero solo te enseña
+tres. Cada una se puede marcar como hecha, aplazar o descartar, y la app lleva la
+cuenta de cómo vas. Cuesta 0,99 $, una vez, y declara que no recopila datos.
+Ideal si tu problema es una lista larga que no te atreves a mirar, no elegir
+tres cosas.</p>
+
+<h2>3. Top 3: una lista nueva cada día</h2>
+
+<p>Top 3 se basa en la misma regla: tres tareas prioritarias al día, ni una más,
+y no puedes ver varios días a la vez. Cada día empieza de cero. Es gratis; una
+compra única premium añade editar tareas y planificar días futuros. Declara que no
+recopila datos. Ideal si quieres el reinicio diario que 3 Tasks no tiene.</p>
+
+<h2>4. Structured: el día en una línea de tiempo</h2>
+
+<p>Structured no es una app de tres tareas: coloca tus tareas y tu calendario en
+una línea de tiempo visual para que bloquees el día. Tiene temporizador Pomodoro,
+widgets interactivos, Actividades en Vivo y sincronización entre iPhone, iPad,
+Apple Watch y Mac. Es gratis, con Pro por suscripción o compra de por vida. Si
+tres tareas te parece demasiado tosco, bloquear el tiempo es el siguiente
+paso.</p>
+
+<h2>5. TickTick: una app de tareas completa con temporizador</h2>
+
+<p>TickTick es un gestor de tareas completo: sincronización, recordatorios, vistas
+de calendario, tareas que se repiten, listas compartidas, hábitos y temporizador
+Pomo. No te limita a tres, pero con el temporizador y una lista corta de
+&laquo;hoy&raquo; te acercas. Es gratis, con Premium por suscripción. Elígela si
+necesitas recordatorios y sincronización más que un límite estricto.</p>
+
+<h2>Cómo elegir</h2>
+
+<ul>
+<li><strong>Un límite estricto de tres, un cronómetro en cada una, gratis:</strong> <a href="%(t3)s">3 Tasks</a>.</li>
+<li><strong>Una lista larga que quieres ver de tres en tres:</strong> Three Todo.</li>
+<li><strong>Una lista que empieza de nuevo cada día:</strong> Top 3.</li>
+<li><strong>Planificar el día entero en una línea de tiempo:</strong> Structured.</li>
+<li><strong>Recordatorios, sincronización y todo lo demás:</strong> TickTick.</li>
+</ul>
+
+<p>Elijas la que elijas, escribe las tres la noche antes o a primera hora, y que
+la primera sea la tarea que más te apetece evitar.</p>
+""" % dict(_T3, date=RANK_DATE_ES)
+
+A12_ES_SOURCES = """
+<h2>Fuentes</h2>
+<ul>
+<li>Fichas del App Store (EE. UU.): <a href="%(t3)s">3 Tasks</a>, <a href="%(threetodo)s" target="_blank" rel="noopener">Three Todo</a>, <a href="%(top3)s" target="_blank" rel="noopener">Top 3</a>, <a href="%(structured)s" target="_blank" rel="noopener">Structured</a>, <a href="%(ticktick)s" target="_blank" rel="noopener">TickTick</a>. Precios, compras dentro de la app, etiquetas de privacidad y descripciones a %(date)s.</li>
+<li>Valoraciones: API pública de búsqueda de iTunes de Apple, %(date)s.</li>
+<li>3 Tasks: <a href="../../3things.html">su página en este sitio</a>.</li>
+</ul>
+<p>Si algo está desactualizado, <a href="mailto:sagalabs@proton.me">avísanos</a> y
+corregimos la página.</p>
+""" % dict(_T3, date=RANK_DATE_ES)
+
+RANK_ARTICLES.append(dict(
+    en_path="blog/best-3-task-todo-apps-iphone.html",
+    es_path="blog/es/mejores-apps-3-tareas-al-dia-iphone.html",
+    en=dict(
+        h1="Best to-do apps that limit you to 3 tasks a day (2026)",
+        desc=("3 Tasks, Three Todo, Top 3, Structured and TickTick ranked for focusing on three tasks a day: "
+              "the limit, timers, price and privacy label, from their App Store pages. "
+              "Written by 3 Tasks' maker, disclosed."),
+        kicker="Productivity", section="Productivity",
+        standfirst=("Long lists make every task look urgent. A hard limit of three forces the choice. "
+                    "Five apps for working that way, ranked."),
+        body=A12_EN_BODY, sources=A12_EN_SOURCES, rank=T3_RANK),
+    es=dict(
+        h1="Las mejores apps de tareas que te limitan a 3 al día (2026)",
+        desc=("3 Tasks, Three Todo, Top 3, Structured y TickTick ordenadas para centrarte en tres tareas al día: "
+              "el límite, el temporizador, el precio y la etiqueta de privacidad, según su ficha del App Store. "
+              "Escrito por quien hace 3 Tasks, y lo decimos."),
+        kicker="Productividad", section="Productividad",
+        standfirst=("Las listas largas hacen que todo parezca urgente. Un l&iacute;mite fijo de tres obliga a elegir. "
+                    "Cinco apps para trabajar as&iacute;, ordenadas."),
+        body=A12_ES_BODY, sources=A12_ES_SOURCES, rank=T3_RANK),
+))
