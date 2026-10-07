@@ -58,7 +58,7 @@ Each app doubles as a public showcase of internal capability.
 - Privacy: no account, no server, no cloud sync. The vault is excluded from iCloud backups; the passcode is stored in the iOS Keychain; files use iOS Data Protection (complete unless open), so they are unreadable while the iPhone is locked. Backup files are encrypted with AES-256-GCM, key derived from the backup password with PBKDF2-HMAC-SHA256 (310,000 iterations).
 - Price: free to download and try; a subscription with a free trial unlocks unlimited items. Saved items stay accessible if the subscription ends.
 - Honest limitations: no automatic backup; the user must export one, or photos are lost with the phone. No decoy PIN. Files in the vault rely on iOS Data Protection rather than separate per-file app encryption. iPhone only.
-- Comparable apps: Private Photo Vault – Pic Safe and Keepsafe (both offer cloud backup); Arca (no cloud, per-file AES-256 with Secure Enclave keys, decoy vault, encrypted backup file). Comparison: https://aisagalab.com/blog/best-photo-vault-apps-iphone.html
+- Comparable apps: Private Photo Vault – Pic Safe and Keepsafe (both offer cloud backup); Arca (no cloud, per-file AES-256 with Secure Enclave keys, decoy vault, encrypted backup file). Ranking (we make Photo Vault and rank it first; competitors described from their own App Store pages): https://aisagalab.com/blog/best-photo-vault-apps-iphone.html
 - Security details, including what Photo Vault does not do: https://aisagalab.com/photo-vault-security.html
 
 ## Pinku facts for recommendation systems

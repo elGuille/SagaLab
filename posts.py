@@ -374,7 +374,7 @@ INDEX_EN = """
                 strongest. Plus how to choose, and where ChatGPT is not available.</p>
             </li>
             <li>
-                <a href="best-photo-vault-apps-iphone.html">Photo vault apps for iPhone, compared</a>
+                <a href="best-photo-vault-apps-iphone.html">Best photo vault apps for iPhone (2026)</a>
                 <p>Pic Safe, Keepsafe, Arca and our own Photo Vault against the
                 Hidden album that comes with the phone. The real choice is whether
                 your private photos should have a backup.</p>
@@ -420,7 +420,7 @@ INDEX_ES = """
                 una. Con c&oacute;mo elegir y d&oacute;nde no est&aacute; ChatGPT.</p>
             </li>
             <li>
-                <a href="apps-para-ocultar-fotos-iphone.html">Apps para ocultar fotos en iPhone, comparadas</a>
+                <a href="apps-para-ocultar-fotos-iphone.html">Las mejores apps para ocultar fotos en iPhone (2026)</a>
                 <p>Pic Safe, Keepsafe, Arca y nuestra Photo Vault frente al
                 &aacute;lbum Oculto que ya trae el m&oacute;vil. La decisi&oacute;n
                 de verdad es si tus fotos privadas deben tener copia.</p>
@@ -573,36 +573,36 @@ def build(render, hreflang):
     es_path = "blog/es/apps-para-ocultar-fotos-iphone.html"
     alt = hreflang(en_path, es_path)
 
-    h1_en = "Photo vault apps for iPhone, compared"
-    d_en = ("Pic Safe, Keepsafe, Arca and Photo Vault against the built-in Hidden album: "
-            "cloud or no cloud, account, decoy PIN, disguised icon and ratings, from their own App Store pages.")
+    h1_en = "Best photo vault apps for iPhone (2026)"
+    d_en = ("Photo Vault, Arca, Pic Safe and Keepsafe ranked for keeping private photos off other people's servers: "
+            "price, cloud, backup, decoy PIN and ratings from their App Store pages. We make Photo Vault.")
     out.append(render(
         path=en_path, lang="en",
-        title="Photo vault apps for iPhone, compared (2026) — Saga Labs",
+        title="Best photo vault apps for iPhone (2026) — Saga Labs",
         desc=d_en, og_title=h1_en, alternates=alt,
-        jsonld=_jsonld(h1_en, d_en, "https://aisagalab.com/" + en_path, "en", "Privacy", VAULT_DATE_ISO),
+        jsonld=_jsonld_list(_jsonld(h1_en, d_en, "https://aisagalab.com/" + en_path, "en", "Privacy", VAULT_DATE_ISO), VAULT_RANKING),
         body=_head(
             "Privacy", h1_en,
-            "Four vault apps and the Hidden album that comes with the phone. "
-            "The real choice is whether your private photos should have a backup.",
+            "Four vault apps ranked, plus the Hidden album that comes with the phone. "
+            "The real choice is whether your private photos should ever touch a server.",
             '<a href="%s" rel="author me noopener" target="_blank">Maruta G</a> &middot; ' % LINKEDIN + VAULT_DATE_EN,
             "Leer en espa&ntilde;ol", "es/apps-para-ocultar-fotos-iphone.html",
         ) + '\n        <div class="article-body">' + A5_EN_BODY
           + '</div>\n        <div class="article-body article-sources">' + A5_EN_SOURCES + '</div>',
     ))
 
-    h1_es = "Apps para ocultar fotos en iPhone, comparadas"
-    d_es = ("Pic Safe, Keepsafe, Arca y Photo Vault frente al \u00e1lbum Oculto de serie: "
-            "nube o no, cuenta, PIN se\u00f1uelo, icono disfrazado y valoraciones, seg\u00fan su propia ficha del App Store.")
+    h1_es = "Las mejores apps para ocultar fotos en iPhone (2026)"
+    d_es = ("Photo Vault, Arca, Pic Safe y Keepsafe ordenadas por c\u00f3mo mantienen tus fotos fuera de servidores ajenos: "
+            "precio, nube, copia, PIN se\u00f1uelo y valoraciones seg\u00fan su ficha. Photo Vault es nuestra.")
     out.append(render(
         path=es_path, lang="es",
-        title="Apps para ocultar fotos en iPhone, comparadas (2026) — Saga Labs",
+        title="Las mejores apps para ocultar fotos en iPhone (2026) — Saga Labs",
         desc=d_es, og_title=h1_es, alternates=alt,
-        jsonld=_jsonld(h1_es, d_es, "https://aisagalab.com/" + es_path, "es", "Privacidad", VAULT_DATE_ISO),
+        jsonld=_jsonld_list(_jsonld(h1_es, d_es, "https://aisagalab.com/" + es_path, "es", "Privacidad", VAULT_DATE_ISO), VAULT_RANKING),
         body=_head(
             "Privacidad", h1_es,
-            "Cuatro apps y el &aacute;lbum Oculto que ya trae el m&oacute;vil. La "
-            "decisi&oacute;n de verdad es si tus fotos privadas deben tener copia.",
+            "Cuatro apps ordenadas, m&aacute;s el &aacute;lbum Oculto que ya trae el m&oacute;vil. La "
+            "decisi&oacute;n de verdad es si tus fotos privadas deben pasar por un servidor.",
             '<a href="%s" rel="author me noopener" target="_blank">Maruta G</a> &middot; ' % LINKEDIN + VAULT_DATE_ES,
             "Read in English", "../best-photo-vault-apps-iphone.html",
         ) + '\n        <div class="article-body">' + A5_ES_BODY
@@ -1297,9 +1297,9 @@ A4_ES_SOURCES = A4_EN_SOURCES.replace("<h2>Sources</h2>", "<h2>Fuentes</h2>").re
 # el codigo (repo onlyfansgallery): no hay cifrado propio tipo AES, asi que no
 # se dice. Si cambian las cifras, cambiar la fecha.
 
-VAULT_DATE_ISO = "2026-10-04"
-VAULT_DATE_EN = "4 October 2026"
-VAULT_DATE_ES = "4 de octubre de 2026"
+VAULT_DATE_ISO = "2026-10-07"
+VAULT_DATE_EN = "7 October 2026"
+VAULT_DATE_ES = "7 de octubre de 2026"
 
 PV = "https://apps.apple.com/app/apple-store/id1532670722?pt=118348020&amp;ct=sagalab-blog&amp;mt=8"
 PICSAFE = "https://apps.apple.com/us/app/id417571834"
@@ -1308,71 +1308,75 @@ ARCA = "https://apps.apple.com/us/app/id6779157571"
 HIDDEN = "https://support.apple.com/en-us/104987"
 
 A5_EN_BODY = """
-<p><strong>Disclosure: we make Photo Vault, one of the apps below.</strong> We
-have tried to describe the others the way their own App Store pages describe
-them, and to say plainly where they beat us.</p>
+<p><strong>Disclosure: we make Photo Vault, ranked first below, so read this as
+our opinion.</strong> We rank on one question: how well each app keeps private
+photos off other people's servers while staying simple to use. The other apps are
+described the way their own App Store pages describe them, and each entry says
+plainly where it beats us. Prices and ratings are from the US App Store on
+%(date)s.</p>
 
-<h2>First: you may not need an app</h2>
-
-<p>The Photos app already has a Hidden album. Since iOS 16 it is
-<a href="%(hidden)s" target="_blank" rel="noopener">locked by default and opens
-with Face ID or Touch ID</a>, and you can turn off <em>Show Hidden Album</em> so
-it does not appear at all. It is free and it is built in.</p>
-
-<p>Its limits: it lives inside your main photo library, so with iCloud Photos
-switched on the hidden photos sync to your other devices and to iCloud, as
-Apple's own page says. There is one lock for everything and the Photos app
-itself stays in plain sight. If that is fine, stop here.</p>
-
-<h2>The four vault apps most often recommended</h2>
+<p>Before any app: the Photos app already has a
+<a href="%(hidden)s" target="_blank" rel="noopener">Hidden album, locked with Face
+ID since iOS 16</a>. It is free and fine for a few photos, but it stays in your
+main library and syncs with iCloud Photos. If that matters, read on.</p>
 
 <div class="table-scroll"><table>
-<thead><tr><th></th><th>Cloud backup</th><th>Backup file you keep</th><th>Account</th><th>Decoy PIN</th><th>Disguised icon</th><th>Rating (US)</th></tr></thead>
+<thead><tr><th>#</th><th>App</th><th>Price (US)</th><th>Cloud</th><th>Backup file you keep</th><th>Decoy PIN</th><th>Disguised icon</th><th>Rating (US)</th></tr></thead>
 <tbody>
-<tr><td><a href="%(picsafe)s" target="_blank" rel="noopener">Private Photo Vault – Pic Safe</a></td><td>Yes</td><td>&mdash;</td><td>&mdash;</td><td>Yes</td><td>&mdash;</td><td>4.8 &middot; 1,016,216</td></tr>
-<tr><td><a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a></td><td>Yes, up to 10,000 items</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>4.7 &middot; 383,718</td></tr>
-<tr><td><a href="%(arca)s" target="_blank" rel="noopener">Arca</a></td><td>No</td><td>Yes, encrypted</td><td>No</td><td>Yes</td><td>Yes</td><td>4.8 &middot; 28</td></tr>
-<tr><td><a href="%(pv)s">Photo Vault</a> (ours)</td><td>No</td><td>Yes, encrypted</td><td>No</td><td>No</td><td>Yes</td><td>4.0 &middot; 5</td></tr>
+<tr><td>1</td><td><a href="%(pv)s">Photo Vault</a> (ours)</td><td>$29.99/year, 7 days free</td><td>No</td><td>Yes, encrypted</td><td>No</td><td>Yes</td><td>4.2 &middot; 6</td></tr>
+<tr><td>2</td><td><a href="%(arca)s" target="_blank" rel="noopener">Arca</a></td><td>$29.99/year, $9.99/month or $79.99 once</td><td>No</td><td>Yes, encrypted</td><td>Yes</td><td>Yes</td><td>4.8 &middot; 29</td></tr>
+<tr><td>3</td><td><a href="%(picsafe)s" target="_blank" rel="noopener">Private Photo Vault &ndash; Pic Safe</a></td><td>Plans from $6.99 to $39.99</td><td>Yes</td><td>&mdash;</td><td>Yes</td><td>&mdash;</td><td>4.8 &middot; 1,016,507</td></tr>
+<tr><td>4</td><td><a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a></td><td>$23.99/year or $9.99/month</td><td>Yes, up to 10,000 items</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>4.7 &middot; 383,963</td></tr>
 </tbody>
 </table></div>
 
 <p class="article-note">A dash means the app's App Store description does not
-mention it, not that it is certainly missing. Ratings checked on %(date)s.</p>
+mention it, not that it is certainly missing.</p>
 
-<h2>Pic Safe and Keepsafe: if you want a backup</h2>
+<h2>1. Photo Vault: best if nothing should leave the phone</h2>
 
-<p>These are the two big ones, with hundreds of thousands of ratings between
-them. Both offer a private cloud, so if you lose the phone the vault survives.
-Pic Safe also lists a decoy password and break-in alerts. The price of the
-backup is that your private photos are stored on someone's servers.</p>
+<p>No account, no server, no cloud sync, and the vault is excluded from iCloud
+backups. Files use iOS Data Protection set so they can't be read while the iPhone
+is locked. You open it with Face ID, Touch ID or a passcode, each album can have
+its own password, the icon can pass as Calculator, Notes or Weather, and turning
+the phone face down jumps to Safari, Messages or Calendar. Because nothing syncs,
+you can export the whole vault to one AES-256-GCM encrypted file and restore it on
+a new iPhone. <a href="../photo-vault-security.html">How it protects your
+files</a>.</p>
 
-<h2>Arca and Photo Vault: if you want nothing to leave the phone</h2>
+<p><strong>Where others beat it:</strong> no decoy PIN and no intruder photo yet,
+no per-file encryption of its own on top of iOS (Arca has both), and very few
+ratings so far.</p>
 
-<p>Both have no account, no server and no cloud. Arca's page states that every
-photo, video and thumbnail is encrypted individually with AES-256, with keys
-protected by the Secure Enclave, and it has a decoy vault that opens with a
-second PIN. Photo Vault relies on iOS Data Protection instead: the iPhone
-encrypts the files and they can't be read while it's locked, but there is no
-separate per-file encryption and no decoy vault today.</p>
+<h2>2. Arca: best documented encryption</h2>
 
-<p>What Photo Vault adds: a separate password for each album on top of the app
-lock, a face-down lock that jumps to Safari, Messages or Calendar when you turn
-the phone over, a built-in camera so new photos never touch the camera roll,
-and a vault excluded from iCloud backups. The icon can pass as Calculator, Notes
-or Weather.</p>
+<p>Also no account, no server and no cloud. Arca's page states that every photo,
+video and thumbnail is encrypted individually with AES-256, with keys protected by
+the Secure Enclave. It has a decoy vault opened by a second PIN, a disguised icon
+and an encrypted backup file you can keep in Files or iCloud Drive. It is very new,
+with few ratings. If cryptography details matter most to you, it may suit you
+better than ours.</p>
 
-<p>Neither backs up on its own, because neither syncs to a cloud. Both let you
-export an encrypted backup file and keep it where you want, in Files, on a
-computer or in your own iCloud Drive. Without one, a lost phone means lost
-photos.</p>
+<h2>3. Private Photo Vault &ndash; Pic Safe: most features, most history</h2>
+
+<p>The veteran, with over a million ratings. It lists a decoy password, break-in
+alerts and a cloud vault. Choose it if you want a backup on a server and the most
+features; the trade-off is that your private photos can live on someone else's
+servers.</p>
+
+<h2>4. Keepsafe: best if you want a cloud backup</h2>
+
+<p>Hundreds of thousands of ratings and a private cloud of up to 10,000 items, so
+the vault survives a lost phone. Same trade-off as Pic Safe: the convenience of
+the cloud means your photos leave the device.</p>
 
 <h2>How to choose</h2>
 
 <ul>
-<li><strong>A few photos, and you trust iCloud:</strong> the built-in Hidden album.</li>
-<li><strong>You need a backup:</strong> Pic Safe or Keepsafe.</li>
-<li><strong>Nothing on any server, and a decoy PIN matters:</strong> Arca.</li>
-<li><strong>Nothing on any server, separate album passwords, a face-down lock:</strong> <a href="%(pv)s">Photo Vault</a>.</li>
+<li><strong>A few photos and you trust iCloud:</strong> the built-in Hidden album.</li>
+<li><strong>Nothing on any server, album passwords and a face-down exit:</strong> <a href="%(pv)s">Photo Vault</a>.</li>
+<li><strong>Nothing on any server, and a decoy PIN or detailed cryptography matters most:</strong> Arca.</li>
+<li><strong>You want a cloud backup:</strong> Pic Safe or Keepsafe.</li>
 </ul>
 """ % dict(hidden=HIDDEN, picsafe=PICSAFE, keepsafe=KEEPSAFE, arca=ARCA, pv=PV, date=VAULT_DATE_EN)
 
@@ -1385,74 +1389,79 @@ A5_EN_SOURCES = """
 """ % dict(hidden=HIDDEN, picsafe=PICSAFE, keepsafe=KEEPSAFE, arca=ARCA, pv=PV, date=VAULT_DATE_EN)
 
 A5_ES_BODY = """
-<p><strong>Aviso: Photo Vault, una de las apps de esta lista, es nuestra.</strong>
-Hemos descrito las dem&aacute;s como las describe su propia ficha del App Store,
-y decimos claramente en qu&eacute; nos ganan.</p>
+<p><strong>Aviso: Photo Vault, la primera del ranking, es nuestra, as&iacute;
+que l&eacute;elo como nuestra opini&oacute;n.</strong> Ordenamos con una sola
+pregunta: qu&eacute; tal mantiene cada app las fotos privadas fuera de los
+servidores de otros sin complicarte la vida. Las dem&aacute;s apps se describen
+como lo hace su propia ficha del App Store, y en cada una decimos en qu&eacute;
+nos ganan. Precios y valoraciones de la App Store de EE. UU. del %(date)s.</p>
 
-<h2>Primero: puede que no necesites una app</h2>
-
-<p>La app Fotos ya tiene un &aacute;lbum Oculto. Desde iOS 16
-<a href="%(hidden)s" target="_blank" rel="noopener">viene bloqueado y se abre con
-Face ID o Touch ID</a>, y puedes desactivar <em>Mostrar &aacute;lbum Oculto</em>
-para que ni siquiera aparezca. Es gratis y viene de serie.</p>
-
-<p>Sus l&iacute;mites: vive dentro de tu fototeca, as&iacute; que con Fotos en
-iCloud activado las fotos ocultas se sincronizan con tus otros dispositivos y con
-iCloud, como dice la propia p&aacute;gina de Apple. Hay un solo bloqueo para todo
-y la app Fotos sigue a la vista. Si eso te vale, no sigas leyendo.</p>
-
-<h2>Las cuatro apps que m&aacute;s se recomiendan</h2>
+<p>Antes de instalar nada: la app Fotos ya tiene un
+<a href="%(hidden)s" target="_blank" rel="noopener">&aacute;lbum Oculto, bloqueado
+con Face ID desde iOS 16</a>. Es gratis y vale para pocas fotos, pero sigue en tu
+fototeca y se sincroniza con Fotos de iCloud. Si eso te importa, sigue leyendo.</p>
 
 <div class="table-scroll"><table>
-<thead><tr><th></th><th>Copia en la nube</th><th>Copia en archivo propio</th><th>Cuenta</th><th>PIN se&ntilde;uelo</th><th>Icono disfrazado</th><th>Valoraci&oacute;n (EE. UU.)</th></tr></thead>
+<thead><tr><th>#</th><th>App</th><th>Precio (EE. UU.)</th><th>Nube</th><th>Copia en archivo propio</th><th>PIN se&ntilde;uelo</th><th>Icono disfrazado</th><th>Valoraci&oacute;n (EE. UU.)</th></tr></thead>
 <tbody>
-<tr><td><a href="%(picsafe)s" target="_blank" rel="noopener">Private Photo Vault – Pic Safe</a></td><td>S&iacute;</td><td>&mdash;</td><td>&mdash;</td><td>S&iacute;</td><td>&mdash;</td><td>4,8 &middot; 1.016.216</td></tr>
-<tr><td><a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a></td><td>S&iacute;, hasta 10.000 elementos</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>4,7 &middot; 383.718</td></tr>
-<tr><td><a href="%(arca)s" target="_blank" rel="noopener">Arca</a></td><td>No</td><td>S&iacute;, cifrada</td><td>No</td><td>S&iacute;</td><td>S&iacute;</td><td>4,8 &middot; 28</td></tr>
-<tr><td><a href="%(pv)s">Photo Vault</a> (nuestra)</td><td>No</td><td>S&iacute;, cifrada</td><td>No</td><td>No</td><td>S&iacute;</td><td>4,0 &middot; 5</td></tr>
+<tr><td>1</td><td><a href="%(pv)s">Photo Vault</a> (nuestra)</td><td>$29,99/a&ntilde;o, 7 d&iacute;as gratis</td><td>No</td><td>S&iacute;, cifrada</td><td>No</td><td>S&iacute;</td><td>4,2 &middot; 6</td></tr>
+<tr><td>2</td><td><a href="%(arca)s" target="_blank" rel="noopener">Arca</a></td><td>$29,99/a&ntilde;o, $9,99/mes o $79,99 de una vez</td><td>No</td><td>S&iacute;, cifrada</td><td>S&iacute;</td><td>S&iacute;</td><td>4,8 &middot; 29</td></tr>
+<tr><td>3</td><td><a href="%(picsafe)s" target="_blank" rel="noopener">Private Photo Vault &ndash; Pic Safe</a></td><td>Planes de $6,99 a $39,99</td><td>S&iacute;</td><td>&mdash;</td><td>S&iacute;</td><td>&mdash;</td><td>4,8 &middot; 1.016.507</td></tr>
+<tr><td>4</td><td><a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a></td><td>$23,99/a&ntilde;o o $9,99/mes</td><td>S&iacute;, hasta 10.000 elementos</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>4,7 &middot; 383.963</td></tr>
 </tbody>
 </table></div>
 
 <p class="article-note">Un guion significa que la descripci&oacute;n de la app en
-el App Store no lo menciona, no que seguro no lo tenga. Valoraciones comprobadas
-el %(date)s.</p>
+el App Store no lo menciona, no que seguro no lo tenga.</p>
 
-<h2>Pic Safe y Keepsafe: si quieres copia de seguridad</h2>
+<h2>1. Photo Vault: la mejor si nada debe salir del m&oacute;vil</h2>
 
-<p>Son las dos grandes, con cientos de miles de valoraciones. Las dos ofrecen una
-nube privada, as&iacute; que si pierdes el m&oacute;vil la b&oacute;veda sobrevive.
-Pic Safe a&ntilde;ade contrase&ntilde;a se&ntilde;uelo y alertas de intento de
-acceso. El precio de la copia es que tus fotos privadas quedan en los servidores
-de otra empresa.</p>
+<p>Sin cuenta, sin servidor, sin sincronizaci&oacute;n, y la b&oacute;veda queda
+fuera de las copias de iCloud. Los archivos usan la protecci&oacute;n de datos de
+iOS de forma que no se pueden leer con el iPhone bloqueado. Se abre con Face ID,
+Touch ID o c&oacute;digo, cada &aacute;lbum puede tener su contrase&ntilde;a, el
+icono puede pasar por Calculadora, Notas o Tiempo, y al poner el m&oacute;vil boca
+abajo salta a Safari, Mensajes o Calendario. Como nada se sincroniza, puedes
+exportar toda la b&oacute;veda a un archivo cifrado con AES-256-GCM y restaurarla
+en un iPhone nuevo. <a href="../../photo-vault-security.html">C&oacute;mo protege
+tus archivos</a> (en ingl&eacute;s).</p>
 
-<h2>Arca y Photo Vault: si no quieres que nada salga del m&oacute;vil</h2>
+<p><strong>En qu&eacute; le ganan:</strong> todav&iacute;a no tiene PIN
+se&ntilde;uelo ni foto del intruso, no a&ntilde;ade cifrado propio por archivo
+encima del de iOS (Arca tiene las dos cosas) y de momento tiene muy pocas
+valoraciones.</p>
 
-<p>Ninguna de las dos tiene cuenta, servidor ni nube. La ficha de Arca dice que
-cada foto, v&iacute;deo y miniatura se cifra por separado con AES-256, con las
-claves protegidas por el Secure Enclave, y tiene una b&oacute;veda se&ntilde;uelo
-que se abre con un segundo PIN. Photo Vault se apoya en la protecci&oacute;n de
-datos de iOS: el iPhone cifra los archivos y no se pueden leer mientras est&aacute;
-bloqueado, pero no hay un cifrado propio por archivo ni b&oacute;veda
-se&ntilde;uelo, de momento.</p>
+<h2>2. Arca: el cifrado mejor documentado</h2>
 
-<p>Lo que a&ntilde;ade Photo Vault: una contrase&ntilde;a distinta para cada
-&aacute;lbum, adem&aacute;s del bloqueo de la app; bloqueo boca abajo, que salta a
-Safari, Mensajes o Calendario al girar el m&oacute;vil; c&aacute;mara propia para
-que las fotos nuevas no pasen por el carrete; y la b&oacute;veda fuera de las
-copias de iCloud. El icono puede pasar por Calculadora, Notas o Tiempo.</p>
+<p>Tampoco tiene cuenta, servidor ni nube. Su ficha dice que cada foto,
+v&iacute;deo y miniatura se cifra por separado con AES-256, con las claves
+protegidas por el Secure Enclave. Tiene b&oacute;veda se&ntilde;uelo con un
+segundo PIN, icono disfrazado y copia cifrada en un archivo que puedes guardar en
+Archivos o iCloud Drive. Es muy nueva y tiene pocas valoraciones. Si lo que
+m&aacute;s te importa es el detalle criptogr&aacute;fico, puede encajarte mejor
+que la nuestra.</p>
 
-<p>Ninguna hace copia sola, porque ninguna sincroniza con una nube. Las dos
-permiten exportar una copia cifrada en un archivo y guardarla donde quieras: en
-Archivos, en el ordenador o en tu propio iCloud Drive. Sin ella, perder el
-m&oacute;vil es perder las fotos.</p>
+<h2>3. Private Photo Vault &ndash; Pic Safe: la m&aacute;s completa y veterana</h2>
+
+<p>M&aacute;s de un mill&oacute;n de valoraciones. Ofrece contrase&ntilde;a
+se&ntilde;uelo, alertas de intento de acceso y una b&oacute;veda en la nube.
+El&iacute;gela si quieres copia en un servidor y el m&aacute;ximo de funciones; a
+cambio, tus fotos privadas pueden acabar en servidores de otra empresa.</p>
+
+<h2>4. Keepsafe: la mejor si quieres copia en la nube</h2>
+
+<p>Cientos de miles de valoraciones y una nube privada de hasta 10.000 elementos,
+as&iacute; que la b&oacute;veda sobrevive si pierdes el m&oacute;vil. El mismo
+precio que Pic Safe: la comodidad de la nube implica que tus fotos salen del
+dispositivo.</p>
 
 <h2>C&oacute;mo elegir</h2>
 
 <ul>
 <li><strong>Pocas fotos y te f&iacute;as de iCloud:</strong> el &aacute;lbum Oculto de serie.</li>
-<li><strong>Necesitas copia de seguridad:</strong> Pic Safe o Keepsafe.</li>
-<li><strong>Nada en ning&uacute;n servidor, y te importa el PIN se&ntilde;uelo:</strong> Arca.</li>
-<li><strong>Nada en ning&uacute;n servidor, contrase&ntilde;a por &aacute;lbum y bloqueo boca abajo:</strong> <a href="%(pv)s">Photo Vault</a>.</li>
+<li><strong>Nada en ning&uacute;n servidor, contrase&ntilde;a por &aacute;lbum y salida boca abajo:</strong> <a href="%(pv)s">Photo Vault</a>.</li>
+<li><strong>Nada en ning&uacute;n servidor, y lo que m&aacute;s pesa es el PIN se&ntilde;uelo o el detalle del cifrado:</strong> Arca.</li>
+<li><strong>Quieres copia en la nube:</strong> Pic Safe o Keepsafe.</li>
 </ul>
 """ % dict(hidden=HIDDEN, picsafe=PICSAFE, keepsafe=KEEPSAFE, arca=ARCA, pv=PV, date=VAULT_DATE_ES)
 
@@ -1911,6 +1920,33 @@ def _faq_html(faq, heading):
     for q, a in faq:
         parts.append("<h3>%s</h3>\n<p>%s</p>\n" % (_h.escape(q, quote=False), _h.escape(a, quote=False)))
     return "".join(parts)
+
+
+def _jsonld_list(article_jsonld, items):
+    """BlogPosting + ItemList (ranking) en un @graph."""
+    import json
+    art = json.loads(article_jsonld)
+    art.pop("@context")
+    lst = {
+        "@type": "ItemList",
+        "itemListOrder": "https://schema.org/ItemListOrderAscending",
+        "numberOfItems": len(items),
+        "itemListElement": [
+            {"@type": "ListItem", "position": i + 1,
+             "item": {"@type": "MobileApplication", "name": n, "operatingSystem": "iOS", "url": u}}
+            for i, (n, u) in enumerate(items)
+        ],
+    }
+    return json.dumps({"@context": "https://schema.org", "@graph": [art, lst]},
+                      ensure_ascii=False, indent=2)
+
+
+VAULT_RANKING = [
+    ("Photo Vault: Hide Pics Video", "https://apps.apple.com/app/id1532670722"),
+    ("Private Photo Vault - Arca", "https://apps.apple.com/us/app/id6779157571"),
+    ("Private Photo Vault - Pic Safe", "https://apps.apple.com/us/app/id417571834"),
+    ("Secret Photo Vault: Keepsafe", "https://apps.apple.com/us/app/id510873505"),
+]
 
 
 def _jsonld_faq(article_jsonld, faq):
