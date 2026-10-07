@@ -362,6 +362,12 @@ INDEX_EN = """
         <div class="article-body">
         <ul class="post-list">
             <li>
+                <a href="best-ai-video-generator-apps-iphone.html">Best AI video generator apps for iPhone in 2026</a>
+                <p>Runway, Kling AI, Pika, PixVerse, Luma Dream Machine, invideo,
+                CapCut and our own Dora: what each one is best at, how it
+                charges, and who it is for.</p>
+            </li>
+            <li>
                 <a href="best-offline-ai-chat-apps-iphone-mac.html">Best offline AI chat apps for iPhone and Mac (2026)</a>
                 <p>Locally AI, Enclave, PocketPal, Private LLM, Privacy AI and
                 our own Pinku: price, models, Mac support and where each one is
@@ -401,6 +407,12 @@ INDEX_ES = """
         </p>
         <div class="article-body">
         <ul class="post-list">
+            <li>
+                <a href="mejores-apps-generador-video-ia-iphone.html">Las mejores apps para generar v&iacute;deo con IA en iPhone (2026)</a>
+                <p>Runway, Kling AI, Pika, PixVerse, Luma Dream Machine, invideo,
+                CapCut y nuestra Dora: en qu&eacute; destaca cada una, c&oacute;mo
+                cobra y para qui&eacute;n es.</p>
+            </li>
             <li>
                 <a href="mejores-apps-ia-sin-conexion-iphone-mac.html">Las mejores apps de IA sin conexi&oacute;n para iPhone y Mac (2026)</a>
                 <p>Locally AI, Enclave, PocketPal, Private LLM, Privacy AI y
@@ -638,6 +650,51 @@ def build(render, hreflang):
             "Read in English", "../best-offline-ai-chat-apps-iphone-mac.html",
         ) + '\n        <div class="article-body">' + A6_ES_BODY
           + '</div>\n        <div class="article-body article-sources">' + A6_ES_SOURCES + '</div>',
+    ))
+
+    # --- 7: apps de video con IA para iPhone --------------------------------
+    en_path = "blog/best-ai-video-generator-apps-iphone.html"
+    es_path = "blog/es/mejores-apps-generador-video-ia-iphone.html"
+    alt = hreflang(en_path, es_path)
+
+    h1_en = "Best AI video generator apps for iPhone in 2026"
+    d_en = ("Runway, Kling AI, Pika, PixVerse, Luma Dream Machine, invideo, CapCut and Dora compared: "
+            "what each is best at and how it charges, from their App Store pages. "
+            "Written by Dora's maker, disclosed.")
+    out.append(render(
+        path=en_path, lang="en",
+        title="Best AI video generator apps for iPhone in 2026 | Saga Labs",
+        desc=d_en, og_title=h1_en, alternates=alt,
+        jsonld=_jsonld_faq(_jsonld(h1_en, d_en, "https://aisagalab.com/" + en_path, "en", "AI video", AIV_DATE_ISO), AIV_FAQ_EN),
+        body=_head(
+            "AI video", h1_en,
+            "Eight apps that turn a photo or a few words into a short video on your "
+            "iPhone, and who each one is for. One of them is ours.",
+            '<a href="%s" rel="author me noopener" target="_blank">Maruta G</a> &middot; ' % LINKEDIN + AIV_DATE_EN,
+            "Leer en espa&ntilde;ol", "es/mejores-apps-generador-video-ia-iphone.html",
+        ) + '\n        <div class="article-body">' + A7_EN_BODY
+          + _faq_html(AIV_FAQ_EN, "Questions people ask")
+          + '</div>\n        <div class="article-body article-sources">' + A7_EN_SOURCES + '</div>',
+    ))
+
+    h1_es = "Las mejores apps para generar vídeo con IA en iPhone (2026)"
+    d_es = ("Runway, Kling AI, Pika, PixVerse, Luma Dream Machine, invideo, CapCut y Dora comparadas: "
+            "en qu\u00e9 destaca cada una y c\u00f3mo cobra, seg\u00fan su ficha del App Store. "
+            "Escrito por quien hace Dora, y lo decimos.")
+    out.append(render(
+        path=es_path, lang="es",
+        title="Las mejores apps para generar vídeo con IA en iPhone (2026) | Saga Labs",
+        desc=d_es, og_title=h1_es, alternates=alt,
+        jsonld=_jsonld_faq(_jsonld(h1_es, d_es, "https://aisagalab.com/" + es_path, "es", "Vídeo con IA", AIV_DATE_ISO), AIV_FAQ_ES),
+        body=_head(
+            "V&iacute;deo con IA", h1_es,
+            "Ocho apps que convierten una foto o unas palabras en un v&iacute;deo corto "
+            "en tu iPhone, y para qui&eacute;n es cada una. Una de ellas es nuestra.",
+            '<a href="%s" rel="author me noopener" target="_blank">Maruta G</a> &middot; ' % LINKEDIN + AIV_DATE_ES,
+            "Read in English", "../best-ai-video-generator-apps-iphone.html",
+        ) + '\n        <div class="article-body">' + A7_ES_BODY
+          + _faq_html(AIV_FAQ_ES, "Preguntas frecuentes")
+          + '</div>\n        <div class="article-body article-sources">' + A7_ES_SOURCES + '</div>',
     ))
 
     return out
@@ -1755,3 +1812,431 @@ A6_ES_SOURCES = """
 <p>Si algo está desactualizado, <a href="mailto:sagalabs@proton.me">avísanos</a> y
 corregimos la página.</p>
 """ % dict(_OFF, date=OFF_DATE_ES)
+
+
+# --------------------------------------------------------------------------
+# 7 — Apps de video con IA para iPhone (comparativa, Dora es nuestra)
+# --------------------------------------------------------------------------
+# Dora es nuestra: el aviso va arriba del todo. Datos de las demas sacados el
+# 7 oct 2026 de su ficha del App Store (EE. UU.), sus compras dentro de la app
+# y la API publica de lookup de iTunes. Sin precios: solo como cobran.
+# Fuera: Hailuo (la app oficial id6741675037 ya no esta en la tienda) e
+# Higgsfield (sin app oficial; hay imitaciones con su nombre). CapCut: su ficha
+# no habla de generar video; lo de Seedance sale de capcut.com y dice
+# "subscriber accounts" en Europa, Asia, Oriente Medio y Sudamerica.
+# Dora: solo los hechos verificados (docs/README.md del repo Dora): medianas
+# 115 s video y 48 s imagen, 22 modelos, sin generaciones gratis, sin precios.
+# Sin rayas en el texto.
+
+AIV_DATE_ISO = "2026-10-07"
+AIV_DATE_EN = "7 October 2026"
+AIV_DATE_ES = "7 de octubre de 2026"
+
+DORA_WEB = "https://doravideo.com/?utm_source=aisagalab&amp;utm_medium=referral&amp;utm_campaign=dora_blog_compare"
+DORA_IOS = "https://apps.apple.com/app/id6754180384"
+DORA_CONNECTORS = "https://doravideo.com/connectors?utm_source=aisagalab&amp;utm_medium=referral&amp;utm_campaign=dora_blog_compare"
+CAPCUT = "https://apps.apple.com/us/app/id1500855883"
+CAPCUT_SEEDANCE = "https://www.capcut.com/features/seedance-2-5-for-video-editor"
+RUNWAY = "https://apps.apple.com/us/app/id1665024375"
+PIKA = "https://apps.apple.com/us/app/id6680155400"
+LUMA = "https://apps.apple.com/us/app/id6478852867"
+KLING = "https://apps.apple.com/us/app/id6738049229"
+PIXVERSE = "https://apps.apple.com/us/app/id6767802142"
+INVIDEO = "https://apps.apple.com/us/app/id6471394316"
+
+_AIV = dict(dora=DORA_WEB, dora_ios=DORA_IOS, connectors=DORA_CONNECTORS,
+            capcut=CAPCUT, seedance=CAPCUT_SEEDANCE, runway=RUNWAY, pika=PIKA,
+            luma=LUMA, kling=KLING, pixverse=PIXVERSE, invideo=INVIDEO)
+
+# Preguntas frecuentes: el mismo texto va visible y en el FAQPage.
+AIV_FAQ_EN = [
+    ("What is the best AI video generator app for iPhone?",
+     "It depends on the job. Runway and Kling AI are strong all-rounders for cinematic clips. "
+     "Pika and PixVerse are built around effects and templates. invideo and CapCut are the ones "
+     "with a full timeline editor. Dora fits people who want many short vertical clips from "
+     "photos, or who work inside Claude or ChatGPT. It is made by Saga Labs, who wrote this page."),
+    ("Can I turn a photo into a video on iPhone?",
+     "Yes. Runway, Pika, Kling AI, PixVerse Lite, invideo and Dora all say on their App Store "
+     "pages that they turn a still photo into a moving video. Luma Dream Machine works from "
+     "reference images, up to four at a time."),
+    ("How long does an AI video take to generate?",
+     "Usually minutes, not seconds. Runway's App Store page says a first generation takes about "
+     "two minutes. In Dora the measured median is 115 seconds for a video and 48 seconds for an "
+     "image. Longer, higher resolution clips take longer in every app."),
+    ("Which apps can copy a dance onto the person in my photo?",
+     "PixVerse Lite and Dora both have a feature called Motion Control: you give it a photo of a "
+     "person and a reference video, and the person in the photo makes the moves from the video."),
+    ("Can I make AI videos from inside ChatGPT or Claude?",
+     "Dora works inside Claude and ChatGPT through an MCP connector, using the same account and "
+     "balance as the app; the setup steps are at doravideo.com/connectors. We did not check "
+     "whether the other apps here offer the same, so look at their own sites."),
+    ("Are these apps free?",
+     "All of them are free to download, and all of them charge through in-app purchases: "
+     "subscriptions, credit packs or both. Runway says it is free to start. Dora has paid plans "
+     "only and no free generations."),
+]
+
+AIV_FAQ_ES = [
+    ("¿Cuál es la mejor app para generar vídeo con IA en iPhone?",
+     "Depende de para qué. Runway y Kling AI son buenas para casi todo y dan clips de aire "
+     "cinematográfico. Pika y PixVerse giran en torno a efectos y plantillas. invideo y CapCut son "
+     "las que tienen un editor completo con línea de tiempo. Dora encaja con quien quiere muchos "
+     "clips verticales cortos a partir de fotos, o trabaja dentro de Claude o ChatGPT. La hace "
+     "Saga Labs, que es quien escribe esta página."),
+    ("¿Puedo convertir una foto en vídeo en el iPhone?",
+     "Sí. Runway, Pika, Kling AI, PixVerse Lite, invideo y Dora dicen en su ficha del App Store "
+     "que convierten una foto fija en un vídeo con movimiento. Luma Dream Machine trabaja con "
+     "imágenes de referencia, hasta cuatro a la vez."),
+    ("¿Cuánto tarda en generarse un vídeo con IA?",
+     "Minutos, no segundos. La ficha de Runway dice que la primera generación tarda unos dos "
+     "minutos. En Dora la mediana medida es de 115 segundos para un vídeo y 48 segundos para una "
+     "imagen. En todas las apps, los clips más largos o de más resolución tardan más."),
+    ("¿Qué apps copian un baile en la persona de mi foto?",
+     "PixVerse Lite y Dora tienen una función llamada Motion Control: le das la foto de una "
+     "persona y un vídeo de referencia, y la persona de la foto hace los movimientos del vídeo."),
+    ("¿Se pueden hacer vídeos con IA desde ChatGPT o Claude?",
+     "Dora funciona dentro de Claude y ChatGPT con un conector MCP, con la misma cuenta y el mismo "
+     "saldo que la app; los pasos están en doravideo.com/connectors. No hemos comprobado si las "
+     "demás apps de esta lista ofrecen lo mismo, así que mira sus propias webs."),
+    ("¿Son gratis estas apps?",
+     "Todas se descargan gratis y todas cobran con compras dentro de la app: suscripciones, packs "
+     "de créditos o las dos cosas. Runway dice que se puede empezar gratis. Dora solo tiene planes "
+     "de pago y no da generaciones gratis."),
+]
+
+
+def _faq_html(faq, heading):
+    import html as _h
+    parts = ["\n<h2>%s</h2>\n" % heading]
+    for q, a in faq:
+        parts.append("<h3>%s</h3>\n<p>%s</p>\n" % (_h.escape(q, quote=False), _h.escape(a, quote=False)))
+    return "".join(parts)
+
+
+def _jsonld_faq(article_jsonld, faq):
+    """BlogPosting + FAQPage en un @graph. Sale de _jsonld para no duplicar autor."""
+    import json
+    art = json.loads(article_jsonld)
+    art.pop("@context")
+    page = {
+        "@type": "FAQPage",
+        "mainEntity": [
+            {"@type": "Question", "name": q,
+             "acceptedAnswer": {"@type": "Answer", "text": a}}
+            for q, a in faq
+        ],
+    }
+    return json.dumps({"@context": "https://schema.org", "@graph": [art, page]},
+                      ensure_ascii=False, indent=2)
+
+
+A7_EN_BODY = """
+<p><strong>Disclosure: we make Dora, one of the apps below.</strong> Saga Labs,
+the studio that runs this site, builds and sells it. We have described the other
+apps the way their own App Store pages describe them, and we say plainly where
+they beat us. Ratings and in-app purchases are from the US App Store on
+%(date)s. We list how each app charges, not prices, because prices change by
+country and by week.</p>
+
+<p>Every app here does some version of the same thing: you give it a photo or a
+few words, and a few minutes later you get back a short video clip. They differ
+in which models they run, how much editing they let you do afterwards, and how
+they charge.</p>
+
+<h2>The eight apps at a glance</h2>
+
+<div class="table-scroll"><table>
+<thead><tr><th></th><th>Strongest at</th><th>How it charges</th><th>Rating (US)</th></tr></thead>
+<tbody>
+<tr><td><a href="%(runway)s" target="_blank" rel="noopener">Runway</a></td><td>Many top models in one app, an agent that builds a whole video</td><td>Free to start; subscriptions and credit packs</td><td>4.5 &middot; 16,768</td></tr>
+<tr><td><a href="%(kling)s" target="_blank" rel="noopener">Kling AI</a></td><td>Longer clips, 1080p or 4K, extension up to 3 minutes</td><td>Credit packs and plans, weekly or monthly</td><td>4.7 &middot; 31,559</td></tr>
+<tr><td><a href="%(pika)s" target="_blank" rel="noopener">Pika</a></td><td>Playful effects: swap, add or melt things in your clips</td><td>Subscriptions, weekly, monthly or yearly</td><td>4.7 &middot; 4,185</td></tr>
+<tr><td><a href="%(pixverse)s" target="_blank" rel="noopener">PixVerse Lite</a></td><td>Trending templates, AI dance, lip sync, Motion Control</td><td>Plans, weekly or yearly, and credit packs</td><td>4.3 &middot; 1,228</td></tr>
+<tr><td><a href="%(luma)s" target="_blank" rel="noopener">Luma Dream Machine</a></td><td>Consistent characters from one face photo; edit by describing</td><td>Subscriptions, plus credit packs</td><td>4.5 &middot; 1,795</td></tr>
+<tr><td><a href="%(invideo)s" target="_blank" rel="noopener">invideo</a></td><td>A full multitrack editor plus 200+ models, team editing</td><td>Plans and add-on packs</td><td>4.5 &middot; 27,821</td></tr>
+<tr><td><a href="%(capcut)s" target="_blank" rel="noopener">CapCut</a></td><td>Editing: timeline, captions, effects, 4K export</td><td>Free editor; monthly or yearly subscriptions</td><td>4.6 &middot; 1,123,165</td></tr>
+<tr><td><a href="%(dora_ios)s" target="_blank" rel="noopener">Dora</a> (ours)</td><td>Many short vertical clips from photos; works inside Claude and ChatGPT</td><td>Paid plans only, no free generations</td><td>4.3 &middot; 15</td></tr>
+</tbody>
+</table></div>
+
+<p class="article-note">All eight are free to download from the App Store and
+charge through in-app purchases. Ratings are from Apple's public lookup API on
+%(date)s.</p>
+
+<h2>Runway: the most models in one place</h2>
+
+<p>Runway's app puts several of the best known video and image models side by
+side (its page lists Seedance 2.5, Kling 3 Pro, its own Gen-4.5, Nano Banana Pro
+and Nano Banana 2) and does text to video, image to video and video to video.
+Its Runway Agent takes a plain description, plans the shots, generates them and
+assembles the finished video. Characters, objects and places can be kept the
+same across shots, and work syncs with Runway on a computer. It is free to
+start, with subscriptions and credit packs for more. Best for people who want to
+pick the model for each job and may finish the work on a laptop.</p>
+
+<h2>Kling AI: longer, sharper clips</h2>
+
+<p>Kling AI runs its own Kling models. Its page says it generates up to 15
+seconds in native 1080p or 4K, and that Video Extension takes a clip up to three
+minutes. It also generates images in 4K, and has a community feed where you can
+clone a piece you like and try the idea yourself. It charges with credit
+packs and plans, including a weekly one. Best for people who care most about
+motion and image quality, or who need a clip longer than a few seconds.</p>
+
+<h2>Pika: effects first</h2>
+
+<p>Pika is built for fun, shareable clips. Pikaffects melt, squish, explode or
+levitate a photo; Pikaswaps replace anything in a video with something from your
+photos or a prompt; Pikadditions drop new objects or people into a video you
+already have while keeping its sound. It also does plain image to video and text
+to video. It charges with subscriptions, weekly, monthly or yearly. Best for
+social posts and memes where the effect is the point.</p>
+
+<h2>PixVerse Lite: templates and trends</h2>
+
+<p>PixVerse Lite is the current iPhone app from PixVerse, running its own V6
+model and several outside models. Its strength is the template library: AI dance,
+transformations, beauty and miniature styles, ready to apply to a photo. It also
+has Motion Control (a character photo plus a reference motion video), lip sync
+for talking avatars, video upscaling to 4K and a video extension tool. It charges
+with weekly or yearly plans and credit packs. Best for people who follow trends
+and want a result in a couple of taps.</p>
+
+<h2>Luma Dream Machine: talk to it like a creative partner</h2>
+
+<p>Dream Machine is Luma's app for images and video. Instead of prompt syntax,
+you ask for what you want and use Modify to change an image or video by
+describing the change. Reference lets you guide it with up to four images, and a
+single photo of a face is enough to keep a person consistent across many images
+and videos. It charges with subscriptions plus credit packs. Best for people
+exploring an idea or a look across many variations.</p>
+
+<h2>invideo: when you also need to edit</h2>
+
+<p>invideo combines generation and editing. Its agent, Agent Two, turns a plain
+description into a video and keeps changing it as you direct; every AI edit stays
+editable on a professional multitrack timeline. It offers more than 200 models
+for image, video, voice, sound and music, and real time collaboration with a team.
+It charges with plans and add-on packs. Best for ads, explainers and YouTube
+videos that need more than one clip.</p>
+
+<h2>CapCut: the editor most people already have</h2>
+
+<p>CapCut is first of all a video editor, and an excellent free one: multitrack
+timeline, keyframes, auto captions, text to speech, background removal, millions
+of music clips and 4K export at 60 fps. Its App Store page does not describe
+generating video from a prompt. CapCut's own site says ByteDance's Seedance 2.5
+video model is <a href="%(seedance)s" target="_blank" rel="noopener">rolling out
+to CapCut</a> for subscriber accounts in Europe, Asia, the Middle East and South
+America. The editor is free, with monthly or yearly subscriptions for more. Best
+for finishing clips made anywhere, including in every other app on this list.</p>
+
+<h2>Dora: ours, and narrower on purpose</h2>
+
+<p><a href="%(dora)s">Dora</a> turns a photo or a text description into a short
+video or an image, vertical, horizontal or square. It is an iPhone app,
+<a href="%(dora_ios)s" target="_blank" rel="noopener">DORA &middot; AI Video
+Generator</a>, and a website, <a href="%(dora)s">doravideo.com</a>, with the same
+account and balance on both. A video takes about two minutes and an image about a
+minute (measured medians: 115 seconds and 48 seconds). There are 22 models in the
+app to choose from. Motion Control copies the moves of a dance video onto the
+person in a photo.</p>
+
+<p>Dora also works inside Claude and ChatGPT through an MCP connector, so you can
+ask the assistant for a video in the middle of a conversation and it uses your
+Dora account; the <a href="%(connectors)s">setup steps are here</a>. Dora has paid
+plans only, with no free generations.</p>
+
+<p>Where others beat it: Dora is not an editor. It has no timeline, does not cut
+clips together and does not publish to social networks; you get the file and take
+it to CapCut, invideo or wherever you edit. It has no community feed or agent that
+assembles a whole video, and it has far fewer ratings than any other app here.</p>
+
+<h2>Left out, and why</h2>
+
+<p>Hailuo, from MiniMax, and Higgsfield are both popular for AI video. On
+%(date)s we could not find an official app from either in the US App Store, while
+several apps with similar names were listed by other developers. If you want
+either one, start from the company's own website rather than an App Store
+search.</p>
+
+<h2>How to choose</h2>
+
+<ul>
+<li><strong>Pick the model yourself, finish on a computer:</strong> Runway.</li>
+<li><strong>Quality and longer clips:</strong> Kling AI.</li>
+<li><strong>Effects for social posts and memes:</strong> Pika.</li>
+<li><strong>Trends and ready templates:</strong> PixVerse Lite.</li>
+<li><strong>Explore a character or a look across many versions:</strong> Luma Dream Machine.</li>
+<li><strong>A finished ad or explainer with editing and a team:</strong> invideo.</li>
+<li><strong>Editing what you already made:</strong> CapCut.</li>
+<li><strong>Many short vertical clips from photos, or video from inside Claude or ChatGPT:</strong> <a href="%(dora)s">Dora</a>.</li>
+</ul>
+""" % dict(_AIV, date=AIV_DATE_EN)
+
+A7_EN_SOURCES = """
+<h2>Sources</h2>
+<ul>
+<li>App Store pages (US): <a href="%(runway)s" target="_blank" rel="noopener">Runway</a>, <a href="%(kling)s" target="_blank" rel="noopener">Kling AI</a>, <a href="%(pika)s" target="_blank" rel="noopener">Pika</a>, <a href="%(pixverse)s" target="_blank" rel="noopener">PixVerse Lite</a>, <a href="%(luma)s" target="_blank" rel="noopener">Luma Dream Machine</a>, <a href="%(invideo)s" target="_blank" rel="noopener">invideo</a>, <a href="%(capcut)s" target="_blank" rel="noopener">CapCut</a>, <a href="%(dora_ios)s" target="_blank" rel="noopener">Dora</a>. Descriptions and in-app purchases as shown on %(date)s.</li>
+<li>Ratings: Apple's public iTunes lookup API, %(date)s.</li>
+<li>CapCut, <a href="%(seedance)s" target="_blank" rel="noopener">Seedance 2.5 for Video Editor</a>.</li>
+<li>Dora's connectors for Claude and ChatGPT: <a href="%(connectors)s">doravideo.com/connectors</a>. Dora's generation times are medians we measured on our own production jobs.</li>
+</ul>
+<p>If anything here is out of date, <a href="mailto:sagalabs@proton.me">tell us</a>
+and we will correct the page.</p>
+""" % dict(_AIV, date=AIV_DATE_EN)
+
+A7_ES_BODY = """
+<p><strong>Aviso: Dora, una de las apps de esta lista, es nuestra.</strong> La
+hace y la vende Saga Labs, el estudio que publica esta web. Hemos descrito las
+demás como las describe su propia ficha del App Store, y decimos claramente en
+qué nos ganan. Valoraciones y compras dentro de la app de la App Store de EE. UU.
+a %(date)s. Contamos cómo cobra cada app, no los precios, porque cambian según el
+país y la semana.</p>
+
+<p>Todas hacen, a su manera, lo mismo: les das una foto o unas palabras y unos
+minutos después te devuelven un clip de vídeo corto. Cambian los modelos que usan,
+cuánto te dejan editar después y cómo cobran.</p>
+
+<h2>Las ocho apps de un vistazo</h2>
+
+<div class="table-scroll"><table>
+<thead><tr><th></th><th>En qué destaca</th><th>Cómo cobra</th><th>Valoración (EE. UU.)</th></tr></thead>
+<tbody>
+<tr><td><a href="%(runway)s" target="_blank" rel="noopener">Runway</a></td><td>Muchos de los mejores modelos en una app, un agente que monta el vídeo entero</td><td>Se empieza gratis; suscripciones y packs de créditos</td><td>4,5 &middot; 16.768</td></tr>
+<tr><td><a href="%(kling)s" target="_blank" rel="noopener">Kling AI</a></td><td>Clips más largos, 1080p o 4K, extensión hasta 3 minutos</td><td>Packs de créditos y planes, semanales o mensuales</td><td>4,7 &middot; 31.559</td></tr>
+<tr><td><a href="%(pika)s" target="_blank" rel="noopener">Pika</a></td><td>Efectos divertidos: cambiar, añadir o derretir cosas en tus clips</td><td>Suscripciones semanales, mensuales o anuales</td><td>4,7 &middot; 4.185</td></tr>
+<tr><td><a href="%(pixverse)s" target="_blank" rel="noopener">PixVerse Lite</a></td><td>Plantillas de tendencia, baile con IA, lip sync, Motion Control</td><td>Planes semanales o anuales y packs de créditos</td><td>4,3 &middot; 1.228</td></tr>
+<tr><td><a href="%(luma)s" target="_blank" rel="noopener">Luma Dream Machine</a></td><td>Personajes coherentes a partir de una foto de la cara; editar describiendo</td><td>Suscripciones y packs de créditos</td><td>4,5 &middot; 1.795</td></tr>
+<tr><td><a href="%(invideo)s" target="_blank" rel="noopener">invideo</a></td><td>Editor multipista completo, más de 200 modelos, edición en equipo</td><td>Planes y packs adicionales</td><td>4,5 &middot; 27.821</td></tr>
+<tr><td><a href="%(capcut)s" target="_blank" rel="noopener">CapCut</a></td><td>Editar: línea de tiempo, subtítulos, efectos, exportar en 4K</td><td>Editor gratis; suscripciones mensuales o anuales</td><td>4,6 &middot; 1.123.165</td></tr>
+<tr><td><a href="%(dora_ios)s" target="_blank" rel="noopener">Dora</a> (nuestra)</td><td>Muchos clips verticales cortos a partir de fotos; funciona dentro de Claude y ChatGPT</td><td>Solo planes de pago, sin generaciones gratis</td><td>4,3 &middot; 15</td></tr>
+</tbody>
+</table></div>
+
+<p class="article-note">Las ocho se descargan gratis del App Store y cobran con
+compras dentro de la app. Valoraciones de la API pública de Apple a %(date)s.</p>
+
+<h2>Runway: la que más modelos reúne</h2>
+
+<p>La app de Runway pone lado a lado varios de los modelos de vídeo e imagen más
+conocidos (su ficha cita Seedance 2.5, Kling 3 Pro, su propio Gen-4.5, Nano Banana
+Pro y Nano Banana 2) y hace texto a vídeo, imagen a vídeo y vídeo a vídeo. Su
+Runway Agent recibe una descripción normal, planifica los planos, los genera y
+monta el vídeo terminado. Puede mantener iguales personajes, objetos y lugares de
+un plano a otro, y el trabajo se sincroniza con Runway en el ordenador. Se empieza
+gratis, con suscripciones y packs de créditos para más. Para quien quiere elegir
+el modelo de cada encargo y quizá terminar en el portátil.</p>
+
+<h2>Kling AI: clips más largos y más nítidos</h2>
+
+<p>Kling AI usa sus propios modelos Kling. Su ficha dice que genera hasta 15
+segundos en 1080p nativo o en 4K, y que Video Extension alarga un clip hasta tres
+minutos. También genera imágenes en 4K y tiene un muro de la comunidad donde
+puedes clonar una obra que te guste y probar la idea tú. Cobra con packs de
+créditos y planes, uno de ellos semanal. Para quien prioriza la calidad del
+movimiento y de la imagen, o necesita un clip de más de unos segundos.</p>
+
+<h2>Pika: primero, los efectos</h2>
+
+<p>Pika está hecha para clips divertidos y para compartir. Pikaffects derrite,
+aplasta, hace explotar o hace levitar una foto; Pikaswaps cambia cualquier cosa de un
+vídeo por algo de tus fotos o de una descripción; Pikadditions mete objetos o
+personas nuevas en un vídeo que ya tienes sin tocar su sonido. También hace imagen
+a vídeo y texto a vídeo sin más. Cobra con suscripciones semanales, mensuales o
+anuales. Para publicaciones y memes en los que el efecto es lo importante.</p>
+
+<h2>PixVerse Lite: plantillas y tendencias</h2>
+
+<p>PixVerse Lite es la app de iPhone actual de PixVerse, con su propio modelo V6 y
+varios modelos externos. Su fuerte es la biblioteca de plantillas: baile con IA,
+transformaciones, estilos de belleza y de miniatura, listos para aplicar a una
+foto. Tiene además Motion Control (foto de un personaje más un vídeo de movimiento
+de referencia), lip sync para avatares que hablan, escalado de vídeo a 4K y una
+herramienta para alargar vídeos. Cobra con planes semanales o anuales y packs de
+créditos. Para quien sigue las tendencias y quiere el resultado en dos toques.</p>
+
+<h2>Luma Dream Machine: le hablas como a un compañero creativo</h2>
+
+<p>Dream Machine es la app de Luma para imágenes y vídeo. En vez de aprender a
+escribir prompts, pides lo que quieres y usas Modify para cambiar una imagen o un
+vídeo describiendo el cambio. Reference te deja guiarla con hasta cuatro imágenes,
+y basta una foto de una cara para mantener a una persona igual en muchas imágenes
+y vídeos. Cobra con suscripciones y packs de créditos. Para quien explora una idea
+o un estilo con muchas variaciones.</p>
+
+<h2>invideo: cuando también hay que editar</h2>
+
+<p>invideo junta generación y edición. Su agente, Agent Two, convierte una
+descripción normal en un vídeo y lo sigue cambiando según le indicas; cada edición
+de la IA se puede retocar en una línea de tiempo multipista profesional. Ofrece
+más de 200 modelos de imagen, vídeo, voz, sonido y música, y edición en tiempo real
+con un equipo. Cobra con planes y packs adicionales. Para anuncios, vídeos
+explicativos y de YouTube que necesitan más de un clip.</p>
+
+<h2>CapCut: el editor que casi todo el mundo ya tiene</h2>
+
+<p>CapCut es ante todo un editor de vídeo, y uno muy bueno y gratis: línea de
+tiempo multipista, fotogramas clave, subtítulos automáticos, texto a voz, quitar
+fondos, millones de clips de música y exportación en 4K a 60 fps. Su ficha del App
+Store no habla de generar vídeo a partir de una descripción. La web de CapCut dice
+que Seedance 2.5, el modelo de vídeo de ByteDance, <a href="%(seedance)s"
+target="_blank" rel="noopener">está llegando a CapCut</a> para cuentas de
+suscriptor en Europa, Asia, Oriente Medio y Sudamérica. El editor es gratis, con
+suscripciones mensuales o anuales para más. Para terminar clips hechos en
+cualquier sitio, incluidas todas las demás apps de esta lista.</p>
+
+<h2>Dora: la nuestra, y más acotada a propósito</h2>
+
+<p><a href="%(dora)s">Dora</a> convierte una foto o una descripción en texto en un
+vídeo corto o una imagen, en vertical, horizontal o cuadrado. Es una app de
+iPhone, <a href="%(dora_ios)s" target="_blank" rel="noopener">DORA &middot; AI Video
+Generator</a>, y una web, <a href="%(dora)s">doravideo.com</a>, con la misma cuenta
+y el mismo saldo en las dos. Un vídeo tarda unos dos minutos y una imagen, más o
+menos uno (medianas medidas: 115 segundos y 48 segundos). En la app hay 22 modelos
+para elegir. Motion Control copia los movimientos de un vídeo de baile en la
+persona de una foto.</p>
+
+<p>Dora funciona también dentro de Claude y ChatGPT con un conector MCP: le pides
+un vídeo al asistente en mitad de la conversación y lo hace con tu cuenta de Dora;
+<a href="%(connectors)s">aquí están los pasos</a>. Dora solo tiene planes de pago,
+sin generaciones gratis.</p>
+
+<p>En qué le ganan las demás: Dora no es un editor. No tiene línea de tiempo, no
+une clips y no publica en redes; te da el archivo y lo llevas a CapCut, a invideo
+o a donde edites. No tiene muro de la comunidad ni un agente que monte un vídeo
+entero, y tiene muchas menos valoraciones que cualquier otra app de la lista.</p>
+
+<h2>Las que faltan, y por qué</h2>
+
+<p>Hailuo, de MiniMax, y Higgsfield son populares para vídeo con IA. A %(date)s no
+encontramos una app oficial de ninguna de las dos en la App Store de EE. UU., y sí
+varias apps con nombres parecidos de otros desarrolladores. Si quieres una de
+ellas, entra desde la web de la propia empresa y no desde una búsqueda en el App
+Store.</p>
+
+<h2>Cómo elegir</h2>
+
+<ul>
+<li><strong>Elegir tú el modelo y terminar en el ordenador:</strong> Runway.</li>
+<li><strong>Calidad y clips más largos:</strong> Kling AI.</li>
+<li><strong>Efectos para redes y memes:</strong> Pika.</li>
+<li><strong>Tendencias y plantillas listas:</strong> PixVerse Lite.</li>
+<li><strong>Explorar un personaje o un estilo en muchas versiones:</strong> Luma Dream Machine.</li>
+<li><strong>Un anuncio o vídeo explicativo terminado, con edición y en equipo:</strong> invideo.</li>
+<li><strong>Editar lo que ya tienes:</strong> CapCut.</li>
+<li><strong>Muchos clips verticales cortos a partir de fotos, o vídeo desde dentro de Claude o ChatGPT:</strong> <a href="%(dora)s">Dora</a>.</li>
+</ul>
+""" % dict(_AIV, date=AIV_DATE_ES)
+
+A7_ES_SOURCES = """
+<h2>Fuentes</h2>
+<ul>
+<li>Fichas del App Store (EE. UU.): <a href="%(runway)s" target="_blank" rel="noopener">Runway</a>, <a href="%(kling)s" target="_blank" rel="noopener">Kling AI</a>, <a href="%(pika)s" target="_blank" rel="noopener">Pika</a>, <a href="%(pixverse)s" target="_blank" rel="noopener">PixVerse Lite</a>, <a href="%(luma)s" target="_blank" rel="noopener">Luma Dream Machine</a>, <a href="%(invideo)s" target="_blank" rel="noopener">invideo</a>, <a href="%(capcut)s" target="_blank" rel="noopener">CapCut</a>, <a href="%(dora_ios)s" target="_blank" rel="noopener">Dora</a>. Descripciones y compras dentro de la app a %(date)s.</li>
+<li>Valoraciones: API pública de búsqueda de iTunes de Apple, %(date)s.</li>
+<li>CapCut, <a href="%(seedance)s" target="_blank" rel="noopener">Seedance 2.5 for Video Editor</a>.</li>
+<li>Conectores de Dora para Claude y ChatGPT: <a href="%(connectors)s">doravideo.com/connectors</a>. Los tiempos de Dora son medianas que medimos en nuestros propios trabajos de producción.</li>
+</ul>
+<p>Si algo está desactualizado, <a href="mailto:sagalabs@proton.me">avísanos</a> y
+corregimos la página.</p>
+""" % dict(_AIV, date=AIV_DATE_ES)
