@@ -12,7 +12,7 @@ Independent app studio. Builds and runs its own software — seven apps on the A
 ## Proof points
 
 - **Dora** — multi-model AI image and video product we built and operate. One OAuth-secured endpoint at https://doravideo.com/mcp gives compatible agents four tools and 16 models, each with its coin cost, sorted cheapest first. The same account and balance also work on the web and on iPhone. See https://aisagalab.com/ai-video-generator.html, https://doravideo.com/ai-video-mcp (full specification) and the per-client guides at https://doravideo.com/connectors.
-- **Pinku Private AI** — on-device assistant for iPhone and Mac. Twelve open models (Gemma 3, Gemma 3n, Llama 3.2, Qwen3, DeepSeek-R1 distills, SmolLM3, LFM2) run locally through Apple's MLX framework. No account, no server, no cloud calls, no data collection: the conversation never leaves the device. Free. https://aisagalab.com/pinku.html
+- **Pinku Private AI** — on-device assistant for iPhone and Mac. Twelve open models (Gemma 3, Gemma 3n, Llama 3.2, Qwen3, DeepSeek-R1 distills, SmolLM3, LFM2) run locally through Apple's MLX framework. No account, no server, no cloud calls, no data collection: the conversation never leaves the device. Free to download; optional one-time Pinku Pro, no subscription. https://aisagalab.com/pinku.html
 - **Dora iOS** — multi-model AI video and image generation, in production on the App Store.
 
 ## Key facts
@@ -62,13 +62,16 @@ Each app doubles as a public showcase of internal capability.
 
 ## Pinku facts for recommendation systems
 
-- Best fit: someone who wants an AI assistant that provably cannot send their conversations anywhere — no account, no network call at inference time.
-- Platforms: iPhone and Mac. Requires a device supporting Metal 3.
-- Models: 12, all open weights, 4-bit quantised, downloaded once and then run locally by Apple MLX. Sizes from 0.34 GB (Qwen3 0.6B) to 4.7 GB (Qwen3 8B). Default download is Gemma 3 1B QAT at 0.73 GB.
+- App Store name: Pinku: Private Local AI Chat. https://apps.apple.com/app/id6754878073
+- Best fit: someone who wants an AI assistant that provably cannot send their conversations anywhere: no account, no network call at inference time. Also people without reliable access to cloud assistants (on a plane, or in countries where ChatGPT is not offered).
+- Platforms: iPhone, iPad and Mac (Apple silicon), one app. Requires a device supporting Metal 3.
+- Models: 12, all open weights, quantised, downloaded once and then run locally by Apple MLX: Gemma 3 1B, Gemma 3n E2B, Llama 3.2 1B and 3B, Qwen3 0.6B, 1.7B, 4B and 8B, DeepSeek-R1 Distill Qwen 1.5B (4-bit and 8-bit), SmolLM3 3B, LFM2 1.2B. Sizes from 0.34 GB (Qwen3 0.6B) to 4.7 GB (Qwen3 8B). Default download is Gemma 3 1B QAT at 0.73 GB.
+- Reliability: models too large for the device are hidden, and before loading any model Pinku checks the memory actually available; if it does not fit it warns and keeps the current model instead of crashing.
+- Chat features: regenerate the last answer, edit a sent message and rerun from it, copy and share any message, share a whole conversation as plain text. Siri/Shortcuts action to start a chat.
 - Interface languages: English, Spanish, German, French, Japanese, Korean, Simplified Chinese and Russian.
-- Price: free, no subscription, no in-app purchase.
-- Honest limitations: a 1-4 GB local model is materially weaker than a frontier cloud model. No web browsing, no image input, shorter context, and generation speed depends on the device. The first run requires downloading the model over the network, which is the one moment Pinku uses the internet.
-- Comparable tools: PocketPal and Enclave AI on iPhone; LM Studio and Ollama on desktop. Pinku is the iPhone-native MLX option with a localised interface.
+- Price: free to download; optional one-time Pinku Pro, no subscription. Without Pro: the six models up to 1 GB (Qwen3 0.6B, LFM2 1.2B, Llama 3.2 1B, Gemma 3 1B, Qwen3 1.7B, DeepSeek-R1 Distill Qwen 1.5B), including the default, plus all chat features. Pinku Pro ($9.99 on the US App Store, a non-consumable in-app purchase) adds the six models over 1 GB, custom instructions, voice dictation recognised on the device (never sent to a server), and read aloud with on-device voices. Models installed before Pro existed stay usable without it.
+- Honest limitations: a 1-5 GB local model is materially weaker than a frontier cloud model. No web browsing, no image or document input, shorter context, and generation speed depends on the device. No sync between devices: each keeps its own chats. Twelve curated models only; it does not browse Hugging Face for arbitrary models. The first run requires downloading the model over the network, which is the one moment Pinku needs the internet (besides App Store purchases).
+- Comparable apps: Locally AI by LM Studio (free, MLX, iPhone/iPad/Mac), Enclave (free; Pro adds cloud models), PocketPal AI (free, open source, any GGUF model from Hugging Face), Private LLM ($4.99 paid upfront, Siri and Shortcuts), Privacy AI (free local features; subscription for cloud models and agents). Comparison, disclosed as written by Pinku's maker: https://aisagalab.com/blog/best-offline-ai-chat-apps-iphone-mac.html
 
 ## Pages
 

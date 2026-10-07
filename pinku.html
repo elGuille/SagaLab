@@ -4,275 +4,159 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="icon" type="image/png" href="images/pinku logo.png" />
-  <title>Pinku — Private AI Assistant</title>
-  <meta name="description" content="Your personal AI assistant that runs entirely on-device. Fast, private conversations powered by advanced language models with zero data collection." />
-  <meta property="og:title" content="Pinku — Private AI Assistant" />
-  <meta property="og:description" content="Your personal AI assistant that runs entirely on-device. Fast, private conversations powered by advanced language models with zero data collection." />
-  <meta property="og:type" content="website" />
+  <title>Pinku: private AI chat that runs offline on iPhone and Mac</title>
+  <meta name="description" content="Pinku runs open AI models (Gemma 3, Llama 3.2, Qwen3, DeepSeek-R1 and more) entirely on your iPhone or Mac. No account, no server, works offline. Free to download; optional one-time Pinku Pro, no subscription." />
   <link rel="canonical" href="https://aisagalab.com/pinku.html">
+  <meta property="og:title" content="Pinku: private AI chat that runs offline on iPhone and Mac" />
+  <meta property="og:description" content="Open AI models running entirely on your device. No account, no server. Free to download; optional one-time Pinku Pro, no subscription." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aisagalab.com/pinku.html" />
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:title" content="Pinku — Private AI Assistant" />
-  <meta property="twitter:description" content="On-device AI assistant. Runs Gemma 3, Llama, Qwen3 and DeepSeek locally, with zero data collection." />
+  <meta property="twitter:title" content="Pinku: private AI chat that runs offline on iPhone and Mac" />
+  <meta property="twitter:description" content="Open AI models running entirely on your device. No account, no server. Free to download; optional one-time Pinku Pro, no subscription." />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Pinku Private AI",
-    "alternateName": "Pinku",
-    "description": "Personal AI assistant that runs entirely on-device using Apple MLX. Twelve open models including Gemma 3, Gemma 3n, Llama 3.2, Qwen3, DeepSeek-R1 distills, SmolLM3 and LFM2. No account, no server, no data collection.",
+    "name": "Pinku: Private Local AI Chat",
+    "alternateName": ["Pinku", "Pinku Private AI"],
+    "description": "Private AI chat that runs entirely on-device using Apple MLX. Twelve open models (Gemma 3, Gemma 3n, Llama 3.2, Qwen3, DeepSeek-R1 distills, SmolLM3 and LFM2), from 0.34 GB to 4.7 GB. No account, no server: the conversation never leaves the device. Free to download with six models up to 1 GB, including the default; an optional one-time in-app purchase, Pinku Pro, adds the larger models, custom instructions, on-device voice dictation and read aloud. No subscription.",
     "applicationCategory": "UtilitiesApplication",
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "operatingSystem": "iOS, iPadOS, macOS",
+    "url": "https://aisagalab.com/pinku.html",
+    "downloadUrl": "https://apps.apple.com/app/apple-store/id6754878073?pt=118348020&ct=sagalab-web&mt=8",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Free to download. Optional one-time in-app purchase, Pinku Pro ($9.99 on the US App Store), for models over 1 GB, custom instructions, voice dictation and read aloud. No subscription."
+    },
     "featureList": [
       "Runs 12 open language models entirely on-device via Apple MLX",
       "No account and no server: conversations never leave the device",
-      "Interface in English, Spanish, German, French, Japanese, Korean, Simplified Chinese and Russian"
+      "Works offline after the one-time model download",
+      "Checks available memory before loading a model and refuses one that does not fit, instead of crashing",
+      "Regenerate an answer, edit a sent message, copy and share messages or a whole conversation",
+      "Interface in English, Spanish, German, French, Japanese, Korean, Simplified Chinese and Russian",
+      "Pinku Pro (one-time purchase): models over 1 GB, custom instructions, on-device voice dictation, read aloud"
     ],
-    "operatingSystem": "iOS, macOS",
-    "url": "https://aisagalab.com/pinku.html",
-    "downloadUrl": "https://apps.apple.com/us/app/pinku-private-ai/id6754878073",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Saga Labs",
-      "url": "https://aisagalab.com/"
-    }
+    "publisher": { "@type": "Organization", "name": "Saga Labs", "url": "https://aisagalab.com/" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Does Pinku work offline?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. You download a model once, over the network. After that every answer is generated on your iPhone or Mac and no connection is needed." } },
+      { "@type": "Question", "name": "Are my conversations sent anywhere?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. There is no account and no server. Chats are stored on the device, and deleting one deletes the file. The network is used only to download models and for App Store purchases." } },
+      { "@type": "Question", "name": "Is Pinku free?",
+        "acceptedAnswer": { "@type": "Answer", "text": "It is free to download, and the six models up to 1 GB, including the default Gemma 3 1B, work without paying. Pinku Pro is an optional one-time purchase ($9.99 on the US App Store; local prices vary). There is no subscription." } },
+      { "@type": "Question", "name": "What does Pinku Pro unlock?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The six larger models (SmolLM3 3B, Llama 3.2 3B, DeepSeek-R1 Distill Qwen 1.5B 8-bit, Qwen3 4B, Gemma 3n E2B and Qwen3 8B), custom instructions, voice dictation that runs on the device, and read aloud with the voices installed on the device. Chat, regenerate, edit and share are not part of Pro." } },
+      { "@type": "Question", "name": "I already had a large model installed before Pinku Pro existed. Do I lose it?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. Models installed before Pro arrived stay usable without buying it, and so do custom instructions you had already written." } },
+      { "@type": "Question", "name": "Will a big model crash my iPhone?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Pinku hides models that are too large for your device's memory, and before loading any model it checks the memory actually available. If it does not fit, Pinku tells you and keeps the current model loaded instead of crashing." } },
+      { "@type": "Question", "name": "Do my chats sync between iPhone and Mac?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. There is no cloud, so each device keeps its own chats. You can share a conversation as plain text if you want to move it." } },
+      { "@type": "Question", "name": "Is it as good as ChatGPT?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. A model of 1 to 5 GB running on a phone is clearly weaker than a frontier cloud model, has a shorter context, cannot browse the web and does not read images. Its advantage is that nothing you type leaves the device." } }
+    ]
   }
   </script>
   <style>
-    :root { --bg:#fff; --fg:#0b0b0b; --muted:#5b5b5b; --btn:#111; --btnfg:#fff; }
+    :root { --bg:#fff; --fg:#0b0b0b; --muted:#5b5b5b; --line:#e7e7e7; --card:#f6f6f7; --accent:#e0368a; }
     @media (prefers-color-scheme: dark) {
-      :root { --bg:#0b0b0b; --fg:#f8f8f8; --muted:#b5b5b5; --btn:#fff; --btnfg:#111; }
+      :root { --bg:#0b0b0b; --fg:#f8f8f8; --muted:#b5b5b5; --line:#262626; --card:#151517; --accent:#ff69b4; }
     }
     * { box-sizing: border-box; }
-    html,body { height:100%; }
     body {
-      margin:0;
-      background:var(--bg);
-      color:var(--fg);
+      margin:0; background:var(--bg); color:var(--fg);
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif;
-      -webkit-font-smoothing: antialiased;
-      line-height:1.15;
+      -webkit-font-smoothing: antialiased; line-height:1.55;
     }
-    .wrap {
-      min-height:100%;
-      display:grid;
-      place-items:center;
-      padding: clamp(16px, 4vw, 48px);
-    }
-    .card {
-      text-align:center;
-      max-width: 1400px;
-      width:100%;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 50px;
-      align-items: center;
-    }
-    .card-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-    }
-    .logo-img {
-      width: clamp(380px, 50vw, 520px);
-      height: auto;
-      margin-bottom: 0;
-      border-radius: 0;
-      box-shadow: none;
-      order: -1;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .logo-img img {
-      width: 100%;
-      height: auto;
-      border-radius: 16px;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-      transition: box-shadow 0.3s ease;
-    }
-    .logo-img img:hover {
-      box-shadow: 0 20px 50px rgba(255, 105, 180, 0.2);
-    }
-    @media (min-width: 1024px) {
-      .card {
-        grid-template-columns: 1fr 1fr;
-        max-width: 1400px;
-        gap: 80px;
-      }
-      .card-content {
-        gap: 28px;
-        text-align: center;
-        align-items: center;
-        grid-column: 2;
-        grid-row: 1;
-      }
-      .logo-img {
-        width: 100%;
-        grid-column: 1;
-        grid-row: 1;
-        order: 0;
-      }
-    }
-    h1 {
-      margin:0 0 20px;
-      font-weight:800;
-      letter-spacing:-0.02em;
-      font-size: clamp(40px, 8vw, 88px);
-      line-height: 0.97;
-    }
-    p {
-      margin:0 0 28px;
-      font-size: clamp(16px, 2.8vw, 24px);
-      color:var(--muted);
-    }
-    @keyframes vibrate {
-      0%, 100% { transform: rotate(0deg); }
-      2%, 98% { transform: rotate(0deg); }
-      5% { transform: rotate(-3deg); }
-      8% { transform: rotate(3deg); }
-      11% { transform: rotate(-3deg); }
-      14% { transform: rotate(3deg); }
-      17% { transform: rotate(-3deg); }
-      20% { transform: rotate(0deg); }
-    }
+    main { max-width: 760px; margin: 0 auto; padding: clamp(24px, 5vw, 64px) 16px 96px; }
+    .hero { text-align:center; }
+    .hero img { width: 100%; max-width: 520px; height:auto; border-radius: 16px; }
+    h1 { margin: 16px 0 12px; font-weight:800; letter-spacing:-0.02em; font-size: clamp(34px, 6vw, 56px); line-height:1.05; }
+    .lede { margin:0 auto 12px; max-width: 34em; font-size: clamp(17px, 2.4vw, 21px); color:var(--muted); }
+    .price { margin:0 auto 28px; font-size: 15px; color:var(--muted); }
     .cta {
-      display:inline-block;
-      text-decoration:none;
-      background:#ff69b4;
-      color:#fff;
-      border-radius: 14px;
-      padding: clamp(14px, 3.2vw, 22px) clamp(24px, 6vw, 40px);
-      font-size: clamp(18px, 3.5vw, 28px);
-      font-weight: 800;
-      letter-spacing: 0.2px;
-      line-height:1;
-      transition: transform .06s ease;
-      animation: vibrate 2.5s linear infinite;
+      display:inline-block; text-decoration:none; background:#ff69b4; color:#fff;
+      border-radius: 14px; padding: 16px 28px; font-size: 19px; font-weight: 800;
     }
-    .cta:active { transform: translateY(1px); }
-    footer {
-      margin-top: 28px;
-      font-size: 12px;
-      color: var(--muted);
-      opacity:.9;
-    }
-    footer a {
-      color: var(--muted);
-      text-decoration: none;
-      transition: color 0.2s ease;
-    }
-    footer a:hover {
-      color: var(--fg);
-      text-decoration: underline;
-    }
-    @media (min-width: 1024px) {
-      footer {
-        grid-column: 1 / -1;
-        margin-top: 40px;
-        text-align: center;
-      }
-    }
-    .sticky-cta {
-      position: fixed;
-      left: 50%;
-      bottom: clamp(12px, 3vw, 24px);
-      transform: translateX(-50%);
-      z-index: 10;
-      display: none;
-    }
-    @media (max-width: 640px) {
-      .sticky-cta { display: inline-block; }
-      .logo-img {
-        width: 280px;
-        margin-bottom: 30px;
-      }
-    }
-    .sr-only {
-      position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden;
-      clip:rect(0,0,0,0); border:0;
-    }
-    .screenshots-gallery {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: clamp(20px, 4vw, 40px);
-      width: 100%;
-      order: -1;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .screenshot {
-      width: clamp(200px, 28vw, 350px);
-      height: auto;
-      border-radius: 28px;
-      box-shadow: 0 15px 45px rgba(255, 105, 180, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease;
-    }
-    .screenshot:hover {
-      transform: translateY(-5px) scale(1.02);
-      box-shadow: 0 20px 55px rgba(255, 105, 180, 0.25), 0 8px 20px rgba(0, 0, 0, 0.15);
-    }
-    @media (min-width: 1024px) {
-      .screenshots-gallery {
-        grid-column: 1;
-        grid-row: 1;
-        order: 0;
-      }
-    }
-    @media (max-width: 640px) {
-      .card {
-        text-align: center;
-      }
-      h1, p, .cta {
-        text-align: center;
-      }
-      .screenshots-gallery {
-        flex-direction: column;
-        gap: 20px;
-        margin-bottom: 20px;
-      }
-      .screenshot {
-        width: clamp(260px, 80vw, 380px);
-      }
-    }
+    h2 { margin: 56px 0 14px; font-size: 26px; letter-spacing:-0.01em; }
+    ul.features { list-style:none; padding:0; margin:0; display:grid; gap:12px; }
+    ul.features li { background:var(--card); border-radius:12px; padding:14px 16px; }
+    ul.features b { display:block; }
+    .table-scroll { overflow-x:auto; }
+    table { border-collapse: collapse; width:100%; font-size:15px; }
+    th, td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); }
+    .note { color:var(--muted); font-size:15px; }
+    details { border-bottom:1px solid var(--line); padding: 14px 0; }
+    summary { cursor:pointer; font-weight:700; }
+    details p { margin: 10px 0 0; color:var(--muted); }
+    a { color: var(--accent); }
+    footer { margin-top: 64px; font-size: 13px; color: var(--muted); text-align:center; }
+    footer a { color: var(--muted); }
   </style>
-    <script src="/umami.js" defer></script>
+  <script src="/umami.js" defer></script>
 </head>
 <body>
-  <main class="wrap">
-    <div class="card">
-      <div class="logo-img">
-        <img src="images/pinku.png" alt="Pinku Private AI Assistant" loading="lazy" />
-      </div>
-      <div class="card-content">
-        <h1>Pinku<br/>Private AI<br/>Assistant</h1>
-        <p>Your personal AI that runs entirely on-device. Fast, private conversations with zero data collection. Works offline with complete privacy.</p>
+  <main>
+    <section class="hero">
+      <img src="images/pinku.png" alt="Pinku running on iPhone" width="1300" height="1242" />
+      <h1>Pinku</h1>
+      <p class="lede">Private AI chat that runs entirely on your iPhone or Mac. No account, no server, and it works offline.</p>
+      <p class="price">Free to download. Optional one-time Pinku Pro, no subscription.</p>
+      <a class="cta" href="https://apps.apple.com/app/apple-store/id6754878073?pt=118348020&amp;ct=sagalab-web&amp;mt=8">Download on the App Store</a>
+    </section>
 
-        <a class="cta" href="https://apps.apple.com/us/app/pinku-private-ai/id6754878073">
-          Download on the App Store
-        </a>
-      </div>
-      <footer>
-        <a href="privacy.html">Privacy</a> • <a href="terms.html">Terms</a>
-      </footer>
-    </div>
+    <h2>What it does</h2>
+    <ul class="features">
+      <li><b>The model runs on your device</b>Pinku runs open language models locally with Apple's MLX framework. You download a model once; after that, no answer needs the network.</li>
+      <li><b>Nothing to sign up for, nothing uploaded</b>No account and no server. Chats are files on your device, and deleting one deletes the file.</li>
+      <li><b>Twelve open models</b>Gemma 3, Gemma 3n, Llama 3.2, Qwen3, DeepSeek-R1 distills, SmolLM3 and LFM2, from 0.34 GB to 4.7 GB. The default is Gemma 3 1B (0.73 GB), chosen because it handles languages other than English well.</li>
+      <li><b>No crash when a model is too big</b>Models too large for your device are hidden, and before loading one Pinku checks the memory actually free. If it does not fit, you get a warning and the current model stays loaded.</li>
+      <li><b>Regenerate, edit, share</b>Regenerate the last answer, edit a message you sent and rerun from there, copy or share any message, or share the whole conversation as plain text.</li>
+      <li><b>In your language</b>The interface is in English, Spanish, German, French, Japanese, Korean, Simplified Chinese and Russian.</li>
+      <li><b>iPhone, iPad and Mac</b>The same app on all three. Requires a device with Metal 3; on Mac, Apple silicon.</li>
+    </ul>
+
+    <h2>Free and Pro</h2>
+    <div class="table-scroll"><table>
+      <thead><tr><th></th><th>Free</th><th>Pinku Pro</th></tr></thead>
+      <tbody>
+        <tr><td>Models up to 1 GB: Qwen3 0.6B, LFM2 1.2B, Llama 3.2 1B, Gemma 3 1B (default), Qwen3 1.7B, DeepSeek-R1 Distill Qwen 1.5B</td><td>Yes</td><td>Yes</td></tr>
+        <tr><td>Models over 1 GB: SmolLM3 3B, Llama 3.2 3B, DeepSeek-R1 Distill Qwen 1.5B 8-bit, Qwen3 4B, Gemma 3n E2B, Qwen3 8B</td><td>No</td><td>Yes</td></tr>
+        <tr><td>Chat, regenerate, edit, copy and share</td><td>Yes</td><td>Yes</td></tr>
+        <tr><td>Custom instructions</td><td>No</td><td>Yes</td></tr>
+        <tr><td>Voice dictation, recognised on the device (never sent to a server)</td><td>No</td><td>Yes</td></tr>
+        <tr><td>Read answers aloud with the voices installed on the device</td><td>No</td><td>Yes</td></tr>
+      </tbody>
+    </table></div>
+    <p class="note">Pinku Pro is a one-time in-app purchase, $9.99 on the US App Store (local prices vary), with Restore Purchases. No subscription. Models you had installed before Pro existed stay usable without it.</p>
+
+    <h2>Who it is for</h2>
+    <p>People who want an assistant for things they would rather not type into a cloud service: health questions, money, work drafts, journaling. And people who need one without a connection, on a plane or where cloud assistants are not available.</p>
+    <p>If you need the strongest possible answers, web search or image understanding, a cloud assistant will do better. A 1 to 5 GB model on a phone is clearly weaker, has a shorter context, and its speed depends on your device. We compared Pinku with the other offline AI apps, including where they beat us, in <a href="blog/best-offline-ai-chat-apps-iphone-mac.html">Best offline AI chat apps for iPhone and Mac</a>.</p>
+
+    <h2>Questions</h2>
+    <details open><summary>Does Pinku work offline?</summary><p>Yes. You download a model once, over the network. After that every answer is generated on your iPhone or Mac and no connection is needed.</p></details>
+    <details><summary>Are my conversations sent anywhere?</summary><p>No. There is no account and no server. Chats are stored on the device, and deleting one deletes the file. The network is used only to download models and for App Store purchases.</p></details>
+    <details><summary>Is Pinku free?</summary><p>It is free to download, and the six models up to 1 GB, including the default Gemma 3 1B, work without paying. Pinku Pro is an optional one-time purchase ($9.99 on the US App Store; local prices vary). There is no subscription.</p></details>
+    <details><summary>What does Pinku Pro unlock?</summary><p>The six larger models (SmolLM3 3B, Llama 3.2 3B, DeepSeek-R1 Distill Qwen 1.5B 8-bit, Qwen3 4B, Gemma 3n E2B and Qwen3 8B), custom instructions, voice dictation that runs on the device, and read aloud with the voices installed on the device. Chat, regenerate, edit and share are not part of Pro.</p></details>
+    <details><summary>I already had a large model installed before Pinku Pro existed. Do I lose it?</summary><p>No. Models installed before Pro arrived stay usable without buying it, and so do custom instructions you had already written.</p></details>
+    <details><summary>Will a big model crash my iPhone?</summary><p>Pinku hides models that are too large for your device's memory, and before loading any model it checks the memory actually available. If it does not fit, Pinku tells you and keeps the current model loaded instead of crashing.</p></details>
+    <details><summary>Do my chats sync between iPhone and Mac?</summary><p>No. There is no cloud, so each device keeps its own chats. You can share a conversation as plain text if you want to move it.</p></details>
+    <details><summary>Is it as good as ChatGPT?</summary><p>No. A model of 1 to 5 GB running on a phone is clearly weaker than a frontier cloud model, has a shorter context, cannot browse the web and does not read images. Its advantage is that nothing you type leaves the device.</p></details>
+
+    <p class="note">Pinku is made by <a href="index.html">Saga Labs</a>, an independent app studio. Built on Apple's <a href="https://github.com/ml-explore/mlx-swift" rel="noopener">MLX Swift</a>.</p>
+
+    <footer><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="support.html">Support</a></footer>
   </main>
-
-  <!-- UTM Parameter Tracking -->
-  <script>
-    (function(){
-      const params = new URLSearchParams(location.search);
-      const utm = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term']
-        .reduce((acc,k)=>{ if(params.get(k)) acc[k]=params.get(k); return acc; },{});
-      const links = document.querySelectorAll('.cta');
-      links.forEach(a=>{
-        try {
-          const url = new URL(a.href);
-          Object.entries(utm).forEach(([k,v])=> url.searchParams.set(k,v));
-          a.href = url.toString();
-        } catch(e){}
-      });
-    })();
-  </script>
 </body>
 </html>
