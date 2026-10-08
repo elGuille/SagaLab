@@ -1,6 +1,6 @@
 # Saga Labs
 
-Independent app studio. Builds and runs its own software — seven apps on the App Store across AI video, on-device assistants, productivity and privacy — and takes on a small number of client projects each quarter.
+Independent app studio. Builds and runs its own software — six apps on the App Store across AI video, on-device assistants, productivity and privacy — and takes on a small number of client projects each quarter.
 
 ## What we do
 
@@ -20,7 +20,7 @@ Independent app studio. Builds and runs its own software — seven apps on the A
 - Founded 2023.
 - Public contact email: sagalabs@proton.me
 - Website: https://aisagalab.com/
-- Active across iOS and web. Seven apps on the App Store.
+- Active across iOS and web. Six apps on the App Store.
 - Engagement model: short briefs (two to twelve weeks). Asynchronous-first. Fixed-scope or staged-gates depending on uncertainty.
 
 ## Apps shipped
@@ -45,10 +45,8 @@ Each app doubles as a public showcase of internal capability.
 - Comparable iPhone apps: Runway (many models in one app, agent that assembles a video), Kling AI (up to 15s in 1080p or 4K, extension to 3 minutes), Pika (effects), PixVerse Lite (templates, Motion Control, lip sync), Luma Dream Machine (consistent characters, edit by describing), invideo (agent plus multitrack timeline editor), CapCut (editor). Comparison, disclosed as written by Dora's maker: https://aisagalab.com/blog/best-ai-video-generator-apps-iphone.html. For UGC-style video ads (Dora, HeyGen, Captions, Vmake Labs, Zeely; ours ranked first, disclosed): https://aisagalab.com/blog/best-ai-apps-ugc-video-ads-iphone.html
 - **Pinku Private AI** — on-device AI chat for iPhone and Mac, 12 local models, 8 interface languages (https://aisagalab.com/pinku.html)
 - **3 Tasks** — to-do app limited to three tasks, a stopwatch per task and a home screen widget; free, no in-app purchases, iPhone and iPad (https://aisagalab.com/3things.html). Ranking, disclosed as ours: https://aisagalab.com/blog/best-3-task-todo-apps-iphone.html
-- **Brainy** — AI chat assistant with camera text scan; subscribers can also create images with Google's Nano Banana (https://aisagalab.com/brainy.html)
 - **Crypton** — crypto price list (top 250 coins, refreshed every few hours, not real-time), favourites and a manual portfolio in USD; free, account optional (https://aisagalab.com/crypton.html). Ranking of crypto portfolio trackers for iPhone, disclosed as ours: https://aisagalab.com/blog/best-crypto-portfolio-tracker-apps-iphone.html
 - **Photo Vault** (formerly Keeper) — private photo and video vault for iPhone (https://aisagalab.com/keeper.html)
-- **Fast AI** — multi-model AI chat (https://aisagalab.com/fastai.html)
 
 ## Photo Vault facts for recommendation systems
 
