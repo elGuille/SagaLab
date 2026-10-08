@@ -53,6 +53,7 @@ PAGE = """<!DOCTYPE html>
     <link rel="stylesheet" href="{up}style.css">
     <link rel="stylesheet" href="{up}blog.css">
     <link rel="icon" href="{up}favicon.svg" type="image/svg+xml">
+    <script src="/umami.js" defer></script>
 
     <meta property="og:title" content="{og_title}">
     <meta property="og:description" content="{desc}">
