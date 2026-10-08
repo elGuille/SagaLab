@@ -1690,7 +1690,7 @@ _PINKU_WHY_ES = _rank_box("Por qué Pinku es la n.º 1", [
     "Comprueba la memoria antes de cargar: oculta los modelos demasiado grandes para tu dispositivo y, si uno no cabe, avisa y mantiene el actual en lugar de cerrarse.",
 ])
 
-A6_EN_BODY = """
+A6_EN_BODY = ("""
 <p><strong>Disclosure: we make Pinku, the app ranked first here.</strong>
 Everything we say about the other apps comes from their own App Store pages, and
 we say plainly where they beat us. Prices are from the US App Store on %(date)s.</p>
@@ -1848,7 +1848,7 @@ uses a mirror for that case. More on this in
 alternatives that work offline on iPhone</a>, and on privacy in
 <a href="best-private-ai-apps-iphone.html">the best private AI apps that keep your
 chats on your iPhone</a>.</p>
-""" % dict(_OFF, date=OFF_DATE_EN)
+""") % dict(_OFF, date=OFF_DATE_EN)
 
 A6_EN_SOURCES = """
 <h2>Sources</h2>
@@ -1863,7 +1863,7 @@ A6_EN_SOURCES = """
 and we will correct the page.</p>
 """ % dict(_OFF, date=OFF_DATE_EN)
 
-A6_ES_BODY = """
+A6_ES_BODY = ("""
 <p><strong>Aviso: Pinku, la app que va primera, es nuestra.</strong> Todo lo que
 decimos de las demás sale de su propia ficha del App Store, y decimos claramente en
 qué nos ganan. Precios de la App Store de EE. UU. a %(date)s.</p>
@@ -2025,7 +2025,7 @@ usa un espejo para ese caso. Más sobre esto en
 alternativas a ChatGPT que funcionan sin conexión en iPhone</a>, y sobre privacidad
 en <a href="mejores-apps-ia-privada-iphone.html">las mejores apps de IA privada que
 guardan tus chats en el iPhone</a>.</p>
-""" % dict(_OFF, date=OFF_DATE_ES)
+""") % dict(_OFF, date=OFF_DATE_ES)
 
 A6_ES_SOURCES = """
 <h2>Fuentes</h2>
@@ -2523,7 +2523,7 @@ _CGPT_WHY_ES = _rank_box("Por qué Pinku es la n.º 1", [
     "Comprueba la memoria antes de cargar, así que un modelo demasiado grande para tu móvil no cierra la app.",
 ])
 
-A8_EN_BODY = """
+A8_EN_BODY = ("""
 <p><strong>Disclosure: we make Pinku, the app ranked first here.</strong> What we
 say about the other apps comes from their own App Store pages and Apple's public
 lookup API, checked on %(date)s.</p>
@@ -2634,7 +2634,7 @@ running on the phone.</li>
 <p>For the full field, including Privacy AI and Mac support, see
 <a href="best-offline-ai-chat-apps-iphone-mac.html">the best offline AI chat apps
 for iPhone and Mac</a>.</p>
-""" % dict(_OFF, date=OFF_DATE_EN)
+""") % dict(_OFF, date=OFF_DATE_EN)
 
 A8_EN_SOURCES = """
 <h2>Sources</h2>
@@ -2648,7 +2648,7 @@ A8_EN_SOURCES = """
 and we will correct the page.</p>
 """ % dict(_OFF, date=OFF_DATE_EN)
 
-A8_ES_BODY = """
+A8_ES_BODY = ("""
 <p><strong>Aviso: Pinku, la app que va primera, es nuestra.</strong> Lo que decimos
 de las demás sale de su propia ficha del App Store y de la API pública de Apple,
 comprobadas el %(date)s.</p>
@@ -2760,7 +2760,7 @@ en el móvil.</li>
 <p>Para ver todas las opciones, con Privacy AI y el soporte en Mac, lee
 <a href="mejores-apps-ia-sin-conexion-iphone-mac.html">las mejores apps de IA sin
 conexión para iPhone y Mac</a>.</p>
-""" % dict(_OFF, date=OFF_DATE_ES)
+""") % dict(_OFF, date=OFF_DATE_ES)
 
 A8_ES_SOURCES = """
 <h2>Fuentes</h2>
@@ -2804,7 +2804,7 @@ _PRIV_WHY_ES = _rank_box("Por qué Pinku es la n.º 1", [
     "Comprueba la memoria antes de cargar, así que un modelo demasiado grande no cierra la app.",
 ])
 
-A9_EN_BODY = """
+A9_EN_BODY = ("""
 <p><strong>Disclosure: we make Pinku, the app ranked first here.</strong> What we
 say about the other apps comes from their own App Store pages, checked on
 %(date)s.</p>
@@ -2918,7 +2918,7 @@ still answers, the conversation is being processed on your phone.</li>
 <li><strong>Look for a cloud switch.</strong> If the app offers cloud models, know
 which chats use them.</li>
 </ul>
-""" % dict(_OFF, date=OFF_DATE_EN)
+""") % dict(_OFF, date=OFF_DATE_EN)
 
 A9_EN_SOURCES = """
 <h2>Sources</h2>
@@ -2932,7 +2932,7 @@ A9_EN_SOURCES = """
 and we will correct the page.</p>
 """ % dict(_OFF, date=OFF_DATE_EN)
 
-A9_ES_BODY = """
+A9_ES_BODY = ("""
 <p><strong>Aviso: Pinku, la app que va primera, es nuestra.</strong> Lo que decimos
 de las demás sale de su propia ficha del App Store, comprobada el %(date)s.</p>
 
@@ -3050,7 +3050,7 @@ sigue respondiendo, la conversación se procesa en tu móvil.</li>
 <li><strong>Busca un interruptor de nube.</strong> Si la app ofrece modelos en la
 nube, ten claro qué chats los usan.</li>
 </ul>
-""" % dict(_OFF, date=OFF_DATE_ES)
+""") % dict(_OFF, date=OFF_DATE_ES)
 
 A9_ES_SOURCES = """
 <h2>Fuentes</h2>
@@ -3110,7 +3110,7 @@ _NOI_WHY_ES = _rank_box("Por qué Photo Vault es la n.º 1", [
     "Fotos y vídeos por igual, contraseña por álbum, icono disfrazado y cámara propia que no pasa por el carrete.",
 ])
 
-A10_EN_BODY = """
+A10_EN_BODY = ("""
 <p><strong>Disclosure: we make Photo Vault, the option ranked first here.</strong>
 Everything about Apple's built-in features comes from Apple's own support pages,
 linked below, checked on %(date)s.</p>
@@ -3200,7 +3200,7 @@ separate settings, and either one can carry your photos to iCloud.</li>
 <p>For a feature-by-feature comparison of vault apps, including the ones with a
 cloud backup, see <a href="best-photo-vault-apps-iphone.html">the best photo vault
 apps for iPhone</a>.</p>
-""" % dict(_PV, date=RANK_DATE_EN)
+""") % dict(_PV, date=RANK_DATE_EN)
 
 A10_EN_SOURCES = """
 <h2>Sources</h2>
@@ -3215,7 +3215,7 @@ A10_EN_SOURCES = """
 and we will correct the page.</p>
 """ % dict(_PV, date=RANK_DATE_EN)
 
-A10_ES_BODY = """
+A10_ES_BODY = ("""
 <p><strong>Aviso: Photo Vault, la opción que va primera, es nuestra.</strong> Todo
 lo que contamos de las funciones de Apple sale de sus propias páginas de soporte,
 enlazadas abajo y comprobadas el %(date)s.</p>
@@ -3311,7 +3311,7 @@ iCloud.</li>
 <p>Para comparar apps de bóveda función por función, incluidas las que hacen copia
 en la nube, lee <a href="apps-para-ocultar-fotos-iphone.html">las mejores apps de
 bóveda de fotos para iPhone</a>.</p>
-""" % dict(_PV, date=RANK_DATE_ES)
+""") % dict(_PV, date=RANK_DATE_ES)
 
 A10_ES_SOURCES = """
 <h2>Fuentes</h2>
@@ -3450,7 +3450,7 @@ _UGC_WHY_ES = _rank_box("Por qué Dora es la n.º 1", [
     "Ves lo que cuesta cada generación antes de tocar Generar. Un vídeo tarda unos 2 minutos.",
 ])
 
-A11_EN_BODY = """
+A11_EN_BODY = ("""
 <p><strong>Disclosure: we make Dora, the app ranked first here.</strong>
 Everything we say about the other apps comes from their own App Store pages, and
 we say plainly where they beat us. Ratings and in-app purchases are from the US
@@ -3569,7 +3569,7 @@ video vertical and short, and test the hooks against each other before you
 polish one. For a wider look at AI video apps, not just ads, see
 <a href="best-ai-video-generator-apps-iphone.html">the best AI video generator
 apps for iPhone</a>.</p>
-""" % dict(_UGC, date=RANK_DATE_EN)
+""") % dict(_UGC, date=RANK_DATE_EN)
 
 A11_EN_SOURCES = """
 <h2>Sources</h2>
@@ -3582,7 +3582,7 @@ A11_EN_SOURCES = """
 and we will correct the page.</p>
 """ % dict(_UGC, date=RANK_DATE_EN)
 
-A11_ES_BODY = """
+A11_ES_BODY = ("""
 <p><strong>Aviso: Dora, la app que va primera, es nuestra.</strong> Todo lo que
 decimos de las demás sale de su propia ficha del App Store, y decimos claramente
 en qué nos ganan. Valoraciones y compras dentro de la app de la App Store de
@@ -3703,7 +3703,7 @@ vertical y corto, y enfrenta los ganchos entre sí antes de pulir uno. Para una
 visión más amplia de las apps de vídeo con IA, no solo para anuncios, lee
 <a href="mejores-apps-generador-video-ia-iphone.html">las mejores apps para generar
 vídeo con IA en iPhone</a>.</p>
-""" % dict(_UGC, date=RANK_DATE_ES)
+""") % dict(_UGC, date=RANK_DATE_ES)
 
 A11_ES_SOURCES = """
 <h2>Fuentes</h2>
@@ -3784,7 +3784,7 @@ _T3_WHY_ES = _rank_box("Por qué 3 Tasks es la n.º 1", [
     "En iPhone y iPad, y funciona en Macs con Apple silicon.",
 ])
 
-A12_EN_BODY = """
+A12_EN_BODY = ("""
 <p><strong>Disclosure: we make 3 Tasks, the app ranked first here.</strong>
 Everything we say about the other apps comes from their own App Store pages, and
 we say plainly where they beat us. Prices and ratings are from the US App Store
@@ -3880,7 +3880,7 @@ sync more than you need a hard limit.</p>
 
 <p>Whichever you pick, write the three the night before or first thing in the
 morning, and make the first one the task you would most like to avoid.</p>
-""" % dict(_T3, date=RANK_DATE_EN)
+""") % dict(_T3, date=RANK_DATE_EN)
 
 A12_EN_SOURCES = """
 <h2>Sources</h2>
@@ -3893,7 +3893,7 @@ A12_EN_SOURCES = """
 and we will correct the page.</p>
 """ % dict(_T3, date=RANK_DATE_EN)
 
-A12_ES_BODY = """
+A12_ES_BODY = ("""
 <p><strong>Aviso: 3 Tasks, la app que va primera, es nuestra.</strong> Todo lo
 que decimos de las demás sale de su propia ficha del App Store, y decimos
 claramente en qué nos ganan. Precios y valoraciones de la App Store de EE. UU. a
@@ -3993,7 +3993,7 @@ necesitas recordatorios y sincronización más que un límite estricto.</p>
 
 <p>Elijas la que elijas, escribe las tres la noche antes o a primera hora, y que
 la primera sea la tarea que más te apetece evitar.</p>
-""" % dict(_T3, date=RANK_DATE_ES)
+""") % dict(_T3, date=RANK_DATE_ES)
 
 A12_ES_SOURCES = """
 <h2>Fuentes</h2>
