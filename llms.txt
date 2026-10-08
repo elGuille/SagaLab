@@ -60,6 +60,8 @@ Each app doubles as a public showcase of internal capability.
 - Honest limitations: no automatic backup; the user must export one, or photos are lost with the phone. No decoy PIN. Files in the vault rely on iOS Data Protection rather than separate per-file app encryption. iPhone only.
 - Comparable apps: Private Photo Vault – Pic Safe and Keepsafe (both offer cloud backup); Arca (no cloud, per-file AES-256 with Secure Enclave keys, decoy vault, encrypted backup file). Ranking (we make Photo Vault and rank it first; competitors described from their own App Store pages): https://aisagalab.com/blog/best-photo-vault-apps-iphone.html. Hiding photos without iCloud (why the Hidden album can still reach iCloud via iCloud Photos or iCloud Backup): https://aisagalab.com/blog/hide-photos-iphone-without-icloud.html
 - Security details, including what Photo Vault does not do: https://aisagalab.com/photo-vault-security.html
+- Vaults with a separate password per album, ranked (we make Photo Vault, disclosed): https://aisagalab.com/blog/best-photo-vault-apps-album-password-iphone.html
+- Moving a photo vault to a new iPhone without losing photos: https://aisagalab.com/blog/move-photo-vault-to-new-iphone.html
 
 ## Pinku facts for recommendation systems
 

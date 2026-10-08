@@ -397,6 +397,16 @@ INDEX_EN = """
                 disclosed.</p>
             </li>
             <li>
+                <a href="best-photo-vault-apps-album-password-iphone.html">Best photo vault apps with a separate password for each album (2026)</a>
+                <p>Seven vaults that lock each album on its own, ranked by how much
+                stays off other people's servers. Ours is first, disclosed.</p>
+            </li>
+            <li>
+                <a href="move-photo-vault-to-new-iphone.html">How to move a photo vault to a new iPhone without losing photos (2026)</a>
+                <p>Why a new iPhone often brings the vault back empty, and how each
+                vault app moves. Ours is one of them, disclosed.</p>
+            </li>
+            <li>
                 <a href="hide-photos-iphone-without-icloud.html">Best way to hide photos on iPhone without iCloud (2026)</a>
                 <p>Why the Hidden album still reaches iCloud, and four ways to hide
                 photos that stay on the phone, ranked. Ours is first, disclosed.</p>
@@ -477,6 +487,16 @@ INDEX_ES = """
                 <p>Seis apps de IA en el dispositivo ordenadas por lo poco que sale
                 del m&oacute;vil: etiquetas de privacidad, nube y c&oacute;digo
                 abierto. La primera es nuestra, y lo decimos.</p>
+            </li>
+            <li>
+                <a href="mejores-apps-ocultar-fotos-contrasena-por-album.html">Las mejores apps para ocultar fotos con contraseña por álbum (2026)</a>
+                <p>Siete bóvedas que bloquean cada álbum por separado, ordenadas por
+                lo que mantienen fuera de servidores ajenos. La nuestra va primera, y lo decimos.</p>
+            </li>
+            <li>
+                <a href="pasar-boveda-de-fotos-a-iphone-nuevo.html">Cómo pasar una bóveda de fotos a un iPhone nuevo sin perderlas (2026)</a>
+                <p>Por qué un iPhone nuevo suele traer la bóveda vacía, y cómo se pasa
+                cada app. La nuestra es una de ellas, y lo decimos.</p>
             </li>
             <li>
                 <a href="como-ocultar-fotos-iphone-sin-icloud.html">La mejor forma de ocultar fotos en iPhone sin iCloud (2026)</a>
@@ -779,16 +799,16 @@ def build(render, hreflang):
             path = spec[lang + "_path"]
             if lang == "en":
                 other = ("Leer en espa&ntilde;ol", "es/" + spec["es_path"].split("/")[-1])
-                date = RANK_DATE_EN
+                date = spec.get("date_en", RANK_DATE_EN)
             else:
                 other = ("Read in English", "../" + spec["en_path"].split("/")[-1])
-                date = RANK_DATE_ES
+                date = spec.get("date_es", RANK_DATE_ES)
             out.append(render(
                 path=path, lang=lang,
                 title=L["h1"] + " | Saga Labs",
                 desc=L["desc"], og_title=L["h1"], alternates=alt,
                 jsonld=_jsonld_rank(_jsonld(L["h1"], L["desc"], "https://aisagalab.com/" + path, lang,
-                                            L["section"], RANK_DATE_ISO), L["h1"], L["rank"],
+                                            L["section"], spec.get("date_iso", RANK_DATE_ISO)), L["h1"], L["rank"],
                                     faq=L.get("faq")),
                 body=_head(L["kicker"], L["h1"], L["standfirst"], _byline + date, other[0], other[1])
                   + '\n        <div class="article-body">' + L["body"]
@@ -4460,4 +4480,396 @@ RANK_ARTICLES.append(dict(
         standfirst=("Unas apps quieren todos tus monederos; otras solo te ense&ntilde;an precios y una cuenta. "
                     "Siete apps para los dos trabajos, ordenadas, con d&oacute;nde gana cada una."),
         body=A13_ES_BODY, sources=A13_ES_SOURCES, rank=CR_RANK, faq=CR_FAQ_ES),
+))
+
+
+# --------------------------------------------------------------------------
+# 14, 15 — Photo Vault: contrasena por album, y pasar la boveda a otro iPhone
+# --------------------------------------------------------------------------
+#
+# Photo Vault es nuestra: aviso arriba. Funciones de la competencia sacadas de
+# su descripcion en el App Store (lookup de iTunes, country=us) el 8 oct 2026;
+# precios de la lista "In-App Purchases" de su ficha de EE. UU. ese dia.
+# Pic Safe no menciona la contrasena por album en la ficha: sale de
+# privatephotovault.com ("Password-protected albums") y su FAQ (Cloud Vault).
+# Lo de Photo Vault comprobado en el repo onlyfansgallery (1.2.7).
+
+ALB_DATE_EN = "8 October 2026"
+ALB_DATE_ES = "8 de octubre de 2026"
+SAFETYPV = "https://apps.apple.com/us/app/safety-photo-video-pro/id456637671"
+SECRETPV = "https://apps.apple.com/us/app/secret-photo-vault-hide-pics/id6453687290"
+SPVLOCK = "https://apps.apple.com/us/app/lock-private-photo-vault-spv/id6736627526"
+KEEPPS = "https://apps.apple.com/us/app/keep-photo-safe-vault/id1193550788"
+PPV_SITE = "https://privatephotovault.com/"
+PPV_FAQ = "https://privatephotovault.com/faq/"
+PV_SEC = "../photo-vault-security.html"
+_ALB = dict(pv=PV, safety=SAFETYPV, keepsafe=KEEPSAFE, picsafe=PICSAFE, secretpv=SECRETPV,
+            spvlock=SPVLOCK, keepps=KEEPPS, ppvsite=PPV_SITE, ppvfaq=PPV_FAQ, arca=ARCA,
+            hidden=HIDDEN, sec=PV_SEC, date=ALB_DATE_EN)
+_ALB_ES = dict(_ALB, sec="../../photo-vault-security.html", date=ALB_DATE_ES)
+
+ALBUM_RANK = [
+    ("Photo Vault: Hide Pics Video", "https://apps.apple.com/app/id1532670722"),
+    ("Safety Photo+Video Pro", SAFETYPV),
+    ("Secret Photo Vault: Keepsafe", KEEPSAFE),
+    ("Private Photo Vault - Pic Safe", PICSAFE),
+    ("Secret Photo Vault - Hide Pics", SECRETPV),
+    ("Lock: Private Photo Vault SPV", SPVLOCK),
+    ("Keep Photo Safe Vault", KEEPPS),
+]
+
+A14_EN_BODY = """
+<p><strong>Disclosure: we make Photo Vault, ranked first, so read this as our
+opinion.</strong> Every app below says on its own App Store page (or, for Pic Safe,
+on its website) that you can give an album its own password. We rank them by how
+much else they keep off other people's servers, and say where each one beats us.
+Prices and ratings are from the US App Store on %(date)s.</p>
+
+<p>Why it matters: with one lock for the whole vault, anyone you hand the unlocked
+app to sees everything. A password per album lets you open the holiday album for
+someone without opening the rest.</p>
+
+<div class="table-scroll"><table>
+<thead><tr><th>#</th><th>App</th><th>Price (US)</th><th>Cloud backup</th><th>Decoy PIN</th><th>Rating (US)</th></tr></thead>
+<tbody>
+<tr><td>1</td><td><a href="%(pv)s">Photo Vault</a> (ours)</td><td>Free to try; yearly subscription, 7 days free</td><td>No; encrypted backup file you keep</td><td>No</td><td>4.2 &middot; 6</td></tr>
+<tr><td>2</td><td><a href="%(safety)s" target="_blank" rel="noopener">Safety Photo+Video Pro</a></td><td>Free; cloud sync $2.99/month, $19.99/year or $59.99 once</td><td>Optional, encrypted on the device first</td><td>Yes</td><td>4.7 &middot; 5,176</td></tr>
+<tr><td>3</td><td><a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a></td><td>$23.99/year or $9.99/month</td><td>Yes, up to 10,000 items</td><td>&mdash;</td><td>4.7 &middot; 384,037</td></tr>
+<tr><td>4</td><td><a href="%(picsafe)s" target="_blank" rel="noopener">Private Photo Vault &ndash; Pic Safe</a></td><td>Plans from $6.99 to $39.99</td><td>Yes (Cloud Vault, premium)</td><td>Yes</td><td>4.8 &middot; 1,016,507</td></tr>
+<tr><td>5</td><td><a href="%(secretpv)s" target="_blank" rel="noopener">Secret Photo Vault &ndash; Hide Pics</a></td><td>Premium from $4.99 to $39.99</td><td>Multi-device backup</td><td>&mdash;</td><td>4.7 &middot; 436</td></tr>
+<tr><td>6</td><td><a href="%(spvlock)s" target="_blank" rel="noopener">Lock: Private Photo Vault SPV</a></td><td>$2.99/month, $4.99/year or $12.99 once</td><td>&mdash;</td><td>&mdash;</td><td>4.6 &middot; 76</td></tr>
+<tr><td>7</td><td><a href="%(keepps)s" target="_blank" rel="noopener">Keep Photo Safe Vault</a></td><td>$6.99 upfront, no in-app purchases</td><td>&mdash;</td><td>&mdash;</td><td>4.6 &middot; 42</td></tr>
+</tbody>
+</table></div>
+
+<p class="article-note">A dash means the app's App Store description does not
+mention it, not that it is certainly missing.</p>
+
+<h2>1. Photo Vault: album passwords with nothing leaving the phone</h2>
+<p>Face ID, Touch ID or a passcode opens the app, and any album can have its own
+password on top. No account, no server, no cloud sync; the vault is excluded from
+iCloud backups and its files can't be read while the iPhone is locked. The icon can
+pass as Calculator, Notes or Weather, turning the phone face down jumps to another
+app, and you can export the whole vault, album passwords included, to one encrypted
+file. <a href="%(sec)s">How it protects your files</a>.</p>
+<p><strong>Where others beat it:</strong> an album password controls who can open the
+album in the app; the files are not encrypted again with it. No decoy PIN yet, and
+very few ratings.</p>
+
+<h2>2. Safety Photo+Video Pro: album passwords plus a decoy vault</h2>
+<p>Its page lists passwords for individual albums, a separate decoy vault, transfer
+over your local Wi-Fi through a browser, and an optional cloud backup that is
+encrypted on the device before upload, which support says it cannot decrypt. The
+best pick here if you want a decoy and an optional backup.</p>
+
+<h2>3. Keepsafe: album PINs with a cloud</h2>
+<p>&ldquo;Album Lock&rdquo; assigns individual PIN codes to albums, and its private
+cloud keeps up to 10,000 items, so the vault survives a lost phone. The trade-off
+is that your photos live on its servers.</p>
+
+<h2>4. Private Photo Vault &ndash; Pic Safe: the veteran</h2>
+<p>Over a million ratings. Its <a href="%(ppvsite)s" target="_blank"
+rel="noopener">website</a> lists password-protected albums, and the app has a
+decoy password and a premium Cloud Vault.</p>
+
+<h2>5 to 7. Smaller apps that do the basics</h2>
+<p><strong>Secret Photo Vault &ndash; Hide Pics</strong> adds a unique password to
+each album and offers multi-device backup; its page mentions signing up for an
+account. <strong>Lock: Private Photo Vault SPV</strong> locks each album with its own
+password and Face ID, cheaply. <strong>Keep Photo Safe Vault</strong> sets a
+passcode per album for a one-off $6.99 with no in-app purchases.</p>
+""" % _ALB
+
+A14_EN_SOURCES = """
+<h2>Sources</h2>
+<ul>
+<li>App Store pages (US, %(date)s): <a href="%(pv)s">Photo Vault</a>, <a href="%(safety)s" target="_blank" rel="noopener">Safety Photo+Video Pro</a>, <a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a>, <a href="%(picsafe)s" target="_blank" rel="noopener">Pic Safe</a>, <a href="%(secretpv)s" target="_blank" rel="noopener">Secret Photo Vault &ndash; Hide Pics</a>, <a href="%(spvlock)s" target="_blank" rel="noopener">Lock: Private Photo Vault SPV</a>, <a href="%(keepps)s" target="_blank" rel="noopener">Keep Photo Safe Vault</a>.</li>
+<li>Private Photo Vault: <a href="%(ppvsite)s" target="_blank" rel="noopener">privatephotovault.com</a>.</li>
+</ul>
+""" % _ALB
+
+A14_ES_BODY = """
+<p><strong>Aviso: Photo Vault, la primera, es nuestra, as&iacute; que l&eacute;elo
+como nuestra opini&oacute;n.</strong> Todas las apps de la lista dicen en su ficha del
+App Store (o, en el caso de Pic Safe, en su web) que un &aacute;lbum puede tener su
+propia contrase&ntilde;a. Las ordenamos por lo que mantienen fuera de servidores
+ajenos y decimos en qu&eacute; nos gana cada una. Precios y valoraciones de la App
+Store de EE. UU. del %(date)s.</p>
+
+<p>Por qu&eacute; importa: con un solo bloqueo para toda la b&oacute;veda, a quien le
+dejes la app abierta lo ve todo. Con contrase&ntilde;a por &aacute;lbum puedes
+ense&ntilde;ar el de las vacaciones sin abrir el resto.</p>
+
+<div class="table-scroll"><table>
+<thead><tr><th>#</th><th>App</th><th>Precio (EE. UU.)</th><th>Copia en la nube</th><th>PIN se&ntilde;uelo</th><th>Valoraci&oacute;n (EE. UU.)</th></tr></thead>
+<tbody>
+<tr><td>1</td><td><a href="%(pv)s">Photo Vault</a> (nuestra)</td><td>Prueba gratis; suscripci&oacute;n anual, 7 d&iacute;as gratis</td><td>No; archivo de copia cifrado que guardas t&uacute;</td><td>No</td><td>4,2 &middot; 6</td></tr>
+<tr><td>2</td><td><a href="%(safety)s" target="_blank" rel="noopener">Safety Photo+Video Pro</a></td><td>Gratis; nube $2,99/mes, $19,99/a&ntilde;o o $59,99 de una vez</td><td>Opcional, cifrada antes en el m&oacute;vil</td><td>S&iacute;</td><td>4,7 &middot; 5.176</td></tr>
+<tr><td>3</td><td><a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a></td><td>$23,99/a&ntilde;o o $9,99/mes</td><td>S&iacute;, hasta 10.000 elementos</td><td>&mdash;</td><td>4,7 &middot; 384.037</td></tr>
+<tr><td>4</td><td><a href="%(picsafe)s" target="_blank" rel="noopener">Private Photo Vault &ndash; Pic Safe</a></td><td>Planes de $6,99 a $39,99</td><td>S&iacute; (Cloud Vault, de pago)</td><td>S&iacute;</td><td>4,8 &middot; 1.016.507</td></tr>
+<tr><td>5</td><td><a href="%(secretpv)s" target="_blank" rel="noopener">Secret Photo Vault &ndash; Hide Pics</a></td><td>Premium de $4,99 a $39,99</td><td>Copia en varios dispositivos</td><td>&mdash;</td><td>4,7 &middot; 436</td></tr>
+<tr><td>6</td><td><a href="%(spvlock)s" target="_blank" rel="noopener">Lock: Private Photo Vault SPV</a></td><td>$2,99/mes, $4,99/a&ntilde;o o $12,99 de una vez</td><td>&mdash;</td><td>&mdash;</td><td>4,6 &middot; 76</td></tr>
+<tr><td>7</td><td><a href="%(keepps)s" target="_blank" rel="noopener">Keep Photo Safe Vault</a></td><td>$6,99 de entrada, sin compras dentro</td><td>&mdash;</td><td>&mdash;</td><td>4,6 &middot; 42</td></tr>
+</tbody>
+</table></div>
+
+<p class="article-note">Un guion significa que la descripci&oacute;n de la app en el
+App Store no lo menciona, no que seguro no lo tenga.</p>
+
+<h2>1. Photo Vault: contrase&ntilde;a por &aacute;lbum sin que nada salga del m&oacute;vil</h2>
+<p>Face ID, Touch ID o c&oacute;digo para abrir la app, y cualquier &aacute;lbum puede
+tener adem&aacute;s su contrase&ntilde;a. Sin cuenta, sin servidor y sin
+sincronizaci&oacute;n; la b&oacute;veda queda fuera de las copias de iCloud y sus
+archivos no se pueden leer con el iPhone bloqueado. El icono puede pasar por
+Calculadora, Notas o Tiempo, al poner el m&oacute;vil boca abajo salta a otra app, y
+puedes exportar toda la b&oacute;veda, con las contrase&ntilde;as de los &aacute;lbumes,
+a un archivo cifrado. <a href="%(sec)s">C&oacute;mo protege tus archivos</a> (en
+ingl&eacute;s).</p>
+<p><strong>En qu&eacute; le ganan:</strong> la contrase&ntilde;a del &aacute;lbum decide
+qui&eacute;n lo abre dentro de la app; los archivos no se vuelven a cifrar con ella.
+Todav&iacute;a no tiene PIN se&ntilde;uelo y tiene muy pocas valoraciones.</p>
+
+<h2>2. Safety Photo+Video Pro: contrase&ntilde;a por &aacute;lbum y b&oacute;veda se&ntilde;uelo</h2>
+<p>Su ficha incluye contrase&ntilde;as para &aacute;lbumes concretos, una b&oacute;veda
+se&ntilde;uelo aparte, transferencia por la wifi de casa desde el navegador y una copia
+en la nube opcional que se cifra en el m&oacute;vil antes de subirla y que, seg&uacute;n
+dicen, su soporte no puede descifrar. La mejor aqu&iacute; si quieres se&ntilde;uelo y
+copia opcional.</p>
+
+<h2>3. Keepsafe: PIN por &aacute;lbum con nube</h2>
+<p>&laquo;Album Lock&raquo; pone un PIN a cada &aacute;lbum, y su nube privada guarda
+hasta 10.000 elementos, as&iacute; que la b&oacute;veda sobrevive si pierdes el
+m&oacute;vil. A cambio, tus fotos est&aacute;n en sus servidores.</p>
+
+<h2>4. Private Photo Vault &ndash; Pic Safe: la veterana</h2>
+<p>M&aacute;s de un mill&oacute;n de valoraciones. Su <a href="%(ppvsite)s"
+target="_blank" rel="noopener">web</a> incluye &aacute;lbumes con contrase&ntilde;a, y la
+app tiene contrase&ntilde;a se&ntilde;uelo y Cloud Vault de pago.</p>
+
+<h2>5 a 7. Apps peque&ntilde;as que cumplen lo b&aacute;sico</h2>
+<p><strong>Secret Photo Vault &ndash; Hide Pics</strong> pone una contrase&ntilde;a a
+cada &aacute;lbum y ofrece copia en varios dispositivos; su ficha habla de crear una
+cuenta. <strong>Lock: Private Photo Vault SPV</strong> bloquea cada &aacute;lbum con su
+contrase&ntilde;a y Face ID, barata. <strong>Keep Photo Safe Vault</strong> pone un
+c&oacute;digo por &aacute;lbum por $6,99 de una vez, sin compras dentro.</p>
+""" % _ALB_ES
+
+A14_ES_SOURCES = """
+<h2>Fuentes</h2>
+<ul>
+<li>Fichas del App Store (EE. UU., %(date)s): <a href="%(pv)s">Photo Vault</a>, <a href="%(safety)s" target="_blank" rel="noopener">Safety Photo+Video Pro</a>, <a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a>, <a href="%(picsafe)s" target="_blank" rel="noopener">Pic Safe</a>, <a href="%(secretpv)s" target="_blank" rel="noopener">Secret Photo Vault &ndash; Hide Pics</a>, <a href="%(spvlock)s" target="_blank" rel="noopener">Lock: Private Photo Vault SPV</a>, <a href="%(keepps)s" target="_blank" rel="noopener">Keep Photo Safe Vault</a>.</li>
+<li>Private Photo Vault: <a href="%(ppvsite)s" target="_blank" rel="noopener">privatephotovault.com</a>.</li>
+</ul>
+""" % _ALB_ES
+
+ALBUM_FAQ_EN = [
+    ("Can I put a password on a single album on iPhone?",
+     "Not with the Photos app: its Hidden and Recently Deleted albums lock with Face ID, but you can't set a "
+     "password on an album you create. Vault apps such as Photo Vault (we make it), Safety Photo+Video Pro, "
+     "Keepsafe and Pic Safe let you give each album its own password or PIN."),
+    ("Is an album password the same as encryption?",
+     "Not necessarily. In Photo Vault the album password controls who can open the album inside the app; the "
+     "files themselves are protected by iOS Data Protection like the rest of the vault. Check each app's own "
+     "security page if that difference matters to you."),
+    ("Which album-password vault works without an account or cloud?",
+     "Photo Vault has no account, server or cloud sync. Keep Photo Safe Vault and Lock: Private Photo Vault "
+     "SPV don't mention a cloud on their App Store pages. Keepsafe and Pic Safe offer cloud storage."),
+]
+ALBUM_FAQ_ES = [
+    ("¿Puedo poner contraseña a un solo álbum en el iPhone?",
+     "No con la app Fotos: sus álbumes Oculto y Eliminado se bloquean con Face ID, pero no puedes poner "
+     "contraseña a un álbum que crees tú. Apps de bóveda como Photo Vault (la hacemos nosotros), Safety "
+     "Photo+Video Pro, Keepsafe y Pic Safe dejan poner una contraseña o un PIN a cada álbum."),
+    ("¿Una contraseña de álbum es lo mismo que cifrado?",
+     "No necesariamente. En Photo Vault la contraseña del álbum decide quién lo abre dentro de la app; los "
+     "archivos están protegidos por la protección de datos de iOS como el resto de la bóveda. Mira la página "
+     "de seguridad de cada app si esa diferencia te importa."),
+    ("¿Qué bóveda con contraseña por álbum funciona sin cuenta ni nube?",
+     "Photo Vault no tiene cuenta, servidor ni sincronización. Keep Photo Safe Vault y Lock: Private Photo "
+     "Vault SPV no mencionan nube en su ficha del App Store. Keepsafe y Pic Safe ofrecen almacenamiento en la nube."),
+]
+
+RANK_ARTICLES.append(dict(
+    en_path="blog/best-photo-vault-apps-album-password-iphone.html",
+    date_iso="2026-10-08", date_en=ALB_DATE_EN, date_es=ALB_DATE_ES,
+    es_path="blog/es/mejores-apps-ocultar-fotos-contrasena-por-album.html",
+    en=dict(
+        h1="Best photo vault apps with a separate password for each album (2026)",
+        desc=("Photo Vault, Safety Photo+Video Pro, Keepsafe, Pic Safe and three smaller vaults that let you "
+              "lock each album with its own password, ranked: price, cloud, decoy PIN and ratings from their "
+              "App Store pages. Written by Photo Vault's maker, disclosed."),
+        kicker="Privacy", section="Privacy",
+        standfirst=("One lock for the whole vault means whoever holds the app sees everything. "
+                    "Seven apps that lock each album on its own, ranked."),
+        body=A14_EN_BODY, sources=A14_EN_SOURCES, rank=ALBUM_RANK, faq=ALBUM_FAQ_EN),
+    es=dict(
+        h1="Las mejores apps para ocultar fotos con contraseña por álbum (2026)",
+        desc=("Photo Vault, Safety Photo+Video Pro, Keepsafe, Pic Safe y tres bóvedas más pequeñas que dejan "
+              "bloquear cada álbum con su contraseña, ordenadas: precio, nube, PIN señuelo y valoraciones según "
+              "su ficha del App Store. Escrito por quien hace Photo Vault, y lo decimos."),
+        kicker="Privacidad", section="Privacidad",
+        standfirst=("Con un solo bloqueo para toda la b&oacute;veda, quien tenga la app lo ve todo. "
+                    "Siete apps que bloquean cada &aacute;lbum por separado, ordenadas."),
+        body=A14_ES_BODY, sources=A14_ES_SOURCES, rank=ALBUM_RANK, faq=ALBUM_FAQ_ES),
+))
+
+MOVE_RANK = [
+    ("Photo Vault: Hide Pics Video", "https://apps.apple.com/app/id1532670722"),
+    ("Private Photo Vault - Arca", "https://apps.apple.com/us/app/id6779157571"),
+    ("Safety Photo+Video Pro", SAFETYPV),
+    ("Secret Photo Vault: Keepsafe", KEEPSAFE),
+    ("Private Photo Vault - Pic Safe", PICSAFE),
+]
+
+A15_EN_BODY = """
+<p><strong>Disclosure: we make Photo Vault, one of the apps below.</strong> What
+each app does is taken from its own App Store page or help pages on %(date)s.</p>
+
+<p><strong>The short answer:</strong> do it before you wipe the old iPhone. Many
+vault apps keep their photos outside iCloud on purpose, so restoring a backup or
+using Quick Start brings back the app but not what was inside it. Check that every
+photo arrived on the new phone, then erase the old one.</p>
+
+<h2>How each vault moves to a new iPhone</h2>
+
+<div class="table-scroll"><table>
+<thead><tr><th>App</th><th>How the vault moves</th><th>Goes through a server?</th></tr></thead>
+<tbody>
+<tr><td><a href="%(pv)s">Photo Vault</a> (ours)</td><td>Settings &rarr; Backup &rarr; Export: one encrypted file with every photo, video, album and album password. Send it to the new iPhone (AirDrop, Files, your own iCloud Drive) and restore it there with the same password.</td><td>No</td></tr>
+<tr><td><a href="%(arca)s" target="_blank" rel="noopener">Arca</a></td><td>Its page lists an encrypted backup file you save to Files or iCloud Drive.</td><td>No</td></tr>
+<tr><td><a href="%(safety)s" target="_blank" rel="noopener">Safety Photo+Video Pro</a></td><td>Optional cloud backup, encrypted on the device first, then restored on the new device; also Wi-Fi transfer through a browser.</td><td>Optional</td></tr>
+<tr><td><a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a></td><td>Its private cloud (up to 10,000 items).</td><td>Yes</td></tr>
+<tr><td><a href="%(picsafe)s" target="_blank" rel="noopener">Private Photo Vault &ndash; Pic Safe</a></td><td>Its <a href="%(ppvfaq)s" target="_blank" rel="noopener">FAQ</a>: set up Cloud Vault (an optional premium feature), let it finish, then sign in on the new phone.</td><td>Yes</td></tr>
+<tr><td>Photos app, Hidden album</td><td>Moves with the rest of your library through iCloud Photos, as <a href="%(hidden)s" target="_blank" rel="noopener">Apple explains</a>.</td><td>Yes, iCloud</td></tr>
+</tbody>
+</table></div>
+
+<h2>Moving Photo Vault, step by step</h2>
+<ol>
+<li>On the old iPhone, update Photo Vault and open Settings &rarr; Backup &rarr; Export Backup.</li>
+<li>Choose a password of at least 8 characters and write it down. Without it the backup can't be opened, by anyone, us included.</li>
+<li>Save the file to Files, AirDrop it to the new iPhone, or keep it in your own iCloud Drive.</li>
+<li>On the new iPhone, install Photo Vault, open Settings &rarr; Backup &rarr; Restore from Backup, pick the file and enter the password.</li>
+<li>Open a few albums to check, then erase the old iPhone.</li>
+</ol>
+<p>The file is encrypted with AES-256-GCM under a key derived from your password;
+<a href="%(sec)s">here is how it works</a>.</p>
+
+<h2>Why vault photos get lost</h2>
+<p>A vault that promises nothing leaves the phone usually keeps its files out of
+iCloud backups. That is the point, and also the risk: a new phone set up from a
+backup gets the app, empty. Apps with a cloud avoid that by storing your photos on
+their servers; apps without one need you to make a backup file yourself.</p>
+""" % _ALB
+
+A15_EN_SOURCES = """
+<h2>Sources</h2>
+<ul>
+<li>App Store pages (US, %(date)s): <a href="%(pv)s">Photo Vault</a>, <a href="%(arca)s" target="_blank" rel="noopener">Arca</a>, <a href="%(safety)s" target="_blank" rel="noopener">Safety Photo+Video Pro</a>, <a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a>, <a href="%(picsafe)s" target="_blank" rel="noopener">Pic Safe</a>.</li>
+<li>Private Photo Vault, <a href="%(ppvfaq)s" target="_blank" rel="noopener">FAQ</a> (&ldquo;How can I transfer Photo Vault to my new phone?&rdquo;).</li>
+<li>Apple Support, <a href="%(hidden)s" target="_blank" rel="noopener">Hide photos with the Hidden album</a>.</li>
+</ul>
+""" % _ALB
+
+A15_ES_BODY = """
+<p><strong>Aviso: Photo Vault, una de las apps de abajo, es nuestra.</strong> Lo que
+hace cada app sale de su ficha del App Store o de su ayuda, consultadas el
+%(date)s.</p>
+
+<p><strong>La respuesta corta:</strong> hazlo antes de borrar el iPhone viejo. Muchas
+apps de b&oacute;veda dejan sus fotos fuera de iCloud a prop&oacute;sito, as&iacute; que
+restaurar una copia o usar Inicio r&aacute;pido trae la app pero no lo que hab&iacute;a
+dentro. Comprueba que han llegado todas las fotos al m&oacute;vil nuevo y despu&eacute;s
+borra el viejo.</p>
+
+<h2>C&oacute;mo pasa cada b&oacute;veda a un iPhone nuevo</h2>
+
+<div class="table-scroll"><table>
+<thead><tr><th>App</th><th>C&oacute;mo se pasa la b&oacute;veda</th><th>&iquest;Pasa por un servidor?</th></tr></thead>
+<tbody>
+<tr><td><a href="%(pv)s">Photo Vault</a> (nuestra)</td><td>Ajustes &rarr; Copia de seguridad &rarr; Exportar: un archivo cifrado con todas las fotos, v&iacute;deos, &aacute;lbumes y sus contrase&ntilde;as. Lo mandas al iPhone nuevo (AirDrop, Archivos, tu propio iCloud Drive) y lo restauras all&iacute; con la misma contrase&ntilde;a.</td><td>No</td></tr>
+<tr><td><a href="%(arca)s" target="_blank" rel="noopener">Arca</a></td><td>Su ficha incluye un archivo de copia cifrado que guardas en Archivos o iCloud Drive.</td><td>No</td></tr>
+<tr><td><a href="%(safety)s" target="_blank" rel="noopener">Safety Photo+Video Pro</a></td><td>Copia en la nube opcional, cifrada antes en el m&oacute;vil, que se restaura en el nuevo; tambi&eacute;n transferencia por wifi desde el navegador.</td><td>Opcional</td></tr>
+<tr><td><a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a></td><td>Su nube privada (hasta 10.000 elementos).</td><td>S&iacute;</td></tr>
+<tr><td><a href="%(picsafe)s" target="_blank" rel="noopener">Private Photo Vault &ndash; Pic Safe</a></td><td>Su <a href="%(ppvfaq)s" target="_blank" rel="noopener">ayuda</a>: activar Cloud Vault (de pago, opcional), esperar a que termine e iniciar sesi&oacute;n en el m&oacute;vil nuevo.</td><td>S&iacute;</td></tr>
+<tr><td>App Fotos, &aacute;lbum Oculto</td><td>Se mueve con el resto de la fototeca por Fotos en iCloud, como <a href="%(hidden)s" target="_blank" rel="noopener">explica Apple</a>.</td><td>S&iacute;, iCloud</td></tr>
+</tbody>
+</table></div>
+
+<h2>Pasar Photo Vault, paso a paso</h2>
+<ol>
+<li>En el iPhone viejo, actualiza Photo Vault y abre Ajustes &rarr; Copia de seguridad &rarr; Exportar copia.</li>
+<li>Elige una contrase&ntilde;a de al menos 8 caracteres y ap&uacute;ntala. Sin ella nadie puede abrir la copia, ni siquiera nosotros.</li>
+<li>Guarda el archivo en Archivos, m&aacute;ndalo por AirDrop al iPhone nuevo o d&eacute;jalo en tu propio iCloud Drive.</li>
+<li>En el iPhone nuevo, instala Photo Vault, abre Ajustes &rarr; Copia de seguridad &rarr; Restaurar copia, elige el archivo y escribe la contrase&ntilde;a.</li>
+<li>Abre algunos &aacute;lbumes para comprobarlo y despu&eacute;s borra el iPhone viejo.</li>
+</ol>
+<p>El archivo va cifrado con AES-256-GCM con una clave que sale de tu contrase&ntilde;a;
+<a href="%(sec)s">as&iacute; funciona</a> (en ingl&eacute;s).</p>
+
+<h2>Por qu&eacute; se pierden las fotos de una b&oacute;veda</h2>
+<p>Una b&oacute;veda que promete que nada sale del m&oacute;vil suele dejar sus archivos
+fuera de las copias de iCloud. Esa es la idea, y tambi&eacute;n el riesgo: un m&oacute;vil
+nuevo restaurado desde copia recibe la app vac&iacute;a. Las apps con nube lo evitan
+guardando tus fotos en sus servidores; las que no tienen nube necesitan que hagas
+t&uacute; un archivo de copia.</p>
+""" % _ALB_ES
+
+A15_ES_SOURCES = """
+<h2>Fuentes</h2>
+<ul>
+<li>Fichas del App Store (EE. UU., %(date)s): <a href="%(pv)s">Photo Vault</a>, <a href="%(arca)s" target="_blank" rel="noopener">Arca</a>, <a href="%(safety)s" target="_blank" rel="noopener">Safety Photo+Video Pro</a>, <a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a>, <a href="%(picsafe)s" target="_blank" rel="noopener">Pic Safe</a>.</li>
+<li>Private Photo Vault, <a href="%(ppvfaq)s" target="_blank" rel="noopener">ayuda</a> (&laquo;How can I transfer Photo Vault to my new phone?&raquo;).</li>
+<li>Soporte de Apple, <a href="%(hidden)s" target="_blank" rel="noopener">ocultar fotos con el &aacute;lbum Oculto</a>.</li>
+</ul>
+""" % _ALB_ES
+
+MOVE_FAQ_EN = [
+    ("Do hidden photos transfer to a new iPhone?",
+     "Photos in the Photos app's Hidden album move with your library through iCloud Photos. Photos inside a "
+     "vault app depend on the app: those with a cloud (Keepsafe, Pic Safe's Cloud Vault) sync when you sign in; "
+     "those without one (Photo Vault, Arca) need you to export a backup file and restore it on the new phone."),
+    ("Will restoring an iCloud backup bring back my vault?",
+     "Not for vaults that exclude themselves from iCloud backups, such as Photo Vault. You get the app back "
+     "empty. Export a backup from the app before you switch."),
+    ("Can I move Photo Vault without a cloud account?",
+     "Yes. Export an encrypted backup file in Settings, move it with AirDrop or Files, and restore it on the "
+     "new iPhone with the same password. No account or server is involved."),
+]
+MOVE_FAQ_ES = [
+    ("¿Las fotos ocultas pasan a un iPhone nuevo?",
+     "Las del álbum Oculto de la app Fotos se mueven con tu fototeca por Fotos en iCloud. Las de una app de "
+     "bóveda dependen de la app: las que tienen nube (Keepsafe, Cloud Vault de Pic Safe) se sincronizan al "
+     "iniciar sesión; las que no (Photo Vault, Arca) necesitan que exportes un archivo de copia y lo restaures "
+     "en el móvil nuevo."),
+    ("¿Restaurar una copia de iCloud me devuelve la bóveda?",
+     "No en las bóvedas que se excluyen de las copias de iCloud, como Photo Vault. Recuperas la app vacía. "
+     "Exporta una copia desde la app antes de cambiar de móvil."),
+    ("¿Puedo pasar Photo Vault sin cuenta en la nube?",
+     "Sí. Exporta un archivo de copia cifrado en Ajustes, muévelo por AirDrop o Archivos y restáuralo en el "
+     "iPhone nuevo con la misma contraseña. No hay cuenta ni servidor de por medio."),
+]
+
+RANK_ARTICLES.append(dict(
+    en_path="blog/move-photo-vault-to-new-iphone.html",
+    date_iso="2026-10-08", date_en=ALB_DATE_EN, date_es=ALB_DATE_ES,
+    es_path="blog/es/pasar-boveda-de-fotos-a-iphone-nuevo.html",
+    en=dict(
+        h1="How to move a photo vault to a new iPhone without losing photos (2026)",
+        desc=("Why vault photos often don't survive a new iPhone, and how Photo Vault, Arca, Safety Photo+Video, "
+              "Keepsafe, Pic Safe and the Hidden album each move, from their own pages. Step by step for Photo "
+              "Vault. Written by Photo Vault's maker, disclosed."),
+        kicker="Privacy", section="Privacy",
+        standfirst=("A new iPhone restored from a backup often brings the vault app back empty. "
+                    "How each vault moves, and what to do before you wipe the old phone."),
+        body=A15_EN_BODY, sources=A15_EN_SOURCES, rank=MOVE_RANK, faq=MOVE_FAQ_EN),
+    es=dict(
+        h1="Cómo pasar una bóveda de fotos a un iPhone nuevo sin perderlas (2026)",
+        desc=("Por qué las fotos de una bóveda a menudo no sobreviven a un iPhone nuevo, y cómo se pasan Photo "
+              "Vault, Arca, Safety Photo+Video, Keepsafe, Pic Safe y el álbum Oculto, según sus propias páginas. "
+              "Paso a paso para Photo Vault. Escrito por quien hace Photo Vault, y lo decimos."),
+        kicker="Privacidad", section="Privacidad",
+        standfirst=("Un iPhone nuevo restaurado desde copia a menudo trae la app de la b&oacute;veda vac&iacute;a. "
+                    "C&oacute;mo se pasa cada una y qu&eacute; hacer antes de borrar el viejo."),
+        body=A15_ES_BODY, sources=A15_ES_SOURCES, rank=MOVE_RANK, faq=MOVE_FAQ_ES),
 ))
