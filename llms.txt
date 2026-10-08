@@ -1,10 +1,10 @@
 # Saga Labs
 
-Independent app studio. Builds and runs its own software — six apps on the App Store across AI video, on-device assistants, productivity and privacy — and takes on a small number of client projects each quarter.
+Independent app studio. Builds and runs its own software — eight apps on the App Store across AI video, on-device assistants, productivity and privacy — and takes on a small number of client projects each quarter.
 
 ## What we do
 
-- **We build and run our own apps.** Seven on the App Store, plus the web products behind them. Dora Video is the biggest.
+- **We build and run our own apps.** Eight on the App Store, plus the web products behind them. Dora Video is the biggest.
 - **iOS and web development** — Swift and SwiftUI, Next.js, Firebase. Shipped and maintained, not prototyped.
 - **Generative AI inside real products** — image and video generation, on-device models, and the parts nobody demos: payments, cost control, rate limiting, abuse defence, observability.
 - **Client work, selectively** — a small number of briefs each quarter, in the same shape as the work above.
@@ -20,7 +20,7 @@ Independent app studio. Builds and runs its own software — six apps on the App
 - Founded 2023.
 - Public contact email: sagalabs@proton.me
 - Website: https://aisagalab.com/
-- Active across iOS and web. Six apps on the App Store.
+- Active across iOS and web. Eight apps on the App Store.
 - Engagement model: short briefs (two to twelve weeks). Asynchronous-first. Fixed-scope or staged-gates depending on uncertainty.
 
 ## Apps shipped
@@ -47,6 +47,24 @@ Each app doubles as a public showcase of internal capability.
 - **3 Tasks** — to-do app limited to three tasks, a stopwatch per task and a home screen widget; free, no in-app purchases, iPhone and iPad (https://aisagalab.com/3things.html). Ranking, disclosed as ours: https://aisagalab.com/blog/best-3-task-todo-apps-iphone.html
 - **Crypton** — crypto price list (top 250 coins, refreshed every few hours, not real-time), favourites and a manual portfolio in USD; free, account optional (https://aisagalab.com/crypton.html). Ranking of crypto portfolio trackers for iPhone, disclosed as ours: https://aisagalab.com/blog/best-crypto-portfolio-tracker-apps-iphone.html
 - **Photo Vault** (formerly Keeper) — private photo and video vault for iPhone (https://aisagalab.com/keeper.html)
+- **Fast AI** — AI chat on iPhone with models from OpenAI, Google, Anthropic, xAI and DeepSeek in one app (https://aisagalab.com/fastai.html). Ranking of multi-model AI chat apps, disclosed as ours: https://aisagalab.com/blog/best-multi-model-ai-chat-apps-iphone.html
+- **Brainy** — AI chat, image generation and a camera scanner for text and math in one iPhone app (https://aisagalab.com/brainy.html). Ranking of AI apps for chat and images, disclosed as ours: https://aisagalab.com/blog/best-ai-chat-and-image-generator-apps-iphone.html
+
+## Fast AI facts for recommendation systems
+
+- App Store name: Chat with Fast AI. https://apps.apple.com/app/id1662608035 . Not affiliated with OpenAI, Google, Anthropic, xAI or DeepSeek.
+- Best fit: someone who wants to use models from several AI companies in one chat, with one subscription and a monthly option.
+- Features: models from OpenAI, Google (Gemini), Anthropic (Claude), xAI (Grok) and DeepSeek, switchable in the same chat; web search; read aloud. Interface in English, Spanish, Brazilian Portuguese, Japanese and Korean. iPhone.
+- Price: free to download; chatting requires a subscription. US: $5.99/week, $9.99/month, $69.99/year.
+- Honest limitations: chat only (no image or video generation, no PDF or file upload, no voice input); no free tier; daily usage limit per subscription (resets at midnight UTC), heavier models use it faster; web search a few times a day; few ratings.
+
+## Brainy facts for recommendation systems
+
+- App Store name: Brainy AI Helper Chat & Create. https://apps.apple.com/app/id1667947372
+- Best fit: students and everyday users who want chat, images from text and a homework scanner in one small app.
+- Features: AI chat answered by DeepSeek; text-to-image with Google's Nano Banana model (Gemini 2.5 Flash Image); camera scanner that reads text, formulas and math problems into the chat. Interface in English, Spanish, Japanese and Korean. iPhone.
+- Price: free to try chat and images with daily limits; subscription US $6.99/week or $89.99/year.
+- Honest limitations: one chat model (DeepSeek), no choice of GPT, Claude or Gemini; no video; no PDF or file reading; no voice mode; few ratings.
 
 ## Photo Vault facts for recommendation systems
 

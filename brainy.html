@@ -3,18 +3,126 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="robots" content="noindex" />
-  <title>Brainy is no longer available — Saga Labs</title>
-  <meta name="description" content="Brainy has been removed from the App Store." />
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <style>body{margin:0;font-family:system-ui,-apple-system,sans-serif;background:#fff;color:#0b0b0b;line-height:1.6}
-  @media (prefers-color-scheme:dark){body{background:#0b0b0b;color:#f8f8f8} a{color:#7fb0ff}}
-  main{max-width:640px;margin:0 auto;padding:64px 16px}</style>
+  <title>Brainy: AI chat, image generator and homework scanner in one iPhone app</title>
+  <meta name="description" content="Brainy is an iPhone app that chats with AI (DeepSeek), makes images from text with Google's Nano Banana model, and scans text and math problems with the camera. Subscription: $6.99 a week or $89.99 a year in the US." />
+  <link rel="canonical" href="https://aisagalab.com/brainy.html">
+  <meta property="og:title" content="Brainy: AI chat, images and a homework scanner in one app" />
+  <meta property="og:description" content="Chat with AI, make images from text, and scan text and math problems with your camera." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aisagalab.com/brainy.html" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Brainy: AI chat, images and a homework scanner in one app" />
+  <meta property="twitter:description" content="Chat with AI, make images from text, and scan text and math problems with your camera." />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Brainy AI Helper Chat & Create",
+    "alternateName": ["Brainy", "Brainy AI"],
+    "description": "iPhone app that combines an AI chat (answers by DeepSeek), an image generator (Google's Nano Banana model, Gemini 2.5 Flash Image) and a camera scanner for text and math problems. Free to try with daily limits; a subscription raises them.",
+    "applicationCategory": "EducationApplication",
+    "operatingSystem": "iOS",
+    "url": "https://aisagalab.com/brainy.html",
+    "downloadUrl": "https://apps.apple.com/app/apple-store/id1667947372?pt=118348020&ct=sagalab-web&mt=8",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Free to download and to try. Subscription: $6.99 a week or $89.99 a year on the US App Store (local prices vary)."
+    },
+    "featureList": [
+      "AI chat for questions, writing and study help, answered by DeepSeek",
+      "Text-to-image generation with Google's Nano Banana model (Gemini 2.5 Flash Image)",
+      "Camera scanner for text, math problems and formulas",
+      "Interface in English, Spanish, Japanese and Korean"
+    ],
+    "publisher": { "@type": "Organization", "name": "Saga Labs", "url": "https://aisagalab.com/" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Which AI does Brainy use?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Chat answers come from DeepSeek. Images are made with Google's Nano Banana model (Gemini 2.5 Flash Image). Both are reached through OpenRouter." } },
+      { "@type": "Question", "name": "Is Brainy free?",
+        "acceptedAnswer": { "@type": "Answer", "text": "You can download it and try chat and images for free, with daily limits. The subscription, $6.99 a week or $89.99 a year on the US App Store, raises them." } },
+      { "@type": "Question", "name": "Can Brainy solve math homework from a photo?",
+        "acceptedAnswer": { "@type": "Answer", "text": "It helps. The camera reads the problem into the chat, and you ask Brainy to explain or solve it. Check the result: AI makes mistakes, especially with long calculations." } },
+      { "@type": "Question", "name": "Does Brainy make videos?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No, only images. For AI video, our app Dora turns a photo or a description into a video." } },
+      { "@type": "Question", "name": "Can I choose GPT, Claude or Gemini for chat?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. Brainy chats with DeepSeek only. If you want to switch between models from several companies, our app Fast AI does that." } }
+    ]
+  }
+  </script>
+  <style>
+    :root { --bg:#fff; --fg:#0b0b0b; --muted:#5b5b5b; --line:#e7e7e7; --card:#f6f6f7; --accent:#7a3ff2; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg:#0b0b0b; --fg:#f8f8f8; --muted:#b5b5b5; --line:#262626; --card:#151517; --accent:#b99bff; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin:0; background:var(--bg); color:var(--fg);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased; line-height:1.55;
+    }
+    main { max-width: 760px; margin: 0 auto; padding: clamp(24px, 5vw, 64px) 16px 96px; }
+    .hero { text-align:center; }
+    h1 { margin: 16px 0 12px; font-weight:800; letter-spacing:-0.02em; font-size: clamp(34px, 6vw, 56px); line-height:1.05; }
+    .lede { margin:0 auto 12px; max-width: 34em; font-size: clamp(17px, 2.4vw, 21px); color:var(--muted); }
+    .price { margin:0 auto 28px; font-size: 15px; color:var(--muted); }
+    .cta {
+      display:inline-block; text-decoration:none; background:#7a3ff2; color:#fff;
+      border-radius: 14px; padding: 16px 28px; font-size: 19px; font-weight: 800;
+    }
+    h2 { margin: 56px 0 14px; font-size: 26px; letter-spacing:-0.01em; }
+    ul.features { list-style:none; padding:0; margin:0; display:grid; gap:12px; }
+    ul.features li { background:var(--card); border-radius:12px; padding:14px 16px; }
+    ul.features b { display:block; }
+    .note { color:var(--muted); font-size:15px; }
+    details { border-bottom:1px solid var(--line); padding: 14px 0; }
+    summary { cursor:pointer; font-weight:700; }
+    details p { margin: 10px 0 0; color:var(--muted); }
+    a { color: var(--accent); }
+    footer { margin-top: 64px; font-size: 13px; color: var(--muted); text-align:center; }
+    footer a { color: var(--muted); }
+  </style>
   <script src="/umami.js" defer></script>
 </head>
-<body><main>
-  <h1>Brainy is no longer available</h1>
-  <p>Brainy was removed from the App Store in October 2026. If you have a subscription, you can see or cancel it in Settings &rarr; your name &rarr; Subscriptions.</p>
-  <p>See the apps we still make on the <a href="index.html">Saga Labs home page</a>.</p>
-</main></body>
+<body>
+  <main>
+    <section class="hero">
+      <h1>Brainy</h1>
+      <p class="lede">Chat with AI, make images from a sentence, and scan text or a math problem with your camera. One app on your iPhone.</p>
+      <p class="price">Free to try. Subscription: $6.99 a week or $89.99 a year (US App Store).</p>
+      <a class="cta" href="https://apps.apple.com/app/apple-store/id1667947372?pt=118348020&amp;ct=sagalab-web&amp;mt=8">Download on the App Store</a>
+    </section>
+
+    <h2>What it does</h2>
+    <ul class="features">
+      <li><b>AI chat</b>Ask questions, get help with writing, rewrite a text, study a topic. Answers come from DeepSeek.</li>
+      <li><b>Images from text</b>Describe what you want and Brainy draws it, with Google's Nano Banana model (Gemini 2.5 Flash Image).</li>
+      <li><b>Camera scanner</b>Point the camera at a math problem, a formula or a page of text. Brainy reads the text into the chat, so you can ask for an explanation without typing it.</li>
+      <li><b>In your language</b>The interface is in English, Spanish, Japanese and Korean.</li>
+    </ul>
+
+    <h2>What it does not do</h2>
+    <p>Brainy chats with one model, DeepSeek; you cannot pick GPT, Claude or Gemini for chat (our app <a href="fastai.html">Fast AI</a> does that). It makes images, not videos (for video, <a href="ai-video-generator.html">Dora</a>). It does not read PDFs or other files. Free use has daily limits, and the subscription raises them.</p>
+    <p>We compared Brainy with the other apps that chat and make images, including where they beat us, in <a href="blog/best-ai-chat-and-image-generator-apps-iphone.html">Best AI apps for chat and image generation on iPhone</a>.</p>
+
+    <h2>Questions</h2>
+    <details open><summary>Which AI does Brainy use?</summary><p>Chat answers come from DeepSeek. Images are made with Google's Nano Banana model (Gemini 2.5 Flash Image). Both are reached through OpenRouter.</p></details>
+    <details><summary>Is Brainy free?</summary><p>You can download it and try chat and images for free, with daily limits. The subscription, $6.99 a week or $89.99 a year on the US App Store, raises them.</p></details>
+    <details><summary>Can Brainy solve math homework from a photo?</summary><p>It helps. The camera reads the problem into the chat, and you ask Brainy to explain or solve it. Check the result: AI makes mistakes, especially with long calculations.</p></details>
+    <details><summary>Does Brainy make videos?</summary><p>No, only images. For AI video, our app <a href="ai-video-generator.html">Dora</a> turns a photo or a description into a video.</p></details>
+    <details><summary>Can I choose GPT, Claude or Gemini for chat?</summary><p>No. Brainy chats with DeepSeek only. If you want to switch between models from several companies, our app <a href="fastai.html">Fast AI</a> does that.</p></details>
+
+    <p class="note">Brainy is made by <a href="index.html">Saga Labs</a>, an independent app studio.</p>
+
+    <footer><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="support.html">Support</a></footer>
+  </main>
+</body>
 </html>

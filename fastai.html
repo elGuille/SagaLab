@@ -3,18 +3,131 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="robots" content="noindex" />
-  <title>Fast AI is no longer available — Saga Labs</title>
-  <meta name="description" content="Fast AI has been removed from the App Store." />
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <style>body{margin:0;font-family:system-ui,-apple-system,sans-serif;background:#fff;color:#0b0b0b;line-height:1.6}
-  @media (prefers-color-scheme:dark){body{background:#0b0b0b;color:#f8f8f8} a{color:#7fb0ff}}
-  main{max-width:640px;margin:0 auto;padding:64px 16px}</style>
+  <title>Fast AI: chat with AI models from five companies in one iPhone app</title>
+  <meta name="description" content="Fast AI puts AI models from OpenAI, Google, Anthropic, xAI and DeepSeek in one chat on iPhone, with web search. Subscription: $5.99 a week, $9.99 a month or $69.99 a year in the US." />
+  <link rel="canonical" href="https://aisagalab.com/fastai.html">
+  <meta property="og:title" content="Fast AI: AI models from five companies in one iPhone chat" />
+  <meta property="og:description" content="Switch between AI models from OpenAI, Google, Anthropic, xAI and DeepSeek in the same chat, with web search." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aisagalab.com/fastai.html" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Fast AI: AI models from five companies in one iPhone chat" />
+  <meta property="twitter:description" content="Switch between AI models from OpenAI, Google, Anthropic, xAI and DeepSeek in the same chat, with web search." />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Chat with Fast AI",
+    "alternateName": ["Fast AI", "ChatAI"],
+    "description": "AI chat app for iPhone that puts models from OpenAI, Google, Anthropic, xAI and DeepSeek in one conversation. Pick a model, switch whenever you like, turn on web search for current information, and have answers read aloud. Chatting requires a subscription; there is a daily usage limit that resets at midnight UTC.",
+    "applicationCategory": "ProductivityApplication",
+    "operatingSystem": "iOS",
+    "url": "https://aisagalab.com/fastai.html",
+    "downloadUrl": "https://apps.apple.com/app/apple-store/id1662608035?pt=118348020&ct=sagalab-web&mt=8",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Free to download. Chatting requires a subscription: $5.99 a week, $9.99 a month or $69.99 a year on the US App Store (local prices vary)."
+    },
+    "featureList": [
+      "AI models from OpenAI, Google, Anthropic, xAI and DeepSeek in one app",
+      "Switch model at any time, in the same chat",
+      "Web search for current information",
+      "Read answers aloud",
+      "Interface in English, Spanish, Brazilian Portuguese, Japanese and Korean"
+    ],
+    "publisher": { "@type": "Organization", "name": "Saga Labs", "url": "https://aisagalab.com/" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Which AI models does Fast AI use?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Models from OpenAI, Google (Gemini), Anthropic (Claude), xAI (Grok) and DeepSeek, reached through OpenRouter. We move to newer versions as the companies release them, so we list the companies rather than version numbers here; the app shows the current names." } },
+      { "@type": "Question", "name": "Is Fast AI free?",
+        "acceptedAnswer": { "@type": "Answer", "text": "It is free to download, but chatting needs a subscription: $5.99 a week, $9.99 a month or $69.99 a year on the US App Store. Local prices vary." } },
+      { "@type": "Question", "name": "Is it unlimited?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. Each subscription has a daily usage limit that resets at midnight UTC, and web search can be used a few times a day. Heavier models use up the daily limit faster." } },
+      { "@type": "Question", "name": "Is Fast AI made by OpenAI?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. Fast AI is made by Saga Labs, an independent studio. It is not affiliated with OpenAI, Google, Anthropic, xAI or DeepSeek; it uses their models through their APIs." } },
+      { "@type": "Question", "name": "Can it make images or read PDFs?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. Fast AI is chat only: no image generation, no file or PDF upload and no voice input. For chat plus images, our other app Brainy does both." } },
+      { "@type": "Question", "name": "Where do my messages go?",
+        "acceptedAnswer": { "@type": "Answer", "text": "To our server, which forwards them to the model you picked through OpenRouter and returns the answer. Your chats are kept on your iPhone. We count tokens per subscription to enforce the daily limit." } }
+    ]
+  }
+  </script>
+  <style>
+    :root { --bg:#fff; --fg:#0b0b0b; --muted:#5b5b5b; --line:#e7e7e7; --card:#f6f6f7; --accent:#2f6fed; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg:#0b0b0b; --fg:#f8f8f8; --muted:#b5b5b5; --line:#262626; --card:#151517; --accent:#7fb0ff; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin:0; background:var(--bg); color:var(--fg);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased; line-height:1.55;
+    }
+    main { max-width: 760px; margin: 0 auto; padding: clamp(24px, 5vw, 64px) 16px 96px; }
+    .hero { text-align:center; }
+    h1 { margin: 16px 0 12px; font-weight:800; letter-spacing:-0.02em; font-size: clamp(34px, 6vw, 56px); line-height:1.05; }
+    .lede { margin:0 auto 12px; max-width: 34em; font-size: clamp(17px, 2.4vw, 21px); color:var(--muted); }
+    .price { margin:0 auto 28px; font-size: 15px; color:var(--muted); }
+    .cta {
+      display:inline-block; text-decoration:none; background:#2f6fed; color:#fff;
+      border-radius: 14px; padding: 16px 28px; font-size: 19px; font-weight: 800;
+    }
+    h2 { margin: 56px 0 14px; font-size: 26px; letter-spacing:-0.01em; }
+    ul.features { list-style:none; padding:0; margin:0; display:grid; gap:12px; }
+    ul.features li { background:var(--card); border-radius:12px; padding:14px 16px; }
+    ul.features b { display:block; }
+    .note { color:var(--muted); font-size:15px; }
+    details { border-bottom:1px solid var(--line); padding: 14px 0; }
+    summary { cursor:pointer; font-weight:700; }
+    details p { margin: 10px 0 0; color:var(--muted); }
+    a { color: var(--accent); }
+    footer { margin-top: 64px; font-size: 13px; color: var(--muted); text-align:center; }
+    footer a { color: var(--muted); }
+  </style>
   <script src="/umami.js" defer></script>
 </head>
-<body><main>
-  <h1>Fast AI is no longer available</h1>
-  <p>Fast AI was removed from the App Store in October 2026. If you have a subscription, you can see or cancel it in Settings &rarr; your name &rarr; Subscriptions.</p>
-  <p>See the apps we still make on the <a href="index.html">Saga Labs home page</a>.</p>
-</main></body>
+<body>
+  <main>
+    <section class="hero">
+      <h1>Fast AI</h1>
+      <p class="lede">AI models from OpenAI, Google, Anthropic, xAI and DeepSeek in one chat on your iPhone. Pick one, switch whenever you like.</p>
+      <p class="price">Subscription: $5.99 a week, $9.99 a month or $69.99 a year (US App Store).</p>
+      <a class="cta" href="https://apps.apple.com/app/apple-store/id1662608035?pt=118348020&amp;ct=sagalab-web&amp;mt=8">Download on the App Store</a>
+    </section>
+
+    <h2>What it does</h2>
+    <ul class="features">
+      <li><b>Five model families, one app</b>Models from OpenAI, Google (Gemini), Anthropic (Claude), xAI (Grok) and DeepSeek. One subscription instead of one per company.</li>
+      <li><b>Switch in the middle of a chat</b>Ask the same question to another model, or move to a faster one for quick tasks and a stronger one for hard ones.</li>
+      <li><b>Web search</b>Turn it on when you need current information: news, prices, opening hours.</li>
+      <li><b>Read aloud</b>Have any answer spoken with the voices on your iPhone.</li>
+      <li><b>In your language</b>The interface is in English, Spanish, Brazilian Portuguese, Japanese and Korean. The models answer in almost any language.</li>
+    </ul>
+
+    <h2>What it does not do</h2>
+    <p>Fast AI is chat only. It does not generate images or video, does not read PDFs or other files, and has no voice input. There is no free tier: chatting needs a subscription. Each subscription has a daily usage limit that resets at midnight UTC, and heavier models use it up faster. If you want chat and images in one app, see <a href="brainy.html">Brainy</a>; for AI video, <a href="ai-video-generator.html">Dora</a>.</p>
+    <p>We compared Fast AI with the other apps that offer several AI models, including where they beat us, in <a href="blog/best-multi-model-ai-chat-apps-iphone.html">Best AI chat apps with multiple models for iPhone</a>.</p>
+
+    <h2>Questions</h2>
+    <details open><summary>Which AI models does Fast AI use?</summary><p>Models from OpenAI, Google (Gemini), Anthropic (Claude), xAI (Grok) and DeepSeek, reached through OpenRouter. We move to newer versions as the companies release them, so we list the companies rather than version numbers here; the app shows the current names.</p></details>
+    <details><summary>Is Fast AI free?</summary><p>It is free to download, but chatting needs a subscription: $5.99 a week, $9.99 a month or $69.99 a year on the US App Store. Local prices vary.</p></details>
+    <details><summary>Is it unlimited?</summary><p>No. Each subscription has a daily usage limit that resets at midnight UTC, and web search can be used a few times a day. Heavier models use up the daily limit faster.</p></details>
+    <details><summary>Is Fast AI made by OpenAI?</summary><p>No. Fast AI is made by Saga Labs, an independent studio. It is not affiliated with OpenAI, Google, Anthropic, xAI or DeepSeek; it uses their models through their APIs.</p></details>
+    <details><summary>Can it make images or read PDFs?</summary><p>No. Fast AI is chat only: no image generation, no file or PDF upload and no voice input. For chat plus images, our other app <a href="brainy.html">Brainy</a> does both.</p></details>
+    <details><summary>Where do my messages go?</summary><p>To our server, which forwards them to the model you picked through OpenRouter and returns the answer. Your chats are kept on your iPhone. We count tokens per subscription to enforce the daily limit.</p></details>
+
+    <p class="note">Fast AI is made by <a href="index.html">Saga Labs</a>, an independent app studio.</p>
+
+    <footer><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="support.html">Support</a></footer>
+  </main>
+</body>
 </html>
