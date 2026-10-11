@@ -288,7 +288,7 @@ answer is generated on the iPhone, and nothing you type leaves it.</p>
          'Get <a href="%s">Pinku</a> from the App Store. It runs on iPhone, iPad and Mac with Apple '
          "silicon, on devices that support Metal 3. There is no account." % PINKU_STORE),
         ("Download a model while you are online.",
-         "Do this on Wi-Fi before you need it. The default model, Gemma 3 1B, is 0.73 GB. Pinku only "
+         "Do this on Wi-Fi before you need it. The default model, Gemma 3 1B, is under 1 GB. Pinku only "
          "lists the models that fit your device's memory."),
         ("Turn on airplane mode and test it.",
          "Open Control Center, turn on airplane mode and ask a question. The answer is generated on the "
@@ -328,7 +328,7 @@ for iPhone and Mac</a>.</p>
         ("Does ChatGPT work offline?",
          "No. ChatGPT runs on OpenAI's servers, so every message needs a connection."),
         ("How much space does an offline AI model take?",
-         "In Pinku, from 0.34 GB to 4.7 GB depending on the model. The default, Gemma 3 1B, is 0.73 GB."),
+         "In Pinku, from 0.34 GB to 4.7 GB depending on the model. The default, Gemma 3 1B, is under 1 GB."),
         ("Is an offline AI as good as ChatGPT?",
          "No. A small model on a phone is clearly weaker, has a shorter context and cannot browse the web. "
          "Its advantage is that it works anywhere and nothing you type leaves the device."),
@@ -364,7 +364,7 @@ escribes sale de él.</p>
          'Descarga <a href="%s">Pinku</a> del App Store. Funciona en iPhone, iPad y Mac con Apple '
          "silicon, en dispositivos compatibles con Metal 3. No hay cuenta." % PINKU_STORE),
         ("Descarga un modelo mientras tienes conexión.",
-         "Hazlo con wifi antes de necesitarlo. El modelo por defecto, Gemma 3 1B, ocupa 0,73 GB. Pinku "
+         "Hazlo con wifi antes de necesitarlo. El modelo por defecto, Gemma 3 1B, ocupa menos de 1 GB. Pinku "
          "solo te enseña los modelos que caben en la memoria de tu dispositivo."),
         ("Pon el modo avión y pruébalo.",
          "Abre el Centro de control, activa el modo avión y haz una pregunta. La respuesta se genera en "
@@ -403,7 +403,7 @@ IA sin conexión para iPhone y Mac</a>.</p>
         ("¿ChatGPT funciona sin conexión?",
          "No. ChatGPT funciona en los servidores de OpenAI, así que cada mensaje necesita conexión."),
         ("¿Cuánto ocupa un modelo de IA sin conexión?",
-         "En Pinku, de 0,34 GB a 4,7 GB según el modelo. El de por defecto, Gemma 3 1B, ocupa 0,73 GB."),
+         "En Pinku, de 0,34 GB a 4,7 GB según el modelo. El de por defecto, Gemma 3 1B, ocupa menos de 1 GB."),
         ("¿Una IA sin conexión es tan buena como ChatGPT?",
          "No. Un modelo pequeño en un móvil es claramente más flojo, recuerda menos y no busca en internet. "
          "Su ventaja es que funciona en cualquier sitio y nada de lo que escribes sale del dispositivo."),
