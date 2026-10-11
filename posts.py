@@ -723,7 +723,8 @@ def build(render, hreflang):
     # --- 6: apps de IA sin conexion (ranking) -------------------------------
     en_path = "blog/best-offline-ai-chat-apps-iphone-mac.html"
     es_path = "blog/es/mejores-apps-ia-sin-conexion-iphone-mac.html"
-    alt = hreflang(en_path, es_path)
+    alt = hreflang(en_path, es_path) + (
+        '\n    <link rel="alternate" hreflang="ru" href="https://aisagalab.com/%s">' % OFF_RU_PATH)
 
     h1_en = "Best offline AI chat apps for iPhone and Mac (2026)"
     d_en = ("Pinku, Locally AI, Private LLM, Enclave, PocketPal and Privacy AI ranked: "
@@ -836,6 +837,31 @@ def build(render, hreflang):
                      if L.get("faq") else "")
                   + '</div>\n        <div class="article-body article-sources">' + L["sources"] + '</div>',
             ))
+
+    # --- 6 RU: apps de IA sin conexion, en ruso ----------------------------
+    h1_ru = "Лучшие приложения ИИ без интернета для iPhone (2026)"
+    d_ru = ("Pinku, Enclave, PocketPal, Private LLM и Privacy AI: цена в России, русский язык, модели, Mac и "
+            "конфиденциальность по данным App Store. Pinku делаем мы, и мы это указываем.")
+    alt_ru = (hreflang("blog/best-offline-ai-chat-apps-iphone-mac.html",
+                       "blog/es/mejores-apps-ia-sin-conexion-iphone-mac.html")
+              + '\n    <link rel="alternate" hreflang="ru" href="https://aisagalab.com/%s">' % OFF_RU_PATH)
+    out.append(render(
+        path=OFF_RU_PATH, lang="ru",
+        title=h1_ru + " | Saga Labs",
+        desc=d_ru, og_title=h1_ru, alternates=alt_ru,
+        jsonld=_jsonld_rank(_jsonld(h1_ru, d_ru, "https://aisagalab.com/" + OFF_RU_PATH, "ru",
+                                    "ИИ на устройстве", OFF_RU_DATE_ISO),
+                            h1_ru, OFF_RU_RANK, faq=OFF_RU_FAQ),
+        body=_head(
+            "ИИ на устройстве", h1_ru,
+            "Пять приложений, которые запускают языковую модель прямо на iPhone, без "
+            "аккаунта и без интернета. Первое в списке делаем мы.",
+            '<a href="%s" rel="author me noopener" target="_blank">Maruta G</a> &middot; ' % LINKEDIN + OFF_RU_DATE,
+            "Read in English", "../best-offline-ai-chat-apps-iphone-mac.html",
+        ) + '\n        <div class="article-body">' + OFF_RU_BODY
+          + _faq_html(OFF_RU_FAQ, "Частые вопросы")
+          + '</div>\n        <div class="article-body article-sources">' + OFF_RU_SOURCES + '</div>',
+    ))
 
     return out
 
@@ -5632,3 +5658,152 @@ RANK_ARTICLES.append(dict(
                     "cu&aacute;les a&ntilde;aden v&iacute;deo y cu&aacute;nto cuesta cada una."),
         body=A17_ES_BODY, sources=A17_ES_SOURCES, rank=CI_RANK, faq=CI_FAQ_ES),
 ))
+
+
+# --------------------------------------------------------------------------
+# 6 RU — Лучшие приложения ИИ без интернета для iPhone (Pinku первая)
+# --------------------------------------------------------------------------
+#
+# Datos del App Store de Rusia, API publica de lookup de iTunes (country=ru),
+# 11 oct 2026: precio, nota y numero de valoraciones en Rusia, y si la ficha
+# declara ruso (languageCodesISO2A). Locally AI no esta en la tienda rusa.
+# Etiquetas de privacidad, modelos y Mac: los mismos que la pagina en ingles.
+
+OFF_RU_DATE_ISO = "2026-10-11"
+OFF_RU_DATE = "11 октября 2026 г."
+OFF_RU_PATH = "blog/ru/luchshie-prilozheniya-ii-bez-interneta-iphone.html"
+
+OFF_RU_FAQ = [
+    ("Какое приложение ИИ работает на iPhone без интернета?",
+     "Pinku, Enclave, PocketPal AI, Private LLM и Privacy AI скачивают открытую языковую модель на iPhone и отвечают без подключения к сети. "
+     "Интернет нужен один раз, чтобы скачать модель. Pinku и Privacy AI единственные из них с интерфейсом на русском."),
+    ("Можно ли пользоваться ChatGPT в России?",
+     "Россия не входит в список стран, где OpenAI официально поддерживает ChatGPT. Локальное приложение работает без аккаунта и без серверов, поэтому от этого не зависит."),
+    ("Pinku бесплатное?",
+     "Да. Pinku бесплатно скачивается, и шесть моделей до 1 ГБ, включая модель по умолчанию, работают без оплаты и без ограничений. "
+     "Pinku Pro — необязательная разовая покупка (9,99 $ в американском App Store, в рублях своя цена): крупные модели, свои инструкции, диктовка и чтение вслух. Подписки нет."),
+    ("Какой iPhone нужен?",
+     "Pinku работает на iOS 18.6 и новее, на устройствах с Metal 3, и на Mac с Apple silicon (macOS 14 и новее). Модели, которые не помещаются в память устройства, Pinku скрывает, а перед загрузкой проверяет свободную память, чтобы не закрыться."),
+    ("Насколько хорошо локальная модель отвечает по-русски?",
+     "Хуже, чем облачные ChatGPT или Claude: модели от 1 до 5 ГБ заметно слабее. Маленькие модели по-русски отвечают проще, чем по-английски; крупные (Qwen3 4B и 8B, Gemma 3n) отвечают лучше. Стоит попробовать две-три модели на своих вопросах."),
+]
+
+OFF_RU_RANK = [_N[k] for k in ("pinku", "enclave", "pocketpal", "privatellm", "privacyai")]
+
+OFF_RU_BODY = ("""
+<p><strong>Важно: Pinku, приложение на первом месте, делаем мы.</strong> Всё, что
+сказано о других приложениях, взято из их собственных страниц в App Store, и мы
+прямо пишем, в чём они лучше нас. Цены и оценки из российского App Store на
+%(date)s.</p>
+
+<p>Все эти приложения делают одно и то же: скачивают открытую языковую модель на
+ваш iPhone или Mac и запускают её там. Когда модель уже на устройстве, ответы
+приходят без интернета, без аккаунта и без VPN. Разница в том, какие модели можно
+запустить, сколько это стоит и есть ли русский язык.</p>
+
+<h2>Рейтинг</h2>
+
+<ol>
+<li><a href="%(pinku)s">Pinku</a>: лучшее для приватного чата без интернета на iPhone и Mac, с интерфейсом на русском.</li>
+<li><a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a>: лучшее, если иногда нужны и облачные модели.</li>
+<li><a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a>: лучшее, чтобы запускать любую модель с Hugging Face.</li>
+<li><a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a>: разовая оплата, Siri и модели побольше.</li>
+<li><a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a>: агенты и инструменты, тоже на русском.</li>
+</ol>
+
+<div class="article-note rank-box">
+<p><strong>Почему Pinku на первом месте</strong></p>
+<ul>
+<li>Всё на устройстве: модель скачивается один раз, дальше каждый ответ создаётся на вашем iPhone или Mac, без сети.</li>
+<li>Без аккаунта и без сервера. Этикетка конфиденциальности в App Store: <em>Данные не собираются</em>.</li>
+<li>Интерфейс на русском (а также на английском, испанском, немецком, французском, японском, корейском и китайском).</li>
+<li>Бесплатно для начала; Pinku Pro — разовая покупка. Без подписки.</li>
+<li>Перед загрузкой модели проверяет память: если модель не помещается, предупреждает и оставляет текущую, а не закрывается.</li>
+</ul>
+</div>
+
+<h2>Пять приложений в одной таблице</h2>
+
+<div class="table-scroll"><table>
+<thead><tr><th></th><th>Цена (Россия)</th><th>Русский интерфейс</th><th>Mac App Store</th><th>Модели</th><th>Конфиденциальность</th><th>Оценка (Россия)</th></tr></thead>
+<tbody>
+<tr><td>1. <a href="%(pinku)s">Pinku</a> (наше)</td><td>Бесплатно; Pinku Pro разово</td><td>Да</td><td>Да</td><td>12 моделей на Apple MLX, от 0,34 до 4,7 ГБ</td><td>Данные не собираются</td><td>3,7 &middot; 3</td></tr>
+<tr><td>2. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Бесплатно; есть Pro</td><td>Нет</td><td>Нет в списке</td><td>Сотни открытых моделей; Pro добавляет облачные</td><td>Не связаны с вами</td><td>4,6 &middot; 75</td></tr>
+<tr><td>3. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Бесплатно, открытый код</td><td>Нет</td><td>Нет в списке</td><td>Любая модель GGUF с Hugging Face</td><td>Данные не собираются</td><td>4,3 &middot; 19</td></tr>
+<tr><td>4. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>299 &#8381; сразу</td><td>Нет</td><td>Да</td><td>Llama, Gemma, Qwen, Phi, Mistral и другие, до 14B</td><td>Данные не собираются</td><td>3,6 &middot; 18</td></tr>
+<tr><td>5. <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a></td><td>Бесплатно; подписка за облачные функции</td><td>Да</td><td>Нет в списке</td><td>Модели GGUF и MLX, модели Apple, облачные по желанию</td><td>Используются для отслеживания</td><td>нет оценок</td></tr>
+</tbody>
+</table></div>
+
+<p class="article-note">«Русский интерфейс» — это языки, которые разработчик
+указал в App Store. «Нет в списке» значит, что мы не нашли версию в Mac App Store.
+Этикетки конфиденциальности заявляет сам разработчик, Apple их не проверяет.
+<strong>Locally AI by LM Studio</strong>, популярное бесплатное приложение, на
+%(date)s недоступно в российском App Store.</p>
+
+<h2>1. Pinku: приватность заложена в устройство</h2>
+
+<p><a href="%(pinku)s">Pinku</a> запускает двенадцать открытых моделей (Gemma 3,
+Gemma 3n, Llama 3.2, Qwen3, дистилляты DeepSeek-R1, SmolLM3 и LFM2) на iPhone и Mac
+через Apple MLX. Аккаунта и сервера нет: переписка не покидает устройство. Можно
+перегенерировать ответ, отредактировать сообщение и поделиться чатом. Шесть моделей
+до 1 ГБ бесплатны без ограничений; Pinku Pro добавляет шесть крупных моделей,
+свои инструкции, диктовку, которая распознаётся на устройстве, и чтение ответов
+вслух.</p>
+
+<p><strong>Чего Pinku не умеет:</strong> не ищет в интернете, не читает документы
+и картинки, не синхронизирует чаты между устройствами и не даёт загрузить свою
+модель с Hugging Face: только двенадцать отобранных. Локальная модель заметно
+слабее облачного ChatGPT или Claude. Оценок в российском App Store пока мало.</p>
+
+<h2>2. Enclave</h2>
+
+<p><a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a> выбирают за
+большой каталог открытых моделей и за то, что в Pro можно подключить облачные
+модели, когда локальной не хватает. Лучшая оценка в этой таблице. Интерфейс не на
+русском, и в его этикетке конфиденциальности указаны аналитика и диагностика.</p>
+
+<h2>3. PocketPal AI</h2>
+
+<p><a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a> —
+бесплатное приложение с <a href="%(gh)s" target="_blank" rel="noopener">открытым
+кодом</a>, которое запускает любую модель GGUF с Hugging Face. Лучший выбор, если вы
+хотите сами пробовать разные модели и не боитесь настроек. Интерфейс на
+английском.</p>
+
+<h2>4. Private LLM</h2>
+
+<p><a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a> стоит
+299 &#8381; сразу, без подписки, и одна покупка открывает iPhone, iPad и Mac. Умеет
+работать с Siri и Командами и запускает модели крупнее наших, если хватает памяти.
+Попробовать бесплатно нельзя.</p>
+
+<h2>5. Privacy AI</h2>
+
+<p><a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a> идёт
+дальше чата: агенты, инструменты и облачные модели по подписке. Тоже на русском.
+Но по его этикетке в App Store часть данных используется для отслеживания, а
+оценок в России пока нет.</p>
+
+<h2>Как выбрать</h2>
+
+<ul>
+<li>Нужен простой приватный чат на русском, без аккаунта: <a href="%(pinku)s">Pinku</a>.</li>
+<li>Хотите иногда переключаться на облачные модели: Enclave.</li>
+<li>Хотите любую модель с Hugging Face: PocketPal AI.</li>
+<li>Готовы заплатить сразу и нужна Siri: Private LLM.</li>
+</ul>
+""" % dict(_OFF, date=OFF_RU_DATE))
+
+OFF_RU_SOURCES = """
+<h2>Источники</h2>
+<ul>
+<li>Страницы в App Store: <a href="%(pinku)s">Pinku</a>, <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a>, <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a>, <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a>, <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a>.</li>
+<li>Цены, оценки, языки и наличие в российском App Store: открытый API iTunes lookup (country=ru), %(date)s.</li>
+<li>Этикетки конфиденциальности, модели и Mac: страницы App Store в США, 7 октября 2026 г.</li>
+<li>OpenAI, <a href="%(oai)s" target="_blank" rel="noopener">страны, где поддерживается ChatGPT</a>.</li>
+<li>Pinku: <a href="../../pinku.html">страница продукта</a>.</li>
+</ul>
+<p>Если что-то устарело, <a href="mailto:sagalabs@proton.me">напишите нам</a>, и мы
+исправим страницу.</p>
+""" % dict(_OFF, date=OFF_RU_DATE)
