@@ -362,6 +362,12 @@ INDEX_EN = """
         <div class="article-body">
         <ul class="post-list">
             <li>
+                <a href="best-white-noise-sleep-sound-apps-iphone.html">Best white noise and sleep sound apps for iPhone (2026)</a>
+                <p>Drop, White Noise Lite, Rain Rain, Dark Noise, myNoise, BetterSleep,
+                Calm and Endel ranked: sounds, mixing, sleep timer and how each charges.
+                Ours is first, disclosed.</p>
+            </li>
+            <li>
                 <a href="best-crypto-portfolio-tracker-apps-iphone.html">Best crypto portfolio tracker apps for iPhone in 2026</a>
                 <p>Crypton, Crypto Pro, CoinGecko, CoinMarketCap, CoinStats, Delta and
                 CoinTracker ranked: prices, portfolios, wallet sync, taxes and privacy
@@ -461,6 +467,12 @@ INDEX_ES = """
         </p>
         <div class="article-body">
         <ul class="post-list">
+            <li>
+                <a href="mejores-apps-ruido-blanco-sonidos-dormir-iphone.html">Las mejores apps de ruido blanco y sonidos para dormir en iPhone (2026)</a>
+                <p>Drop, White Noise Lite, Rain Rain, Dark Noise, myNoise, BetterSleep,
+                Calm y Endel ordenadas: sonidos, mezcla, temporizador y c&oacute;mo cobra
+                cada una. La primera es nuestra, y lo decimos.</p>
+            </li>
             <li>
                 <a href="mejores-apps-cartera-cripto-iphone.html">Las mejores apps para seguir tu cartera de criptomonedas en iPhone (2026)</a>
                 <p>Crypton, Crypto Pro, CoinGecko, CoinMarketCap, CoinStats, Delta y
@@ -5807,3 +5819,453 @@ OFF_RU_SOURCES = """
 <p>Если что-то устарело, <a href="mailto:sagalabs@proton.me">напишите нам</a>, и мы
 исправим страницу.</p>
 """ % dict(_OFF, date=OFF_RU_DATE)
+
+
+# --------------------------------------------------------------------------
+# 16 — Apps de ruido blanco y sonidos para dormir en iPhone (ranking, Drop 1.a)
+# --------------------------------------------------------------------------
+#
+# Drop, comprobado en el repo Drop en la 2.7 (commit f9dd657, la que esta en
+# revision el 11 oct 2026; esta pagina se publica cuando salga): 33 sonidos,
+# 10 gratis (lluvia, gotas, fuego, bosque, rio, cafeteria, olas, tormenta,
+# autobus, ventilador); suena en segundo plano (UIBackgroundModes audio,
+# AVAudioSession .playback); respiracion guiada con ritmo de 2 a 8 s y numero
+# de ciclos; planta que crece en 5 fases, rachas y logros; widgets; sin
+# anuncios; sin cuenta; iPhone, iPad y Mac. NO tiene temporizador de apagado
+# (llega en la 2.8), ni mezcla de sonidos, ni generador de ruido blanco, rosa
+# o marron. Drop Pro: suscripcion o compra de por vida (sin precios aqui: el
+# anual cambia el 12 oct). Fuera las afirmaciones de salud de su ficha vieja.
+# Competidores: descripcion por la API de lookup (country=us) y lista de
+# compras de su ficha de EE. UU., 11 oct 2026. Sin rayas en el texto.
+
+DROP_DATE_ISO = "2026-10-11"
+DROP_DATE_EN = "11 October 2026"
+DROP_DATE_ES = "11 de octubre de 2026"
+DROP = "https://apps.apple.com/app/apple-store/id1462269642?pt=118348020&amp;ct=sagalab-blog&amp;mt=8"
+WNLITE = "https://apps.apple.com/us/app/id292987597"
+RAINRAIN = "https://apps.apple.com/us/app/id478687481"
+DARKNOISE = "https://apps.apple.com/us/app/id1465439395"
+MYNOISE = "https://apps.apple.com/us/app/id1523675125"
+BETTERSLEEP = "https://apps.apple.com/us/app/id314498713"
+CALM = "https://apps.apple.com/us/app/id571800810"
+ENDEL = "https://apps.apple.com/us/app/id1346247457"
+_DR = dict(drop=DROP, wn=WNLITE, rain=RAINRAIN, dark=DARKNOISE, mynoise=MYNOISE,
+           bs=BETTERSLEEP, calm=CALM, endel=ENDEL)
+
+DROP_RANK = [
+    ("Drop - Meditation & Focus", "https://apps.apple.com/app/id1462269642"),
+    ("White Noise Lite", WNLITE),
+    ("Rain Rain Sleep Sounds", RAINRAIN),
+    ("Dark Noise: Ambient Sounds", DARKNOISE),
+    ("myNoise - The Soundscape App", MYNOISE),
+    ("BetterSleep: Relax and Sleep", BETTERSLEEP),
+    ("Calm", CALM),
+    ("Endel: Focus & Sleep Sounds", ENDEL),
+]
+
+_DR_WHY_EN = _rank_box("Why Drop is #1", [
+    "Ten sounds are free to keep, with no ads and no time limit: rain, dewdrops, fire, forest, river, "
+    "coffee shop, ocean waves, thunderstorm, bus and fan.",
+    "It pairs the sounds with a breathing guide you can pace (2 to 8 seconds a breath) for winding down "
+    "before sleep or resetting between tasks.",
+    "A plant that grows through five stages, streaks and achievements make a nightly habit easy to keep.",
+    "No account, works offline, keeps playing with the screen locked, and has home screen widgets.",
+    "One app for iPhone, iPad and Mac.",
+])
+
+_DR_WHY_ES = _rank_box("Por qué Drop es la n.º 1", [
+    "Diez sonidos gratis para siempre, sin anuncios ni límite de tiempo: lluvia, gotas, fuego, bosque, río, "
+    "cafetería, olas, tormenta, autobús y ventilador.",
+    "Junta los sonidos con una guía de respiración a tu ritmo (de 2 a 8 segundos por respiración) para "
+    "relajarte antes de dormir o entre tareas.",
+    "Una planta que crece en cinco fases, rachas y logros ayudan a mantener el hábito cada noche.",
+    "Sin cuenta, funciona sin conexión, sigue sonando con la pantalla bloqueada y tiene widgets.",
+    "Una sola app para iPhone, iPad y Mac.",
+])
+
+DR_FAQ_EN = [
+    ("What is the best free white noise app for iPhone?",
+     "For pure noise, White Noise Lite has white, pink, brown, blue and violet noise free with ads, and "
+     "Rain Rain gives 50+ sounds, a mixer and every fade-out timer free with a small banner ad. Drop (we make "
+     "it) has ten sounds free with no ads, including fan and bus, plus a breathing guide, but no white, pink "
+     "or brown noise generator."),
+    ("Which sleep sound app has a sleep timer?",
+     "White Noise Lite, Rain Rain, Dark Noise and BetterSleep all list a timer that fades the sound out. "
+     "Drop does not have a sleep timer yet: the sound plays until you stop it."),
+    ("Can I mix sounds, like rain and a fan together?",
+     "Yes in White Noise Lite (Mix Pad), Rain Rain (Mixer), Dark Noise (custom mixes) and myNoise (Creation "
+     "Mode, up to 10 sliders). Drop plays one sound at a time."),
+    ("Which sleep sound app has no subscription?",
+     "myNoise is free to download and unlocks everything with one purchase, no subscription. White Noise "
+     "Lite has a paid full version. Drop, Dark Noise and Endel offer a lifetime purchase next to their "
+     "subscriptions."),
+    ("Is white noise or brown noise better for sleep?",
+     "That is a personal preference, not something an app can decide for you. Brown and pink noise sound "
+     "deeper and softer than white noise. White Noise Lite, myNoise and Endel Premium let you try several "
+     "colours of noise."),
+    ("Do these apps work offline?",
+     "Drop works offline, myNoise lists offline listening and Endel says all soundscapes are available "
+     "offline. Calm and BetterSleep stream much of their library."),
+]
+
+DR_FAQ_ES = [
+    ("¿Cuál es la mejor app gratis de ruido blanco para iPhone?",
+     "Para ruido puro, White Noise Lite trae ruido blanco, rosa, marrón, azul y violeta gratis con anuncios, "
+     "y Rain Rain da más de 50 sonidos, mezclador y todos los temporizadores gratis con un pequeño banner. "
+     "Drop (la hacemos nosotros) tiene diez sonidos gratis sin anuncios, entre ellos ventilador y autobús, y "
+     "una guía de respiración, pero no genera ruido blanco, rosa ni marrón."),
+    ("¿Qué app de sonidos para dormir tiene temporizador?",
+     "White Noise Lite, Rain Rain, Dark Noise y BetterSleep tienen un temporizador que baja el sonido poco a "
+     "poco. Drop todavía no tiene temporizador: el sonido sigue hasta que lo paras."),
+    ("¿Puedo mezclar sonidos, como lluvia y ventilador a la vez?",
+     "Sí en White Noise Lite (Mix Pad), Rain Rain (Mixer), Dark Noise (mezclas propias) y myNoise (Creation "
+     "Mode, hasta 10 controles). Drop reproduce un sonido cada vez."),
+    ("¿Qué app de sonidos para dormir no tiene suscripción?",
+     "myNoise se descarga gratis y lo desbloquea todo con una sola compra, sin suscripción. White Noise Lite "
+     "tiene una versión completa de pago. Drop, Dark Noise y Endel ofrecen una compra de por vida además de "
+     "la suscripción."),
+    ("¿Es mejor el ruido blanco o el marrón para dormir?",
+     "Es cuestión de gustos, no algo que pueda decidir una app. El ruido marrón y el rosa suenan más graves "
+     "y suaves que el blanco. White Noise Lite, myNoise y Endel Premium dejan probar varios colores de ruido."),
+    ("¿Funcionan sin conexión?",
+     "Drop funciona sin conexión, myNoise dice que se puede escuchar sin conexión y Endel dice que todos sus "
+     "paisajes sonoros están disponibles sin conexión. Calm y BetterSleep reproducen gran parte de su "
+     "catálogo por internet."),
+]
+
+A16_EN_BODY = ("""
+<p><strong>Disclosure: we make Drop, the app ranked first here.</strong> Everything
+we say about the other apps comes from their own App Store pages, and we say plainly
+where they beat us. Ratings and in-app purchases are from the US App Store on
+%(date)s.</p>
+
+<p>"Sleep sound app" covers three different things: a noise machine (white, pink or
+brown noise to mask the street), a soundscape player (rain, fire, ocean, often mixed
+together) and a full sleep programme with stories, meditations and tracking. This
+ranking puts first the app that makes a calm, simple bedtime habit easiest, and says
+which app wins each of the other jobs.</p>
+
+<h2>The ranking</h2>
+
+<ol>
+<li><a href="%(drop)s">Drop</a>: best for calming sounds plus breathing, free, no ads, no account.</li>
+<li><a href="%(wn)s" target="_blank" rel="noopener">White Noise Lite</a>: best free noise machine, with every colour of noise.</li>
+<li><a href="%(rain)s" target="_blank" rel="noopener">Rain Rain</a>: best free mixer and fade-out timer.</li>
+<li><a href="%(dark)s" target="_blank" rel="noopener">Dark Noise</a>: best for Siri, Shortcuts and widgets on iPhone and Mac.</li>
+<li><a href="%(mynoise)s" target="_blank" rel="noopener">myNoise</a>: best for shaping the sound yourself, one purchase for life.</li>
+<li><a href="%(bs)s" target="_blank" rel="noopener">BetterSleep</a>: best for sleep tracking and a huge library.</li>
+<li><a href="%(calm)s" target="_blank" rel="noopener">Calm</a>: best for sleep stories and guided meditation.</li>
+<li><a href="%(endel)s" target="_blank" rel="noopener">Endel</a>: best for adaptive, AI-generated soundscapes.</li>
+</ol>
+""" + _DR_WHY_EN + """
+<h2>The eight apps at a glance</h2>
+
+<div class="table-scroll"><table>
+<thead><tr><th></th><th>Best for</th><th>Sounds</th><th>Mixing</th><th>Sleep timer</th><th>How it charges (US)</th><th>Rating (US)</th></tr></thead>
+<tbody>
+<tr><td>1. <a href="%(drop)s">Drop</a> (ours)</td><td>Sounds plus breathing, habit</td><td>33, 10 free</td><td>No</td><td>No</td><td>Free; Drop Pro subscription or lifetime</td><td>4.4 &middot; 12</td></tr>
+<tr><td>2. <a href="%(wn)s" target="_blank" rel="noopener">White Noise Lite</a></td><td>Noise machine</td><td>50+, white to violet noise</td><td>Yes (Mix Pad)</td><td>Yes, with alarm</td><td>Free with ads; paid full version</td><td>4.8 &middot; 277,066</td></tr>
+<tr><td>3. <a href="%(rain)s" target="_blank" rel="noopener">Rain Rain</a></td><td>Rain and nature mixes</td><td>50+ free, 60+ more in Premium</td><td>Yes, free</td><td>Yes, free</td><td>Free with a banner ad; Premium subscription</td><td>4.8 &middot; 137,141</td></tr>
+<tr><td>4. <a href="%(dark)s" target="_blank" rel="noopener">Dark Noise</a></td><td>Siri, widgets, Mac</td><td>50+</td><td>Yes</td><td>Yes</td><td>Free; Pro subscription or lifetime</td><td>4.8 &middot; 3,685</td></tr>
+<tr><td>5. <a href="%(mynoise)s" target="_blank" rel="noopener">myNoise</a></td><td>Fine-tuning, tinnitus</td><td>300+ soundscapes</td><td>Yes (up to 10 sliders)</td><td>Not in its listing</td><td>Free; one purchase, no subscription</td><td>4.7 &middot; 1,135</td></tr>
+<tr><td>6. <a href="%(bs)s" target="_blank" rel="noopener">BetterSleep</a></td><td>Tracking, stories, meditations</td><td>300+ sounds and tracks</td><td>Yes</td><td>Yes</td><td>Free; Premium subscription</td><td>4.7 &middot; 390,803</td></tr>
+<tr><td>7. <a href="%(calm)s" target="_blank" rel="noopener">Calm</a></td><td>Sleep stories, meditation</td><td>Sleep sounds and music</td><td>Not in its listing</td><td>Not in its listing</td><td>Free; Premium subscription</td><td>4.8 &middot; 1,986,904</td></tr>
+<tr><td>8. <a href="%(endel)s" target="_blank" rel="noopener">Endel</a></td><td>Adaptive AI soundscapes</td><td>Focus, Sleep, Relax, Move; more in Premium</td><td>No (generated)</td><td>Not in its listing</td><td>Free edition; Premium subscription or lifetime</td><td>4.6 &middot; 33,935</td></tr>
+</tbody>
+</table></div>
+
+<p class="article-note">"Not in its listing" means the App Store description does
+not mention it, not that the app cannot do it. Ratings are from Apple's public
+lookup API on %(date)s.</p>
+
+<h2>1. Drop: calming sounds and a breathing habit</h2>
+
+<p><a href="%(drop)s">Drop</a> has 33 nature, ambient and noise sounds, and ten of
+them are free with no ads and no time limit: rain, dewdrops, a crackling fire, a
+forest, a river, a coffee shop, ocean waves, a thunderstorm, a bus and a fan. The
+sound keeps playing with the screen locked. Next to the sounds there is a breathing
+guide: choose how long each breath lasts (2 to 8 seconds) and how many cycles, and
+follow the animation. Every session grows a plant through five stages, with streaks
+and achievements, and widgets start a session from the home screen. It needs no
+account, works offline and runs on iPhone, iPad and Mac. Drop Pro unlocks the other
+23 sounds, by subscription or with a one-time lifetime purchase.</p>
+
+<p>Where others beat it: Drop has no sleep timer yet, so the sound plays until you
+stop it; White Noise Lite, Rain Rain, Dark Noise and BetterSleep fade out on a timer.
+It plays one sound at a time, with no mixer. It has fan, bus and electric hum but no
+white, pink or brown noise generator. Its library is small next to the 50 to 300+
+sounds of the others, and it has only 12 ratings on the US App Store. There are no
+sleep stories, guided voice meditations or sleep tracking.</p>
+
+<h2>2. White Noise Lite: the classic noise machine</h2>
+
+<p>White Noise by TMSOFT has been on the iPhone since 2008. The Lite version has 50+
+looped sounds, including white, pink, brown, blue and violet noise, fans, air
+conditioners, rain and a dishwasher, with more free downloads from its White Noise
+Market. Its Mix Pad layers sounds and sets the position, volume and pitch of each; it
+can record and loop your own sounds, and has a full screen clock and an alarm and
+timer that fade audio in and out. It is free with ads; the paid full version removes
+them. Best if you want real noise to mask the world around you.</p>
+
+<h2>3. Rain Rain: the most generous free tier</h2>
+
+<p>Rain Rain gives 50+ HD sounds free with no limit on playback, every fade-out timer
+option, a mixer with a volume for each sound, an oscillator that varies volume and a
+"soften" control that muffles high frequencies. Mixes sync between devices through
+iCloud, and it has a bedtime reminder. The free version shows a small image banner,
+with no audio or video ads; Premium is a subscription with a 7-day free trial that
+adds 60+ sounds and removes the banner. Best for mixing rain and nature sounds without
+paying.</p>
+
+<h2>4. Dark Noise: built into iOS</h2>
+
+<p>Dark Noise has 50+ sounds with animated icons, custom mixes and a timer that fades
+the noise out. It goes furthest into the system: start a noise with Siri, even on a
+HomePod, through Shortcuts, AirPlay, interactive home and Lock Screen widgets, ten
+themes and 20+ app icons. It runs on Mac too and needs iOS 26. Pro is a subscription
+or a lifetime purchase. Best if you like starting things with your voice or a widget.</p>
+
+<h2>5. myNoise: you shape the sound</h2>
+
+<p>myNoise has 300+ soundscapes, each with its own sliders, made from field recordings
+and real instruments. "White Noise &amp; Co" alone covers white, brown, green, grey and
+pink noise, and Creation Mode builds your own from up to 10 sliders taken from any
+soundscape. It lists offline listening and a meditation bell, and its listing names
+tinnitus relief and noise masking as common uses. It is free to download with no ads
+and no subscription: one purchase unlocks everything for life. Best if you want to
+tune the sound exactly.</p>
+
+<h2>6. BetterSleep: the whole sleep toolkit</h2>
+
+<p>BetterSleep, formerly Relax Melodies, has 300+ sounds and music tracks (white
+noise, nature, ASMR, binaural beats), 250+ meditations and hypnosis sessions and 100+
+sleep stories, plus a sleep tracker and a recorder that picks up snoring and sleep
+talk. It has timers, bedtime reminders, playlists and optional Apple Health
+integration. Premium is a subscription. Best if you want to measure your sleep, not
+just soundtrack it.</p>
+
+<h2>7. Calm: stories and meditation</h2>
+
+<p>Calm is best known for its Sleep Stories, 100+ bedtime stories for adults read by
+narrators such as Matthew McConaughey and Stephen Fry, and for guided meditation,
+breathing exercises and daily sessions. Its library includes sleep sounds and music,
+and it saves sessions to Apple Health. Premium is a subscription. Best if you fall
+asleep to a voice rather than to noise.</p>
+
+<h2>8. Endel: sound that adapts to you</h2>
+
+<p>Endel generates soundscapes with AI on the fly, using inputs such as location,
+environment and heart rate. The free edition has the Focus, Sleep, Relax and Move
+soundscapes; Premium adds coloured noise (nine colours), a focus timer, artist
+soundscapes and more, by subscription or with a lifetime purchase. All soundscapes
+are available offline. It runs on Mac too. Best if you want sound that changes on
+its own instead of a loop.</p>
+
+<h2>How to choose</h2>
+
+<ul>
+<li><strong>A few calm sounds and a breathing habit, free, no ads, no account:</strong> <a href="%(drop)s">Drop</a>.</li>
+<li><strong>Real white, pink or brown noise to mask noise:</strong> White Noise Lite or myNoise.</li>
+<li><strong>Mixing sounds with a fade-out timer, free:</strong> Rain Rain.</li>
+<li><strong>Siri, Shortcuts and widgets:</strong> Dark Noise.</li>
+<li><strong>Tracking your sleep:</strong> BetterSleep.</li>
+<li><strong>Falling asleep to a story:</strong> Calm.</li>
+<li><strong>Sound that adapts on its own:</strong> Endel.</li>
+</ul>
+
+<p>None of these apps is a medical treatment. If you have ongoing trouble sleeping or
+ringing in your ears, talk to a doctor.</p>
+""") % dict(_DR, date=DROP_DATE_EN)
+
+A16_EN_SOURCES = """
+<h2>Sources</h2>
+<ul>
+<li>App Store pages (US): <a href="%(drop)s">Drop</a>, <a href="%(wn)s" target="_blank" rel="noopener">White Noise Lite</a>, <a href="%(rain)s" target="_blank" rel="noopener">Rain Rain</a>, <a href="%(dark)s" target="_blank" rel="noopener">Dark Noise</a>, <a href="%(mynoise)s" target="_blank" rel="noopener">myNoise</a>, <a href="%(bs)s" target="_blank" rel="noopener">BetterSleep</a>, <a href="%(calm)s" target="_blank" rel="noopener">Calm</a>, <a href="%(endel)s" target="_blank" rel="noopener">Endel</a>. Descriptions and in-app purchases as shown on %(date)s.</li>
+<li>Ratings: Apple's public iTunes lookup API, %(date)s.</li>
+<li>Drop: checked against the app itself (version 2.7), %(date)s.</li>
+</ul>
+<p>If anything here is out of date, <a href="mailto:sagalabs@proton.me">tell us</a>
+and we will correct the page.</p>
+""" % dict(_DR, date=DROP_DATE_EN)
+
+A16_ES_BODY = ("""
+<p><strong>Aviso: hacemos Drop, la primera de esta lista.</strong> Lo que decimos de
+las demás sale de su propia ficha del App Store, y decimos claramente en qué nos
+ganan. Valoraciones y compras dentro de la app del App Store de EE. UU. a %(date)s.</p>
+
+<p>"App de sonidos para dormir" son tres cosas distintas: una máquina de ruido (ruido
+blanco, rosa o marrón para tapar la calle), un reproductor de ambientes (lluvia,
+fuego, mar, a menudo mezclados) y un programa de sueño completo con cuentos,
+meditaciones y seguimiento. Este ranking pone primero la app con la que es más fácil
+tener un hábito tranquilo y sencillo antes de dormir, y dice qué app gana en cada uno
+de los otros trabajos.</p>
+
+<h2>El ranking</h2>
+
+<ol>
+<li><a href="%(drop)s">Drop</a>: la mejor para sonidos relajantes y respiración, gratis, sin anuncios y sin cuenta.</li>
+<li><a href="%(wn)s" target="_blank" rel="noopener">White Noise Lite</a>: la mejor máquina de ruido gratis, con todos los colores de ruido.</li>
+<li><a href="%(rain)s" target="_blank" rel="noopener">Rain Rain</a>: el mejor mezclador y temporizador gratis.</li>
+<li><a href="%(dark)s" target="_blank" rel="noopener">Dark Noise</a>: la mejor con Siri, Atajos y widgets en iPhone y Mac.</li>
+<li><a href="%(mynoise)s" target="_blank" rel="noopener">myNoise</a>: la mejor para ajustar el sonido a tu gusto, con una sola compra.</li>
+<li><a href="%(bs)s" target="_blank" rel="noopener">BetterSleep</a>: la mejor para seguir tu sueño y con el catálogo más grande.</li>
+<li><a href="%(calm)s" target="_blank" rel="noopener">Calm</a>: la mejor para cuentos para dormir y meditación guiada.</li>
+<li><a href="%(endel)s" target="_blank" rel="noopener">Endel</a>: la mejor para ambientes generados con IA que se adaptan.</li>
+</ol>
+""" + _DR_WHY_ES + """
+<h2>Las ocho apps de un vistazo</h2>
+
+<div class="table-scroll"><table>
+<thead><tr><th></th><th>Para qué</th><th>Sonidos</th><th>Mezcla</th><th>Temporizador</th><th>Cómo cobra (EE. UU.)</th><th>Valoración (EE. UU.)</th></tr></thead>
+<tbody>
+<tr><td>1. <a href="%(drop)s">Drop</a> (nuestra)</td><td>Sonidos y respiración, hábito</td><td>33, 10 gratis</td><td>No</td><td>No</td><td>Gratis; Drop Pro por suscripción o de por vida</td><td>4,4 &middot; 12</td></tr>
+<tr><td>2. <a href="%(wn)s" target="_blank" rel="noopener">White Noise Lite</a></td><td>Máquina de ruido</td><td>Más de 50, del ruido blanco al violeta</td><td>Sí (Mix Pad)</td><td>Sí, con alarma</td><td>Gratis con anuncios; versión completa de pago</td><td>4,8 &middot; 277.066</td></tr>
+<tr><td>3. <a href="%(rain)s" target="_blank" rel="noopener">Rain Rain</a></td><td>Lluvia y naturaleza mezcladas</td><td>Más de 50 gratis, 60 más en Premium</td><td>Sí, gratis</td><td>Sí, gratis</td><td>Gratis con un banner; Premium por suscripción</td><td>4,8 &middot; 137.141</td></tr>
+<tr><td>4. <a href="%(dark)s" target="_blank" rel="noopener">Dark Noise</a></td><td>Siri, widgets, Mac</td><td>Más de 50</td><td>Sí</td><td>Sí</td><td>Gratis; Pro por suscripción o de por vida</td><td>4,8 &middot; 3.685</td></tr>
+<tr><td>5. <a href="%(mynoise)s" target="_blank" rel="noopener">myNoise</a></td><td>Ajuste fino, acúfenos</td><td>Más de 300 ambientes</td><td>Sí (hasta 10 controles)</td><td>No lo menciona</td><td>Gratis; una sola compra, sin suscripción</td><td>4,7 &middot; 1.135</td></tr>
+<tr><td>6. <a href="%(bs)s" target="_blank" rel="noopener">BetterSleep</a></td><td>Seguimiento, cuentos, meditaciones</td><td>Más de 300 sonidos y pistas</td><td>Sí</td><td>Sí</td><td>Gratis; Premium por suscripción</td><td>4,7 &middot; 390.803</td></tr>
+<tr><td>7. <a href="%(calm)s" target="_blank" rel="noopener">Calm</a></td><td>Cuentos para dormir, meditación</td><td>Sonidos y música para dormir</td><td>No lo menciona</td><td>No lo menciona</td><td>Gratis; Premium por suscripción</td><td>4,8 &middot; 1.986.904</td></tr>
+<tr><td>8. <a href="%(endel)s" target="_blank" rel="noopener">Endel</a></td><td>Ambientes con IA que se adaptan</td><td>Focus, Sleep, Relax, Move; más en Premium</td><td>No (se generan)</td><td>No lo menciona</td><td>Edición gratis; Premium por suscripción o de por vida</td><td>4,6 &middot; 33.935</td></tr>
+</tbody>
+</table></div>
+
+<p class="article-note">"No lo menciona" quiere decir que la descripción del App Store
+no lo dice, no que la app no pueda hacerlo. Valoraciones de la API pública de Apple a
+%(date)s.</p>
+
+<h2>1. Drop: sonidos relajantes y el hábito de respirar</h2>
+
+<p><a href="%(drop)s">Drop</a> tiene 33 sonidos de naturaleza, ambiente y ruido, y
+diez son gratis, sin anuncios ni límite de tiempo: lluvia, gotas, fuego, bosque, río,
+cafetería, olas, tormenta, autobús y ventilador. El sonido sigue con la pantalla
+bloqueada. Junto a los sonidos hay una guía de respiración: eliges cuánto dura cada
+respiración (de 2 a 8 segundos) y cuántos ciclos, y sigues la animación. Cada sesión
+hace crecer una planta en cinco fases, con rachas y logros, y los widgets empiezan una
+sesión desde la pantalla de inicio. No pide cuenta, funciona sin conexión y va en
+iPhone, iPad y Mac. Drop Pro desbloquea los otros 23 sonidos, por suscripción o con
+una compra de por vida.</p>
+
+<p>En qué le ganan las demás: Drop todavía no tiene temporizador, así que el sonido
+sigue hasta que lo paras; White Noise Lite, Rain Rain, Dark Noise y BetterSleep lo
+apagan poco a poco a la hora que elijas. Suena un sonido cada vez, sin mezclador. Tiene
+ventilador, autobús y zumbido eléctrico, pero no genera ruido blanco, rosa ni marrón.
+Su catálogo es pequeño al lado de los 50 a más de 300 sonidos de las otras, y solo
+tiene 12 valoraciones en el App Store de EE. UU. No tiene cuentos, meditaciones
+guiadas con voz ni seguimiento del sueño.</p>
+
+<h2>2. White Noise Lite: la máquina de ruido de siempre</h2>
+
+<p>White Noise de TMSOFT está en el iPhone desde 2008. La versión Lite trae más de 50
+sonidos en bucle, entre ellos ruido blanco, rosa, marrón, azul y violeta, ventiladores,
+aire acondicionado, lluvia y lavavajillas, y más descargas gratis desde su White Noise
+Market. Su Mix Pad junta sonidos y ajusta la posición, el volumen y el tono de cada
+uno; graba y pone en bucle tus propios sonidos, y tiene reloj a pantalla completa y
+alarma y temporizador que suben y bajan el sonido poco a poco. Es gratis con anuncios;
+la versión completa de pago los quita. La mejor si quieres ruido de verdad para tapar
+lo que suena alrededor.</p>
+
+<h2>3. Rain Rain: la versión gratis más generosa</h2>
+
+<p>Rain Rain da más de 50 sonidos en HD gratis y sin límite de tiempo, todas las
+opciones de temporizador, un mezclador con volumen para cada sonido, un oscilador que
+varía el volumen y un control que apaga los agudos. Las mezclas se sincronizan por
+iCloud y tiene recordatorio para irse a la cama. La versión gratis muestra un pequeño
+banner, sin anuncios de audio ni de vídeo; Premium es una suscripción con 7 días
+gratis que añade más de 60 sonidos y quita el banner. La mejor para mezclar lluvia y
+naturaleza sin pagar.</p>
+
+<h2>4. Dark Noise: metida en iOS</h2>
+
+<p>Dark Noise tiene más de 50 sonidos con iconos animados, mezclas propias y un
+temporizador que baja el ruido poco a poco. Es la que más se mete en el sistema:
+empieza un sonido con Siri, también en un HomePod, con Atajos, AirPlay, widgets
+interactivos en la pantalla de inicio y en la bloqueada, diez temas y más de 20 iconos.
+Funciona también en Mac y pide iOS 26. Pro es una suscripción o una compra de por vida.
+La mejor si te gusta empezar las cosas con la voz o con un widget.</p>
+
+<h2>5. myNoise: el sonido lo ajustas tú</h2>
+
+<p>myNoise tiene más de 300 ambientes, cada uno con sus controles, hechos con
+grabaciones de campo e instrumentos reales. Solo "White Noise &amp; Co" cubre ruido
+blanco, marrón, verde, gris y rosa, y Creation Mode arma el tuyo con hasta 10 controles
+de cualquier ambiente. Dice que se puede escuchar sin conexión, tiene campana de
+meditación y su ficha cita el alivio de acúfenos y tapar ruidos entre los usos más
+comunes. Se descarga gratis, sin anuncios ni suscripción: una sola compra lo
+desbloquea todo para siempre. La mejor si quieres afinar el sonido al detalle.</p>
+
+<h2>6. BetterSleep: todo para el sueño</h2>
+
+<p>BetterSleep, antes Relax Melodies, tiene más de 300 sonidos y pistas (ruido blanco,
+naturaleza, ASMR, pulsos binaurales), más de 250 meditaciones e hipnosis y más de 100
+cuentos para dormir, además de un seguimiento del sueño y una grabadora que detecta
+ronquidos y si hablas en sueños. Tiene temporizadores, recordatorios para irse a la
+cama, listas y conexión opcional con Salud. Premium es una suscripción. La mejor si
+quieres medir tu sueño, no solo ponerle sonido.</p>
+
+<h2>7. Calm: cuentos y meditación</h2>
+
+<p>Calm es conocida por sus Sleep Stories, más de 100 cuentos para adultos leídos por
+voces como Matthew McConaughey y Stephen Fry, y por la meditación guiada, los
+ejercicios de respiración y las sesiones diarias. Su catálogo incluye sonidos y música
+para dormir, y guarda las sesiones en Salud. Premium es una suscripción. La mejor si
+te duermes con una voz y no con ruido.</p>
+
+<h2>8. Endel: sonido que se adapta a ti</h2>
+
+<p>Endel genera ambientes con IA al momento, a partir de datos como la ubicación, el
+entorno y el ritmo cardiaco. La edición gratis trae Focus, Sleep, Relax y Move;
+Premium añade ruido de colores (nueve), un temporizador de concentración, ambientes de
+artistas y más, por suscripción o con compra de por vida. Todos los ambientes se pueden
+escuchar sin conexión. Funciona también en Mac. La mejor si quieres un sonido que
+cambia solo en lugar de un bucle.</p>
+
+<h2>Cómo elegir</h2>
+
+<ul>
+<li><strong>Unos pocos sonidos tranquilos y el hábito de respirar, gratis, sin anuncios y sin cuenta:</strong> <a href="%(drop)s">Drop</a>.</li>
+<li><strong>Ruido blanco, rosa o marrón de verdad para tapar ruidos:</strong> White Noise Lite o myNoise.</li>
+<li><strong>Mezclar sonidos con temporizador, gratis:</strong> Rain Rain.</li>
+<li><strong>Siri, Atajos y widgets:</strong> Dark Noise.</li>
+<li><strong>Seguir tu sueño:</strong> BetterSleep.</li>
+<li><strong>Dormirte con un cuento:</strong> Calm.</li>
+<li><strong>Sonido que se adapta solo:</strong> Endel.</li>
+</ul>
+
+<p>Ninguna de estas apps es un tratamiento médico. Si te cuesta dormir a menudo o
+tienes pitidos en los oídos, consulta a un médico.</p>
+""") % dict(_DR, date=DROP_DATE_ES)
+
+A16_ES_SOURCES = """
+<h2>Fuentes</h2>
+<ul>
+<li>Fichas del App Store (EE. UU.): <a href="%(drop)s">Drop</a>, <a href="%(wn)s" target="_blank" rel="noopener">White Noise Lite</a>, <a href="%(rain)s" target="_blank" rel="noopener">Rain Rain</a>, <a href="%(dark)s" target="_blank" rel="noopener">Dark Noise</a>, <a href="%(mynoise)s" target="_blank" rel="noopener">myNoise</a>, <a href="%(bs)s" target="_blank" rel="noopener">BetterSleep</a>, <a href="%(calm)s" target="_blank" rel="noopener">Calm</a>, <a href="%(endel)s" target="_blank" rel="noopener">Endel</a>. Descripciones y compras dentro de la app a %(date)s.</li>
+<li>Valoraciones: API pública de búsqueda de iTunes de Apple, %(date)s.</li>
+<li>Drop: comprobado en la propia app (versión 2.7), %(date)s.</li>
+</ul>
+<p>Si algo está desactualizado, <a href="mailto:sagalabs@proton.me">avísanos</a> y
+corregimos la página.</p>
+""" % dict(_DR, date=DROP_DATE_ES)
+
+RANK_ARTICLES.append(dict(
+    en_path="blog/best-white-noise-sleep-sound-apps-iphone.html",
+    es_path="blog/es/mejores-apps-ruido-blanco-sonidos-dormir-iphone.html",
+    date_iso=DROP_DATE_ISO, date_en=DROP_DATE_EN, date_es=DROP_DATE_ES,
+    en=dict(
+        h1="Best white noise and sleep sound apps for iPhone (2026)",
+        desc=("Drop, White Noise Lite, Rain Rain, Dark Noise, myNoise, BetterSleep, Calm and Endel ranked: "
+              "sounds, mixing, sleep timer, how each charges and who each is for, from their App Store "
+              "pages. Written by Drop's maker, disclosed."),
+        kicker="Sleep", section="Sleep",
+        standfirst=("A noise machine, a rain mixer or a full sleep programme: eight apps for "
+                    "falling asleep to sound, ranked, with where each one wins."),
+        body=A16_EN_BODY, sources=A16_EN_SOURCES, rank=DROP_RANK, faq=DR_FAQ_EN),
+    es=dict(
+        h1="Las mejores apps de ruido blanco y sonidos para dormir en iPhone (2026)",
+        desc=("Drop, White Noise Lite, Rain Rain, Dark Noise, myNoise, BetterSleep, Calm y Endel ordenadas: "
+              "sonidos, mezcla, temporizador, cómo cobra cada una y para quién es, según su ficha del App "
+              "Store. Escrito por quien hace Drop, y lo decimos."),
+        kicker="Dormir", section="Dormir",
+        standfirst=("Una m&aacute;quina de ruido, un mezclador de lluvia o un programa de sue&ntilde;o "
+                    "completo: ocho apps para dormirse con sonido, ordenadas, con d&oacute;nde gana cada una."),
+        body=A16_ES_BODY, sources=A16_ES_SOURCES, rank=DROP_RANK, faq=DR_FAQ_ES),
+))
