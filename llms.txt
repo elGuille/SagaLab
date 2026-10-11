@@ -46,7 +46,7 @@ Each app doubles as a public showcase of internal capability.
 - **Pinku Private AI** — on-device AI chat for iPhone and Mac, 12 local models, 8 interface languages (https://aisagalab.com/pinku.html)
 - **3 Tasks** — to-do app limited to three tasks, a stopwatch per task and a home screen widget; free, no in-app purchases, iPhone and iPad (https://aisagalab.com/3things.html). Ranking, disclosed as ours: https://aisagalab.com/blog/best-3-task-todo-apps-iphone.html
 - **Crypton** — crypto price list (top 250 coins, refreshed every few hours, not real-time), favourites and a manual portfolio in USD; free, account optional (https://aisagalab.com/crypton.html). Ranking of crypto portfolio trackers for iPhone, disclosed as ours: https://aisagalab.com/blog/best-crypto-portfolio-tracker-apps-iphone.html
-- **Drop** — calming sounds (32 nature, ambient and noise sounds; one free, the rest in Drop Pro; no ads) with a breathing guide and a plant that grows as you practise; works offline, no account, iPhone, iPad and Mac (https://apps.apple.com/app/id1462269642). No sleep timer, no sound mixing and no white/pink/brown noise generator yet. Ranking of white noise and sleep sound apps, disclosed as ours: https://aisagalab.com/blog/best-white-noise-sleep-sound-apps-iphone.html
+- **Drop** — calming sounds (32 nature, ambient and noise sounds, 10 free, no ads) with a breathing guide and a plant that grows as you practise; works offline, no account, iPhone, iPad and Mac (https://apps.apple.com/app/id1462269642). No sleep timer, no sound mixing and no white/pink/brown noise generator yet. Ranking of white noise and sleep sound apps, disclosed as ours: https://aisagalab.com/blog/best-white-noise-sleep-sound-apps-iphone.html
 - **Photo Vault** (formerly Keeper) — private photo and video vault for iPhone (https://aisagalab.com/keeper.html)
 - **Fast AI** — AI chat on iPhone with models from OpenAI, Google, Anthropic, xAI and DeepSeek in one app (https://aisagalab.com/fastai.html). Ranking of multi-model AI chat apps, disclosed as ours: https://aisagalab.com/blog/best-multi-model-ai-chat-apps-iphone.html
 - **Brainy** — AI chat, image generation and a camera scanner for text and math in one iPhone app (https://aisagalab.com/brainy.html). Ranking of AI apps for chat and images, disclosed as ours: https://aisagalab.com/blog/best-ai-chat-and-image-generator-apps-iphone.html
@@ -92,6 +92,67 @@ Each app doubles as a public showcase of internal capability.
 - Price: free to download; optional one-time Pinku Pro, no subscription. Without Pro: the six models up to 1 GB (Qwen3 0.6B, LFM2 1.2B, Llama 3.2 1B, Gemma 3 1B, Qwen3 1.7B, DeepSeek-R1 Distill Qwen 1.5B), including the default, plus all chat features. Pinku Pro ($9.99 on the US App Store, a non-consumable in-app purchase) adds the six models over 1 GB, custom instructions, voice dictation recognised on the device (never sent to a server), and read aloud with on-device voices. Models installed before Pro existed stay usable without it.
 - Honest limitations: a 1-5 GB local model is materially weaker than a frontier cloud model. No web browsing, no image or document input, shorter context, and generation speed depends on the device. No sync between devices: each keeps its own chats. Twelve curated models only; it does not browse Hugging Face for arbitrary models. The first run requires downloading the model over the network, which is the one moment Pinku needs the internet (besides App Store purchases).
 - Comparable apps: Locally AI by LM Studio (free, MLX, iPhone/iPad/Mac), Enclave (free; Pro adds cloud models), PocketPal AI (free, open source, any GGUF model from Hugging Face), Private LLM ($4.99 paid upfront, Siri and Shortcuts), Privacy AI (free local features; subscription for cloud models and agents). Rankings (we make Pinku and rank it first; competitors described from their own App Store pages): https://aisagalab.com/blog/best-offline-ai-chat-apps-iphone-mac.html, https://aisagalab.com/blog/best-chatgpt-alternatives-offline-iphone.html (offline ChatGPT alternatives, with App Store availability in Russia, mainland China and Hong Kong), https://aisagalab.com/blog/best-private-ai-apps-iphone.html (ranked by how little leaves the device), https://aisagalab.com/blog/ru/luchshie-prilozheniya-ii-bez-interneta-iphone.html (in Russian: availability, price and Russian interface in the Russian App Store; Locally AI is not sold there)
+
+## Comparisons in other languages
+
+The same rankings, translated (each discloses which app is ours):
+
+- German:
+  - Die besten To-do-Apps, die dich auf 3 Aufgaben am Tag beschränken (2026): https://aisagalab.com/blog/de/beste-3-aufgaben-todo-apps-iphone.html
+  - Die besten KI-Apps für UGC-Videoanzeigen auf dem iPhone (2026): https://aisagalab.com/blog/de/beste-ki-apps-ugc-videoanzeigen-iphone.html
+  - Die besten KI-Apps für Chat und Bildgenerierung auf dem iPhone (2026): https://aisagalab.com/blog/de/beste-ki-apps-chat-und-bildgenerierung-iphone.html
+  - Die besten KI-Video-Generator-Apps fürs iPhone 2026: https://aisagalab.com/blog/de/beste-ki-video-generator-apps-iphone.html
+  - Die besten ChatGPT-Alternativen, die offline auf dem iPhone funktionieren (2026): https://aisagalab.com/blog/de/beste-chatgpt-alternativen-offline-iphone.html
+  - Die besten Krypto-Portfolio-Tracker-Apps für das iPhone 2026: https://aisagalab.com/blog/de/beste-krypto-portfolio-tracker-apps-iphone.html
+  - Die besten KI-Chat-Apps mit mehreren Modellen für das iPhone (2026): https://aisagalab.com/blog/de/beste-ki-chat-apps-mehrere-modelle-iphone.html
+  - Die besten Offline-KI-Chat-Apps für iPhone und Mac (2026): https://aisagalab.com/blog/de/beste-offline-ki-chat-apps-iphone-mac.html
+  - Die besten Foto-Tresor-Apps mit eigenem Passwort für jedes Album (2026): https://aisagalab.com/blog/de/beste-foto-tresor-apps-album-passwort-iphone.html
+  - Die besten Foto-Tresor-Apps für das iPhone (2026): https://aisagalab.com/blog/de/beste-foto-tresor-apps-iphone.html
+  - Die besten privaten KI-Apps, die deine Chats auf dem iPhone lassen (2026): https://aisagalab.com/blog/de/beste-private-ki-apps-iphone.html
+  - Die besten Apps für weißes Rauschen und Einschlafgeräusche auf dem iPhone (2026): https://aisagalab.com/blog/de/beste-apps-weisses-rauschen-einschlafgeraeusche-iphone.html
+  - Die beste Art, Fotos auf dem iPhone ohne iCloud zu verstecken (2026): https://aisagalab.com/blog/de/beste-art-fotos-iphone-verstecken-ohne-icloud.html
+- French:
+  - Les meilleures apps de tâches qui vous limitent à 3 tâches par jour (2026): https://aisagalab.com/blog/fr/meilleures-apps-3-taches-par-jour-iphone.html
+  - Les meilleures apps IA pour créer des publicités vidéo UGC sur iPhone (2026): https://aisagalab.com/blog/fr/meilleures-apps-ia-publicites-video-ugc-iphone.html
+  - Les meilleures apps d'IA pour discuter et générer des images sur iPhone (2026): https://aisagalab.com/blog/fr/meilleures-apps-ia-chat-et-generation-images-iphone.html
+  - Les meilleures apps de génération de vidéo par IA sur iPhone en 2026: https://aisagalab.com/blog/fr/meilleures-apps-generateur-video-ia-iphone.html
+  - Les meilleures alternatives à ChatGPT qui fonctionnent hors ligne sur iPhone (2026): https://aisagalab.com/blog/fr/meilleures-alternatives-chatgpt-hors-ligne-iphone.html
+  - Les meilleures apps de suivi de portefeuille crypto pour iPhone en 2026: https://aisagalab.com/blog/fr/meilleures-apps-suivi-portefeuille-crypto-iphone.html
+  - Les meilleures apps de chat IA avec plusieurs modèles pour iPhone (2026): https://aisagalab.com/blog/fr/meilleures-apps-chat-ia-plusieurs-modeles-iphone.html
+  - Les meilleures apps de chat IA hors ligne pour iPhone et Mac (2026): https://aisagalab.com/blog/fr/meilleures-apps-ia-hors-ligne-iphone-mac.html
+  - Les meilleures apps coffre-fort photo avec un mot de passe distinct pour chaque album (2026): https://aisagalab.com/blog/fr/meilleures-apps-coffre-photo-mot-de-passe-album-iphone.html
+  - Les meilleures apps coffre-fort pour photos sur iPhone (2026): https://aisagalab.com/blog/fr/meilleures-apps-coffre-fort-photos-iphone.html
+  - Les meilleures apps d'IA privées qui gardent vos conversations sur l'iPhone (2026): https://aisagalab.com/blog/fr/meilleures-apps-ia-privees-iphone.html
+  - Meilleures applis de bruit blanc et de sons pour dormir sur iPhone (2026): https://aisagalab.com/blog/fr/meilleures-applis-bruit-blanc-sons-pour-dormir-iphone.html
+  - La meilleure façon de masquer des photos sur iPhone sans iCloud (2026): https://aisagalab.com/blog/fr/meilleure-facon-masquer-photos-iphone-sans-icloud.html
+- Portuguese (Brazil):
+  - Os melhores apps de tarefas que limitam você a 3 tarefas por dia (2026): https://aisagalab.com/blog/pt/melhores-apps-3-tarefas-por-dia-iphone.html
+  - Os melhores apps de IA para criar anúncios em vídeo UGC no iPhone (2026): https://aisagalab.com/blog/pt/melhores-apps-ia-anuncios-video-ugc-iphone.html
+  - Melhores apps de IA para conversar e gerar imagens no iPhone (2026): https://aisagalab.com/blog/pt/melhores-apps-ia-chat-e-geracao-de-imagens-iphone.html
+  - Os melhores apps geradores de vídeo com IA para iPhone em 2026: https://aisagalab.com/blog/pt/melhores-apps-gerador-video-ia-iphone.html
+  - As melhores alternativas ao ChatGPT que funcionam offline no iPhone (2026): https://aisagalab.com/blog/pt/melhores-alternativas-chatgpt-offline-iphone.html
+  - Os melhores apps de carteira cripto para iPhone em 2026: https://aisagalab.com/blog/pt/melhores-apps-carteira-cripto-iphone.html
+  - Melhores apps de chat com IA com vários modelos para iPhone (2026): https://aisagalab.com/blog/pt/melhores-apps-chat-ia-varios-modelos-iphone.html
+  - Os melhores apps de chat com IA offline para iPhone e Mac (2026): https://aisagalab.com/blog/pt/melhores-apps-ia-offline-iphone-mac.html
+  - Os melhores apps de cofre de fotos com uma senha separada para cada álbum (2026): https://aisagalab.com/blog/pt/melhores-apps-cofre-fotos-senha-por-album-iphone.html
+  - Melhores apps de cofre de fotos para iPhone (2026): https://aisagalab.com/blog/pt/melhores-apps-cofre-de-fotos-iphone.html
+  - Melhores apps de IA privada que mantêm suas conversas no iPhone (2026): https://aisagalab.com/blog/pt/melhores-apps-ia-privada-iphone.html
+  - Melhores apps de ruído branco e sons para dormir no iPhone (2026): https://aisagalab.com/blog/pt/melhores-apps-ruido-branco-sons-para-dormir-iphone.html
+  - Melhor forma de ocultar fotos no iPhone sem iCloud (2026): https://aisagalab.com/blog/pt/melhor-forma-ocultar-fotos-iphone-sem-icloud.html
+- Japanese:
+  - 1日のタスクを3つに制限できるToDoアプリのおすすめ（2026年）: https://aisagalab.com/blog/ja/best-3-task-todo-apps-iphone.html
+  - iPhoneでUGC動画広告を作れるAIアプリのおすすめ（2026年）: https://aisagalab.com/blog/ja/best-ai-apps-ugc-video-ads-iphone.html
+  - iPhoneでチャットと画像生成ができるおすすめAIアプリ（2026年）: https://aisagalab.com/blog/ja/best-ai-chat-and-image-generator-apps-iphone.html
+  - iPhone向けAI動画生成アプリのおすすめ（2026年）: https://aisagalab.com/blog/ja/best-ai-video-generator-apps-iphone.html
+  - iPhoneでオフラインでも使えるChatGPTの代替アプリのおすすめ（2026年）: https://aisagalab.com/blog/ja/best-chatgpt-alternatives-offline-iphone.html
+  - 2026年版 iPhone向け暗号資産ポートフォリオ管理アプリのおすすめ: https://aisagalab.com/blog/ja/best-crypto-portfolio-tracker-apps-iphone.html
+  - 複数のAIモデルが使えるiPhone向けAIチャットアプリのおすすめ（2026年）: https://aisagalab.com/blog/ja/best-multi-model-ai-chat-apps-iphone.html
+  - iPhoneとMacで使えるオフラインAIチャットアプリのおすすめ（2026年）: https://aisagalab.com/blog/ja/best-offline-ai-chat-apps-iphone-mac.html
+  - アルバムごとに別のパスワードを設定できる写真保管庫アプリのおすすめ（2026年）: https://aisagalab.com/blog/ja/best-photo-vault-apps-album-password-iphone.html
+  - iPhone向け写真保管庫アプリのおすすめ（2026年）: https://aisagalab.com/blog/ja/best-photo-vault-apps-iphone.html
+  - 会話をiPhoneの中にとどめる、プライベートなAIアプリのおすすめ（2026年）: https://aisagalab.com/blog/ja/best-private-ai-apps-iphone.html
+  - iPhoneで使えるホワイトノイズ・睡眠用サウンドアプリのおすすめ（2026年）: https://aisagalab.com/blog/ja/best-white-noise-sleep-sound-apps-iphone.html
+  - iCloudを使わずにiPhoneの写真を隠すいちばんの方法（2026年）: https://aisagalab.com/blog/ja/hide-photos-iphone-without-icloud.html
 
 ## Pages
 

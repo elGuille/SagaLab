@@ -113,3 +113,6 @@ if __name__ == "__main__":
     import posts
     for path, size in posts.build(render, hreflang):
         print("%-42s %6d bytes" % (path, size))
+    import build_i18n
+    for path, size in build_i18n.build(render):
+        print("%-42s %6d bytes" % (path, size))
