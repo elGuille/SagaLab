@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
             category: 'Productivity',
             image: 'images/pinku.webp',
             description: 'On-device AI assistant running Llama, Qwen, and DeepSeek locally. Zero data collection, works offline.',
-            link: 'https://apps.apple.com/us/app/pinku-private-ai/id6754878073',
+            link: 'https://apps.apple.com/app/id6754878073',
             cta: 'Get Pinku',
             appStoreFeatured: true
         },
