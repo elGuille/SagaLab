@@ -422,7 +422,7 @@ DR_EN = dict(
     app_name="Drop - Meditation & Focus",
     h1="How to use white noise to fall asleep on iPhone (Drop guide)",
     desc=("Step by step: pick a steady sound, keep it playing with the screen locked, stop it "
-          "automatically with the Clock timer, and add a few slow breaths before sleep. With Drop or "
+          "automatically with Drop's sleep timer, and add a few slow breaths before sleep. With Drop or "
           "with what is built into iOS. Written by Drop's maker."),
     section="Guides", kicker="Drop guide",
     standfirst=("A steady sound covers the noises that wake you: traffic, a neighbour, a dripping "
@@ -454,9 +454,10 @@ rain, ocean and stream, and its own timer to stop them. If that is enough for yo
         ("Lock the screen.",
          "Drop keeps playing with the screen locked, so the phone can stay dark on the nightstand."),
         ("Make it stop on its own, if you want.",
-         'Drop has no sleep timer yet, so use the Clock app: Timers, set a time, <a href="%s" '
-         'target="_blank" rel="noopener">When Timer Ends</a>, Stop Playing. When it ends, iOS stops '
-         "what is playing. Or leave the sound on all night." % CLOCK_TIMER),
+         "Tap Timer on the sound screen and pick 15, 30 or 45 minutes, 1, 2 or 8 hours. The sound fades "
+         "out over the last 30 seconds and stops. Or choose no timer and leave it on all night. You can "
+         'also use the Clock app (Timers, <a href="%s" target="_blank" rel="noopener">When Timer '
+         'Ends</a>, Stop Playing).' % CLOCK_TIMER),
         ("Take a few slow breaths first.",
          "Before you start the sound, open Drop's breathing guide, set how long each breath lasts "
          "(2 to 8 seconds) and how many cycles, and follow the animation. Each session grows the plant "
@@ -470,7 +471,7 @@ a plant that grows with each session, streaks, widgets and no ads. It works offl
 needs no account, and runs on iPhone, iPad and Mac. Drop Pro unlocks the other 22
 sounds, by subscription or with a one-time lifetime purchase.</p>
 
-<p>It has no sleep timer of its own yet, plays one sound at a time with no mixer, and
+<p>It has a sleep timer (15 minutes to 8 hours, with a 30-second fade-out), plays one sound at a time with no mixer, and
 has no white, pink or brown noise generator: its noise sounds are a fan, a bus and an
 electric hum. More on <a href="../drop.html">Drop's page</a>. If you want to mix sounds or fine-tune noise, other apps do it better,
 and we say which in <a href="../blog/best-white-noise-sleep-sound-apps-iphone.html">the
@@ -481,8 +482,9 @@ best white noise and sleep sound apps for iPhone</a>.</p>
          "It masks sudden noises such as traffic or voices, which some people find helps them fall and "
          "stay asleep. It does not work for everyone; try it for a few nights."),
         ("How do I make white noise stop automatically on iPhone?",
-         "In the Clock app, set a timer and choose When Timer Ends, Stop Playing. When the timer ends, iOS "
-         "stops what is playing."),
+         "In Drop, tap Timer on the sound screen and pick 15, 30 or 45 minutes, 1, 2 or 8 hours; the sound "
+         "fades out and stops. Without an app, use the Clock app: set a timer and choose When Timer Ends, "
+         "Stop Playing."),
         ("Can I play white noise on iPhone without an app?",
          "Yes. Settings, Accessibility, Audio & Visual, Background Sounds plays a few built-in sounds such as "
          "noise, rain, ocean and stream, and can stop on its own with a timer."),
@@ -499,7 +501,7 @@ DR_ES = dict(
     app_name="Drop - Meditation & Focus",
     h1="Cómo usar ruido blanco para dormirte con el iPhone (guía de Drop)",
     desc=("Paso a paso: elige un sonido constante, déjalo sonando con la pantalla bloqueada, apágalo "
-          "solo con el temporizador del Reloj y haz unas respiraciones lentas antes de dormir. Con Drop "
+          "solo con el temporizador de Drop y haz unas respiraciones lentas antes de dormir. Con Drop "
           "o con lo que trae iOS. Escrito por quien hace Drop."),
     section="Guías", kicker="Guía de Drop",
     standfirst=("Un sonido constante tapa los ruidos que te despiertan: el tráfico, un vecino, un grifo "
@@ -533,9 +535,10 @@ ruido, lluvia, mar y arroyo, y su propio temporizador para apagarlos. Si con eso
          "Drop sigue sonando con la pantalla bloqueada, así que el móvil puede quedarse a oscuras en la "
          "mesilla."),
         ("Haz que se apague solo, si quieres.",
-         'Drop todavía no tiene temporizador, así que usa la app Reloj: Temporizador, elige un tiempo, <a '
-         'href="%s" target="_blank" rel="noopener">Al finalizar</a>, Detener reproducción. Cuando acaba, '
-         "iOS para lo que esté sonando. O deja el sonido toda la noche." % CLOCK_TIMER_ES),
+         "Toca Temporizador en la pantalla del sonido y elige 15, 30 o 45 minutos, 1, 2 u 8 horas. El "
+         "sonido baja poco a poco durante los últimos 30 segundos y se para. O no pongas temporizador y "
+         'déjalo toda la noche. También puedes usar la app Reloj (Temporizador, <a href="%s" '
+         'target="_blank" rel="noopener">Al finalizar</a>, Detener reproducción).' % CLOCK_TIMER_ES),
         ("Haz antes unas respiraciones lentas.",
          "Antes de poner el sonido, abre la guía de respiración de Drop, elige cuánto dura cada "
          "respiración (de 2 a 8 segundos) y cuántos ciclos, y sigue la animación. Cada sesión hace crecer "
@@ -549,7 +552,7 @@ respiración, una planta que crece con cada sesión, rachas, widgets y ningún a
 Funciona sin conexión, no pide cuenta y va en iPhone, iPad y Mac. Drop Pro desbloquea
 los otros 22 sonidos, por suscripción o con una compra de por vida.</p>
 
-<p>Todavía no tiene temporizador propio, suena un sonido cada vez, sin mezclador, y no
+<p>Tiene temporizador (de 15 minutos a 8 horas, con fundido de 30 segundos), suena un sonido cada vez, sin mezclador, y no
 genera ruido blanco, rosa ni marrón: sus sonidos de ruido son un ventilador, un autobús
 y un zumbido eléctrico. Si quieres mezclar sonidos o afinar el ruido, otras apps lo
 hacen mejor, y decimos cuáles en
@@ -561,8 +564,9 @@ apps de ruido blanco y sonidos para dormir en iPhone</a>.</p>
          "Tapa los ruidos repentinos, como el tráfico o las voces, y a algunas personas eso les ayuda a "
          "dormirse y a no despertarse. No le funciona a todo el mundo; pruébalo varias noches."),
         ("¿Cómo hago que el ruido blanco se apague solo en el iPhone?",
-         "En la app Reloj, pon un temporizador y elige Al finalizar, Detener reproducción. Cuando acaba, iOS "
-         "para lo que esté sonando."),
+         "En Drop, toca Temporizador en la pantalla del sonido y elige 15, 30 o 45 minutos, 1, 2 u 8 horas; "
+         "el sonido baja poco a poco y se para. Sin app, usa la app Reloj: pon un temporizador y elige Al "
+         "finalizar, Detener reproducción."),
         ("¿Puedo poner ruido blanco en el iPhone sin una app?",
          "Sí. Ajustes, Accesibilidad, Audio y efectos visuales, Sonidos de fondo reproduce algunos sonidos "
          "de serie como ruido, lluvia, mar y arroyo, y puede apagarse sola con un temporizador."),
