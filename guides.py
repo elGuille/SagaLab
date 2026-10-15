@@ -86,7 +86,7 @@ PV_EN = dict(
     app_name="Photo Vault: Hide Pics Video",
     h1="How to hide photos on iPhone without the Hidden album (Photo Vault guide)",
     desc=("Step by step: move private photos out of the Photos app into a locked vault with its own "
-          "passcode, no account and no cloud, then delete the originals so they are really gone from "
+          "passcode, no account and no cloud unless you choose it, then delete the originals so they are really gone from "
           "your library. Written by Photo Vault's maker."),
     section="Guides", kicker="Photo Vault guide",
     standfirst=("The Hidden album keeps photos in your library and, with iCloud Photos on, in iCloud. "
@@ -114,7 +114,7 @@ vault app that stores it in its own space on the iPhone, behind its own lock.</p
          "lock, so you can open the vault for someone without opening that album."),
         ("Import the photos.",
          "Add photos and videos from your library. Photo Vault copies them into its own storage "
-         "on the iPhone; nothing is uploaded."),
+         "on the iPhone; nothing is uploaded unless you turn on the optional iCloud copy."),
         ("Delete the originals from Photos.",
          "Importing makes a copy, it does not remove the photo from your library. Go back to the "
          "Photos app and delete the photos you imported."),
@@ -130,18 +130,19 @@ vault app that stores it in its own space on the iPhone, behind its own lock.</p
         ("Export a backup and keep it safe.",
          "In Settings, Backup, export the whole vault to one file locked with a password you choose, "
          "and keep it in Files, on a computer or in your own iCloud Drive. There is no automatic "
-         "backup: without this file, the photos are lost with the phone."),
+         "backup unless you turn on the optional iCloud copy: with neither, the photos are lost with the phone."),
     ],
     after="""
 <h2>What Photo Vault does and does not do</h2>
 
 <p>It keeps photos and videos on the iPhone, out of the Photos library, behind Face
 ID, Touch ID or a passcode, with an optional password per album. There is no
-account, no server and no cloud sync, the vault is excluded from iCloud backups, and
-its files use iOS Data Protection, so they cannot be read while the iPhone is locked.
+account and no server of ours, and nothing leaves the iPhone unless you turn on the optional
+iCloud copy (end-to-end encrypted, in your own iCloud, Premium); the vault is excluded from
+normal iCloud backups, and its files use iOS Data Protection, so they cannot be read while the iPhone is locked.
 <a href="../photo-vault-security.html">How it protects your files</a>.</p>
 
-<p>It does not back up on its own: you export the backup file when you choose. It has
+<p>It does not back up on its own unless you turn on the optional iCloud copy; otherwise you export the backup file when you choose. It has
 no decoy PIN, it is iPhone only, and it relies on iOS Data Protection rather than its
 own per-file encryption. It is free to download and try; a subscription, with a free
 trial, unlocks unlimited items, and what you saved stays accessible if it ends.</p>
@@ -158,14 +159,16 @@ best way to hide photos on iPhone without iCloud</a> and
          "For many people, yes. It is locked with Face ID, Touch ID or your passcode since iOS 16. But the "
          "photos stay in your library, and in iCloud if iCloud Photos is on."),
         ("Are photos in Photo Vault uploaded anywhere?",
-         "No. There is no account, no server and no cloud sync, and the vault is excluded from iCloud "
-         "backups."),
+         "No, unless you choose: only if you turn on the optional iCloud copy (end-to-end encrypted, in your "
+         "own iCloud) or export a backup. There is no account and no server of ours, and the vault is "
+         "excluded from normal iCloud backups."),
         ("What happens to my hidden photos if I lose my iPhone?",
-         "They are lost unless you exported a backup. Export one from Settings, Backup and keep the file "
+         "They are lost unless you turned on the optional iCloud copy or exported a backup. Export one from Settings, Backup and keep the file "
          "somewhere other than the phone."),
         ("How do I move the vault to a new iPhone?",
          "Export a backup on the old iPhone, send the file to the new one with AirDrop or Files, and "
-         "restore it there with the same password."),
+         "restore it there with the same password, or, if you use the optional iCloud copy, turn it on in "
+         "the new iPhone and the vault comes back."),
     ],
 )
 
@@ -174,7 +177,7 @@ PV_ES = dict(
     app_name="Photo Vault: Hide Pics Video",
     h1="Cómo ocultar fotos en el iPhone sin el álbum Oculto (guía de Photo Vault)",
     desc=("Paso a paso: saca las fotos privadas de la app Fotos a una bóveda con su propio código, sin "
-          "cuenta y sin nube, y borra los originales para que de verdad desaparezcan de tu fototeca. "
+          "cuenta y sin nube salvo que tú la actives, y borra los originales para que de verdad desaparezcan de tu fototeca. "
           "Escrito por quien hace Photo Vault."),
     section="Guías", kicker="Guía de Photo Vault",
     standfirst=("El álbum Oculto deja las fotos en tu fototeca y, con Fotos en iCloud, en iCloud. "
@@ -203,7 +206,7 @@ app de bóveda que la guarde en su propio espacio del iPhone, con su propio bloq
          "de la app, para poder abrir la bóveda delante de alguien sin abrir ese álbum."),
         ("Importa las fotos.",
          "Añade fotos y vídeos de tu fototeca. Photo Vault los copia a su propio espacio en el iPhone; "
-         "no se sube nada."),
+         "no se sube nada salvo que actives la copia opcional en iCloud."),
         ("Borra los originales de Fotos.",
          "Importar hace una copia, no quita la foto de tu fototeca. Vuelve a la app Fotos y borra las "
          "fotos que has importado."),
@@ -219,18 +222,18 @@ app de bóveda que la guarde en su propio espacio del iPhone, con su propio bloq
         ("Exporta una copia y guárdala bien.",
          "En Ajustes, Copia de seguridad, exporta toda la bóveda a un archivo cerrado con una "
          "contraseña que eliges tú, y guárdalo en Archivos, en un ordenador o en tu propio iCloud "
-         "Drive. No hay copia automática: sin ese archivo, las fotos se pierden con el móvil."),
+         "Drive. No hay copia automática salvo que actives la copia opcional en iCloud: sin ninguna de las dos, las fotos se pierden con el móvil."),
     ],
     after="""
 <h2>Qué hace Photo Vault y qué no</h2>
 
 <p>Guarda fotos y vídeos en el iPhone, fuera de la fototeca, detrás de Face ID, Touch
-ID o un código, con contraseña opcional por álbum. No hay cuenta, ni servidor, ni
-sincronización con la nube, la bóveda queda fuera de las copias de iCloud y sus
+ID o un código, con contraseña opcional por álbum. No hay cuenta ni servidor nuestro, y no sale nada del iPhone salvo que actives la copia
+opcional en iCloud (cifrada de extremo a extremo, en tu propio iCloud, con Premium); la bóveda queda fuera de las copias normales de iCloud y sus
 archivos usan la Protección de datos de iOS, así que no se pueden leer con el iPhone
 bloqueado. <a href="../../photo-vault-security.html">Cómo protege tus archivos</a> (en inglés).</p>
 
-<p>No hace copias por su cuenta: exportas el archivo de copia cuando tú quieras. No
+<p>No hace copias por su cuenta salvo que actives la copia opcional en iCloud; si no, exportas el archivo de copia cuando tú quieras. No
 tiene código señuelo, es solo para iPhone y se apoya en la Protección de datos de iOS,
 no en un cifrado propio por archivo. Se descarga gratis y se puede probar; una
 suscripción, con prueba gratis, desbloquea elementos ilimitados, y lo que guardaste
@@ -249,14 +252,14 @@ mejores apps para ocultar fotos en iPhone</a>.</p>
          "Para mucha gente, sí. Desde iOS 16 está bloqueado con Face ID, Touch ID o el código. Pero las "
          "fotos siguen en tu fototeca, y en iCloud si tienes Fotos en iCloud."),
         ("¿Se suben a algún sitio las fotos de Photo Vault?",
-         "No. No hay cuenta, ni servidor, ni sincronización con la nube, y la bóveda queda fuera de las "
-         "copias de iCloud."),
+         "No, salvo que tú lo elijas: solo si activas la copia opcional en iCloud (cifrada de extremo a extremo, en tu propio "
+         "iCloud) o exportas una copia. No hay cuenta ni servidor nuestro, y la bóveda queda fuera de las copias normales de iCloud."),
         ("¿Qué pasa con mis fotos ocultas si pierdo el iPhone?",
-         "Se pierden, salvo que hayas exportado una copia. Expórtala desde Ajustes, Copia de seguridad y "
+         "Se pierden, salvo que hayas activado la copia opcional en iCloud o exportado una copia. Expórtala desde Ajustes, Copia de seguridad y "
          "guarda el archivo fuera del móvil."),
         ("¿Cómo paso la bóveda a un iPhone nuevo?",
          "Exporta una copia en el iPhone viejo, mándala al nuevo por AirDrop o Archivos y restáurala allí "
-         "con la misma contraseña."),
+         "con la misma contraseña; o, si usas la copia opcional en iCloud, actívala en el iPhone nuevo y la bóveda vuelve."),
     ],
 )
 
