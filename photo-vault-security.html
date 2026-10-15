@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="icon" type="image/svg+xml" href="images/keeper-favicon.svg" />
   <title>How Photo Vault protects your files — Saga Labs</title>
-  <meta name="description" content="What Photo Vault encrypts, how, and what it doesn't do: iOS Data Protection for the vault, AES-256-GCM with PBKDF2 for backups, no account, no server of ours, an optional end-to-end encrypted iCloud copy, and the limits stated plainly." />
+  <meta name="description" content="What Photo Vault encrypts, how, and what it doesn't do: iOS Data Protection for the vault, AES-256-GCM with PBKDF2 for backups, no account, no server, and the limits stated plainly." />
   <link rel="canonical" href="https://aisagalab.com/photo-vault-security.html">
   <meta property="og:title" content="How Photo Vault protects your files" />
   <meta property="og:description" content="What is encrypted, how, and what isn't — stated plainly." />
@@ -59,16 +59,16 @@
 
     <h2>The short version</h2>
     <ul>
-      <li>There is no account and no server of ours. By default your photos and videos never leave the iPhone. If you choose to turn on the optional iCloud copy, they are encrypted on the iPhone first and stored in your own private iCloud, which we cannot open. Either way there is nothing of yours on any computer of ours.</li>
+      <li>There is no account and no server. Your photos and videos are never uploaded, so there is nothing of yours on any computer of ours.</li>
       <li>The vault is encrypted by the iPhone itself with iOS Data Protection, and the files can't be read while the iPhone is locked.</li>
-      <li>Backups are a file you create and keep, encrypted with AES-256-GCM under a password only you know. The optional iCloud copy is separate, off by default, and encrypted so that only your devices can open it.</li>
+      <li>Backups are a file you create and keep, encrypted with AES-256-GCM under a password only you know.</li>
       <li>Photo Vault does not add its own per-file encryption on top of iOS. Some vault apps do; we say so plainly below.</li>
     </ul>
 
     <h2>The files in your vault</h2>
     <p>Every file on an iPhone is encrypted with its own 256-bit key by the hardware AES engine. What differs between apps is <em>when</em> that key is available, which iOS calls the protection class (<a href="https://support.apple.com/guide/security/data-protection-overview-secf6276da8a/web" target="_blank" rel="noopener">Apple Platform Security: Data Protection</a>).</p>
     <p>By default, iOS uses <em>Protected Until First User Authentication</em>: after you unlock the phone once after a restart, the files stay readable even when it locks again. Photo Vault sets every file in the vault to <em>Protected Unless Open</em> (<code>NSFileProtectionCompleteUnlessOpen</code>): its key is derived from your iPhone passcode and discarded shortly after the phone locks, so the files are unreadable while it's locked (<a href="https://support.apple.com/guide/security/data-protection-classes-secb010e978a/web" target="_blank" rel="noopener">Apple: Data Protection classes</a>). The one exception is a file that is still being written at the moment you lock the phone, such as a long video import, which finishes saving.</p>
-    <p>The vault is also excluded from normal iCloud and computer backups, so your private photos don't end up in a backup you didn't intend. The optional iCloud copy below is a separate thing you turn on yourself.</p>
+    <p>The vault is also excluded from iCloud and computer backups, so your private photos don't end up in a backup you didn't intend.</p>
 
     <h2>Locks</h2>
     <ul>
@@ -85,24 +85,14 @@
       <li>You decide where the file goes: Files, a computer, or your own iCloud Drive. It never passes through a server of ours, and without the password nobody can open it, us included. If you forget the password, the backup can't be recovered.</li>
     </ul>
 
-    <h2>Optional iCloud copy</h2>
-    <p>Off by default, and turning it on needs Premium. It exists so that if you change or lose your iPhone, you can turn it on in the new one and the vault comes back. It uses CloudKit, Apple's own storage, in <em>your</em> private iCloud database. We have no server and no access to it.</p>
-    <ul>
-      <li><strong>What is stored.</strong> A random key (kept end-to-end encrypted in your iCloud), an encrypted manifest of your albums and files, and one encrypted record per photo or video. Each file is encrypted on the iPhone before it leaves it.</li>
-      <li><strong>Who can open it.</strong> Only you, from your own devices. Because the key is end-to-end encrypted, Apple cannot read it either, and we never see any of it.</li>
-      <li><strong>Premium and downloading.</strong> Premium is needed to upload. Getting your files back down is never blocked, even if the subscription ends.</li>
-      <li><strong>Deleting it.</strong> Deleting the copy from Settings removes it from your iCloud.</li>
-    </ul>
-    <p class="note">Like any copy, it moves your files outside the iPhone, protected by encryption instead of by distance. If you prefer nothing to leave the phone, leave it off.</p>
-
     <h2>What Photo Vault connects to</h2>
-    <p>Apple's App Store and RevenueCat, the service that handles subscriptions, plus your own iCloud if, and only if, you turn on the optional copy. RevenueCat receives no photos or videos, and we never receive any. There is no analytics or advertising SDK, and the App Store privacy label is <em>Data Not Collected</em>.</p>
+    <p>Only Apple's App Store and RevenueCat, the service that handles subscriptions. Neither receives your photos or videos. There is no analytics or advertising SDK, and the App Store privacy label is <em>Data Not Collected</em>.</p>
 
     <h2>What Photo Vault does not do</h2>
     <ul>
       <li><strong>No per-file encryption of its own.</strong> Vault files rely on iOS Data Protection. While your iPhone is unlocked, iOS can read them like other app files; an app with its own encryption layer adds a second key that the vault passcode controls.</li>
       <li><strong>No decoy vault and no intruder photo.</strong> Some other vault apps have one or both.</li>
-      <li><strong>No automatic backup.</strong> Nothing is copied anywhere unless you turn on the optional iCloud copy or export a backup. If you lose the phone with neither, the vault is gone.</li>
+      <li><strong>No automatic backup.</strong> If you lose the phone without having exported a backup, the vault is gone.</li>
     </ul>
 
     <h2>Who it protects you from</h2>
@@ -111,7 +101,7 @@
       <tbody>
         <tr><td>Someone picks up your unlocked iPhone</td><td>The vault asks for Face ID or its own passcode. With face-down exit on, turning the phone over jumps to another app.</td></tr>
         <tr><td>Someone has your locked iPhone</td><td>The vault files can't be read: their keys are unavailable until the iPhone passcode is entered.</td></tr>
-        <tr><td>Someone gets your iCloud or computer backup</td><td>The vault isn't in the normal backup. The optional iCloud copy, if you turned it on, is encrypted on the iPhone; only your key opens it, and we hold no key.</td></tr>
+        <tr><td>Someone gets your iCloud or computer backup</td><td>The vault isn't in it.</td></tr>
         <tr><td>Someone gets your Photo Vault backup file</td><td>It's AES-256-GCM encrypted; without your backup password it can't be opened.</td></tr>
         <tr><td>Someone knows your iPhone passcode and has the phone</td><td>They still meet the vault's own lock in the app, but Photo Vault has no extra encryption layer against forensic tools. Use a vault passcode different from your iPhone passcode.</td></tr>
       </tbody>

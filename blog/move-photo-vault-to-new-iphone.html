@@ -111,7 +111,7 @@
           "name": "Do hidden photos transfer to a new iPhone?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Photos in the Photos app's Hidden album move with your library through iCloud Photos. Photos inside a vault app depend on the app: those with a cloud (Keepsafe, Pic Safe's Cloud Vault) sync when you sign in; those without one (Arca, and Photo Vault unless you turn on its optional iCloud copy) need you to export a backup file and restore it on the new phone."
+            "text": "Photos in the Photos app's Hidden album move with your library through iCloud Photos. Photos inside a vault app depend on the app: those with a cloud (Keepsafe, Pic Safe's Cloud Vault) sync when you sign in; those without one (Photo Vault, Arca) need you to export a backup file and restore it on the new phone."
           }
         },
         {
@@ -119,7 +119,7 @@
           "name": "Will restoring an iCloud backup bring back my vault?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Not for vaults that exclude themselves from iCloud backups, such as Photo Vault. You get the app back empty. Export a backup from the app, or turn on its optional iCloud copy, before you switch."
+            "text": "Not for vaults that exclude themselves from iCloud backups, such as Photo Vault. You get the app back empty. Export a backup from the app before you switch."
           }
         },
         {
@@ -127,7 +127,7 @@
           "name": "Can I move Photo Vault without a cloud account?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Export an encrypted backup file in Settings, move it with AirDrop or Files, and restore it on the new iPhone with the same password. No account or server is involved. If you use the optional iCloud copy instead, turn it on in the new iPhone."
+            "text": "Yes. Export an encrypted backup file in Settings, move it with AirDrop or Files, and restore it on the new iPhone with the same password. No account or server is involved."
           }
         }
       ]
@@ -182,7 +182,7 @@ photo arrived on the new phone, then erase the old one.</p>
 <div class="table-scroll"><table>
 <thead><tr><th>App</th><th>How the vault moves</th><th>Goes through a server?</th></tr></thead>
 <tbody>
-<tr><td><a href="https://apps.apple.com/app/apple-store/id1532670722?pt=118348020&amp;ct=aisagalab-move-photo-vault-to-new-iphone&amp;mt=8">Photo Vault</a> (ours)</td><td>Settings &rarr; Backup &rarr; Export: one encrypted file with every photo, video, album and album password. Send it to the new iPhone (AirDrop, Files, your own iCloud Drive) and restore it there with the same password. Or turn on the optional iCloud copy (Premium) in the old one and turn it on in the new one.</td><td>No server of ours; the optional iCloud copy goes to your own iCloud, end-to-end encrypted</td></tr>
+<tr><td><a href="https://apps.apple.com/app/apple-store/id1532670722?pt=118348020&amp;ct=aisagalab-move-photo-vault-to-new-iphone&amp;mt=8">Photo Vault</a> (ours)</td><td>Settings &rarr; Backup &rarr; Export: one encrypted file with every photo, video, album and album password. Send it to the new iPhone (AirDrop, Files, your own iCloud Drive) and restore it there with the same password.</td><td>No</td></tr>
 <tr><td><a href="https://apps.apple.com/us/app/id6779157571" target="_blank" rel="noopener">Arca</a></td><td>Its page lists an encrypted backup file you save to Files or iCloud Drive.</td><td>No</td></tr>
 <tr><td><a href="https://apps.apple.com/us/app/safety-photo-video-pro/id456637671" target="_blank" rel="noopener">Safety Photo+Video Pro</a></td><td>Optional cloud backup, encrypted on the device first, then restored on the new device; also Wi-Fi transfer through a browser.</td><td>Optional</td></tr>
 <tr><td><a href="https://apps.apple.com/us/app/id510873505" target="_blank" rel="noopener">Keepsafe</a></td><td>Its private cloud (up to 10,000 items).</td><td>Yes</td></tr>
@@ -202,23 +202,19 @@ photo arrived on the new phone, then erase the old one.</p>
 <p>The file is encrypted with AES-256-GCM under a key derived from your password;
 <a href="../photo-vault-security.html">here is how it works</a>.</p>
 
-<p>Prefer no file? If the optional iCloud copy (off by default, Premium to turn on) is
-on in the old iPhone, install Photo Vault on the new one and turn it on there: the
-vault comes back. Make sure it is on in the old iPhone before you wipe it.</p>
-
 <h2>Why vault photos get lost</h2>
 <p>A vault that promises nothing leaves the phone usually keeps its files out of
 iCloud backups. That is the point, and also the risk: a new phone set up from a
 backup gets the app, empty. Apps with a cloud avoid that by storing your photos on
-their servers; apps without one need you to make a backup file yourself. Photo Vault offers both: the backup file, and an optional iCloud copy you turn on.</p>
+their servers; apps without one need you to make a backup file yourself.</p>
 
 <h2>Questions people ask</h2>
 <h3>Do hidden photos transfer to a new iPhone?</h3>
-<p>Photos in the Photos app's Hidden album move with your library through iCloud Photos. Photos inside a vault app depend on the app: those with a cloud (Keepsafe, Pic Safe's Cloud Vault) sync when you sign in; those without one (Arca, and Photo Vault unless you turn on its optional iCloud copy) need you to export a backup file and restore it on the new phone.</p>
+<p>Photos in the Photos app's Hidden album move with your library through iCloud Photos. Photos inside a vault app depend on the app: those with a cloud (Keepsafe, Pic Safe's Cloud Vault) sync when you sign in; those without one (Photo Vault, Arca) need you to export a backup file and restore it on the new phone.</p>
 <h3>Will restoring an iCloud backup bring back my vault?</h3>
-<p>Not for vaults that exclude themselves from iCloud backups, such as Photo Vault. You get the app back empty. Export a backup from the app, or turn on its optional iCloud copy, before you switch.</p>
+<p>Not for vaults that exclude themselves from iCloud backups, such as Photo Vault. You get the app back empty. Export a backup from the app before you switch.</p>
 <h3>Can I move Photo Vault without a cloud account?</h3>
-<p>Yes. Export an encrypted backup file in Settings, move it with AirDrop or Files, and restore it on the new iPhone with the same password. No account or server is involved. If you use the optional iCloud copy instead, turn it on in the new iPhone.</p>
+<p>Yes. Export an encrypted backup file in Settings, move it with AirDrop or Files, and restore it on the new iPhone with the same password. No account or server is involved.</p>
 </div>
         <div class="article-body article-sources">
 <h2>Sources</h2>
