@@ -9,6 +9,8 @@ faq.html en cada build, asi que si cambian alli, cambian aqui.
 import os
 import re
 
+import ct
+
 ROOT = os.path.dirname(os.path.abspath(__file__))
 SITE = "https://aisagalab.com"
 
@@ -94,6 +96,7 @@ def render(*, path, lang, title, desc, og_title, body, jsonld,
         up=up, site=SITE, og_type=og_type, jsonld=jsonld,
         nav=nav, body=body, footer=footer,
     )
+    html = ct.retag(html, path)
     full = os.path.join(ROOT, path)
     os.makedirs(os.path.dirname(full), exist_ok=True)
     open(full, "w", encoding="utf-8").write(html)
@@ -119,3 +122,16 @@ if __name__ == "__main__":
     import build_i18n
     for path, size in build_i18n.build(render):
         print("%-42s %6d bytes" % (path, size))
+    # paginas escritas a mano (index, fichas de app, llms.txt) y las que build_i18n reescribe in situ
+    print("ct= en %d ficheros estaticos" % ct.retag_static(ROOT))
+    n = 0
+    for dp, _, fs in os.walk(os.path.join(ROOT, "blog")):
+        for f in fs:
+            if f.endswith(".html"):
+                p = os.path.join(dp, f)
+                s = open(p, encoding="utf-8").read()
+                t = ct.retag(s, os.path.relpath(p, ROOT))
+                if t != s:
+                    open(p, "w", encoding="utf-8").write(t)
+                    n += 1
+    print("ct= en %d paginas del blog" % n)
