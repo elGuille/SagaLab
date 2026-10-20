@@ -362,6 +362,16 @@ INDEX_EN = """
         <div class="article-body">
         <ul class="post-list">
             <li>
+                <a href="do-local-ai-apps-send-data-mac-test.html">Do local AI apps send your data to the internet? We watched Ollama, LM Studio and Pinku on a Mac</a>
+                <p>A network test on 20 October 2026: what each app connects to when you open it,
+                download a model, chat and leave it idle. Methodology and raw numbers.</p>
+            </li>
+            <li>
+                <a href="what-ai-chatbots-keep-when-you-delete-chats.html">What ChatGPT, Claude, Gemini and other AI chatbots keep, and what happens when you delete or export your chats</a>
+                <p>Retention, deletion, training and export for twelve chatbots, from each company's
+                own help pages, checked on 20 October 2026.</p>
+            </li>
+            <li>
                 <a href="best-open-weight-ai-models.html">Best open-weight AI models (2026)</a>
                 <p>Gemma 4, Qwen3.5, DeepSeek V4, Kimi K3, GLM-5.3, Mistral Small 4, gpt-oss,
                 Llama 4 and LFM2.5: what each is best at, licences, benchmarks, hardware, and

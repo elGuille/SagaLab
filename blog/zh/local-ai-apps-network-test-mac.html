@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>本地 AI 应用会把你的数据发到网上吗？我们在 Mac 上监测了 Ollama、LM Studio 和 Pinku | Saga Labs</title>
+    <meta name="description" content="2026年10月20日在 Mac 上对三款本地 AI 应用做的网络测试：Ollama、LM Studio 和 Pinku 在打开、下载模型、聊天和闲置时连接了哪里。使用 nettop 和 macOS 日志测量，公开方法和原始数据。">
+    <link rel="canonical" href="https://aisagalab.com/blog/zh/local-ai-apps-network-test-mac.html">
+    <link rel="alternate" hreflang="en" href="https://aisagalab.com/blog/do-local-ai-apps-send-data-mac-test.html">
+    <link rel="alternate" hreflang="ru" href="https://aisagalab.com/blog/ru/chto-lokalnye-ii-prilozheniya-otpravlyayut-v-internet.html">
+    <link rel="alternate" hreflang="zh-Hans" href="https://aisagalab.com/blog/zh/local-ai-apps-network-test-mac.html">
+    <link rel="alternate" hreflang="x-default" href="https://aisagalab.com/blog/do-local-ai-apps-send-data-mac-test.html">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../blog.css">
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+    <script src="/umami.js" defer></script>
+
+    <meta property="og:title" content="本地 AI 应用会把你的数据发到网上吗？我们在 Mac 上监测了 Ollama、LM Studio 和 Pinku">
+    <meta property="og:description" content="2026年10月20日在 Mac 上对三款本地 AI 应用做的网络测试：Ollama、LM Studio 和 Pinku 在打开、下载模型、聊天和闲置时连接了哪里。使用 nettop 和 macOS 日志测量，公开方法和原始数据。">
+    <meta property="og:url" content="https://aisagalab.com/blog/zh/local-ai-apps-network-test-mac.html">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://aisagalab.com/images/preview.jpg">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="本地 AI 应用会把你的数据发到网上吗？我们在 Mac 上监测了 Ollama、LM Studio 和 Pinku">
+    <meta property="twitter:description" content="2026年10月20日在 Mac 上对三款本地 AI 应用做的网络测试：Ollama、LM Studio 和 Pinku 在打开、下载模型、聊天和闲置时连接了哪里。使用 nettop 和 macOS 日志测量，公开方法和原始数据。">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "本地 AI 应用会把你的数据发到网上吗？我们在 Mac 上监测了 Ollama、LM Studio 和 Pinku",
+      "description": "2026年10月20日在 Mac 上对三款本地 AI 应用做的网络测试：Ollama、LM Studio 和 Pinku 在打开、下载模型、聊天和闲置时连接了哪里。使用 nettop 和 macOS 日志测量，公开方法和原始数据。",
+      "inLanguage": "zh-Hans",
+      "articleSection": "实验",
+      "datePublished": "2026-10-20",
+      "dateModified": "2026-10-20",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://aisagalab.com/blog/zh/local-ai-apps-network-test-mac.html"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Maruta G",
+        "url": "https://www.linkedin.com/in/maruta/",
+        "sameAs": [
+          "https://www.linkedin.com/in/maruta/",
+          "https://github.com/Saga-Labs",
+          "https://x.com/SagaAILab"
+        ],
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Saga Labs",
+          "url": "https://aisagalab.com/"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Saga Labs",
+        "url": "https://aisagalab.com/",
+        "sameAs": [
+          "https://aisagalab.com/",
+          "https://x.com/SagaAILab",
+          "https://github.com/Saga-Labs"
+        ]
+      }
+    },
+    {
+      "name": "Ollama、LM Studio 和 Pinku 在 macOS 上的网络连接，2026年10月20日",
+      "description": "在 macOS 26.7.1 上，用 nettop 每秒记录各进程的连接（远程地址、收发字节），覆盖打开、下载模型、聊天和闲置。",
+      "measurementTechnique": "nettop（按进程，每秒采样）、lsof、macOS 统一日志、应用缓存",
+      "variableMeasured": [
+        "远程主机",
+        "接收字节",
+        "发送字节",
+        "阶段"
+      ],
+      "@type": "Dataset",
+      "inLanguage": "zh-Hans",
+      "url": "https://aisagalab.com/blog/zh/local-ai-apps-network-test-mac.html",
+      "datePublished": "2026-10-20",
+      "creator": {
+        "@type": "Organization",
+        "name": "Saga Labs",
+        "url": "https://aisagalab.com/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Ollama 会把我的聊天发到网上吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "在我们的 Mac 测试中（Homebrew 版 Ollama 0.20.2，2026年10月20日）不会。聊天和闲置五分钟只有到 127.0.0.1 的本地连接。下载模型时会连接 registry.ollama.ai。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "不下载东西时 LM Studio 会联网吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "会。在我们的测试中，它首次启动下载了约 172 MB 的引擎，之后每次启动约 1 MB，用 lms 命令聊天时获取了模型目录，闲置时还向自己的服务器建立过约 30 个连接。我们没有看到传送聊天内容的连接。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "LM Studio 能看到我下载了哪些模型吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "默认设置下能：从 Hugging Face 的下载经由 search.lmstudio.ai/v1/hf-proxy，设置文件中 useHFProxy 为 true。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pinku 聊天时会发送什么吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不会。Pinku Mac 版 1.0.7 在聊天和闲置时都没有连接。它会连接 Hugging Face 下载模型，1.0.7 版在加载已安装的模型时也会连接，用于检查模型文件。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "怎样查看 Mac 上的应用发送了什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "使用应用时在“终端”中运行 nettop -P -L 0 -s 1 -n。它会列出每个进程收发的字节，不需要管理员密码。"
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+<nav class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="nav-logo">
+                <h1>Saga <span class="ai-gradient">AI</span> <span class="lab-gradient">Lab</span></h1>
+            </a>
+            <div class="nav-menu">
+                <a href="/blog/" class="nav-link">Blog</a>
+                <a href="../../index.html#mobile-apps" class="nav-link">Apps</a>
+                <a href="../../faq.html" class="nav-link">FAQ</a>
+                <a href="mailto:sagalabs@proton.me" class="nav-link">Contact</a>
+                <a href="https://x.com/SagaAILab" target="_blank" class="icon-link" aria-label="X (Twitter)">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                        <path d="M18.244 2H21l-6.5 7.43L22.5 22H15.9l-4.7-6.2L5.7 22H3l7-8.02L1.8 2h6.8l4.3 5.7L18.244 2zm-2.43 18h1.64L8.29 4H6.57l9.244 16z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/Saga-Labs" target="_blank" class="icon-link" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                        <path d="M12 2C6.477 2 2 6.486 2 12.017c0 4.424 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.238-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.464-1.11-1.464-.908-.62.069-.607.069-.607 1.004.071 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.833.092-.647.35-1.088.636-1.338-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.748-1.026 2.748-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.337 4.695-4.565 4.943.359.31.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .268.18.58.688.481A10.019 10.019 0 0 0 22 12.017C22 6.486 17.523 2 12 2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="article-wrap">
+        <p class="article-kicker">实验</p>
+        <h1>本地 AI 应用会把你的数据发到网上吗？我们在 Mac 上监测了 Ollama、LM Studio 和 Pinku</h1>
+        <p class="article-standfirst">聊天过程中，三款应用都没有建立任何互联网连接。聊天之外就不一样了：每款应用在打开或下载模型时都会连接自己的服务器，其中一款闲置时也会。以下是我们看到的、测量方法，以及我们看不到的部分。</p>
+        <p class="article-meta"><a href="https://www.linkedin.com/in/maruta/" rel="author me noopener" target="_blank">Maruta G</a> &middot; 2026年10月20日
+            <span class="lang-switch"> &middot; <a href="../do-local-ai-apps-send-data-mac-test.html">English</a> &middot; <a href="../ru/chto-lokalnye-ii-prilozheniya-otpravlyayut-v-internet.html">Русский</a></span>
+        </p>
+        <div class="article-body">
+<h2>简短回答</h2>
+
+<p><strong>聊天时什么都没有发送。</strong>三款应用在提问和回答期间都没有建立任何到 Mac 之外的连接。网络流量发生在聊天之外：</p>
+<ul>
+<li><strong>下载模型</strong>一定要联网，这在意料之中：连接 Ollama 的模型仓库、Hugging Face，或者 LM Studio 自己的服务器。</li>
+<li><strong>打开应用</strong>：Ollama 没有对外连接。LM Studio 首次启动下载了约 172 MB 的推理引擎，之后每次约 1 MB。
+Pinku 在加载已安装的模型时向 huggingface.co 发出了四个小请求。</li>
+<li><strong>闲置</strong>：Ollama 和 Pinku 五分钟内什么都没发送。LM Studio 在一次聊天后不久，向自己的服务器建立了约 30 个连接。</li>
+</ul>
+
+<h2>结果</h2>
+
+<div class="table-scroll"><table>
+<thead><tr><th>应用</th><th>打开</th><th>下载模型</th><th>聊天</th><th>闲置 5 分钟</th></tr></thead>
+<tbody>
+<tr><td>Ollama 0.20.2（Homebrew）</td><td>没有对外连接；服务只监听 127.0.0.1</td><td>registry.ollama.ai 和 Cloudflare 存储：接收 524 MB，发送 125 KB</td><td>没有对外连接</td><td>没有对外连接</td></tr>
+<tr><td>LM Studio 0.4.26</td><td>首次启动：未做任何操作，从 extensions.lmstudio.ai 下载约 172 MB（推理引擎）。之后：从 lmstudio.ai 约 1 MB</td><td>经由 search.lmstudio.ai/v1/hf-proxy：接收 352 MB，发送 84 KB</td><td>聊天本身没有；用默认命令时，LM Studio 同时获取了模型目录（接收约 150 KB，发送 12 KB）</td><td>一次约 30 个到 lmstudio.ai 地址的连接，接收 3 MB，发送 31 KB，之后没有</td></tr>
+<tr><td>Pinku Mac 版 1.0.7</td><td>还没有模型：没有。已安装模型：向 huggingface.co 发出 4 个请求，接收约 35 KB，发送 23 KB</td><td>huggingface.co 以及 Hugging Face 在亚马逊服务器上的存储：0.4 GB 的模型约 350 MB</td><td>没有</td><td>没有</td></tr>
+</tbody>
+</table></div>
+
+<p class="article-note">2026年10月20日在一台 Mac 上测得。“没有”表示在整个阶段中，nettop 没有显示该应用的进程连接到 Mac 之外的任何地址；
+到 127.0.0.1 的连接（应用与自身通信）不计算在内。</p>
+
+<h2>Ollama</h2>
+
+<p>我们使用的是 Homebrew 版本，以后台服务运行。启动时，它在 127.0.0.1:11434 上开启服务，并启动一个与之通信的辅助进程，都是本地的。
+<code>ollama pull qwen3:0.6b</code> 连接了 registry.ollama.ai，然后从 Cloudflare 存储下载了 524 MB。
+用 <code>ollama run</code> 提问时只与本地服务通信，之后五分钟也是如此。这只适用于命令行版本：
+从 ollama.com 下载的 Ollama 应用有自己的窗口和更新程序，我们没有测试。</p>
+
+<h2>LM Studio</h2>
+
+<p>首次启动时，在我们还没做任何操作之前，LM Studio 就从 extensions.lmstudio.ai 下载了约 172 MB。
+它自己的下载记录列出了内容：llama.cpp 引擎、一个 Python 运行环境和一个名为 harmony 的工具。之后每次启动从 lmstudio.ai 地址获取约 1 MB。</p>
+
+<p>模型下载并不是直接连接 Hugging Face。我们请求了 <em>mlx-community/Qwen3-0.6B-4bit</em>，LM Studio 的记录显示所有文件都来自
+<code>search.lmstudio.ai/v1/hf-proxy/&hellip;</code>，这是 LM Studio 运营的代理。未改动的设置文件中是
+<code>"useHFProxy": true</code>。也就是说，LM Studio 的服务器能看到你下载了哪些模型。但这并不意味着它们能看到你的聊天。</p>
+
+<p>我们无法用工具操作 LM Studio 的聊天窗口，所以通过 LM Studio 自带、使用同一引擎的 <code>lms chat</code> 命令聊天。
+用默认命令时，LM Studio 在回答期间从 lmstudio.ai 获取了模型目录：接收约 150 KB，发送 12 KB。加上
+<code>--dont-fetch-catalog</code> 选项后，同样的问题没有产生任何对外连接。随后闲置的五分钟里，LM Studio 在第 45 到 60 秒之间
+向 lmstudio.ai 地址建立了约 30 个连接（接收 3 MB，发送 31 KB，每个连接发送不到 3 KB），之后再无连接。本地服务只监听 127.0.0.1。</p>
+
+<h2>Pinku</h2>
+
+<p>Pinku 是一款在设备上运行开放模型的 iPhone 和 Mac 应用。Pinku 把聊天记录保存在设备上，不会离开设备。Apple 隐私标签中，Pinku 只列出了购买记录和一个用于 Pinku Pro 的匿名 ID。 Mac App Store 上的版本是 1.0.7。
+测试用的 Mac 上没有安装 Pinku，因此我们从源代码编译了 1.0.7，并用单独的应用标识运行，让它像全新安装一样启动。</p>
+
+<ul>
+<li><strong>首次启动、没有模型</strong>：60 秒内没有任何连接。</li>
+<li><strong>下载最小的模型</strong>（Qwen3 0.6B，0.4 GB）：向 huggingface.co 请求模型文件，权重来自 Hugging Face 在亚马逊服务器上的存储。
+我们的记录在下载开始 22 秒后才启动，捕获了约 347 MB；应用的网络缓存中只有 huggingface.co 的地址。</li>
+<li><strong>已安装模型后打开</strong>：七秒内向 huggingface.co 发出四个 HTTPS 请求，接收约 35 KB，发送 23 KB。
+响应是“304 Not Modified”：Pinku 在检查 Mac 上的模型文件是否仍是最新版本。请求中包含模型名称，Hugging Face 能看到这台 Mac 的 IP 地址。请求中没有聊天内容。</li>
+<li><strong>聊天</strong>（一个问题，约 85 秒得到回答）：没有连接。</li>
+<li><strong>闲置 5 分钟</strong>：没有连接。</li>
+</ul>
+
+<p>Pinku 的 App Store 描述没有提到启动时的这项检查；这是我们在本次测试中发现的。购买 Pinku Pro 通过 Apple 自己的系统进程与 Apple 通信；
+用这些工具无法把这部分流量归属到某一个应用，所以购买不在结果之内。</p>
+
+<h2>测量方法</h2>
+
+<ol>
+<li>一台 Apple 芯片的 Mac，macOS 26.7.1，Wi-Fi，2026年10月20日。没有更改安全设置，没有使用管理员密码，没有授予新权限。</li>
+<li>用 macOS 自带的网络监视工具 <strong>nettop</strong>，每秒记录所有进程的所有套接字，包括远程地址和收发字节，只保留各应用的进程。</li>
+<li>用 <strong>lsof</strong> 查看每个应用监听的端口。</li>
+<li>主机名来自应用自己的记录（Pinku 的网络缓存、LM Studio 的下载记录）、macOS 日志，以及对地址的 DNS 查询。</li>
+<li>每个应用四个阶段：打开（60 到 90 秒）、下载最小的模型、一个问题（<em>Write three short sentences about the sea</em>）、打开应用闲置五分钟。</li>
+<li>测试结束后，我们删除了 LM Studio、下载的模型和我们编译的 Pinku。</li>
+</ol>
+
+<h2>我们看不到的部分</h2>
+
+<ul>
+<li><strong>连接的内容。</strong>连接是加密的。不抓包（需要管理员密码）只能看到数据去了哪里、有多少，看不到具体内容。</li>
+<li><strong>极短的连接</strong>，在一秒内打开又关闭，nettop 可能漏掉。对 Pinku 和 LM Studio，应用自己的日志和缓存与 nettop 的结果一致。</li>
+<li><strong>iPhone。</strong>以上都是在 Mac 上测的。iOS 上的应用无法用这种方式检查。</li>
+<li><strong>更长的时间。</strong>五分钟闲置不等于一天。每天检查一次更新的应用不会在测试中出现。</li>
+<li><strong>其他应用。</strong>我们只测了三款。Jan、GPT4All、Msty 等不在本次测试中。</li>
+</ul>
+
+<h2>自己如何检查一个应用</h2>
+
+<p>打开“终端”，在使用应用时运行 <code>nettop -P -L 0 -s 1 -n</code>；每一行显示一个进程及其收发字节。
+只看一个应用，可以用 <code>nettop -p</code> 加进程名。查看监听端口用 <code>lsof -nP -iTCP -sTCP:LISTEN</code>。
+在聊天时和下载模型时各做一次，就能看到本文所说的区别。</p>
+
+<p>问题到达云端聊天机器人之后会被保存多久，请看
+<a href="ai-chatbots-what-they-keep-delete-export.html">ChatGPT、Claude、Gemini 等会保存什么，删除有什么用</a>。</p>
+
+<h2>常见问题</h2>
+<h3>Ollama 会把我的聊天发到网上吗？</h3>
+<p>在我们的 Mac 测试中（Homebrew 版 Ollama 0.20.2，2026年10月20日）不会。聊天和闲置五分钟只有到 127.0.0.1 的本地连接。下载模型时会连接 registry.ollama.ai。</p>
+<h3>不下载东西时 LM Studio 会联网吗？</h3>
+<p>会。在我们的测试中，它首次启动下载了约 172 MB 的引擎，之后每次启动约 1 MB，用 lms 命令聊天时获取了模型目录，闲置时还向自己的服务器建立过约 30 个连接。我们没有看到传送聊天内容的连接。</p>
+<h3>LM Studio 能看到我下载了哪些模型吗？</h3>
+<p>默认设置下能：从 Hugging Face 的下载经由 search.lmstudio.ai/v1/hf-proxy，设置文件中 useHFProxy 为 true。</p>
+<h3>Pinku 聊天时会发送什么吗？</h3>
+<p>不会。Pinku Mac 版 1.0.7 在聊天和闲置时都没有连接。它会连接 Hugging Face 下载模型，1.0.7 版在加载已安装的模型时也会连接，用于检查模型文件。</p>
+<h3>怎样查看 Mac 上的应用发送了什么？</h3>
+<p>使用应用时在“终端”中运行 nettop -P -L 0 -s 1 -n。它会列出每个进程收发的字节，不需要管理员密码。</p>
+</div>
+        <div class="article-body article-sources">
+<h2>来源与工具</h2>
+<ul>
+<li>Apple，macOS 26.7.1 中 nettop 和 lsof 的手册（<code>man nettop</code>、<code>man lsof</code>）。</li>
+<li><a href="https://ollama.com/" target="_blank" rel="noopener">Ollama</a> 0.20.2，通过 Homebrew 安装（<code>brew install ollama</code>）。</li>
+<li><a href="https://lmstudio.ai/" target="_blank" rel="noopener">LM Studio</a> 0.4.26，Homebrew cask，从 lmstudio.ai 下载官方安装包。</li>
+<li><a href="https://apps.apple.com/app/apple-store/id6754878073?pt=118348020&amp;ct=aisagalab-local-ai-apps-network-tes-95a2&amp;mt=8">Pinku</a> Mac 版 1.0.7，由源代码编译；App Store 隐私标签为2026年10月20日所见。</li>
+<li>模型：<a href="https://ollama.com/library/qwen3" target="_blank" rel="noopener">qwen3:0.6b</a>（Ollama）和 <a href="https://huggingface.co/mlx-community/Qwen3-0.6B-4bit" target="_blank" rel="noopener">mlx-community/Qwen3-0.6B-4bit</a>（LM Studio 和 Pinku）。</li>
+</ul>
+<p>如果你重复测试得到了不同结果，请<a href="mailto:sagalabs@proton.me">告诉我们</a>，我们会补充。</p>
+<p>说明：运营本网站的 Saga Labs 也开发了 Pinku。本文对 Pinku 的描述和对其他应用一样，依据的是它的 App Store 页面，以及网络测试中我们实际测到的数据。</p></div>
+    </main>
+
+<footer>
+        <div class="container">
+            <p>&copy; 2026 Saga Labs.</p>
+            <div class="footer-social">
+                <a href="https://x.com/SagaAILab" target="_blank" aria-label="X (Twitter)">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                        <path d="M18.244 2H21l-6.5 7.43L22.5 22H15.9l-4.7-6.2L5.7 22H3l7-8.02L1.8 2h6.8l4.3 5.7L18.244 2zm-2.43 18h1.64L8.29 4H6.57l9.244 16z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/Saga-Labs" target="_blank" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                        <path d="M12 2C6.477 2 2 6.486 2 12.017c0 4.424 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.238-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.464-1.11-1.464-.908-.62.069-.607.069-.607 1.004.071 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.833.092-.647.35-1.088.636-1.338-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.748-1.026 2.748-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.337 4.695-4.565 4.943.359.31.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .268.18.58.688.481A10.019 10.019 0 0 0 22 12.017C22 6.486 17.523 2 12 2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+</html>

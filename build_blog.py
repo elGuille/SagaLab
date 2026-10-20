@@ -119,6 +119,9 @@ if __name__ == "__main__":
     import posts_oct19
     for path, size in posts_oct19.build(render, hreflang):
         print("%-42s %6d bytes" % (path, size))
+    import privacy_oct20
+    for path, size in privacy_oct20.build(render, hreflang):
+        print("%-42s %6d bytes" % (path, size))
     import guides
     for path, size in guides.build(render):
         print("%-42s %6d bytes" % (path, size))

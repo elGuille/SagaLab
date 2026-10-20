@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do local AI apps send your data to the internet? We watched Ollama, LM Studio and Pinku on a Mac | Saga Labs</title>
+    <meta name="description" content="A network test of three local AI apps on a Mac on 20 October 2026: what Ollama, LM Studio and Pinku connect to when you open them, download a model, chat and leave them idle, measured with nettop and macOS logs. Methodology and raw numbers.">
+    <link rel="canonical" href="https://aisagalab.com/blog/do-local-ai-apps-send-data-mac-test.html">
+    <link rel="alternate" hreflang="en" href="https://aisagalab.com/blog/do-local-ai-apps-send-data-mac-test.html">
+    <link rel="alternate" hreflang="ru" href="https://aisagalab.com/blog/ru/chto-lokalnye-ii-prilozheniya-otpravlyayut-v-internet.html">
+    <link rel="alternate" hreflang="zh-Hans" href="https://aisagalab.com/blog/zh/local-ai-apps-network-test-mac.html">
+    <link rel="alternate" hreflang="x-default" href="https://aisagalab.com/blog/do-local-ai-apps-send-data-mac-test.html">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../blog.css">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <script src="/umami.js" defer></script>
+
+    <meta property="og:title" content="Do local AI apps send your data to the internet? We watched Ollama, LM Studio and Pinku on a Mac">
+    <meta property="og:description" content="A network test of three local AI apps on a Mac on 20 October 2026: what Ollama, LM Studio and Pinku connect to when you open them, download a model, chat and leave them idle, measured with nettop and macOS logs. Methodology and raw numbers.">
+    <meta property="og:url" content="https://aisagalab.com/blog/do-local-ai-apps-send-data-mac-test.html">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://aisagalab.com/images/preview.jpg">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Do local AI apps send your data to the internet? We watched Ollama, LM Studio and Pinku on a Mac">
+    <meta property="twitter:description" content="A network test of three local AI apps on a Mac on 20 October 2026: what Ollama, LM Studio and Pinku connect to when you open them, download a model, chat and leave them idle, measured with nettop and macOS logs. Methodology and raw numbers.">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Do local AI apps send your data to the internet? We watched Ollama, LM Studio and Pinku on a Mac",
+      "description": "A network test of three local AI apps on a Mac on 20 October 2026: what Ollama, LM Studio and Pinku connect to when you open them, download a model, chat and leave them idle, measured with nettop and macOS logs. Methodology and raw numbers.",
+      "inLanguage": "en",
+      "articleSection": "Experiments",
+      "datePublished": "2026-10-20",
+      "dateModified": "2026-10-20",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://aisagalab.com/blog/do-local-ai-apps-send-data-mac-test.html"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Maruta G",
+        "url": "https://www.linkedin.com/in/maruta/",
+        "sameAs": [
+          "https://www.linkedin.com/in/maruta/",
+          "https://github.com/Saga-Labs",
+          "https://x.com/SagaAILab"
+        ],
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Saga Labs",
+          "url": "https://aisagalab.com/"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Saga Labs",
+        "url": "https://aisagalab.com/",
+        "sameAs": [
+          "https://aisagalab.com/",
+          "https://x.com/SagaAILab",
+          "https://github.com/Saga-Labs"
+        ]
+      }
+    },
+    {
+      "name": "Network connections of Ollama, LM Studio and Pinku on macOS, 20 October 2026",
+      "description": "Per-process connections (remote address, bytes in and out) recorded with nettop once per second while opening, downloading a model, chatting and idling, on macOS 26.7.1.",
+      "measurementTechnique": "nettop (per-process, 1-second samples), lsof, macOS unified log, app caches",
+      "variableMeasured": [
+        "remote host",
+        "bytes received",
+        "bytes sent",
+        "phase"
+      ],
+      "@type": "Dataset",
+      "inLanguage": "en",
+      "url": "https://aisagalab.com/blog/do-local-ai-apps-send-data-mac-test.html",
+      "datePublished": "2026-10-20",
+      "creator": {
+        "@type": "Organization",
+        "name": "Saga Labs",
+        "url": "https://aisagalab.com/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does Ollama send my chats to the internet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In our test on a Mac (Ollama 0.20.2 from Homebrew, 20 October 2026), no. Chatting and five minutes idle produced only local connections on 127.0.0.1. Downloading a model connects to registry.ollama.ai."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does LM Studio connect to the internet when I am not downloading anything?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. In our test it downloaded about 172 MB of engines on first launch, about 1 MB on later launches, fetched its model catalogue when chatting through the lms command, and opened about 30 connections to its servers once while idle. We saw no connection carrying the chat itself."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does LM Studio see which models I download?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "With its default settings, yes: downloads from Hugging Face went through search.lmstudio.ai/v1/hf-proxy, and the settings file had useHFProxy set to true."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Pinku send anything when I chat?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Pinku for Mac 1.0.7 made no connection while chatting or idle. It connects to Hugging Face to download a model, and in version 1.0.7 also when it loads an installed model, to check its files."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I see what an app sends on my Mac?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Run nettop -P -L 0 -s 1 -n in Terminal while you use the app. It lists every process with the bytes it sends and receives, without an administrator password."
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+<nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <h1>Saga <span class="ai-gradient">AI</span> <span class="lab-gradient">Lab</span></h1>
+            </a>
+            <div class="nav-menu">
+                <a href="/blog/" class="nav-link">Blog</a>
+                <a href="../index.html#mobile-apps" class="nav-link">Apps</a>
+                <a href="../faq.html" class="nav-link">FAQ</a>
+                <a href="mailto:sagalabs@proton.me" class="nav-link">Contact</a>
+                <a href="https://x.com/SagaAILab" target="_blank" class="icon-link" aria-label="X (Twitter)">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                        <path d="M18.244 2H21l-6.5 7.43L22.5 22H15.9l-4.7-6.2L5.7 22H3l7-8.02L1.8 2h6.8l4.3 5.7L18.244 2zm-2.43 18h1.64L8.29 4H6.57l9.244 16z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/Saga-Labs" target="_blank" class="icon-link" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                        <path d="M12 2C6.477 2 2 6.486 2 12.017c0 4.424 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.238-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.464-1.11-1.464-.908-.62.069-.607.069-.607 1.004.071 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.833.092-.647.35-1.088.636-1.338-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.748-1.026 2.748-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.337 4.695-4.565 4.943.359.31.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .268.18.58.688.481A10.019 10.019 0 0 0 22 12.017C22 6.486 17.523 2 12 2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="article-wrap">
+        <p class="article-kicker">Experiment</p>
+        <h1>Do local AI apps send your data to the internet? We watched Ollama, LM Studio and Pinku on a Mac</h1>
+        <p class="article-standfirst">While chatting, none of the three opened a single connection to the internet. Around the chat it is different: each one talks to its servers when you open it or download a model, and one keeps doing so while idle. What we saw, how we measured it, and what we could not see.</p>
+        <p class="article-meta"><a href="https://www.linkedin.com/in/maruta/" rel="author me noopener" target="_blank">Maruta G</a> &middot; 20 October 2026
+            <span class="lang-switch"> &middot; <a href="ru/chto-lokalnye-ii-prilozheniya-otpravlyayut-v-internet.html">Русский</a> &middot; <a href="zh/local-ai-apps-network-test-mac.html">简体中文</a></span>
+        </p>
+        <div class="article-body">
+<h2>The short answer</h2>
+
+<p><strong>Chatting sent nothing.</strong> In all three apps, typing a question and
+getting an answer opened no connection outside the Mac. The internet traffic
+happened around the chat:</p>
+<ul>
+<li><strong>Downloading a model</strong> always goes online, as expected: to
+Ollama's registry, to Hugging Face, or, for LM Studio, through LM Studio's own
+servers.</li>
+<li><strong>Opening the app</strong>: Ollama made no outside connection. LM Studio
+fetched about 172 MB of engines on its first launch and about 1 MB on later ones.
+Pinku made four small requests to huggingface.co when it loaded a model it already
+had.</li>
+<li><strong>Idle</strong>: Ollama and Pinku sent nothing in five minutes. LM Studio
+opened about 30 connections to its own servers once, a few seconds after a
+chat.</li>
+</ul>
+
+<h2>Results</h2>
+
+<div class="table-scroll"><table>
+<thead><tr><th>App</th><th>Opening</th><th>Downloading a model</th><th>Chatting</th><th>Idle, 5 minutes</th></tr></thead>
+<tbody>
+<tr><td>Ollama 0.20.2 (Homebrew)</td><td>Nothing outside the Mac; the server listens only on 127.0.0.1</td><td>registry.ollama.ai and Cloudflare storage: 524 MB in, 125 KB out</td><td>Nothing outside the Mac</td><td>Nothing outside the Mac</td></tr>
+<tr><td>LM Studio 0.4.26</td><td>First launch: about 172 MB from extensions.lmstudio.ai (engines), without any click. Later launches: about 1 MB from lmstudio.ai</td><td>Through search.lmstudio.ai/v1/hf-proxy: 352 MB in, 84 KB out</td><td>Nothing about the chat itself; with the default command, LM Studio also fetched its model catalogue (about 150 KB in, 12 KB out)</td><td>One burst of about 30 connections to lmstudio.ai addresses, 3 MB in, 31 KB out, then nothing</td></tr>
+<tr><td>Pinku for Mac 1.0.7</td><td>No model yet: nothing. With a model installed: 4 requests to huggingface.co, about 35 KB in and 23 KB out</td><td>huggingface.co and Hugging Face's storage on Amazon: about 350 MB for a 0.4 GB model</td><td>Nothing</td><td>Nothing</td></tr>
+</tbody>
+</table></div>
+
+<p class="article-note">Measured on one Mac on 20 October 2026. &ldquo;Nothing&rdquo; means
+nettop showed no connection from the app's processes to any address outside the
+Mac during the whole phase; connections to 127.0.0.1 (the app talking to itself)
+are not counted.</p>
+
+<h2>Ollama</h2>
+
+<p>We used the Homebrew build, which runs as a background service. When it starts,
+it opens a server on 127.0.0.1:11434 and a helper process that talks to it, both
+local. <code>ollama pull qwen3:0.6b</code> went to registry.ollama.ai and then
+downloaded 524 MB from Cloudflare storage. <code>ollama run</code> with a question
+only talked to the local server, and so did the following five minutes. This
+covers the command-line build only: the Ollama app you download from ollama.com
+has its own window and updater, which we did not test.</p>
+
+<h2>LM Studio</h2>
+
+<p>On its first launch, before we touched anything, LM Studio downloaded about 172
+MB from extensions.lmstudio.ai. Its own download log lists what: the llama.cpp
+engine, a Python runtime and a tool called harmony. Later launches fetched about 1
+MB from lmstudio.ai addresses.</p>
+
+<p>Model downloads do not go straight to Hugging Face. We asked for
+<em>mlx-community/Qwen3-0.6B-4bit</em> and LM Studio's log shows every file coming
+from <code>search.lmstudio.ai/v1/hf-proxy/&hellip;</code>, a proxy run by LM
+Studio. Its settings file, untouched, had <code>"useHFProxy": true</code>. That
+means LM Studio's servers see which models you download. It does not mean they see
+your chats.</p>
+
+<p>We could not drive LM Studio's chat window with our tools, so we chatted through
+<code>lms chat</code>, LM Studio's own command, which uses the same engine. With
+the default command, LM Studio fetched its model catalogue from lmstudio.ai while
+answering: about 150 KB down and 12 KB up. With the
+<code>--dont-fetch-catalog</code> option, the same kind of question produced no
+outside connection at all. During the five idle minutes that followed, LM Studio
+opened about 30 connections to lmstudio.ai addresses once, between 45 and 60
+seconds in (3 MB down, 31 KB up, under 3 KB up per connection), and nothing after
+that. The local server listened only on 127.0.0.1.</p>
+
+<h2>Pinku</h2>
+
+<p>Pinku is an iPhone and Mac app that runs open models on the device. Pinku keeps chats on the device: they never leave it. Apple's privacy label for Pinku lists only purchase history and an anonymous ID, used for Pinku Pro.
+The Mac App Store version is 1.0.7. Pinku was not installed on our test Mac, so we
+built 1.0.7 from its source and ran it under a separate app identifier, so it
+started like a fresh install.</p>
+
+<ul>
+<li><strong>First launch, no model</strong>: no connection in 60 seconds.</li>
+<li><strong>Downloading the smallest model</strong> (Qwen3 0.6B, 0.4 GB): requests to
+huggingface.co for the model's files, and the weights from Hugging Face's storage
+on Amazon servers. Our recording started 22 seconds after the download began, so it
+caught about 347 MB; the app's network cache lists only huggingface.co
+addresses.</li>
+<li><strong>Opening with a model installed</strong>: four HTTPS requests to
+huggingface.co within seven seconds, about 35 KB down and 23 KB up. The answers
+were &ldquo;304 Not Modified&rdquo;: Pinku was checking that the model files on the
+Mac were still the current version. The requests name the model, and Hugging Face
+sees the Mac's IP address. They contain no chat.</li>
+<li><strong>Chatting</strong> (one question, answer in about 85 seconds): no
+connection.</li>
+<li><strong>Idle, 5 minutes</strong>: no connection.</li>
+</ul>
+
+<p>Pinku's App Store description does not mention this check at launch; we
+found it in this test. Purchases of
+Pinku Pro go through Apple's own system process, which talks to Apple; we could
+not attribute that traffic to one app with these tools, so purchases are not part
+of the results.</p>
+
+<h2>How we measured</h2>
+
+<ol>
+<li>One Mac with Apple silicon, macOS 26.7.1, on Wi-Fi, on 20 October 2026.
+No changes to security settings, no administrator password, no new
+permissions.</li>
+<li><strong>nettop</strong>, the network monitor built into macOS, recorded every
+socket of every process once per second, with remote address and bytes in and
+out. We kept only the processes of each app.</li>
+<li><strong>lsof</strong> to see which ports each app listened on.</li>
+<li>Host names: from each app's own records (Pinku's network cache, LM Studio's
+download log), from macOS logs and from DNS lookups of the addresses.</li>
+<li>Four phases per app: opening (60 to 90 seconds), downloading the smallest
+model, one question (<em>Write three short sentences about the sea</em>), and five
+minutes idle with the app open.</li>
+<li>Afterwards we removed LM Studio, the models we downloaded and our Pinku
+build.</li>
+</ol>
+
+<h2>What we could not see</h2>
+
+<ul>
+<li><strong>Inside the connections.</strong> They are encrypted. Without capturing
+packets (which needs an administrator password) we see where data went and how
+much, not what it said.</li>
+<li><strong>Very short connections</strong> that open and close within one second
+can be missed by nettop. For Pinku and LM Studio the apps' own logs and caches
+agreed with what nettop showed.</li>
+<li><strong>The iPhone.</strong> All of this is on a Mac. Apps on iOS cannot be
+inspected this way without other tools.</li>
+<li><strong>Longer periods.</strong> Five minutes of idle is not a day. An app that
+checks for updates once a day would not show up.</li>
+<li><strong>Other apps.</strong> We tested three. Jan, GPT4All, Msty and others were
+not part of this test.</li>
+</ul>
+
+<h2>How to check an app yourself</h2>
+
+<p>Open Terminal and run <code>nettop -P -L 0 -s 1 -n</code> while you use the app;
+each line shows a process and its bytes in and out. For a single app, run
+<code>nettop -p</code> followed by its process name. To see where it is listening,
+run <code>lsof -nP -iTCP -sTCP:LISTEN</code>. Do it once while you chat and once
+while you download a model, and you will see the difference this article is
+about.</p>
+
+<p>For what the cloud chatbots keep once your question reaches them, see
+<a href="what-ai-chatbots-keep-when-you-delete-chats.html">what ChatGPT, Claude, Gemini and others keep, and what deleting
+does</a>.</p>
+
+<h2>Questions people ask</h2>
+<h3>Does Ollama send my chats to the internet?</h3>
+<p>In our test on a Mac (Ollama 0.20.2 from Homebrew, 20 October 2026), no. Chatting and five minutes idle produced only local connections on 127.0.0.1. Downloading a model connects to registry.ollama.ai.</p>
+<h3>Does LM Studio connect to the internet when I am not downloading anything?</h3>
+<p>Yes. In our test it downloaded about 172 MB of engines on first launch, about 1 MB on later launches, fetched its model catalogue when chatting through the lms command, and opened about 30 connections to its servers once while idle. We saw no connection carrying the chat itself.</p>
+<h3>Does LM Studio see which models I download?</h3>
+<p>With its default settings, yes: downloads from Hugging Face went through search.lmstudio.ai/v1/hf-proxy, and the settings file had useHFProxy set to true.</p>
+<h3>Does Pinku send anything when I chat?</h3>
+<p>No. Pinku for Mac 1.0.7 made no connection while chatting or idle. It connects to Hugging Face to download a model, and in version 1.0.7 also when it loads an installed model, to check its files.</p>
+<h3>How can I see what an app sends on my Mac?</h3>
+<p>Run nettop -P -L 0 -s 1 -n in Terminal while you use the app. It lists every process with the bytes it sends and receives, without an administrator password.</p>
+</div>
+        <div class="article-body article-sources">
+<h2>Sources and tools</h2>
+<ul>
+<li>Apple, nettop and lsof manual pages (<code>man nettop</code>, <code>man lsof</code>) in macOS 26.7.1.</li>
+<li><a href="https://ollama.com/" target="_blank" rel="noopener">Ollama</a> 0.20.2, installed with Homebrew (<code>brew install ollama</code>).</li>
+<li><a href="https://lmstudio.ai/" target="_blank" rel="noopener">LM Studio</a> 0.4.26, Homebrew cask that downloads the official installer from lmstudio.ai.</li>
+<li><a href="https://apps.apple.com/app/apple-store/id6754878073?pt=118348020&amp;ct=aisagalab-do-local-ai-apps-send-dat-3cc1&amp;mt=8">Pinku</a> for Mac 1.0.7, built from its source code; App Store privacy label as shown on 20 October 2026.</li>
+<li>Models: <a href="https://ollama.com/library/qwen3" target="_blank" rel="noopener">qwen3:0.6b</a> (Ollama) and <a href="https://huggingface.co/mlx-community/Qwen3-0.6B-4bit" target="_blank" rel="noopener">mlx-community/Qwen3-0.6B-4bit</a> (LM Studio and Pinku).</li>
+</ul>
+<p>If you repeat the test and get different results,
+<a href="mailto:sagalabs@proton.me">tell us</a>; we will add them.</p>
+<p>Transparency: Saga Labs, which publishes this site, also makes Pinku. It is described with the same kind of facts as every other app here: its App Store listing and, in the network test, what we measured.</p></div>
+    </main>
+
+<footer>
+        <div class="container">
+            <p>&copy; 2026 Saga Labs.</p>
+            <div class="footer-social">
+                <a href="https://x.com/SagaAILab" target="_blank" aria-label="X (Twitter)">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                        <path d="M18.244 2H21l-6.5 7.43L22.5 22H15.9l-4.7-6.2L5.7 22H3l7-8.02L1.8 2h6.8l4.3 5.7L18.244 2zm-2.43 18h1.64L8.29 4H6.57l9.244 16z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/Saga-Labs" target="_blank" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                        <path d="M12 2C6.477 2 2 6.486 2 12.017c0 4.424 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.238-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.464-1.11-1.464-.908-.62.069-.607.069-.607 1.004.071 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.833.092-.647.35-1.088.636-1.338-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.748-1.026 2.748-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.337 4.695-4.565 4.943.359.31.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .268.18.58.688.481A10.019 10.019 0 0 0 22 12.017C22 6.486 17.523 2 12 2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
