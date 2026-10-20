@@ -415,8 +415,8 @@ INDEX_EN = """
             <li>
                 <a href="best-private-ai-apps-iphone.html">Best private AI apps that keep your chats on your iPhone (2026)</a>
                 <p>Six on-device AI apps ranked by how little leaves the phone:
-                privacy labels, cloud options and open source. Ours is first,
-                disclosed.</p>
+                privacy labels, cloud options and open source. Pinku, ours, is
+                fourth.</p>
             </li>
             <li>
                 <a href="best-photo-vault-apps-album-password-iphone.html">Best photo vault apps with a separate password for each album (2026)</a>
@@ -524,7 +524,7 @@ INDEX_ES = """
                 <a href="mejores-apps-ia-privada-iphone.html">Las mejores apps de IA privada que guardan tus chats en el iPhone (2026)</a>
                 <p>Seis apps de IA en el dispositivo ordenadas por lo poco que sale
                 del m&oacute;vil: etiquetas de privacidad, nube y c&oacute;digo
-                abierto. La primera es nuestra, y lo decimos.</p>
+                abierto. Pinku, nuestra, va cuarta.</p>
             </li>
             <li>
                 <a href="mejores-apps-ocultar-fotos-contrasena-por-album.html">Las mejores apps para ocultar fotos con contraseña por álbum (2026)</a>
@@ -2878,7 +2878,7 @@ corregimos la página.</p>
 # instrucciones propias (Pro) que no salen del dispositivo y ningun servidor
 # que modere o registre nada.
 
-PRIVATE_RANK = [_N[k] for k in ("pinku", "locally", "pocketpal", "privatellm", "enclave", "privacyai")]
+PRIVATE_RANK = [_N[k] for k in ("locally", "pocketpal", "privatellm", "pinku", "enclave", "privacyai")]
 
 _PRIV_WHY_EN = _rank_box("Why Pinku is #1", [
     "The conversation never leaves the device: the model runs on your iPhone, iPad or Mac, with no network call to answer.",
@@ -2899,7 +2899,7 @@ _PRIV_WHY_ES = _rank_box("Por qué Pinku es la n.º 1", [
 ])
 
 A9_EN_BODY = ("""
-<p><strong>Disclosure: we make Pinku, the app ranked first here.</strong> What we
+<p><strong>Disclosure: we make Pinku, ranked fourth here.</strong> What we
 say about the other apps comes from their own App Store pages, checked on
 %(date)s.</p>
 
@@ -2914,14 +2914,14 @@ conversation has nowhere to go.</p>
 <h2>The ranking</h2>
 
 <ol>
-<li><a href="%(pinku)s">Pinku</a>: best overall, no cloud path at all.</li>
 <li><a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a>: best free private chat.</li>
 <li><a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a>: best if you want code anyone can audit.</li>
 <li><a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a>: best pay-once private chat.</li>
+<li><a href="%(pinku)s">Pinku</a>: no cloud path at all; its label lists purchase history and an anonymous user ID for Pro.</li>
 <li><a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a>: private locally, with an optional cloud tier.</li>
 <li><a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a>: local models plus agents, with more data collected.</li>
 </ol>
-""" + _PRIV_WHY_EN + """
+
 <h2>How we ranked them</h2>
 
 <p>Three questions, in order: does a normal conversation leave the device? What
@@ -2931,10 +2931,10 @@ or a cloud mode that could send a chat elsewhere?</p>
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Privacy label</th><th>Cloud models</th><th>Source code</th><th>Price (US)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(pinku)s">Pinku</a> (ours)</td><td>Purchase history and an anonymous user ID (for Pro); chats stay on the device</td><td>None</td><td>Closed</td><td>Free; Pro $9.99 one-time</td></tr>
-<tr><td>2. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI</a></td><td>Data Not Collected</td><td>Not mentioned</td><td>Closed</td><td>Free</td></tr>
-<tr><td>3. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Data Not Collected</td><td>Not mentioned</td><td>Open (MIT)</td><td>Free</td></tr>
-<tr><td>4. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>Data Not Collected</td><td>Not mentioned</td><td>Closed</td><td>$4.99 upfront</td></tr>
+<tr><td>1. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI</a></td><td>Data Not Collected</td><td>Not mentioned</td><td>Closed</td><td>Free</td></tr>
+<tr><td>2. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Data Not Collected</td><td>Not mentioned</td><td>Open (MIT)</td><td>Free</td></tr>
+<tr><td>3. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>Data Not Collected</td><td>Not mentioned</td><td>Closed</td><td>$4.99 upfront</td></tr>
+<tr><td>4. <a href="%(pinku)s">Pinku</a> (ours)</td><td>Purchase history and an anonymous user ID (for Pro); chats stay on the device</td><td>None</td><td>Closed</td><td>Free; Pro $9.99 one-time</td></tr>
 <tr><td>5. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Data Not Linked to You</td><td>Optional, with Pro</td><td>Closed</td><td>Free; Pro $9.99</td></tr>
 <tr><td>6. <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a></td><td>Data Used to Track You</td><td>Optional, by subscription</td><td>Closed</td><td>Free; $3.99/week to $99.99/year</td></tr>
 </tbody>
@@ -2947,7 +2947,26 @@ identifiers and usage data that may be used to track you. &ldquo;Not
 mentioned&rdquo; means the App Store description does not mention cloud models.
 Checked on %(date)s.</p>
 
-<h2>1. Pinku</h2>
+<h2>1. Locally AI by LM Studio</h2>
+
+<p>Free, no login, Apple MLX, image understanding, and a <em>Data Not
+Collected</em> label. From the team behind LM Studio, with the most ratings of any
+app here. If you want a free private chat and nothing else, it is hard to fault.</p>
+
+<h2>2. PocketPal AI</h2>
+
+<p>The only app here whose <a href="%(gh)s" target="_blank" rel="noopener">source
+code is public</a>, under the MIT licence, so its privacy claims can be checked
+rather than taken on trust. Free, runs any GGUF model from Hugging Face. You choose
+models yourself, so mind your phone's memory.</p>
+
+<h2>3. Private LLM</h2>
+
+<p>$4.99 once, <em>Data Not Collected</em>, Siri and Shortcuts, models up to 14B
+parameters on a Mac. Paying upfront also means no in-app purchase or subscription
+account.</p>
+
+<h2>4. Pinku</h2>
 
 <p><a href="%(pinku)s">Pinku</a> runs twelve curated open models on iPhone, iPad
 and Mac with Apple MLX. There is no account, no server and no cloud option, which
@@ -2957,25 +2976,6 @@ purchases. Pinku Pro adds custom instructions, written by you and kept on the
 device, and dictation recognised on the device, never sent to a server. Where
 others beat it: Pinku's code is not public, so you are trusting our label and our
 word, which PocketPal does not ask of you.</p>
-
-<h2>2. Locally AI by LM Studio</h2>
-
-<p>Free, no login, Apple MLX, image understanding, and a <em>Data Not
-Collected</em> label. From the team behind LM Studio, with the most ratings of any
-app here. If you want a free private chat and nothing else, it is hard to fault.</p>
-
-<h2>3. PocketPal AI</h2>
-
-<p>The only app here whose <a href="%(gh)s" target="_blank" rel="noopener">source
-code is public</a>, under the MIT licence, so its privacy claims can be checked
-rather than taken on trust. Free, runs any GGUF model from Hugging Face. You choose
-models yourself, so mind your phone's memory.</p>
-
-<h2>4. Private LLM</h2>
-
-<p>$4.99 once, <em>Data Not Collected</em>, Siri and Shortcuts, models up to 14B
-parameters on a Mac. Paying upfront also means no in-app purchase or subscription
-account.</p>
 
 <h2>5. Enclave</h2>
 
@@ -3027,7 +3027,7 @@ and we will correct the page.</p>
 """ % dict(_OFF, date=OFF_DATE_EN)
 
 A9_ES_BODY = ("""
-<p><strong>Aviso: Pinku, la app que va primera, es nuestra.</strong> Lo que decimos
+<p><strong>Aviso: Pinku, que va cuarta, es nuestra.</strong> Lo que decimos
 de las demás sale de su propia ficha del App Store, comprobada el %(date)s.</p>
 
 <p>ChatGPT, Claude y Gemini guardan tus conversaciones en sus servidores, con
@@ -3041,14 +3041,14 @@ conversación no tiene adónde ir.</p>
 <h2>El ranking</h2>
 
 <ol>
-<li><a href="%(pinku)s">Pinku</a>: la mejor en conjunto, sin ningún camino a la nube.</li>
 <li><a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a>: el mejor chat privado gratuito.</li>
 <li><a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a>: la mejor si quieres un código que cualquiera pueda revisar.</li>
 <li><a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a>: el mejor chat privado de pago único.</li>
+<li><a href="%(pinku)s">Pinku</a>: sin ningún camino a la nube; su etiqueta indica historial de compras y un ID anónimo para Pro.</li>
 <li><a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a>: privada en local, con un nivel en la nube opcional.</li>
 <li><a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a>: modelos locales y agentes, con más datos recopilados.</li>
 </ol>
-""" + _PRIV_WHY_ES + """
+
 <h2>Cómo las hemos ordenado</h2>
 
 <p>Tres preguntas, por este orden: ¿sale del dispositivo una conversación normal?
@@ -3058,10 +3058,10 @@ cuenta o un modo en la nube que pueda mandar un chat a otra parte?</p>
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Etiqueta de privacidad</th><th>Modelos en la nube</th><th>Código</th><th>Precio (EE. UU.)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(pinku)s">Pinku</a> (nuestra)</td><td>Historial de compras e ID de usuario anónimo (para Pro); los chats no salen del dispositivo</td><td>Ninguno</td><td>Cerrado</td><td>Gratis; Pro 9,99 $, pago único</td></tr>
-<tr><td>2. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI</a></td><td>Datos no recopilados</td><td>No los menciona</td><td>Cerrado</td><td>Gratis</td></tr>
-<tr><td>3. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Datos no recopilados</td><td>No los menciona</td><td>Abierto (MIT)</td><td>Gratis</td></tr>
-<tr><td>4. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>Datos no recopilados</td><td>No los menciona</td><td>Cerrado</td><td>4,99 $ por adelantado</td></tr>
+<tr><td>1. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI</a></td><td>Datos no recopilados</td><td>No los menciona</td><td>Cerrado</td><td>Gratis</td></tr>
+<tr><td>2. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Datos no recopilados</td><td>No los menciona</td><td>Abierto (MIT)</td><td>Gratis</td></tr>
+<tr><td>3. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>Datos no recopilados</td><td>No los menciona</td><td>Cerrado</td><td>4,99 $ por adelantado</td></tr>
+<tr><td>4. <a href="%(pinku)s">Pinku</a> (nuestra)</td><td>Historial de compras e ID de usuario anónimo (para Pro); los chats no salen del dispositivo</td><td>Ninguno</td><td>Cerrado</td><td>Gratis; Pro 9,99 $, pago único</td></tr>
 <tr><td>5. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Datos no vinculados a ti</td><td>Opcionales, con Pro</td><td>Cerrado</td><td>Gratis; Pro 9,99 $</td></tr>
 <tr><td>6. <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a></td><td>Datos usados para rastrearte</td><td>Opcionales, con suscripción</td><td>Cerrado</td><td>Gratis; de 3,99 $/semana a 99,99 $/año</td></tr>
 </tbody>
@@ -3074,7 +3074,28 @@ vinculados a ti. La de Privacy AI incluye identificadores y datos de uso que pue
 usarse para rastrearte. &laquo;No los menciona&raquo; significa que la descripción
 del App Store no habla de modelos en la nube. Comprobado el %(date)s.</p>
 
-<h2>1. Pinku</h2>
+<h2>1. Locally AI by LM Studio</h2>
+
+<p>Gratis, sin registro, con Apple MLX, entiende imágenes y su etiqueta dice
+<em>Datos no recopilados</em>. La hace el equipo de LM Studio y es la que más
+valoraciones tiene. Si quieres un chat privado gratis y nada más, poco que
+reprocharle.</p>
+
+<h2>2. PocketPal AI</h2>
+
+<p>La única de la lista con el <a href="%(gh)s" target="_blank"
+rel="noopener">código publicado</a>, con licencia MIT, así que lo que dice de
+privacidad se puede comprobar en lugar de creérselo. Gratis, ejecuta cualquier
+modelo GGUF de Hugging Face. Los modelos los eliges tú, así que vigila la memoria
+del móvil.</p>
+
+<h2>3. Private LLM</h2>
+
+<p>4,99 $ una vez, <em>Datos no recopilados</em>, Siri y Atajos, y modelos de hasta
+14B parámetros en un Mac. Pagar por adelantado también significa no tener compras
+dentro de la app ni cuenta de suscripción.</p>
+
+<h2>4. Pinku</h2>
 
 <p><a href="%(pinku)s">Pinku</a> ejecuta doce modelos abiertos seleccionados en
 iPhone, iPad y Mac con Apple MLX. No hay cuenta, ni servidor, ni opción en la nube,
@@ -3085,27 +3106,6 @@ escritas por ti y guardadas en el dispositivo, y dictado reconocido en el
 dispositivo, que nunca va a un servidor. En qué le ganan otras: el código de Pinku
 no es público, así que te fías de nuestra etiqueta y de nuestra palabra, algo que
 PocketPal no te pide.</p>
-
-<h2>2. Locally AI by LM Studio</h2>
-
-<p>Gratis, sin registro, con Apple MLX, entiende imágenes y su etiqueta dice
-<em>Datos no recopilados</em>. La hace el equipo de LM Studio y es la que más
-valoraciones tiene. Si quieres un chat privado gratis y nada más, poco que
-reprocharle.</p>
-
-<h2>3. PocketPal AI</h2>
-
-<p>La única de la lista con el <a href="%(gh)s" target="_blank"
-rel="noopener">código publicado</a>, con licencia MIT, así que lo que dice de
-privacidad se puede comprobar en lugar de creérselo. Gratis, ejecuta cualquier
-modelo GGUF de Hugging Face. Los modelos los eliges tú, así que vigila la memoria
-del móvil.</p>
-
-<h2>4. Private LLM</h2>
-
-<p>4,99 $ una vez, <em>Datos no recopilados</em>, Siri y Atajos, y modelos de hasta
-14B parámetros en un Mac. Pagar por adelantado también significa no tener compras
-dentro de la app ni cuenta de suscripción.</p>
 
 <h2>5. Enclave</h2>
 
@@ -3449,7 +3449,7 @@ RANK_ARTICLES = [
         es_path="blog/es/mejores-apps-ia-privada-iphone.html",
         en=dict(
             h1="Best private AI apps that keep your chats on your iPhone (2026)",
-            desc=("Pinku, Locally AI, PocketPal, Private LLM, Enclave and Privacy AI ranked by how little "
+            desc=("Locally AI, PocketPal, Private LLM, Pinku, Enclave and Privacy AI ranked by how little "
                   "leaves the device: privacy labels, cloud options and open source, from their App Store "
                   "pages. Written by Pinku's maker, disclosed."),
             kicker="Privacy", section="Privacy",
@@ -3458,7 +3458,7 @@ RANK_ARTICLES = [
             body=A9_EN_BODY, sources=A9_EN_SOURCES, rank=PRIVATE_RANK),
         es=dict(
             h1="Las mejores apps de IA privada que guardan tus chats en el iPhone (2026)",
-            desc=("Pinku, Locally AI, PocketPal, Private LLM, Enclave y Privacy AI ordenadas por lo poco que "
+            desc=("Locally AI, PocketPal, Private LLM, Pinku, Enclave y Privacy AI ordenadas por lo poco que "
                   "sale del dispositivo: etiquetas de privacidad, opciones en la nube y c\u00f3digo abierto, "
                   "seg\u00fan su ficha del App Store. Escrito por quien hace Pinku, y lo decimos."),
             kicker="Privacidad", section="Privacidad",
