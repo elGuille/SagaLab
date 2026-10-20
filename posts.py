@@ -362,6 +362,22 @@ INDEX_EN = """
         <div class="article-body">
         <ul class="post-list">
             <li>
+                <a href="best-ai-apps-iphone-without-apple-intelligence.html">Best AI apps for iPhones without Apple Intelligence (2026)</a>
+                <p>iPhone 11 to 15 run iOS 27 without Apple Intelligence. Pinku, Locally AI,
+                PocketPal, Private LLM, ChatGPT, Gemini, Claude and Vibe ranked: offline or
+                cloud, requirements and price. Ours is first, disclosed.</p>
+            </li>
+            <li>
+                <a href="does-apple-intelligence-work-offline-iphone.html">Does Apple Intelligence work offline? What works without internet on iPhone (2026)</a>
+                <p>What Apple's own pages say runs on the device and what goes to Private
+                Cloud Compute, and how to check it on your iPhone.</p>
+            </li>
+            <li>
+                <a href="best-siri-ai-alternatives-iphone-eu.html">Best Siri AI alternatives for iPhone in the EU (2026)</a>
+                <p>Siri AI is not available on iPhone in the EU. What you keep, what you lose
+                and the apps that cover each part.</p>
+            </li>
+            <li>
                 <a href="best-white-noise-sleep-sound-apps-iphone.html">Best white noise and sleep sound apps for iPhone (2026)</a>
                 <p>Drop, White Noise Lite, Rain Rain, Dark Noise, myNoise, BetterSleep,
                 Calm and Endel ranked: sounds, mixing, sleep timer and how each charges.
@@ -467,6 +483,22 @@ INDEX_ES = """
         </p>
         <div class="article-body">
         <ul class="post-list">
+            <li>
+                <a href="mejores-apps-ia-iphone-sin-apple-intelligence.html">Las mejores apps de IA para iPhone sin Apple Intelligence (2026)</a>
+                <p>Del iPhone 11 al 15 tienen iOS 27 sin Apple Intelligence. Pinku, Locally AI,
+                PocketPal, Private LLM, ChatGPT, Gemini, Claude y Vibe ordenadas: sin conexi&oacute;n
+                o en la nube, requisitos y precio. La primera es nuestra, y lo decimos.</p>
+            </li>
+            <li>
+                <a href="apple-intelligence-funciona-sin-internet-iphone.html">&iquest;Funciona Apple Intelligence sin internet? Lo que va sin conexi&oacute;n en el iPhone (2026)</a>
+                <p>Qu&eacute; dicen las p&aacute;ginas de Apple que se ejecuta en el dispositivo y qu&eacute; va a
+                Private Cloud Compute, y c&oacute;mo comprobarlo en tu iPhone.</p>
+            </li>
+            <li>
+                <a href="mejores-alternativas-siri-ai-iphone-ue.html">Las mejores alternativas a Siri AI en el iPhone en la UE (2026)</a>
+                <p>Siri AI no est&aacute; disponible en el iPhone en la UE. Qu&eacute; conservas, qu&eacute; pierdes
+                y qu&eacute; apps cubren cada parte.</p>
+            </li>
             <li>
                 <a href="mejores-apps-ruido-blanco-sonidos-dormir-iphone.html">Las mejores apps de ruido blanco y sonidos para dormir en iPhone (2026)</a>
                 <p>Drop, White Noise Lite, Rain Rain, Dark Noise, myNoise, BetterSleep,
