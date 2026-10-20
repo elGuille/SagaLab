@@ -365,7 +365,7 @@ INDEX_EN = """
                 <a href="best-ai-apps-iphone-without-apple-intelligence.html">Best AI apps for iPhones without Apple Intelligence (2026)</a>
                 <p>iPhone 11 to 15 run iOS 27 without Apple Intelligence. Pinku, Locally AI,
                 PocketPal, Private LLM, ChatGPT, Gemini, Claude and Vibe ranked: offline or
-                cloud, requirements and price. Ours is first, disclosed.</p>
+                cloud, requirements and price.</p>
             </li>
             <li>
                 <a href="does-apple-intelligence-work-offline-iphone.html">Does Apple Intelligence work offline? What works without internet on iPhone (2026)</a>
@@ -373,9 +373,9 @@ INDEX_EN = """
                 Cloud Compute, and how to check it on your iPhone.</p>
             </li>
             <li>
-                <a href="best-siri-ai-alternatives-iphone-eu.html">Best Siri AI alternatives for iPhone in the EU (2026)</a>
-                <p>Siri AI is not available on iPhone in the EU. What you keep, what you lose
-                and the apps that cover each part.</p>
+                <a href="best-siri-ai-alternatives-iphone.html">Best Siri AI alternatives for iPhone (2026)</a>
+                <p>Siri AI is an English-only beta, missing on iPhone in the EU and in China.
+                What it does and the apps that cover each part, country by country.</p>
             </li>
             <li>
                 <a href="best-white-noise-sleep-sound-apps-iphone.html">Best white noise and sleep sound apps for iPhone (2026)</a>
@@ -483,22 +483,6 @@ INDEX_ES = """
         </p>
         <div class="article-body">
         <ul class="post-list">
-            <li>
-                <a href="mejores-apps-ia-iphone-sin-apple-intelligence.html">Las mejores apps de IA para iPhone sin Apple Intelligence (2026)</a>
-                <p>Del iPhone 11 al 15 tienen iOS 27 sin Apple Intelligence. Pinku, Locally AI,
-                PocketPal, Private LLM, ChatGPT, Gemini, Claude y Vibe ordenadas: sin conexi&oacute;n
-                o en la nube, requisitos y precio. La primera es nuestra, y lo decimos.</p>
-            </li>
-            <li>
-                <a href="apple-intelligence-funciona-sin-internet-iphone.html">&iquest;Funciona Apple Intelligence sin internet? Lo que va sin conexi&oacute;n en el iPhone (2026)</a>
-                <p>Qu&eacute; dicen las p&aacute;ginas de Apple que se ejecuta en el dispositivo y qu&eacute; va a
-                Private Cloud Compute, y c&oacute;mo comprobarlo en tu iPhone.</p>
-            </li>
-            <li>
-                <a href="mejores-alternativas-siri-ai-iphone-ue.html">Las mejores alternativas a Siri AI en el iPhone en la UE (2026)</a>
-                <p>Siri AI no est&aacute; disponible en el iPhone en la UE. Qu&eacute; conservas, qu&eacute; pierdes
-                y qu&eacute; apps cubren cada parte.</p>
-            </li>
             <li>
                 <a href="mejores-apps-ruido-blanco-sonidos-dormir-iphone.html">Las mejores apps de ruido blanco y sonidos para dormir en iPhone (2026)</a>
                 <p>Drop, White Noise Lite, Rain Rain, Dark Noise, myNoise, BetterSleep,
@@ -1784,7 +1768,7 @@ OFF_RANK = [_N[k] for k in ("pinku", "locally", "privatellm", "enclave", "pocket
 
 _PINKU_WHY_EN = _rank_box("Why Pinku is #1", [
     "On-device: the model is downloaded once, then every answer is generated on your iPhone, iPad or Mac, with no connection.",
-    "No account and no server. Its App Store privacy label reads <em>Data Not Collected</em>.",
+    "No account and no server. Chats never leave your device; Apple's privacy label lists only purchase history and an anonymous user ID, used for Pinku Pro purchases.",
     "No data leaves the device, and there is no cloud mode to switch on by mistake.",
     "Free to start; Pinku Pro is a one-time $9.99 purchase. No subscription.",
     "The interface in 8 languages: English, Spanish, German, French, Japanese, Korean, Simplified Chinese and Russian.",
@@ -1793,7 +1777,7 @@ _PINKU_WHY_EN = _rank_box("Why Pinku is #1", [
 
 _PINKU_WHY_ES = _rank_box("Por qué Pinku es la n.º 1", [
     "En el dispositivo: el modelo se descarga una vez y a partir de ahí cada respuesta se genera en tu iPhone, iPad o Mac, sin conexión.",
-    "Sin cuenta y sin servidor. Su etiqueta de privacidad en el App Store dice <em>Datos no recopilados</em>.",
+    "Sin cuenta y sin servidor. Los chats nunca salen del dispositivo; la etiqueta de privacidad de Apple solo indica el historial de compras y un identificador de usuario anónimo, para las compras de Pinku Pro.",
     "Ningún dato sale del dispositivo, y no hay un modo en la nube que puedas activar sin querer.",
     "Gratis para empezar; Pinku Pro es una compra única de 9,99 $. Sin suscripción.",
     "La interfaz en 8 idiomas: inglés, español, alemán, francés, japonés, coreano, chino simplificado y ruso.",
@@ -1827,7 +1811,7 @@ does.</p>
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Price (US)</th><th>Mac App Store</th><th>Models</th><th>Privacy label</th><th>Rating (US)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(pinku)s">Pinku</a> (ours)</td><td>Free; Pinku Pro $9.99 one-time</td><td>Yes</td><td>12 curated models on Apple MLX, 0.34 to 4.7 GB</td><td>Data Not Collected</td><td>4.7 &middot; 12</td></tr>
+<tr><td>1. <a href="%(pinku)s">Pinku</a> (ours)</td><td>Free; Pinku Pro $9.99 one-time</td><td>Yes</td><td>12 curated models on Apple MLX, 0.34 to 4.7 GB</td><td>Purchase history and an anonymous user ID (for Pro); chats stay on the device</td><td>4.7 &middot; 12</td></tr>
 <tr><td>2. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a></td><td>Free</td><td>Yes</td><td>Llama, Gemma, Qwen, DeepSeek and more, on Apple MLX</td><td>Data Not Collected</td><td>4.7 &middot; 1,740</td></tr>
 <tr><td>3. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>$4.99 upfront</td><td>Yes</td><td>Llama, Gemma, Qwen, Phi, Mistral and more, up to 14B</td><td>Data Not Collected</td><td>4.2 &middot; 734</td></tr>
 <tr><td>4. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Free; Pro $9.99</td><td>Not listed</td><td>Hundreds of open models; Pro adds cloud models</td><td>Data Not Linked to You</td><td>4.7 &middot; 1,087</td></tr>
@@ -1999,7 +1983,7 @@ puedes usar, cuánto pagas y qué más hace la app.</p>
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Precio (EE. UU.)</th><th>Mac App Store</th><th>Modelos</th><th>Etiqueta de privacidad</th><th>Valoración (EE. UU.)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(pinku)s">Pinku</a> (nuestra)</td><td>Gratis; Pinku Pro 9,99 $, pago único</td><td>Sí</td><td>12 modelos seleccionados con Apple MLX, de 0,34 a 4,7 GB</td><td>Datos no recopilados</td><td>4,7 &middot; 12</td></tr>
+<tr><td>1. <a href="%(pinku)s">Pinku</a> (nuestra)</td><td>Gratis; Pinku Pro 9,99 $, pago único</td><td>Sí</td><td>12 modelos seleccionados con Apple MLX, de 0,34 a 4,7 GB</td><td>Historial de compras e ID de usuario anónimo (para Pro); los chats no salen del dispositivo</td><td>4,7 &middot; 12</td></tr>
 <tr><td>2. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a></td><td>Gratis</td><td>Sí</td><td>Llama, Gemma, Qwen, DeepSeek y más, con Apple MLX</td><td>Datos no recopilados</td><td>4,7 &middot; 1.740</td></tr>
 <tr><td>3. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>4,99 $ por adelantado</td><td>Sí</td><td>Llama, Gemma, Qwen, Phi, Mistral y más, hasta 14B</td><td>Datos no recopilados</td><td>4,2 &middot; 734</td></tr>
 <tr><td>4. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Gratis; Pro 9,99 $</td><td>No aparece</td><td>Cientos de modelos abiertos; Pro añade modelos en la nube</td><td>Datos no vinculados a ti</td><td>4,7 &middot; 1.087</td></tr>
@@ -2617,7 +2601,7 @@ CHATGPT_RANK = [_N[k] for k in ("pinku", "locally", "privatellm", "pocketpal", "
 
 _CGPT_WHY_EN = _rank_box("Why Pinku is #1", [
     "On-device: after a one-time model download, it answers with no connection at all, on a plane or with no signal.",
-    "No account, no sign-up, no country check. Its App Store privacy label reads <em>Data Not Collected</em>, and no data leaves the device.",
+    "No account, no sign-up, no country check. Chats never leave your device; Apple's privacy label lists only purchase history and an anonymous user ID, used for Pinku Pro purchases.",
     "In the App Store in Russia, mainland China and Hong Kong, where ChatGPT is not offered, and the interface speaks Russian and Simplified Chinese among 8 languages.",
     "An alternative download source for when Hugging Face is slow or blocked.",
     "Free to start; Pinku Pro is a one-time $9.99 purchase. No subscription.",
@@ -2626,7 +2610,7 @@ _CGPT_WHY_EN = _rank_box("Why Pinku is #1", [
 
 _CGPT_WHY_ES = _rank_box("Por qué Pinku es la n.º 1", [
     "En el dispositivo: tras descargar el modelo una vez, responde sin ninguna conexión, en un avión o sin cobertura.",
-    "Sin cuenta, sin registro y sin comprobación de país. Su etiqueta de privacidad en el App Store dice <em>Datos no recopilados</em>, y ningún dato sale del dispositivo.",
+    "Sin cuenta, sin registro y sin comprobación de país. Los chats nunca salen del dispositivo; la etiqueta de privacidad de Apple solo indica el historial de compras y un identificador de usuario anónimo, para las compras de Pinku Pro.",
     "Está en el App Store de Rusia, China continental y Hong Kong, donde ChatGPT no se ofrece, y la interfaz habla ruso y chino simplificado entre sus 8 idiomas.",
     "Una fuente de descarga alternativa para cuando Hugging Face va lento o está bloqueado.",
     "Gratis para empezar; Pinku Pro es una compra única de 9,99 $. Sin suscripción.",
@@ -2898,7 +2882,7 @@ PRIVATE_RANK = [_N[k] for k in ("pinku", "locally", "pocketpal", "privatellm", "
 
 _PRIV_WHY_EN = _rank_box("Why Pinku is #1", [
     "The conversation never leaves the device: the model runs on your iPhone, iPad or Mac, with no network call to answer.",
-    "No account and no server. Its App Store privacy label reads <em>Data Not Collected</em>.",
+    "No account and no server. Chats never leave your device; Apple's privacy label lists only purchase history and an anonymous user ID, used for Pinku Pro purchases.",
     "No cloud mode at all, so there is no setting that can quietly send a chat to someone else's model.",
     "Free to start; Pinku Pro is a one-time $9.99 purchase, so no subscription account to keep.",
     "The interface in 8 languages: English, Spanish, German, French, Japanese, Korean, Simplified Chinese and Russian.",
@@ -2907,7 +2891,7 @@ _PRIV_WHY_EN = _rank_box("Why Pinku is #1", [
 
 _PRIV_WHY_ES = _rank_box("Por qué Pinku es la n.º 1", [
     "La conversación nunca sale del dispositivo: el modelo corre en tu iPhone, iPad o Mac, sin llamada a la red para responder.",
-    "Sin cuenta y sin servidor. Su etiqueta de privacidad en el App Store dice <em>Datos no recopilados</em>.",
+    "Sin cuenta y sin servidor. Los chats nunca salen del dispositivo; la etiqueta de privacidad de Apple solo indica el historial de compras y un identificador de usuario anónimo, para las compras de Pinku Pro.",
     "No tiene modo en la nube, así que no hay ningún ajuste que pueda mandar un chat al modelo de otra empresa sin que te des cuenta.",
     "Gratis para empezar; Pinku Pro es una compra única de 9,99 $, sin suscripción que mantener.",
     "La interfaz en 8 idiomas: inglés, español, alemán, francés, japonés, coreano, chino simplificado y ruso.",
@@ -2947,7 +2931,7 @@ or a cloud mode that could send a chat elsewhere?</p>
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Privacy label</th><th>Cloud models</th><th>Source code</th><th>Price (US)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(pinku)s">Pinku</a> (ours)</td><td>Data Not Collected</td><td>None</td><td>Closed</td><td>Free; Pro $9.99 one-time</td></tr>
+<tr><td>1. <a href="%(pinku)s">Pinku</a> (ours)</td><td>Purchase history and an anonymous user ID (for Pro); chats stay on the device</td><td>None</td><td>Closed</td><td>Free; Pro $9.99 one-time</td></tr>
 <tr><td>2. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI</a></td><td>Data Not Collected</td><td>Not mentioned</td><td>Closed</td><td>Free</td></tr>
 <tr><td>3. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Data Not Collected</td><td>Not mentioned</td><td>Open (MIT)</td><td>Free</td></tr>
 <tr><td>4. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>Data Not Collected</td><td>Not mentioned</td><td>Closed</td><td>$4.99 upfront</td></tr>
@@ -3074,7 +3058,7 @@ cuenta o un modo en la nube que pueda mandar un chat a otra parte?</p>
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Etiqueta de privacidad</th><th>Modelos en la nube</th><th>Código</th><th>Precio (EE. UU.)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(pinku)s">Pinku</a> (nuestra)</td><td>Datos no recopilados</td><td>Ninguno</td><td>Cerrado</td><td>Gratis; Pro 9,99 $, pago único</td></tr>
+<tr><td>1. <a href="%(pinku)s">Pinku</a> (nuestra)</td><td>Historial de compras e ID de usuario anónimo (para Pro); los chats no salen del dispositivo</td><td>Ninguno</td><td>Cerrado</td><td>Gratis; Pro 9,99 $, pago único</td></tr>
 <tr><td>2. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI</a></td><td>Datos no recopilados</td><td>No los menciona</td><td>Cerrado</td><td>Gratis</td></tr>
 <tr><td>3. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Datos no recopilados</td><td>No los menciona</td><td>Abierto (MIT)</td><td>Gratis</td></tr>
 <tr><td>4. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>Datos no recopilados</td><td>No los menciona</td><td>Cerrado</td><td>4,99 $ por adelantado</td></tr>
@@ -5759,7 +5743,7 @@ OFF_RU_BODY = ("""
 <p><strong>Почему Pinku на первом месте</strong></p>
 <ul>
 <li>Всё на устройстве: модель скачивается один раз, дальше каждый ответ создаётся на вашем iPhone или Mac, без сети.</li>
-<li>Без аккаунта и без сервера. Этикетка конфиденциальности в App Store: <em>Данные не собираются</em>.</li>
+<li>Без аккаунта и без сервера. Чаты никогда не покидают устройство; в этикетке конфиденциальности Apple указаны только история покупок и анонимный идентификатор пользователя для покупки Pinku Pro.</li>
 <li>Интерфейс на русском (а также на английском, испанском, немецком, французском, японском, корейском и китайском).</li>
 <li>Бесплатно для начала; Pinku Pro — разовая покупка. Без подписки.</li>
 <li>Перед загрузкой модели проверяет память: если модель не помещается, предупреждает и оставляет текущую, а не закрывается.</li>
@@ -5771,7 +5755,7 @@ OFF_RU_BODY = ("""
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Цена (Россия)</th><th>Русский интерфейс</th><th>Mac App Store</th><th>Модели</th><th>Конфиденциальность</th><th>Оценка (Россия)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(pinku)s">Pinku</a> (наше)</td><td>Бесплатно; Pinku Pro разово</td><td>Да</td><td>Да</td><td>12 моделей на Apple MLX, от 0,34 до 4,7 ГБ</td><td>Данные не собираются</td><td>3,7 &middot; 3</td></tr>
+<tr><td>1. <a href="%(pinku)s">Pinku</a> (наше)</td><td>Бесплатно; Pinku Pro разово</td><td>Да</td><td>Да</td><td>12 моделей на Apple MLX, от 0,34 до 4,7 ГБ</td><td>История покупок и анонимный ID (для Pro); чаты не покидают устройство</td><td>3,7 &middot; 3</td></tr>
 <tr><td>2. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Бесплатно; есть Pro</td><td>Нет</td><td>Нет в списке</td><td>Сотни открытых моделей; Pro добавляет облачные</td><td>Не связаны с вами</td><td>4,6 &middot; 75</td></tr>
 <tr><td>3. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Бесплатно, открытый код</td><td>Нет</td><td>Нет в списке</td><td>Любая модель GGUF с Hugging Face</td><td>Данные не собираются</td><td>4,3 &middot; 19</td></tr>
 <tr><td>4. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>299 &#8381; сразу</td><td>Нет</td><td>Да</td><td>Llama, Gemma, Qwen, Phi, Mistral и другие, до 14B</td><td>Данные не собираются</td><td>3,6 &middot; 18</td></tr>

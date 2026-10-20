@@ -819,7 +819,7 @@ way instead of taking its word for it.</p>
         ("Read the App Store privacy label.",
          "On the app's App Store page, scroll to App Privacy. \"Data Not Collected\" means the developer says it "
          "does not collect any data from the app. It is the developer's own declaration, not something Apple verifies, "
-         "so treat it as a claim to test. Pinku's US page shows Data Not Collected on 15 October 2026."),
+         "so treat it as a claim to test. Since 19 October 2026 Pinku's US page lists only purchase history and an anonymous user ID, used for Pinku Pro purchases; no chat content."),
         ("Turn on App Privacy Report.",
          'Settings, Privacy & Security, App Privacy Report, Turn on App Privacy Report (iOS 15.2 or later). '
          '<a href="%s" target="_blank" rel="noopener">Apple says</a> it starts gathering information only after you turn it on, '
@@ -904,7 +904,7 @@ el mensaje a ninguna parte. Puedes comprobar si una app se comporta así en vez 
         ("Lee la etiqueta de privacidad del App Store.",
          "En la ficha de la app, baja hasta Privacidad de la app. «Datos no recopilados» significa que el desarrollador "
          "declara que no recoge ningún dato de la app. Es una declaración suya, no algo que Apple verifique, "
-         "así que tómala como una afirmación que probar. La ficha de Pinku en EE. UU. muestra Data Not Collected el 15 de octubre de 2026."),
+         "así que tómala como una afirmación que probar. Desde el 19 de octubre de 2026, la ficha de Pinku en EE. UU. solo indica el historial de compras y un identificador de usuario anónimo, para las compras de Pinku Pro; ningún contenido de los chats."),
         ("Activa el Informe de privacidad de apps.",
          'Ajustes, Privacidad y seguridad, Informe de privacidad de apps, Activar (iOS 15.2 o posterior). '
          '<a href="%s" target="_blank" rel="noopener">Apple explica</a> que empieza a recoger información solo después de que lo actives, '

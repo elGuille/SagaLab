@@ -14,7 +14,7 @@ PT = "118348020"
 OURS = {"1667947372", "6754878073", "1143691286", "6754180384",
         "1553693943", "1462269642", "1662608035", "1532670722"}
 MAX = 40
-LANGS = {"de", "fr", "pt", "ja", "es", "ru"}
+LANGS = {"de", "fr", "pt", "ja", "es", "ru", "zh"}
 
 _URL = re.compile(r'https://apps\.apple\.com/[^"\'\s<>\\]*?id(\d+)[^"\'\s<>\\]*')
 _LD = re.compile(r'(<script type="application/ld\+json">.*?</script>)', re.S)
