@@ -221,6 +221,11 @@ iPhone, iPad and Mac, with Siri and Shortcuts.</li>
 with optional cloud models in its Pro tier.</li>
 </ul>
 
+<p>Compared in more detail elsewhere: the phone apps by the models they can load on
+<a href="https://reviewland.io/best-apps-run-open-source-ai-models-iphone/"%(x)s>Reviewland</a>,
+and the desktop tools as <a href="https://reditor.cloud/ollama-alternatives-mac-iphone/"%(x)s>Ollama
+alternatives on Reditor</a> (both run by Saga Labs, in English).</p>
+
 <p>More on phones: <a href="%(p_noai)s">AI apps for iPhones without Apple
 Intelligence</a> and <a href="%(p_offline)s">what Apple Intelligence does
 offline</a>.</p>

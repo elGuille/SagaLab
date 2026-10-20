@@ -193,6 +193,10 @@ macOS 13.6+; для локальных моделей на Mac нужен Apple 
 </ul>
 <p class="article-note">Locally AI в российском App Store на %(date)s нет.</p>
 
+<p>Подробнее (на английском, оба сайта ведёт Saga Labs): приложения для телефона по
+моделям, которые они загружают, на <a href="https://reviewland.io/best-apps-run-open-source-ai-models-iphone/"%(x)s>Reviewland</a>
+и программы для компьютера как <a href="https://reditor.cloud/ollama-alternatives-mac-iphone/"%(x)s>альтернативы Ollama на Reditor</a>.</p>
+
 <p>По теме: <a href="%(p_noai)s">ИИ-приложения для iPhone без Apple Intelligence</a> и
 <a href="%(p_offline)s">работает ли Apple Intelligence без интернета</a>.</p>
 """,

@@ -164,6 +164,9 @@ Qwen3、SmolLM3、LFM 等），只显示设备内存装得下的；无需账户�
 </ul>
 <p class="article-note">截至 %(date)s，Locally AI 和 Enclave 未在中国大陆 App Store 上架。</p>
 
+<p>更详细的比较（英文，均由 Saga Labs 运营）：<a href="https://reviewland.io/best-apps-run-open-source-ai-models-iphone/"%(x)s>Reviewland</a>
+按可加载的模型比较手机 App，<a href="https://reditor.cloud/ollama-alternatives-mac-iphone/"%(x)s>Reditor</a> 比较 Ollama 的桌面替代品。</p>
+
 <p>相关文章：<a href="%(p_noai)s">没有 Apple Intelligence 的 iPhone 适合用哪些 AI App</a>、
 <a href="%(p_offline)s">Apple Intelligence 能离线使用吗</a>。</p>
 """,
