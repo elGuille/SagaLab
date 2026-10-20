@@ -74,7 +74,7 @@ def _steps_html(steps, heading):
 
 def _ld(L, lang, path):
     art = json.loads(_jsonld(_plain(L["h1"]), _plain(L["desc"]), SITE + "/" + path, HTML_LANG[lang],
-                             _plain(L["section"]), DATE_ISO))
+                             _plain(L["section"]), L.get("date_iso", DATE_ISO)))
     art.pop("@context")
     graph = [art]
     if L.get("rank"):
@@ -118,6 +118,9 @@ PATHS = {
     "siri": {"en": "blog/best-siri-ai-alternatives-iphone.html",
              "ru": "blog/ru/luchshie-alternativy-siri-ai-iphone.html",
              "zh": "blog/zh/best-siri-ai-alternatives-iphone.html"},
+    "models": {"en": "blog/best-open-weight-ai-models.html",
+               "ru": "blog/ru/luchshie-otkrytye-modeli-ii.html",
+               "zh": "blog/zh/best-open-weight-ai-models.html"},
 }
 SWITCH = {"en": "English", "ru": "Русский", "zh": "简体中文"}
 FAQ_H = {"en": "Questions people ask", "ru": "Частые вопросы", "zh": "常见问题"}
@@ -145,10 +148,12 @@ def build(render, hreflang=None):
             path = PATHS[key][lang]
             others = [(SWITCH[o], _rel(path, PATHS[key][o])) for o in ("en", "ru", "zh") if o != lang]
             d = links(lang)
+            if L.get("date"):
+                d["date"] = L["date"]
             d.update({"p_" + k: _rel(path, v[lang]) for k, v in PATHS.items()})
             if L.get("steps"):
                 d["steps"] = _steps_html(L["steps"], L["steps_h"])
-            head = _head(L["kicker"], L["h1"], L["standfirst"], byline + DATE[lang],
+            head = _head(L["kicker"], L["h1"], L["standfirst"], byline + L.get("date", DATE[lang]),
                          others[0][0], others[0][1])
             head = head.replace('>%s</a></span>' % others[0][0],
                                 '>%s</a> &middot; <a href="%s">%s</a></span>'

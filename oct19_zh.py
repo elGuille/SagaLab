@@ -359,4 +359,6 @@ Kimi（月之暗面）评分最高，千问（阿里巴巴）iOS 14 就能用，
 """ + DISCLOSE,
 )
 
-ARTICLES = {"offline": OFFLINE, "noai": NOAI, "siri": SIRI}
+from models_zh import MODELS  # noqa: E402
+
+ARTICLES = {"offline": OFFLINE, "noai": NOAI, "siri": SIRI, "models": MODELS}

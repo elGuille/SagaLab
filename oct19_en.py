@@ -541,4 +541,6 @@ and we will correct the page.</p>
 """ + DISCLOSE,
 )
 
-ARTICLES = {"offline": OFFLINE, "noai": NOAI, "siri": SIRI}
+from models_en import MODELS  # noqa: E402
+
+ARTICLES = {"offline": OFFLINE, "noai": NOAI, "siri": SIRI, "models": MODELS}

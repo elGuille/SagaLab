@@ -1,0 +1,260 @@
+# -*- coding: utf-8 -*-
+"""Best open-weight AI models (2026), English. Datos del 20 oct 2026.
+
+Fuentes: fichas de Hugging Face (parametros, licencia, contexto, benchmarks que
+publica cada fabricante), GitHub (llama.cpp, mlx-lm, Jan, PocketPal), webs de
+Ollama, LM Studio y Jan, y la prueba de 5 preguntas de Pinku (LLMEvaluator.
+chatSelfTest, commit 97d422e, MLX 4 bits en un Mac). Ojo: el texto pasa por
+"%" de Python, asi que los porcentajes van como %%.
+"""
+
+HF = "https://huggingface.co/"
+X = ' target="_blank" rel="noopener"'
+PINKU_PRIV = ("Chats never leave your device; Apple's privacy label lists only purchase history and an "
+              "anonymous user ID, used for Pinku Pro purchases.")
+
+MODELS = dict(
+    date="20 October 2026", date_iso="2026-10-20",
+    h1="Best open-weight AI models (2026)",
+    desc=("Gemma 4, Qwen3.5, DeepSeek V4, Kimi K3, GLM-5.3, Mistral Small 4, gpt-oss, Llama 4 and LFM2.5: "
+          "what each open-weight model is best at, sizes, licences, benchmarks with sources, the hardware "
+          "you need, a 5-question test of the small ones, and how to run them with Ollama, LM Studio, "
+          "llama.cpp, Jan or on a phone."),
+    kicker="Guide", section="Guides",
+    standfirst=("Open-weight models you can download and run yourself, from 1 GB phone models to "
+                "trillion-parameter giants. What each one is good for, and what it takes to run it."),
+    rank=[("Gemma 4", HF + "google/gemma-4-31B-it"), ("Qwen3.5", HF + "Qwen/Qwen3.5-9B"),
+          ("DeepSeek V4", HF + "deepseek-ai/DeepSeek-V4-Pro"), ("Kimi K3", HF + "moonshotai/Kimi-K3"),
+          ("GLM-5.3", HF + "zai-org/GLM-5.3"), ("Mistral Small 4", HF + "mistralai/Mistral-Small-4-119B-2603"),
+          ("gpt-oss", HF + "openai/gpt-oss-120b"), ("Llama 4", HF + "meta-llama/Llama-4-Scout-17B-16E-Instruct"),
+          ("LFM2.5", HF + "LiquidAI/LFM2.5-1.2B-Instruct")],
+    body="""
+<p>&ldquo;Open-weight&rdquo; means the trained model files are published and you can run
+them on your own hardware. It does not always mean open source: some licences add
+conditions, so we list each one. Sizes, licences and context lengths come from each
+model's Hugging Face page; benchmark scores are the ones each maker publishes, checked
+on %(date)s.</p>
+
+<h2>The short version</h2>
+
+<div class="table-scroll"><table>
+<thead><tr><th>Model</th><th>Maker</th><th>Sizes</th><th>Licence</th><th>Best for</th></tr></thead>
+<tbody>
+<tr><td><a href=\"""" + HF + """google/gemma-4-31B-it"%(x)s>Gemma 4</a></td><td>Google DeepMind</td><td>E2B, E4B, 12B, 26B A4B (MoE), 31B</td><td>Apache 2.0</td><td>Phones and laptops; images and audio; 140+ languages</td></tr>
+<tr><td><a href=\"""" + HF + """Qwen/Qwen3.5-9B"%(x)s>Qwen3.5</a></td><td>Alibaba (Qwen)</td><td>0.8B to 397B A17B (MoE)</td><td>Apache 2.0</td><td>The widest range of sizes; strong small models; Chinese</td></tr>
+<tr><td><a href=\"""" + HF + """deepseek-ai/DeepSeek-V4-Pro"%(x)s>DeepSeek V4</a></td><td>DeepSeek</td><td>Flash 284B (13B active), Pro 1.6T (49B active)</td><td>MIT</td><td>Top open reasoning and coding; 1M-token context</td></tr>
+<tr><td><a href=\"""" + HF + """moonshotai/Kimi-K3"%(x)s>Kimi K3</a></td><td>Moonshot AI</td><td>2.8T (104B active)</td><td>Kimi K3 License</td><td>Long agentic coding sessions; text and images</td></tr>
+<tr><td><a href=\"""" + HF + """zai-org/GLM-5.3"%(x)s>GLM-5.3</a></td><td>Z.ai</td><td>GLM-5.3, GLM-5.3-Flash</td><td>Custom (5.3); MIT (5.3-Flash)</td><td>English and Chinese; agents</td></tr>
+<tr><td><a href=\"""" + HF + """mistralai/Mistral-Small-4-119B-2603"%(x)s>Mistral Small 4</a></td><td>Mistral AI</td><td>119B; Devstral Small 2 24B for code</td><td>Apache 2.0</td><td>European languages; a permissive licence</td></tr>
+<tr><td><a href=\"""" + HF + """openai/gpt-oss-120b"%(x)s>gpt-oss</a></td><td>OpenAI</td><td>20B, 120B</td><td>Apache 2.0</td><td>A 20B model that fits a 16 GB machine</td></tr>
+<tr><td><a href=\"""" + HF + """meta-llama/Llama-4-Scout-17B-16E-Instruct"%(x)s>Llama 4</a></td><td>Meta</td><td>Scout 109B (17B active), Maverick</td><td>Llama 4 Community License, gated</td><td>Existing Llama setups; not updated since May 2025</td></tr>
+<tr><td><a href=\"""" + HF + """LiquidAI/LFM2.5-1.2B-Instruct"%(x)s>LFM2.5</a></td><td>Liquid AI</td><td>230M, 1.2B, 2.6B, 8B A1B</td><td>LFM Open License v1.0</td><td>Fast, low-memory models for phones and edge devices</td></tr>
+</tbody>
+</table></div>
+
+<p class="article-note">MoE (mixture of experts) models list total and active
+parameters. All of them must sit in memory, but only the active ones work on each
+token, so they run faster than their total size suggests. &ldquo;Gated&rdquo; means
+you must accept the licence on Hugging Face before downloading.</p>
+
+<h2>Benchmarks, as each maker reports them</h2>
+
+<p>Two common tests: MMLU-Pro (broad knowledge) and GPQA Diamond (hard science
+questions). Makers run them with their own settings, so treat small gaps as noise.</p>
+
+<div class="table-scroll"><table>
+<thead><tr><th>Model</th><th>MMLU-Pro (%%)</th><th>GPQA Diamond (%%)</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td>DeepSeek V4 Pro (max reasoning)</td><td>87.5</td><td>90.1</td><td>DeepSeek model card</td></tr>
+<tr><td>Gemma 4 31B</td><td>85.2</td><td>84.3</td><td>Google model card</td></tr>
+<tr><td>Gemma 4 26B A4B</td><td>82.6</td><td>82.3</td><td>Google model card</td></tr>
+<tr><td>Qwen3.5 9B</td><td>82.5</td><td>81.7</td><td>Qwen model card</td></tr>
+<tr><td>gpt-oss 120B</td><td>80.8</td><td>80.1</td><td>Qwen3.5-9B model card</td></tr>
+<tr><td>Qwen3.5 4B</td><td>79.1</td><td>76.2</td><td>Qwen model card</td></tr>
+<tr><td>gpt-oss 20B</td><td>74.8</td><td>71.5</td><td>Qwen3.5-9B model card</td></tr>
+<tr><td>Gemma 4 E4B</td><td>69.4</td><td>58.6</td><td>Google model card</td></tr>
+<tr><td>Gemma 4 E2B</td><td>60.0</td><td>43.4</td><td>Google model card</td></tr>
+</tbody>
+</table></div>
+
+<p>What stands out: in 2026 a 9B open model (Qwen3.5) reports MMLU-Pro and GPQA
+scores above a 120B model from 2025 (gpt-oss), and the largest open models (DeepSeek
+V4 Pro) are close to closed frontier models on the maker's own comparison.</p>
+
+<h2>Model by model</h2>
+
+<h3>Gemma 4 (Google DeepMind)</h3>
+<p>Five sizes: E2B (2.3B effective, 5.1B with embeddings), E4B, 12B, a 26B
+mixture-of-experts model with 3.8B active, and 31B. All read images; E2B, E4B and 12B
+also take audio. Context is 128K tokens on the small ones and 256K on the rest, and
+Google says they were pretrained on 140+ languages. Apache 2.0. The 26B A4B is the
+interesting one for laptops: near-31B scores, running close to 4B speed. Best pick if
+you want one family from phone to workstation.</p>
+
+<h3>Qwen3.5 (Alibaba)</h3>
+<p>The widest line-up: 0.8B, 2B, 4B, 9B, 27B, 35B A3B, 122B A10B and 397B A17B, all
+Apache 2.0 and all able to read images. 262K tokens of context natively (9B) and 201
+languages and dialects according to Qwen. The 4B and 9B are the strongest small
+models on paper. In our own five-question test (below) the smallest ones were less
+reliable on plain facts.</p>
+
+<h3>DeepSeek V4 (DeepSeek)</h3>
+<p>V4-Flash (284B total, 13B active) and V4-Pro (1.6T total, 49B active), both with
+a one-million-token context and an MIT licence. DeepSeek reports the Pro version in
+maximum reasoning mode at 93.5 on LiveCodeBench and a Codeforces rating of 3206. A
+V4.1-Flash followed on 16 October 2026. These need data-centre hardware; most people
+use them through a hosted API. The older &ldquo;R1 Distill&rdquo; small models are
+not the same thing and did poorly in our test.</p>
+
+<h3>Kimi K3 (Moonshot AI)</h3>
+<p>2.8 trillion parameters with 104B active, text and images, one-million-token
+context, released under its own Kimi K3 License. Moonshot pitches it for long coding
+and knowledge-work sessions with little supervision. Data-centre only.</p>
+
+<h3>GLM-5.3 (Z.ai)</h3>
+<p>GLM-5.3 (custom licence) and GLM-5.3-Flash (MIT, reads images), both tagged for
+English and Chinese on Hugging Face, updated on 14 and 15 October 2026. Large models
+for servers and agent work.</p>
+
+<h3>Mistral Small 4 and Devstral (Mistral AI)</h3>
+<p>Mistral Small 4 is a 119B model under Apache 2.0 whose card lists 24 languages,
+including Russian, Chinese, Arabic and Hindi. Devstral Small 2 (24B, Apache 2.0) is
+Mistral's coding model and fits a well-equipped desktop in 4-bit.</p>
+
+<h3>gpt-oss (OpenAI)</h3>
+<p>Two models from August 2025, 20B and 120B, both Apache 2.0. Not the newest, but
+the 20B is still a common choice for a 16 GB machine, and both are widely supported
+by local tools.</p>
+
+<h3>Llama 4 (Meta)</h3>
+<p>Scout (109B total, 17B active) and Maverick, under the Llama 4 Community License,
+gated on Hugging Face. The weights there were last updated in May 2025. Smaller Llama 3.2 models (1B, 3B) are still
+common in phone apps.</p>
+
+<h3>LFM2.5 (Liquid AI)</h3>
+<p>Small models built for devices: 230M, 1.2B, 2.6B and an 8B with 1B active. The
+1.2B runs in under 1 GB of memory according to Liquid AI, with a 32,768-token context
+and eight languages. Liquid itself recommends it for agents, data extraction and
+retrieval, and not for knowledge-heavy tasks or programming. Its licence is Liquid's
+own (LFM Open License v1.0), so read it before commercial use.</p>
+
+<h2>What hardware you need</h2>
+
+<p>A rough rule: a model quantised to 4 bits needs about 0.5 to 0.6 GB of memory per
+billion parameters, plus room for the conversation. For mixture-of-experts models,
+count the total parameters, not the active ones.</p>
+
+<div class="table-scroll"><table>
+<thead><tr><th>Device</th><th>Realistic models (4-bit)</th></tr></thead>
+<tbody>
+<tr><td>iPhone or Android phone</td><td>Up to about 4B: Gemma 4 E2B (about 3.6 GB in MLX 4-bit), Qwen3.5 2B or 4B, LFM2.5 1.2B (about 0.7 GB), Llama 3.2 1B or 3B</td></tr>
+<tr><td>Laptop with 16 GB</td><td>Up to about 14B dense: Qwen3.5 9B, Gemma 4 12B, gpt-oss 20B (tight)</td></tr>
+<tr><td>Mac or PC with 32 to 64 GB</td><td>Gemma 4 26B A4B or 31B, Qwen3.5 27B or 35B A3B, Devstral Small 2 24B</td></tr>
+<tr><td>Workstation with 128 GB or more</td><td>Mistral Small 4 119B, gpt-oss 120B, Qwen3.5 122B A10B</td></tr>
+<tr><td>Data centre</td><td>DeepSeek V4, Kimi K3, GLM-5.3, Qwen3.5 397B, Llama 4 Maverick</td></tr>
+</tbody>
+</table></div>
+
+<p class="article-note">Jan's documentation gives a similar guide for Macs: 8 GB for
+models up to about 3B, 16 GB up to about 7B, 32 GB up to about 13B. LM Studio
+recommends 16 GB or more on Apple silicon.</p>
+
+<h2>A small test: five questions on a Mac</h2>
+
+<p>Pinku's developers ran the small models they were considering through the same
+five factual questions (capital of France, days in a leap year, author of Don Quixote,
+chemical symbol for gold, largest planet), three in Spanish and two in English, with
+MLX 4-bit builds on a Mac. A model passed a question if it gave the right answer
+without rambling past the length limit. It is five questions, not a benchmark: it only
+shows whether a phone-sized model gets basic facts right.</p>
+
+<div class="table-scroll"><table>
+<thead><tr><th>Model</th><th>Correct</th></tr></thead>
+<tbody>
+<tr><td>Gemma 4 E2B</td><td>5 of 5</td></tr>
+<tr><td>LFM2.5 1.2B</td><td>5 of 5</td></tr>
+<tr><td>Qwen3.5 2B</td><td>4 of 5</td></tr>
+<tr><td>Qwen3.5 4B</td><td>4 of 5</td></tr>
+<tr><td>DeepSeek R1 Distill 7B</td><td>4 of 5</td></tr>
+<tr><td>Qwen3.5 0.8B</td><td>2 of 5</td></tr>
+<tr><td>DeepSeek R1 Distill 1.5B</td><td>0 of 5</td></tr>
+</tbody>
+</table></div>
+
+<h2>How to use them</h2>
+
+<h3>On a computer</h3>
+<ul>
+<li><a href="https://ollama.com/"%(x)s>Ollama</a>: free and open source (MIT), macOS
+14 or later, Windows and Linux. A command line plus a desktop chat app since July 2025.
+Its library has Gemma 4, Qwen3.5, gpt-oss, Llama 4 and LFM2.5 to run locally; the giant
+models (DeepSeek V4, Kimi K3, GLM-5.3) run on Ollama's cloud, paid with usage
+credits.</li>
+<li><a href="https://lmstudio.ai/"%(x)s>LM Studio</a>: free desktop app (not open
+source) with a model browser, running models with llama.cpp and Apple's MLX. On a Mac
+it needs Apple silicon and macOS 14; it recommends 16 GB of memory.</li>
+<li><a href="https://github.com/ggml-org/llama.cpp"%(x)s>llama.cpp</a>: the open-source
+(MIT) engine behind many of these apps, for people who are happy in a terminal. It
+runs GGUF files, the format most models are shared in.</li>
+<li><a href="https://jan.ai/"%(x)s>Jan</a>: open-source desktop chat app, version 0.8.6
+(9 October 2026), macOS 13.6 or later; local models need Apple silicon on a Mac. It can
+also connect to cloud models.</li>
+<li><a href="https://github.com/ml-explore/mlx-lm"%(x)s>mlx-lm</a>: Apple's MIT-licensed
+library for running models on Apple silicon, for developers.</li>
+</ul>
+
+<h3>On a phone</h3>
+<ul>
+<li><a href="%(pinku)s">Pinku</a> (iPhone 12 or later with iOS 18.6, and Macs with
+Apple silicon): a curated list of small models (Gemma, Llama 3.2, Qwen3, SmolLM3, LFM
+and others) that it only shows if your device has the memory for them; no account; the
+default model is free and larger ones come with Pinku Pro. """ + PINKU_PRIV + """ Where
+Hugging Face is blocked it downloads from ModelScope.</li>
+<li><a href="https://apps.apple.com/us/app/id6741426692"%(x)s>Locally AI</a>: free, from
+the LM Studio team, iPhone and iPad (iOS 18.1) and Mac (macOS 26).</li>
+<li><a href="https://github.com/a-ghorbani/pocketpal-ai"%(x)s>PocketPal AI</a>: free and
+open source, on iPhone and Android; loads any GGUF model from Hugging Face, so you pick
+the size yourself.</li>
+<li><a href="https://apps.apple.com/us/app/id6448106860"%(x)s>Private LLM</a>: $4.99 once,
+iPhone, iPad and Mac, with Siri and Shortcuts.</li>
+<li><a href="https://apps.apple.com/us/app/id6476614556"%(x)s>Enclave</a>: free, iOS 27,
+with optional cloud models in its Pro tier.</li>
+</ul>
+
+<p>More on phones: <a href="%(p_noai)s">AI apps for iPhones without Apple
+Intelligence</a> and <a href="%(p_offline)s">what Apple Intelligence does
+offline</a>.</p>
+""",
+    faq=[
+        ("What is the best open-weight AI model in 2026?",
+         "It depends on the hardware. For data-centre use, DeepSeek V4 Pro reports the highest scores of the "
+         "models here on its own card. For a laptop, Gemma 4 26B A4B or Qwen3.5 9B. For a phone, Gemma 4 E2B, "
+         "Qwen3.5 2B to 4B or LFM2.5 1.2B."),
+        ("What is the difference between open-weight and open source?",
+         "Open-weight means the trained model files are published so you can run them. The licence may still "
+         "add conditions: Gemma 4, Qwen3.5, Mistral Small 4 and gpt-oss use Apache 2.0, DeepSeek V4 uses MIT, "
+         "while Llama 4, Kimi K3, GLM-5.3 and LFM2.5 have their own licences."),
+        ("How much memory do I need to run a local AI model?",
+         "Roughly 0.5 to 0.6 GB per billion parameters at 4-bit, plus room for the conversation. A 4B model "
+         "fits a recent phone, about 14B fits a 16 GB laptop, and the trillion-parameter models need servers."),
+        ("Which open model works best on an iPhone?",
+         "Models up to about 4B parameters. In Pinku's five-question test on a Mac, Gemma 4 E2B and LFM2.5 "
+         "1.2B answered all five correctly, Qwen3.5 2B and 4B four, and DeepSeek R1 Distill 1.5B none."),
+        ("How do I run an open model on my computer?",
+         "Install Ollama, LM Studio or Jan, choose a model that fits your memory and download it. llama.cpp "
+         "and mlx-lm are the options for people comfortable with a terminal."),
+    ],
+    sources="""
+<h2>Sources</h2>
+<ul>
+<li>Hugging Face model pages and cards (parameters, licence, context, benchmarks): <a href=\"""" + HF + """google/gemma-4-31B-it"%(x)s>Gemma 4</a>, <a href=\"""" + HF + """Qwen/Qwen3.5-9B"%(x)s>Qwen3.5-9B</a> (also the gpt-oss scores), <a href=\"""" + HF + """deepseek-ai/DeepSeek-V4-Pro"%(x)s>DeepSeek V4</a>, <a href=\"""" + HF + """moonshotai/Kimi-K3"%(x)s>Kimi K3</a>, <a href=\"""" + HF + """zai-org/GLM-5.3"%(x)s>GLM-5.3</a>, <a href=\"""" + HF + """mistralai/Mistral-Small-4-119B-2603"%(x)s>Mistral Small 4</a>, <a href=\"""" + HF + """openai/gpt-oss-120b"%(x)s>gpt-oss</a>, <a href=\"""" + HF + """meta-llama/Llama-4-Scout-17B-16E-Instruct"%(x)s>Llama 4 Scout</a>, <a href=\"""" + HF + """LiquidAI/LFM2.5-1.2B-Instruct"%(x)s>LFM2.5</a>; checked on %(date)s.</li>
+<li>Ollama: <a href="https://ollama.com/blog/new-app"%(x)s>desktop app</a>, <a href="https://docs.ollama.com/macos"%(x)s>macOS requirements</a>, <a href="https://ollama.com/pricing"%(x)s>pricing</a>. LM Studio: <a href="https://lmstudio.ai/docs/app/system-requirements"%(x)s>system requirements</a>. Jan: <a href="https://www.jan.ai/docs/desktop/install/mac"%(x)s>Mac install guide</a>.</li>
+<li>GitHub: <a href="https://github.com/ggml-org/llama.cpp"%(x)s>llama.cpp</a>, <a href="https://github.com/ml-explore/mlx-lm"%(x)s>mlx-lm</a>, <a href="https://github.com/a-ghorbani/pocketpal-ai"%(x)s>PocketPal AI</a>.</li>
+<li>The five-question test: Pinku's self-test (5 factual questions, MLX 4-bit, on a Mac), October 2026.</li>
+</ul>
+<p>If anything here is out of date, <a href="mailto:sagalabs@proton.me">tell us</a>
+and we will correct the page.</p>
+<p>Transparency: Saga Labs, which publishes this site, also makes Pinku. Pinku's test
+results are reported as measured, including the models it does not ship.</p>
+""",
+)

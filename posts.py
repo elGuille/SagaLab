@@ -362,6 +362,12 @@ INDEX_EN = """
         <div class="article-body">
         <ul class="post-list">
             <li>
+                <a href="best-open-weight-ai-models.html">Best open-weight AI models (2026)</a>
+                <p>Gemma 4, Qwen3.5, DeepSeek V4, Kimi K3, GLM-5.3, Mistral Small 4, gpt-oss,
+                Llama 4 and LFM2.5: what each is best at, licences, benchmarks, hardware, and
+                how to run them.</p>
+            </li>
+            <li>
                 <a href="best-ai-apps-iphone-without-apple-intelligence.html">Best AI apps for iPhones without Apple Intelligence (2026)</a>
                 <p>iPhone 11 to 15 run iOS 27 without Apple Intelligence. Pinku, Locally AI,
                 PocketPal, Private LLM, ChatGPT, Gemini, Claude and Vibe ranked: offline or

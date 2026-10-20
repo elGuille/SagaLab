@@ -475,4 +475,6 @@ iPhone с английским интерфейсом, и всё общение 
 """ + DISCLOSE,
 )
 
-ARTICLES = {"offline": OFFLINE, "noai": NOAI, "siri": SIRI}
+from models_ru import MODELS  # noqa: E402
+
+ARTICLES = {"offline": OFFLINE, "noai": NOAI, "siri": SIRI, "models": MODELS}
