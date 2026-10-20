@@ -7,8 +7,7 @@ US = "https://apps.apple.com/us/app/id"
 PINKU_PRIV = ("Chats never leave your device; Apple's privacy label lists only purchase history and an "
               "anonymous user ID, used for Pinku Pro purchases.")
 
-DISCLOSE = ("<p>Transparency: Saga Labs, which publishes this site, also makes Pinku. Facts about every app, "
-            "Pinku included, come from its App Store page.</p>")
+DISCLOSE = ('<h2>From the team at Saga Labs</h2>\n<p>We make Pinku, one of the apps on this page. We built it because the best tools for running open models, such as Ollama and LM Studio, expect some technical knowledge: picking a model file and a quantisation, and sometimes using a terminal. Pinku is for everyone else: install it from the App Store, tap a model, and chat privately on your iPhone or Mac, with no terminal and nothing to configure. The trade-off is a short list of small models chosen to fit each device, so it does not replace those tools for people who want to run any model. Facts about Pinku on this page come from its App Store listing, like those of every other app.</p>')
 
 # --------------------------------------------------------------------------
 OFFLINE = dict(

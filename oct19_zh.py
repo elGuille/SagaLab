@@ -6,8 +6,7 @@ CN = "https://apps.apple.com/cn/app/id"
 
 PINKU_PRIV = "聊天内容不会离开你的设备；Apple 隐私标签只列出购买记录和一个用于 Pinku Pro 购买的匿名用户 ID。"
 
-DISCLOSE = ("<p>说明：本站发布方 Saga Labs 也开发了 Pinku。所有 App 的信息（包括 Pinku）都来自它们的 "
-            "App Store 页面。</p>")
+DISCLOSE = ('<h2>来自 Saga Labs 团队</h2>\n<p>Pinku 是我们开发的，也是本页提到的 App 之一。我们做它，是因为 Ollama、LM Studio 等运行开放模型的优秀工具需要一定的技术知识：选择模型文件和量化方式，有时还要用终端。Pinku 面向其他所有人：从 App Store 安装，点一下模型，就能在 iPhone 或 Mac 上私密聊天，不用终端，也不用任何设置。代价是只有一份为每台设备挑选的小模型清单，所以对想运行任意模型的人来说，它替代不了那些工具。本页关于 Pinku 的信息和其他 App 一样，来自 App Store 页面。</p>')
 
 NOT_IN_CN = ("截至 %(date)s，中国大陆 App Store 没有上架 ChatGPT、Gemini、Claude、Locally AI 和 Enclave，"
              "所以本文不列入：用中国大陆的 Apple 账户无法下载。")
