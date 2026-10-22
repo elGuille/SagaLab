@@ -16,7 +16,9 @@ OURS = {"1667947372", "6754878073", "1143691286", "6754180384",
 MAX = 40
 LANGS = {"de", "fr", "pt", "ja", "es", "ru", "zh"}
 
-_URL = re.compile(r'https://apps\.apple\.com/[^"\'\s<>\\]*?id(\d+)[^"\'\s<>\\]*')
+# Sin ")" y sin puntuacion final: en texto plano (llms.txt) la URL va entre
+# parentesis o acaba la frase, y el ct se colaba detras ("id123).?pt=").
+_URL = re.compile(r'https://apps\.apple\.com/[^"\'\s<>\\()]*?id(\d+)(?:[^"\'\s<>\\()]*[^"\'\s<>\\().,;:])?')
 _LD = re.compile(r'(<script type="application/ld\+json">.*?</script>)', re.S)
 
 
