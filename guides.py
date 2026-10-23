@@ -968,6 +968,9 @@ GUIDES += guides_oct23b.GUIDES
 import guides_oct23c  # noqa: E402  (las cuatro guias de la noche del 23 oct 2026)
 GUIDES += guides_oct23c.GUIDES
 
+import guides_oct24  # noqa: E402  (Dora: hacer un video con ChatGPT, el dia que sale en su directorio)
+GUIDES += guides_oct24.GUIDES
+
 
 def _alts(en, es):
     s = "https://aisagalab.com/"

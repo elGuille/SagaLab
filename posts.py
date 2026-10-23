@@ -2182,7 +2182,8 @@ AIV_FAQ_EN = [
      "person and a reference video, and the person in the photo makes the moves from the video."),
     ("Can I make AI videos from inside ChatGPT or Claude?",
      "Dora works inside Claude and ChatGPT through an MCP connector, using the same account and "
-     "balance as the app; the setup steps are at doravideo.com/connectors. We did not check "
+     "balance as the app, and in ChatGPT it is also available in the app directory as Dora AI "
+     "Video; the setup steps are at doravideo.com/connectors. We did not check "
      "whether the other apps here offer the same, so look at their own sites."),
     ("Are these apps free?",
      "All of them are free to download, and all of them charge through in-app purchases: "
@@ -2210,7 +2211,8 @@ AIV_FAQ_ES = [
      "persona y un vídeo de referencia, y la persona de la foto hace los movimientos del vídeo."),
     ("¿Se pueden hacer vídeos con IA desde ChatGPT o Claude?",
      "Dora funciona dentro de Claude y ChatGPT con un conector MCP, con la misma cuenta y el mismo "
-     "saldo que la app; los pasos están en doravideo.com/connectors. No hemos comprobado si las "
+     "saldo que la app, y en ChatGPT está también en el directorio de apps como Dora AI Video; "
+     "los pasos están en doravideo.com/connectors. No hemos comprobado si las "
      "demás apps de esta lista ofrecen lo mismo, así que mira sus propias webs."),
     ("¿Son gratis estas apps?",
      "Todas se descargan gratis y todas cobran con compras dentro de la app: suscripciones, packs "
@@ -2385,7 +2387,8 @@ person in a photo.</p>
 
 <p>Dora also works inside Claude and ChatGPT through an MCP connector, so you can
 ask the assistant for a video in the middle of a conversation and it uses your
-Dora account; the <a href="%(connectors)s">setup steps are here</a>. Dora has paid
+Dora account. In ChatGPT it is also <a href="CHATGPT_APP_URL" target="_blank" rel="noopener">available
+in the app directory</a> as Dora AI Video; the <a href="%(connectors)s">setup steps are here</a>. Dora has paid
 plans only, with no free generations.</p>
 
 <p>Where others beat it: Dora is not an editor. It has no timeline, does not cut
@@ -2539,8 +2542,9 @@ para elegir. Motion Control copia los movimientos de un vídeo de baile en la
 persona de una foto.</p>
 
 <p>Dora funciona también dentro de Claude y ChatGPT con un conector MCP: le pides
-un vídeo al asistente en mitad de la conversación y lo hace con tu cuenta de Dora;
-<a href="%(connectors)s">aquí están los pasos</a>. Dora solo tiene planes de pago,
+un vídeo al asistente en mitad de la conversación y lo hace con tu cuenta de Dora.
+En ChatGPT está también <a href="CHATGPT_APP_URL" target="_blank" rel="noopener">en el directorio
+de apps</a> como Dora AI Video; <a href="%(connectors)s">aquí están los pasos</a>. Dora solo tiene planes de pago,
 sin generaciones gratis.</p>
 
 <p>En qué le ganan las demás: Dora no es un editor. No tiene línea de tiempo, no

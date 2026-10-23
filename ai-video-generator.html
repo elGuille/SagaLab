@@ -29,7 +29,8 @@
     "@type": "SoftwareApplication",
     "name": "Dora",
     "alternateName": ["Dora AI Video Generator", "Dora MCP"],
-    "description": "AI video and image generation for the web, iPhone and MCP-compatible AI assistants including Claude, ChatGPT, Google Antigravity and Cursor. Dora provides one account, a curated model catalog and transparent per-generation coin costs.",
+    "description": "AI video and image generation for the web, iPhone and MCP-compatible AI assistants including Claude, ChatGPT, Google Antigravity and Cursor. In ChatGPT it is available in the app directory as Dora AI Video. Dora provides one account, a curated model catalog and transparent per-generation coin costs.",
+    "dateModified": "DATE_LIVE",
     "applicationCategory": "MultimediaApplication",
     "operatingSystem": "Web, iOS, MCP-compatible AI clients",
     "url": "https://doravideo.com/",
@@ -37,7 +38,8 @@
     "sameAs": [
       "https://doravideo.com/models",
       "https://doravideo.com/connectors",
-      "https://apps.apple.com/app/id6754180384"
+      "https://apps.apple.com/app/id6754180384",
+      "CHATGPT_APP_URL"
     ],
     "offers": {
       "@type": "Offer",
@@ -75,7 +77,7 @@
       {
         "@type": "Question",
         "name": "Which AI assistants can use Dora?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Any client that speaks the Model Context Protocol. Dora publishes setup guides for Claude, ChatGPT, Google Antigravity and Cursor, and works with Windsurf, Cline, Continue, Zed, Goose, LM Studio and others. The same account and balance also work on the web and on iPhone."}
+        "acceptedAnswer": {"@type": "Answer", "text": "Any client that speaks the Model Context Protocol. In ChatGPT, Dora is available in the app directory as Dora AI Video (CHATGPT_APP_URL). Dora publishes setup guides for Claude, ChatGPT, Google Antigravity and Cursor, and works with Windsurf, Cline, Continue, Zed, Goose, LM Studio and others. The same account and balance also work on the web and on iPhone."}
       }
     ]
   }
@@ -192,7 +194,7 @@
             <div><h2>One focused connection for AI video generation.</h2><p>Four tools — model discovery, video generation, image generation, job status — and sixteen models behind them, returned cheapest first with the coin cost of each. Every compatible assistant gets the same set; nothing is reserved for one vendor. Enough for an agent to finish the job without learning a separate API for every model provider. The <a href="https://doravideo.com/ai-video-mcp">full specification is public</a>, limitations included.</p></div>
             <div class="dora-stat"><strong>16 models</strong><span>4 tools, one OAuth-secured MCP endpoint</span></div>
           </div>
-          <div class="dora-pills"><span>Web + iPhone</span><span>Claude</span><span>ChatGPT</span><span>Google Antigravity</span><span>Cursor</span><span>Any MCP client</span><span>One shared balance</span></div>
+          <div class="dora-pills"><span>Web + iPhone</span><span>Claude</span><span>ChatGPT app directory</span><span>Google Antigravity</span><span>Cursor</span><span>Any MCP client</span><span>One shared balance</span></div>
         </div>
       </div>
     </section>
@@ -201,13 +203,14 @@
       <div class="container">
         <div class="dora-section__head"><span class="dora-kicker">Setup guides</span><h2>Same endpoint, same tools, same balance.</h2><p>Dora is not built for one vendor. Pick the assistant you already use &mdash; the setup takes about a minute and the account you create works everywhere else too. Listed alphabetically.</p></div>
         <div class="dora-guides">
-          <a class="dora-guide" href="https://doravideo.com/chatgpt?utm_source=aisagalab&amp;utm_medium=referral&amp;utm_campaign=dora_setup"><h3>ChatGPT</h3><p>Add Dora as a connector in developer mode and generate from a normal chat.</p><em>Setup guide &rarr;</em></a>
+          <a class="dora-guide" href="https://doravideo.com/chatgpt?utm_source=aisagalab&amp;utm_medium=referral&amp;utm_campaign=dora_setup"><h3>ChatGPT</h3><p>Available in the ChatGPT app directory: add Dora AI Video, sign in and generate from a normal chat. Developer mode by URL still works too.</p><em>Setup guide &rarr;</em></a>
           <a class="dora-guide" href="https://doravideo.com/claude?utm_source=aisagalab&amp;utm_medium=referral&amp;utm_campaign=dora_setup"><h3>Claude</h3><p>Add the remote connector in Claude&rsquo;s settings, or install it in Claude Code.</p><em>Setup guide &rarr;</em></a>
           <a class="dora-guide" href="https://doravideo.com/cursor?utm_source=aisagalab&amp;utm_medium=referral&amp;utm_campaign=dora_setup"><h3>Cursor</h3><p>One click adds Dora to Cursor, then you authenticate and generate.</p><em>Setup guide &rarr;</em></a>
           <a class="dora-guide" href="https://doravideo.com/antigravity?utm_source=aisagalab&amp;utm_medium=referral&amp;utm_campaign=dora_setup"><h3>Google Antigravity</h3><p>Add Dora to the Antigravity IDE or the agy CLI and let Gemini drive it.</p><em>Setup guide &rarr;</em></a>
           <a class="dora-guide" href="https://doravideo.com/connectors?utm_source=aisagalab&amp;utm_medium=referral&amp;utm_campaign=dora_setup"><h3>Every other MCP client</h3><p>Windsurf, Cline, Continue, Zed, Goose, LM Studio, OpenClaw, LibreChat and anything else that speaks MCP.</p><em>All connectors &rarr;</em></a>
           <a class="dora-guide" href="https://doravideo.com/?utm_source=aisagalab&amp;utm_medium=referral&amp;utm_campaign=dora_setup"><h3>No assistant at all</h3><p>Generate directly on doravideo.com or in the iPhone app. Same account, same balance.</p><em>Open Dora &rarr;</em></a>
         </div>
+        <p class="dora-note">Dora is available in the ChatGPT app directory: <a href="CHATGPT_APP_URL" target="_blank" rel="noopener">add Dora AI Video to ChatGPT</a>. Step by step, with the other video plugins: <a href="dora/how-to-make-a-video-with-chatgpt.html">how to make a video with ChatGPT</a>.</p>
       </div>
     </section>
 
@@ -269,7 +272,7 @@
         <details><summary>Do I need to know what MCP means?</summary><p>No. MCP is the connection method. After setup, ask for a product video, animate a photo, request a vertical ad, or set a maximum cost in normal language.</p></details>
         <details><summary>Is Dora cheap?</summary><p>Dora Pro is $15 for 1,000 coins. A 4-second 480p video currently starts at 10 coins with Grok Imagine 1.5, equivalent to $0.15 on Pro. Other models and settings cost more, which is why Dora publishes concrete configurations instead of one ambiguous “videos per month” number.</p></details>
         <details><summary>Can my assistant compare model costs before generating?</summary><p>Yes. A connected assistant can inspect Dora’s model list and compare starting costs when you ask it to optimize for price. Ask it to show the proposed model and estimated cost, then wait for your confirmation.</p></details>
-        <details><summary>Which AI assistants can use Dora?</summary><p>Any client that speaks the Model Context Protocol. Dora publishes step-by-step guides for <a href="https://doravideo.com/claude">Claude</a>, <a href="https://doravideo.com/chatgpt">ChatGPT</a>, <a href="https://doravideo.com/antigravity">Google Antigravity</a> and <a href="https://doravideo.com/cursor">Cursor</a>, and the same endpoint works with Windsurf, Cline, Continue, Zed, Goose and LM Studio. The account and balance are shared with doravideo.com and the iPhone app.</p></details>
+        <details><summary>Which AI assistants can use Dora?</summary><p>Any client that speaks the Model Context Protocol. In ChatGPT it is <a href="CHATGPT_APP_URL" target="_blank" rel="noopener">available in the app directory</a> as Dora AI Video. Dora publishes step-by-step guides for <a href="https://doravideo.com/claude">Claude</a>, <a href="https://doravideo.com/chatgpt">ChatGPT</a>, <a href="https://doravideo.com/antigravity">Google Antigravity</a> and <a href="https://doravideo.com/cursor">Cursor</a>, and the same endpoint works with Windsurf, Cline, Continue, Zed, Goose and LM Studio. The account and balance are shared with doravideo.com and the iPhone app.</p></details>
         <details><summary>Who built Dora?</summary><p>Saga Labs, an independent AI engineering studio that builds agent flows, MCP servers, automations, and consumer apps. Dora is our production example of packaging a complex AI workflow into a simple product.</p></details>
       </div>
     </section>
