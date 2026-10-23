@@ -30,7 +30,11 @@
       "title_nl": "AI-videogenerator",
       "subtitle_nl": "Maak video's van tekst of foto's",
       "title_tr": "Yapay Zeka Video Üretici",
-      "subtitle_tr": "Metni veya fotoğrafı videoya çevirin"
+      "subtitle_tr": "Metni veya fotoğrafı videoya çevirin",
+      "title_zh-Hans": "AI视频生成器",
+      "subtitle_zh-Hans": "把文字或照片变成视频",
+      "title_zh-Hant": "AI影片生成器",
+      "subtitle_zh-Hant": "把文字或照片變成影片"
     },
     {
       "id": "photovault",
@@ -59,7 +63,11 @@
       "title_nl": "Privé fotokluis",
       "subtitle_nl": "Vergrendel privéfoto's en video's",
       "title_tr": "Gizli Fotoğraf Kasası",
-      "subtitle_tr": "Özel fotoğraf ve videoları kilitleyin"
+      "subtitle_tr": "Özel fotoğraf ve videoları kilitleyin",
+      "title_zh-Hans": "私密相册保险箱",
+      "subtitle_zh-Hans": "锁住私密照片和视频",
+      "title_zh-Hant": "私密相簿保險箱",
+      "subtitle_zh-Hant": "鎖住私密照片和影片"
     },
     {
       "id": "pinku",
@@ -88,7 +96,11 @@
       "title_nl": "Privé lokale AI",
       "subtitle_nl": "Offline AI-chat die privé blijft",
       "title_tr": "Gizli Yerel Yapay Zeka",
-      "subtitle_tr": "Çevrimdışı ve gizli yapay zeka sohbeti"
+      "subtitle_tr": "Çevrimdışı ve gizli yapay zeka sohbeti",
+      "title_zh-Hans": "本地私密AI",
+      "subtitle_zh-Hans": "离线AI聊天，隐私不外泄",
+      "title_zh-Hant": "本機私密AI",
+      "subtitle_zh-Hant": "離線AI聊天，隱私不外洩"
     },
     {
       "id": "fastai",
@@ -117,7 +129,11 @@
       "title_nl": "Alle AI-modellen in één",
       "subtitle_nl": "De beste AI-modellen in één chat",
       "title_tr": "Tüm AI Modelleri Bir Arada",
-      "subtitle_tr": "En iyi yapay zeka modelleri tek sohbette"
+      "subtitle_tr": "En iyi yapay zeka modelleri tek sohbette",
+      "title_zh-Hans": "全部AI模型合一",
+      "subtitle_zh-Hans": "顶尖AI模型，一个聊天搞定",
+      "title_zh-Hant": "全部AI模型合一",
+      "subtitle_zh-Hant": "頂尖AI模型，一個聊天搞定"
     },
     {
       "id": "brainy",
@@ -146,7 +162,11 @@
       "title_nl": "AI-chat & beeldmaker",
       "subtitle_nl": "Antwoorden, huiswerkhulp en AI-beelden",
       "title_tr": "AI Sohbet & Görsel Oluşturucu",
-      "subtitle_tr": "Cevaplar, ödev yardımı ve AI görselleri"
+      "subtitle_tr": "Cevaplar, ödev yardımı ve AI görselleri",
+      "title_zh-Hans": "AI聊天和图像创作",
+      "subtitle_zh-Hans": "答疑、作业辅导和AI绘图",
+      "title_zh-Hant": "AI聊天與圖像創作",
+      "subtitle_zh-Hant": "解答、作業輔導和AI繪圖"
     },
     {
       "id": "drop",
@@ -175,7 +195,11 @@
       "title_nl": "Slaapgeluiden & focus",
       "subtitle_nl": "Sneller slapen, beter focussen",
       "title_tr": "Uyku Sesleri & Odak",
-      "subtitle_tr": "Daha hızlı uyuyun, daha iyi odaklanın"
+      "subtitle_tr": "Daha hızlı uyuyun, daha iyi odaklanın",
+      "title_zh-Hans": "助眠白噪音与专注",
+      "subtitle_zh-Hans": "更快入睡，更深专注",
+      "title_zh-Hant": "助眠白噪音與專注",
+      "subtitle_zh-Hant": "更快入睡，更深專注"
     },
     {
       "id": "crypton",
@@ -204,7 +228,11 @@
       "title_nl": "Crypto-tracker",
       "subtitle_nl": "Live koersen, alerts en je portfolio",
       "title_tr": "Kripto Takipçisi",
-      "subtitle_tr": "Canlı fiyatlar, alarmlar ve portföy"
+      "subtitle_tr": "Canlı fiyatlar, alarmlar ve portföy",
+      "title_zh-Hans": "加密货币行情",
+      "subtitle_zh-Hans": "实时行情、提醒和资产组合",
+      "title_zh-Hant": "加密貨幣行情",
+      "subtitle_zh-Hant": "即時行情、提醒和資產組合"
     },
     {
       "id": "3tasks",
@@ -233,7 +261,11 @@
       "title_nl": "Dagelijkse takenlijst",
       "subtitle_nl": "3 taken per dag. Doe wat telt",
       "title_tr": "Günlük Yapılacaklar",
-      "subtitle_tr": "Günde 3 görev. Önemli olanı bitirin"
+      "subtitle_tr": "Günde 3 görev. Önemli olanı bitirin",
+      "title_zh-Hans": "每日待办清单",
+      "subtitle_zh-Hans": "每天3件事，做完最重要的",
+      "title_zh-Hant": "每日待辦清單",
+      "subtitle_zh-Hant": "每天3件事，做完最重要的"
     }
   ]
 }
