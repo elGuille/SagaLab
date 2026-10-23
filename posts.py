@@ -2387,7 +2387,7 @@ person in a photo.</p>
 
 <p>Dora also works inside Claude and ChatGPT through an MCP connector, so you can
 ask the assistant for a video in the middle of a conversation and it uses your
-Dora account. In ChatGPT it is also <a href="CHATGPT_APP_URL" target="_blank" rel="noopener">available
+Dora account. In ChatGPT it is also <a href="https://chatgpt.com/plugins/plugin_asdk_app_6ac7e595853c8191baefac6a3a2b9c24" target="_blank" rel="noopener">available
 in the app directory</a> as Dora AI Video; the <a href="%(connectors)s">setup steps are here</a>. Dora has paid
 plans only, with no free generations.</p>
 
@@ -2543,7 +2543,7 @@ persona de una foto.</p>
 
 <p>Dora funciona también dentro de Claude y ChatGPT con un conector MCP: le pides
 un vídeo al asistente en mitad de la conversación y lo hace con tu cuenta de Dora.
-En ChatGPT está también <a href="CHATGPT_APP_URL" target="_blank" rel="noopener">en el directorio
+En ChatGPT está también <a href="https://chatgpt.com/plugins/plugin_asdk_app_6ac7e595853c8191baefac6a3a2b9c24" target="_blank" rel="noopener">en el directorio
 de apps</a> como Dora AI Video; <a href="%(connectors)s">aquí están los pasos</a>. Dora solo tiene planes de pago,
 sin generaciones gratis.</p>
 

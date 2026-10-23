@@ -2,7 +2,7 @@
 """Guia de Dora: como hacer un video con ChatGPT (EN + ES), con la plantilla de guides.py.
 
 Sale el dia que Dora AI Video aparece en el directorio de apps/plugins de ChatGPT.
-CHATGPT_APP_URL y DATE_LIVE son marcadores que se sustituyen con sed ese dia.
+Salio en vivo el 2026-10-24 (ISO y CHATGPT_APP de abajo; antes eran marcadores sustituidos con sed).
 
 Datos (todos ya publicados y comprobados):
 - Sora: app cerrada el 26 abr 2026, API el 24 sep 2026 (OpenAI Help Center 20001152).
@@ -19,7 +19,7 @@ mas, no la primera.
 """
 import datetime
 
-ISO = "DATE_LIVE"
+ISO = "2026-10-24"
 
 
 def _human(iso):
@@ -35,7 +35,7 @@ def _human(iso):
 
 D = _human(ISO)
 
-CHATGPT_APP = "CHATGPT_APP_URL"
+CHATGPT_APP = "https://chatgpt.com/plugins/plugin_asdk_app_6ac7e595853c8191baefac6a3a2b9c24"
 DORA_STORE = "https://apps.apple.com/app/apple-store/id6754180384?pt=118348020&amp;ct=sagalab-guide&amp;mt=8"
 DORA_CHATGPT = "https://doravideo.com/chatgpt?utm_source=aisagalab&amp;utm_medium=referral&amp;utm_campaign=chatgpt_guide"
 DORA_TEST = "https://doravideo.com/blog/make-a-video-with-chatgpt-or-claude"
