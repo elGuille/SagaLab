@@ -574,7 +574,7 @@ tasks has a start/pause timer that counts up and keeps counting in the backgroun
 task a <strong>time limit of 15, 25, 45 or 60 minutes</strong>: a ring fills towards it, and when
 it is reached a notification says "Time's up" with the task's name, even with the app closed.
 There is no break timer: for the 5-minute break, use Clock. Starting a task's timer straight from
-the Home Screen widget and from Siri is coming in the next version; today the widget shows your
+the Home Screen widget is coming in the next version; today the widget shows your
 three tasks and the timer starts in the app.</p>
 """,
     steps=[
@@ -641,7 +641,7 @@ Tasks Pro adds a history of it. More on <a href="../3things.html">the 3 Tasks pa
          "It times each task and can notify you after 15, 25, 45 or 60 minutes, but it has no break timer. Use "
          "Clock for the breaks, or a dedicated Pomodoro app if you want breaks counted for you."),
         ("Can I start the 3 Tasks timer from the widget?",
-         "Not yet. Today the widget shows your three tasks; starting a task's timer from the widget and from Siri "
+         "Not yet. Today the widget shows your three tasks; starting a task's timer from the widget "
          "comes in the next version."),
     ],
 )
@@ -692,8 +692,8 @@ concreta ({a(FOCUS_ES, "Apple")}).</li>
 arriba y sigue contando en segundo plano. Puedes darle a una tarea un <strong>tiempo límite de 15,
 25, 45 o 60 minutos</strong>: un anillo se va llenando y, al llegar, un aviso dice «Time's up» con
 el nombre de la tarea, aunque la app esté cerrada. No hay temporizador de descanso: para los 5
-minutos, usa Reloj. Arrancar el tiempo de una tarea desde el widget de la pantalla de inicio y
-desde Siri llega en la próxima versión; hoy el widget enseña tus tres tareas y el tiempo se arranca
+minutos, usa Reloj. Arrancar el tiempo de una tarea desde el widget de la pantalla de inicio
+llega en la próxima versión; hoy el widget enseña tus tres tareas y el tiempo se arranca
 en la app.</p>
 """,
     steps=[
@@ -760,7 +760,7 @@ de 3 tareas</a>.</p>
          "Mide el tiempo de cada tarea y puede avisarte a los 15, 25, 45 o 60 minutos, pero no tiene temporizador "
          "de descanso. Usa Reloj para los descansos, o una app de Pomodoro si quieres que los cuente por ti."),
         ("¿Puedo arrancar el tiempo de 3 Tasks desde el widget?",
-         "Todavía no. Hoy el widget enseña tus tres tareas; arrancar el tiempo desde el widget y desde Siri llega "
+         "Todavía no. Hoy el widget enseña tus tres tareas; arrancar el tiempo desde el widget llega "
          "en la próxima versión."),
     ],
 )
