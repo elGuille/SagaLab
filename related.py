@@ -22,6 +22,8 @@ RD = "https://reditor.cloud/"
 GROUPS = {
     "Photo Vault": {
         "en": ([
+            "photo-vault/protect-photos-of-id-passport-cards-iphone.html",
+            "photo-vault/is-iphone-hidden-album-safe.html",
             "photo-vault/before-lending-iphone-or-taking-it-to-repair.html",
             "photo-vault/hide-photos-iphone-without-hidden-album.html",
             "photo-vault/hide-photos-iphone-without-an-app.html",
@@ -35,6 +37,8 @@ GROUPS = {
             (RL + "best-photo-vault-apps-no-data-collection-iphone/", "Best photo vault apps with no data collection for iPhone (Reviewland)"),
         ]),
         "es": ([
+            "photo-vault/es/proteger-fotos-del-dni-pasaporte-y-tarjetas-en-iphone.html",
+            "photo-vault/es/es-seguro-el-album-oculto-del-iphone.html",
             "photo-vault/es/antes-de-prestar-el-iphone-o-llevarlo-a-reparar.html",
             "photo-vault/es/ocultar-fotos-iphone-sin-album-oculto.html",
             "photo-vault/es/ocultar-fotos-iphone-sin-instalar-app.html",
@@ -50,6 +54,7 @@ GROUPS = {
     },
     "Pinku": {
         "en": ([
+            "pinku/use-ai-offline-on-a-plane-or-travelling.html",
             "pinku/which-ai-model-fits-my-iphone-mac.html",
             "pinku/is-it-safe-to-tell-chatgpt-private-things.html",
             "pinku/use-ai-on-iphone-without-internet.html",
@@ -72,6 +77,7 @@ GROUPS = {
             (RD + "private-llm-alternatives-iphone/", "Best Private LLM alternatives for iPhone and Mac in 2026 (Reditor)"),
         ]),
         "es": ([
+            "pinku/es/usar-ia-sin-conexion-en-el-avion-o-de-viaje.html",
             "pinku/es/es-seguro-contarle-cosas-privadas-a-chatgpt.html",
             "pinku/es/usar-ia-en-iphone-sin-internet.html",
             "pinku/es/comprobar-si-una-app-de-ia-guarda-tus-chats-en-el-iphone.html",
@@ -87,6 +93,7 @@ GROUPS = {
     },
     "Drop": {
         "en": ([
+            "drop/white-noise-for-baby-sleep.html",
             "drop/brown-noise-vs-pink-noise-vs-white-noise.html",
             "drop/white-noise-to-fall-asleep-iphone.html",
             "blog/best-white-noise-sleep-sound-apps-iphone.html",
@@ -95,6 +102,7 @@ GROUPS = {
             (RL + "calm-alternatives-iphone/", "Calm alternatives for iPhone in 2026 (Reviewland)"),
         ]),
         "es": ([
+            "drop/es/ruido-blanco-para-que-el-bebe-duerma.html",
             "drop/es/ruido-marron-rosa-o-blanco.html",
             "drop/es/ruido-blanco-para-dormir-iphone.html",
             "blog/es/mejores-apps-ruido-blanco-sonidos-dormir-iphone.html",
@@ -120,12 +128,12 @@ GROUPS = {
         ]),
     },
     "Crypton": {
-        "en": (["blog/best-crypto-portfolio-tracker-apps-iphone.html"], [
+        "en": (["crypton/track-crypto-prices-without-giving-your-data.html", "blog/best-crypto-portfolio-tracker-apps-iphone.html"], [
             (RL + "best-crypto-price-widget-apps-iphone/", "Best crypto price tracker apps for iPhone in 2026 (Reviewland)"),
             (RL + "best-free-crypto-portfolio-tracker-apps-iphone/", "Best free crypto portfolio trackers for iPhone in 2026 (Reviewland)"),
             (RL + "coinstats-alternatives-iphone/", "CoinStats and Delta alternatives for iPhone in 2026 (Reviewland)"),
         ]),
-        "es": (["blog/es/mejores-apps-cartera-cripto-iphone.html"], [
+        "es": (["crypton/es/seguir-precios-cripto-sin-dar-tus-datos.html", "blog/es/mejores-apps-cartera-cripto-iphone.html"], [
             (RL + "es/mejores-apps-precios-cripto-widgets-iphone/", "Mejores apps de precios de cripto para iPhone en 2026 (Reviewland)"),
             (RL + "es/mejores-apps-gratis-seguimiento-cartera-cripto-iphone/", "Mejores apps gratis para seguir tu cartera de criptomonedas (Reviewland)"),
             (RL + "es/alternativas-a-coinstats-y-delta-iphone/", "Alternativas a CoinStats y Delta para iPhone en 2026 (Reviewland)"),

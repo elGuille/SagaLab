@@ -962,6 +962,9 @@ GUIDES = [(PV_EN, PV_ES), (PK_EN, PK_ES), (DR_EN, DR_ES), (PV2_EN, PV2_ES), (PK2
 import guides_oct23  # noqa: E402  (las cuatro guias del 23 oct 2026)
 GUIDES += guides_oct23.GUIDES
 
+import guides_oct23b  # noqa: E402  (las cinco guias de la tarde del 23 oct 2026)
+GUIDES += guides_oct23b.GUIDES
+
 
 def _alts(en, es):
     s = "https://aisagalab.com/"
