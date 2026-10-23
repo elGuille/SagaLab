@@ -125,6 +125,9 @@ if __name__ == "__main__":
     import guides
     for path, size in guides.build(render):
         print("%-42s %6d bytes" % (path, size))
+    import pinku_models
+    for path, size in pinku_models.build(render):
+        print("%-42s %6d bytes" % (path, size))
     import build_i18n
     for path, size in build_i18n.build(render):
         print("%-42s %6d bytes" % (path, size))

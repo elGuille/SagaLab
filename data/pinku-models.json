@@ -1,0 +1,191 @@
+{
+  "version": 1,
+  "updated": "2026-10-19",
+  "models": [
+    {
+      "id": "mlx-community/gemma-3-1b-it-qat-4bit",
+      "name": "Gemma 3 · 1B",
+      "icon": "gemma",
+      "sizeGB": 0.8,
+      "architecture": "gemma3_text",
+      "free": true,
+      "proFrom": "1.2",
+      "quality": 30,
+      "extraEOSTokens": [
+        "<end_of_turn>"
+      ],
+      "strengths": [
+        "Chatting and everyday questions",
+        "Writing and summarizing",
+        "Translating 140+ languages"
+      ]
+    },
+    {
+      "id": "mlx-community/Llama-3.2-1B-Instruct-4bit",
+      "name": "Llama 3.2 · 1B",
+      "icon": "llama",
+      "sizeGB": 0.7,
+      "architecture": "llama",
+      "freeFrom": "1.2",
+      "quality": 20,
+      "strengths": [
+        "Quick chats and rewriting",
+        "Summarizing short texts",
+        "Fast on older iPhones"
+      ]
+    },
+    {
+      "id": "mlx-community/Llama-3.2-3B-Instruct-4bit",
+      "name": "Llama 3.2 · 3B",
+      "icon": "llama",
+      "sizeGB": 1.8,
+      "architecture": "llama",
+      "quality": 45,
+      "strengths": [
+        "Chatting and writing",
+        "Summarizing and following instructions",
+        "Better answers than the 1B"
+      ]
+    },
+    {
+      "id": "mlx-community/Qwen3-0.6B-4bit",
+      "name": "Qwen 3 · 0.6B",
+      "icon": "qwen",
+      "sizeGB": 0.4,
+      "architecture": "qwen3",
+      "reasoning": true,
+      "quality": 15,
+      "strengths": [
+        "Very fast, tiny size",
+        "Simple questions and rewriting",
+        "Can show its reasoning"
+      ]
+    },
+    {
+      "id": "mlx-community/Qwen3-1.7B-4bit",
+      "name": "Qwen 3 · 1.7B",
+      "icon": "qwen",
+      "sizeGB": 1.0,
+      "architecture": "qwen3",
+      "reasoning": true,
+      "quality": 35,
+      "strengths": [
+        "Reasoning step by step",
+        "Chatting and summarizing",
+        "Strong in Chinese and 100+ languages"
+      ]
+    },
+    {
+      "id": "mlx-community/Qwen3-4B-4bit",
+      "name": "Qwen 3 · 4B",
+      "icon": "qwen",
+      "sizeGB": 2.3,
+      "architecture": "qwen3",
+      "reasoning": true,
+      "quality": 60,
+      "strengths": [
+        "Reasoning, maths and code",
+        "Writing and summarizing",
+        "Translating 100+ languages"
+      ]
+    },
+    {
+      "id": "mlx-community/Qwen3-8B-4bit",
+      "name": "Qwen 3 · 8B",
+      "icon": "qwen",
+      "sizeGB": 4.7,
+      "architecture": "qwen3",
+      "reasoning": true,
+      "quality": 75,
+      "strengths": [
+        "Hard reasoning, maths and code",
+        "Long, detailed answers",
+        "Translating 100+ languages"
+      ]
+    },
+    {
+      "id": "mlx-community/LFM2.5-1.2B-Instruct-4bit",
+      "name": "LFM2.5 · 1.2B",
+      "icon": "liquid",
+      "sizeGB": 0.7,
+      "architecture": "lfm2",
+      "quality": 28,
+      "strengths": [
+        "Fast, efficient chat",
+        "Summarizing and extracting info",
+        "Low battery use"
+      ]
+    },
+    {
+      "id": "mlx-community/LFM2-1.2B-4bit",
+      "name": "LFM2 · 1.2B",
+      "icon": "liquid",
+      "sizeGB": 0.7,
+      "architecture": "lfm2",
+      "quality": 25,
+      "strengths": [
+        "Fast, efficient chat",
+        "Summarizing and extracting info",
+        "Low battery use"
+      ],
+      "status": "hidden"
+    },
+    {
+      "id": "mlx-community/SmolLM3-3B-4bit",
+      "name": "SmolLM3 · 3B",
+      "icon": "smollm",
+      "sizeGB": 1.8,
+      "architecture": "smollm3",
+      "reasoning": true,
+      "quality": 40,
+      "strengths": [
+        "Reasoning and long texts",
+        "Chatting in 6 languages",
+        "Summarizing"
+      ]
+    },
+    {
+      "id": "mlx-community/gemma-3n-E2B-it-lm-4bit",
+      "name": "Gemma 3n · E2B",
+      "icon": "gemma",
+      "sizeGB": 2.6,
+      "architecture": "gemma3n",
+      "quality": 55,
+      "extraEOSTokens": [
+        "<end_of_turn>"
+      ],
+      "strengths": [
+        "Chatting and writing",
+        "Translating 140+ languages",
+        "Quality of a bigger model, light on memory"
+      ]
+    },
+    {
+      "id": "mlx-community/gemma-4-e2b-it-4bit",
+      "name": "Gemma 4 · E2B",
+      "icon": "gemma",
+      "sizeGB": 3.6,
+      "architecture": "gemma4",
+      "quality": 70,
+      "strengths": [
+        "Chatting and writing",
+        "Writing and summarizing",
+        "Translating 140+ languages"
+      ]
+    },
+    {
+      "id": "mlx-community/DeepSeek-R1-Distill-Qwen-1.5B-4bit",
+      "name": "DeepSeek R1 Distill 1.5B",
+      "icon": "deepseek",
+      "sizeGB": 1.0,
+      "architecture": "qwen2",
+      "reasoning": true,
+      "experimental": true,
+      "quality": 10,
+      "strengths": [
+        "Reasoning model. May ramble on small devices."
+      ],
+      "status": "hidden"
+    }
+  ]
+}

@@ -83,7 +83,7 @@
 
   <url>
     <loc>https://aisagalab.com/blog/what-ai-does-with-your-conversations.html</loc>
-    <lastmod>2026-09-05</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -104,7 +104,7 @@
 
   <url>
     <loc>https://aisagalab.com/blog/i-sent-openai-and-anthropic-a-gdpr-erasure-request.html</loc>
-    <lastmod>2026-09-05</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -803,7 +803,7 @@
 
   <url>
     <loc>https://aisagalab.com/blog/does-apple-intelligence-work-offline-iphone.html</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -819,7 +819,7 @@
 
   <url>
     <loc>https://aisagalab.com/blog/best-siri-ai-alternatives-iphone.html</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -863,7 +863,7 @@
   </url>
   <url>
     <loc>https://aisagalab.com/blog/best-open-weight-ai-models.html</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -881,7 +881,7 @@
   </url>
   <url>
     <loc>https://aisagalab.com/blog/what-ai-chatbots-keep-when-you-delete-chats.html</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -899,7 +899,7 @@
   </url>
   <url>
     <loc>https://aisagalab.com/blog/do-local-ai-apps-send-data-mac-test.html</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -971,5 +971,222 @@
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <!-- Pinku: model fit tool and model pages (pinku_models.py) -->
+  <url>
+    <loc>https://aisagalab.com/pinku/which-ai-model-fits-my-iphone-mac.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/ru/kakaya-model-ii-podojdet-dlya-iphone-mac.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/zh/which-ai-model-fits-my-iphone-mac.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/models/qwen3-0-6b.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/models/lfm2-5-1-2b.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/models/llama-3-2-1b.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/models/gemma-3-1b.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/models/qwen3-1-7b.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/models/llama-3-2-3b.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/models/smollm3-3b.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/models/qwen3-4b.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/models/gemma-3n-e2b.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/models/gemma-4-e2b.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/models/qwen3-8b.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/ru/models/qwen3-0-6b.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/ru/models/lfm2-5-1-2b.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/ru/models/llama-3-2-1b.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/ru/models/gemma-3-1b.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/ru/models/qwen3-1-7b.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/ru/models/llama-3-2-3b.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/ru/models/smollm3-3b.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/ru/models/qwen3-4b.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/ru/models/gemma-3n-e2b.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/ru/models/gemma-4-e2b.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/ru/models/qwen3-8b.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/zh/models/qwen3-0-6b.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/zh/models/lfm2-5-1-2b.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/zh/models/llama-3-2-1b.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/zh/models/gemma-3-1b.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/zh/models/qwen3-1-7b.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/zh/models/llama-3-2-3b.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/zh/models/smollm3-3b.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/zh/models/qwen3-4b.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/zh/models/gemma-3n-e2b.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/zh/models/gemma-4-e2b.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/zh/models/qwen3-8b.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>

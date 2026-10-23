@@ -50,6 +50,7 @@ GROUPS = {
     },
     "Pinku": {
         "en": ([
+            "pinku/which-ai-model-fits-my-iphone-mac.html",
             "pinku/is-it-safe-to-tell-chatgpt-private-things.html",
             "pinku/use-ai-on-iphone-without-internet.html",
             "pinku/check-ai-chat-app-keeps-chats-on-iphone.html",
