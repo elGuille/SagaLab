@@ -86,7 +86,7 @@ PV_EN = dict(
     app_name="Photo Vault: Hide Pics Video",
     h1="How to hide photos on iPhone without the Hidden album (Photo Vault guide)",
     desc=("Step by step: move private photos out of the Photos app into a locked vault with its own "
-          "passcode, no account and no cloud, then delete the originals so they are really gone from "
+          "passcode, no account and no cloud unless you choose, then delete the originals so they are really gone from "
           "your library. Written by Photo Vault's maker."),
     section="Guides", kicker="Photo Vault guide",
     standfirst=("The Hidden album keeps photos in your library and, with iCloud Photos on, in iCloud. "
@@ -127,24 +127,25 @@ vault app that stores it in its own space on the iPhone, behind its own lock.</p
         ("Hide the app, if you want.",
          "Change the home screen icon to Calculator, Notes or Weather, and turn on the face-down "
          "lock: turning the phone face down jumps to Safari, Messages or Calendar."),
-        ("Export a backup and keep it safe.",
-         "In Settings, Backup, export the whole vault to one file locked with a password you choose, "
-         "and keep it in Files, on a computer or in your own iCloud Drive. There is no automatic "
-         "backup: without this file, the photos are lost with the phone."),
+        ("Keep a backup.",
+         "Either turn on the optional iCloud copy (Premium), which keeps the vault end-to-end encrypted in your "
+         "own iCloud, or in Settings, Backup, export the whole vault to one file locked with a password you choose "
+         "and keep it in Files, on a computer or in your own iCloud Drive. Without one of the two, the photos are "
+         "lost with the phone."),
     ],
     after="""
 <h2>What Photo Vault does and does not do</h2>
 
 <p>It keeps photos and videos on the iPhone, out of the Photos library, behind Face
 ID, Touch ID or a passcode, with an optional password per album. There is no
-account, no server and no cloud sync, the vault is excluded from iCloud backups, and
+account and no server. Nothing is uploaded unless you turn on its optional iCloud copy (Premium), which keeps the vault in your own iCloud, end-to-end encrypted so only you can open it. The vault is excluded from regular iCloud backups, and
 its files use iOS Data Protection, so they cannot be read while the iPhone is locked.
 <a href="../photo-vault-security.html">How it protects your files</a>.</p>
 
-<p>It does not back up on its own: you export the backup file when you choose. It has
+<p>Without the iCloud copy it does not back up on its own: you export the backup file when you choose. It has
 no decoy PIN, it is iPhone only, and it relies on iOS Data Protection rather than its
-own per-file encryption. It is free to download and try; a subscription, with a free
-trial, unlocks unlimited items, and what you saved stays accessible if it ends.</p>
+own per-file encryption. It is free to download and try; Premium, with 7 days free and then
+yearly, unlocks unlimited items and the iCloud copy, and what you saved stays accessible if it ends.</p>
 
 <p>Without any app: <a href="hide-photos-iphone-without-an-app.html">how to hide photos on iPhone without installing an app</a>. Other ways to do it, compared honestly: <a href="../blog/hide-photos-iphone-without-icloud.html">the
 best way to hide photos on iPhone without iCloud</a> and
@@ -158,14 +159,14 @@ best way to hide photos on iPhone without iCloud</a> and
          "For many people, yes. It is locked with Face ID, Touch ID or your passcode since iOS 16. But the "
          "photos stay in your library, and in iCloud if iCloud Photos is on."),
         ("Are photos in Photo Vault uploaded anywhere?",
-         "No. There is no account, no server and no cloud sync, and the vault is excluded from iCloud "
-         "backups."),
+         "Not unless you choose. There is no account and no server, and the vault is excluded from regular "
+         "iCloud backups. Only the optional iCloud copy (Premium) uploads it, end-to-end encrypted, to your own iCloud."),
         ("What happens to my hidden photos if I lose my iPhone?",
-         "They are lost unless you exported a backup. Export one from Settings, Backup and keep the file "
-         "somewhere other than the phone."),
+         "They are lost unless you exported a backup or turned on the optional iCloud copy. Export one from "
+         "Settings, Backup and keep the file somewhere other than the phone."),
         ("How do I move the vault to a new iPhone?",
-         "Export a backup on the old iPhone, send the file to the new one with AirDrop or Files, and "
-         "restore it there with the same password."),
+         "Turn on the optional iCloud copy and restore it on the new iPhone, or export a backup on the old "
+         "iPhone, send the file to the new one with AirDrop or Files, and restore it there with the same password."),
     ],
 )
 
@@ -174,7 +175,7 @@ PV_ES = dict(
     app_name="Photo Vault: Hide Pics Video",
     h1="Cómo ocultar fotos en el iPhone sin el álbum Oculto (guía de Photo Vault)",
     desc=("Paso a paso: saca las fotos privadas de la app Fotos a una bóveda con su propio código, sin "
-          "cuenta y sin nube, y borra los originales para que de verdad desaparezcan de tu fototeca. "
+          "cuenta y sin nube salvo que tú la actives, y borra los originales para que de verdad desaparezcan de tu fototeca. "
           "Escrito por quien hace Photo Vault."),
     section="Guías", kicker="Guía de Photo Vault",
     standfirst=("El álbum Oculto deja las fotos en tu fototeca y, con Fotos en iCloud, en iCloud. "
@@ -216,25 +217,25 @@ app de bóveda que la guarde en su propio espacio del iPhone, con su propio bloq
         ("Oculta la app, si quieres.",
          "Cambia el icono por el de Calculadora, Notas o Tiempo, y activa el bloqueo boca abajo: al "
          "poner el móvil boca abajo salta a Safari, Mensajes o Calendario."),
-        ("Exporta una copia y guárdala bien.",
-         "En Ajustes, Copia de seguridad, exporta toda la bóveda a un archivo cerrado con una "
-         "contraseña que eliges tú, y guárdalo en Archivos, en un ordenador o en tu propio iCloud "
-         "Drive. No hay copia automática: sin ese archivo, las fotos se pierden con el móvil."),
+        ("Guarda una copia.",
+         "Activa la copia opcional en iCloud (Premium), que guarda la bóveda cifrada de extremo a extremo en tu "
+         "propio iCloud, o en Ajustes, Copia de seguridad, exporta toda la bóveda a un archivo cerrado con una "
+         "contraseña que eliges tú y guárdalo en Archivos, en un ordenador o en tu propio iCloud Drive. Sin "
+         "ninguna de las dos, las fotos se pierden con el móvil."),
     ],
     after="""
 <h2>Qué hace Photo Vault y qué no</h2>
 
 <p>Guarda fotos y vídeos en el iPhone, fuera de la fototeca, detrás de Face ID, Touch
-ID o un código, con contraseña opcional por álbum. No hay cuenta, ni servidor, ni
-sincronización con la nube, la bóveda queda fuera de las copias de iCloud y sus
+ID o un código, con contraseña opcional por álbum. No hay cuenta ni servidor. No se sube nada salvo que actives su copia opcional en iCloud (Premium), que guarda la bóveda en tu propio iCloud, cifrada de extremo a extremo para que solo tú puedas abrirla. La bóveda queda fuera de las copias normales de iCloud y sus
 archivos usan la Protección de datos de iOS, así que no se pueden leer con el iPhone
 bloqueado. <a href="../../photo-vault-security.html">Cómo protege tus archivos</a> (en inglés).</p>
 
-<p>No hace copias por su cuenta: exportas el archivo de copia cuando tú quieras. No
+<p>Sin la copia en iCloud no hace copias por su cuenta: exportas el archivo de copia cuando tú quieras. No
 tiene código señuelo, es solo para iPhone y se apoya en la Protección de datos de iOS,
-no en un cifrado propio por archivo. Se descarga gratis y se puede probar; una
-suscripción, con prueba gratis, desbloquea elementos ilimitados, y lo que guardaste
-sigue accesible si se acaba.</p>
+no en un cifrado propio por archivo. Se descarga gratis y se puede probar; Premium, con
+7 días gratis y después anual, desbloquea elementos ilimitados y la copia en iCloud, y lo
+que guardaste sigue accesible si se acaba.</p>
 
 <p>Sin ninguna app: <a href="ocultar-fotos-iphone-sin-instalar-app.html">cómo ocultar fotos en el iPhone sin instalar ninguna app</a>. Otras formas de hacerlo, comparadas con honestidad:
 <a href="../../blog/es/como-ocultar-fotos-iphone-sin-icloud.html">cómo ocultar fotos en
@@ -249,14 +250,14 @@ mejores apps para ocultar fotos en iPhone</a>.</p>
          "Para mucha gente, sí. Desde iOS 16 está bloqueado con Face ID, Touch ID o el código. Pero las "
          "fotos siguen en tu fototeca, y en iCloud si tienes Fotos en iCloud."),
         ("¿Se suben a algún sitio las fotos de Photo Vault?",
-         "No. No hay cuenta, ni servidor, ni sincronización con la nube, y la bóveda queda fuera de las "
-         "copias de iCloud."),
+         "Solo si tú quieres. No hay cuenta ni servidor, y la bóveda queda fuera de las copias normales de "
+         "iCloud. Solo la copia opcional en iCloud (Premium) la sube, cifrada de extremo a extremo, a tu propio iCloud."),
         ("¿Qué pasa con mis fotos ocultas si pierdo el iPhone?",
-         "Se pierden, salvo que hayas exportado una copia. Expórtala desde Ajustes, Copia de seguridad y "
-         "guarda el archivo fuera del móvil."),
+         "Se pierden, salvo que hayas exportado una copia o activado la copia opcional en iCloud. Expórtala "
+         "desde Ajustes, Copia de seguridad y guarda el archivo fuera del móvil."),
         ("¿Cómo paso la bóveda a un iPhone nuevo?",
-         "Exporta una copia en el iPhone viejo, mándala al nuevo por AirDrop o Archivos y restáurala allí "
-         "con la misma contraseña."),
+         "Activa la copia opcional en iCloud y restáurala en el nuevo, o exporta una copia en el iPhone viejo, "
+         "mándala al nuevo por AirDrop o Archivos y restáurala allí con la misma contraseña."),
     ],
 )
 
@@ -295,7 +296,7 @@ answer is generated on the iPhone, and nothing you type leaves it.</p>
          "device, so it works with no connection at all."),
         ("Pick the right model for the job.",
          "Smaller models answer faster; larger ones answer better. The six models up to 1 GB are free; "
-         "Pinku Pro, a one-time purchase, adds six larger ones up to 4.7 GB."),
+         "Pinku Pro, yearly or one-time, adds six larger ones up to 4.7 GB."),
         ("Start a chat with Siri, if you like.",
          "Pinku has a Siri and Shortcuts action to start a chat, which also works offline."),
         ("Move a chat when you need to.",
@@ -313,7 +314,7 @@ device. Pinku checks the memory actually free before loading a model, so a model
 does not fit gives a warning instead of a crash.</p>
 
 <p>Pinku is free to download, and the six models up to 1 GB work without paying.
-Pinku Pro ($9.99 on the US App Store, one time, no subscription) adds the larger
+Pinku Pro (a yearly subscription or a one-time purchase) adds the larger
 models, custom instructions, dictation recognised on the device and read aloud. More
 on <a href="../pinku.html">Pinku's page</a>.</p>
 
@@ -371,7 +372,7 @@ escribes sale de él.</p>
          "el dispositivo, así que funciona sin ninguna conexión."),
         ("Elige el modelo adecuado.",
          "Los modelos pequeños responden más rápido; los grandes, mejor. Los seis de hasta 1 GB son "
-         "gratis; Pinku Pro, una compra única, añade seis más grandes de hasta 4,7 GB."),
+         "gratis; Pinku Pro, anual o de pago único, añade seis más grandes de hasta 4,7 GB."),
         ("Empieza un chat con Siri, si quieres.",
          "Pinku tiene una acción de Siri y Atajos para empezar un chat, que también funciona sin conexión."),
         ("Mueve un chat cuando lo necesites.",
@@ -388,7 +389,7 @@ la conversación y su velocidad depende de tu dispositivo. Pinku comprueba la me
 libre antes de cargar un modelo, así que si no cabe te avisa en lugar de cerrarse.</p>
 
 <p>Pinku se descarga gratis, y los seis modelos de hasta 1 GB funcionan sin pagar.
-Pinku Pro (9,99 $ en el App Store de EE. UU., una sola vez, sin suscripción) añade los
+Pinku Pro (suscripción anual o compra única) añade los
 modelos grandes, instrucciones propias, dictado reconocido en el dispositivo y lectura
 en voz alta. Más en <a href="../../pinku.html">la página de Pinku</a> (en inglés).</p>
 
@@ -656,16 +657,17 @@ outside the library, not synced, behind a lock of their own.</p>
 <p>That is what <a href="%(pv)s">Photo Vault</a> does. It keeps photos and videos in its own
 space on the iPhone, behind Face ID, Touch ID or a passcode, with an optional password
 per album, a disguised home screen icon (Calculator, Notes or Weather) and a face-down
-lock. There is no account, no server of ours and no cloud sync, and the vault is excluded from
-iCloud backups. The step-by-step, including deleting the originals and emptying
+lock. There is no account and no server of ours, the vault is excluded from regular iCloud
+backups, and nothing is uploaded unless you turn on its optional iCloud copy (Premium,
+end-to-end encrypted, in your own iCloud). The step-by-step, including deleting the originals and emptying
 Recently Deleted, is in <a href="hide-photos-iphone-without-hidden-album.html">how to hide photos
 on iPhone without the Hidden album</a>.</p>
 
-<p>What it does not do: it does not back up on its own, so you export a backup file yourself
-(without one, the photos are lost with the phone), it has
+<p>What it does not do: without the iCloud copy it does not back up on its own, so you export a
+backup file yourself (without either, the photos are lost with the phone), it has
 no decoy PIN, it is iPhone only, and it relies on iOS Data Protection rather than its own
-per-file encryption. It is free to download and try; a subscription, with a free trial,
-unlocks unlimited items, and what you saved stays accessible if it ends.</p>
+per-file encryption. It is free to download and try; Premium, with 7 days free and then yearly,
+unlocks unlimited items and the iCloud copy, and what you saved stays accessible if it ends.</p>
 
 <p>Other vault apps, compared honestly, including where they beat ours:
 <a href="../blog/best-photo-vault-apps-iphone.html">the best photo vault apps for iPhone</a>.</p>
@@ -754,16 +756,17 @@ fototeca, sin sincronizar y con un bloqueo propio.</p>
 <p>Eso es lo que hace <a href="%(pv)s">Photo Vault</a>. Guarda fotos y vídeos en su propio
 espacio del iPhone, detrás de Face ID, Touch ID o un código, con contraseña opcional por
 álbum, icono disfrazado en la pantalla de inicio (Calculadora, Notas o Tiempo) y bloqueo
-boca abajo. No hay cuenta, ni servidor nuestro, ni sincronización en la nube, y la bóveda queda
-fuera de las copias de iCloud. El paso a paso, con el borrado de los originales y vaciar
+boca abajo. No hay cuenta ni servidor nuestro, la bóveda queda fuera de las copias normales de
+iCloud y no se sube nada salvo que actives su copia opcional en iCloud (Premium, cifrada de
+extremo a extremo, en tu propio iCloud). El paso a paso, con el borrado de los originales y vaciar
 Eliminado, está en <a href="ocultar-fotos-iphone-sin-album-oculto.html">cómo ocultar fotos en el iPhone
 sin el álbum Oculto</a>.</p>
 
-<p>Lo que no hace: no hace copias por su cuenta, así que exportas tú un archivo de copia
-(sin él, las fotos se pierden con el móvil), no tiene código
+<p>Lo que no hace: sin la copia en iCloud no hace copias por su cuenta, así que exportas tú un
+archivo de copia (sin ninguna de las dos, las fotos se pierden con el móvil), no tiene código
 señuelo, es solo para iPhone y se apoya en la Protección de datos de iOS, no en un cifrado propio
-por archivo. Se descarga gratis y se puede probar; una suscripción, con prueba gratis, desbloquea
-elementos ilimitados, y lo que guardaste sigue accesible si se acaba.</p>
+por archivo. Se descarga gratis y se puede probar; Premium, con 7 días gratis y después anual,
+desbloquea elementos ilimitados y la copia en iCloud, y lo que guardaste sigue accesible si se acaba.</p>
 
 <p>Otras apps de bóveda, comparadas con honestidad y diciendo dónde son mejores que la nuestra:
 <a href="../../blog/es/apps-para-ocultar-fotos-iphone.html">las mejores apps para ocultar fotos en iPhone</a>.</p>
@@ -849,8 +852,7 @@ Voice dictation, if you buy Pinku Pro, is recognised on the device.</p>
 
 <p>The trade-off is capability: a model of 1 to 5 GB on a phone is clearly weaker than ChatGPT or Claude
 in the cloud, it cannot browse the web, and it does not read images or documents. Pinku is free to
-download, the six models up to 1 GB work without paying, and Pinku Pro ($9.99 on the US App Store,
-one time, no subscription) adds the larger ones. How to set it up and use it on a plane:
+download, the six models up to 1 GB work without paying, and Pinku Pro (a yearly subscription or a one-time purchase) adds the larger ones. How to set it up and use it on a plane:
 <a href="use-ai-on-iphone-without-internet.html">how to use AI on iPhone without internet</a>.
 Other apps that run a model on the device, ranked honestly:
 <a href="../blog/best-private-ai-apps-iphone.html">the best private AI apps for iPhone</a>.</p>
@@ -933,7 +935,7 @@ en el Informe de privacidad después de chatear. El dictado por voz, si compras 
 
 <p>La contrapartida es la capacidad: un modelo de 1 a 5 GB en un móvil es claramente más débil que ChatGPT o Claude en la
 nube, no navega por la web y no lee imágenes ni documentos. Pinku se descarga gratis, los seis modelos de hasta 1 GB
-funcionan sin pagar y Pinku Pro (9,99 $ en el App Store de EE. UU., pago único, sin suscripción) añade los grandes.
+funcionan sin pagar y Pinku Pro (suscripción anual o compra única) añade los grandes.
 Cómo instalarla y usarla en un avión:
 <a href="usar-ia-en-iphone-sin-internet.html">cómo usar IA en el iPhone sin internet</a>.
 Otras apps que ejecutan el modelo en el dispositivo, ordenadas con honestidad:

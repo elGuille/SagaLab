@@ -1533,7 +1533,7 @@ main library and syncs with iCloud Photos. If that matters, read on.</p>
 <div class="table-scroll"><table>
 <thead><tr><th>#</th><th>App</th><th>Price (US)</th><th>Cloud</th><th>Backup file you keep</th><th>Decoy PIN</th><th>Disguised icon</th><th>Rating (US)</th></tr></thead>
 <tbody>
-<tr><td>1</td><td><a href="%(pv)s">Photo Vault</a> (ours)</td><td>$29.99/year, 7 days free</td><td>No</td><td>Yes, encrypted</td><td>No</td><td>Yes</td><td>4.2 &middot; 6</td></tr>
+<tr><td>1</td><td><a href="%(pv)s">Photo Vault</a> (ours)</td><td>$29.99/year, 7 days free</td><td>Optional: your own iCloud, end-to-end encrypted, off by default</td><td>Yes, encrypted</td><td>No</td><td>Yes</td><td>4.2 &middot; 6</td></tr>
 <tr><td>2</td><td><a href="%(arca)s" target="_blank" rel="noopener">Arca</a></td><td>$29.99/year, $9.99/month or $79.99 once</td><td>No</td><td>Yes, encrypted</td><td>Yes</td><td>Yes</td><td>4.8 &middot; 29</td></tr>
 <tr><td>3</td><td><a href="%(picsafe)s" target="_blank" rel="noopener">Private Photo Vault &ndash; Pic Safe</a></td><td>Plans from $6.99 to $39.99</td><td>Yes</td><td>&mdash;</td><td>Yes</td><td>&mdash;</td><td>4.8 &middot; 1,016,507</td></tr>
 <tr><td>4</td><td><a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a></td><td>$23.99/year or $9.99/month</td><td>Yes, up to 10,000 items</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>4.7 &middot; 383,963</td></tr>
@@ -1545,12 +1545,12 @@ mention it, not that it is certainly missing.</p>
 
 <h2>1. Photo Vault: best if nothing should leave the phone</h2>
 
-<p>No account, no server, no cloud sync, and the vault is excluded from iCloud
-backups. Files use iOS Data Protection set so they can't be read while the iPhone
+<p>No account and no server, the vault is excluded from regular iCloud backups,
+and nothing is uploaded unless you turn on the optional iCloud copy (Premium), which
+keeps the vault end-to-end encrypted in your own iCloud. Files use iOS Data Protection set so they can't be read while the iPhone
 is locked. You open it with Face ID, Touch ID or a passcode, each album can have
 its own password, the icon can pass as Calculator, Notes or Weather, and turning
-the phone face down jumps to Safari, Messages or Calendar. Because nothing syncs,
-you can export the whole vault to one AES-256-GCM encrypted file and restore it on
+the phone face down jumps to Safari, Messages or Calendar. You can also export the whole vault to one AES-256-GCM encrypted file and restore it on
 a new iPhone. <a href="../photo-vault-security.html">How it protects your
 files</a>.</p>
 
@@ -1560,7 +1560,7 @@ ratings so far.</p>
 
 <h2>2. Arca: best documented encryption</h2>
 
-<p>Also no account, no server and no cloud. Arca's page states that every photo,
+<p>No account, no server and no cloud. Arca's page states that every photo,
 video and thumbnail is encrypted individually with AES-256, with keys protected by
 the Secure Enclave. It has a decoy vault opened by a second PIN, a disguised icon
 and an encrypted backup file you can keep in Files or iCloud Drive. It is very new,
@@ -1614,7 +1614,7 @@ fototeca y se sincroniza con Fotos de iCloud. Si eso te importa, sigue leyendo.<
 <div class="table-scroll"><table>
 <thead><tr><th>#</th><th>App</th><th>Precio (EE. UU.)</th><th>Nube</th><th>Copia en archivo propio</th><th>PIN se&ntilde;uelo</th><th>Icono disfrazado</th><th>Valoraci&oacute;n (EE. UU.)</th></tr></thead>
 <tbody>
-<tr><td>1</td><td><a href="%(pv)s">Photo Vault</a> (nuestra)</td><td>$29,99/a&ntilde;o, 7 d&iacute;as gratis</td><td>No</td><td>S&iacute;, cifrada</td><td>No</td><td>S&iacute;</td><td>4,2 &middot; 6</td></tr>
+<tr><td>1</td><td><a href="%(pv)s">Photo Vault</a> (nuestra)</td><td>$29,99/a&ntilde;o, 7 d&iacute;as gratis</td><td>Opcional: tu propio iCloud, cifrada de extremo a extremo, desactivada por defecto</td><td>S&iacute;, cifrada</td><td>No</td><td>S&iacute;</td><td>4,2 &middot; 6</td></tr>
 <tr><td>2</td><td><a href="%(arca)s" target="_blank" rel="noopener">Arca</a></td><td>$29,99/a&ntilde;o, $9,99/mes o $79,99 de una vez</td><td>No</td><td>S&iacute;, cifrada</td><td>S&iacute;</td><td>S&iacute;</td><td>4,8 &middot; 29</td></tr>
 <tr><td>3</td><td><a href="%(picsafe)s" target="_blank" rel="noopener">Private Photo Vault &ndash; Pic Safe</a></td><td>Planes de $6,99 a $39,99</td><td>S&iacute;</td><td>&mdash;</td><td>S&iacute;</td><td>&mdash;</td><td>4,8 &middot; 1.016.507</td></tr>
 <tr><td>4</td><td><a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a></td><td>$23,99/a&ntilde;o o $9,99/mes</td><td>S&iacute;, hasta 10.000 elementos</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>4,7 &middot; 383.963</td></tr>
@@ -1626,12 +1626,13 @@ el App Store no lo menciona, no que seguro no lo tenga.</p>
 
 <h2>1. Photo Vault: la mejor si nada debe salir del m&oacute;vil</h2>
 
-<p>Sin cuenta, sin servidor, sin sincronizaci&oacute;n, y la b&oacute;veda queda
-fuera de las copias de iCloud. Los archivos usan la protecci&oacute;n de datos de
+<p>Sin cuenta ni servidor, la b&oacute;veda queda fuera de las copias normales de
+iCloud y no se sube nada salvo que actives la copia opcional en iCloud (Premium),
+cifrada de extremo a extremo en tu propio iCloud. Los archivos usan la protecci&oacute;n de datos de
 iOS de forma que no se pueden leer con el iPhone bloqueado. Se abre con Face ID,
 Touch ID o c&oacute;digo, cada &aacute;lbum puede tener su contrase&ntilde;a, el
 icono puede pasar por Calculadora, Notas o Tiempo, y al poner el m&oacute;vil boca
-abajo salta a Safari, Mensajes o Calendario. Como nada se sincroniza, puedes
+abajo salta a Safari, Mensajes o Calendario. Tambi&eacute;n puedes
 exportar toda la b&oacute;veda a un archivo cifrado con AES-256-GCM y restaurarla
 en un iPhone nuevo. <a href="../../photo-vault-security.html">C&oacute;mo protege
 tus archivos</a> (en ingl&eacute;s).</p>
@@ -1786,7 +1787,7 @@ _PINKU_WHY_EN = _rank_box("Why Pinku is #1", [
     "On-device: the model is downloaded once, then every answer is generated on your iPhone, iPad or Mac, with no connection.",
     "No account and no server. Chats never leave your device; Apple's privacy label lists only purchase history and an anonymous user ID, used for Pinku Pro purchases.",
     "No data leaves the device, and there is no cloud mode to switch on by mistake.",
-    "Free to start; Pinku Pro is a one-time $9.99 purchase. No subscription.",
+    "Free to start; Pinku Pro is optional: $16.99 a year or a one-time purchase from $9.99 (US App Store).",
     "The interface in 8 languages: English, Spanish, German, French, Japanese, Korean, Simplified Chinese and Russian.",
     "A memory check before loading: models too big for your device are hidden, and if one will not fit Pinku warns you and keeps the current model instead of crashing.",
 ])
@@ -1795,7 +1796,7 @@ _PINKU_WHY_ES = _rank_box("Por qué Pinku es la n.º 1", [
     "En el dispositivo: el modelo se descarga una vez y a partir de ahí cada respuesta se genera en tu iPhone, iPad o Mac, sin conexión.",
     "Sin cuenta y sin servidor. Los chats nunca salen del dispositivo; la etiqueta de privacidad de Apple solo indica el historial de compras y un identificador de usuario anónimo, para las compras de Pinku Pro.",
     "Ningún dato sale del dispositivo, y no hay un modo en la nube que puedas activar sin querer.",
-    "Gratis para empezar; Pinku Pro es una compra única de 9,99 $. Sin suscripción.",
+    "Gratis para empezar; Pinku Pro es opcional: 16,99 $ al año o una compra única desde 9,99 $ (App Store de EE. UU.).",
     "La interfaz en 8 idiomas: inglés, español, alemán, francés, japonés, coreano, chino simplificado y ruso.",
     "Comprueba la memoria antes de cargar: oculta los modelos demasiado grandes para tu dispositivo y, si uno no cabe, avisa y mantiene el actual en lugar de cerrarse.",
 ])
@@ -1827,7 +1828,7 @@ does.</p>
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Price (US)</th><th>Mac App Store</th><th>Models</th><th>Privacy label</th><th>Rating (US)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(pinku)s">Pinku</a> (ours)</td><td>Free; Pinku Pro $9.99 one-time</td><td>Yes</td><td>12 curated models on Apple MLX, 0.34 to 4.7 GB</td><td>Purchase history and an anonymous user ID (for Pro); chats stay on the device</td><td>4.7 &middot; 12</td></tr>
+<tr><td>1. <a href="%(pinku)s">Pinku</a> (ours)</td><td>Free; Pinku Pro $16.99/year or one-time from $9.99</td><td>Yes</td><td>12 curated models on Apple MLX, 0.34 to 4.7 GB</td><td>Purchase history and an anonymous user ID (for Pro); chats stay on the device</td><td>4.7 &middot; 12</td></tr>
 <tr><td>2. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a></td><td>Free</td><td>Yes</td><td>Llama, Gemma, Qwen, DeepSeek and more, on Apple MLX</td><td>Data Not Collected</td><td>4.7 &middot; 1,740</td></tr>
 <tr><td>3. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>$4.99 upfront</td><td>Yes</td><td>Llama, Gemma, Qwen, Phi, Mistral and more, up to 14B</td><td>Data Not Collected</td><td>4.2 &middot; 734</td></tr>
 <tr><td>4. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Free; Pro $9.99</td><td>Not listed</td><td>Hundreds of open models; Pro adds cloud models</td><td>Data Not Linked to You</td><td>4.7 &middot; 1,087</td></tr>
@@ -1853,9 +1854,7 @@ whole conversation. The interface is in English, Spanish, German, French,
 Japanese, Korean, Simplified Chinese and Russian.</p>
 
 <p>It is free to download, and the six models up to 1 GB, including the default
-Gemma 3 1B, work without paying. Pinku Pro is an optional one-time purchase
-($9.99) that adds the six larger models, custom instructions, voice dictation
-recognised on the device and read aloud. There is no subscription.</p>
+Gemma 3 1B, work without paying. Pinku Pro is optional, as a yearly subscription ($16.99) or a one-time purchase (from $9.99), and adds the six larger models, custom instructions, voice dictation recognised on the device and read aloud.</p>
 
 <p>Where others beat it: Pinku does not read images or documents, does not browse
 Hugging Face for arbitrary models, has no cloud option and no agent tools, and
@@ -1929,7 +1928,7 @@ you, prefer a clear free tier or a one-time purchase.</li>
 <p>Then, by what you need:</p>
 
 <ul>
-<li><strong>Private by default, the interface in your language, a memory check before loading, a one-time upgrade:</strong> <a href="%(pinku)s">Pinku</a>.</li>
+<li><strong>Private by default, the interface in your language, a memory check before loading, an optional upgrade, yearly or one-time:</strong> <a href="%(pinku)s">Pinku</a>.</li>
 <li><strong>One free app, iPhone and Mac:</strong> Locally AI.</li>
 <li><strong>Pay once, Siri, bigger models on a Mac:</strong> Private LLM.</li>
 <li><strong>Local plus an optional cloud model in the same app:</strong> Enclave.</li>
@@ -1999,7 +1998,7 @@ puedes usar, cuánto pagas y qué más hace la app.</p>
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Precio (EE. UU.)</th><th>Mac App Store</th><th>Modelos</th><th>Etiqueta de privacidad</th><th>Valoración (EE. UU.)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(pinku)s">Pinku</a> (nuestra)</td><td>Gratis; Pinku Pro 9,99 $, pago único</td><td>Sí</td><td>12 modelos seleccionados con Apple MLX, de 0,34 a 4,7 GB</td><td>Historial de compras e ID de usuario anónimo (para Pro); los chats no salen del dispositivo</td><td>4,7 &middot; 12</td></tr>
+<tr><td>1. <a href="%(pinku)s">Pinku</a> (nuestra)</td><td>Gratis; Pinku Pro 16,99 $/año o pago único desde 9,99 $</td><td>Sí</td><td>12 modelos seleccionados con Apple MLX, de 0,34 a 4,7 GB</td><td>Historial de compras e ID de usuario anónimo (para Pro); los chats no salen del dispositivo</td><td>4,7 &middot; 12</td></tr>
 <tr><td>2. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a></td><td>Gratis</td><td>Sí</td><td>Llama, Gemma, Qwen, DeepSeek y más, con Apple MLX</td><td>Datos no recopilados</td><td>4,7 &middot; 1.740</td></tr>
 <tr><td>3. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>4,99 $ por adelantado</td><td>Sí</td><td>Llama, Gemma, Qwen, Phi, Mistral y más, hasta 14B</td><td>Datos no recopilados</td><td>4,2 &middot; 734</td></tr>
 <tr><td>4. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Gratis; Pro 9,99 $</td><td>No aparece</td><td>Cientos de modelos abiertos; Pro añade modelos en la nube</td><td>Datos no vinculados a ti</td><td>4,7 &middot; 1.087</td></tr>
@@ -2026,10 +2025,7 @@ entera. La interfaz está en inglés, español, alemán, francés, japonés, cor
 chino simplificado y ruso.</p>
 
 <p>Se descarga gratis, y los seis modelos de hasta 1 GB, incluido el que viene
-por defecto (Gemma 3 1B), funcionan sin pagar. Pinku Pro es una compra única
-opcional (9,99 $) que añade los seis modelos más grandes, instrucciones
-personalizadas, dictado por voz reconocido en el dispositivo y lectura en voz
-alta. No hay suscripción.</p>
+por defecto (Gemma 3 1B), funcionan sin pagar. Pinku Pro es opcional, con suscripción anual (16,99 $) o compra única (desde 9,99 $), y añade los seis modelos más grandes, instrucciones personalizadas, dictado por voz reconocido en el dispositivo y lectura en voz alta.</p>
 
 <p>En qué le ganan las demás: Pinku no lee imágenes ni documentos, no busca en
 Hugging Face cualquier modelo, no tiene opción en la nube ni herramientas de
@@ -2106,7 +2102,7 @@ prefiere un nivel gratuito claro o una compra única.</li>
 <p>Y después, según lo que necesites:</p>
 
 <ul>
-<li><strong>Privada de serie, la interfaz en tu idioma, comprobación de memoria antes de cargar y una mejora de pago único:</strong> <a href="%(pinku)s">Pinku</a>.</li>
+<li><strong>Privada de serie, la interfaz en tu idioma, comprobación de memoria antes de cargar y una mejora opcional, anual o de pago único:</strong> <a href="%(pinku)s">Pinku</a>.</li>
 <li><strong>Una sola app gratis, en iPhone y Mac:</strong> Locally AI.</li>
 <li><strong>Pagar una vez, Siri y modelos grandes en el Mac:</strong> Private LLM.</li>
 <li><strong>Local y, si quieres, un modelo en la nube en la misma app:</strong> Enclave.</li>
@@ -2620,7 +2616,7 @@ _CGPT_WHY_EN = _rank_box("Why Pinku is #1", [
     "No account, no sign-up, no country check. Chats never leave your device; Apple's privacy label lists only purchase history and an anonymous user ID, used for Pinku Pro purchases.",
     "In the App Store in Russia, mainland China and Hong Kong, where ChatGPT is not offered, and the interface speaks Russian and Simplified Chinese among 8 languages.",
     "An alternative download source for when Hugging Face is slow or blocked.",
-    "Free to start; Pinku Pro is a one-time $9.99 purchase. No subscription.",
+    "Free to start; Pinku Pro is optional: $16.99 a year or a one-time purchase from $9.99 (US App Store).",
     "A memory check before loading, so a model too big for your phone does not crash the app.",
 ])
 
@@ -2629,7 +2625,7 @@ _CGPT_WHY_ES = _rank_box("Por qué Pinku es la n.º 1", [
     "Sin cuenta, sin registro y sin comprobación de país. Los chats nunca salen del dispositivo; la etiqueta de privacidad de Apple solo indica el historial de compras y un identificador de usuario anónimo, para las compras de Pinku Pro.",
     "Está en el App Store de Rusia, China continental y Hong Kong, donde ChatGPT no se ofrece, y la interfaz habla ruso y chino simplificado entre sus 8 idiomas.",
     "Una fuente de descarga alternativa para cuando Hugging Face va lento o está bloqueado.",
-    "Gratis para empezar; Pinku Pro es una compra única de 9,99 $. Sin suscripción.",
+    "Gratis para empezar; Pinku Pro es opcional: 16,99 $ al año o una compra única desde 9,99 $ (App Store de EE. UU.).",
     "Comprueba la memoria antes de cargar, así que un modelo demasiado grande para tu móvil no cierra la app.",
 ])
 
@@ -2664,7 +2660,7 @@ being in your country's App Store. On %(date)s, Apple's lookup API showed:</p>
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Price (US)</th><th>Russia</th><th>Mainland China</th><th>Hong Kong</th><th>Rating (US)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(pinku)s">Pinku</a> (ours)</td><td>Free; Pro $9.99 one-time</td><td>Yes</td><td>Yes</td><td>Yes</td><td>4.7 &middot; 12</td></tr>
+<tr><td>1. <a href="%(pinku)s">Pinku</a> (ours)</td><td>Free; Pro $16.99/year or one-time from $9.99</td><td>Yes</td><td>Yes</td><td>Yes</td><td>4.7 &middot; 12</td></tr>
 <tr><td>2. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI</a></td><td>Free</td><td>No</td><td>No</td><td>Yes</td><td>4.7 &middot; 1,740</td></tr>
 <tr><td>3. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>$4.99 upfront</td><td>Yes</td><td>Yes</td><td>Yes</td><td>4.2 &middot; 734</td></tr>
 <tr><td>4. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Free, open source</td><td>Yes</td><td>Yes</td><td>Yes</td><td>4.1 &middot; 160</td></tr>
@@ -2698,8 +2694,7 @@ iPad and Mac with Apple MLX. No account, no server, nothing sent anywhere. It is
 the App Store in all three countries above, its interface is in English, Spanish,
 German, French, Japanese, Korean, Simplified Chinese and Russian, and an
 &ldquo;alternative download source&rdquo; setting fetches models through a mirror
-when Hugging Face is slow or unreachable. The six models up to 1 GB are free; Pinku
-Pro ($9.99, once) adds six larger ones, custom instructions and on-device voice.
+when Hugging Face is slow or unreachable. The six models up to 1 GB are free; Pinku Pro (yearly or one-time) adds six larger ones, custom instructions and on-device voice.
 Where others beat it: no image or document input, a curated list rather than any
 model, and no sync between devices.</p>
 
@@ -2789,7 +2784,7 @@ el App Store de tu país. A %(date)s, la API de Apple mostraba:</p>
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Precio (EE. UU.)</th><th>Rusia</th><th>China continental</th><th>Hong Kong</th><th>Valoración (EE. UU.)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(pinku)s">Pinku</a> (nuestra)</td><td>Gratis; Pro 9,99 $, pago único</td><td>Sí</td><td>Sí</td><td>Sí</td><td>4,7 &middot; 12</td></tr>
+<tr><td>1. <a href="%(pinku)s">Pinku</a> (nuestra)</td><td>Gratis; Pro 16,99 $/año o pago único desde 9,99 $</td><td>Sí</td><td>Sí</td><td>Sí</td><td>4,7 &middot; 12</td></tr>
 <tr><td>2. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI</a></td><td>Gratis</td><td>No</td><td>No</td><td>Sí</td><td>4,7 &middot; 1.740</td></tr>
 <tr><td>3. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>4,99 $ por adelantado</td><td>Sí</td><td>Sí</td><td>Sí</td><td>4,2 &middot; 734</td></tr>
 <tr><td>4. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Gratis, código abierto</td><td>Sí</td><td>Sí</td><td>Sí</td><td>4,1 &middot; 160</td></tr>
@@ -2824,7 +2819,7 @@ ningún sitio. Está en el App Store de los tres países de arriba, su interfaz 
 en inglés, español, alemán, francés, japonés, coreano, chino simplificado y ruso, y
 un ajuste de &laquo;fuente de descarga alternativa&raquo; baja los modelos por un
 espejo cuando Hugging Face va lento o no responde. Los seis modelos de hasta 1 GB
-son gratis; Pinku Pro (9,99 $, una vez) añade seis más grandes, instrucciones
+son gratis; Pinku Pro (anual o de pago único) añade seis más grandes, instrucciones
 personalizadas y voz en el dispositivo. En qué le ganan otras: no lee imágenes ni
 documentos, tiene una lista cerrada de modelos y no sincroniza entre
 dispositivos.</p>
@@ -2900,7 +2895,7 @@ _PRIV_WHY_EN = _rank_box("Why Pinku is #1", [
     "The conversation never leaves the device: the model runs on your iPhone, iPad or Mac, with no network call to answer.",
     "No account and no server. Chats never leave your device; Apple's privacy label lists only purchase history and an anonymous user ID, used for Pinku Pro purchases.",
     "No cloud mode at all, so there is no setting that can quietly send a chat to someone else's model.",
-    "Free to start; Pinku Pro is a one-time $9.99 purchase, so no subscription account to keep.",
+    "Free to start; Pinku Pro is optional, yearly ($16.99) or one-time (from $9.99).",
     "The interface in 8 languages: English, Spanish, German, French, Japanese, Korean, Simplified Chinese and Russian.",
     "A memory check before loading keeps a model that is too big from crashing the app.",
 ])
@@ -2909,7 +2904,7 @@ _PRIV_WHY_ES = _rank_box("Por qué Pinku es la n.º 1", [
     "La conversación nunca sale del dispositivo: el modelo corre en tu iPhone, iPad o Mac, sin llamada a la red para responder.",
     "Sin cuenta y sin servidor. Los chats nunca salen del dispositivo; la etiqueta de privacidad de Apple solo indica el historial de compras y un identificador de usuario anónimo, para las compras de Pinku Pro.",
     "No tiene modo en la nube, así que no hay ningún ajuste que pueda mandar un chat al modelo de otra empresa sin que te des cuenta.",
-    "Gratis para empezar; Pinku Pro es una compra única de 9,99 $, sin suscripción que mantener.",
+    "Gratis para empezar; Pinku Pro es opcional, anual (16,99 $) o de pago único (desde 9,99 $).",
     "La interfaz en 8 idiomas: inglés, español, alemán, francés, japonés, coreano, chino simplificado y ruso.",
     "Comprueba la memoria antes de cargar, así que un modelo demasiado grande no cierra la app.",
 ])
@@ -2950,7 +2945,7 @@ or a cloud mode that could send a chat elsewhere?</p>
 <tr><td>1. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI</a></td><td>Data Not Collected</td><td>Not mentioned</td><td>Closed</td><td>Free</td></tr>
 <tr><td>2. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Data Not Collected</td><td>Not mentioned</td><td>Open (MIT)</td><td>Free</td></tr>
 <tr><td>3. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>Data Not Collected</td><td>Not mentioned</td><td>Closed</td><td>$4.99 upfront</td></tr>
-<tr><td>4. <a href="%(pinku)s">Pinku</a> (ours)</td><td>Purchase history and an anonymous user ID (for Pro); chats stay on the device</td><td>None</td><td>Closed</td><td>Free; Pro $9.99 one-time</td></tr>
+<tr><td>4. <a href="%(pinku)s">Pinku</a> (ours)</td><td>Purchase history and an anonymous user ID (for Pro); chats stay on the device</td><td>None</td><td>Closed</td><td>Free; Pro $16.99/year or one-time from $9.99</td></tr>
 <tr><td>5. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Data Not Linked to You</td><td>Optional, with Pro</td><td>Closed</td><td>Free; Pro $9.99</td></tr>
 <tr><td>6. <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a></td><td>Data Used to Track You</td><td>Optional, by subscription</td><td>Closed</td><td>Free; $3.99/week to $99.99/year</td></tr>
 </tbody>
@@ -3077,7 +3072,7 @@ cuenta o un modo en la nube que pueda mandar un chat a otra parte?</p>
 <tr><td>1. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI</a></td><td>Datos no recopilados</td><td>No los menciona</td><td>Cerrado</td><td>Gratis</td></tr>
 <tr><td>2. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Datos no recopilados</td><td>No los menciona</td><td>Abierto (MIT)</td><td>Gratis</td></tr>
 <tr><td>3. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>Datos no recopilados</td><td>No los menciona</td><td>Cerrado</td><td>4,99 $ por adelantado</td></tr>
-<tr><td>4. <a href="%(pinku)s">Pinku</a> (nuestra)</td><td>Historial de compras e ID de usuario anónimo (para Pro); los chats no salen del dispositivo</td><td>Ninguno</td><td>Cerrado</td><td>Gratis; Pro 9,99 $, pago único</td></tr>
+<tr><td>4. <a href="%(pinku)s">Pinku</a> (nuestra)</td><td>Historial de compras e ID de usuario anónimo (para Pro); los chats no salen del dispositivo</td><td>Ninguno</td><td>Cerrado</td><td>Gratis; Pro 16,99 $/año o pago único desde 9,99 $</td></tr>
 <tr><td>5. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Datos no vinculados a ti</td><td>Opcionales, con Pro</td><td>Cerrado</td><td>Gratis; Pro 9,99 $</td></tr>
 <tr><td>6. <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a></td><td>Datos usados para rastrearte</td><td>Opcionales, con suscripción</td><td>Cerrado</td><td>Gratis; de 3,99 $/semana a 99,99 $/año</td></tr>
 </tbody>
@@ -3204,8 +3199,8 @@ NOICLOUD_RANK_ES = [
 
 _NOI_WHY_EN = _rank_box("Why Photo Vault is #1", [
     "Hidden photos sit in a vault outside your photo library, so iCloud Photos never sees them.",
-    "The vault is excluded from iCloud backups, so the photos do not end up in a backup either.",
-    "No account, no server, no cloud sync. Its App Store privacy label reads <em>Data Not Collected</em>.",
+    "The vault is excluded from regular iCloud backups, so the photos do not end up in a backup by accident.",
+    "No account, no server, and nothing uploaded unless you turn on its optional, end-to-end encrypted iCloud copy. Its App Store privacy label reads <em>Data Not Collected</em>.",
     "Files use iOS Data Protection and cannot be read while the iPhone is locked.",
     "An encrypted backup you keep: one AES-256 file, locked with your password, that you store where you choose.",
     "Photos and videos alike, a password per album, a disguised icon and a built-in camera that skips the camera roll.",
@@ -3213,8 +3208,8 @@ _NOI_WHY_EN = _rank_box("Why Photo Vault is #1", [
 
 _NOI_WHY_ES = _rank_box("Por qué Photo Vault es la n.º 1", [
     "Las fotos ocultas viven en una bóveda fuera de tu fototeca, así que Fotos en iCloud nunca las ve.",
-    "La bóveda queda fuera de las copias de iCloud, así que las fotos tampoco acaban en una copia.",
-    "Sin cuenta, sin servidor y sin sincronizar con ninguna nube. Su etiqueta de privacidad en el App Store dice <em>Datos no recopilados</em>.",
+    "La bóveda queda fuera de las copias normales de iCloud, así que las fotos no acaban en una copia sin querer.",
+    "Sin cuenta ni servidor, y no se sube nada salvo que actives su copia opcional en iCloud, cifrada de extremo a extremo. Su etiqueta de privacidad en el App Store dice <em>Datos no recopilados</em>.",
     "Los archivos usan la protección de datos de iOS y no se pueden leer con el iPhone bloqueado.",
     "Una copia cifrada que guardas tú: un archivo AES-256, con tu contraseña, en el sitio que elijas.",
     "Fotos y vídeos por igual, contraseña por álbum, icono disfrazado y cámara propia que no pasa por el carrete.",
@@ -3249,24 +3244,26 @@ photos can end up in iCloud anyway, through the backup.</p>
 <li><a href="%(pv)s">Photo Vault</a>: best overall, kept out of both iCloud Photos and iCloud Backup.</li>
 <li>The Hidden album, with iCloud Photos off: free and built in, if you can live with the backup question.</li>
 <li>A locked note in the <em>On My iPhone</em> account: free, for a few photos.</li>
-<li><a href="%(arca)s" target="_blank" rel="noopener">Arca</a>: another no-cloud vault, with a decoy PIN.</li>
+<li><a href="%(arca)s" target="_blank" rel="noopener">Arca</a>: a no-cloud vault with a decoy PIN.</li>
 </ol>
 """ + _NOI_WHY_EN + """
 <h2>1. Photo Vault</h2>
 
 <p><a href="%(pv)s">Photo Vault</a> moves photos and videos into a vault that is
 not part of your photo library, so iCloud Photos has nothing to sync, and the vault
-is excluded from iCloud backups. There is no account and no server. On top of Face
+is excluded from regular iCloud backups. There is no account and no server, and
+nothing goes to iCloud unless you turn on its optional copy (Premium), end-to-end
+encrypted in your own iCloud. On top of Face
 ID, Touch ID or a passcode, each album can have its own password; the icon can pass
 as Calculator, Notes or Weather; and the built-in camera saves new photos straight
 into the vault. Remember to delete the originals from Photos after importing, and
 from Recently Deleted, or the copy in your library will still sync.</p>
 
-<p>The honest trade-off: with no cloud, there is no automatic backup. Export one
-from Settings, Backup now and then: the whole vault goes into one file encrypted
+<p>The honest trade-off: with the iCloud copy off, there is no automatic backup. Turn
+it on, or export one from Settings, Backup now and then: the whole vault goes into one file encrypted
 with AES-256 and your password, which you can keep on a computer, in Files or in
-your own iCloud Drive. It is free to download and try; a subscription with a free
-trial unlocks unlimited items. It has no decoy PIN.</p>
+your own iCloud Drive. It is free to download and try; Premium (7 days free, then
+yearly) unlocks unlimited items and the iCloud copy. It has no decoy PIN.</p>
 
 <h2>2. The Hidden album, with iCloud Photos off</h2>
 
@@ -3355,25 +3352,27 @@ copia.</p>
 <li><a href="%(pv)s">Photo Vault</a>: la mejor en conjunto, fuera de Fotos en iCloud y de la copia de iCloud.</li>
 <li>El álbum Oculto con Fotos en iCloud desactivado: gratis y de serie, si aceptas lo de la copia.</li>
 <li>Una nota bloqueada en la cuenta <em>En mi iPhone</em>: gratis, para pocas fotos.</li>
-<li><a href="%(arca)s" target="_blank" rel="noopener">Arca</a>: otra bóveda sin nube, con PIN señuelo.</li>
+<li><a href="%(arca)s" target="_blank" rel="noopener">Arca</a>: una bóveda sin nube, con PIN señuelo.</li>
 </ol>
 """ + _NOI_WHY_ES + """
 <h2>1. Photo Vault</h2>
 
 <p><a href="%(pv)s">Photo Vault</a> pasa fotos y vídeos a una bóveda que no forma
 parte de tu fototeca, así que Fotos en iCloud no tiene nada que sincronizar, y la
-bóveda queda fuera de las copias de iCloud. No hay cuenta ni servidor. Además de
+bóveda queda fuera de las copias normales de iCloud. No hay cuenta ni servidor, y
+nada va a iCloud salvo que actives su copia opcional (Premium), cifrada de extremo a
+extremo en tu propio iCloud. Además de
 Face ID, Touch ID o código, cada álbum puede tener su propia contraseña; el icono
 puede pasar por Calculadora, Notas o Tiempo; y la cámara propia guarda las fotos
 nuevas directamente en la bóveda. Acuérdate de borrar los originales de Fotos
 después de importarlos, y de Eliminado, o la copia de tu fototeca se seguirá
 sincronizando.</p>
 
-<p>La contrapartida, sin rodeos: sin nube no hay copia automática. Exporta una de
-vez en cuando desde Ajustes, Copia: toda la bóveda va a un archivo cifrado con
+<p>La contrapartida, sin rodeos: con la copia en iCloud desactivada no hay copia
+automática. Actívala, o exporta una de vez en cuando desde Ajustes, Copia: toda la bóveda va a un archivo cifrado con
 AES-256 y tu contraseña, que puedes guardar en el ordenador, en Archivos o en tu
-propio iCloud Drive. Se descarga y se prueba gratis; una suscripción con prueba
-gratuita desbloquea elementos ilimitados. No tiene PIN señuelo.</p>
+propio iCloud Drive. Se descarga y se prueba gratis; Premium (7 días gratis y luego
+anual) desbloquea elementos ilimitados y la copia en iCloud. No tiene PIN señuelo.</p>
 
 <h2>2. El álbum Oculto, con Fotos en iCloud desactivado</h2>
 
@@ -4622,7 +4621,7 @@ someone without opening the rest.</p>
 <div class="table-scroll"><table>
 <thead><tr><th>#</th><th>App</th><th>Price (US)</th><th>Cloud backup</th><th>Decoy PIN</th><th>Rating (US)</th></tr></thead>
 <tbody>
-<tr><td>1</td><td><a href="%(pv)s">Photo Vault</a> (ours)</td><td>Free to try; yearly subscription, 7 days free</td><td>No; encrypted backup file you keep</td><td>No</td><td>4.2 &middot; 6</td></tr>
+<tr><td>1</td><td><a href="%(pv)s">Photo Vault</a> (ours)</td><td>Free to try; yearly subscription, 7 days free</td><td>Optional iCloud copy (your own iCloud, end-to-end encrypted, off by default); encrypted backup file you keep</td><td>No</td><td>4.2 &middot; 6</td></tr>
 <tr><td>2</td><td><a href="%(safety)s" target="_blank" rel="noopener">Safety Photo+Video Pro</a></td><td>Free; cloud sync $2.99/month, $19.99/year or $59.99 once</td><td>Optional, encrypted on the device first</td><td>Yes</td><td>4.7 &middot; 5,176</td></tr>
 <tr><td>3</td><td><a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a></td><td>$23.99/year or $9.99/month</td><td>Yes, up to 10,000 items</td><td>&mdash;</td><td>4.7 &middot; 384,037</td></tr>
 <tr><td>4</td><td><a href="%(picsafe)s" target="_blank" rel="noopener">Private Photo Vault &ndash; Pic Safe</a></td><td>Plans from $6.99 to $39.99</td><td>Yes (Cloud Vault, premium)</td><td>Yes</td><td>4.8 &middot; 1,016,507</td></tr>
@@ -4637,7 +4636,7 @@ mention it, not that it is certainly missing.</p>
 
 <h2>1. Photo Vault: album passwords with nothing leaving the phone</h2>
 <p>Face ID, Touch ID or a passcode opens the app, and any album can have its own
-password on top. No account, no server, no cloud sync; the vault is excluded from
+password on top. No account, no server; iCloud only if you turn on the optional end-to-end encrypted copy (off by default); the vault is excluded from
 iCloud backups and its files can't be read while the iPhone is locked. The icon can
 pass as Calculator, Notes or Weather, turning the phone face down jumps to another
 app, and you can export the whole vault, album passwords included, to one encrypted
@@ -4693,7 +4692,7 @@ ense&ntilde;ar el de las vacaciones sin abrir el resto.</p>
 <div class="table-scroll"><table>
 <thead><tr><th>#</th><th>App</th><th>Precio (EE. UU.)</th><th>Copia en la nube</th><th>PIN se&ntilde;uelo</th><th>Valoraci&oacute;n (EE. UU.)</th></tr></thead>
 <tbody>
-<tr><td>1</td><td><a href="%(pv)s">Photo Vault</a> (nuestra)</td><td>Prueba gratis; suscripci&oacute;n anual, 7 d&iacute;as gratis</td><td>No; archivo de copia cifrado que guardas t&uacute;</td><td>No</td><td>4,2 &middot; 6</td></tr>
+<tr><td>1</td><td><a href="%(pv)s">Photo Vault</a> (nuestra)</td><td>Prueba gratis; suscripci&oacute;n anual, 7 d&iacute;as gratis</td><td>Copia opcional en tu iCloud (cifrada de extremo a extremo, desactivada por defecto); archivo de copia cifrado que guardas t&uacute;</td><td>No</td><td>4,2 &middot; 6</td></tr>
 <tr><td>2</td><td><a href="%(safety)s" target="_blank" rel="noopener">Safety Photo+Video Pro</a></td><td>Gratis; nube $2,99/mes, $19,99/a&ntilde;o o $59,99 de una vez</td><td>Opcional, cifrada antes en el m&oacute;vil</td><td>S&iacute;</td><td>4,7 &middot; 5.176</td></tr>
 <tr><td>3</td><td><a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a></td><td>$23,99/a&ntilde;o o $9,99/mes</td><td>S&iacute;, hasta 10.000 elementos</td><td>&mdash;</td><td>4,7 &middot; 384.037</td></tr>
 <tr><td>4</td><td><a href="%(picsafe)s" target="_blank" rel="noopener">Private Photo Vault &ndash; Pic Safe</a></td><td>Planes de $6,99 a $39,99</td><td>S&iacute; (Cloud Vault, de pago)</td><td>S&iacute;</td><td>4,8 &middot; 1.016.507</td></tr>
@@ -4762,7 +4761,8 @@ ALBUM_FAQ_EN = [
      "files themselves are protected by iOS Data Protection like the rest of the vault. Check each app's own "
      "security page if that difference matters to you."),
     ("Which album-password vault works without an account or cloud?",
-     "Photo Vault has no account, server or cloud sync. Keep Photo Safe Vault and Lock: Private Photo Vault "
+     "Photo Vault has no account or server, and uses a cloud only if you turn on its optional, end-to-end "
+     "encrypted copy in your own iCloud. Keep Photo Safe Vault and Lock: Private Photo Vault "
      "SPV don't mention a cloud on their App Store pages. Keepsafe and Pic Safe offer cloud storage."),
 ]
 ALBUM_FAQ_ES = [
@@ -4775,7 +4775,8 @@ ALBUM_FAQ_ES = [
      "archivos están protegidos por la protección de datos de iOS como el resto de la bóveda. Mira la página "
      "de seguridad de cada app si esa diferencia te importa."),
     ("¿Qué bóveda con contraseña por álbum funciona sin cuenta ni nube?",
-     "Photo Vault no tiene cuenta, servidor ni sincronización. Keep Photo Safe Vault y Lock: Private Photo "
+     "Photo Vault no tiene cuenta ni servidor, y solo usa la nube si activas su copia opcional en tu propio "
+     "iCloud, cifrada de extremo a extremo. Keep Photo Safe Vault y Lock: Private Photo "
      "Vault SPV no mencionan nube en su ficha del App Store. Keepsafe y Pic Safe ofrecen almacenamiento en la nube."),
 ]
 
@@ -4825,7 +4826,7 @@ photo arrived on the new phone, then erase the old one.</p>
 <div class="table-scroll"><table>
 <thead><tr><th>App</th><th>How the vault moves</th><th>Goes through a server?</th></tr></thead>
 <tbody>
-<tr><td><a href="%(pv)s">Photo Vault</a> (ours)</td><td>Settings &rarr; Backup &rarr; Export: one encrypted file with every photo, video, album and album password. Send it to the new iPhone (AirDrop, Files, your own iCloud Drive) and restore it there with the same password.</td><td>No</td></tr>
+<tr><td><a href="%(pv)s">Photo Vault</a> (ours)</td><td>Settings &rarr; Backup &rarr; Export: one encrypted file with every photo, video, album and album password. Send it to the new iPhone (AirDrop, Files, your own iCloud Drive) and restore it there with the same password. Or turn on its optional iCloud copy (Premium, end-to-end encrypted in your own iCloud) and restore on the new iPhone.</td><td>Optional, off by default</td></tr>
 <tr><td><a href="%(arca)s" target="_blank" rel="noopener">Arca</a></td><td>Its page lists an encrypted backup file you save to Files or iCloud Drive.</td><td>No</td></tr>
 <tr><td><a href="%(safety)s" target="_blank" rel="noopener">Safety Photo+Video Pro</a></td><td>Optional cloud backup, encrypted on the device first, then restored on the new device; also Wi-Fi transfer through a browser.</td><td>Optional</td></tr>
 <tr><td><a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a></td><td>Its private cloud (up to 10,000 items).</td><td>Yes</td></tr>
@@ -4877,7 +4878,7 @@ borra el viejo.</p>
 <div class="table-scroll"><table>
 <thead><tr><th>App</th><th>C&oacute;mo se pasa la b&oacute;veda</th><th>&iquest;Pasa por un servidor?</th></tr></thead>
 <tbody>
-<tr><td><a href="%(pv)s">Photo Vault</a> (nuestra)</td><td>Ajustes &rarr; Copia de seguridad &rarr; Exportar: un archivo cifrado con todas las fotos, v&iacute;deos, &aacute;lbumes y sus contrase&ntilde;as. Lo mandas al iPhone nuevo (AirDrop, Archivos, tu propio iCloud Drive) y lo restauras all&iacute; con la misma contrase&ntilde;a.</td><td>No</td></tr>
+<tr><td><a href="%(pv)s">Photo Vault</a> (nuestra)</td><td>Ajustes &rarr; Copia de seguridad &rarr; Exportar: un archivo cifrado con todas las fotos, v&iacute;deos, &aacute;lbumes y sus contrase&ntilde;as. Lo mandas al iPhone nuevo (AirDrop, Archivos, tu propio iCloud Drive) y lo restauras all&iacute; con la misma contrase&ntilde;a. O activas su copia opcional en iCloud (Premium, cifrada de extremo a extremo en tu propio iCloud) y la restauras en el nuevo.</td><td>Opcional, desactivada por defecto</td></tr>
 <tr><td><a href="%(arca)s" target="_blank" rel="noopener">Arca</a></td><td>Su ficha incluye un archivo de copia cifrado que guardas en Archivos o iCloud Drive.</td><td>No</td></tr>
 <tr><td><a href="%(safety)s" target="_blank" rel="noopener">Safety Photo+Video Pro</a></td><td>Copia en la nube opcional, cifrada antes en el m&oacute;vil, que se restaura en el nuevo; tambi&eacute;n transferencia por wifi desde el navegador.</td><td>Opcional</td></tr>
 <tr><td><a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a></td><td>Su nube privada (hasta 10.000 elementos).</td><td>S&iacute;</td></tr>
@@ -4918,26 +4919,30 @@ MOVE_FAQ_EN = [
     ("Do hidden photos transfer to a new iPhone?",
      "Photos in the Photos app's Hidden album move with your library through iCloud Photos. Photos inside a "
      "vault app depend on the app: those with a cloud (Keepsafe, Pic Safe's Cloud Vault) sync when you sign in; "
-     "those without one (Photo Vault, Arca) need you to export a backup file and restore it on the new phone."),
+     "Photo Vault offers an optional, end-to-end encrypted copy in your own iCloud, off by default; without it, "
+     "Photo Vault and Arca need you to export a backup file and restore it on the new phone."),
     ("Will restoring an iCloud backup bring back my vault?",
      "Not for vaults that exclude themselves from iCloud backups, such as Photo Vault. You get the app back "
-     "empty. Export a backup from the app before you switch."),
+     "empty. Turn on Photo Vault's optional iCloud copy or export a backup from the app before you switch."),
     ("Can I move Photo Vault without a cloud account?",
      "Yes. Export an encrypted backup file in Settings, move it with AirDrop or Files, and restore it on the "
-     "new iPhone with the same password. No account or server is involved."),
+     "new iPhone with the same password. No account or server is involved. If you prefer, the optional iCloud "
+     "copy (Premium) uses your own iCloud, end-to-end encrypted."),
 ]
 MOVE_FAQ_ES = [
     ("¿Las fotos ocultas pasan a un iPhone nuevo?",
      "Las del álbum Oculto de la app Fotos se mueven con tu fototeca por Fotos en iCloud. Las de una app de "
      "bóveda dependen de la app: las que tienen nube (Keepsafe, Cloud Vault de Pic Safe) se sincronizan al "
-     "iniciar sesión; las que no (Photo Vault, Arca) necesitan que exportes un archivo de copia y lo restaures "
-     "en el móvil nuevo."),
+     "iniciar sesión. Photo Vault ofrece una copia opcional en tu propio iCloud, cifrada de extremo a extremo y "
+     "desactivada por defecto; sin ella, Photo Vault y Arca necesitan que exportes un archivo de copia y lo "
+     "restaures en el móvil nuevo."),
     ("¿Restaurar una copia de iCloud me devuelve la bóveda?",
      "No en las bóvedas que se excluyen de las copias de iCloud, como Photo Vault. Recuperas la app vacía. "
-     "Exporta una copia desde la app antes de cambiar de móvil."),
+     "Activa la copia opcional en iCloud de Photo Vault o exporta una copia desde la app antes de cambiar de móvil."),
     ("¿Puedo pasar Photo Vault sin cuenta en la nube?",
      "Sí. Exporta un archivo de copia cifrado en Ajustes, muévelo por AirDrop o Archivos y restáuralo en el "
-     "iPhone nuevo con la misma contraseña. No hay cuenta ni servidor de por medio."),
+     "iPhone nuevo con la misma contraseña. No hay cuenta ni servidor de por medio. Si lo prefieres, la copia "
+     "opcional en iCloud (Premium) usa tu propio iCloud, cifrada de extremo a extremo."),
 ]
 
 RANK_ARTICLES.append(dict(
@@ -5725,7 +5730,7 @@ OFF_RU_FAQ = [
      "Россия не входит в список стран, где OpenAI официально поддерживает ChatGPT. Локальное приложение работает без аккаунта и без серверов, поэтому от этого не зависит."),
     ("Pinku бесплатное?",
      "Да. Pinku бесплатно скачивается, и шесть моделей до 1 ГБ, включая модель по умолчанию, работают без оплаты и без ограничений. "
-     "Pinku Pro — необязательная разовая покупка (9,99 $ в американском App Store, в рублях своя цена): крупные модели, свои инструкции, диктовка и чтение вслух. Подписки нет."),
+     "Pinku Pro — необязательная годовая подписка или разовая покупка: крупные модели, свои инструкции, диктовка и чтение вслух."),
     ("Какой iPhone нужен?",
      "Pinku работает на iOS 18.6 и новее, на устройствах с Metal 3, и на Mac с Apple silicon (macOS 14 и новее). Модели, которые не помещаются в память устройства, Pinku скрывает, а перед загрузкой проверяет свободную память, чтобы не закрыться."),
     ("Насколько хорошо локальная модель отвечает по-русски?",
@@ -5761,7 +5766,7 @@ OFF_RU_BODY = ("""
 <li>Всё на устройстве: модель скачивается один раз, дальше каждый ответ создаётся на вашем iPhone или Mac, без сети.</li>
 <li>Без аккаунта и без сервера. Чаты никогда не покидают устройство; в этикетке конфиденциальности Apple указаны только история покупок и анонимный идентификатор пользователя для покупки Pinku Pro.</li>
 <li>Интерфейс на русском (а также на английском, испанском, немецком, французском, японском, корейском и китайском).</li>
-<li>Бесплатно для начала; Pinku Pro — разовая покупка. Без подписки.</li>
+<li>Бесплатно для начала; Pinku Pro — годовая подписка или разовая покупка. Без подписки.</li>
 <li>Перед загрузкой модели проверяет память: если модель не помещается, предупреждает и оставляет текущую, а не закрывается.</li>
 </ul>
 </div>
@@ -5771,7 +5776,7 @@ OFF_RU_BODY = ("""
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Цена (Россия)</th><th>Русский интерфейс</th><th>Mac App Store</th><th>Модели</th><th>Конфиденциальность</th><th>Оценка (Россия)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(pinku)s">Pinku</a> (наше)</td><td>Бесплатно; Pinku Pro разово</td><td>Да</td><td>Да</td><td>12 моделей на Apple MLX, от 0,34 до 4,7 ГБ</td><td>История покупок и анонимный ID (для Pro); чаты не покидают устройство</td><td>3,7 &middot; 3</td></tr>
+<tr><td>1. <a href="%(pinku)s">Pinku</a> (наше)</td><td>Бесплатно; Pinku Pro — на год или разово</td><td>Да</td><td>Да</td><td>12 моделей на Apple MLX, от 0,34 до 4,7 ГБ</td><td>История покупок и анонимный ID (для Pro); чаты не покидают устройство</td><td>3,7 &middot; 3</td></tr>
 <tr><td>2. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Бесплатно; есть Pro</td><td>Нет</td><td>Нет в списке</td><td>Сотни открытых моделей; Pro добавляет облачные</td><td>Не связаны с вами</td><td>4,6 &middot; 75</td></tr>
 <tr><td>3. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Бесплатно, открытый код</td><td>Нет</td><td>Нет в списке</td><td>Любая модель GGUF с Hugging Face</td><td>Данные не собираются</td><td>4,3 &middot; 19</td></tr>
 <tr><td>4. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>299 &#8381; сразу</td><td>Нет</td><td>Да</td><td>Llama, Gemma, Qwen, Phi, Mistral и другие, до 14B</td><td>Данные не собираются</td><td>3,6 &middot; 18</td></tr>

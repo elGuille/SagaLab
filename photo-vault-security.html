@@ -68,7 +68,8 @@
     <h2>The files in your vault</h2>
     <p>Every file on an iPhone is encrypted with its own 256-bit key by the hardware AES engine. What differs between apps is <em>when</em> that key is available, which iOS calls the protection class (<a href="https://support.apple.com/guide/security/data-protection-overview-secf6276da8a/web" target="_blank" rel="noopener">Apple Platform Security: Data Protection</a>).</p>
     <p>By default, iOS uses <em>Protected Until First User Authentication</em>: after you unlock the phone once after a restart, the files stay readable even when it locks again. Photo Vault sets every file in the vault to <em>Protected Unless Open</em> (<code>NSFileProtectionCompleteUnlessOpen</code>): its key is derived from your iPhone passcode and discarded shortly after the phone locks, so the files are unreadable while it's locked (<a href="https://support.apple.com/guide/security/data-protection-classes-secb010e978a/web" target="_blank" rel="noopener">Apple: Data Protection classes</a>). The one exception is a file that is still being written at the moment you lock the phone, such as a long video import, which finishes saving.</p>
-    <p>The vault is also excluded from iCloud and computer backups, so your private photos don't end up in a backup you didn't intend.</p>
+    <p>The vault is also excluded from regular iCloud and computer backups, so your private photos don't end up in a backup you didn't intend.</p>
+    <p><strong>Optional iCloud copy.</strong> As of version 1.2.10 (App Store, 23 October 2026) you can also choose to keep a copy of the vault in your own iCloud. The App Store listing describes it as end-to-end encrypted, so only you can open it. It is off unless you turn it on, and it is part of Premium.</p>
 
     <h2>Locks</h2>
     <ul>
@@ -92,7 +93,7 @@
     <ul>
       <li><strong>No per-file encryption of its own.</strong> Vault files rely on iOS Data Protection. While your iPhone is unlocked, iOS can read them like other app files; an app with its own encryption layer adds a second key that the vault passcode controls.</li>
       <li><strong>No decoy vault and no intruder photo.</strong> Some other vault apps have one or both.</li>
-      <li><strong>No automatic backup.</strong> If you lose the phone without having exported a backup, the vault is gone.</li>
+      <li><strong>No automatic backup unless you turn on the iCloud copy.</strong> If you lose the phone without having exported a backup or turned on the optional iCloud copy, the vault is gone.</li>
     </ul>
 
     <h2>Who it protects you from</h2>
