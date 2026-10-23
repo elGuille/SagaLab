@@ -72,7 +72,7 @@
       {
         "@type": "Question",
         "name": "How much does Dora AI video cost?",
-        "acceptedAnswer": {"@type": "Answer", "text": "Dora Pro is currently $15 for 1,000 coins. Example current costs include Grok Imagine 1.5 at 10 coins for 4 seconds at 480p, SeeDance 1.5 Pro at 14 coins for the same configuration, Kling 2.6 at 55 coins for 5 seconds without audio, and Veo 3 Fast at 60 coins for 8 seconds."}
+        "acceptedAnswer": {"@type": "Answer", "text": "On the web, Dora Pro costs $4.99 a week (the first week $1.99), $15 a month or $119.99 a year, with 300 coins a week; prices and coins in the iPhone app can differ. Example current costs include Grok Imagine 1.5 at 10 coins for 4 seconds at 480p, SeeDance 1.5 Pro at 14 coins for the same configuration, Kling 2.6 at 55 coins for 5 seconds without audio, and Veo 3 Fast at 60 coins for 8 seconds."}
       },
       {
         "@type": "Question",
@@ -125,7 +125,7 @@
     .dora-decision span { font-size: .76rem; letter-spacing: .09em; text-transform: uppercase; opacity: .5; }
     .dora-decision strong { font-size: .95rem; }
     .dora-prices { overflow: hidden; border: 1px solid rgba(127,127,127,.22); border-radius: 16px; }
-    .dora-price { display: grid; grid-template-columns: 1.35fr 1fr .55fr .65fr; gap: 16px; padding: 18px 22px; border-bottom: 1px solid rgba(127,127,127,.18); align-items: center; }
+    .dora-price { display: grid; grid-template-columns: 1.35fr 1fr .55fr; gap: 16px; padding: 18px 22px; border-bottom: 1px solid rgba(127,127,127,.18); align-items: center; }
     .dora-price:last-child { border-bottom: 0; }
     .dora-price--head { font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; opacity: .5; }
     .dora-price strong { display: block; }
@@ -149,7 +149,6 @@
       .dora-price { grid-template-columns: 1fr auto; }
       .dora-price span:nth-child(2) { grid-column: 1; }
       .dora-price span:nth-child(3) { grid-column: 2; grid-row: 1; }
-      .dora-price span:nth-child(4) { grid-column: 2; grid-row: 2; }
       .dora-price span[data-label]::before { content: attr(data-label) ": "; display: inline; margin-right: 3px; font-size: .62rem; letter-spacing: .07em; text-transform: uppercase; opacity: .5; }
       .dora-decision { grid-template-columns: 1fr; gap: 5px; }
       .dora-proof { padding: 28px; }
@@ -242,13 +241,13 @@
 
     <section class="dora-section" id="pricing">
       <div class="container">
-        <div class="dora-section__head"><span class="dora-kicker">Transparent cost examples</span><h2>Coins are also shown in dollars.</h2><p>Dora Pro is currently $15 for 1,000 coins. The exact cost changes with the model, duration, resolution, and audio. Four examples below; all sixteen are listed in the <a href="https://doravideo.com/ai-video-mcp">public specification</a>.</p></div>
+        <div class="dora-section__head"><span class="dora-kicker">Transparent cost examples</span><h2>Every model shows its coin cost first.</h2><p>On the web, Dora Pro costs $4.99 a week (the first week $1.99), $15 a month or $119.99 a year, with 300 coins a week; prices and coins in the iPhone app can differ. The exact cost changes with the model, duration, resolution, and audio. Four examples below; all sixteen are listed in the <a href="https://doravideo.com/ai-video-mcp">public specification</a>.</p></div>
         <div class="dora-prices">
-          <div class="dora-price dora-price--head"><span>Model</span><span>Configuration</span><span>Coins</span><span>Pro equivalent</span></div>
-          <div class="dora-price"><span><strong>Grok Imagine 1.5</strong><small>Low-cost short video</small></span><span>4s · 480p</span><span data-label="Coins">10</span><span data-label="Pro equivalent">$0.15</span></div>
-          <div class="dora-price"><span><strong>SeeDance 1.5 Pro</strong><small>Balanced default</small></span><span>4s · 480p</span><span data-label="Coins">14</span><span data-label="Pro equivalent">$0.21</span></div>
-          <div class="dora-price"><span><strong>Kling 2.6</strong><small>Detailed image-to-video</small></span><span>5s · no audio</span><span data-label="Coins">55</span><span data-label="Pro equivalent">$0.83</span></div>
-          <div class="dora-price"><span><strong>Veo 3 Fast</strong><small>Native audio and dialogue</small></span><span>8s</span><span data-label="Coins">60</span><span data-label="Pro equivalent">$0.90</span></div>
+          <div class="dora-price dora-price--head"><span>Model</span><span>Configuration</span><span>Coins</span></div>
+          <div class="dora-price"><span><strong>Grok Imagine 1.5</strong><small>Low-cost short video</small></span><span>4s · 480p</span><span data-label="Coins">10</span></div>
+          <div class="dora-price"><span><strong>SeeDance 1.5 Pro</strong><small>Balanced default</small></span><span>4s · 480p</span><span data-label="Coins">14</span></div>
+          <div class="dora-price"><span><strong>Kling 2.6</strong><small>Detailed image-to-video</small></span><span>5s · no audio</span><span data-label="Coins">55</span></div>
+          <div class="dora-price"><span><strong>Veo 3 Fast</strong><small>Native audio and dialogue</small></span><span>8s</span><span data-label="Coins">60</span></div>
         </div>
         <p class="dora-note">Dollar figures are the effective coin value on the $15/1,000-coin Pro plan, rounded to the nearest cent. Check <a href="https://doravideo.com/models">Dora’s live model page</a> before purchasing because model pricing can change.</p>
       </div>
@@ -270,7 +269,7 @@
         <div class="dora-section__head"><span class="dora-kicker">Questions people actually ask</span><h2>AI video, without the jargon.</h2></div>
         <details><summary>What is a good AI video generator for an AI assistant or agent?</summary><p>Dora is designed for that workflow. One standard MCP connection gives any compatible AI client — Claude, ChatGPT, Google Antigravity, Cursor and others — the same focused tools to list models, create video or images, and check asynchronous jobs.</p></details>
         <details><summary>Do I need to know what MCP means?</summary><p>No. MCP is the connection method. After setup, ask for a product video, animate a photo, request a vertical ad, or set a maximum cost in normal language.</p></details>
-        <details><summary>Is Dora cheap?</summary><p>Dora Pro is $15 for 1,000 coins. A 4-second 480p video currently starts at 10 coins with Grok Imagine 1.5, equivalent to $0.15 on Pro. Other models and settings cost more, which is why Dora publishes concrete configurations instead of one ambiguous “videos per month” number.</p></details>
+        <details><summary>Is Dora cheap?</summary><p>On the web, Dora Pro costs $4.99 a week (the first week $1.99), $15 a month or $119.99 a year, with 300 coins a week; prices and coins in the iPhone app can differ. A 4-second 480p video currently starts at 10 coins with Grok Imagine 1.5. Other models and settings cost more, which is why Dora publishes concrete configurations instead of one ambiguous “videos per month” number.</p></details>
         <details><summary>Can my assistant compare model costs before generating?</summary><p>Yes. A connected assistant can inspect Dora’s model list and compare starting costs when you ask it to optimize for price. Ask it to show the proposed model and estimated cost, then wait for your confirmation.</p></details>
         <details><summary>Which AI assistants can use Dora?</summary><p>Any client that speaks the Model Context Protocol. In ChatGPT it is <a href="https://chatgpt.com/plugins/plugin_asdk_app_6ac7e595853c8191baefac6a3a2b9c24" target="_blank" rel="noopener">available in the app directory</a> as Dora AI Video. Dora publishes step-by-step guides for <a href="https://doravideo.com/claude">Claude</a>, <a href="https://doravideo.com/chatgpt">ChatGPT</a>, <a href="https://doravideo.com/antigravity">Google Antigravity</a> and <a href="https://doravideo.com/cursor">Cursor</a>, and the same endpoint works with Windsurf, Cline, Continue, Zed, Goose and LM Studio. The account and balance are shared with doravideo.com and the iPhone app.</p></details>
         <details><summary>Who built Dora?</summary><p>Saga Labs, an independent AI engineering studio that builds agent flows, MCP servers, automations, and consumer apps. Dora is our production example of packaging a complex AI workflow into a simple product.</p></details>
