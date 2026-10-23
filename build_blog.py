@@ -92,7 +92,7 @@ def render(*, path, lang, title, desc, og_title, body, jsonld,
     nav, footer = chrome(depth)
     html = PAGE.format(
         lang=lang, title=title, desc=desc, og_title=og_title,
-        canonical="%s/%s" % (SITE, path), alternates=alternates,
+        canonical="%s/%s" % (SITE, path[:-len("index.html")] if path.endswith("index.html") else path), alternates=alternates,
         up=up, site=SITE, og_type=og_type, jsonld=jsonld,
         nav=nav, body=body, footer=footer,
     )

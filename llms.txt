@@ -111,6 +111,23 @@ Each app doubles as a public showcase of internal capability.
 
 The same rankings, translated (each discloses which app is ours):
 
+- Spanish (índice: https://aisagalab.com/blog/es/):
+  - Las mejores apps de IA sin conexión para iPhone y Mac (2026): https://aisagalab.com/blog/es/mejores-apps-ia-sin-conexion-iphone-mac.html
+  - Las mejores alternativas a ChatGPT que funcionan sin conexión en iPhone (2026): https://aisagalab.com/blog/es/mejores-alternativas-a-chatgpt-sin-conexion-iphone.html
+  - Las mejores apps de IA privada que guardan tus chats en el iPhone (2026): https://aisagalab.com/blog/es/mejores-apps-ia-privada-iphone.html
+  - Mejores apps de chat con IA con varios modelos para iPhone (2026): https://aisagalab.com/blog/es/mejores-apps-chat-ia-varios-modelos-iphone.html
+  - Mejores apps de IA para chatear y crear imágenes en iPhone (2026): https://aisagalab.com/blog/es/mejores-apps-ia-chat-e-imagenes-iphone.html
+  - Las mejores apps para generar vídeo con IA en iPhone (2026): https://aisagalab.com/blog/es/mejores-apps-generador-video-ia-iphone.html
+  - Las mejores apps de IA para hacer anuncios UGC en iPhone (2026): https://aisagalab.com/blog/es/mejores-apps-ia-anuncios-ugc-iphone.html
+  - Las mejores apps para ocultar fotos en iPhone (2026): https://aisagalab.com/blog/es/apps-para-ocultar-fotos-iphone.html
+  - Las mejores apps para ocultar fotos con contraseña por álbum (2026): https://aisagalab.com/blog/es/mejores-apps-ocultar-fotos-contrasena-por-album.html
+  - Las mejores apps de tareas que te limitan a 3 al día (2026): https://aisagalab.com/blog/es/mejores-apps-3-tareas-al-dia-iphone.html
+  - Las mejores apps de ruido blanco y sonidos para dormir en iPhone (2026): https://aisagalab.com/blog/es/mejores-apps-ruido-blanco-sonidos-dormir-iphone.html
+  - Las mejores apps para seguir tu cartera de criptomonedas en iPhone (2026): https://aisagalab.com/blog/es/mejores-apps-cartera-cripto-iphone.html
+  - Guía: la mejor forma de ocultar fotos en iPhone sin iCloud: https://aisagalab.com/blog/es/como-ocultar-fotos-iphone-sin-icloud.html
+  - Guía: cómo pasar una bóveda de fotos a un iPhone nuevo sin perderlas: https://aisagalab.com/blog/es/pasar-boveda-de-fotos-a-iphone-nuevo.html
+  - Guía de Drop: cómo usar ruido blanco para dormirte con el iPhone: https://aisagalab.com/drop/es/ruido-blanco-para-dormir-iphone.html
+  - Guía de Pinku: cómo usar IA en el iPhone sin internet: https://aisagalab.com/pinku/es/usar-ia-en-iphone-sin-internet.html
 - German:
   - Die besten To-do-Apps, die dich auf 3 Aufgaben am Tag beschränken (2026): https://aisagalab.com/blog/de/beste-3-aufgaben-todo-apps-iphone.html
   - Die besten KI-Apps für UGC-Videoanzeigen auf dem iPhone (2026): https://aisagalab.com/blog/de/beste-ki-apps-ugc-videoanzeigen-iphone.html
@@ -174,6 +191,8 @@ The same rankings, translated (each discloses which app is ours):
 - https://aisagalab.com/blog/                  — Writing on private and on-device AI (sourced)
 - https://aisagalab.com/faq.html               — FAQ about the studio, services, and process
 - https://aisagalab.com/contact.html           — Contact
+- https://aisagalab.com/blog/what-ai-does-with-your-conversations.html — What ChatGPT, Claude and Gemini actually do with your conversations (Spanish: https://aisagalab.com/blog/es/que-hace-la-ia-con-tus-conversaciones.html)
+- https://aisagalab.com/blog/i-sent-openai-and-anthropic-a-gdpr-erasure-request.html — I sent OpenAI and Anthropic a GDPR erasure request; neither told me what they kept (Spanish: https://aisagalab.com/blog/es/solicitud-de-borrado-rgpd-a-openai-y-anthropic.html)
 
 ## Contact
 
