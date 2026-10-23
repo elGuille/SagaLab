@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Cómo funciona la IA local en el iPhone? Modelos en el dispositivo, memoria y qué se ejecuta dónde (2026) | Saga Labs</title>
+    <meta name="description" content="Explicación sencilla de la IA en el propio iPhone: qué es el archivo de un modelo, por qué la memoria (RAM) decide qué modelos funcionan, cómo los encoge la cuantización, qué hace Apple Intelligence en el dispositivo y en sus servidores, y la regla de memoria que leímos en el código de Pinku.">
+    <link rel="canonical" href="https://aisagalab.com/pinku/es/como-funciona-la-ia-local-en-el-iphone.html">
+    <link rel="alternate" hreflang="en" href="https://aisagalab.com/pinku/how-does-local-ai-work-on-iphone.html">
+    <link rel="alternate" hreflang="es" href="https://aisagalab.com/pinku/es/como-funciona-la-ia-local-en-el-iphone.html">
+    <link rel="alternate" hreflang="x-default" href="https://aisagalab.com/pinku/how-does-local-ai-work-on-iphone.html">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../blog.css">
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+    <script src="/umami.js" defer></script>
+
+    <meta property="og:title" content="¿Cómo funciona la IA local en el iPhone? Modelos en el dispositivo, memoria y qué se ejecuta dónde (2026)">
+    <meta property="og:description" content="Explicación sencilla de la IA en el propio iPhone: qué es el archivo de un modelo, por qué la memoria (RAM) decide qué modelos funcionan, cómo los encoge la cuantización, qué hace Apple Intelligence en el dispositivo y en sus servidores, y la regla de memoria que leímos en el código de Pinku.">
+    <meta property="og:url" content="https://aisagalab.com/pinku/es/como-funciona-la-ia-local-en-el-iphone.html">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://aisagalab.com/images/preview.jpg">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="¿Cómo funciona la IA local en el iPhone? Modelos en el dispositivo, memoria y qué se ejecuta dónde (2026)">
+    <meta property="twitter:description" content="Explicación sencilla de la IA en el propio iPhone: qué es el archivo de un modelo, por qué la memoria (RAM) decide qué modelos funcionan, cómo los encoge la cuantización, qué hace Apple Intelligence en el dispositivo y en sus servidores, y la regla de memoria que leímos en el código de Pinku.">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "¿Cómo funciona la IA local en el iPhone? Modelos en el dispositivo, memoria y qué se ejecuta dónde (2026)",
+      "description": "Explicación sencilla de la IA en el propio iPhone: qué es el archivo de un modelo, por qué la memoria (RAM) decide qué modelos funcionan, cómo los encoge la cuantización, qué hace Apple Intelligence en el dispositivo y en sus servidores, y la regla de memoria que leímos en el código de Pinku.",
+      "inLanguage": "es",
+      "articleSection": "Guías",
+      "datePublished": "2026-10-23",
+      "dateModified": "2026-10-23",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://aisagalab.com/pinku/es/como-funciona-la-ia-local-en-el-iphone.html"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Maruta G",
+        "url": "https://www.linkedin.com/in/maruta/",
+        "sameAs": [
+          "https://www.linkedin.com/in/maruta/",
+          "https://github.com/Saga-Labs",
+          "https://x.com/SagaAILab"
+        ],
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Saga Labs",
+          "url": "https://aisagalab.com/"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Saga Labs",
+        "url": "https://aisagalab.com/",
+        "sameAs": [
+          "https://aisagalab.com/",
+          "https://x.com/SagaAILab",
+          "https://github.com/Saga-Labs"
+        ]
+      }
+    },
+    {
+      "@type": "HowTo",
+      "name": "¿Cómo funciona la IA local en el iPhone? Modelos en el dispositivo, memoria y qué se ejecuta dónde (2026)",
+      "description": "Explicación sencilla de la IA en el propio iPhone: qué es el archivo de un modelo, por qué la memoria (RAM) decide qué modelos funcionan, cómo los encoge la cuantización, qué hace Apple Intelligence en el dispositivo y en sus servidores, y la regla de memoria que leímos en el código de Pinku.",
+      "inLanguage": "es",
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "un iPhone con memoria suficiente"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "una app de chat con IA en el dispositivo"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Mira tu iPhone.",
+          "text": "Apple Intelligence necesita un iPhone 15 Pro o posterior. Con modelos abiertos, más memoria es igual a modelos más grandes: uno de 1B funciona en casi todos los iPhone recientes; uno de 8B necesita unos 8 GB."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Libera espacio.",
+          "text": "Cada modelo ocupa de 0,4 a 5 GB. En Ajustes, General, Almacenamiento del iPhone ves cuánto tienes."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Instala una app de chat en el dispositivo.",
+          "text": "Locally AI, PocketPal AI, Private LLM, Enclave o Pinku. Lee la etiqueta de privacidad del App Store: ejecutar en local no impide que una app recoja otros datos."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Descarga un modelo pequeño con wifi.",
+          "text": "Empieza por uno de 1B. Contesta rápido y deja memoria para el resto del móvil."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Pruébalo en modo avión.",
+          "text": "Activa el modo avión y manda un mensaje. Si contesta, de verdad se ejecuta en el iPhone."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 6,
+          "name": "Prueba uno mayor si cabe.",
+          "text": "Uno de 3B o 4B contesta mejor pero va más lento y pide más memoria. Cierra antes otras apps pesadas."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 7,
+          "name": "Conoce los límites.",
+          "text": "Los modelos locales son más pequeños que los de la nube: saben menos, se equivocan más y no buscan en internet. Comprueba lo importante."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cómo funciona la IA en local en un iPhone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Descargas una vez el archivo del modelo y la app lo ejecuta en la GPU del iPhone. Lo que escribes se procesa en el dispositivo, así que funciona sin internet."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánta RAM hace falta para un modelo de IA en el iPhone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Más o menos el tamaño del modelo más sitio para iOS y la conversación. Pinku solo enseña un modelo si es como mucho el 60 % de la memoria: unos 1,4 GB para uno de 0,8 GB y unos 7,9 GB para uno de 4,7 GB."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Apple Intelligence es local?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En parte. Apple ejecuta en el dispositivo un modelo de unos 3.000 millones de parámetros y manda las peticiones más grandes a su modelo de servidor en Private Cloud Compute."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Por qué los modelos locales son más pequeños que ChatGPT?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tienen que caber en la memoria del móvil. Los de la nube funcionan en máquinas de centro de datos con mucha más memoria, así que saben más y se equivocan menos."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué es la cuantización?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Guardar cada peso con menos bits, por ejemplo 4 en vez de 16, para que el modelo ocupe unas cuatro veces menos a cambio de algo de calidad."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿La IA local gasta mucha batería?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Generar texto usa mucho la GPU, así que las conversaciones largas gastan batería y calientan el móvil. Los modelos pequeños gastan menos."
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+<nav class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="nav-logo">
+                <h1>Saga <span class="ai-gradient">AI</span> <span class="lab-gradient">Lab</span></h1>
+            </a>
+            <div class="nav-menu">
+                <a href="/blog/" class="nav-link">Blog</a>
+                <a href="../../index.html#mobile-apps" class="nav-link">Apps</a>
+                <a href="../../faq.html" class="nav-link">FAQ</a>
+                <a href="mailto:sagalabs@proton.me" class="nav-link">Contact</a>
+                <a href="https://x.com/SagaAILab" target="_blank" class="icon-link" aria-label="X (Twitter)">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                        <path d="M18.244 2H21l-6.5 7.43L22.5 22H15.9l-4.7-6.2L5.7 22H3l7-8.02L1.8 2h6.8l4.3 5.7L18.244 2zm-2.43 18h1.64L8.29 4H6.57l9.244 16z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/Saga-Labs" target="_blank" class="icon-link" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                        <path d="M12 2C6.477 2 2 6.486 2 12.017c0 4.424 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.238-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.464-1.11-1.464-.908-.62.069-.607.069-.607 1.004.071 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.833.092-.647.35-1.088.636-1.338-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.748-1.026 2.748-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.337 4.695-4.565 4.943.359.31.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .268.18.58.688.481A10.019 10.019 0 0 0 22 12.017C22 6.486 17.523 2 12 2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="article-wrap">
+        <p class="article-kicker">Guía de Pinku</p>
+        <h1>¿Cómo funciona la IA local en el iPhone? Modelos en el dispositivo, memoria y qué se ejecuta dónde (2026)</h1>
+        <p class="article-standfirst">Un chatbot en la nube manda tu mensaje a un centro de datos. Uno local guarda el archivo del modelo en el móvil y hace las cuentas con su propio chip. Eso cambia qué puedes usar, a qué velocidad y quién ve lo que escribes.</p>
+        <p class="article-meta"><a href="https://www.linkedin.com/in/maruta/" rel="author me noopener" target="_blank">Maruta G</a> &middot; 23 de octubre de 2026
+            <span class="lang-switch"> &middot; <a href="../how-does-local-ai-work-on-iphone.html">Read in English</a></span>
+        </p>
+        <div class="article-body">
+<p><strong>Hacemos Pinku, una de las varias apps que ejecutan modelos de IA en el
+iPhone.</strong> La explicación vale para todas.</p>
+
+<h2>Qué quiere decir «IA local»</h2>
+
+<p>Un modelo de lenguaje es un archivo grande de números (sus pesos) y un código que los usa para
+predecir la siguiente palabra. Con un chatbot en la nube como ChatGPT, Gemini o Claude, los pesos se
+quedan en el centro de datos del proveedor y cada mensaje viaja hasta allí. Con IA local descargas
+los pesos una vez y los ejecuta el chip del iPhone. A partir de ahí funciona en modo avión y tu
+texto no sale del dispositivo.</p>
+
+<h2>Por qué manda la memoria</h2>
+
+<ul>
+<li><strong>El tamaño sale de los parámetros y los bits.</strong> Los pesos ocupan más o menos
+<em>parámetros x bits por peso / 8</em> bytes. Un modelo de mil millones de parámetros guardado a 4
+bits son unos 0,5 GB de pesos; los archivos reales son algo mayores. En el catálogo de Pinku, Llama
+3.2 1B a 4 bits ocupa 0,7 GB y Qwen 3 8B, 4,7 GB.</li>
+<li><strong>La cuantización es lo que lo hace posible en un móvil.</strong> Guardar cada peso en 4
+bits en vez de 16 deja el archivo unas cuatro veces más pequeño, a cambio de algo de calidad. Apple
+comprime su propio modelo del dispositivo, de unos 3.000 millones de parámetros, a 2 bits por peso
+(<a href="https://machinelearning.apple.com/research/apple-foundation-models-2025-updates" target="_blank" rel="noopener">Apple Machine Learning Research, 2025</a>).</li>
+<li><strong>El modelo entero tiene que caber en la RAM mientras funciona</strong>, junto a iOS y la
+app, más una memoria de trabajo que crece con lo larga que sea la conversación. iOS cierra la app
+que pide demasiado, así que el límite es la memoria que iOS deja usar a una app, no el almacenamiento.</li>
+<li><strong>La velocidad viene de la GPU.</strong> Apps como Pinku y Locally AI usan
+<a href="https://github.com/ml-explore/mlx" target="_blank" rel="noopener">MLX</a>, el framework de Apple, para ejecutar el modelo en el procesador gráfico del
+iPhone; los modelos pequeños contestan antes.</li>
+</ul>
+
+<h2>La regla que leímos en el código de Pinku</h2>
+
+<p>Leímos el código de modelos de la versión que está hoy a la venta (1.1). Pinku solo enseña un
+modelo si su descarga es <strong>como mucho el 60 % de la memoria física del dispositivo</strong>.
+Antes de cargarlo en un iPhone, le pregunta a iOS cuánta memoria puede usar todavía la app
+(<code>os_proc_available_memory</code>) y solo lo carga si es al menos el tamaño del modelo
+<strong>más un 10 %</strong>; si no, lo dice y propone uno más pequeño en vez de cerrarse. En la
+práctica, Gemma 3 1B (0,8 GB, el que viene por defecto) necesita unos 1,4 GB de memoria, Qwen 3 4B
+(2,3 GB) unos 3,9 GB y Qwen 3 8B (4,7 GB) unos 7,9 GB, lo que lo deja fuera de la mayoría de iPhone y
+para iPad y Mac con más memoria.</p>
+
+<h2>Qué se ejecuta dónde en un iPhone</h2>
+
+<div class="table-scroll">
+<table>
+<thead><tr><th>Qué</th><th>Dónde se ejecuta</th></tr></thead>
+<tbody>
+<tr><td>Modelo de Apple Intelligence en el dispositivo (herramientas de escritura, resúmenes)</td><td>En el iPhone, un modelo de ~3B a 2 bits por peso (<a href="https://machinelearning.apple.com/research/apple-foundation-models-2025-updates" target="_blank" rel="noopener">Apple</a>)</td></tr>
+<tr><td>Peticiones más grandes de Apple Intelligence</td><td>El modelo de servidor de Apple en Private Cloud Compute; Apple dice que las funciones que usan modelos en servidor, como Image Playground, tienen límites diarios (<a href="https://support.apple.com/es-es/121115" target="_blank" rel="noopener">Apple, 121115</a>)</td></tr>
+<tr><td>ChatGPT, Gemini, Claude y otras apps en la nube</td><td>Los servidores del proveedor; necesitan conexión en cada mensaje</td></tr>
+<tr><td>Apps de chat en el dispositivo: Locally AI, PocketPal AI, Private LLM, Enclave, Pinku</td><td>En el iPhone, con modelos abiertos que descargas (Llama, Qwen, Gemma y otros)</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>Paso a paso</h2>
+<ol class="howto-steps">
+<li><strong>Mira tu iPhone.</strong> Apple Intelligence necesita un iPhone 15 Pro o posterior. Con modelos abiertos, más memoria es igual a modelos más grandes: uno de 1B funciona en casi todos los iPhone recientes; uno de 8B necesita unos 8 GB.</li>
+<li><strong>Libera espacio.</strong> Cada modelo ocupa de 0,4 a 5 GB. En Ajustes, General, Almacenamiento del iPhone ves cuánto tienes.</li>
+<li><strong>Instala una app de chat en el dispositivo.</strong> Locally AI, PocketPal AI, Private LLM, Enclave o <a href="https://apps.apple.com/app/apple-store/id6754878073?pt=118348020&amp;ct=aisagalab-como-funciona-la-ia-local-e575&amp;mt=8">Pinku</a>. Lee la etiqueta de privacidad del App Store: ejecutar en local no impide que una app recoja otros datos.</li>
+<li><strong>Descarga un modelo pequeño con wifi.</strong> Empieza por uno de 1B. Contesta rápido y deja memoria para el resto del móvil.</li>
+<li><strong>Pruébalo en modo avión.</strong> Activa el modo avión y manda un mensaje. Si contesta, de verdad se ejecuta en el iPhone.</li>
+<li><strong>Prueba uno mayor si cabe.</strong> Uno de 3B o 4B contesta mejor pero va más lento y pide más memoria. Cierra antes otras apps pesadas.</li>
+<li><strong>Conoce los límites.</strong> Los modelos locales son más pequeños que los de la nube: saben menos, se equivocan más y no buscan en internet. Comprueba lo importante.</li>
+</ol>
+
+<h2>Dónde encaja Pinku</h2>
+
+<p><a href="https://apps.apple.com/us/app/id6754878073?pt=118348020&amp;ct=aisagalab-como-funciona-la-ia-local-e575" target="_blank" rel="noopener">Pinku</a> ejecuta modelos abiertos (Gemma, Llama,
+Qwen, SmolLM3, DeepSeek-R1 Distill y otros) en iPhone y Mac con MLX, guarda el historial solo en el
+dispositivo y no tiene cuenta. Solo enseña los modelos que caben en tu dispositivo, y los más grandes
+forman parte de Pinku Pro. No busca en internet, no lee imágenes ni las crea. Otras apps llegan más lejos
+en algunas cosas: PocketPal AI carga cualquier modelo GGUF de Hugging Face y Private LLM funciona con Siri y
+Atajos. Para un viaje, mira
+<a href="usar-ia-sin-conexion-en-el-avion-o-de-viaje.html">cómo usar IA sin conexión en el avión o de viaje</a>,
+y para ver qué modelos caben en tu dispositivo,
+<a href="../which-ai-model-fits-my-iphone-mac.html">which AI model fits my iPhone or Mac</a> (en inglés).</p>
+
+<h2>Fuentes</h2>
+<ul>
+<li><a href="https://machinelearning.apple.com/research/apple-foundation-models-2025-updates" target="_blank" rel="noopener">Apple Machine Learning Research, Updates to Apple's On-Device and Server Foundation Language Models</a>, 9 de junio de 2025, actualizado el 17 de julio de 2025.</li>
+<li><a href="https://support.apple.com/es-es/121115" target="_blank" rel="noopener">Apple, funciones y requisitos de Apple Intelligence (121115)</a>, publicada el 22 de octubre de 2026.</li>
+<li>Código de Pinku 1.1 (ModelMemory.swift, filtro de la lista de modelos, models.json), leído el 23 de octubre de 2026.</li>
+<li><a href="https://github.com/ml-explore/mlx" target="_blank" rel="noopener">MLX, el framework de Apple para Apple silicon</a>.</li>
+</ul>
+
+<h2>Preguntas frecuentes</h2>
+<h3>¿Cómo funciona la IA en local en un iPhone?</h3>
+<p>Descargas una vez el archivo del modelo y la app lo ejecuta en la GPU del iPhone. Lo que escribes se procesa en el dispositivo, así que funciona sin internet.</p>
+<h3>¿Cuánta RAM hace falta para un modelo de IA en el iPhone?</h3>
+<p>Más o menos el tamaño del modelo más sitio para iOS y la conversación. Pinku solo enseña un modelo si es como mucho el 60 % de la memoria: unos 1,4 GB para uno de 0,8 GB y unos 7,9 GB para uno de 4,7 GB.</p>
+<h3>¿Apple Intelligence es local?</h3>
+<p>En parte. Apple ejecuta en el dispositivo un modelo de unos 3.000 millones de parámetros y manda las peticiones más grandes a su modelo de servidor en Private Cloud Compute.</p>
+<h3>¿Por qué los modelos locales son más pequeños que ChatGPT?</h3>
+<p>Tienen que caber en la memoria del móvil. Los de la nube funcionan en máquinas de centro de datos con mucha más memoria, así que saben más y se equivocan menos.</p>
+<h3>¿Qué es la cuantización?</h3>
+<p>Guardar cada peso con menos bits, por ejemplo 4 en vez de 16, para que el modelo ocupe unas cuatro veces menos a cambio de algo de calidad.</p>
+<h3>¿La IA local gasta mucha batería?</h3>
+<p>Generar texto usa mucho la GPU, así que las conversaciones largas gastan batería y calientan el móvil. Los modelos pequeños gastan menos.</p>
+<!-- related:start -->
+<h2>Guías relacionadas</h2>
+<ul class="related-guides">
+<li><a href="usar-ia-sin-conexion-en-el-avion-o-de-viaje.html">Cómo usar la IA sin conexión en el avión o de viaje (iPhone, 2026)</a></li>
+<li><a href="es-seguro-contarle-cosas-privadas-a-chatgpt.html">¿Es seguro contarle cosas privadas a ChatGPT? Qué guardan las apps de IA y cómo dejarlo en tu móvil (2026)</a></li>
+<li><a href="usar-ia-en-iphone-sin-internet.html">Cómo usar IA en el iPhone sin internet (guía de Pinku)</a></li>
+<li><a href="https://reditor.cloud/es/mejores-apps-chat-ia-privado-sin-internet-iphone/" target="_blank" rel="noopener">Mejores apps de chat con IA privado para iPhone que funcionan sin internet (Reditor)</a></li>
+</ul>
+<!-- related:end -->
+</div>
+    </main>
+
+<footer>
+        <div class="container">
+            <p>&copy; 2026 Saga Labs.</p>
+            <div class="footer-social">
+                <a href="https://x.com/SagaAILab" target="_blank" aria-label="X (Twitter)">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                        <path d="M18.244 2H21l-6.5 7.43L22.5 22H15.9l-4.7-6.2L5.7 22H3l7-8.02L1.8 2h6.8l4.3 5.7L18.244 2zm-2.43 18h1.64L8.29 4H6.57l9.244 16z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/Saga-Labs" target="_blank" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                        <path d="M12 2C6.477 2 2 6.486 2 12.017c0 4.424 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.238-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.464-1.11-1.464-.908-.62.069-.607.069-.607 1.004.071 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.833.092-.647.35-1.088.636-1.338-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.748-1.026 2.748-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.337 4.695-4.565 4.943.359.31.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .268.18.58.688.481A10.019 10.019 0 0 0 22 12.017C22 6.486 17.523 2 12 2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+</html>

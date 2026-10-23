@@ -965,6 +965,9 @@ GUIDES += guides_oct23.GUIDES
 import guides_oct23b  # noqa: E402  (las cinco guias de la tarde del 23 oct 2026)
 GUIDES += guides_oct23b.GUIDES
 
+import guides_oct23c  # noqa: E402  (las cuatro guias de la noche del 23 oct 2026)
+GUIDES += guides_oct23c.GUIDES
+
 
 def _alts(en, es):
     s = "https://aisagalab.com/"

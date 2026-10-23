@@ -1246,4 +1246,61 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Guias de la noche del 23 oct 2026 -->
+  <url>
+    <loc>https://aisagalab.com/brainy/how-to-make-ai-images-on-iphone.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aisagalab.com/brainy/es/como-crear-imagenes-con-ia-en-el-iphone.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aisagalab.com/3-tasks/stop-procrastinating-with-a-3-task-list.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aisagalab.com/3-tasks/es/dejar-de-procrastinar-con-una-lista-de-3-tareas.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aisagalab.com/3-tasks/pomodoro-timer-on-iphone.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aisagalab.com/3-tasks/es/temporizador-pomodoro-en-el-iphone.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aisagalab.com/pinku/how-does-local-ai-work-on-iphone.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aisagalab.com/pinku/es/como-funciona-la-ia-local-en-el-iphone.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

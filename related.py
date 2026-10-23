@@ -54,6 +54,7 @@ GROUPS = {
     },
     "Pinku": {
         "en": ([
+            "pinku/how-does-local-ai-work-on-iphone.html",
             "pinku/use-ai-offline-on-a-plane-or-travelling.html",
             "pinku/which-ai-model-fits-my-iphone-mac.html",
             "pinku/is-it-safe-to-tell-chatgpt-private-things.html",
@@ -77,6 +78,7 @@ GROUPS = {
             (RD + "private-llm-alternatives-iphone/", "Best Private LLM alternatives for iPhone and Mac in 2026 (Reditor)"),
         ]),
         "es": ([
+            "pinku/es/como-funciona-la-ia-local-en-el-iphone.html",
             "pinku/es/usar-ia-sin-conexion-en-el-avion-o-de-viaje.html",
             "pinku/es/es-seguro-contarle-cosas-privadas-a-chatgpt.html",
             "pinku/es/usar-ia-en-iphone-sin-internet.html",
@@ -113,6 +115,8 @@ GROUPS = {
     },
     "3 Tasks": {
         "en": ([
+            "3-tasks/stop-procrastinating-with-a-3-task-list.html",
+            "3-tasks/pomodoro-timer-on-iphone.html",
             "3-tasks/3-task-method-ivy-lee-rule-of-3.html",
             "blog/best-3-task-todo-apps-iphone.html",
         ], [
@@ -120,6 +124,8 @@ GROUPS = {
             (RL + "todoist-alternatives-iphone/", "Todoist alternatives for iPhone in 2026 (Reviewland)"),
         ]),
         "es": ([
+            "3-tasks/es/dejar-de-procrastinar-con-una-lista-de-3-tareas.html",
+            "3-tasks/es/temporizador-pomodoro-en-el-iphone.html",
             "3-tasks/es/metodo-de-3-tareas-ivy-lee-regla-de-3.html",
             "blog/es/mejores-apps-3-tareas-al-dia-iphone.html",
         ], [
@@ -140,11 +146,11 @@ GROUPS = {
         ]),
     },
     "Brainy": {
-        "en": (["blog/best-ai-chat-and-image-generator-apps-iphone.html"], [
+        "en": (["brainy/how-to-make-ai-images-on-iphone.html", "blog/best-ai-chat-and-image-generator-apps-iphone.html"], [
             (RL + "best-ai-chat-apps-iphone-no-account/", "Best AI chat apps for iPhone without an account in 2026 (Reviewland)"),
             (RD + "chaton-alternatives-iphone/", "ChatOn alternatives for iPhone in 2026 (Reditor)"),
         ]),
-        "es": (["blog/es/mejores-apps-ia-chat-e-imagenes-iphone.html"], [
+        "es": (["brainy/es/como-crear-imagenes-con-ia-en-el-iphone.html", "blog/es/mejores-apps-ia-chat-e-imagenes-iphone.html"], [
             (RL + "es/mejores-apps-chat-ia-sin-cuenta-iphone/", "Mejores apps de chat con IA para iPhone sin cuenta en 2026 (Reviewland)"),
             (RD + "es/alternativas-a-chaton-iphone/", "Alternativas a ChatOn para iPhone en 2026 (Reditor)"),
         ]),
