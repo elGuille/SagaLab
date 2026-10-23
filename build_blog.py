@@ -141,3 +141,6 @@ if __name__ == "__main__":
                     open(p, "w", encoding="utf-8").write(t)
                     n += 1
     print("ct= en %d paginas del blog" % n)
+    # enlaces internos: «Related guides» en cada guia y «Guides» en cada ficha de app
+    import related
+    print("related: %d ficheros" % related.inject())
