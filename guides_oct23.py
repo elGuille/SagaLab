@@ -19,6 +19,7 @@ De nuestras apps, solo lo que dice su ficha actual del App Store. Sin rayas.
 """
 
 D23 = {"en": "23 October 2026", "es": "23 de octubre de 2026"}
+D23_U24 = {"en": "23 October 2026, updated 24 October 2026", "es": "23 de octubre de 2026, actualizada el 24 de octubre de 2026"}
 ISO = "2026-10-23"
 
 PV_STORE = "https://apps.apple.com/app/apple-store/id1532670722?pt=118348020&amp;ct=sagalab-guide&amp;mt=8"
@@ -634,7 +635,7 @@ DROP_AS = "https://apps.apple.com/us/app/id1462269642"
 DR2_EN = dict(
     path="drop/brown-noise-vs-pink-noise-vs-white-noise.html",
     app_name="Sleep Sounds & Focus: Drop",
-    date_iso=ISO, date=D23,
+    date_iso=ISO, date=D23_U24, modified_iso="2026-10-24",
     h1="Brown noise vs pink noise vs white noise: which one for sleep, focus or a baby (2026)",
     desc=("What white, pink and brown noise are, what the studies actually found for sleep (a 2021 review of 38 studies), "
           "focus (a 2024 meta-analysis on ADHD) and babies (a 2014 Pediatrics study of 14 sleep machines), and how to play "
@@ -776,7 +777,7 @@ More on <a href="../drop.html">Drop's page</a>, and the step by step in
 DR2_ES = dict(
     path="drop/es/ruido-marron-rosa-o-blanco.html",
     app_name="Sleep Sounds & Focus: Drop",
-    date_iso=ISO, date=D23,
+    date_iso=ISO, date=D23_U24, modified_iso="2026-10-24",
     h1="Ruido marrón, rosa o blanco: cuál para dormir, concentrarse o para un bebé (2026)",
     desc=("Qué son el ruido blanco, rosa y marrón, qué encontraron de verdad los estudios para dormir (una revisión de 38 "
           "estudios de 2021), concentrarse (un metaanálisis de 2024 sobre TDAH) y bebés (un estudio de Pediatrics de 2014 con "

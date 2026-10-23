@@ -59,6 +59,8 @@ def _ld(g, lang, path):
     art = json.loads(_jsonld(g["h1"], g["desc"], "https://aisagalab.com/" + path, lang,
                              g["section"], g.get("date_iso", DATE_ISO)))
     art.pop("@context")
+    if g.get("modified_iso"):
+        art["dateModified"] = g["modified_iso"]
     howto = {
         "@type": "HowTo",
         "name": g["h1"],
