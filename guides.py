@@ -142,8 +142,7 @@ account and no server. Nothing is uploaded unless you turn on its optional iClou
 its files use iOS Data Protection, so they cannot be read while the iPhone is locked.
 <a href="../photo-vault-security.html">How it protects your files</a>.</p>
 
-<p>Without the iCloud copy it does not back up on its own: you export the backup file when you choose. It has
-no decoy PIN, it is iPhone only, and it relies on iOS Data Protection rather than its
+<p>Without the iCloud copy it does not back up on its own: you export the backup file when you choose. It is iPhone only, and it relies on iOS Data Protection rather than its
 own per-file encryption. It is free to download and try; Premium, with 7 days free and then
 yearly, unlocks unlimited items and the iCloud copy, and what you saved stays accessible if it ends.</p>
 
@@ -231,8 +230,7 @@ ID o un código, con contraseña opcional por álbum. No hay cuenta ni servidor.
 archivos usan la Protección de datos de iOS, así que no se pueden leer con el iPhone
 bloqueado. <a href="../../photo-vault-security.html">Cómo protege tus archivos</a> (en inglés).</p>
 
-<p>Sin la copia en iCloud no hace copias por su cuenta: exportas el archivo de copia cuando tú quieras. No
-tiene código señuelo, es solo para iPhone y se apoya en la Protección de datos de iOS,
+<p>Sin la copia en iCloud no hace copias por su cuenta: exportas el archivo de copia cuando tú quieras. Es solo para iPhone y se apoya en la Protección de datos de iOS,
 no en un cifrado propio por archivo. Se descarga gratis y se puede probar; Premium, con
 7 días gratis y después anual, desbloquea elementos ilimitados y la copia en iCloud, y lo
 que guardaste sigue accesible si se acaba.</p>
@@ -295,8 +293,8 @@ answer is generated on the iPhone, and nothing you type leaves it.</p>
          "Open Control Center, turn on airplane mode and ask a question. The answer is generated on the "
          "device, so it works with no connection at all."),
         ("Pick the right model for the job.",
-         "Smaller models answer faster; larger ones answer better. The six models up to 1 GB are free; "
-         "Pinku Pro, yearly or one-time, adds six larger ones up to 4.7 GB."),
+         "Smaller models answer faster; larger ones answer better. Chatting with the default model, Gemma 3 1B, is free; "
+         "Pinku Pro, yearly or one-time, lets you choose any of the other models, up to 4.7 GB."),
         ("Start a chat with Siri, if you like.",
          "Pinku has a Siri and Shortcuts action to start a chat, which also works offline."),
         ("Move a chat when you need to.",
@@ -313,9 +311,8 @@ documents, has a shorter memory of the conversation, and its speed depends on yo
 device. Pinku checks the memory actually free before loading a model, so a model that
 does not fit gives a warning instead of a crash.</p>
 
-<p>Pinku is free to download, and the six models up to 1 GB work without paying.
-Pinku Pro (a yearly subscription or a one-time purchase) adds the larger
-models, custom instructions, dictation recognised on the device and read aloud. More
+<p>Pinku is free to download, and chatting with the default model, Gemma 3 1B, costs nothing.
+Pinku Pro (a yearly subscription or a one-time purchase) lets you choose any model and adds custom instructions, dictation recognised on the device and read aloud. More
 on <a href="../pinku.html">Pinku's page</a>.</p>
 
 <p>To verify that an AI app keeps your chats on the phone, see <a href="check-ai-chat-app-keeps-chats-on-iphone.html">how to check whether an AI chat app really keeps your chats on your iPhone</a>. Other offline AI apps, including where they beat us:
@@ -329,7 +326,7 @@ for iPhone and Mac</a>.</p>
         ("Does ChatGPT work offline?",
          "No. ChatGPT runs on OpenAI's servers, so every message needs a connection."),
         ("How much space does an offline AI model take?",
-         "In Pinku, from 0.34 GB to 4.7 GB depending on the model. The default, Gemma 3 1B, is under 1 GB."),
+         "In Pinku, from 0.4 GB to 4.7 GB depending on the model. The default, Gemma 3 1B, is under 1 GB."),
         ("Is an offline AI as good as ChatGPT?",
          "No. A small model on a phone is clearly weaker, has a shorter context and cannot browse the web. "
          "Its advantage is that it works anywhere and nothing you type leaves the device."),
@@ -371,8 +368,8 @@ escribes sale de él.</p>
          "Abre el Centro de control, activa el modo avión y haz una pregunta. La respuesta se genera en "
          "el dispositivo, así que funciona sin ninguna conexión."),
         ("Elige el modelo adecuado.",
-         "Los modelos pequeños responden más rápido; los grandes, mejor. Los seis de hasta 1 GB son "
-         "gratis; Pinku Pro, anual o de pago único, añade seis más grandes de hasta 4,7 GB."),
+         "Los modelos pequeños responden más rápido; los grandes, mejor. Chatear con el modelo por defecto, Gemma 3 1B, es "
+         "gratis; Pinku Pro, anual o de pago único, te deja elegir cualquier otro modelo, de hasta 4,7 GB."),
         ("Empieza un chat con Siri, si quieres.",
          "Pinku tiene una acción de Siri y Atajos para empezar un chat, que también funciona sin conexión."),
         ("Mueve un chat cuando lo necesites.",
@@ -388,9 +385,8 @@ y sacar ideas. No busca en internet, no lee imágenes ni documentos, recuerda me
 la conversación y su velocidad depende de tu dispositivo. Pinku comprueba la memoria
 libre antes de cargar un modelo, así que si no cabe te avisa en lugar de cerrarse.</p>
 
-<p>Pinku se descarga gratis, y los seis modelos de hasta 1 GB funcionan sin pagar.
-Pinku Pro (suscripción anual o compra única) añade los
-modelos grandes, instrucciones propias, dictado reconocido en el dispositivo y lectura
+<p>Pinku se descarga gratis, y chatear con el modelo por defecto, Gemma 3 1B, no cuesta nada.
+Pinku Pro (suscripción anual o compra única) te deja elegir cualquier modelo y añade instrucciones propias, dictado reconocido en el dispositivo y lectura
 en voz alta. Más en <a href="../../pinku.html">la página de Pinku</a> (en inglés).</p>
 
 <p>Para comprobar que una app de IA guarda tus chats en el móvil, mira <a href="comprobar-si-una-app-de-ia-guarda-tus-chats-en-el-iphone.html">cómo comprobar si una app de chat con IA guarda de verdad tus chats en el iPhone</a>. Otras apps de IA sin conexión, también donde nos ganan:
@@ -404,7 +400,7 @@ IA sin conexión para iPhone y Mac</a>.</p>
         ("¿ChatGPT funciona sin conexión?",
          "No. ChatGPT funciona en los servidores de OpenAI, así que cada mensaje necesita conexión."),
         ("¿Cuánto ocupa un modelo de IA sin conexión?",
-         "En Pinku, de 0,34 GB a 4,7 GB según el modelo. El de por defecto, Gemma 3 1B, ocupa menos de 1 GB."),
+         "En Pinku, de 0,4 GB a 4,7 GB según el modelo. El de por defecto, Gemma 3 1B, ocupa menos de 1 GB."),
         ("¿Una IA sin conexión es tan buena como ChatGPT?",
          "No. Un modelo pequeño en un móvil es claramente más flojo, recuerda menos y no busca en internet. "
          "Su ventaja es que funciona en cualquier sitio y nada de lo que escribes sale del dispositivo."),
@@ -664,8 +660,7 @@ Recently Deleted, is in <a href="hide-photos-iphone-without-hidden-album.html">h
 on iPhone without the Hidden album</a>.</p>
 
 <p>What it does not do: without the iCloud copy it does not back up on its own, so you export a
-backup file yourself (without either, the photos are lost with the phone), it has
-no decoy PIN, it is iPhone only, and it relies on iOS Data Protection rather than its own
+backup file yourself (without either, the photos are lost with the phone), it is iPhone only, and it relies on iOS Data Protection rather than its own
 per-file encryption. It is free to download and try; Premium, with 7 days free and then yearly,
 unlocks unlimited items and the iCloud copy, and what you saved stays accessible if it ends.</p>
 
@@ -763,8 +758,7 @@ Eliminado, está en <a href="ocultar-fotos-iphone-sin-album-oculto.html">cómo o
 sin el álbum Oculto</a>.</p>
 
 <p>Lo que no hace: sin la copia en iCloud no hace copias por su cuenta, así que exportas tú un
-archivo de copia (sin ninguna de las dos, las fotos se pierden con el móvil), no tiene código
-señuelo, es solo para iPhone y se apoya en la Protección de datos de iOS, no en un cifrado propio
+archivo de copia (sin ninguna de las dos, las fotos se pierden con el móvil), es solo para iPhone y se apoya en la Protección de datos de iOS, no en un cifrado propio
 por archivo. Se descarga gratis y se puede probar; Premium, con 7 días gratis y después anual,
 desbloquea elementos ilimitados y la copia en iCloud, y lo que guardaste sigue accesible si se acaba.</p>
 
@@ -851,8 +845,7 @@ that is what you should expect to see, and nothing else, in App Privacy Report a
 Voice dictation, if you buy Pinku Pro, is recognised on the device.</p>
 
 <p>The trade-off is capability: a model of 1 to 5 GB on a phone is clearly weaker than ChatGPT or Claude
-in the cloud, it cannot browse the web, and it does not read images or documents. Pinku is free to
-download, the six models up to 1 GB work without paying, and Pinku Pro (a yearly subscription or a one-time purchase) adds the larger ones. How to set it up and use it on a plane:
+in the cloud, it cannot browse the web, and it does not read images or documents. Pinku is free to download, chatting with the default model, Gemma 3 1B, costs nothing, and Pinku Pro (a yearly subscription or a one-time purchase) lets you choose any model. How to set it up and use it on a plane:
 <a href="use-ai-on-iphone-without-internet.html">how to use AI on iPhone without internet</a>.
 Other apps that run a model on the device, ranked honestly:
 <a href="../blog/best-private-ai-apps-iphone.html">the best private AI apps for iPhone</a>.</p>
@@ -934,8 +927,7 @@ descargar un modelo la primera vez y para las compras del App Store, así que es
 en el Informe de privacidad después de chatear. El dictado por voz, si compras Pinku Pro, se reconoce en el dispositivo.</p>
 
 <p>La contrapartida es la capacidad: un modelo de 1 a 5 GB en un móvil es claramente más débil que ChatGPT o Claude en la
-nube, no navega por la web y no lee imágenes ni documentos. Pinku se descarga gratis, los seis modelos de hasta 1 GB
-funcionan sin pagar y Pinku Pro (suscripción anual o compra única) añade los grandes.
+nube, no navega por la web y no lee imágenes ni documentos. Pinku se descarga gratis, chatear con el modelo por defecto, Gemma 3 1B, no cuesta nada y Pinku Pro (suscripción anual o compra única) te deja elegir cualquier modelo.
 Cómo instalarla y usarla en un avión:
 <a href="usar-ia-en-iphone-sin-internet.html">cómo usar IA en el iPhone sin internet</a>.
 Otras apps que ejecutan el modelo en el dispositivo, ordenadas con honestidad:

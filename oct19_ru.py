@@ -183,17 +183,19 @@ Bionic или новее, Siri и Команды; интерфейс на анг
 NOAI = dict(
     h1="Лучшие ИИ-приложения для iPhone без Apple Intelligence (2026)",
     desc=("iOS 27 работает с iPhone 11, Apple Intelligence только с iPhone 15 Pro и без русского языка. "
-          "Pinku, PocketPal, Private LLM, Enclave, Алиса AI, DeepSeek, Perplexity и Vibe: что есть в "
+          "PocketPal, Private LLM, Enclave, Pinku, Алиса AI, Perplexity, DeepSeek и Vibe: что есть в "
           "российском App Store, офлайн или в облаке, требования и цены."),
     kicker="Рейтинги", section="Рейтинги",
     standfirst=("Ваш iPhone на iOS 27, но без Apple Intelligence, а на русском она не работает и на новых "
                 "моделях. Восемь приложений из российского App Store, которые дают ему ИИ-помощника."),
-    rank=[("Pinku: Private Offline AI Chat", PINKU_ID), ("PocketPal AI", RU + "6502579498"),
-          ("Private LLM - Local AI Chat", RU + "6448106860"), ("Enclave - Local AI Assistant", RU + "6476614556"),
-          ("Алиса AI: Нейросеть Яндекса", RU + "6621272550"), ("DeepSeek - AI Ассистент", RU + "6737597349"),
-          ("Perplexity", RU + "1668000334"), ("Vibe by Mistral (ex-Le Chat)", RU + "6740410176")],
+    rank=[("PocketPal AI", RU + "6502579498"), ("Private LLM - Local AI Chat", RU + "6448106860"),
+          ("Enclave - Local AI Assistant", RU + "6476614556"), ("Pinku: Private Offline AI Chat", PINKU_ID),
+          ("Алиса AI: Нейросеть Яндекса", RU + "6621272550"), ("Perplexity", RU + "1668000334"),
+          ("DeepSeek - AI Ассистент", RU + "6737597349"), ("Vibe by Mistral (ex-Le Chat)", RU + "6740410176")],
     body="""
 <p>Данные о приложениях взяты из российского App Store, проверено %(date)s.</p>
+
+<p><strong>Важно: Pinku, номер 4 в этом списке, делаем мы.</strong></p>
 
 <p><a href="%(ios)s"%(x)s>iOS 27 работает начиная с iPhone 11</a> и iPhone SE второго
 поколения. <a href="%(reqs)s"%(x)s>Apple Intelligence</a> нужна iPhone 15 Pro, 15 Pro
@@ -208,10 +210,10 @@ Max, любой iPhone 16 и новее или iPhone Air, и ещё один и
 <h2>Рейтинг</h2>
 
 <ol>
-<li><a href="%(pinku)s">Pinku</a>: офлайн и приватно, с русским интерфейсом, для iPhone 12–15.</li>
 <li><a href="%(pocketpal)s"%(x)s>PocketPal AI</a>: работает на самых старых iPhone, открытый код.</li>
 <li><a href="%(privatellm)s"%(x)s>Private LLM</a>: разовая покупка, есть поддержка iPhone 11 и SE.</li>
 <li><a href="%(enclave)s"%(x)s>Enclave</a>: офлайн, но только на iOS 27.</li>
+<li><a href="%(pinku)s">Pinku</a>: офлайн и приватно, с русским интерфейсом, для iPhone 12–15.</li>
 <li><a href="%(alice)s"%(x)s>Алиса AI</a>: облачный помощник Яндекса, лучше всех понимает русский контекст.</li>
 <li><a href="%(perplexity)s"%(x)s>Perplexity</a>: ответы с поиском и ссылками на источники.</li>
 <li><a href="%(deepseek)s"%(x)s>DeepSeek</a>: сильная модель в облаке, бесплатно.</li>
@@ -223,10 +225,10 @@ Max, любой iPhone 16 и новее или iPhone Air, и ещё один и
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Где работает ИИ</th><th>Нужно</th><th>Цена</th><th>Оценка (Россия)</th><th>Интерфейс на русском</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(pinku)s">Pinku</a></td><td>На iPhone</td><td>iOS 18.6, iPhone 12+</td><td>Бесплатно; Pinku Pro в приложении</td><td>4,4 (7)</td><td>Да</td></tr>
-<tr><td>2. <a href="%(pocketpal)s"%(x)s>PocketPal AI</a></td><td>На iPhone</td><td>iOS 15.1</td><td>Бесплатно</td><td>4,2 (19)</td><td>Нет</td></tr>
-<tr><td>3. <a href="%(privatellm)s"%(x)s>Private LLM</a></td><td>На iPhone</td><td>iOS 17, A12 Bionic+</td><td>299 ₽</td><td>3,6 (18)</td><td>Нет</td></tr>
-<tr><td>4. <a href="%(enclave)s"%(x)s>Enclave</a></td><td>На iPhone (Pro: облако)</td><td>iOS 27</td><td>Бесплатно</td><td>4,6 (75)</td><td>Нет</td></tr>
+<tr><td>1. <a href="%(pocketpal)s"%(x)s>PocketPal AI</a></td><td>На iPhone</td><td>iOS 15.1</td><td>Бесплатно</td><td>4,2 (19)</td><td>Нет</td></tr>
+<tr><td>2. <a href="%(privatellm)s"%(x)s>Private LLM</a></td><td>На iPhone</td><td>iOS 17, A12 Bionic+</td><td>299 ₽</td><td>3,6 (18)</td><td>Нет</td></tr>
+<tr><td>3. <a href="%(enclave)s"%(x)s>Enclave</a></td><td>На iPhone (Pro: облако)</td><td>iOS 27</td><td>Бесплатно</td><td>4,6 (75)</td><td>Нет</td></tr>
+<tr><td>4. <a href="%(pinku)s">Pinku</a></td><td>На iPhone</td><td>iOS 18.6, iPhone 12+</td><td>Бесплатно; Pinku Pro в приложении</td><td>4,4 (7)</td><td>Да</td></tr>
 <tr><td>5. <a href="%(alice)s"%(x)s>Алиса AI</a></td><td>Облако (Яндекс)</td><td>iOS 16.0, интернет</td><td>Бесплатно</td><td>4,8 (53 071)</td><td>Да</td></tr>
 <tr><td>6. <a href="%(perplexity)s"%(x)s>Perplexity</a></td><td>Облако</td><td>iOS 18.0, интернет</td><td>Бесплатно</td><td>4,9 (37 853)</td><td>Да</td></tr>
 <tr><td>7. <a href="%(deepseek)s"%(x)s>DeepSeek</a></td><td>Облако</td><td>iOS 15.0, интернет</td><td>Бесплатно</td><td>3,9 (9770)</td><td>Да</td></tr>
@@ -248,7 +250,25 @@ iPhone 12 у Pinku связано с Metal 3, который Apple указыв�
 Облачные приложения умнее, но каждое сообщение уходит на серверы компании, а без сети
 они не работают.</p>
 
-<h2>1. Pinku</h2>
+<h2>1. PocketPal AI</h2>
+
+<p>Самые низкие требования (iOS 15.1) и <a href="%(gh)s"%(x)s>открытый код</a>.
+Загружает любые GGUF-модели с Hugging Face: выбора больше, но легче взять модель,
+которую iPhone не потянет. Бесплатно, <em>Данные не собираются</em>; интерфейс на
+английском.</p>
+
+<h2>2. Private LLM</h2>
+
+<p>299 ₽ один раз, Семейный доступ, Siri и Команды, <em>Данные не собираются</em>.
+Поддерживает iPhone 11 и SE второго поколения: нужен чип A12 Bionic или новее.
+Интерфейс на английском, оценок в России мало.</p>
+
+<h2>3. Enclave</h2>
+
+<p>Хорошее офлайн-приложение с облачными моделями в Pro, но требует iOS 27. На iPhone
+с iOS 18 или 26 не установится.</p>
+
+<h2>4. Pinku</h2>
 
 <p><a href="%(pinku)s">Pinku</a> запускает открытые модели (Gemma 3, Llama 3.2, Qwen3
 и другие) на iPhone через Apple MLX. Модель скачивается один раз, дальше каждый ответ
@@ -260,24 +280,6 @@ iPhone 12 у Pinku связано с Metal 3, который Apple указыв�
 русским интерфейсом; работает и на Mac с Apple silicon. Ограничения: не работает на
 iPhone 11 и SE второго поколения (нет Metal 3), код закрыт, не читает картинки и
 документы.</p>
-
-<h2>2. PocketPal AI</h2>
-
-<p>Самые низкие требования (iOS 15.1) и <a href="%(gh)s"%(x)s>открытый код</a>.
-Загружает любые GGUF-модели с Hugging Face: выбора больше, но легче взять модель,
-которую iPhone не потянет. Бесплатно, <em>Данные не собираются</em>; интерфейс на
-английском.</p>
-
-<h2>3. Private LLM</h2>
-
-<p>299 ₽ один раз, Семейный доступ, Siri и Команды, <em>Данные не собираются</em>.
-Поддерживает iPhone 11 и SE второго поколения: нужен чип A12 Bionic или новее.
-Интерфейс на английском, оценок в России мало.</p>
-
-<h2>4. Enclave</h2>
-
-<p>Хорошее офлайн-приложение с облачными моделями в Pro, но требует iOS 27. На iPhone
-с iOS 18 или 26 не установится.</p>
 
 <h2>5. Алиса AI</h2>
 

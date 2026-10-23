@@ -20,7 +20,7 @@
     "@type": "SoftwareApplication",
     "name": "Pinku: Private Local AI Chat",
     "alternateName": ["Pinku", "Pinku Private AI"],
-    "description": "Private AI chat that runs entirely on-device using Apple MLX. Twelve open models (Gemma 3, Gemma 3n, Llama 3.2, Qwen3, DeepSeek-R1 distills, SmolLM3 and LFM2), from 0.34 GB to 4.7 GB. No account, no server: the conversation never leaves the device. Free to download with six models up to 1 GB, including the default; an optional Pinku Pro, as a yearly subscription or a one-time purchase, adds the larger models, custom instructions, on-device voice dictation and read aloud.",
+    "description": "Private AI chat that runs entirely on-device using Apple MLX. Eleven open models (Gemma 3, Gemma 3n, Llama 3.2, Qwen3, DeepSeek-R1 Distill, SmolLM3 and LFM2), from 0.4 GB to 4.7 GB. No account, no server: the conversation never leaves the device. Free to download, with chat on the default model, Gemma 3 1B; an optional Pinku Pro, as a yearly subscription or a one-time purchase, lets you choose any model and adds custom instructions, on-device voice dictation and read aloud.",
     "applicationCategory": "UtilitiesApplication",
     "operatingSystem": "iOS, iPadOS, macOS",
     "url": "https://aisagalab.com/pinku.html",
@@ -38,7 +38,7 @@
       "Checks available memory before loading a model and refuses one that does not fit, instead of crashing",
       "Regenerate an answer, edit a sent message, copy and share messages or a whole conversation",
       "Interface in English, Spanish, German, French, Japanese, Korean, Simplified Chinese and Russian",
-      "Pinku Pro (yearly or one-time): models over 1 GB, custom instructions, on-device voice dictation, read aloud"
+      "Pinku Pro (yearly or one-time): choose any model, custom instructions, on-device voice dictation, read aloud"
     ],
     "publisher": { "@type": "Organization", "name": "Saga Labs", "url": "https://aisagalab.com/" }
   }
@@ -53,9 +53,9 @@
       { "@type": "Question", "name": "Are my conversations sent anywhere?",
         "acceptedAnswer": { "@type": "Answer", "text": "No. There is no account and no server. Chats are stored on the device, and deleting one deletes the file. The network is used only to download models and for App Store purchases." } },
       { "@type": "Question", "name": "Is Pinku free?",
-        "acceptedAnswer": { "@type": "Answer", "text": "It is free to download, and the six models up to 1 GB, including the default Gemma 3 1B, work without paying. Pinku Pro is optional, as a yearly subscription or a one-time purchase (US App Store: $16.99 a year, or one-time from $9.99; local prices vary)." } },
+        "acceptedAnswer": { "@type": "Answer", "text": "It is free to download, and chatting with the default model, Gemma 3 1B, costs nothing. Pinku Pro is optional, as a yearly subscription or a one-time purchase (US App Store: $16.99 a year, or one-time from $9.99; local prices vary)." } },
       { "@type": "Question", "name": "What does Pinku Pro unlock?",
-        "acceptedAnswer": { "@type": "Answer", "text": "The six larger models (SmolLM3 3B, Llama 3.2 3B, DeepSeek-R1 Distill Qwen 1.5B 8-bit, Qwen3 4B, Gemma 3n E2B and Qwen3 8B), custom instructions, voice dictation that runs on the device, and read aloud with the voices installed on the device. Chat, regenerate, edit and share are not part of Pro." } },
+        "acceptedAnswer": { "@type": "Answer", "text": "Any model besides the default Gemma 3 1B, including the larger ones (SmolLM3 3B, Llama 3.2 3B, DeepSeek-R1 Distill Qwen 1.5B, Qwen3 4B, Gemma 3n E2B and Qwen3 8B), custom instructions, voice dictation that runs on the device, and read aloud with the voices installed on the device. Chat, regenerate, edit and share are not part of Pro." } },
       { "@type": "Question", "name": "I already had a large model installed before Pinku Pro existed. Do I lose it?",
         "acceptedAnswer": { "@type": "Answer", "text": "No. Models installed before Pro arrived stay usable without buying it, and so do custom instructions you had already written." } },
       { "@type": "Question", "name": "Will a big model crash my iPhone?",
@@ -130,8 +130,8 @@
     <div class="table-scroll"><table>
       <thead><tr><th></th><th>Free</th><th>Pinku Pro</th></tr></thead>
       <tbody>
-        <tr><td>Models up to 1 GB: Qwen3 0.6B, LFM2 1.2B, Llama 3.2 1B, Gemma 3 1B (default), Qwen3 1.7B, DeepSeek-R1 Distill Qwen 1.5B</td><td>Yes</td><td>Yes</td></tr>
-        <tr><td>Models over 1 GB: SmolLM3 3B, Llama 3.2 3B, DeepSeek-R1 Distill Qwen 1.5B 8-bit, Qwen3 4B, Gemma 3n E2B, Qwen3 8B</td><td>No</td><td>Yes</td></tr>
+        <tr><td>Gemma 3 1B, the default model</td><td>Yes</td><td>Yes</td></tr>
+        <tr><td>Choose any other model: Qwen3 0.6B, LFM2 1.2B, Llama 3.2 1B, Qwen3 1.7B, DeepSeek-R1 Distill Qwen 1.5B, SmolLM3 3B, Llama 3.2 3B, Qwen3 4B, Gemma 3n E2B, Qwen3 8B</td><td>No</td><td>Yes</td></tr>
         <tr><td>Chat, regenerate, edit, copy and share</td><td>Yes</td><td>Yes</td></tr>
         <tr><td>Custom instructions</td><td>No</td><td>Yes</td></tr>
         <tr><td>Voice dictation, recognised on the device (never sent to a server)</td><td>No</td><td>Yes</td></tr>
@@ -148,8 +148,8 @@
     <h2>Questions</h2>
     <details open><summary>Does Pinku work offline?</summary><p>Yes. You download a model once, over the network. After that every answer is generated on your iPhone or Mac and no connection is needed.</p></details>
     <details><summary>Are my conversations sent anywhere?</summary><p>No. There is no account and no server. Chats are stored on the device, and deleting one deletes the file. The network is used only to download models and for App Store purchases.</p></details>
-    <details><summary>Is Pinku free?</summary><p>It is free to download, and the six models up to 1 GB, including the default Gemma 3 1B, work without paying. Pinku Pro is optional, as a yearly subscription or a one-time purchase (US App Store: $16.99 a year, or one-time from $9.99; local prices vary).</p></details>
-    <details><summary>What does Pinku Pro unlock?</summary><p>The six larger models (SmolLM3 3B, Llama 3.2 3B, DeepSeek-R1 Distill Qwen 1.5B 8-bit, Qwen3 4B, Gemma 3n E2B and Qwen3 8B), custom instructions, voice dictation that runs on the device, and read aloud with the voices installed on the device. Chat, regenerate, edit and share are not part of Pro.</p></details>
+    <details><summary>Is Pinku free?</summary><p>It is free to download, and chatting with the default model, Gemma 3 1B, costs nothing. Pinku Pro is optional, as a yearly subscription or a one-time purchase (US App Store: $16.99 a year, or one-time from $9.99; local prices vary).</p></details>
+    <details><summary>What does Pinku Pro unlock?</summary><p>Any model besides the default Gemma 3 1B, including the larger ones (SmolLM3 3B, Llama 3.2 3B, DeepSeek-R1 Distill Qwen 1.5B, Qwen3 4B, Gemma 3n E2B and Qwen3 8B), custom instructions, voice dictation that runs on the device, and read aloud with the voices installed on the device. Chat, regenerate, edit and share are not part of Pro.</p></details>
     <details><summary>I already had a large model installed before Pinku Pro existed. Do I lose it?</summary><p>No. Models installed before Pro arrived stay usable without buying it, and so do custom instructions you had already written.</p></details>
     <details><summary>Will a big model crash my iPhone?</summary><p>Pinku hides models that are too large for your device's memory, and before loading any model it checks the memory actually available. If it does not fit, Pinku tells you and keeps the current model loaded instead of crashing.</p></details>
     <details><summary>Do my chats sync between iPhone and Mac?</summary><p>No. There is no cloud, so each device keeps its own chats. You can share a conversation as plain text if you want to move it.</p></details>

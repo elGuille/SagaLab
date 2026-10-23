@@ -188,18 +188,20 @@ Apple Intelligence</a>.</p>
 # --------------------------------------------------------------------------
 NOAI = dict(
     h1="Best AI apps for iPhones without Apple Intelligence (2026)",
-    desc=("iOS 27 runs on iPhone 11 and later, Apple Intelligence only on iPhone 15 Pro and newer. Pinku, "
-          "Locally AI, PocketPal, Private LLM, ChatGPT, Gemini, Claude and Vibe ranked for the iPhones in "
+    desc=("iOS 27 runs on iPhone 11 and later, Apple Intelligence only on iPhone 15 Pro and newer. Locally AI, "
+          "PocketPal, Private LLM, Pinku, ChatGPT, Gemini, Claude and Vibe ranked for the iPhones in "
           "between: offline or cloud, requirements, price and privacy label."),
     kicker="Rankings", section="Rankings",
     standfirst=("Your iPhone runs iOS 27 but has no Apple Intelligence. Eight apps that give it an AI "
                 "assistant, on the phone or in the cloud."),
-    rank=[("Pinku: Private Offline AI Chat", PINKU_ID), ("Locally AI by LM Studio", US + "6741426692"),
-          ("PocketPal AI", US + "6502579498"), ("Private LLM - Local AI Chat", US + "6448106860"),
+    rank=[("Locally AI by LM Studio", US + "6741426692"), ("PocketPal AI", US + "6502579498"),
+          ("Private LLM - Local AI Chat", US + "6448106860"), ("Pinku: Private Offline AI Chat", PINKU_ID),
           ("ChatGPT", US + "6448311069"), ("Google Gemini", US + "6477489729"),
           ("Claude by Anthropic", US + "6473753684"), ("Vibe by Mistral (ex-Le Chat)", US + "6740410176")],
     body="""
 <p>Facts about each app come from its App Store page (US), checked on %(date)s.</p>
+
+<p><strong>Disclosure: we make Pinku, number 4 on this list.</strong></p>
 
 <p><a href="%(ios)s"%(x)s>iOS 27 runs on iPhone 11 and later</a>, including the
 iPhone SE (2nd generation and later). <a href="%(reqs)s"%(x)s>Apple Intelligence
@@ -212,10 +214,10 @@ cloud assistants that need the internet but are far more capable.</p>
 <h2>The ranking</h2>
 
 <ol>
-<li><a href="%(pinku)s">Pinku</a>: offline and private, for iPhone 12 to 15.</li>
 <li><a href="%(locally)s"%(x)s>Locally AI by LM Studio</a>: free offline chat.</li>
 <li><a href="%(pocketpal)s"%(x)s>PocketPal AI</a>: runs on the oldest iPhones, and its code is public.</li>
 <li><a href="%(privatellm)s"%(x)s>Private LLM</a>: pay once, works on iPhone 11 and SE.</li>
+<li><a href="%(pinku)s">Pinku</a>: offline and private, for iPhone 12 to 15.</li>
 <li><a href="%(chatgpt)s"%(x)s>ChatGPT</a>: cloud all-rounder.</li>
 <li><a href="%(gemini)s"%(x)s>Google Gemini</a>: if you live in Google's apps.</li>
 <li><a href="%(claude)s"%(x)s>Claude</a>: long writing and documents.</li>
@@ -227,10 +229,10 @@ cloud assistants that need the internet but are far more capable.</p>
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Where the AI runs</th><th>Needs</th><th>Price (US)</th><th>Rating (US)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(pinku)s">Pinku</a></td><td>On the iPhone</td><td>iOS 18.6, iPhone 12 or later</td><td>Free; Pinku Pro in-app purchase</td><td>4.7 (12)</td></tr>
-<tr><td>2. <a href="%(locally)s"%(x)s>Locally AI</a></td><td>On the iPhone</td><td>iOS 18.1</td><td>Free</td><td>4.7 (1,805)</td></tr>
-<tr><td>3. <a href="%(pocketpal)s"%(x)s>PocketPal AI</a></td><td>On the iPhone</td><td>iOS 15.1</td><td>Free; optional paid &ldquo;Pals&rdquo; from $0.99</td><td>4.1 (162)</td></tr>
-<tr><td>4. <a href="%(privatellm)s"%(x)s>Private LLM</a></td><td>On the iPhone</td><td>iOS 17, A12 Bionic or later</td><td>$4.99 upfront</td><td>4.2 (736)</td></tr>
+<tr><td>1. <a href="%(locally)s"%(x)s>Locally AI</a></td><td>On the iPhone</td><td>iOS 18.1</td><td>Free</td><td>4.7 (1,805)</td></tr>
+<tr><td>2. <a href="%(pocketpal)s"%(x)s>PocketPal AI</a></td><td>On the iPhone</td><td>iOS 15.1</td><td>Free; optional paid &ldquo;Pals&rdquo; from $0.99</td><td>4.1 (162)</td></tr>
+<tr><td>3. <a href="%(privatellm)s"%(x)s>Private LLM</a></td><td>On the iPhone</td><td>iOS 17, A12 Bionic or later</td><td>$4.99 upfront</td><td>4.2 (736)</td></tr>
+<tr><td>4. <a href="%(pinku)s">Pinku</a></td><td>On the iPhone</td><td>iOS 18.6, iPhone 12 or later</td><td>Free; Pinku Pro in-app purchase</td><td>4.7 (12)</td></tr>
 <tr><td>5. <a href="%(chatgpt)s"%(x)s>ChatGPT</a></td><td>Cloud</td><td>iOS 18.0, internet</td><td>Free; Go $8, Plus $19.99 a month</td><td>4.8 (11.4 million)</td></tr>
 <tr><td>6. <a href="%(gemini)s"%(x)s>Google Gemini</a></td><td>Cloud</td><td>iOS 17.4, internet</td><td>Free; Google AI Plus $4.99, Pro $19.99</td><td>4.7 (2.36 million)</td></tr>
 <tr><td>7. <a href="%(claude)s"%(x)s>Claude</a></td><td>Cloud</td><td>iOS 18.0, internet</td><td>Free; Pro $20 a month</td><td>4.7 (282,163)</td></tr>
@@ -254,7 +256,27 @@ iPhones also have less memory, so they run only the smaller models. The cloud ap
 are the opposite: much smarter, but every message goes to the company's servers and
 nothing works without a connection. Many people end up with one of each.</p>
 
-<h2>1. Pinku</h2>
+<h2>1. Locally AI by LM Studio</h2>
+
+<p>Free, no login, made by the company behind LM Studio for the Mac, with <em>Data
+Not Collected</em> on its privacy label and by far the most ratings of the offline
+apps here. It also analyses images. It needs iOS 18.1.</p>
+
+<h2>2. PocketPal AI</h2>
+
+<p>The offline app with the lowest requirement here, iOS 15.1, and the only one with
+<a href="%(gh)s"%(x)s>public source code</a>. It loads any GGUF model from Hugging
+Face, which gives you more choice and more ways to pick a model your iPhone cannot
+handle. Free, <em>Data Not Collected</em>; it sells optional character presets
+(&ldquo;Pals&rdquo;).</p>
+
+<h2>3. Private LLM</h2>
+
+<p>$4.99 once, with Family Sharing, Siri and Shortcuts, and <em>Data Not
+Collected</em>. It is the paid option that supports the iPhone 11 and iPhone SE (2nd
+generation): it asks for an A12 Bionic chip or later.</p>
+
+<h2>4. Pinku</h2>
 
 <p><a href="%(pinku)s">Pinku</a> runs open models (Gemma 3, Llama 3.2, Qwen3 and
 others) on the iPhone with Apple's MLX framework. You download a model once, and
@@ -266,26 +288,6 @@ models, custom instructions, dictation and read aloud. Its interface is in eight
 languages, Russian and Chinese among them, and it also runs on Macs with Apple
 silicon. Limits: it does not run on the iPhone 11 or the SE (2nd generation), which
 lack Metal 3; its code is not public; and it reads no images or documents.</p>
-
-<h2>2. Locally AI by LM Studio</h2>
-
-<p>Free, no login, made by the company behind LM Studio for the Mac, with <em>Data
-Not Collected</em> on its privacy label and by far the most ratings of the offline
-apps here. It also analyses images. It needs iOS 18.1.</p>
-
-<h2>3. PocketPal AI</h2>
-
-<p>The offline app with the lowest requirement here, iOS 15.1, and the only one with
-<a href="%(gh)s"%(x)s>public source code</a>. It loads any GGUF model from Hugging
-Face, which gives you more choice and more ways to pick a model your iPhone cannot
-handle. Free, <em>Data Not Collected</em>; it sells optional character presets
-(&ldquo;Pals&rdquo;).</p>
-
-<h2>4. Private LLM</h2>
-
-<p>$4.99 once, with Family Sharing, Siri and Shortcuts, and <em>Data Not
-Collected</em>. It is the paid option that supports the iPhone 11 and iPhone SE (2nd
-generation): it asks for an A12 Bionic chip or later.</p>
 
 <h2>5. ChatGPT</h2>
 

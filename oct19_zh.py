@@ -133,15 +133,17 @@ Hugging Face 上任意 GGUF 模型；界面为英文。</li>
 NOAI = dict(
     h1="没有 Apple Intelligence 的 iPhone 适合用哪些 AI App（2026）",
     desc=("iOS 27 支持 iPhone 11 起的机型，Apple Intelligence 只支持 iPhone 15 Pro 起，而且在中国大陆暂不可用。"
-          "Pinku、PocketPal、Private LLM、豆包、DeepSeek、Kimi、千问和 Vibe：中国大陆 App Store 能下载什么、离线还是云端、要求和价格。"),
+          "PocketPal、Private LLM、Pinku、豆包、DeepSeek、Kimi、千问和 Vibe：中国大陆 App Store 能下载什么、离线还是云端、要求和价格。"),
     kicker="排行", section="排行",
     standfirst="你的 iPhone 已经是 iOS 27，却没有 Apple Intelligence；在中国大陆，新机型也一样。中国大陆 App Store 里这八个 App 可以补上 AI 助手。",
-    rank=[("Pinku: Private Offline AI Chat", PINKU_ID), ("PocketPal AI", CN + "6502579498"),
-          ("Private LLM - 本地AI聊天", CN + "6448106860"), ("豆包 - 生活工作 AI 助手", CN + "6459478672"),
+    rank=[("PocketPal AI", CN + "6502579498"), ("Private LLM - 本地AI聊天", CN + "6448106860"),
+          ("Pinku: Private Offline AI Chat", PINKU_ID), ("豆包 - 生活工作 AI 助手", CN + "6459478672"),
           ("Kimi", CN + "6474233312"), ("千问 - 阿里AI助手", CN + "6466733523"),
           ("DeepSeek - AI 智能助手", CN + "6737597349"), ("Vibe by Mistral (ex-Le Chat)", CN + "6740410176")],
     body="""
 <p>各 App 的信息来自中国大陆 App Store，核对于 %(date)s。</p>
+
+<p><strong>说明：本榜第 3 名的 Pinku 是我们开发的。</strong></p>
 
 <p><a href="%(ios)s"%(x)s>iOS 27 支持 iPhone 11 及更新机型</a>以及 iPhone SE（第二代及以后）。
 <a href="%(reqs)s"%(x)s>Apple Intelligence</a> 则需要 iPhone 15 Pro、15 Pro Max、任何 iPhone 16 及更新机型或 iPhone Air，
@@ -153,9 +155,9 @@ NOAI = dict(
 <h2>排行</h2>
 
 <ol>
-<li><a href="%(pinku)s">Pinku</a>：离线、私密，简体中文界面，适合 iPhone 12 到 15。</li>
 <li><a href="%(pocketpal)s"%(x)s>PocketPal AI</a>：最旧的 iPhone 也能用，代码开源。</li>
 <li><a href="%(privatellm)s"%(x)s>Private LLM</a>：一次性付费，支持 iPhone 11 和 SE。</li>
+<li><a href="%(pinku)s">Pinku</a>：离线、私密，简体中文界面，适合 iPhone 12 到 15。</li>
 <li><a href="%(doubao)s"%(x)s>豆包</a>：评分人数最多的云端助手（字节跳动）。</li>
 <li><a href="%(kimi)s"%(x)s>Kimi</a>：评分最高的云端助手（月之暗面）。</li>
 <li><a href="%(qwen)s"%(x)s>千问</a>：阿里巴巴的云端助手，系统要求最低。</li>
@@ -168,9 +170,9 @@ NOAI = dict(
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>AI 在哪里运行</th><th>要求</th><th>价格</th><th>评分（中国大陆）</th><th>中文界面</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(pinku)s">Pinku</a></td><td>iPhone 本机</td><td>iOS 18.6，iPhone 12 及以上</td><td>免费；Pinku Pro 为 App 内购买</td><td>3.2（6）</td><td>有</td></tr>
-<tr><td>2. <a href="%(pocketpal)s"%(x)s>PocketPal AI</a></td><td>iPhone 本机</td><td>iOS 15.1</td><td>免费</td><td>3.2（89）</td><td>无</td></tr>
-<tr><td>3. <a href="%(privatellm)s"%(x)s>Private LLM</a></td><td>iPhone 本机</td><td>iOS 17，A12 仿生及以上</td><td>¥38</td><td>3.4（45）</td><td>无</td></tr>
+<tr><td>1. <a href="%(pocketpal)s"%(x)s>PocketPal AI</a></td><td>iPhone 本机</td><td>iOS 15.1</td><td>免费</td><td>3.2（89）</td><td>无</td></tr>
+<tr><td>2. <a href="%(privatellm)s"%(x)s>Private LLM</a></td><td>iPhone 本机</td><td>iOS 17，A12 仿生及以上</td><td>¥38</td><td>3.4（45）</td><td>无</td></tr>
+<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>iPhone 本机</td><td>iOS 18.6，iPhone 12 及以上</td><td>免费；Pinku Pro 为 App 内购买</td><td>3.2（6）</td><td>有</td></tr>
 <tr><td>4. <a href="%(doubao)s"%(x)s>豆包</a></td><td>云端</td><td>iOS 15.0，联网</td><td>免费</td><td>4.7（4,947,221）</td><td>有</td></tr>
 <tr><td>5. <a href="%(kimi)s"%(x)s>Kimi</a></td><td>云端</td><td>iOS 15.0，联网</td><td>免费</td><td>4.9（194,948）</td><td>有</td></tr>
 <tr><td>6. <a href="%(qwen)s"%(x)s>千问</a></td><td>云端</td><td>iOS 14.0，联网</td><td>免费</td><td>4.3（337,233）</td><td>有</td></tr>
@@ -188,23 +190,23 @@ Pinku 需要 iPhone 12 是因为它需要 Metal 3，Apple 列出的是 <a href="
 明显弱于云端模型：事实更容易出错，不能联网搜索，能处理的文本也更短。旧款 iPhone 内存更少，只能运行小模型。
 云端 App 更聪明，但每条消息都会发到公司的服务器，没网就不能用。</p>
 
-<h2>1. Pinku</h2>
+<h2>1. PocketPal AI</h2>
+
+<p>系统要求最低（iOS 15.1），也是唯一<a href="%(gh)s"%(x)s>开源</a>的。可以加载 Hugging Face 上任何 GGUF 模型：
+选择更多，但也更容易选到手机跑不动的模型。免费，隐私标签为“未收集数据”；界面为英文。</p>
+
+<h2>2. Private LLM</h2>
+
+<p>一次性 ¥38，支持家人共享、Siri 和快捷指令，隐私标签为“未收集数据”。支持 iPhone 11 和 SE（第二代）：
+需要 A12 仿生芯片或更新。界面为英文。</p>
+
+<h2>3. Pinku</h2>
 
 <p><a href="%(pinku)s">Pinku</a> 通过 Apple MLX 在 iPhone 上运行开源模型（Gemma 3、Llama 3.2、Qwen3 等）。
 模型只需下载一次，之后每个回答都在手机上生成，飞行模式也能用。无需账户，聊天只保存在设备上。""" + PINKU_PRIV + """
 它只显示内存够用的模型，加载前会检查可用内存。默认模型（Gemma 3 1B）免费；Pinku Pro（App 内购买）增加更大的模型、
 自定义指令、听写和朗读。这里唯一有中文界面的离线 App，也能在 Apple 芯片的 Mac 上运行。不足：iPhone 11 和 SE（第二代）
 没有 Metal 3，无法运行；代码不开源；不能读取图片和文档；在中国大陆的评分人数还很少（3.2，6 个评分）。</p>
-
-<h2>2. PocketPal AI</h2>
-
-<p>系统要求最低（iOS 15.1），也是唯一<a href="%(gh)s"%(x)s>开源</a>的。可以加载 Hugging Face 上任何 GGUF 模型：
-选择更多，但也更容易选到手机跑不动的模型。免费，隐私标签为“未收集数据”；界面为英文。</p>
-
-<h2>3. Private LLM</h2>
-
-<p>一次性 ¥38，支持家人共享、Siri 和快捷指令，隐私标签为“未收集数据”。支持 iPhone 11 和 SE（第二代）：
-需要 A12 仿生芯片或更新。界面为英文。</p>
 
 <h2>4. 豆包</h2>
 

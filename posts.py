@@ -379,8 +379,8 @@ INDEX_EN = """
             </li>
             <li>
                 <a href="best-ai-apps-iphone-without-apple-intelligence.html">Best AI apps for iPhones without Apple Intelligence (2026)</a>
-                <p>iPhone 11 to 15 run iOS 27 without Apple Intelligence. Pinku, Locally AI,
-                PocketPal, Private LLM, ChatGPT, Gemini, Claude and Vibe ranked: offline or
+                <p>iPhone 11 to 15 run iOS 27 without Apple Intelligence. Locally AI,
+                PocketPal, Private LLM, Pinku, ChatGPT, Gemini, Claude and Vibe ranked: offline or
                 cloud, requirements and price.</p>
             </li>
             <li>
@@ -395,24 +395,24 @@ INDEX_EN = """
             </li>
             <li>
                 <a href="best-white-noise-sleep-sound-apps-iphone.html">Best white noise and sleep sound apps for iPhone (2026)</a>
-                <p>Drop, White Noise Lite, Rain Rain, Dark Noise, myNoise, BetterSleep,
+                <p>White Noise Lite, Rain Rain, Drop, Dark Noise, myNoise, BetterSleep,
                 Calm and Endel ranked: sounds, mixing, sleep timer and how each charges.
-                Ours is first, disclosed.</p>
+                Ours is one of them, disclosed.</p>
             </li>
             <li>
                 <a href="best-crypto-portfolio-tracker-apps-iphone.html">Best crypto portfolio tracker apps for iPhone in 2026</a>
-                <p>Crypton, Crypto Pro, CoinGecko, CoinMarketCap, CoinStats, Delta and
+                <p>Crypto Pro, CoinGecko, Crypton, CoinMarketCap, CoinStats, Delta and
                 CoinTracker ranked: prices, portfolios, wallet sync, taxes and privacy
-                labels. Ours is first, disclosed.</p>
+                labels. Ours is one of them, disclosed.</p>
             </li>
             <li>
                 <a href="best-3-task-todo-apps-iphone.html">Best to-do apps that limit you to 3 tasks a day (2026)</a>
-                <p>3 Tasks, Three Todo, Top 3, Structured and TickTick ranked: the
-                limit, timers, price and privacy label. Ours is first, disclosed.</p>
+                <p>Three Todo, Top 3, 3 Tasks, Structured and TickTick ranked: the
+                limit, timers, price and privacy label. Ours is one of them, disclosed.</p>
             </li>
             <li>
                 <a href="best-ai-apps-ugc-video-ads-iphone.html">Best AI apps to make UGC video ads on iPhone (2026)</a>
-                <p>Dora, HeyGen, Captions, Vmake Labs and Zeely ranked for UGC-style
+                <p>HeyGen, Captions, Dora, Vmake Labs and Zeely ranked for UGC-style
                 ads: product scenes, talking avatars, editing and launching. Ours is
                 first, disclosed.</p>
             </li>
@@ -426,7 +426,7 @@ INDEX_EN = """
                 <a href="best-chatgpt-alternatives-offline-iphone.html">Best ChatGPT alternatives that work offline on iPhone (2026)</a>
                 <p>Five apps that answer with no connection and no account, ranked,
                 including which ones you can get in Russia, mainland China and
-                Hong Kong, where ChatGPT is not offered. Ours is first, disclosed.</p>
+                Hong Kong, where ChatGPT is not offered. Ours is one of them, disclosed.</p>
             </li>
             <li>
                 <a href="best-private-ai-apps-iphone.html">Best private AI apps that keep your chats on your iPhone (2026)</a>
@@ -437,12 +437,12 @@ INDEX_EN = """
             <li>
                 <a href="best-photo-vault-apps-album-password-iphone.html">Best photo vault apps with a separate password for each album (2026)</a>
                 <p>Seven vaults that lock each album on its own, ranked by how much
-                stays off other people's servers. Ours is first, disclosed.</p>
+                stays off other people's servers. Ours is one of them, disclosed.</p>
             </li>
             <li>
                 <a href="best-multi-model-ai-chat-apps-iphone.html">Best AI chat apps with multiple models for iPhone (2026)</a>
                 <p>Seven apps that put GPT, Claude, Gemini, Grok and DeepSeek in one
-                place: models, extras and how they charge. Ours is first, disclosed.</p>
+                place: models, extras and how they charge. Ours is one of them, disclosed.</p>
             </li>
             <li>
                 <a href="best-ai-chat-and-image-generator-apps-iphone.html">Best AI apps for chat and image generation on iPhone (2026)</a>
@@ -457,13 +457,13 @@ INDEX_EN = """
             <li>
                 <a href="hide-photos-iphone-without-icloud.html">Best way to hide photos on iPhone without iCloud (2026)</a>
                 <p>Why the Hidden album still reaches iCloud, and four ways to hide
-                photos that stay on the phone, ranked. Ours is first, disclosed.</p>
+                photos that stay on the phone, ranked. Ours is one of them, disclosed.</p>
             </li>
             <li>
                 <a href="best-offline-ai-chat-apps-iphone-mac.html">Best offline AI chat apps for iPhone and Mac (2026)</a>
-                <p>Pinku, Locally AI, Private LLM, Enclave, PocketPal and Privacy AI
+                <p>Locally AI, Private LLM, Pinku, Enclave, PocketPal and Privacy AI
                 ranked: price, models, Mac support, privacy label and where each one
-                is strongest. Ours is first, disclosed.</p>
+                is strongest. Ours is one of them, disclosed.</p>
             </li>
             <li>
                 <a href="best-photo-vault-apps-iphone.html">Best photo vault apps for iPhone (2026)</a>
@@ -501,27 +501,27 @@ INDEX_ES = """
         <ul class="post-list">
             <li>
                 <a href="mejores-apps-ruido-blanco-sonidos-dormir-iphone.html">Las mejores apps de ruido blanco y sonidos para dormir en iPhone (2026)</a>
-                <p>Drop, White Noise Lite, Rain Rain, Dark Noise, myNoise, BetterSleep,
+                <p>White Noise Lite, Rain Rain, Drop, Dark Noise, myNoise, BetterSleep,
                 Calm y Endel ordenadas: sonidos, mezcla, temporizador y c&oacute;mo cobra
-                cada una. La primera es nuestra, y lo decimos.</p>
+                cada una. Una es nuestra, y lo decimos.</p>
             </li>
             <li>
                 <a href="mejores-apps-cartera-cripto-iphone.html">Las mejores apps para seguir tu cartera de criptomonedas en iPhone (2026)</a>
-                <p>Crypton, Crypto Pro, CoinGecko, CoinMarketCap, CoinStats, Delta y
+                <p>Crypto Pro, CoinGecko, Crypton, CoinMarketCap, CoinStats, Delta y
                 CoinTracker ordenadas: precios, cartera, conexi&oacute;n con monederos,
-                impuestos y etiquetas de privacidad. La primera es nuestra, y lo decimos.</p>
+                impuestos y etiquetas de privacidad. Una es nuestra, y lo decimos.</p>
             </li>
             <li>
                 <a href="mejores-apps-3-tareas-al-dia-iphone.html">Las mejores apps de tareas que te limitan a 3 al d&iacute;a (2026)</a>
-                <p>3 Tasks, Three Todo, Top 3, Structured y TickTick ordenadas: el
+                <p>Three Todo, Top 3, 3 Tasks, Structured y TickTick ordenadas: el
                 l&iacute;mite, el temporizador, el precio y la etiqueta de privacidad.
-                La primera es nuestra, y lo decimos.</p>
+                Una es nuestra, y lo decimos.</p>
             </li>
             <li>
                 <a href="mejores-apps-ia-anuncios-ugc-iphone.html">Las mejores apps de IA para hacer anuncios UGC en iPhone (2026)</a>
-                <p>Dora, HeyGen, Captions, Vmake Labs y Zeely ordenadas para anuncios
+                <p>HeyGen, Captions, Dora, Vmake Labs y Zeely ordenadas para anuncios
                 estilo UGC: escenas de producto, avatares que hablan, edici&oacute;n y
-                lanzamiento. La primera es nuestra, y lo decimos.</p>
+                lanzamiento. Una es nuestra, y lo decimos.</p>
             </li>
             <li>
                 <a href="mejores-apps-generador-video-ia-iphone.html">Las mejores apps para generar v&iacute;deo con IA en iPhone (2026)</a>
@@ -545,17 +545,17 @@ INDEX_ES = """
             <li>
                 <a href="mejores-apps-ocultar-fotos-contrasena-por-album.html">Las mejores apps para ocultar fotos con contraseña por álbum (2026)</a>
                 <p>Siete bóvedas que bloquean cada álbum por separado, ordenadas por
-                lo que mantienen fuera de servidores ajenos. La nuestra va primera, y lo decimos.</p>
+                lo que mantienen fuera de servidores ajenos. Una es nuestra, y lo decimos.</p>
             </li>
             <li>
                 <a href="mejores-apps-chat-ia-varios-modelos-iphone.html">Mejores apps de chat con IA con varios modelos para iPhone (2026)</a>
                 <p>Siete apps que re&uacute;nen GPT, Claude, Gemini, Grok y DeepSeek:
-                modelos, extras y c&oacute;mo cobran. La primera es nuestra, y lo decimos.</p>
+                modelos, extras y c&oacute;mo cobran. Una es nuestra, y lo decimos.</p>
             </li>
             <li>
                 <a href="mejores-apps-ia-chat-e-imagenes-iphone.html">Mejores apps de IA para chatear y crear im&aacute;genes en iPhone (2026)</a>
                 <p>Siete apps que chatean y hacen im&aacute;genes, algunas tambi&eacute;n
-                v&iacute;deo. La primera es nuestra, y lo decimos.</p>
+                v&iacute;deo. Una es nuestra, y lo decimos.</p>
             </li>
             <li>
                 <a href="pasar-boveda-de-fotos-a-iphone-nuevo.html">Cómo pasar una bóveda de fotos a un iPhone nuevo sin perderlas (2026)</a>
@@ -566,13 +566,13 @@ INDEX_ES = """
                 <a href="como-ocultar-fotos-iphone-sin-icloud.html">La mejor forma de ocultar fotos en iPhone sin iCloud (2026)</a>
                 <p>Por qu&eacute; el &aacute;lbum Oculto sigue llegando a iCloud, y
                 cuatro formas de ocultar fotos que se quedan en el m&oacute;vil,
-                ordenadas. La primera es nuestra, y lo decimos.</p>
+                ordenadas. Una es nuestra, y lo decimos.</p>
             </li>
             <li>
                 <a href="mejores-apps-ia-sin-conexion-iphone-mac.html">Las mejores apps de IA sin conexi&oacute;n para iPhone y Mac (2026)</a>
-                <p>Pinku, Locally AI, Private LLM, Enclave, PocketPal y Privacy AI
+                <p>Locally AI, Private LLM, Pinku, Enclave, PocketPal y Privacy AI
                 ordenadas: precio, modelos, Mac, etiqueta de privacidad y en
-                qu&eacute; destaca cada una. La primera es nuestra, y lo decimos.</p>
+                qu&eacute; destaca cada una. Una es nuestra, y lo decimos.</p>
             </li>
             <li>
                 <a href="apps-para-ocultar-fotos-iphone.html">Las mejores apps para ocultar fotos en iPhone (2026)</a>
@@ -771,7 +771,7 @@ def build(render, hreflang):
         '\n    <link rel="alternate" hreflang="ru" href="https://aisagalab.com/%s">' % OFF_RU_PATH)
 
     h1_en = "Best offline AI chat apps for iPhone and Mac (2026)"
-    d_en = ("Pinku, Locally AI, Private LLM, Enclave, PocketPal and Privacy AI ranked: "
+    d_en = ("Locally AI, Private LLM, Pinku, Enclave, PocketPal and Privacy AI ranked: "
             "price, models, Mac support, privacy label and real strengths, from their App Store pages. "
             "Written by Pinku's maker, disclosed.")
     out.append(render(
@@ -783,7 +783,7 @@ def build(render, hreflang):
         body=_head(
             "On-device AI", h1_en,
             "Six apps that run a language model on your own device, no account and "
-            "no connection needed, ranked. We make the one ranked first, and say so.",
+            "no connection needed, ranked. One of them is ours, and we say so.",
             '<a href="%s" rel="author me noopener" target="_blank">Maruta G</a> &middot; ' % LINKEDIN + OFF_DATE_EN,
             "Leer en espa&ntilde;ol", "es/mejores-apps-ia-sin-conexion-iphone-mac.html",
         ) + '\n        <div class="article-body">' + A6_EN_BODY
@@ -791,7 +791,7 @@ def build(render, hreflang):
     ))
 
     h1_es = "Las mejores apps de IA sin conexión para iPhone y Mac (2026)"
-    d_es = ("Pinku, Locally AI, Private LLM, Enclave, PocketPal y Privacy AI ordenadas: "
+    d_es = ("Locally AI, Private LLM, Pinku, Enclave, PocketPal y Privacy AI ordenadas: "
             "precio, modelos, Mac, etiqueta de privacidad y en qu\u00e9 destaca cada una, seg\u00fan su ficha del App Store. "
             "Escrito por quien hace Pinku, y lo decimos.")
     out.append(render(
@@ -803,7 +803,7 @@ def build(render, hreflang):
         body=_head(
             "IA en el dispositivo", h1_es,
             "Seis apps que ejecutan un modelo de lenguaje en tu propio dispositivo, sin "
-            "cuenta y sin conexi&oacute;n, ordenadas. La primera es nuestra, y lo decimos.",
+            "cuenta y sin conexi&oacute;n, ordenadas. Una es nuestra, y lo decimos.",
             '<a href="%s" rel="author me noopener" target="_blank">Maruta G</a> &middot; ' % LINKEDIN + OFF_DATE_ES,
             "Read in English", "../best-offline-ai-chat-apps-iphone-mac.html",
         ) + '\n        <div class="article-body">' + A6_ES_BODY
@@ -884,7 +884,7 @@ def build(render, hreflang):
 
     # --- 6 RU: apps de IA sin conexion, en ruso ----------------------------
     h1_ru = "Лучшие приложения ИИ без интернета для iPhone (2026)"
-    d_ru = ("Pinku, Enclave, PocketPal, Private LLM и Privacy AI: цена в России, русский язык, модели, Mac и "
+    d_ru = ("Enclave, PocketPal, Pinku, Private LLM и Privacy AI: цена в России, русский язык, модели, Mac и "
             "конфиденциальность по данным App Store. Pinku делаем мы, и мы это указываем.")
     alt_ru = (hreflang("blog/best-offline-ai-chat-apps-iphone-mac.html",
                        "blog/es/mejores-apps-ia-sin-conexion-iphone-mac.html")
@@ -1518,7 +1518,7 @@ ARCA = "https://apps.apple.com/us/app/id6779157571"
 HIDDEN = "https://support.apple.com/en-us/104987"
 
 A5_EN_BODY = """
-<p><strong>Disclosure: we make Photo Vault, ranked first below, so read this as
+<p><strong>Disclosure: we make Photo Vault, number 2 below, so read this as
 our opinion.</strong> We rank on one question: how well each app keeps private
 photos off other people's servers while staying simple to use. The other apps are
 described the way their own App Store pages describe them, and each entry says
@@ -1533,8 +1533,8 @@ main library and syncs with iCloud Photos. If that matters, read on.</p>
 <div class="table-scroll"><table>
 <thead><tr><th>#</th><th>App</th><th>Price (US)</th><th>Cloud</th><th>Backup file you keep</th><th>Decoy PIN</th><th>Disguised icon</th><th>Rating (US)</th></tr></thead>
 <tbody>
-<tr><td>1</td><td><a href="%(pv)s">Photo Vault</a> (ours)</td><td>$29.99/year, 7 days free</td><td>Optional: your own iCloud, end-to-end encrypted, off by default</td><td>Yes, encrypted</td><td>No</td><td>Yes</td><td>4.2 &middot; 6</td></tr>
-<tr><td>2</td><td><a href="%(arca)s" target="_blank" rel="noopener">Arca</a></td><td>$29.99/year, $9.99/month or $79.99 once</td><td>No</td><td>Yes, encrypted</td><td>Yes</td><td>Yes</td><td>4.8 &middot; 29</td></tr>
+<tr><td>1</td><td><a href="%(arca)s" target="_blank" rel="noopener">Arca</a></td><td>$29.99/year, $9.99/month or $79.99 once</td><td>No</td><td>Yes, encrypted</td><td>Yes</td><td>Yes</td><td>4.8 &middot; 29</td></tr>
+<tr><td>2</td><td><a href="%(pv)s">Photo Vault</a></td><td>$29.99/year, 7 days free</td><td>Optional: your own iCloud, end-to-end encrypted, off by default</td><td>Yes, encrypted</td><td>Yes (Premium)</td><td>Yes</td><td>4.2 &middot; 6</td></tr>
 <tr><td>3</td><td><a href="%(picsafe)s" target="_blank" rel="noopener">Private Photo Vault &ndash; Pic Safe</a></td><td>Plans from $6.99 to $39.99</td><td>Yes</td><td>&mdash;</td><td>Yes</td><td>&mdash;</td><td>4.8 &middot; 1,016,507</td></tr>
 <tr><td>4</td><td><a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a></td><td>$23.99/year or $9.99/month</td><td>Yes, up to 10,000 items</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>4.7 &middot; 383,963</td></tr>
 </tbody>
@@ -1543,7 +1543,16 @@ main library and syncs with iCloud Photos. If that matters, read on.</p>
 <p class="article-note">A dash means the app's App Store description does not
 mention it, not that it is certainly missing.</p>
 
-<h2>1. Photo Vault: best if nothing should leave the phone</h2>
+<h2>1. Arca: best documented encryption</h2>
+
+<p>No account, no server and no cloud. Arca's page states that every photo,
+video and thumbnail is encrypted individually with AES-256, with keys protected by
+the Secure Enclave. It has a decoy vault opened by a second PIN, a disguised icon
+and an encrypted backup file you can keep in Files or iCloud Drive. It is very new,
+with few ratings. If cryptography details matter most to you, it may suit you
+better than ours.</p>
+
+<h2>2. Photo Vault: best if nothing should leave the phone</h2>
 
 <p>No account and no server, the vault is excluded from regular iCloud backups,
 and nothing is uploaded unless you turn on the optional iCloud copy (Premium), which
@@ -1554,18 +1563,9 @@ the phone face down jumps to Safari, Messages or Calendar. You can also export t
 a new iPhone. <a href="../photo-vault-security.html">How it protects your
 files</a>.</p>
 
-<p><strong>Where others beat it:</strong> no decoy PIN and no intruder photo yet,
+<p><strong>Where others beat it:</strong> no intruder photo yet (its decoy code, a second passcode that opens a separate vault, needs Premium),
 no per-file encryption of its own on top of iOS (Arca has both), and very few
 ratings so far.</p>
-
-<h2>2. Arca: best documented encryption</h2>
-
-<p>No account, no server and no cloud. Arca's page states that every photo,
-video and thumbnail is encrypted individually with AES-256, with keys protected by
-the Secure Enclave. It has a decoy vault opened by a second PIN, a disguised icon
-and an encrypted backup file you can keep in Files or iCloud Drive. It is very new,
-with few ratings. If cryptography details matter most to you, it may suit you
-better than ours.</p>
 
 <h2>3. Private Photo Vault &ndash; Pic Safe: most features, most history</h2>
 
@@ -1585,7 +1585,7 @@ the cloud means your photos leave the device.</p>
 <ul>
 <li><strong>A few photos and you trust iCloud:</strong> the built-in Hidden album.</li>
 <li><strong>Nothing on any server, album passwords and a face-down exit:</strong> <a href="%(pv)s">Photo Vault</a>.</li>
-<li><strong>Nothing on any server, and a decoy PIN or detailed cryptography matters most:</strong> Arca.</li>
+<li><strong>Nothing on any server, and detailed cryptography matters most:</strong> Arca.</li>
 <li><strong>You want a cloud backup:</strong> Pic Safe or Keepsafe.</li>
 </ul>
 """ % dict(hidden=HIDDEN, picsafe=PICSAFE, keepsafe=KEEPSAFE, arca=ARCA, pv=PV, date=VAULT_DATE_EN)
@@ -1599,7 +1599,7 @@ A5_EN_SOURCES = """
 """ % dict(hidden=HIDDEN, picsafe=PICSAFE, keepsafe=KEEPSAFE, arca=ARCA, pv=PV, date=VAULT_DATE_EN)
 
 A5_ES_BODY = """
-<p><strong>Aviso: Photo Vault, la primera del ranking, es nuestra, as&iacute;
+<p><strong>Aviso: Photo Vault, la n.º 2 de esta lista, es nuestra, as&iacute;
 que l&eacute;elo como nuestra opini&oacute;n.</strong> Ordenamos con una sola
 pregunta: qu&eacute; tal mantiene cada app las fotos privadas fuera de los
 servidores de otros sin complicarte la vida. Las dem&aacute;s apps se describen
@@ -1614,8 +1614,8 @@ fototeca y se sincroniza con Fotos de iCloud. Si eso te importa, sigue leyendo.<
 <div class="table-scroll"><table>
 <thead><tr><th>#</th><th>App</th><th>Precio (EE. UU.)</th><th>Nube</th><th>Copia en archivo propio</th><th>PIN se&ntilde;uelo</th><th>Icono disfrazado</th><th>Valoraci&oacute;n (EE. UU.)</th></tr></thead>
 <tbody>
-<tr><td>1</td><td><a href="%(pv)s">Photo Vault</a> (nuestra)</td><td>$29,99/a&ntilde;o, 7 d&iacute;as gratis</td><td>Opcional: tu propio iCloud, cifrada de extremo a extremo, desactivada por defecto</td><td>S&iacute;, cifrada</td><td>No</td><td>S&iacute;</td><td>4,2 &middot; 6</td></tr>
-<tr><td>2</td><td><a href="%(arca)s" target="_blank" rel="noopener">Arca</a></td><td>$29,99/a&ntilde;o, $9,99/mes o $79,99 de una vez</td><td>No</td><td>S&iacute;, cifrada</td><td>S&iacute;</td><td>S&iacute;</td><td>4,8 &middot; 29</td></tr>
+<tr><td>1</td><td><a href="%(arca)s" target="_blank" rel="noopener">Arca</a></td><td>$29,99/a&ntilde;o, $9,99/mes o $79,99 de una vez</td><td>No</td><td>S&iacute;, cifrada</td><td>S&iacute;</td><td>S&iacute;</td><td>4,8 &middot; 29</td></tr>
+<tr><td>2</td><td><a href="%(pv)s">Photo Vault</a></td><td>$29,99/a&ntilde;o, 7 d&iacute;as gratis</td><td>Opcional: tu propio iCloud, cifrada de extremo a extremo, desactivada por defecto</td><td>S&iacute;, cifrada</td><td>S&iacute; (Premium)</td><td>S&iacute;</td><td>4,2 &middot; 6</td></tr>
 <tr><td>3</td><td><a href="%(picsafe)s" target="_blank" rel="noopener">Private Photo Vault &ndash; Pic Safe</a></td><td>Planes de $6,99 a $39,99</td><td>S&iacute;</td><td>&mdash;</td><td>S&iacute;</td><td>&mdash;</td><td>4,8 &middot; 1.016.507</td></tr>
 <tr><td>4</td><td><a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a></td><td>$23,99/a&ntilde;o o $9,99/mes</td><td>S&iacute;, hasta 10.000 elementos</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>4,7 &middot; 383.963</td></tr>
 </tbody>
@@ -1624,7 +1624,17 @@ fototeca y se sincroniza con Fotos de iCloud. Si eso te importa, sigue leyendo.<
 <p class="article-note">Un guion significa que la descripci&oacute;n de la app en
 el App Store no lo menciona, no que seguro no lo tenga.</p>
 
-<h2>1. Photo Vault: la mejor si nada debe salir del m&oacute;vil</h2>
+<h2>1. Arca: el cifrado mejor documentado</h2>
+
+<p>Tampoco tiene cuenta, servidor ni nube. Su ficha dice que cada foto,
+v&iacute;deo y miniatura se cifra por separado con AES-256, con las claves
+protegidas por el Secure Enclave. Tiene b&oacute;veda se&ntilde;uelo con un
+segundo PIN, icono disfrazado y copia cifrada en un archivo que puedes guardar en
+Archivos o iCloud Drive. Es muy nueva y tiene pocas valoraciones. Si lo que
+m&aacute;s te importa es el detalle criptogr&aacute;fico, puede encajarte mejor
+que la nuestra.</p>
+
+<h2>2. Photo Vault: la mejor si nada debe salir del m&oacute;vil</h2>
 
 <p>Sin cuenta ni servidor, la b&oacute;veda queda fuera de las copias normales de
 iCloud y no se sube nada salvo que actives la copia opcional en iCloud (Premium),
@@ -1637,20 +1647,9 @@ exportar toda la b&oacute;veda a un archivo cifrado con AES-256-GCM y restaurarl
 en un iPhone nuevo. <a href="../../photo-vault-security.html">C&oacute;mo protege
 tus archivos</a> (en ingl&eacute;s).</p>
 
-<p><strong>En qu&eacute; le ganan:</strong> todav&iacute;a no tiene PIN
-se&ntilde;uelo ni foto del intruso, no a&ntilde;ade cifrado propio por archivo
+<p><strong>En qu&eacute; le ganan:</strong> todav&iacute;a no tiene foto del intruso (su c&oacute;digo se&ntilde;uelo, un segundo c&oacute;digo que abre otra b&oacute;veda, es de Premium), no a&ntilde;ade cifrado propio por archivo
 encima del de iOS (Arca tiene las dos cosas) y de momento tiene muy pocas
 valoraciones.</p>
-
-<h2>2. Arca: el cifrado mejor documentado</h2>
-
-<p>Tampoco tiene cuenta, servidor ni nube. Su ficha dice que cada foto,
-v&iacute;deo y miniatura se cifra por separado con AES-256, con las claves
-protegidas por el Secure Enclave. Tiene b&oacute;veda se&ntilde;uelo con un
-segundo PIN, icono disfrazado y copia cifrada en un archivo que puedes guardar en
-Archivos o iCloud Drive. Es muy nueva y tiene pocas valoraciones. Si lo que
-m&aacute;s te importa es el detalle criptogr&aacute;fico, puede encajarte mejor
-que la nuestra.</p>
 
 <h2>3. Private Photo Vault &ndash; Pic Safe: la m&aacute;s completa y veterana</h2>
 
@@ -1671,7 +1670,7 @@ dispositivo.</p>
 <ul>
 <li><strong>Pocas fotos y te f&iacute;as de iCloud:</strong> el &aacute;lbum Oculto de serie.</li>
 <li><strong>Nada en ning&uacute;n servidor, contrase&ntilde;a por &aacute;lbum y salida boca abajo:</strong> <a href="%(pv)s">Photo Vault</a>.</li>
-<li><strong>Nada en ning&uacute;n servidor, y lo que m&aacute;s pesa es el PIN se&ntilde;uelo o el detalle del cifrado:</strong> Arca.</li>
+<li><strong>Nada en ning&uacute;n servidor, y lo que m&aacute;s pesa es el detalle del cifrado:</strong> Arca.</li>
 <li><strong>Quieres copia en la nube:</strong> Pic Safe o Keepsafe.</li>
 </ul>
 """ % dict(hidden=HIDDEN, picsafe=PICSAFE, keepsafe=KEEPSAFE, arca=ARCA, pv=PV, date=VAULT_DATE_ES)
@@ -1781,28 +1780,12 @@ _N = dict(
     privacyai=("Privacy AI: Agent & Chatbot", "https://apps.apple.com/us/app/id6738392421"),
 )
 
-OFF_RANK = [_N[k] for k in ("pinku", "locally", "privatellm", "enclave", "pocketpal", "privacyai")]
+OFF_RANK = [_N[k] for k in ("locally", "privatellm", "pinku", "enclave", "pocketpal", "privacyai")]
 
-_PINKU_WHY_EN = _rank_box("Why Pinku is #1", [
-    "On-device: the model is downloaded once, then every answer is generated on your iPhone, iPad or Mac, with no connection.",
-    "No account and no server. Chats never leave your device; Apple's privacy label lists only purchase history and an anonymous user ID, used for Pinku Pro purchases.",
-    "No data leaves the device, and there is no cloud mode to switch on by mistake.",
-    "Free to start; Pinku Pro is optional: $16.99 a year or a one-time purchase from $9.99 (US App Store).",
-    "The interface in 8 languages: English, Spanish, German, French, Japanese, Korean, Simplified Chinese and Russian.",
-    "A memory check before loading: models too big for your device are hidden, and if one will not fit Pinku warns you and keeps the current model instead of crashing.",
-])
 
-_PINKU_WHY_ES = _rank_box("Por qué Pinku es la n.º 1", [
-    "En el dispositivo: el modelo se descarga una vez y a partir de ahí cada respuesta se genera en tu iPhone, iPad o Mac, sin conexión.",
-    "Sin cuenta y sin servidor. Los chats nunca salen del dispositivo; la etiqueta de privacidad de Apple solo indica el historial de compras y un identificador de usuario anónimo, para las compras de Pinku Pro.",
-    "Ningún dato sale del dispositivo, y no hay un modo en la nube que puedas activar sin querer.",
-    "Gratis para empezar; Pinku Pro es opcional: 16,99 $ al año o una compra única desde 9,99 $ (App Store de EE. UU.).",
-    "La interfaz en 8 idiomas: inglés, español, alemán, francés, japonés, coreano, chino simplificado y ruso.",
-    "Comprueba la memoria antes de cargar: oculta los modelos demasiado grandes para tu dispositivo y, si uno no cabe, avisa y mantiene el actual en lugar de cerrarse.",
-])
 
 A6_EN_BODY = ("""
-<p><strong>Disclosure: we make Pinku, the app ranked first here.</strong>
+<p><strong>Disclosure: we make Pinku, number 3 on this list.</strong>
 Everything we say about the other apps comes from their own App Store pages, and
 we say plainly where they beat us. Prices are from the US App Store on %(date)s.</p>
 
@@ -1815,22 +1798,22 @@ does.</p>
 <h2>The ranking</h2>
 
 <ol>
-<li><a href="%(pinku)s">Pinku</a>: best overall for private, offline chat on iPhone, iPad and Mac.</li>
 <li><a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a>: best free all-rounder.</li>
 <li><a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a>: best pay-once app, with Siri and bigger models.</li>
+<li><a href="%(pinku)s">Pinku</a>: best overall for private, offline chat on iPhone, iPad and Mac.</li>
 <li><a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a>: best if you also want cloud models.</li>
 <li><a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a>: best for running any model you find.</li>
 <li><a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a>: best for agents and tools.</li>
 </ol>
-""" + _PINKU_WHY_EN + """
+
 <h2>The six apps at a glance</h2>
 
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Price (US)</th><th>Mac App Store</th><th>Models</th><th>Privacy label</th><th>Rating (US)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(pinku)s">Pinku</a> (ours)</td><td>Free; Pinku Pro $16.99/year or one-time from $9.99</td><td>Yes</td><td>12 curated models on Apple MLX, 0.34 to 4.7 GB</td><td>Purchase history and an anonymous user ID (for Pro); chats stay on the device</td><td>4.7 &middot; 12</td></tr>
-<tr><td>2. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a></td><td>Free</td><td>Yes</td><td>Llama, Gemma, Qwen, DeepSeek and more, on Apple MLX</td><td>Data Not Collected</td><td>4.7 &middot; 1,740</td></tr>
-<tr><td>3. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>$4.99 upfront</td><td>Yes</td><td>Llama, Gemma, Qwen, Phi, Mistral and more, up to 14B</td><td>Data Not Collected</td><td>4.2 &middot; 734</td></tr>
+<tr><td>1. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a></td><td>Free</td><td>Yes</td><td>Llama, Gemma, Qwen, DeepSeek and more, on Apple MLX</td><td>Data Not Collected</td><td>4.7 &middot; 1,740</td></tr>
+<tr><td>2. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>$4.99 upfront</td><td>Yes</td><td>Llama, Gemma, Qwen, Phi, Mistral and more, up to 14B</td><td>Data Not Collected</td><td>4.2 &middot; 734</td></tr>
+<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>Free; Pinku Pro $16.99/year or one-time from $9.99</td><td>Yes</td><td>11 open models on Apple MLX, 0.4 to 4.7 GB</td><td>Purchase history and an anonymous user ID (for Pro); chats stay on the device</td><td>4.7 &middot; 12</td></tr>
 <tr><td>4. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Free; Pro $9.99</td><td>Not listed</td><td>Hundreds of open models; Pro adds cloud models</td><td>Data Not Linked to You</td><td>4.7 &middot; 1,087</td></tr>
 <tr><td>5. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Free, open source</td><td>Not listed</td><td>Any GGUF model from Hugging Face</td><td>Data Not Collected</td><td>4.1 &middot; 160</td></tr>
 <tr><td>6. <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a></td><td>Free; subscription for cloud features</td><td>Not listed</td><td>GGUF and MLX models, Apple's models, optional cloud providers</td><td>Data Used to Track You</td><td>4.8 &middot; 20</td></tr>
@@ -1842,9 +1825,25 @@ listing; iPhone and iPad apps can still run on many Apple silicon Macs. Privacy
 labels are what each developer declares on the App Store; Apple does not verify
 them. Ratings are from Apple's public lookup API on %(date)s.</p>
 
-<h2>1. Pinku: private by construction</h2>
+<h2>1. Locally AI by LM Studio: the safe free pick</h2>
 
-<p><a href="%(pinku)s">Pinku</a> runs twelve curated open models (Gemma 3,
+<p>Made by the team behind LM Studio, the desktop app many people already use to
+run models on a computer. It is free, needs no login, runs models with Apple's MLX
+framework, and its page says it can analyse images as well as text. It has the
+most ratings of any app here, and it is on iPhone, iPad and Mac. If you want one
+free app and do not want to think about it, it is an excellent choice.</p>
+
+<h2>2. Private LLM: pay once, use Siri</h2>
+
+<p>The only app here you pay for before downloading: $4.99, once, with Family
+Sharing, on iPhone, iPad and Mac. It uses its own quantisation (OmniQuant), offers
+larger models than most, up to 14B parameters, and integrates with Siri and
+Shortcuts. A good fit if you dislike in-app purchases and want bigger models on a
+Mac.</p>
+
+<h2>3. Pinku: private by construction</h2>
+
+<p><a href="%(pinku)s">Pinku</a> runs eleven open models (Gemma 3,
 Gemma 3n, Llama 3.2, Qwen3, DeepSeek-R1 distills, SmolLM3 and LFM2) on iPhone,
 iPad and Mac with Apple MLX. There is no account and no server. Before loading a
 model it checks the memory actually free on the device; if the model does not fit,
@@ -1853,29 +1852,12 @@ regenerate an answer, edit a message and rerun from it, and share a message or a
 whole conversation. The interface is in English, Spanish, German, French,
 Japanese, Korean, Simplified Chinese and Russian.</p>
 
-<p>It is free to download, and the six models up to 1 GB, including the default
-Gemma 3 1B, work without paying. Pinku Pro is optional, as a yearly subscription ($16.99) or a one-time purchase (from $9.99), and adds the six larger models, custom instructions, voice dictation recognised on the device and read aloud.</p>
+<p>It is free to download, and chatting with the default model, Gemma 3 1B, costs nothing. Pinku Pro is optional, as a yearly subscription ($16.99) or a one-time purchase (from $9.99), and lets you choose any of the other models, plus custom instructions, voice dictation recognised on the device and read aloud.</p>
 
 <p>Where others beat it: Pinku does not read images or documents, does not browse
 Hugging Face for arbitrary models, has no cloud option and no agent tools, and
 does not sync chats between your devices. It also has far fewer ratings than
 Locally AI, Enclave or Private LLM.</p>
-
-<h2>2. Locally AI by LM Studio: the safe free pick</h2>
-
-<p>Made by the team behind LM Studio, the desktop app many people already use to
-run models on a computer. It is free, needs no login, runs models with Apple's MLX
-framework, and its page says it can analyse images as well as text. It has the
-most ratings of any app here, and it is on iPhone, iPad and Mac. If you want one
-free app and do not want to think about it, it is an excellent choice.</p>
-
-<h2>3. Private LLM: pay once, use Siri</h2>
-
-<p>The only app here you pay for before downloading: $4.99, once, with Family
-Sharing, on iPhone, iPad and Mac. It uses its own quantisation (OmniQuant), offers
-larger models than most, up to 14B parameters, and integrates with Siri and
-Shortcuts. A good fit if you dislike in-app purchases and want bigger models on a
-Mac.</p>
 
 <h2>4. Enclave: local first, cloud if you want it</h2>
 
@@ -1973,7 +1955,7 @@ and we will correct the page.</p>
 """ % dict(_OFF, date=OFF_DATE_EN)
 
 A6_ES_BODY = ("""
-<p><strong>Aviso: Pinku, la app que va primera, es nuestra.</strong> Todo lo que
+<p><strong>Aviso: Pinku, la n.º 3 de esta lista, es nuestra.</strong> Todo lo que
 decimos de las demás sale de su propia ficha del App Store, y decimos claramente en
 qué nos ganan. Precios de la App Store de EE. UU. a %(date)s.</p>
 
@@ -1985,22 +1967,22 @@ puedes usar, cuánto pagas y qué más hace la app.</p>
 <h2>El ranking</h2>
 
 <ol>
-<li><a href="%(pinku)s">Pinku</a>: la mejor en conjunto para chatear en privado y sin conexión en iPhone, iPad y Mac.</li>
 <li><a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a>: la mejor gratuita para todo.</li>
 <li><a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a>: la mejor de pago único, con Siri y modelos más grandes.</li>
+<li><a href="%(pinku)s">Pinku</a>: la mejor en conjunto para chatear en privado y sin conexión en iPhone, iPad y Mac.</li>
 <li><a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a>: la mejor si también quieres modelos en la nube.</li>
 <li><a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a>: la mejor para ejecutar cualquier modelo.</li>
 <li><a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a>: la mejor para agentes y herramientas.</li>
 </ol>
-""" + _PINKU_WHY_ES + """
+
 <h2>Las seis apps de un vistazo</h2>
 
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Precio (EE. UU.)</th><th>Mac App Store</th><th>Modelos</th><th>Etiqueta de privacidad</th><th>Valoración (EE. UU.)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(pinku)s">Pinku</a> (nuestra)</td><td>Gratis; Pinku Pro 16,99 $/año o pago único desde 9,99 $</td><td>Sí</td><td>12 modelos seleccionados con Apple MLX, de 0,34 a 4,7 GB</td><td>Historial de compras e ID de usuario anónimo (para Pro); los chats no salen del dispositivo</td><td>4,7 &middot; 12</td></tr>
-<tr><td>2. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a></td><td>Gratis</td><td>Sí</td><td>Llama, Gemma, Qwen, DeepSeek y más, con Apple MLX</td><td>Datos no recopilados</td><td>4,7 &middot; 1.740</td></tr>
-<tr><td>3. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>4,99 $ por adelantado</td><td>Sí</td><td>Llama, Gemma, Qwen, Phi, Mistral y más, hasta 14B</td><td>Datos no recopilados</td><td>4,2 &middot; 734</td></tr>
+<tr><td>1. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a></td><td>Gratis</td><td>Sí</td><td>Llama, Gemma, Qwen, DeepSeek y más, con Apple MLX</td><td>Datos no recopilados</td><td>4,7 &middot; 1.740</td></tr>
+<tr><td>2. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>4,99 $ por adelantado</td><td>Sí</td><td>Llama, Gemma, Qwen, Phi, Mistral y más, hasta 14B</td><td>Datos no recopilados</td><td>4,2 &middot; 734</td></tr>
+<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>Gratis; Pinku Pro 16,99 $/año o pago único desde 9,99 $</td><td>Sí</td><td>11 modelos abiertos con Apple MLX, de 0,4 a 4,7 GB</td><td>Historial de compras e ID de usuario anónimo (para Pro); los chats no salen del dispositivo</td><td>4,7 &middot; 12</td></tr>
 <tr><td>4. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Gratis; Pro 9,99 $</td><td>No aparece</td><td>Cientos de modelos abiertos; Pro añade modelos en la nube</td><td>Datos no vinculados a ti</td><td>4,7 &middot; 1.087</td></tr>
 <tr><td>5. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Gratis, código abierto</td><td>No aparece</td><td>Cualquier modelo GGUF de Hugging Face</td><td>Datos no recopilados</td><td>4,1 &middot; 160</td></tr>
 <tr><td>6. <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a></td><td>Gratis; suscripción para la nube</td><td>No aparece</td><td>Modelos GGUF y MLX, los de Apple y proveedores en la nube opcionales</td><td>Datos usados para rastrearte</td><td>4,8 &middot; 20</td></tr>
@@ -2013,7 +1995,23 @@ Apple silicon. Las etiquetas de privacidad son lo que declara cada desarrollador
 el App Store; Apple no las verifica. Valoraciones de la API pública de Apple a
 %(date)s.</p>
 
-<h2>1. Pinku: privada por construcción</h2>
+<h2>1. Locally AI by LM Studio: la opción gratuita segura</h2>
+
+<p>La hace el equipo de LM Studio, la app de escritorio que mucha gente ya usa
+para correr modelos en el ordenador. Es gratis, no pide registro, ejecuta los
+modelos con MLX de Apple y su ficha dice que también analiza imágenes. Es la que
+más valoraciones tiene de todas, y está en iPhone, iPad y Mac. Si quieres una sola
+app gratuita sin complicarte, es una opción excelente.</p>
+
+<h2>2. Private LLM: pagas una vez y usas Siri</h2>
+
+<p>La única de la lista que se paga antes de descargarla: 4,99 $, una vez, con En
+Familia, en iPhone, iPad y Mac. Usa su propia cuantización (OmniQuant), ofrece
+modelos más grandes que la mayoría, de hasta 14B parámetros, y se integra con
+Siri y Atajos. Encaja si no te gustan las compras dentro de la app y quieres
+modelos grandes en el Mac.</p>
+
+<h2>3. Pinku: privada por construcción</h2>
 
 <p><a href="%(pinku)s">Pinku</a> ejecuta doce modelos abiertos seleccionados
 (Gemma 3, Gemma 3n, Llama 3.2, Qwen3, destilados de DeepSeek-R1, SmolLM3 y LFM2)
@@ -2024,29 +2022,12 @@ mensaje y volver a generar desde ahí, y compartir un mensaje o la conversación
 entera. La interfaz está en inglés, español, alemán, francés, japonés, coreano,
 chino simplificado y ruso.</p>
 
-<p>Se descarga gratis, y los seis modelos de hasta 1 GB, incluido el que viene
-por defecto (Gemma 3 1B), funcionan sin pagar. Pinku Pro es opcional, con suscripción anual (16,99 $) o compra única (desde 9,99 $), y añade los seis modelos más grandes, instrucciones personalizadas, dictado por voz reconocido en el dispositivo y lectura en voz alta.</p>
+<p>Se descarga gratis, y chatear con el modelo por defecto, Gemma 3 1B, no cuesta nada. Pinku Pro es opcional, con suscripción anual (16,99 $) o compra única (desde 9,99 $), y te deja elegir cualquier otro modelo, además de instrucciones personalizadas, dictado por voz reconocido en el dispositivo y lectura en voz alta.</p>
 
 <p>En qué le ganan las demás: Pinku no lee imágenes ni documentos, no busca en
 Hugging Face cualquier modelo, no tiene opción en la nube ni herramientas de
 agente, y no sincroniza los chats entre tus dispositivos. Además tiene muchas menos
 valoraciones que Locally AI, Enclave o Private LLM.</p>
-
-<h2>2. Locally AI by LM Studio: la opción gratuita segura</h2>
-
-<p>La hace el equipo de LM Studio, la app de escritorio que mucha gente ya usa
-para correr modelos en el ordenador. Es gratis, no pide registro, ejecuta los
-modelos con MLX de Apple y su ficha dice que también analiza imágenes. Es la que
-más valoraciones tiene de todas, y está en iPhone, iPad y Mac. Si quieres una sola
-app gratuita sin complicarte, es una opción excelente.</p>
-
-<h2>3. Private LLM: pagas una vez y usas Siri</h2>
-
-<p>La única de la lista que se paga antes de descargarla: 4,99 $, una vez, con En
-Familia, en iPhone, iPad y Mac. Usa su propia cuantización (OmniQuant), ofrece
-modelos más grandes que la mayoría, de hasta 14B parámetros, y se integra con
-Siri y Atajos. Encaja si no te gustan las compras dentro de la app y quieres
-modelos grandes en el Mac.</p>
 
 <h2>4. Enclave: local primero, nube si la quieres</h2>
 
@@ -2266,8 +2247,8 @@ def _jsonld_list(article_jsonld, items):
 
 
 VAULT_RANKING = [
-    ("Photo Vault: Hide Pics Video", "https://apps.apple.com/app/id1532670722"),
     ("Private Photo Vault - Arca", "https://apps.apple.com/us/app/id6779157571"),
+    ("Photo Vault: Hide Pics Video", "https://apps.apple.com/app/id1532670722"),
     ("Private Photo Vault - Pic Safe", "https://apps.apple.com/us/app/id417571834"),
     ("Secret Photo Vault: Keepsafe", "https://apps.apple.com/us/app/id510873505"),
 ]
@@ -2315,7 +2296,7 @@ they charge.</p>
 <tr><td><a href="%(luma)s" target="_blank" rel="noopener">Luma Dream Machine</a></td><td>Consistent characters from one face photo; edit by describing</td><td>Subscriptions, plus credit packs</td><td>4.5 &middot; 1,795</td></tr>
 <tr><td><a href="%(invideo)s" target="_blank" rel="noopener">invideo</a></td><td>A full multitrack editor plus 200+ models, team editing</td><td>Plans and add-on packs</td><td>4.5 &middot; 27,821</td></tr>
 <tr><td><a href="%(capcut)s" target="_blank" rel="noopener">CapCut</a></td><td>Editing: timeline, captions, effects, 4K export</td><td>Free editor; monthly or yearly subscriptions</td><td>4.6 &middot; 1,123,165</td></tr>
-<tr><td><a href="%(dora_ios)s" target="_blank" rel="noopener">Dora</a> (ours)</td><td>Many short vertical clips from photos; works inside Claude and ChatGPT</td><td>Paid plans only, no free generations</td><td>4.3 &middot; 15</td></tr>
+<tr><td><a href="%(dora_ios)s" target="_blank" rel="noopener">Dora</a></td><td>Many short vertical clips from photos; works inside Claude and ChatGPT</td><td>Paid plans only, no free generations</td><td>4.3 &middot; 15</td></tr>
 </tbody>
 </table></div>
 
@@ -2470,7 +2451,7 @@ cuánto te dejan editar después y cómo cobran.</p>
 <tr><td><a href="%(luma)s" target="_blank" rel="noopener">Luma Dream Machine</a></td><td>Personajes coherentes a partir de una foto de la cara; editar describiendo</td><td>Suscripciones y packs de créditos</td><td>4,5 &middot; 1.795</td></tr>
 <tr><td><a href="%(invideo)s" target="_blank" rel="noopener">invideo</a></td><td>Editor multipista completo, más de 200 modelos, edición en equipo</td><td>Planes y packs adicionales</td><td>4,5 &middot; 27.821</td></tr>
 <tr><td><a href="%(capcut)s" target="_blank" rel="noopener">CapCut</a></td><td>Editar: línea de tiempo, subtítulos, efectos, exportar en 4K</td><td>Editor gratis; suscripciones mensuales o anuales</td><td>4,6 &middot; 1.123.165</td></tr>
-<tr><td><a href="%(dora_ios)s" target="_blank" rel="noopener">Dora</a> (nuestra)</td><td>Muchos clips verticales cortos a partir de fotos; funciona dentro de Claude y ChatGPT</td><td>Solo planes de pago, sin generaciones gratis</td><td>4,3 &middot; 15</td></tr>
+<tr><td><a href="%(dora_ios)s" target="_blank" rel="noopener">Dora</a></td><td>Muchos clips verticales cortos a partir de fotos; funciona dentro de Claude y ChatGPT</td><td>Solo planes de pago, sin generaciones gratis</td><td>4,3 &middot; 15</td></tr>
 </tbody>
 </table></div>
 
@@ -2609,28 +2590,12 @@ corregimos la página.</p>
 # Disponibilidad por pais: API de lookup de iTunes, 7 oct 2026 (ru/cn/hk).
 # Locally AI no esta en RU ni CN; Enclave y Privacy AI no estan en CN.
 
-CHATGPT_RANK = [_N[k] for k in ("pinku", "locally", "privatellm", "pocketpal", "enclave")]
+CHATGPT_RANK = [_N[k] for k in ("locally", "privatellm", "pinku", "pocketpal", "enclave")]
 
-_CGPT_WHY_EN = _rank_box("Why Pinku is #1", [
-    "On-device: after a one-time model download, it answers with no connection at all, on a plane or with no signal.",
-    "No account, no sign-up, no country check. Chats never leave your device; Apple's privacy label lists only purchase history and an anonymous user ID, used for Pinku Pro purchases.",
-    "In the App Store in Russia, mainland China and Hong Kong, where ChatGPT is not offered, and the interface speaks Russian and Simplified Chinese among 8 languages.",
-    "An alternative download source for when Hugging Face is slow or blocked.",
-    "Free to start; Pinku Pro is optional: $16.99 a year or a one-time purchase from $9.99 (US App Store).",
-    "A memory check before loading, so a model too big for your phone does not crash the app.",
-])
 
-_CGPT_WHY_ES = _rank_box("Por qué Pinku es la n.º 1", [
-    "En el dispositivo: tras descargar el modelo una vez, responde sin ninguna conexión, en un avión o sin cobertura.",
-    "Sin cuenta, sin registro y sin comprobación de país. Los chats nunca salen del dispositivo; la etiqueta de privacidad de Apple solo indica el historial de compras y un identificador de usuario anónimo, para las compras de Pinku Pro.",
-    "Está en el App Store de Rusia, China continental y Hong Kong, donde ChatGPT no se ofrece, y la interfaz habla ruso y chino simplificado entre sus 8 idiomas.",
-    "Una fuente de descarga alternativa para cuando Hugging Face va lento o está bloqueado.",
-    "Gratis para empezar; Pinku Pro es opcional: 16,99 $ al año o una compra única desde 9,99 $ (App Store de EE. UU.).",
-    "Comprueba la memoria antes de cargar, así que un modelo demasiado grande para tu móvil no cierra la app.",
-])
 
 A8_EN_BODY = ("""
-<p><strong>Disclosure: we make Pinku, the app ranked first here.</strong> What we
+<p><strong>Disclosure: we make Pinku, number 3 on this list.</strong> What we
 say about the other apps comes from their own App Store pages and Apple's public
 lookup API, checked on %(date)s.</p>
 
@@ -2643,13 +2608,13 @@ ChatGPT is not available.</p>
 <h2>The ranking</h2>
 
 <ol>
-<li><a href="%(pinku)s">Pinku</a>: best overall, and the widest availability.</li>
 <li><a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a>: best free option, if it is in your store.</li>
 <li><a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a>: best if you would rather pay once upfront.</li>
+<li><a href="%(pinku)s">Pinku</a>: best overall, and the widest availability.</li>
 <li><a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a>: best free, open-source option for any model.</li>
 <li><a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a>: best if you also want ChatGPT-style cloud models when you are online.</li>
 </ol>
-""" + _CGPT_WHY_EN + """
+
 <h2>Where ChatGPT is not available</h2>
 
 <p>OpenAI publishes a <a href="%(oai)s" target="_blank" rel="noopener">list of the
@@ -2660,9 +2625,9 @@ being in your country's App Store. On %(date)s, Apple's lookup API showed:</p>
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Price (US)</th><th>Russia</th><th>Mainland China</th><th>Hong Kong</th><th>Rating (US)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(pinku)s">Pinku</a> (ours)</td><td>Free; Pro $16.99/year or one-time from $9.99</td><td>Yes</td><td>Yes</td><td>Yes</td><td>4.7 &middot; 12</td></tr>
-<tr><td>2. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI</a></td><td>Free</td><td>No</td><td>No</td><td>Yes</td><td>4.7 &middot; 1,740</td></tr>
-<tr><td>3. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>$4.99 upfront</td><td>Yes</td><td>Yes</td><td>Yes</td><td>4.2 &middot; 734</td></tr>
+<tr><td>1. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI</a></td><td>Free</td><td>No</td><td>No</td><td>Yes</td><td>4.7 &middot; 1,740</td></tr>
+<tr><td>2. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>$4.99 upfront</td><td>Yes</td><td>Yes</td><td>Yes</td><td>4.2 &middot; 734</td></tr>
+<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>Free; Pro $16.99/year or one-time from $9.99</td><td>Yes</td><td>Yes</td><td>Yes</td><td>4.7 &middot; 12</td></tr>
 <tr><td>4. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Free, open source</td><td>Yes</td><td>Yes</td><td>Yes</td><td>4.1 &middot; 160</td></tr>
 <tr><td>5. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Free; Pro $9.99</td><td>Yes</td><td>No</td><td>Yes</td><td>4.7 &middot; 1,087</td></tr>
 </tbody>
@@ -2686,29 +2651,29 @@ drafting a message, summarising text you paste, translating, explaining a concep
 brainstorming. For that, an answer that arrives with no connection and leaves no
 copy on anyone's server is often the better trade.</p>
 
-<h2>1. Pinku</h2>
-
-<p><a href="%(pinku)s">Pinku</a> runs twelve curated open models (Gemma 3,
-Gemma 3n, Llama 3.2, Qwen3, DeepSeek-R1 distills, SmolLM3 and LFM2) on iPhone,
-iPad and Mac with Apple MLX. No account, no server, nothing sent anywhere. It is in
-the App Store in all three countries above, its interface is in English, Spanish,
-German, French, Japanese, Korean, Simplified Chinese and Russian, and an
-&ldquo;alternative download source&rdquo; setting fetches models through a mirror
-when Hugging Face is slow or unreachable. The six models up to 1 GB are free; Pinku Pro (yearly or one-time) adds six larger ones, custom instructions and on-device voice.
-Where others beat it: no image or document input, a curated list rather than any
-model, and no sync between devices.</p>
-
-<h2>2. Locally AI by LM Studio</h2>
+<h2>1. Locally AI by LM Studio</h2>
 
 <p>Free, no login, Apple MLX, image understanding, iPhone, iPad and Mac, and the
 most ratings of any app here. The catch for this article: on %(date)s it was not in
 the Russian or mainland Chinese App Store.</p>
 
-<h2>3. Private LLM</h2>
+<h2>2. Private LLM</h2>
 
 <p>$4.99 once, with Family Sharing, on iPhone, iPad and Mac. Larger models than
 most (up to 14B parameters on a Mac) and Siri and Shortcuts integration. Available
 in all three stores.</p>
+
+<h2>3. Pinku</h2>
+
+<p><a href="%(pinku)s">Pinku</a> runs eleven open models (Gemma 3,
+Gemma 3n, Llama 3.2, Qwen3, DeepSeek-R1 distills, SmolLM3 and LFM2) on iPhone,
+iPad and Mac with Apple MLX. No account, no server, nothing sent anywhere. It is in
+the App Store in all three countries above, its interface is in English, Spanish,
+German, French, Japanese, Korean, Simplified Chinese and Russian, and an
+&ldquo;alternative download source&rdquo; setting fetches models through a mirror
+when Hugging Face is slow or unreachable. Chatting with the default model, Gemma 3 1B, is free; Pinku Pro (yearly or one-time) lets you choose any other model and adds custom instructions and on-device voice.
+Where others beat it: no image or document input, a curated list rather than any
+model, and no sync between devices.</p>
 
 <h2>4. PocketPal AI</h2>
 
@@ -2754,7 +2719,7 @@ and we will correct the page.</p>
 """ % dict(_OFF, date=OFF_DATE_EN)
 
 A8_ES_BODY = ("""
-<p><strong>Aviso: Pinku, la app que va primera, es nuestra.</strong> Lo que decimos
+<p><strong>Aviso: Pinku, la n.º 3 de esta lista, es nuestra.</strong> Lo que decimos
 de las demás sale de su propia ficha del App Store y de la API pública de Apple,
 comprobadas el %(date)s.</p>
 
@@ -2767,13 +2732,13 @@ y en sitios donde ChatGPT no está disponible.</p>
 <h2>El ranking</h2>
 
 <ol>
-<li><a href="%(pinku)s">Pinku</a>: la mejor en conjunto, y la de más disponibilidad.</li>
 <li><a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a>: la mejor gratuita, si está en tu tienda.</li>
 <li><a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a>: la mejor si prefieres pagar una vez por adelantado.</li>
+<li><a href="%(pinku)s">Pinku</a>: la mejor en conjunto, y la de más disponibilidad.</li>
 <li><a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a>: la mejor gratuita y de código abierto para cualquier modelo.</li>
 <li><a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a>: la mejor si además quieres modelos en la nube cuando tienes conexión.</li>
 </ol>
-""" + _CGPT_WHY_ES + """
+
 <h2>Dónde no está ChatGPT</h2>
 
 <p>OpenAI publica una <a href="%(oai)s" target="_blank" rel="noopener">lista de los
@@ -2784,9 +2749,9 @@ el App Store de tu país. A %(date)s, la API de Apple mostraba:</p>
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Precio (EE. UU.)</th><th>Rusia</th><th>China continental</th><th>Hong Kong</th><th>Valoración (EE. UU.)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(pinku)s">Pinku</a> (nuestra)</td><td>Gratis; Pro 16,99 $/año o pago único desde 9,99 $</td><td>Sí</td><td>Sí</td><td>Sí</td><td>4,7 &middot; 12</td></tr>
-<tr><td>2. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI</a></td><td>Gratis</td><td>No</td><td>No</td><td>Sí</td><td>4,7 &middot; 1.740</td></tr>
-<tr><td>3. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>4,99 $ por adelantado</td><td>Sí</td><td>Sí</td><td>Sí</td><td>4,2 &middot; 734</td></tr>
+<tr><td>1. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI</a></td><td>Gratis</td><td>No</td><td>No</td><td>Sí</td><td>4,7 &middot; 1.740</td></tr>
+<tr><td>2. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>4,99 $ por adelantado</td><td>Sí</td><td>Sí</td><td>Sí</td><td>4,2 &middot; 734</td></tr>
+<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>Gratis; Pro 16,99 $/año o pago único desde 9,99 $</td><td>Sí</td><td>Sí</td><td>Sí</td><td>4,7 &middot; 12</td></tr>
 <tr><td>4. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Gratis, código abierto</td><td>Sí</td><td>Sí</td><td>Sí</td><td>4,1 &middot; 160</td></tr>
 <tr><td>5. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Gratis; Pro 9,99 $</td><td>Sí</td><td>No</td><td>Sí</td><td>4,7 &middot; 1.087</td></tr>
 </tbody>
@@ -2810,7 +2775,19 @@ párrafo, redactar un mensaje, resumir un texto que pegas, traducir, explicar un
 concepto, pensar ideas. Para eso, una respuesta que llega sin conexión y no deja
 copia en el servidor de nadie suele salir a cuenta.</p>
 
-<h2>1. Pinku</h2>
+<h2>1. Locally AI by LM Studio</h2>
+
+<p>Gratis, sin registro, con Apple MLX, entiende imágenes, en iPhone, iPad y Mac, y
+la que más valoraciones tiene. La pega para este artículo: a %(date)s no estaba en
+el App Store de Rusia ni en el de China continental.</p>
+
+<h2>2. Private LLM</h2>
+
+<p>4,99 $ una vez, con En Familia, en iPhone, iPad y Mac. Modelos más grandes que
+la mayoría (hasta 14B parámetros en un Mac) e integración con Siri y Atajos. Está
+en las tres tiendas.</p>
+
+<h2>3. Pinku</h2>
 
 <p><a href="%(pinku)s">Pinku</a> ejecuta doce modelos abiertos seleccionados
 (Gemma 3, Gemma 3n, Llama 3.2, Qwen3, destilados de DeepSeek-R1, SmolLM3 y LFM2)
@@ -2818,23 +2795,10 @@ en iPhone, iPad y Mac con Apple MLX. Sin cuenta, sin servidor, sin enviar nada a
 ningún sitio. Está en el App Store de los tres países de arriba, su interfaz está
 en inglés, español, alemán, francés, japonés, coreano, chino simplificado y ruso, y
 un ajuste de &laquo;fuente de descarga alternativa&raquo; baja los modelos por un
-espejo cuando Hugging Face va lento o no responde. Los seis modelos de hasta 1 GB
-son gratis; Pinku Pro (anual o de pago único) añade seis más grandes, instrucciones
+espejo cuando Hugging Face va lento o no responde. Chatear con el modelo por defecto, Gemma 3 1B, es gratis; Pinku Pro (anual o de pago único) te deja elegir cualquier otro modelo y añade instrucciones
 personalizadas y voz en el dispositivo. En qué le ganan otras: no lee imágenes ni
 documentos, tiene una lista cerrada de modelos y no sincroniza entre
 dispositivos.</p>
-
-<h2>2. Locally AI by LM Studio</h2>
-
-<p>Gratis, sin registro, con Apple MLX, entiende imágenes, en iPhone, iPad y Mac, y
-la que más valoraciones tiene. La pega para este artículo: a %(date)s no estaba en
-el App Store de Rusia ni en el de China continental.</p>
-
-<h2>3. Private LLM</h2>
-
-<p>4,99 $ una vez, con En Familia, en iPhone, iPad y Mac. Modelos más grandes que
-la mayoría (hasta 14B parámetros en un Mac) e integración con Siri y Atajos. Está
-en las tres tiendas.</p>
 
 <h2>4. PocketPal AI</h2>
 
@@ -2891,23 +2855,7 @@ corregimos la página.</p>
 
 PRIVATE_RANK = [_N[k] for k in ("locally", "pocketpal", "privatellm", "pinku", "enclave", "privacyai")]
 
-_PRIV_WHY_EN = _rank_box("Why Pinku is #1", [
-    "The conversation never leaves the device: the model runs on your iPhone, iPad or Mac, with no network call to answer.",
-    "No account and no server. Chats never leave your device; Apple's privacy label lists only purchase history and an anonymous user ID, used for Pinku Pro purchases.",
-    "No cloud mode at all, so there is no setting that can quietly send a chat to someone else's model.",
-    "Free to start; Pinku Pro is optional, yearly ($16.99) or one-time (from $9.99).",
-    "The interface in 8 languages: English, Spanish, German, French, Japanese, Korean, Simplified Chinese and Russian.",
-    "A memory check before loading keeps a model that is too big from crashing the app.",
-])
 
-_PRIV_WHY_ES = _rank_box("Por qué Pinku es la n.º 1", [
-    "La conversación nunca sale del dispositivo: el modelo corre en tu iPhone, iPad o Mac, sin llamada a la red para responder.",
-    "Sin cuenta y sin servidor. Los chats nunca salen del dispositivo; la etiqueta de privacidad de Apple solo indica el historial de compras y un identificador de usuario anónimo, para las compras de Pinku Pro.",
-    "No tiene modo en la nube, así que no hay ningún ajuste que pueda mandar un chat al modelo de otra empresa sin que te des cuenta.",
-    "Gratis para empezar; Pinku Pro es opcional, anual (16,99 $) o de pago único (desde 9,99 $).",
-    "La interfaz en 8 idiomas: inglés, español, alemán, francés, japonés, coreano, chino simplificado y ruso.",
-    "Comprueba la memoria antes de cargar, así que un modelo demasiado grande no cierra la app.",
-])
 
 A9_EN_BODY = ("""
 <p><strong>Disclosure: we make Pinku, ranked fourth here.</strong> What we
@@ -2945,7 +2893,7 @@ or a cloud mode that could send a chat elsewhere?</p>
 <tr><td>1. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI</a></td><td>Data Not Collected</td><td>Not mentioned</td><td>Closed</td><td>Free</td></tr>
 <tr><td>2. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Data Not Collected</td><td>Not mentioned</td><td>Open (MIT)</td><td>Free</td></tr>
 <tr><td>3. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>Data Not Collected</td><td>Not mentioned</td><td>Closed</td><td>$4.99 upfront</td></tr>
-<tr><td>4. <a href="%(pinku)s">Pinku</a> (ours)</td><td>Purchase history and an anonymous user ID (for Pro); chats stay on the device</td><td>None</td><td>Closed</td><td>Free; Pro $16.99/year or one-time from $9.99</td></tr>
+<tr><td>4. <a href="%(pinku)s">Pinku</a></td><td>Purchase history and an anonymous user ID (for Pro); chats stay on the device</td><td>None</td><td>Closed</td><td>Free; Pro $16.99/year or one-time from $9.99</td></tr>
 <tr><td>5. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Data Not Linked to You</td><td>Optional, with Pro</td><td>Closed</td><td>Free; Pro $9.99</td></tr>
 <tr><td>6. <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a></td><td>Data Used to Track You</td><td>Optional, by subscription</td><td>Closed</td><td>Free; $3.99/week to $99.99/year</td></tr>
 </tbody>
@@ -2979,7 +2927,7 @@ account.</p>
 
 <h2>4. Pinku</h2>
 
-<p><a href="%(pinku)s">Pinku</a> runs twelve curated open models on iPhone, iPad
+<p><a href="%(pinku)s">Pinku</a> runs eleven open models on iPhone, iPad
 and Mac with Apple MLX. There is no account, no server and no cloud option, which
 is the point: nothing can be switched on later that sends a conversation out. The
 first model download is the only time it needs the internet, apart from App Store
@@ -3072,7 +3020,7 @@ cuenta o un modo en la nube que pueda mandar un chat a otra parte?</p>
 <tr><td>1. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI</a></td><td>Datos no recopilados</td><td>No los menciona</td><td>Cerrado</td><td>Gratis</td></tr>
 <tr><td>2. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Datos no recopilados</td><td>No los menciona</td><td>Abierto (MIT)</td><td>Gratis</td></tr>
 <tr><td>3. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>Datos no recopilados</td><td>No los menciona</td><td>Cerrado</td><td>4,99 $ por adelantado</td></tr>
-<tr><td>4. <a href="%(pinku)s">Pinku</a> (nuestra)</td><td>Historial de compras e ID de usuario anónimo (para Pro); los chats no salen del dispositivo</td><td>Ninguno</td><td>Cerrado</td><td>Gratis; Pro 16,99 $/año o pago único desde 9,99 $</td></tr>
+<tr><td>4. <a href="%(pinku)s">Pinku</a></td><td>Historial de compras e ID de usuario anónimo (para Pro); los chats no salen del dispositivo</td><td>Ninguno</td><td>Cerrado</td><td>Gratis; Pro 16,99 $/año o pago único desde 9,99 $</td></tr>
 <tr><td>5. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Datos no vinculados a ti</td><td>Opcionales, con Pro</td><td>Cerrado</td><td>Gratis; Pro 9,99 $</td></tr>
 <tr><td>6. <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a></td><td>Datos usados para rastrearte</td><td>Opcionales, con suscripción</td><td>Cerrado</td><td>Gratis; de 3,99 $/semana a 99,99 $/año</td></tr>
 </tbody>
@@ -3185,38 +3133,22 @@ _PV = dict(hidden=HIDDEN, picsafe=PICSAFE, keepsafe=KEEPSAFE, arca=ARCA, pv=PV,
            backup=ICLOUD_BACKUP, notes=LOCK_NOTES)
 
 NOICLOUD_RANK = [
-    ("Photo Vault: Hide Pics Video", "https://apps.apple.com/app/id1532670722"),
     ("Hidden album with iCloud Photos off", HIDDEN),
+    ("Photo Vault: Hide Pics Video", "https://apps.apple.com/app/id1532670722"),
     ("Locked note in the On My iPhone account", LOCK_NOTES),
     ("Private Photo Vault - Arca", "https://apps.apple.com/us/app/id6779157571"),
 ]
 NOICLOUD_RANK_ES = [
-    ("Photo Vault: Hide Pics Video", "https://apps.apple.com/app/id1532670722"),
     ("Álbum Oculto con Fotos en iCloud desactivado", HIDDEN),
+    ("Photo Vault: Hide Pics Video", "https://apps.apple.com/app/id1532670722"),
     ("Nota bloqueada en la cuenta En mi iPhone", LOCK_NOTES),
     ("Private Photo Vault - Arca", "https://apps.apple.com/us/app/id6779157571"),
 ]
 
-_NOI_WHY_EN = _rank_box("Why Photo Vault is #1", [
-    "Hidden photos sit in a vault outside your photo library, so iCloud Photos never sees them.",
-    "The vault is excluded from regular iCloud backups, so the photos do not end up in a backup by accident.",
-    "No account, no server, and nothing uploaded unless you turn on its optional, end-to-end encrypted iCloud copy. Its App Store privacy label reads <em>Data Not Collected</em>.",
-    "Files use iOS Data Protection and cannot be read while the iPhone is locked.",
-    "An encrypted backup you keep: one AES-256 file, locked with your password, that you store where you choose.",
-    "Photos and videos alike, a password per album, a disguised icon and a built-in camera that skips the camera roll.",
-])
 
-_NOI_WHY_ES = _rank_box("Por qué Photo Vault es la n.º 1", [
-    "Las fotos ocultas viven en una bóveda fuera de tu fototeca, así que Fotos en iCloud nunca las ve.",
-    "La bóveda queda fuera de las copias normales de iCloud, así que las fotos no acaban en una copia sin querer.",
-    "Sin cuenta ni servidor, y no se sube nada salvo que actives su copia opcional en iCloud, cifrada de extremo a extremo. Su etiqueta de privacidad en el App Store dice <em>Datos no recopilados</em>.",
-    "Los archivos usan la protección de datos de iOS y no se pueden leer con el iPhone bloqueado.",
-    "Una copia cifrada que guardas tú: un archivo AES-256, con tu contraseña, en el sitio que elijas.",
-    "Fotos y vídeos por igual, contraseña por álbum, icono disfrazado y cámara propia que no pasa por el carrete.",
-])
 
 A10_EN_BODY = ("""
-<p><strong>Disclosure: we make Photo Vault, the option ranked first here.</strong>
+<p><strong>Disclosure: we make Photo Vault, number 2 on this list.</strong>
 Everything about Apple's built-in features comes from Apple's own support pages,
 linked below, checked on %(date)s.</p>
 
@@ -3241,13 +3173,23 @@ photos can end up in iCloud anyway, through the backup.</p>
 <h2>The ranking</h2>
 
 <ol>
-<li><a href="%(pv)s">Photo Vault</a>: best overall, kept out of both iCloud Photos and iCloud Backup.</li>
 <li>The Hidden album, with iCloud Photos off: free and built in, if you can live with the backup question.</li>
+<li><a href="%(pv)s">Photo Vault</a>: best overall, kept out of both iCloud Photos and iCloud Backup.</li>
 <li>A locked note in the <em>On My iPhone</em> account: free, for a few photos.</li>
 <li><a href="%(arca)s" target="_blank" rel="noopener">Arca</a>: a no-cloud vault with a decoy PIN.</li>
 </ol>
-""" + _NOI_WHY_EN + """
-<h2>1. Photo Vault</h2>
+
+<h2>1. The Hidden album, with iCloud Photos off</h2>
+
+<p>Free and already on your phone: select the photos, tap Hide, and turn off
+<em>Show Hidden Album</em> in Settings, Apps, Photos so the album does not even
+appear. Since iOS 16 it is locked and opens with Face ID, Touch ID or your passcode. To keep it off iCloud,
+iCloud Photos has to be off, which means none of your other photos sync either, and
+because of iCloud Backup the photos can still reach iCloud unless you also stop
+backing up your photo library there. It also keeps a single lock for everything,
+and the Photos app stays in plain sight.</p>
+
+<h2>2. Photo Vault</h2>
 
 <p><a href="%(pv)s">Photo Vault</a> moves photos and videos into a vault that is
 not part of your photo library, so iCloud Photos has nothing to sync, and the vault
@@ -3263,17 +3205,7 @@ from Recently Deleted, or the copy in your library will still sync.</p>
 it on, or export one from Settings, Backup now and then: the whole vault goes into one file encrypted
 with AES-256 and your password, which you can keep on a computer, in Files or in
 your own iCloud Drive. It is free to download and try; Premium (7 days free, then
-yearly) unlocks unlimited items and the iCloud copy. It has no decoy PIN.</p>
-
-<h2>2. The Hidden album, with iCloud Photos off</h2>
-
-<p>Free and already on your phone: select the photos, tap Hide, and turn off
-<em>Show Hidden Album</em> in Settings, Apps, Photos so the album does not even
-appear. Since iOS 16 it is locked and opens with Face ID, Touch ID or your passcode. To keep it off iCloud,
-iCloud Photos has to be off, which means none of your other photos sync either, and
-because of iCloud Backup the photos can still reach iCloud unless you also stop
-backing up your photo library there. It also keeps a single lock for everything,
-and the Photos app stays in plain sight.</p>
+yearly) unlocks unlimited items, the iCloud copy and a decoy code: a second passcode that opens a separate vault with its own albums.</p>
 
 <h2>3. A locked note on My iPhone</h2>
 
@@ -3291,7 +3223,7 @@ for an album.</p>
 no-server, no-account approach as Photo Vault, and its page says each file is
 encrypted individually with AES-256, with keys in the Secure Enclave. It adds a
 decoy vault and a break-in report, and offers an encrypted backup file you can save
-to Files or iCloud Drive. If a decoy PIN matters to you, it beats us on that.</p>
+to Files or iCloud Drive. Both have a decoy vault (in Photo Vault it is a Premium feature); Arca documents its encryption in more detail.</p>
 
 <h2>Whichever you choose</h2>
 
@@ -3323,7 +3255,7 @@ and we will correct the page.</p>
 """ % dict(_PV, date=RANK_DATE_EN)
 
 A10_ES_BODY = ("""
-<p><strong>Aviso: Photo Vault, la opción que va primera, es nuestra.</strong> Todo
+<p><strong>Aviso: Photo Vault, la n.º 2 de esta lista, es nuestra.</strong> Todo
 lo que contamos de las funciones de Apple sale de sus propias páginas de soporte,
 enlazadas abajo y comprobadas el %(date)s.</p>
 
@@ -3349,13 +3281,23 @@ copia.</p>
 <h2>El ranking</h2>
 
 <ol>
-<li><a href="%(pv)s">Photo Vault</a>: la mejor en conjunto, fuera de Fotos en iCloud y de la copia de iCloud.</li>
 <li>El álbum Oculto con Fotos en iCloud desactivado: gratis y de serie, si aceptas lo de la copia.</li>
+<li><a href="%(pv)s">Photo Vault</a>: la mejor en conjunto, fuera de Fotos en iCloud y de la copia de iCloud.</li>
 <li>Una nota bloqueada en la cuenta <em>En mi iPhone</em>: gratis, para pocas fotos.</li>
 <li><a href="%(arca)s" target="_blank" rel="noopener">Arca</a>: una bóveda sin nube, con PIN señuelo.</li>
 </ol>
-""" + _NOI_WHY_ES + """
-<h2>1. Photo Vault</h2>
+
+<h2>1. El álbum Oculto, con Fotos en iCloud desactivado</h2>
+
+<p>Gratis y ya en tu móvil: selecciona las fotos, toca Ocultar y desactiva
+<em>Mostrar álbum Oculto</em> en Ajustes, Apps, Fotos para que el álbum ni
+aparezca. Desde iOS 16 está bloqueado y se abre con Face ID, Touch ID o el código. Para mantenerlo fuera
+de iCloud, Fotos en iCloud tiene que estar desactivado, lo que significa que
+tampoco se sincroniza ninguna otra foto, y por la copia de iCloud las fotos pueden
+llegar a iCloud igualmente salvo que dejes también de copiar allí tu fototeca.
+Además hay un solo bloqueo para todo y la app Fotos sigue a la vista.</p>
+
+<h2>2. Photo Vault</h2>
 
 <p><a href="%(pv)s">Photo Vault</a> pasa fotos y vídeos a una bóveda que no forma
 parte de tu fototeca, así que Fotos en iCloud no tiene nada que sincronizar, y la
@@ -3372,17 +3314,7 @@ sincronizando.</p>
 automática. Actívala, o exporta una de vez en cuando desde Ajustes, Copia: toda la bóveda va a un archivo cifrado con
 AES-256 y tu contraseña, que puedes guardar en el ordenador, en Archivos o en tu
 propio iCloud Drive. Se descarga y se prueba gratis; Premium (7 días gratis y luego
-anual) desbloquea elementos ilimitados y la copia en iCloud. No tiene PIN señuelo.</p>
-
-<h2>2. El álbum Oculto, con Fotos en iCloud desactivado</h2>
-
-<p>Gratis y ya en tu móvil: selecciona las fotos, toca Ocultar y desactiva
-<em>Mostrar álbum Oculto</em> en Ajustes, Apps, Fotos para que el álbum ni
-aparezca. Desde iOS 16 está bloqueado y se abre con Face ID, Touch ID o el código. Para mantenerlo fuera
-de iCloud, Fotos en iCloud tiene que estar desactivado, lo que significa que
-tampoco se sincroniza ninguna otra foto, y por la copia de iCloud las fotos pueden
-llegar a iCloud igualmente salvo que dejes también de copiar allí tu fototeca.
-Además hay un solo bloqueo para todo y la app Fotos sigue a la vista.</p>
+anual) desbloquea elementos ilimitados, la copia en iCloud y un código señuelo: un segundo código que abre otra bóveda con sus propios álbumes.</p>
 
 <h2>3. Una nota bloqueada En mi iPhone</h2>
 
@@ -3401,8 +3333,7 @@ queda corta.</p>
 enfoque que Photo Vault, sin servidor ni cuenta, y su ficha dice que cada archivo
 se cifra por separado con AES-256, con las claves en el Secure Enclave. Añade una
 bóveda señuelo y un informe de intentos de acceso, y ofrece una copia cifrada en
-archivo que puedes guardar en Archivos o en iCloud Drive. Si el PIN señuelo te
-importa, en eso nos gana.</p>
+archivo que puedes guardar en Archivos o en iCloud Drive. Las dos tienen bóveda señuelo (en Photo Vault es de Premium); Arca explica su cifrado con más detalle.</p>
 
 <h2>Elijas lo que elijas</h2>
 
@@ -3442,7 +3373,7 @@ RANK_ARTICLES = [
         es_path="blog/es/mejores-alternativas-a-chatgpt-sin-conexion-iphone.html",
         en=dict(
             h1="Best ChatGPT alternatives that work offline on iPhone (2026)",
-            desc=("Pinku, Locally AI, Private LLM, PocketPal and Enclave ranked: AI chat that runs on the "
+            desc=("Locally AI, Private LLM, Pinku, PocketPal and Enclave ranked: AI chat that runs on the "
                   "iPhone with no connection and no account, including where ChatGPT is not offered "
                   "(Russia, mainland China, Hong Kong). Written by Pinku's maker, disclosed."),
             kicker="On-device AI", section="On-device AI",
@@ -3451,7 +3382,7 @@ RANK_ARTICLES = [
             body=A8_EN_BODY, sources=A8_EN_SOURCES, rank=CHATGPT_RANK),
         es=dict(
             h1="Las mejores alternativas a ChatGPT que funcionan sin conexión en iPhone (2026)",
-            desc=("Pinku, Locally AI, Private LLM, PocketPal y Enclave ordenadas: chat con IA que corre en "
+            desc=("Locally AI, Private LLM, Pinku, PocketPal y Enclave ordenadas: chat con IA que corre en "
                   "el iPhone sin conexión y sin cuenta, también donde ChatGPT no se ofrece (Rusia, China "
                   "continental, Hong Kong). Escrito por quien hace Pinku, y lo decimos."),
             kicker="IA en el dispositivo", section="IA en el dispositivo",
@@ -3534,33 +3465,17 @@ _UGC = dict(dora=DORA_UGC_WEB, dora_ios=DORA_UGC_IOS, connectors=DORA_UGC_CONNEC
             heygen=HEYGEN, captions=CAPTIONS, vmake=VMAKE, zeely=ZEELY)
 
 UGC_RANK = [
-    ("DORA · AI Video Generator", "https://apps.apple.com/app/id6754180384"),
     ("AI Avatar Generator - HeyGen", HEYGEN),
     ("Captions: AI Edits Your Video", CAPTIONS),
+    ("DORA · AI Video Generator", "https://apps.apple.com/app/id6754180384"),
     ("Vmake Labs: create viral video", VMAKE),
     ("Zeely: AI Marketing Platform", ZEELY),
 ]
 
-_UGC_WHY_EN = _rank_box("Why Dora is #1", [
-    "Many of the leading video models in one app, so you can run the same product photo or the same hook through several and keep the best take.",
-    "Same Character: up to seven photos of one person, then any scene you describe, so the same &ldquo;creator&rdquo; appears across a whole batch of ads.",
-    "Motion Control: give it a photo of a person and a reference clip, and the person makes the gesture or the dance from the clip.",
-    "On the web, Lip Sync turns a face photo plus an audio track into a talking clip, and AI voice-over writes that audio from your script.",
-    "Works inside Claude and ChatGPT through an MCP connector, with the same account and balance, so an assistant can draft ten hooks and generate them for you.",
-    "You see what each generation costs before you tap Generate. A video takes about 2 minutes.",
-])
 
-_UGC_WHY_ES = _rank_box("Por qué Dora es la n.º 1", [
-    "Muchos de los principales modelos de vídeo en una sola app, así que puedes pasar la misma foto de producto o el mismo gancho por varios y quedarte con la mejor toma.",
-    "Same Character: hasta siete fotos de una persona y después cualquier escena que describas, para que el mismo &laquo;creador&raquo; salga en toda una tanda de anuncios.",
-    "Motion Control: le das la foto de una persona y un clip de referencia, y la persona hace el gesto o el baile del clip.",
-    "En la web, Lip Sync convierte una foto de una cara y una pista de audio en un clip hablado, y la voz con IA genera ese audio a partir de tu guion.",
-    "Funciona dentro de Claude y ChatGPT con un conector MCP, con la misma cuenta y el mismo saldo, así que un asistente puede escribir diez ganchos y generarlos por ti.",
-    "Ves lo que cuesta cada generación antes de tocar Generar. Un vídeo tarda unos 2 minutos.",
-])
 
 A11_EN_BODY = ("""
-<p><strong>Disclosure: we make Dora, the app ranked first here.</strong>
+<p><strong>Disclosure: we make Dora, number 3 on this list.</strong>
 Everything we say about the other apps comes from their own App Store pages, and
 we say plainly where they beat us. Ratings and in-app purchases are from the US
 App Store on %(date)s. We say how each app charges, not what it costs, because
@@ -3576,21 +3491,21 @@ ten times. These five apps do that job in different ways.</p>
 <h2>The ranking</h2>
 
 <ol>
-<li><a href="%(dora)s">Dora</a>: best for generating many scenes and hooks with your own product, on iPhone and on the web.</li>
 <li><a href="%(heygen)s" target="_blank" rel="noopener">HeyGen</a>: best for a talking avatar of you, in your own voice.</li>
 <li><a href="%(captions)s" target="_blank" rel="noopener">Captions</a>: best for editing and captioning the finished ad.</li>
+<li><a href="%(dora)s">Dora</a>: best for generating many scenes and hooks with your own product, on iPhone and on the web.</li>
 <li><a href="%(vmake)s" target="_blank" rel="noopener">Vmake Labs</a>: best ready-made UGC formats for a product photo.</li>
 <li><a href="%(zeely)s" target="_blank" rel="noopener">Zeely</a>: best if you also want the app to launch the ads for you.</li>
 </ol>
-""" + _UGC_WHY_EN + """
+
 <h2>The five apps at a glance</h2>
 
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Strongest at</th><th>How it charges</th><th>Rating (US)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(dora_ios)s">Dora</a> (ours)</td><td>Product scenes, a recurring character, Motion Control; also on the web and inside Claude and ChatGPT</td><td>Paid plans only, no free generations</td><td>4.3 &middot; 15</td></tr>
-<tr><td>2. <a href="%(heygen)s" target="_blank" rel="noopener">HeyGen</a></td><td>Your own avatar and voice reading a script; translation into 100+ languages</td><td>Weekly or monthly plans, plus credit packs</td><td>4.8 &middot; 26,783</td></tr>
-<tr><td>3. <a href="%(captions)s" target="_blank" rel="noopener">Captions</a></td><td>AI editing, subtitles, dubbing, AI actors and an AI twin from a selfie</td><td>Weekly, monthly or yearly subscriptions</td><td>4.7 &middot; 38,320</td></tr>
+<tr><td>1. <a href="%(heygen)s" target="_blank" rel="noopener">HeyGen</a></td><td>Your own avatar and voice reading a script; translation into 100+ languages</td><td>Weekly or monthly plans, plus credit packs</td><td>4.8 &middot; 26,783</td></tr>
+<tr><td>2. <a href="%(captions)s" target="_blank" rel="noopener">Captions</a></td><td>AI editing, subtitles, dubbing, AI actors and an AI twin from a selfie</td><td>Weekly, monthly or yearly subscriptions</td><td>4.7 &middot; 38,320</td></tr>
+<tr><td>3. <a href="%(dora_ios)s">Dora</a></td><td>Product scenes, a recurring character, Motion Control; also on the web and inside Claude and ChatGPT</td><td>Paid plans only, no free generations</td><td>4.3 &middot; 15</td></tr>
 <tr><td>4. <a href="%(vmake)s" target="_blank" rel="noopener">Vmake Labs</a></td><td>Templates: unboxing, before and after, product in hand, lip sync</td><td>Subscriptions and credit packs</td><td>4.8 &middot; 5,170</td></tr>
 <tr><td>5. <a href="%(zeely)s" target="_blank" rel="noopener">Zeely</a></td><td>Ads from a product link, launched on Facebook and Instagram from the app</td><td>Weekly or multi-month plans, plus credits</td><td>4.6 &middot; 22,813</td></tr>
 </tbody>
@@ -3599,7 +3514,27 @@ ten times. These five apps do that job in different ways.</p>
 <p class="article-note">All five are free to download and charge through in-app
 purchases. Ratings are from Apple's public lookup API on %(date)s.</p>
 
-<h2>1. Dora: the scenes, the character and the variations</h2>
+<h2>1. HeyGen: you, on camera, without filming</h2>
+
+<p>HeyGen builds an avatar of you from one short video: your face and your voice.
+After that you type a script and the avatar says it. Its page also lists avatars
+from photos, a photo to talking video mode (Avatar 4), thousands of stock
+avatars, AI voices with lip sync, captions, and video translation into more than
+100 languages. Its Video Agent turns a prompt and an image into a video with
+b-roll. It charges with weekly or monthly plans and credit packs. If the ad is a
+person talking to camera, and that person should be you, HeyGen is the
+specialist.</p>
+
+<h2>2. Captions: finish the ad</h2>
+
+<p>Captions (by Mirage) is an editor first: one tap AI edits, a chat editor that
+applies cuts, b-roll and pacing when you describe them, automatic subtitles in
+91+ languages, dubbing into 29 and noise removal. It also makes AI actors and an
+AI twin from a selfie. It charges with weekly, monthly or yearly subscriptions.
+It pairs well with any generator on this list: make the clips elsewhere, then
+cut and caption them here.</p>
+
+<h2>3. Dora: the scenes, the character and the variations</h2>
 
 <p><a href="%(dora)s">Dora</a> is an AI video and image generator on
 <a href="%(dora_ios)s">iPhone</a> and at doravideo.com. For a UGC ad, the useful
@@ -3624,26 +3559,6 @@ actors or clone your voice, and does not launch ads. Lip Sync and the voice tool
 are on the web app, not yet in the iPhone app. Not every take is usable, so plan
 on a few per hook, and a video takes about 2 minutes, not seconds. There is no
 free plan: you need a paid plan to generate.</p>
-
-<h2>2. HeyGen: you, on camera, without filming</h2>
-
-<p>HeyGen builds an avatar of you from one short video: your face and your voice.
-After that you type a script and the avatar says it. Its page also lists avatars
-from photos, a photo to talking video mode (Avatar 4), thousands of stock
-avatars, AI voices with lip sync, captions, and video translation into more than
-100 languages. Its Video Agent turns a prompt and an image into a video with
-b-roll. It charges with weekly or monthly plans and credit packs. If the ad is a
-person talking to camera, and that person should be you, HeyGen is the
-specialist.</p>
-
-<h2>3. Captions: finish the ad</h2>
-
-<p>Captions (by Mirage) is an editor first: one tap AI edits, a chat editor that
-applies cuts, b-roll and pacing when you describe them, automatic subtitles in
-91+ languages, dubbing into 29 and noise removal. It also makes AI actors and an
-AI twin from a selfie. It charges with weekly, monthly or yearly subscriptions.
-It pairs well with any generator on this list: make the clips elsewhere, then
-cut and caption them here.</p>
 
 <h2>4. Vmake Labs: formats for a product photo</h2>
 
@@ -3692,7 +3607,7 @@ and we will correct the page.</p>
 """ % dict(_UGC, date=RANK_DATE_EN)
 
 A11_ES_BODY = ("""
-<p><strong>Aviso: Dora, la app que va primera, es nuestra.</strong> Todo lo que
+<p><strong>Aviso: Dora, la n.º 3 de esta lista, es nuestra.</strong> Todo lo que
 decimos de las demás sale de su propia ficha del App Store, y decimos claramente
 en qué nos ganan. Valoraciones y compras dentro de la app de la App Store de
 EE. UU. a %(date)s. Contamos cómo cobra cada una, no cuánto, porque los precios
@@ -3709,21 +3624,21 @@ distintas.</p>
 <h2>El ranking</h2>
 
 <ol>
-<li><a href="%(dora)s">Dora</a>: la mejor para generar muchas escenas y ganchos con tu producto, en iPhone y en la web.</li>
 <li><a href="%(heygen)s" target="_blank" rel="noopener">HeyGen</a>: la mejor para un avatar tuyo que habla, con tu propia voz.</li>
 <li><a href="%(captions)s" target="_blank" rel="noopener">Captions</a>: la mejor para editar y subtitular el anuncio terminado.</li>
+<li><a href="%(dora)s">Dora</a>: la mejor para generar muchas escenas y ganchos con tu producto, en iPhone y en la web.</li>
 <li><a href="%(vmake)s" target="_blank" rel="noopener">Vmake Labs</a>: los mejores formatos UGC listos para una foto de producto.</li>
 <li><a href="%(zeely)s" target="_blank" rel="noopener">Zeely</a>: la mejor si además quieres que la app lance los anuncios.</li>
 </ol>
-""" + _UGC_WHY_ES + """
+
 <h2>Las cinco apps de un vistazo</h2>
 
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>En qué destaca</th><th>Cómo cobra</th><th>Valoración (EE. UU.)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(dora_ios)s">Dora</a> (nuestra)</td><td>Escenas de producto, un personaje que se repite, Motion Control; también en la web y dentro de Claude y ChatGPT</td><td>Solo planes de pago, sin generaciones gratis</td><td>4,3 &middot; 15</td></tr>
-<tr><td>2. <a href="%(heygen)s" target="_blank" rel="noopener">HeyGen</a></td><td>Tu propio avatar y tu voz leyendo un guion; traducción a más de 100 idiomas</td><td>Planes semanales o mensuales y packs de créditos</td><td>4,8 &middot; 26.783</td></tr>
-<tr><td>3. <a href="%(captions)s" target="_blank" rel="noopener">Captions</a></td><td>Edición con IA, subtítulos, doblaje, actores con IA y un gemelo a partir de un selfie</td><td>Suscripciones semanales, mensuales o anuales</td><td>4,7 &middot; 38.320</td></tr>
+<tr><td>1. <a href="%(heygen)s" target="_blank" rel="noopener">HeyGen</a></td><td>Tu propio avatar y tu voz leyendo un guion; traducción a más de 100 idiomas</td><td>Planes semanales o mensuales y packs de créditos</td><td>4,8 &middot; 26.783</td></tr>
+<tr><td>2. <a href="%(captions)s" target="_blank" rel="noopener">Captions</a></td><td>Edición con IA, subtítulos, doblaje, actores con IA y un gemelo a partir de un selfie</td><td>Suscripciones semanales, mensuales o anuales</td><td>4,7 &middot; 38.320</td></tr>
+<tr><td>3. <a href="%(dora_ios)s">Dora</a></td><td>Escenas de producto, un personaje que se repite, Motion Control; también en la web y dentro de Claude y ChatGPT</td><td>Solo planes de pago, sin generaciones gratis</td><td>4,3 &middot; 15</td></tr>
 <tr><td>4. <a href="%(vmake)s" target="_blank" rel="noopener">Vmake Labs</a></td><td>Plantillas: unboxing, antes y después, producto en mano, lip sync</td><td>Suscripciones y packs de créditos</td><td>4,8 &middot; 5.170</td></tr>
 <tr><td>5. <a href="%(zeely)s" target="_blank" rel="noopener">Zeely</a></td><td>Anuncios a partir del enlace del producto, lanzados en Facebook e Instagram desde la app</td><td>Planes semanales o de varios meses y créditos</td><td>4,6 &middot; 22.813</td></tr>
 </tbody>
@@ -3732,7 +3647,28 @@ distintas.</p>
 <p class="article-note">Las cinco se descargan gratis y cobran con compras dentro
 de la app. Valoraciones de la API pública de Apple a %(date)s.</p>
 
-<h2>1. Dora: las escenas, el personaje y las variaciones</h2>
+<h2>1. HeyGen: tú, en cámara, sin grabar</h2>
+
+<p>HeyGen crea un avatar tuyo a partir de un vídeo corto: tu cara y tu voz.
+Después escribes un guion y el avatar lo dice. Su ficha incluye también avatares a
+partir de fotos, un modo de foto a vídeo hablado (Avatar 4), miles de avatares de
+catálogo, voces con IA con lip sync, subtítulos y traducción de vídeo a más de 100
+idiomas. Su Video Agent convierte una descripción y una imagen en un vídeo con
+recursos. Cobra con planes semanales o mensuales y packs de créditos. Si el
+anuncio es una persona hablando a cámara, y esa persona tienes que ser tú, HeyGen
+es la especialista.</p>
+
+<h2>2. Captions: terminar el anuncio</h2>
+
+<p>Captions (de Mirage) es ante todo un editor: ediciones con IA de un toque, un
+editor por chat que aplica cortes, recursos y ritmo cuando los describes,
+subtítulos automáticos en más de 91 idiomas, doblaje a 29 y eliminación de ruido.
+También crea actores con IA y un gemelo a partir de un selfie. Cobra con
+suscripciones semanales, mensuales o anuales. Combina bien con cualquiera de los
+generadores de la lista: haz los clips en otra app y córtalos y subtitúlalos
+aquí.</p>
+
+<h2>3. Dora: las escenas, el personaje y las variaciones</h2>
 
 <p><a href="%(dora)s">Dora</a> es un generador de vídeo e imagen con IA en
 <a href="%(dora_ios)s">iPhone</a> y en doravideo.com. Para un anuncio UGC, lo
@@ -3757,27 +3693,6 @@ biblioteca de actores ni clona tu voz, y no lanza anuncios. Lip Sync y la voz
 están en la web, todavía no en la app de iPhone. No todas las tomas sirven, así
 que cuenta con varias por gancho, y un vídeo tarda unos 2 minutos, no segundos.
 No hay plan gratis: para generar necesitas un plan de pago.</p>
-
-<h2>2. HeyGen: tú, en cámara, sin grabar</h2>
-
-<p>HeyGen crea un avatar tuyo a partir de un vídeo corto: tu cara y tu voz.
-Después escribes un guion y el avatar lo dice. Su ficha incluye también avatares a
-partir de fotos, un modo de foto a vídeo hablado (Avatar 4), miles de avatares de
-catálogo, voces con IA con lip sync, subtítulos y traducción de vídeo a más de 100
-idiomas. Su Video Agent convierte una descripción y una imagen en un vídeo con
-recursos. Cobra con planes semanales o mensuales y packs de créditos. Si el
-anuncio es una persona hablando a cámara, y esa persona tienes que ser tú, HeyGen
-es la especialista.</p>
-
-<h2>3. Captions: terminar el anuncio</h2>
-
-<p>Captions (de Mirage) es ante todo un editor: ediciones con IA de un toque, un
-editor por chat que aplica cortes, recursos y ritmo cuando los describes,
-subtítulos automáticos en más de 91 idiomas, doblaje a 29 y eliminación de ruido.
-También crea actores con IA y un gemelo a partir de un selfie. Cobra con
-suscripciones semanales, mensuales o anuales. Combina bien con cualquiera de los
-generadores de la lista: haz los clips en otra app y córtalos y subtitúlalos
-aquí.</p>
 
 <h2>4. Vmake Labs: formatos para una foto de producto</h2>
 
@@ -3830,7 +3745,7 @@ RANK_ARTICLES.append(dict(
     es_path="blog/es/mejores-apps-ia-anuncios-ugc-iphone.html",
     en=dict(
         h1="Best AI apps to make UGC video ads on iPhone (2026)",
-        desc=("Dora, HeyGen, Captions, Vmake Labs and Zeely ranked for making UGC-style video ads with AI: "
+        desc=("HeyGen, Captions, Dora, Vmake Labs and Zeely ranked for making UGC-style video ads with AI: "
               "product scenes, talking avatars, editing and launching, from their App Store pages. "
               "Written by Dora's maker, disclosed."),
         kicker="AI video", section="AI video",
@@ -3839,7 +3754,7 @@ RANK_ARTICLES.append(dict(
         body=A11_EN_BODY, sources=A11_EN_SOURCES, rank=UGC_RANK),
     es=dict(
         h1="Las mejores apps de IA para hacer anuncios UGC en iPhone (2026)",
-        desc=("Dora, HeyGen, Captions, Vmake Labs y Zeely ordenadas para hacer anuncios en vídeo estilo UGC con IA: "
+        desc=("HeyGen, Captions, Dora, Vmake Labs y Zeely ordenadas para hacer anuncios en vídeo estilo UGC con IA: "
               "escenas de producto, avatares que hablan, edición y lanzamiento, según su ficha del App Store. "
               "Escrito por quien hace Dora, y lo decimos."),
         kicker="Vídeo con IA", section="Vídeo con IA",
@@ -3870,31 +3785,17 @@ TICKTICK = "https://apps.apple.com/us/app/id626144601"
 _T3 = dict(t3=THREE_TASKS, threetodo=THREE_TODO, top3=TOP3, structured=STRUCTURED, ticktick=TICKTICK)
 
 T3_RANK = [
-    ("3 Tasks - Daily", "https://apps.apple.com/app/id1553693943"),
     ("Three Todo", THREE_TODO),
     ("Top 3: Daily Focus Tasks", TOP3),
+    ("3 Tasks - Daily", "https://apps.apple.com/app/id1553693943"),
     ("Structured: Daily Planner Todo", STRUCTURED),
     ("TickTick: To-Do List & Calendar", TICKTICK),
 ]
 
-_T3_WHY_EN = _rank_box("Why 3 Tasks is #1", [
-    "Three slots and no more, on one screen. There is no list to scroll and nothing to file.",
-    "A stopwatch on each task: tap to start, tap again to pause. Only one runs at a time, so you work on one thing.",
-    "A home screen widget, small, medium or large, that shows your three tasks.",
-    "Free, with no in-app purchases and no subscription. No account.",
-    "On iPhone and iPad, and it runs on Macs with Apple silicon.",
-])
 
-_T3_WHY_ES = _rank_box("Por qué 3 Tasks es la n.º 1", [
-    "Tres huecos y ni uno más, en una sola pantalla. No hay lista que recorrer ni nada que clasificar.",
-    "Un cronómetro en cada tarea: tocas para empezar y otra vez para pausar. Solo corre uno a la vez, así que trabajas en una sola cosa.",
-    "Un widget para la pantalla de inicio, pequeño, mediano o grande, con tus tres tareas.",
-    "Gratis, sin compras dentro de la app y sin suscripción. Sin cuenta.",
-    "En iPhone y iPad, y funciona en Macs con Apple silicon.",
-])
 
 A12_EN_BODY = ("""
-<p><strong>Disclosure: we make 3 Tasks, the app ranked first here.</strong>
+<p><strong>Disclosure: we make 3 Tasks, number 3 on this list.</strong>
 Everything we say about the other apps comes from their own App Store pages, and
 we say plainly where they beat us. Prices and ratings are from the US App Store
 on %(date)s.</p>
@@ -3907,21 +3808,21 @@ enforce the limit. Three do, and two popular planners can be bent to it.</p>
 <h2>The ranking</h2>
 
 <ol>
-<li><a href="%(t3)s">3 Tasks</a>: best overall, three slots, a timer on each, free.</li>
 <li><a href="%(threetodo)s" target="_blank" rel="noopener">Three Todo</a>: best for a long backlog shown three at a time.</li>
 <li><a href="%(top3)s" target="_blank" rel="noopener">Top 3</a>: best if you want the list to start fresh every day.</li>
+<li><a href="%(t3)s">3 Tasks</a>: best overall, three slots, a timer on each, free.</li>
 <li><a href="%(structured)s" target="_blank" rel="noopener">Structured</a>: best if you would rather plan the day on a timeline.</li>
 <li><a href="%(ticktick)s" target="_blank" rel="noopener">TickTick</a>: best full to-do app with a focus timer.</li>
 </ol>
-""" + _T3_WHY_EN + """
+
 <h2>The five apps at a glance</h2>
 
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Limit of three</th><th>Timer</th><th>Price (US)</th><th>Privacy label</th><th>Rating (US)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(t3)s">3 Tasks</a> (ours)</td><td>Yes, three fixed slots</td><td>Stopwatch per task</td><td>Free, no in-app purchases</td><td>Data Used to Track You (usage data)</td><td>5.0 &middot; 5</td></tr>
-<tr><td>2. <a href="%(threetodo)s" target="_blank" rel="noopener">Three Todo</a></td><td>Yes, shows three at a time</td><td>No</td><td>$0.99 upfront</td><td>Data Not Collected</td><td>4.9 &middot; 16</td></tr>
-<tr><td>3. <a href="%(top3)s" target="_blank" rel="noopener">Top 3</a></td><td>Yes, three per day, daily reset</td><td>No</td><td>Free; premium one-time purchase</td><td>Data Not Collected</td><td>4.0 &middot; 5</td></tr>
+<tr><td>1. <a href="%(threetodo)s" target="_blank" rel="noopener">Three Todo</a></td><td>Yes, shows three at a time</td><td>No</td><td>$0.99 upfront</td><td>Data Not Collected</td><td>4.9 &middot; 16</td></tr>
+<tr><td>2. <a href="%(top3)s" target="_blank" rel="noopener">Top 3</a></td><td>Yes, three per day, daily reset</td><td>No</td><td>Free; premium one-time purchase</td><td>Data Not Collected</td><td>4.0 &middot; 5</td></tr>
+<tr><td>3. <a href="%(t3)s">3 Tasks</a></td><td>Yes, three fixed slots</td><td>Stopwatch per task</td><td>Free, no in-app purchases</td><td>Data Used to Track You (usage data)</td><td>5.0 &middot; 5</td></tr>
 <tr><td>4. <a href="%(structured)s" target="_blank" rel="noopener">Structured</a></td><td>No</td><td>Pomodoro</td><td>Free; Pro subscription or lifetime</td><td>Data Linked to You</td><td>4.8 &middot; 167,145</td></tr>
 <tr><td>5. <a href="%(ticktick)s" target="_blank" rel="noopener">TickTick</a></td><td>No</td><td>Pomo timer</td><td>Free; Premium subscription</td><td>Data Linked to You</td><td>4.9 &middot; 46,242</td></tr>
 </tbody>
@@ -3931,7 +3832,21 @@ enforce the limit. Three do, and two popular planners can be bent to it.</p>
 App Store; Apple does not verify them. Ratings are from Apple's public lookup API
 on %(date)s.</p>
 
-<h2>1. 3 Tasks: three slots and a stopwatch</h2>
+<h2>1. Three Todo: a backlog, three at a time</h2>
+
+<p>Three Todo lets you put in as many tasks as you like but only ever shows you
+three. Each one can be Done, Deferred or Dropped, and the app keeps track of how
+you are doing. It costs $0.99, once, and declares that it collects no data. Best
+if your problem is a long list you cannot face, not choosing three things.</p>
+
+<h2>2. Top 3: a fresh list every day</h2>
+
+<p>Top 3 is built on the same rule: three priority tasks a day, no more, and you
+cannot see several days at once. Each day starts fresh. It is free; a one-time
+premium purchase adds editing tasks and planning future days. It declares that it
+collects no data. Best if you want the daily reset that 3 Tasks does not have.</p>
+
+<h2>3. 3 Tasks: three slots and a stopwatch</h2>
 
 <p><a href="%(t3)s">3 Tasks</a> is one screen with three slots. Type a task into
 each, tap one to start its stopwatch, tap again to pause, and mark it done when
@@ -3946,20 +3861,6 @@ history or statistics. There is no sync between devices, no reminders and no
 Apple Watch app, and the app is in English only. It uses Firebase Analytics and
 asks for permission to track, which is why its privacy label reads <em>Data Used
 to Track You</em>; Three Todo and Top 3 declare <em>Data Not Collected</em>.</p>
-
-<h2>2. Three Todo: a backlog, three at a time</h2>
-
-<p>Three Todo lets you put in as many tasks as you like but only ever shows you
-three. Each one can be Done, Deferred or Dropped, and the app keeps track of how
-you are doing. It costs $0.99, once, and declares that it collects no data. Best
-if your problem is a long list you cannot face, not choosing three things.</p>
-
-<h2>3. Top 3: a fresh list every day</h2>
-
-<p>Top 3 is built on the same rule: three priority tasks a day, no more, and you
-cannot see several days at once. Each day starts fresh. It is free; a one-time
-premium purchase adds editing tasks and planning future days. It declares that it
-collects no data. Best if you want the daily reset that 3 Tasks does not have.</p>
 
 <h2>4. Structured: the day as a timeline</h2>
 
@@ -4003,7 +3904,7 @@ and we will correct the page.</p>
 """ % dict(_T3, date=RANK_DATE_EN)
 
 A12_ES_BODY = ("""
-<p><strong>Aviso: 3 Tasks, la app que va primera, es nuestra.</strong> Todo lo
+<p><strong>Aviso: 3 Tasks, la n.º 3 de esta lista, es nuestra.</strong> Todo lo
 que decimos de las demás sale de su propia ficha del App Store, y decimos
 claramente en qué nos ganan. Precios y valoraciones de la App Store de EE. UU. a
 %(date)s.</p>
@@ -4017,21 +3918,21 @@ se pueden adaptar a ello.</p>
 <h2>El ranking</h2>
 
 <ol>
-<li><a href="%(t3)s">3 Tasks</a>: la mejor en conjunto, tres huecos, un cronómetro en cada uno, gratis.</li>
 <li><a href="%(threetodo)s" target="_blank" rel="noopener">Three Todo</a>: la mejor para una lista larga que se muestra de tres en tres.</li>
 <li><a href="%(top3)s" target="_blank" rel="noopener">Top 3</a>: la mejor si quieres que la lista empiece de cero cada día.</li>
+<li><a href="%(t3)s">3 Tasks</a>: la mejor en conjunto, tres huecos, un cronómetro en cada uno, gratis.</li>
 <li><a href="%(structured)s" target="_blank" rel="noopener">Structured</a>: la mejor si prefieres planificar el día en una línea de tiempo.</li>
 <li><a href="%(ticktick)s" target="_blank" rel="noopener">TickTick</a>: la mejor app de tareas completa con temporizador de concentración.</li>
 </ol>
-""" + _T3_WHY_ES + """
+
 <h2>Las cinco apps de un vistazo</h2>
 
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Límite de tres</th><th>Temporizador</th><th>Precio (EE. UU.)</th><th>Etiqueta de privacidad</th><th>Valoración (EE. UU.)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(t3)s">3 Tasks</a> (nuestra)</td><td>Sí, tres huecos fijos</td><td>Cronómetro por tarea</td><td>Gratis, sin compras dentro de la app</td><td>Datos usados para rastrearte (datos de uso)</td><td>5,0 &middot; 5</td></tr>
-<tr><td>2. <a href="%(threetodo)s" target="_blank" rel="noopener">Three Todo</a></td><td>Sí, muestra tres a la vez</td><td>No</td><td>0,99 $ por adelantado</td><td>Datos no recopilados</td><td>4,9 &middot; 16</td></tr>
-<tr><td>3. <a href="%(top3)s" target="_blank" rel="noopener">Top 3</a></td><td>Sí, tres al día, se reinicia cada día</td><td>No</td><td>Gratis; premium de pago único</td><td>Datos no recopilados</td><td>4,0 &middot; 5</td></tr>
+<tr><td>1. <a href="%(threetodo)s" target="_blank" rel="noopener">Three Todo</a></td><td>Sí, muestra tres a la vez</td><td>No</td><td>0,99 $ por adelantado</td><td>Datos no recopilados</td><td>4,9 &middot; 16</td></tr>
+<tr><td>2. <a href="%(top3)s" target="_blank" rel="noopener">Top 3</a></td><td>Sí, tres al día, se reinicia cada día</td><td>No</td><td>Gratis; premium de pago único</td><td>Datos no recopilados</td><td>4,0 &middot; 5</td></tr>
+<tr><td>3. <a href="%(t3)s">3 Tasks</a></td><td>Sí, tres huecos fijos</td><td>Cronómetro por tarea</td><td>Gratis, sin compras dentro de la app</td><td>Datos usados para rastrearte (datos de uso)</td><td>5,0 &middot; 5</td></tr>
 <tr><td>4. <a href="%(structured)s" target="_blank" rel="noopener">Structured</a></td><td>No</td><td>Pomodoro</td><td>Gratis; Pro por suscripción o de por vida</td><td>Datos vinculados a ti</td><td>4,8 &middot; 167.145</td></tr>
 <tr><td>5. <a href="%(ticktick)s" target="_blank" rel="noopener">TickTick</a></td><td>No</td><td>Pomo</td><td>Gratis; Premium por suscripción</td><td>Datos vinculados a ti</td><td>4,9 &middot; 46.242</td></tr>
 </tbody>
@@ -4041,7 +3942,22 @@ se pueden adaptar a ello.</p>
 desarrollador en el App Store; Apple no las verifica. Valoraciones de la API
 pública de Apple a %(date)s.</p>
 
-<h2>1. 3 Tasks: tres huecos y un cronómetro</h2>
+<h2>1. Three Todo: una lista larga, de tres en tres</h2>
+
+<p>Three Todo te deja meter todas las tareas que quieras, pero solo te enseña
+tres. Cada una se puede marcar como hecha, aplazar o descartar, y la app lleva la
+cuenta de cómo vas. Cuesta 0,99 $, una vez, y declara que no recopila datos.
+Ideal si tu problema es una lista larga que no te atreves a mirar, no elegir
+tres cosas.</p>
+
+<h2>2. Top 3: una lista nueva cada día</h2>
+
+<p>Top 3 se basa en la misma regla: tres tareas prioritarias al día, ni una más,
+y no puedes ver varios días a la vez. Cada día empieza de cero. Es gratis; una
+compra única premium añade editar tareas y planificar días futuros. Declara que no
+recopila datos. Ideal si quieres el reinicio diario que 3 Tasks no tiene.</p>
+
+<h2>3. 3 Tasks: tres huecos y un cronómetro</h2>
 
 <p><a href="%(t3)s">3 Tasks</a> es una pantalla con tres huecos. Escribe una tarea
 en cada uno, toca una para poner en marcha su cronómetro, vuelve a tocar para
@@ -4057,21 +3973,6 @@ estadísticas. No sincroniza entre dispositivos, no tiene recordatorios ni app p
 Apple Watch, y está solo en inglés. Usa Firebase Analytics y pide permiso para
 rastrear, por eso su etiqueta de privacidad dice <em>Datos usados para
 rastrearte</em>; Three Todo y Top 3 declaran <em>Datos no recopilados</em>.</p>
-
-<h2>2. Three Todo: una lista larga, de tres en tres</h2>
-
-<p>Three Todo te deja meter todas las tareas que quieras, pero solo te enseña
-tres. Cada una se puede marcar como hecha, aplazar o descartar, y la app lleva la
-cuenta de cómo vas. Cuesta 0,99 $, una vez, y declara que no recopila datos.
-Ideal si tu problema es una lista larga que no te atreves a mirar, no elegir
-tres cosas.</p>
-
-<h2>3. Top 3: una lista nueva cada día</h2>
-
-<p>Top 3 se basa en la misma regla: tres tareas prioritarias al día, ni una más,
-y no puedes ver varios días a la vez. Cada día empieza de cero. Es gratis; una
-compra única premium añade editar tareas y planificar días futuros. Declara que no
-recopila datos. Ideal si quieres el reinicio diario que 3 Tasks no tiene.</p>
 
 <h2>4. Structured: el día en una línea de tiempo</h2>
 
@@ -4120,7 +4021,7 @@ RANK_ARTICLES.append(dict(
     es_path="blog/es/mejores-apps-3-tareas-al-dia-iphone.html",
     en=dict(
         h1="Best to-do apps that limit you to 3 tasks a day (2026)",
-        desc=("3 Tasks, Three Todo, Top 3, Structured and TickTick ranked for focusing on three tasks a day: "
+        desc=("Three Todo, Top 3, 3 Tasks, Structured and TickTick ranked for focusing on three tasks a day: "
               "the limit, timers, price and privacy label, from their App Store pages. "
               "Written by 3 Tasks' maker, disclosed."),
         kicker="Productivity", section="Productivity",
@@ -4129,7 +4030,7 @@ RANK_ARTICLES.append(dict(
         body=A12_EN_BODY, sources=A12_EN_SOURCES, rank=T3_RANK),
     es=dict(
         h1="Las mejores apps de tareas que te limitan a 3 al día (2026)",
-        desc=("3 Tasks, Three Todo, Top 3, Structured y TickTick ordenadas para centrarte en tres tareas al día: "
+        desc=("Three Todo, Top 3, 3 Tasks, Structured y TickTick ordenadas para centrarte en tres tareas al día: "
               "el límite, el temporizador, el precio y la etiqueta de privacidad, según su ficha del App Store. "
               "Escrito por quien hace 3 Tasks, y lo decimos."),
         kicker="Productividad", section="Productividad",
@@ -4165,30 +4066,16 @@ _CR = dict(crypton=CRYPTON, cryptopro=CRYPTOPRO, coingecko=COINGECKO, cmc=CMC,
            coinstats=COINSTATS, delta=DELTA, cointracker=COINTRACKER)
 
 CR_RANK = [
-    ("Crypton: Crypto Tracker", "https://apps.apple.com/app/id1143691286"),
     ("Crypto Pro - Live Coin Tracker", CRYPTOPRO),
     ("CoinGecko: Crypto Tracker", COINGECKO),
     ("CoinMarketCap: Crypto Tracker", CMC),
+    ("Crypton: Crypto Tracker", "https://apps.apple.com/app/id1143691286"),
     ("CoinStats: Crypto Portfolio", COINSTATS),
     ("Delta by etoro", DELTA),
     ("CoinTracker: Portfolio & Taxes", COINTRACKER),
 ]
 
-_CR_WHY_EN = _rank_box("Why Crypton is #1", [
-    "It does one job: prices for the top 250 coins, favourites and a portfolio you type in yourself.",
-    "Free, with no in-app purchases and no subscription. Nothing is held back for a paid tier.",
-    "No account needed, and nothing to connect: no wallet address, no exchange API key.",
-    "Price charts from one day to one year on each coin.",
-    "On iPhone and iPad.",
-])
 
-_CR_WHY_ES = _rank_box("Por qué Crypton es la n.º 1", [
-    "Hace una sola cosa: precios de las 250 principales monedas, favoritas y una cartera que apuntas tú.",
-    "Gratis, sin compras dentro de la app y sin suscripción. No hay nada reservado para un plan de pago.",
-    "Sin cuenta y sin nada que conectar: ni dirección de monedero ni clave de API de un exchange.",
-    "Gráficas de precio de un día a un año en cada moneda.",
-    "En iPhone y iPad.",
-])
 
 CR_FAQ_EN = [
     ("What is the best free crypto portfolio tracker for iPhone?",
@@ -4241,7 +4128,7 @@ CR_FAQ_ES = [
 ]
 
 A13_EN_BODY = ("""
-<p><strong>Disclosure: we make Crypton, the app ranked first here.</strong>
+<p><strong>Disclosure: we make Crypton, number 4 on this list.</strong>
 Everything we say about the other apps comes from their own App Store pages, and
 we say plainly where they beat us. Ratings and in-app purchases are from the US
 App Store on %(date)s.</p>
@@ -4256,24 +4143,24 @@ second, CoinStats, Delta and CoinTracker below are built for it.</p>
 <h2>The ranking</h2>
 
 <ol>
-<li><a href="%(crypton)s">Crypton</a>: best overall for prices and a simple portfolio, free, no account.</li>
 <li><a href="%(cryptopro)s" target="_blank" rel="noopener">Crypto Pro</a>: best for privacy across iPhone, Mac and Apple Watch.</li>
 <li><a href="%(coingecko)s" target="_blank" rel="noopener">CoinGecko</a>: best for market data, categories and NFT floor prices.</li>
 <li><a href="%(cmc)s" target="_blank" rel="noopener">CoinMarketCap</a>: best for watchlists, comparisons and news.</li>
+<li><a href="%(crypton)s">Crypton</a>: best overall for prices and a simple portfolio, free, no account.</li>
 <li><a href="%(coinstats)s" target="_blank" rel="noopener">CoinStats</a>: best for syncing many wallets and exchanges, DeFi included.</li>
 <li><a href="%(delta)s" target="_blank" rel="noopener">Delta</a>: best if you also hold stocks, ETFs or forex.</li>
 <li><a href="%(cointracker)s" target="_blank" rel="noopener">CoinTracker</a>: best for crypto taxes.</li>
 </ol>
-""" + _CR_WHY_EN + """
+
 <h2>The seven apps at a glance</h2>
 
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Portfolio</th><th>Connects wallets / exchanges</th><th>How it charges (US)</th><th>Privacy label</th><th>Rating (US)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(crypton)s">Crypton</a> (ours)</td><td>Entered by hand, top 250 coins</td><td>No</td><td>Free, no in-app purchases</td><td>Data Used to Track You (usage data)</td><td>4.7 &middot; 182</td></tr>
-<tr><td>2. <a href="%(cryptopro)s" target="_blank" rel="noopener">Crypto Pro</a></td><td>By hand or imported</td><td>Wallet addresses and exchange API keys</td><td>Free; Premium subscription</td><td>Data Not Linked to You</td><td>4.7 &middot; 46,609</td></tr>
-<tr><td>3. <a href="%(coingecko)s" target="_blank" rel="noopener">CoinGecko</a></td><td>From your transactions, several portfolios</td><td>Not in its listing</td><td>Free; Premium subscription</td><td>Data Linked to You (email)</td><td>4.8 &middot; 27,104</td></tr>
-<tr><td>4. <a href="%(cmc)s" target="_blank" rel="noopener">CoinMarketCap</a></td><td>Portfolio and watchlists</td><td>Not in its listing</td><td>Free; subscription plans</td><td>Data Used to Track You (usage data)</td><td>4.8 &middot; 172,884</td></tr>
+<tr><td>1. <a href="%(cryptopro)s" target="_blank" rel="noopener">Crypto Pro</a></td><td>By hand or imported</td><td>Wallet addresses and exchange API keys</td><td>Free; Premium subscription</td><td>Data Not Linked to You</td><td>4.7 &middot; 46,609</td></tr>
+<tr><td>2. <a href="%(coingecko)s" target="_blank" rel="noopener">CoinGecko</a></td><td>From your transactions, several portfolios</td><td>Not in its listing</td><td>Free; Premium subscription</td><td>Data Linked to You (email)</td><td>4.8 &middot; 27,104</td></tr>
+<tr><td>3. <a href="%(cmc)s" target="_blank" rel="noopener">CoinMarketCap</a></td><td>Portfolio and watchlists</td><td>Not in its listing</td><td>Free; subscription plans</td><td>Data Used to Track You (usage data)</td><td>4.8 &middot; 172,884</td></tr>
+<tr><td>4. <a href="%(crypton)s">Crypton</a></td><td>Entered by hand, top 250 coins</td><td>No</td><td>Free, no in-app purchases</td><td>Data Used to Track You (usage data)</td><td>4.7 &middot; 182</td></tr>
 <tr><td>5. <a href="%(coinstats)s" target="_blank" rel="noopener">CoinStats</a></td><td>Synced, with profit and loss</td><td>300+ wallets and exchanges</td><td>Free; Premium subscription</td><td>Data Not Linked to You</td><td>4.8 &middot; 85,783</td></tr>
 <tr><td>6. <a href="%(delta)s" target="_blank" rel="noopener">Delta</a></td><td>Crypto, stocks, ETFs, forex</td><td>200+ exchanges, brokers and wallets</td><td>Free up to 10 assets; PRO and PRO+ subscriptions</td><td>Data Used to Track You (identifiers, usage data)</td><td>4.7 &middot; 11,366</td></tr>
 <tr><td>7. <a href="%(cointracker)s" target="_blank" rel="noopener">CoinTracker</a></td><td>Net worth, gains and losses</td><td>500+ integrations</td><td>Free app, no in-app purchases listed</td><td>Data Not Linked to You</td><td>4.7 &middot; 14,351</td></tr>
@@ -4285,7 +4172,39 @@ App Store; Apple does not verify them. "Not in its listing" means the App Store
 description does not mention it, not that the app cannot do it. Ratings are
 from Apple's public lookup API on %(date)s.</p>
 
-<h2>1. Crypton: prices and a simple portfolio, nothing else</h2>
+<h2>1. Crypto Pro: private, ad-free, everywhere Apple</h2>
+
+<p>Crypto Pro has been on the App Store since 2015 and leans on privacy: its
+listing says it does no user monitoring or analytics, keeps personal data on your
+device, stores keys in the Apple keychain and syncs through iCloud only if you
+choose. It covers cryptocurrencies, precious metals and fiat, imports holdings
+from wallet addresses or exchange API keys, and has widgets, an Apple Watch app
+with complications, a Mac menu bar widget, Face ID lock and price notifications.
+It is free and ad-free; a Premium subscription with a 7-day free trial adds
+candlestick charts and automatic portfolio sync, and the listing says inviting
+friends can unlock it too. Best if you want more than Crypton without giving up
+privacy.</p>
+
+<h2>2. CoinGecko: the market, in depth</h2>
+
+<p>CoinGecko tracks prices, market cap, volume and charts for more than 10,000
+cryptocurrencies, plus floor prices for over 3,000 NFT collections, 100+ coin
+categories and data on 700+ exchanges. You can build several portfolios from
+your transactions, synced between the app and the website, set price and large
+mover alerts, and add home screen widgets. It is free; Premium is a subscription
+that its listing describes as ad-free with extra perks. Best for researching the
+market, not just checking it.</p>
+
+<h2>3. CoinMarketCap: watchlists, comparisons and news</h2>
+
+<p>CoinMarketCap pairs prices with crypto news, shareable watchlists, price
+alerts, a converter and side-by-side comparisons of two coins over periods from
+one hour to all time. You can view your portfolio in 90+ fiat currencies, crypto
+or precious metals, and its listing says you can stay logged out and keep your
+data on the device. It is free, with monthly and yearly subscription plans. Best
+if you follow the whole market and the news around it.</p>
+
+<h2>4. Crypton: prices and a simple portfolio, nothing else</h2>
 
 <p><a href="%(crypton)s">Crypton</a> lists prices for the top 250 coins with
 their 24-hour change and market rank, lets you pin favourites, and shows price
@@ -4301,38 +4220,6 @@ listing mentions no price alerts, widgets, news, Apple Watch app or tax reports.
 The portfolio is in US dollars only, and the app is in English only. Its privacy
 label reads <em>Data Used to Track You</em> (usage data); Crypto Pro, CoinStats
 and CoinTracker declare no data linked to you.</p>
-
-<h2>2. Crypto Pro: private, ad-free, everywhere Apple</h2>
-
-<p>Crypto Pro has been on the App Store since 2015 and leans on privacy: its
-listing says it does no user monitoring or analytics, keeps personal data on your
-device, stores keys in the Apple keychain and syncs through iCloud only if you
-choose. It covers cryptocurrencies, precious metals and fiat, imports holdings
-from wallet addresses or exchange API keys, and has widgets, an Apple Watch app
-with complications, a Mac menu bar widget, Face ID lock and price notifications.
-It is free and ad-free; a Premium subscription with a 7-day free trial adds
-candlestick charts and automatic portfolio sync, and the listing says inviting
-friends can unlock it too. Best if you want more than Crypton without giving up
-privacy.</p>
-
-<h2>3. CoinGecko: the market, in depth</h2>
-
-<p>CoinGecko tracks prices, market cap, volume and charts for more than 10,000
-cryptocurrencies, plus floor prices for over 3,000 NFT collections, 100+ coin
-categories and data on 700+ exchanges. You can build several portfolios from
-your transactions, synced between the app and the website, set price and large
-mover alerts, and add home screen widgets. It is free; Premium is a subscription
-that its listing describes as ad-free with extra perks. Best for researching the
-market, not just checking it.</p>
-
-<h2>4. CoinMarketCap: watchlists, comparisons and news</h2>
-
-<p>CoinMarketCap pairs prices with crypto news, shareable watchlists, price
-alerts, a converter and side-by-side comparisons of two coins over periods from
-one hour to all time. You can view your portfolio in 90+ fiat currencies, crypto
-or precious metals, and its listing says you can stay logged out and keep your
-data on the device. It is free, with monthly and yearly subscription plans. Best
-if you follow the whole market and the news around it.</p>
 
 <h2>5. CoinStats: every wallet and exchange in one place</h2>
 
@@ -4393,7 +4280,7 @@ and we will correct the page.</p>
 """ % dict(_CR, date=RANK_DATE_EN)
 
 A13_ES_BODY = ("""
-<p><strong>Aviso: Crypton, la app que va primera, es nuestra.</strong> Todo lo
+<p><strong>Aviso: Crypton, la n.º 4 de esta lista, es nuestra.</strong> Todo lo
 que decimos de las demás sale de su propia ficha del App Store, y decimos
 claramente en qué nos ganan. Valoraciones y compras dentro de la app de la App
 Store de EE. UU. a %(date)s.</p>
@@ -4408,24 +4295,24 @@ CoinStats, Delta y CoinTracker, más abajo, están hechas para eso.</p>
 <h2>El ranking</h2>
 
 <ol>
-<li><a href="%(crypton)s">Crypton</a>: la mejor en conjunto para precios y una cartera sencilla, gratis y sin cuenta.</li>
 <li><a href="%(cryptopro)s" target="_blank" rel="noopener">Crypto Pro</a>: la mejor para la privacidad en iPhone, Mac y Apple Watch.</li>
 <li><a href="%(coingecko)s" target="_blank" rel="noopener">CoinGecko</a>: la mejor para datos de mercado, categorías y precios mínimos de NFT.</li>
 <li><a href="%(cmc)s" target="_blank" rel="noopener">CoinMarketCap</a>: la mejor para listas de seguimiento, comparaciones y noticias.</li>
+<li><a href="%(crypton)s">Crypton</a>: la mejor en conjunto para precios y una cartera sencilla, gratis y sin cuenta.</li>
 <li><a href="%(coinstats)s" target="_blank" rel="noopener">CoinStats</a>: la mejor para sincronizar muchos monederos y exchanges, DeFi incluido.</li>
 <li><a href="%(delta)s" target="_blank" rel="noopener">Delta</a>: la mejor si también tienes acciones, ETF o divisas.</li>
 <li><a href="%(cointracker)s" target="_blank" rel="noopener">CoinTracker</a>: la mejor para los impuestos de cripto.</li>
 </ol>
-""" + _CR_WHY_ES + """
+
 <h2>Las siete apps de un vistazo</h2>
 
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Cartera</th><th>Conecta monederos / exchanges</th><th>Cómo cobra (EE. UU.)</th><th>Etiqueta de privacidad</th><th>Valoración (EE. UU.)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(crypton)s">Crypton</a> (nuestra)</td><td>Apuntada a mano, 250 principales monedas</td><td>No</td><td>Gratis, sin compras dentro de la app</td><td>Datos usados para rastrearte (datos de uso)</td><td>4,7 &middot; 182</td></tr>
-<tr><td>2. <a href="%(cryptopro)s" target="_blank" rel="noopener">Crypto Pro</a></td><td>A mano o importada</td><td>Direcciones de monedero y claves de API de exchanges</td><td>Gratis; Premium por suscripción</td><td>Datos no vinculados a ti</td><td>4,7 &middot; 46.609</td></tr>
-<tr><td>3. <a href="%(coingecko)s" target="_blank" rel="noopener">CoinGecko</a></td><td>A partir de tus operaciones, varias carteras</td><td>No lo dice su ficha</td><td>Gratis; Premium por suscripción</td><td>Datos vinculados a ti (correo)</td><td>4,8 &middot; 27.104</td></tr>
-<tr><td>4. <a href="%(cmc)s" target="_blank" rel="noopener">CoinMarketCap</a></td><td>Cartera y listas de seguimiento</td><td>No lo dice su ficha</td><td>Gratis; planes por suscripción</td><td>Datos usados para rastrearte (datos de uso)</td><td>4,8 &middot; 172.884</td></tr>
+<tr><td>1. <a href="%(cryptopro)s" target="_blank" rel="noopener">Crypto Pro</a></td><td>A mano o importada</td><td>Direcciones de monedero y claves de API de exchanges</td><td>Gratis; Premium por suscripción</td><td>Datos no vinculados a ti</td><td>4,7 &middot; 46.609</td></tr>
+<tr><td>2. <a href="%(coingecko)s" target="_blank" rel="noopener">CoinGecko</a></td><td>A partir de tus operaciones, varias carteras</td><td>No lo dice su ficha</td><td>Gratis; Premium por suscripción</td><td>Datos vinculados a ti (correo)</td><td>4,8 &middot; 27.104</td></tr>
+<tr><td>3. <a href="%(cmc)s" target="_blank" rel="noopener">CoinMarketCap</a></td><td>Cartera y listas de seguimiento</td><td>No lo dice su ficha</td><td>Gratis; planes por suscripción</td><td>Datos usados para rastrearte (datos de uso)</td><td>4,8 &middot; 172.884</td></tr>
+<tr><td>4. <a href="%(crypton)s">Crypton</a></td><td>Apuntada a mano, 250 principales monedas</td><td>No</td><td>Gratis, sin compras dentro de la app</td><td>Datos usados para rastrearte (datos de uso)</td><td>4,7 &middot; 182</td></tr>
 <tr><td>5. <a href="%(coinstats)s" target="_blank" rel="noopener">CoinStats</a></td><td>Sincronizada, con ganancias y pérdidas</td><td>Más de 300 monederos y exchanges</td><td>Gratis; Premium por suscripción</td><td>Datos no vinculados a ti</td><td>4,8 &middot; 85.783</td></tr>
 <tr><td>6. <a href="%(delta)s" target="_blank" rel="noopener">Delta</a></td><td>Cripto, acciones, ETF, divisas</td><td>Más de 200 exchanges, brókers y monederos</td><td>Gratis hasta 10 activos; PRO y PRO+ por suscripción</td><td>Datos usados para rastrearte (identificadores, datos de uso)</td><td>4,7 &middot; 11.366</td></tr>
 <tr><td>7. <a href="%(cointracker)s" target="_blank" rel="noopener">CoinTracker</a></td><td>Patrimonio, ganancias y pérdidas</td><td>Más de 500 integraciones</td><td>App gratis, sin compras dentro de la app en su ficha</td><td>Datos no vinculados a ti</td><td>4,7 &middot; 14.351</td></tr>
@@ -4437,7 +4324,41 @@ desarrollador en el App Store; Apple no las verifica. "No lo dice su ficha"
 significa que la descripción del App Store no lo menciona, no que la app no
 pueda hacerlo. Valoraciones de la API pública de Apple a %(date)s.</p>
 
-<h2>1. Crypton: precios y una cartera sencilla, nada más</h2>
+<h2>1. Crypto Pro: privada, sin anuncios, en todo el ecosistema de Apple</h2>
+
+<p>Crypto Pro está en el App Store desde 2015 y apuesta por la privacidad: su
+ficha dice que no vigila al usuario ni usa analítica, que guarda los datos
+personales en tu dispositivo, las claves en el llavero de Apple y que solo
+sincroniza por iCloud si tú quieres. Cubre criptomonedas, metales preciosos y
+monedas tradicionales, importa lo que tienes desde direcciones de monedero o
+claves de API de exchanges, y tiene widgets, app para Apple Watch con
+complicaciones, widget en la barra de menús del Mac, bloqueo con Face ID y avisos
+de precio. Es gratis y sin anuncios; una suscripción Premium con 7 días de prueba
+añade gráficas de velas y sincronización automática de la cartera, y su ficha
+dice que también se desbloquea invitando a amigos. Ideal si quieres más que
+Crypton sin renunciar a la privacidad.</p>
+
+<h2>2. CoinGecko: el mercado, a fondo</h2>
+
+<p>CoinGecko sigue precios, capitalización, volumen y gráficas de más de 10.000
+criptomonedas, además del precio mínimo de más de 3.000 colecciones de NFT, más
+de 100 categorías de monedas y datos de más de 700 exchanges. Puedes crear varias
+carteras a partir de tus operaciones, sincronizadas entre la app y la web, poner
+alertas de precio y de grandes movimientos, y añadir widgets. Es gratis; Premium
+es una suscripción que su ficha describe como sin anuncios y con ventajas extra.
+Ideal para investigar el mercado, no solo para mirarlo.</p>
+
+<h2>3. CoinMarketCap: listas, comparaciones y noticias</h2>
+
+<p>CoinMarketCap junta precios con noticias de cripto, listas de seguimiento que
+se pueden compartir, alertas de precio, un conversor y comparaciones de dos
+monedas en periodos de una hora a todo su historial. Puedes ver tu cartera en más
+de 90 monedas tradicionales, en cripto o en metales preciosos, y su ficha dice
+que puedes usarla sin iniciar sesión y guardar los datos en el dispositivo. Es
+gratis, con planes por suscripción mensuales y anuales. Ideal si sigues todo el
+mercado y las noticias.</p>
+
+<h2>4. Crypton: precios y una cartera sencilla, nada más</h2>
 
 <p><a href="%(crypton)s">Crypton</a> muestra los precios de las 250 principales
 monedas con su variación en 24 horas y su posición en el mercado, te deja marcar
@@ -4453,40 +4374,6 @@ menciona alertas de precio, widgets, noticias, app para Apple Watch ni informes
 fiscales. La cartera va solo en dólares y la app está solo en inglés. Su
 etiqueta de privacidad dice <em>Datos usados para rastrearte</em> (datos de uso);
 Crypto Pro, CoinStats y CoinTracker declaran que no vinculan datos a ti.</p>
-
-<h2>2. Crypto Pro: privada, sin anuncios, en todo el ecosistema de Apple</h2>
-
-<p>Crypto Pro está en el App Store desde 2015 y apuesta por la privacidad: su
-ficha dice que no vigila al usuario ni usa analítica, que guarda los datos
-personales en tu dispositivo, las claves en el llavero de Apple y que solo
-sincroniza por iCloud si tú quieres. Cubre criptomonedas, metales preciosos y
-monedas tradicionales, importa lo que tienes desde direcciones de monedero o
-claves de API de exchanges, y tiene widgets, app para Apple Watch con
-complicaciones, widget en la barra de menús del Mac, bloqueo con Face ID y avisos
-de precio. Es gratis y sin anuncios; una suscripción Premium con 7 días de prueba
-añade gráficas de velas y sincronización automática de la cartera, y su ficha
-dice que también se desbloquea invitando a amigos. Ideal si quieres más que
-Crypton sin renunciar a la privacidad.</p>
-
-<h2>3. CoinGecko: el mercado, a fondo</h2>
-
-<p>CoinGecko sigue precios, capitalización, volumen y gráficas de más de 10.000
-criptomonedas, además del precio mínimo de más de 3.000 colecciones de NFT, más
-de 100 categorías de monedas y datos de más de 700 exchanges. Puedes crear varias
-carteras a partir de tus operaciones, sincronizadas entre la app y la web, poner
-alertas de precio y de grandes movimientos, y añadir widgets. Es gratis; Premium
-es una suscripción que su ficha describe como sin anuncios y con ventajas extra.
-Ideal para investigar el mercado, no solo para mirarlo.</p>
-
-<h2>4. CoinMarketCap: listas, comparaciones y noticias</h2>
-
-<p>CoinMarketCap junta precios con noticias de cripto, listas de seguimiento que
-se pueden compartir, alertas de precio, un conversor y comparaciones de dos
-monedas en periodos de una hora a todo su historial. Puedes ver tu cartera en más
-de 90 monedas tradicionales, en cripto o en metales preciosos, y su ficha dice
-que puedes usarla sin iniciar sesión y guardar los datos en el dispositivo. Es
-gratis, con planes por suscripción mensuales y anuales. Ideal si sigues todo el
-mercado y las noticias.</p>
 
 <h2>5. CoinStats: todos tus monederos y exchanges en un sitio</h2>
 
@@ -4553,7 +4440,7 @@ RANK_ARTICLES.append(dict(
     es_path="blog/es/mejores-apps-cartera-cripto-iphone.html",
     en=dict(
         h1="Best crypto portfolio tracker apps for iPhone in 2026",
-        desc=("Crypton, Crypto Pro, CoinGecko, CoinMarketCap, CoinStats, Delta and CoinTracker ranked: "
+        desc=("Crypto Pro, CoinGecko, Crypton, CoinMarketCap, CoinStats, Delta and CoinTracker ranked: "
               "prices, portfolios, wallet and exchange sync, taxes, how each charges and its privacy label, "
               "from their App Store pages. Written by Crypton's maker, disclosed."),
         kicker="Crypto", section="Crypto",
@@ -4562,7 +4449,7 @@ RANK_ARTICLES.append(dict(
         body=A13_EN_BODY, sources=A13_EN_SOURCES, rank=CR_RANK, faq=CR_FAQ_EN),
     es=dict(
         h1="Las mejores apps para seguir tu cartera de criptomonedas en iPhone (2026)",
-        desc=("Crypton, Crypto Pro, CoinGecko, CoinMarketCap, CoinStats, Delta y CoinTracker ordenadas: "
+        desc=("Crypto Pro, CoinGecko, Crypton, CoinMarketCap, CoinStats, Delta y CoinTracker ordenadas: "
               "precios, cartera, conexión con monederos y exchanges, impuestos, cómo cobra cada una y su "
               "etiqueta de privacidad, según su ficha del App Store. Escrito por quien hace Crypton, y lo decimos."),
         kicker="Cripto", section="Cripto",
@@ -4598,17 +4485,17 @@ _ALB = dict(pv=PV, safety=SAFETYPV, keepsafe=KEEPSAFE, picsafe=PICSAFE, secretpv
 _ALB_ES = dict(_ALB, sec="../../photo-vault-security.html", date=ALB_DATE_ES)
 
 ALBUM_RANK = [
-    ("Photo Vault: Hide Pics Video", "https://apps.apple.com/app/id1532670722"),
     ("Safety Photo+Video Pro", SAFETYPV),
     ("Secret Photo Vault: Keepsafe", KEEPSAFE),
     ("Private Photo Vault - Pic Safe", PICSAFE),
+    ("Photo Vault: Hide Pics Video", "https://apps.apple.com/app/id1532670722"),
     ("Secret Photo Vault - Hide Pics", SECRETPV),
     ("Lock: Private Photo Vault SPV", SPVLOCK),
     ("Keep Photo Safe Vault", KEEPPS),
 ]
 
 A14_EN_BODY = """
-<p><strong>Disclosure: we make Photo Vault, ranked first, so read this as our
+<p><strong>Disclosure: we make Photo Vault, number 4 below, so read this as our
 opinion.</strong> Every app below says on its own App Store page (or, for Pic Safe,
 on its website) that you can give an album its own password. We rank them by how
 much else they keep off other people's servers, and say where each one beats us.
@@ -4621,10 +4508,10 @@ someone without opening the rest.</p>
 <div class="table-scroll"><table>
 <thead><tr><th>#</th><th>App</th><th>Price (US)</th><th>Cloud backup</th><th>Decoy PIN</th><th>Rating (US)</th></tr></thead>
 <tbody>
-<tr><td>1</td><td><a href="%(pv)s">Photo Vault</a> (ours)</td><td>Free to try; yearly subscription, 7 days free</td><td>Optional iCloud copy (your own iCloud, end-to-end encrypted, off by default); encrypted backup file you keep</td><td>No</td><td>4.2 &middot; 6</td></tr>
-<tr><td>2</td><td><a href="%(safety)s" target="_blank" rel="noopener">Safety Photo+Video Pro</a></td><td>Free; cloud sync $2.99/month, $19.99/year or $59.99 once</td><td>Optional, encrypted on the device first</td><td>Yes</td><td>4.7 &middot; 5,176</td></tr>
-<tr><td>3</td><td><a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a></td><td>$23.99/year or $9.99/month</td><td>Yes, up to 10,000 items</td><td>&mdash;</td><td>4.7 &middot; 384,037</td></tr>
-<tr><td>4</td><td><a href="%(picsafe)s" target="_blank" rel="noopener">Private Photo Vault &ndash; Pic Safe</a></td><td>Plans from $6.99 to $39.99</td><td>Yes (Cloud Vault, premium)</td><td>Yes</td><td>4.8 &middot; 1,016,507</td></tr>
+<tr><td>1</td><td><a href="%(safety)s" target="_blank" rel="noopener">Safety Photo+Video Pro</a></td><td>Free; cloud sync $2.99/month, $19.99/year or $59.99 once</td><td>Optional, encrypted on the device first</td><td>Yes</td><td>4.7 &middot; 5,176</td></tr>
+<tr><td>2</td><td><a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a></td><td>$23.99/year or $9.99/month</td><td>Yes, up to 10,000 items</td><td>&mdash;</td><td>4.7 &middot; 384,037</td></tr>
+<tr><td>3</td><td><a href="%(picsafe)s" target="_blank" rel="noopener">Private Photo Vault &ndash; Pic Safe</a></td><td>Plans from $6.99 to $39.99</td><td>Yes (Cloud Vault, premium)</td><td>Yes</td><td>4.8 &middot; 1,016,507</td></tr>
+<tr><td>4</td><td><a href="%(pv)s">Photo Vault</a></td><td>Free to try; yearly subscription, 7 days free</td><td>Optional iCloud copy (your own iCloud, end-to-end encrypted, off by default); encrypted backup file you keep</td><td>Yes (Premium)</td><td>4.2 &middot; 6</td></tr>
 <tr><td>5</td><td><a href="%(secretpv)s" target="_blank" rel="noopener">Secret Photo Vault &ndash; Hide Pics</a></td><td>Premium from $4.99 to $39.99</td><td>Multi-device backup</td><td>&mdash;</td><td>4.7 &middot; 436</td></tr>
 <tr><td>6</td><td><a href="%(spvlock)s" target="_blank" rel="noopener">Lock: Private Photo Vault SPV</a></td><td>$2.99/month, $4.99/year or $12.99 once</td><td>&mdash;</td><td>&mdash;</td><td>4.6 &middot; 76</td></tr>
 <tr><td>7</td><td><a href="%(keepps)s" target="_blank" rel="noopener">Keep Photo Safe Vault</a></td><td>$6.99 upfront, no in-app purchases</td><td>&mdash;</td><td>&mdash;</td><td>4.6 &middot; 42</td></tr>
@@ -4634,7 +4521,23 @@ someone without opening the rest.</p>
 <p class="article-note">A dash means the app's App Store description does not
 mention it, not that it is certainly missing.</p>
 
-<h2>1. Photo Vault: album passwords with nothing leaving the phone</h2>
+<h2>1. Safety Photo+Video Pro: album passwords plus a decoy vault</h2>
+<p>Its page lists passwords for individual albums, a separate decoy vault, transfer
+over your local Wi-Fi through a browser, and an optional cloud backup that is
+encrypted on the device before upload, which support says it cannot decrypt. The
+best pick here if you want a decoy and an optional backup.</p>
+
+<h2>2. Keepsafe: album PINs with a cloud</h2>
+<p>&ldquo;Album Lock&rdquo; assigns individual PIN codes to albums, and its private
+cloud keeps up to 10,000 items, so the vault survives a lost phone. The trade-off
+is that your photos live on its servers.</p>
+
+<h2>3. Private Photo Vault &ndash; Pic Safe: the veteran</h2>
+<p>Over a million ratings. Its <a href="%(ppvsite)s" target="_blank"
+rel="noopener">website</a> lists password-protected albums, and the app has a
+decoy password and a premium Cloud Vault.</p>
+
+<h2>4. Photo Vault: album passwords with nothing leaving the phone</h2>
 <p>Face ID, Touch ID or a passcode opens the app, and any album can have its own
 password on top. No account, no server; iCloud only if you turn on the optional end-to-end encrypted copy (off by default); the vault is excluded from
 iCloud backups and its files can't be read while the iPhone is locked. The icon can
@@ -4642,24 +4545,7 @@ pass as Calculator, Notes or Weather, turning the phone face down jumps to anoth
 app, and you can export the whole vault, album passwords included, to one encrypted
 file. <a href="%(sec)s">How it protects your files</a>.</p>
 <p><strong>Where others beat it:</strong> an album password controls who can open the
-album in the app; the files are not encrypted again with it. No decoy PIN yet, and
-very few ratings.</p>
-
-<h2>2. Safety Photo+Video Pro: album passwords plus a decoy vault</h2>
-<p>Its page lists passwords for individual albums, a separate decoy vault, transfer
-over your local Wi-Fi through a browser, and an optional cloud backup that is
-encrypted on the device before upload, which support says it cannot decrypt. The
-best pick here if you want a decoy and an optional backup.</p>
-
-<h2>3. Keepsafe: album PINs with a cloud</h2>
-<p>&ldquo;Album Lock&rdquo; assigns individual PIN codes to albums, and its private
-cloud keeps up to 10,000 items, so the vault survives a lost phone. The trade-off
-is that your photos live on its servers.</p>
-
-<h2>4. Private Photo Vault &ndash; Pic Safe: the veteran</h2>
-<p>Over a million ratings. Its <a href="%(ppvsite)s" target="_blank"
-rel="noopener">website</a> lists password-protected albums, and the app has a
-decoy password and a premium Cloud Vault.</p>
+album in the app; the files are not encrypted again with it. Its decoy code (a second passcode that opens a separate vault) needs Premium, and it has very few ratings.</p>
 
 <h2>5 to 7. Smaller apps that do the basics</h2>
 <p><strong>Secret Photo Vault &ndash; Hide Pics</strong> adds a unique password to
@@ -4678,7 +4564,7 @@ A14_EN_SOURCES = """
 """ % _ALB
 
 A14_ES_BODY = """
-<p><strong>Aviso: Photo Vault, la primera, es nuestra, as&iacute; que l&eacute;elo
+<p><strong>Aviso: Photo Vault, la n.º 4 de esta lista, es nuestra, as&iacute; que l&eacute;elo
 como nuestra opini&oacute;n.</strong> Todas las apps de la lista dicen en su ficha del
 App Store (o, en el caso de Pic Safe, en su web) que un &aacute;lbum puede tener su
 propia contrase&ntilde;a. Las ordenamos por lo que mantienen fuera de servidores
@@ -4692,10 +4578,10 @@ ense&ntilde;ar el de las vacaciones sin abrir el resto.</p>
 <div class="table-scroll"><table>
 <thead><tr><th>#</th><th>App</th><th>Precio (EE. UU.)</th><th>Copia en la nube</th><th>PIN se&ntilde;uelo</th><th>Valoraci&oacute;n (EE. UU.)</th></tr></thead>
 <tbody>
-<tr><td>1</td><td><a href="%(pv)s">Photo Vault</a> (nuestra)</td><td>Prueba gratis; suscripci&oacute;n anual, 7 d&iacute;as gratis</td><td>Copia opcional en tu iCloud (cifrada de extremo a extremo, desactivada por defecto); archivo de copia cifrado que guardas t&uacute;</td><td>No</td><td>4,2 &middot; 6</td></tr>
-<tr><td>2</td><td><a href="%(safety)s" target="_blank" rel="noopener">Safety Photo+Video Pro</a></td><td>Gratis; nube $2,99/mes, $19,99/a&ntilde;o o $59,99 de una vez</td><td>Opcional, cifrada antes en el m&oacute;vil</td><td>S&iacute;</td><td>4,7 &middot; 5.176</td></tr>
-<tr><td>3</td><td><a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a></td><td>$23,99/a&ntilde;o o $9,99/mes</td><td>S&iacute;, hasta 10.000 elementos</td><td>&mdash;</td><td>4,7 &middot; 384.037</td></tr>
-<tr><td>4</td><td><a href="%(picsafe)s" target="_blank" rel="noopener">Private Photo Vault &ndash; Pic Safe</a></td><td>Planes de $6,99 a $39,99</td><td>S&iacute; (Cloud Vault, de pago)</td><td>S&iacute;</td><td>4,8 &middot; 1.016.507</td></tr>
+<tr><td>1</td><td><a href="%(safety)s" target="_blank" rel="noopener">Safety Photo+Video Pro</a></td><td>Gratis; nube $2,99/mes, $19,99/a&ntilde;o o $59,99 de una vez</td><td>Opcional, cifrada antes en el m&oacute;vil</td><td>S&iacute;</td><td>4,7 &middot; 5.176</td></tr>
+<tr><td>2</td><td><a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a></td><td>$23,99/a&ntilde;o o $9,99/mes</td><td>S&iacute;, hasta 10.000 elementos</td><td>&mdash;</td><td>4,7 &middot; 384.037</td></tr>
+<tr><td>3</td><td><a href="%(picsafe)s" target="_blank" rel="noopener">Private Photo Vault &ndash; Pic Safe</a></td><td>Planes de $6,99 a $39,99</td><td>S&iacute; (Cloud Vault, de pago)</td><td>S&iacute;</td><td>4,8 &middot; 1.016.507</td></tr>
+<tr><td>4</td><td><a href="%(pv)s">Photo Vault</a></td><td>Prueba gratis; suscripci&oacute;n anual, 7 d&iacute;as gratis</td><td>Copia opcional en tu iCloud (cifrada de extremo a extremo, desactivada por defecto); archivo de copia cifrado que guardas t&uacute;</td><td>S&iacute; (Premium)</td><td>4,2 &middot; 6</td></tr>
 <tr><td>5</td><td><a href="%(secretpv)s" target="_blank" rel="noopener">Secret Photo Vault &ndash; Hide Pics</a></td><td>Premium de $4,99 a $39,99</td><td>Copia en varios dispositivos</td><td>&mdash;</td><td>4,7 &middot; 436</td></tr>
 <tr><td>6</td><td><a href="%(spvlock)s" target="_blank" rel="noopener">Lock: Private Photo Vault SPV</a></td><td>$2,99/mes, $4,99/a&ntilde;o o $12,99 de una vez</td><td>&mdash;</td><td>&mdash;</td><td>4,6 &middot; 76</td></tr>
 <tr><td>7</td><td><a href="%(keepps)s" target="_blank" rel="noopener">Keep Photo Safe Vault</a></td><td>$6,99 de entrada, sin compras dentro</td><td>&mdash;</td><td>&mdash;</td><td>4,6 &middot; 42</td></tr>
@@ -4705,7 +4591,24 @@ ense&ntilde;ar el de las vacaciones sin abrir el resto.</p>
 <p class="article-note">Un guion significa que la descripci&oacute;n de la app en el
 App Store no lo menciona, no que seguro no lo tenga.</p>
 
-<h2>1. Photo Vault: contrase&ntilde;a por &aacute;lbum sin que nada salga del m&oacute;vil</h2>
+<h2>1. Safety Photo+Video Pro: contrase&ntilde;a por &aacute;lbum y b&oacute;veda se&ntilde;uelo</h2>
+<p>Su ficha incluye contrase&ntilde;as para &aacute;lbumes concretos, una b&oacute;veda
+se&ntilde;uelo aparte, transferencia por la wifi de casa desde el navegador y una copia
+en la nube opcional que se cifra en el m&oacute;vil antes de subirla y que, seg&uacute;n
+dicen, su soporte no puede descifrar. La mejor aqu&iacute; si quieres se&ntilde;uelo y
+copia opcional.</p>
+
+<h2>2. Keepsafe: PIN por &aacute;lbum con nube</h2>
+<p>&laquo;Album Lock&raquo; pone un PIN a cada &aacute;lbum, y su nube privada guarda
+hasta 10.000 elementos, as&iacute; que la b&oacute;veda sobrevive si pierdes el
+m&oacute;vil. A cambio, tus fotos est&aacute;n en sus servidores.</p>
+
+<h2>3. Private Photo Vault &ndash; Pic Safe: la veterana</h2>
+<p>M&aacute;s de un mill&oacute;n de valoraciones. Su <a href="%(ppvsite)s"
+target="_blank" rel="noopener">web</a> incluye &aacute;lbumes con contrase&ntilde;a, y la
+app tiene contrase&ntilde;a se&ntilde;uelo y Cloud Vault de pago.</p>
+
+<h2>4. Photo Vault: contrase&ntilde;a por &aacute;lbum sin que nada salga del m&oacute;vil</h2>
 <p>Face ID, Touch ID o c&oacute;digo para abrir la app, y cualquier &aacute;lbum puede
 tener adem&aacute;s su contrase&ntilde;a. Sin cuenta, sin servidor y sin
 sincronizaci&oacute;n; la b&oacute;veda queda fuera de las copias de iCloud y sus
@@ -4716,24 +4619,7 @@ a un archivo cifrado. <a href="%(sec)s">C&oacute;mo protege tus archivos</a> (en
 ingl&eacute;s).</p>
 <p><strong>En qu&eacute; le ganan:</strong> la contrase&ntilde;a del &aacute;lbum decide
 qui&eacute;n lo abre dentro de la app; los archivos no se vuelven a cifrar con ella.
-Todav&iacute;a no tiene PIN se&ntilde;uelo y tiene muy pocas valoraciones.</p>
-
-<h2>2. Safety Photo+Video Pro: contrase&ntilde;a por &aacute;lbum y b&oacute;veda se&ntilde;uelo</h2>
-<p>Su ficha incluye contrase&ntilde;as para &aacute;lbumes concretos, una b&oacute;veda
-se&ntilde;uelo aparte, transferencia por la wifi de casa desde el navegador y una copia
-en la nube opcional que se cifra en el m&oacute;vil antes de subirla y que, seg&uacute;n
-dicen, su soporte no puede descifrar. La mejor aqu&iacute; si quieres se&ntilde;uelo y
-copia opcional.</p>
-
-<h2>3. Keepsafe: PIN por &aacute;lbum con nube</h2>
-<p>&laquo;Album Lock&raquo; pone un PIN a cada &aacute;lbum, y su nube privada guarda
-hasta 10.000 elementos, as&iacute; que la b&oacute;veda sobrevive si pierdes el
-m&oacute;vil. A cambio, tus fotos est&aacute;n en sus servidores.</p>
-
-<h2>4. Private Photo Vault &ndash; Pic Safe: la veterana</h2>
-<p>M&aacute;s de un mill&oacute;n de valoraciones. Su <a href="%(ppvsite)s"
-target="_blank" rel="noopener">web</a> incluye &aacute;lbumes con contrase&ntilde;a, y la
-app tiene contrase&ntilde;a se&ntilde;uelo y Cloud Vault de pago.</p>
+Su c&oacute;digo se&ntilde;uelo (un segundo c&oacute;digo que abre otra b&oacute;veda) es de Premium, y tiene muy pocas valoraciones.</p>
 
 <h2>5 a 7. Apps peque&ntilde;as que cumplen lo b&aacute;sico</h2>
 <p><strong>Secret Photo Vault &ndash; Hide Pics</strong> pone una contrase&ntilde;a a
@@ -4786,7 +4672,7 @@ RANK_ARTICLES.append(dict(
     es_path="blog/es/mejores-apps-ocultar-fotos-contrasena-por-album.html",
     en=dict(
         h1="Best photo vault apps with a separate password for each album (2026)",
-        desc=("Photo Vault, Safety Photo+Video Pro, Keepsafe, Pic Safe and three smaller vaults that let you "
+        desc=("Safety Photo+Video Pro, Keepsafe, Photo Vault, Pic Safe and three smaller vaults that let you "
               "lock each album with its own password, ranked: price, cloud, decoy PIN and ratings from their "
               "App Store pages. Written by Photo Vault's maker, disclosed."),
         kicker="Privacy", section="Privacy",
@@ -4795,7 +4681,7 @@ RANK_ARTICLES.append(dict(
         body=A14_EN_BODY, sources=A14_EN_SOURCES, rank=ALBUM_RANK, faq=ALBUM_FAQ_EN),
     es=dict(
         h1="Las mejores apps para ocultar fotos con contraseña por álbum (2026)",
-        desc=("Photo Vault, Safety Photo+Video Pro, Keepsafe, Pic Safe y tres bóvedas más pequeñas que dejan "
+        desc=("Safety Photo+Video Pro, Keepsafe, Photo Vault, Pic Safe y tres bóvedas más pequeñas que dejan "
               "bloquear cada álbum con su contraseña, ordenadas: precio, nube, PIN señuelo y valoraciones según "
               "su ficha del App Store. Escrito por quien hace Photo Vault, y lo decimos."),
         kicker="Privacidad", section="Privacidad",
@@ -4805,9 +4691,9 @@ RANK_ARTICLES.append(dict(
 ))
 
 MOVE_RANK = [
-    ("Photo Vault: Hide Pics Video", "https://apps.apple.com/app/id1532670722"),
     ("Private Photo Vault - Arca", "https://apps.apple.com/us/app/id6779157571"),
     ("Safety Photo+Video Pro", SAFETYPV),
+    ("Photo Vault: Hide Pics Video", "https://apps.apple.com/app/id1532670722"),
     ("Secret Photo Vault: Keepsafe", KEEPSAFE),
     ("Private Photo Vault - Pic Safe", PICSAFE),
 ]
@@ -4826,9 +4712,9 @@ photo arrived on the new phone, then erase the old one.</p>
 <div class="table-scroll"><table>
 <thead><tr><th>App</th><th>How the vault moves</th><th>Goes through a server?</th></tr></thead>
 <tbody>
-<tr><td><a href="%(pv)s">Photo Vault</a> (ours)</td><td>Settings &rarr; Backup &rarr; Export: one encrypted file with every photo, video, album and album password. Send it to the new iPhone (AirDrop, Files, your own iCloud Drive) and restore it there with the same password. Or turn on its optional iCloud copy (Premium, end-to-end encrypted in your own iCloud) and restore on the new iPhone.</td><td>Optional, off by default</td></tr>
 <tr><td><a href="%(arca)s" target="_blank" rel="noopener">Arca</a></td><td>Its page lists an encrypted backup file you save to Files or iCloud Drive.</td><td>No</td></tr>
 <tr><td><a href="%(safety)s" target="_blank" rel="noopener">Safety Photo+Video Pro</a></td><td>Optional cloud backup, encrypted on the device first, then restored on the new device; also Wi-Fi transfer through a browser.</td><td>Optional</td></tr>
+<tr><td><a href="%(pv)s">Photo Vault</a></td><td>Settings &rarr; Backup &rarr; Export: one encrypted file with every photo, video, album and album password. Send it to the new iPhone (AirDrop, Files, your own iCloud Drive) and restore it there with the same password. Or turn on its optional iCloud copy (Premium, end-to-end encrypted in your own iCloud) and restore on the new iPhone.</td><td>Optional, off by default</td></tr>
 <tr><td><a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a></td><td>Its private cloud (up to 10,000 items).</td><td>Yes</td></tr>
 <tr><td><a href="%(picsafe)s" target="_blank" rel="noopener">Private Photo Vault &ndash; Pic Safe</a></td><td>Its <a href="%(ppvfaq)s" target="_blank" rel="noopener">FAQ</a>: set up Cloud Vault (an optional premium feature), let it finish, then sign in on the new phone.</td><td>Yes</td></tr>
 <tr><td>Photos app, Hidden album</td><td>Moves with the rest of your library through iCloud Photos, as <a href="%(hidden)s" target="_blank" rel="noopener">Apple explains</a>.</td><td>Yes, iCloud</td></tr>
@@ -4878,9 +4764,9 @@ borra el viejo.</p>
 <div class="table-scroll"><table>
 <thead><tr><th>App</th><th>C&oacute;mo se pasa la b&oacute;veda</th><th>&iquest;Pasa por un servidor?</th></tr></thead>
 <tbody>
-<tr><td><a href="%(pv)s">Photo Vault</a> (nuestra)</td><td>Ajustes &rarr; Copia de seguridad &rarr; Exportar: un archivo cifrado con todas las fotos, v&iacute;deos, &aacute;lbumes y sus contrase&ntilde;as. Lo mandas al iPhone nuevo (AirDrop, Archivos, tu propio iCloud Drive) y lo restauras all&iacute; con la misma contrase&ntilde;a. O activas su copia opcional en iCloud (Premium, cifrada de extremo a extremo en tu propio iCloud) y la restauras en el nuevo.</td><td>Opcional, desactivada por defecto</td></tr>
 <tr><td><a href="%(arca)s" target="_blank" rel="noopener">Arca</a></td><td>Su ficha incluye un archivo de copia cifrado que guardas en Archivos o iCloud Drive.</td><td>No</td></tr>
 <tr><td><a href="%(safety)s" target="_blank" rel="noopener">Safety Photo+Video Pro</a></td><td>Copia en la nube opcional, cifrada antes en el m&oacute;vil, que se restaura en el nuevo; tambi&eacute;n transferencia por wifi desde el navegador.</td><td>Opcional</td></tr>
+<tr><td><a href="%(pv)s">Photo Vault</a></td><td>Ajustes &rarr; Copia de seguridad &rarr; Exportar: un archivo cifrado con todas las fotos, v&iacute;deos, &aacute;lbumes y sus contrase&ntilde;as. Lo mandas al iPhone nuevo (AirDrop, Archivos, tu propio iCloud Drive) y lo restauras all&iacute; con la misma contrase&ntilde;a. O activas su copia opcional en iCloud (Premium, cifrada de extremo a extremo en tu propio iCloud) y la restauras en el nuevo.</td><td>Opcional, desactivada por defecto</td></tr>
 <tr><td><a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a></td><td>Su nube privada (hasta 10.000 elementos).</td><td>S&iacute;</td></tr>
 <tr><td><a href="%(picsafe)s" target="_blank" rel="noopener">Private Photo Vault &ndash; Pic Safe</a></td><td>Su <a href="%(ppvfaq)s" target="_blank" rel="noopener">ayuda</a>: activar Cloud Vault (de pago, opcional), esperar a que termine e iniciar sesi&oacute;n en el m&oacute;vil nuevo.</td><td>S&iacute;</td></tr>
 <tr><td>App Fotos, &aacute;lbum Oculto</td><td>Se mueve con el resto de la fototeca por Fotos en iCloud, como <a href="%(hidden)s" target="_blank" rel="noopener">explica Apple</a>.</td><td>S&iacute;, iCloud</td></tr>
@@ -5300,7 +5186,7 @@ corregimos la página.</p>
 MM_FAQ_EN = [
     ("Which iPhone app lets me use Claude, Gemini, Grok and other models in one place?",
      "Several do: Poe, ChatOn, Chat AI: Ask Agent Anything, Nova, Genie, Ask AI and ChatHub. Poe has the widest menu; "
-     "ChatOn, Genie and Nova add images and files. Ask AI (ours) is chat only, with models such as Gemini, Claude, Grok, "
+     "ChatOn, Genie and Nova add images and files. Ask AI is chat only, with models such as Gemini, Claude, Grok, "
      "DeepSeek and Perplexity Sonar and a few free messages a day."),
     ("Is there a free multi-model AI chat app?",
      "Most of these apps let you download them free but put the stronger models behind a subscription, often weekly. "
@@ -5315,7 +5201,7 @@ MM_FAQ_EN = [
 MM_FAQ_ES = [
     ("¿Qué app de iPhone me deja usar Claude, Gemini, Grok y otros modelos en el mismo sitio?",
      "Varias: Poe, ChatOn, Chat AI: Ask Agent Anything, Nova, Genie, Ask AI y ChatHub. Poe tiene el menú más amplio; "
-     "ChatOn, Genie y Nova añaden imágenes y archivos. Ask AI (nuestra) es solo chat, con modelos como Gemini, Claude, "
+     "ChatOn, Genie y Nova añaden imágenes y archivos. Ask AI es solo chat, con modelos como Gemini, Claude, "
      "Grok, DeepSeek y Perplexity Sonar y unos pocos mensajes gratis al día."),
     ("¿Hay alguna app gratis con varios modelos de IA?",
      "Casi todas se descargan gratis pero ponen los modelos potentes detrás de una suscripción, a menudo semanal. "
@@ -5380,30 +5266,18 @@ _CI = dict(
     askai=FASTAI_BLOG,
 )
 CI_RANK = [
-    ("Brainy AI Helper Chat & Create", "https://apps.apple.com/app/id1667947372"),
     ("ChatGPT", "https://apps.apple.com/us/app/id6448311069"),
     ("Google Gemini", "https://apps.apple.com/us/app/id6477489729"),
     ("Grok AI", "https://apps.apple.com/us/app/id6670324846"),
+    ("Brainy AI Helper Chat & Create", "https://apps.apple.com/app/id1667947372"),
     ("ChatOn AI - Chat Bot Assistant", "https://apps.apple.com/us/app/id1661308505"),
     ("Chatbot AI Assistant - Genie", "https://apps.apple.com/us/app/id1658377526"),
     ("Meta AI", "https://apps.apple.com/us/app/id1558240027"),
 ]
 
-_BRAINY_WHY_EN = _rank_box("Why Brainy is #1", [
-    "Three tools students and everyday users reach for, in one small app: AI chat, images from text, and a camera scanner for text and math problems.",
-    "Images come from Google's Nano Banana model (Gemini 2.5 Flash Image), the same family Gemini uses.",
-    "Free to try, chat and images, with daily limits.",
-    "Not tied to one big company's ecosystem or social network.",
-])
-_BRAINY_WHY_ES = _rank_box("Por qué Brainy es la n.º 1", [
-    "Tres herramientas que estudiantes y usuarios de diario buscan, en una app pequeña: chat con IA, imágenes a partir de texto y un escáner con la cámara para textos y problemas de matemáticas.",
-    "Las imágenes salen del modelo Nano Banana de Google (Gemini 2.5 Flash Image), la misma familia que usa Gemini.",
-    "Se puede probar gratis, chat e imágenes, con límites diarios.",
-    "No te ata al ecosistema ni a la red social de una gran empresa.",
-])
 
 A17_EN_BODY = ("""
-<p><strong>Disclosure: we make Brainy, the app ranked first here.</strong>
+<p><strong>Disclosure: we make Brainy, number 4 on this list.</strong>
 Everything we say about the other apps comes from their own App Store pages, and
 we say plainly where they beat us. Prices and ratings are from the US App Store
 on %(date)s.</p>
@@ -5415,24 +5289,24 @@ models; the others put someone else's models in a simpler package.</p>
 <h2>The ranking</h2>
 
 <ol>
-<li><a href="%(brainy)s">Brainy</a>: best small all-in-one for chat, images and homework scans.</li>
 <li><a href="%(chatgpt)s" target="_blank" rel="noopener">ChatGPT</a>: best overall assistant, with image generation built in.</li>
 <li><a href="%(gemini)s" target="_blank" rel="noopener">Google Gemini</a>: best for images, and video on paid plans.</li>
 <li><a href="%(grok)s" target="_blank" rel="noopener">Grok</a>: best for video with sound.</li>
+<li><a href="%(brainy)s">Brainy</a>: best small all-in-one for chat, images and homework scans.</li>
 <li><a href="%(chaton)s" target="_blank" rel="noopener">ChatOn</a>: best for several chat models plus images.</li>
 <li><a href="%(genie)s" target="_blank" rel="noopener">Genie</a>: best for image editing and PDFs.</li>
 <li><a href="%(meta)s" target="_blank" rel="noopener">Meta AI</a>: best free option.</li>
 </ol>
-""" + _BRAINY_WHY_EN + """
+
 <h2>The seven apps at a glance</h2>
 
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Images</th><th>Video</th><th>Also does</th><th>How it charges (US)</th><th>Rating (US)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(brainy)s">Brainy</a> (ours)</td><td>Yes (Nano Banana)</td><td>No</td><td>Camera scanner for text and math</td><td>Free to try; $6.99/week or $89.99/year</td><td>Few ratings</td></tr>
-<tr><td>2. <a href="%(chatgpt)s" target="_blank" rel="noopener">ChatGPT</a></td><td>Yes</td><td>Not on its page</td><td>Voice, photo upload</td><td>Free; Go $8, Plus $19.99, Pro from $100</td><td>4.8 &middot; 11,079,400</td></tr>
-<tr><td>3. <a href="%(gemini)s" target="_blank" rel="noopener">Google Gemini</a></td><td>Yes (Nano Banana 2)</td><td>Paid plans</td><td>Gemini Live voice, files</td><td>Free; AI Plus $4.99, AI Pro $19.99</td><td>4.7 &middot; 2,321,604</td></tr>
-<tr><td>4. <a href="%(grok)s" target="_blank" rel="noopener">Grok</a></td><td>Yes</td><td>Yes, with sound</td><td>Web and X search, files, voice</td><td>Free; SuperGrok Lite $10, SuperGrok $30</td><td>4.9 &middot; 1,487,413</td></tr>
+<tr><td>1. <a href="%(chatgpt)s" target="_blank" rel="noopener">ChatGPT</a></td><td>Yes</td><td>Not on its page</td><td>Voice, photo upload</td><td>Free; Go $8, Plus $19.99, Pro from $100</td><td>4.8 &middot; 11,079,400</td></tr>
+<tr><td>2. <a href="%(gemini)s" target="_blank" rel="noopener">Google Gemini</a></td><td>Yes (Nano Banana 2)</td><td>Paid plans</td><td>Gemini Live voice, files</td><td>Free; AI Plus $4.99, AI Pro $19.99</td><td>4.7 &middot; 2,321,604</td></tr>
+<tr><td>3. <a href="%(grok)s" target="_blank" rel="noopener">Grok</a></td><td>Yes</td><td>Yes, with sound</td><td>Web and X search, files, voice</td><td>Free; SuperGrok Lite $10, SuperGrok $30</td><td>4.9 &middot; 1,487,413</td></tr>
+<tr><td>4. <a href="%(brainy)s">Brainy</a></td><td>Yes (Nano Banana)</td><td>No</td><td>Camera scanner for text and math</td><td>Free to try; $6.99/week or $89.99/year</td><td>Few ratings</td></tr>
 <tr><td>5. <a href="%(chaton)s" target="_blank" rel="noopener">ChatOn</a></td><td>Yes</td><td>From photos</td><td>Several chat models, web, PDFs</td><td>Weekly from $6.99; yearly $39.99 to $59.99</td><td>4.7 &middot; 286,441</td></tr>
 <tr><td>6. <a href="%(genie)s" target="_blank" rel="noopener">Genie</a></td><td>Yes, plus editing</td><td>Not on its page</td><td>Web and Deep Search, PDFs, voice</td><td>Weekly $5.99 or $7.99; yearly $39.99</td><td>4.7 &middot; 201,891</td></tr>
 <tr><td>7. <a href="%(meta)s" target="_blank" rel="noopener">Meta AI</a></td><td>Yes</td><td>No (only as input)</td><td>PDFs, voice, research reports</td><td>Free, no in-app purchases listed</td><td>4.7 &middot; 268,932</td></tr>
@@ -5444,7 +5318,26 @@ does not mention it, not that the app cannot do it. Prices are the in-app
 purchases the App Store shows. Ratings are from Apple's public lookup API on
 %(date)s.</p>
 
-<h2>1. Brainy: small, and does the three things</h2>
+<h2>1. ChatGPT: the reference</h2>
+
+<p>OpenAI's own app. It is the strongest general assistant on this list, makes
+images inside the chat, takes photos and voice, and has a free tier. Paid plans
+go from Go at $8 to Plus at $19.99 a month. Its page does not mention video.
+Choose it if you want one assistant that does most things well.</p>
+
+<h2>2. Google Gemini: images, and video if you pay</h2>
+
+<p>Google's app makes images with Nano Banana 2, talks with you in Gemini Live
+and reads files. Its page says video generation is on paid plans; AI Plus starts
+at $4.99 a month and AI Pro is $19.99, with Google storage included.</p>
+
+<h2>3. Grok: video with sound</h2>
+
+<p>xAI's app makes images and, with Grok Imagine, videos with sound, and it
+searches both the web and X. It has a free tier; SuperGrok Lite is $10 and
+SuperGrok $30 a month.</p>
+
+<h2>4. Brainy: small, and does the three things</h2>
 
 <p><a href="%(brainy)s">Brainy</a> is a chat, an image generator and a camera
 scanner in one app. Chat answers come from DeepSeek. Images are made with
@@ -5461,25 +5354,6 @@ Gemini and Grok use their own frontier models and ChatOn lets you pick. It makes
 no video (Gemini, Grok and ChatOn do), does not read PDFs, and has no voice mode.
 Its yearly plan costs more than Genie's or ChatOn's, and it has far fewer
 ratings than any app here.</p>
-
-<h2>2. ChatGPT: the reference</h2>
-
-<p>OpenAI's own app. It is the strongest general assistant on this list, makes
-images inside the chat, takes photos and voice, and has a free tier. Paid plans
-go from Go at $8 to Plus at $19.99 a month. Its page does not mention video.
-Choose it if you want one assistant that does most things well.</p>
-
-<h2>3. Google Gemini: images, and video if you pay</h2>
-
-<p>Google's app makes images with Nano Banana 2, talks with you in Gemini Live
-and reads files. Its page says video generation is on paid plans; AI Plus starts
-at $4.99 a month and AI Pro is $19.99, with Google storage included.</p>
-
-<h2>4. Grok: video with sound</h2>
-
-<p>xAI's app makes images and, with Grok Imagine, videos with sound, and it
-searches both the web and X. It has a free tier; SuperGrok Lite is $10 and
-SuperGrok $30 a month.</p>
 
 <h2>5. ChatOn: several models, plus pictures</h2>
 
@@ -5534,7 +5408,7 @@ and we will correct the page.</p>
 """ % dict(_CI, date=CI_DATE_EN)
 
 A17_ES_BODY = ("""
-<p><strong>Aviso: Brainy, la app que va primera, es nuestra.</strong> Todo lo que
+<p><strong>Aviso: Brainy, la n.º 4 de esta lista, es nuestra.</strong> Todo lo que
 decimos de las demás sale de su propia ficha del App Store, y decimos claramente
 en qué nos ganan. Precios y valoraciones de la App Store de EE. UU. a %(date)s.</p>
 
@@ -5546,24 +5420,24 @@ sencillo.</p>
 <h2>El ranking</h2>
 
 <ol>
-<li><a href="%(brainy)s">Brainy</a>: la mejor todo en uno pequeña para chat, imágenes y escanear deberes.</li>
 <li><a href="%(chatgpt)s" target="_blank" rel="noopener">ChatGPT</a>: el mejor asistente en general, con generación de imágenes incluida.</li>
 <li><a href="%(gemini)s" target="_blank" rel="noopener">Google Gemini</a>: la mejor para imágenes, y vídeo en los planes de pago.</li>
 <li><a href="%(grok)s" target="_blank" rel="noopener">Grok</a>: la mejor para vídeo con sonido.</li>
+<li><a href="%(brainy)s">Brainy</a>: la mejor todo en uno pequeña para chat, imágenes y escanear deberes.</li>
 <li><a href="%(chaton)s" target="_blank" rel="noopener">ChatOn</a>: la mejor para varios modelos de chat e imágenes.</li>
 <li><a href="%(genie)s" target="_blank" rel="noopener">Genie</a>: la mejor para editar imágenes y leer PDF.</li>
 <li><a href="%(meta)s" target="_blank" rel="noopener">Meta AI</a>: la mejor gratis.</li>
 </ol>
-""" + _BRAINY_WHY_ES + """
+
 <h2>Las siete apps de un vistazo</h2>
 
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Imágenes</th><th>Vídeo</th><th>Además</th><th>Cómo cobra (EE. UU.)</th><th>Valoración (EE. UU.)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(brainy)s">Brainy</a> (nuestra)</td><td>Sí (Nano Banana)</td><td>No</td><td>Escáner de textos y matemáticas con la cámara</td><td>Gratis para probar; 6,99 $/semana o 89,99 $/año</td><td>Pocas valoraciones</td></tr>
-<tr><td>2. <a href="%(chatgpt)s" target="_blank" rel="noopener">ChatGPT</a></td><td>Sí</td><td>No lo dice su ficha</td><td>Voz, subir fotos</td><td>Gratis; Go 8 $, Plus 19,99 $, Pro desde 100 $</td><td>4,8 &middot; 11.079.400</td></tr>
-<tr><td>3. <a href="%(gemini)s" target="_blank" rel="noopener">Google Gemini</a></td><td>Sí (Nano Banana 2)</td><td>Planes de pago</td><td>Voz con Gemini Live, archivos</td><td>Gratis; AI Plus 4,99 $, AI Pro 19,99 $</td><td>4,7 &middot; 2.321.604</td></tr>
-<tr><td>4. <a href="%(grok)s" target="_blank" rel="noopener">Grok</a></td><td>Sí</td><td>Sí, con sonido</td><td>Búsqueda en la web y en X, archivos, voz</td><td>Gratis; SuperGrok Lite 10 $, SuperGrok 30 $</td><td>4,9 &middot; 1.487.413</td></tr>
+<tr><td>1. <a href="%(chatgpt)s" target="_blank" rel="noopener">ChatGPT</a></td><td>Sí</td><td>No lo dice su ficha</td><td>Voz, subir fotos</td><td>Gratis; Go 8 $, Plus 19,99 $, Pro desde 100 $</td><td>4,8 &middot; 11.079.400</td></tr>
+<tr><td>2. <a href="%(gemini)s" target="_blank" rel="noopener">Google Gemini</a></td><td>Sí (Nano Banana 2)</td><td>Planes de pago</td><td>Voz con Gemini Live, archivos</td><td>Gratis; AI Plus 4,99 $, AI Pro 19,99 $</td><td>4,7 &middot; 2.321.604</td></tr>
+<tr><td>3. <a href="%(grok)s" target="_blank" rel="noopener">Grok</a></td><td>Sí</td><td>Sí, con sonido</td><td>Búsqueda en la web y en X, archivos, voz</td><td>Gratis; SuperGrok Lite 10 $, SuperGrok 30 $</td><td>4,9 &middot; 1.487.413</td></tr>
+<tr><td>4. <a href="%(brainy)s">Brainy</a></td><td>Sí (Nano Banana)</td><td>No</td><td>Escáner de textos y matemáticas con la cámara</td><td>Gratis para probar; 6,99 $/semana o 89,99 $/año</td><td>Pocas valoraciones</td></tr>
 <tr><td>5. <a href="%(chaton)s" target="_blank" rel="noopener">ChatOn</a></td><td>Sí</td><td>A partir de fotos</td><td>Varios modelos de chat, web, PDF</td><td>Semanal desde 6,99 $; anual de 39,99 a 59,99 $</td><td>4,7 &middot; 286.441</td></tr>
 <tr><td>6. <a href="%(genie)s" target="_blank" rel="noopener">Genie</a></td><td>Sí, y edición</td><td>No lo dice su ficha</td><td>Web y Deep Search, PDF, voz</td><td>Semanal 5,99 o 7,99 $; anual 39,99 $</td><td>4,7 &middot; 201.891</td></tr>
 <tr><td>7. <a href="%(meta)s" target="_blank" rel="noopener">Meta AI</a></td><td>Sí</td><td>No (solo como entrada)</td><td>PDF, voz, informes de investigación</td><td>Gratis, sin compras en la ficha</td><td>4,7 &middot; 268.932</td></tr>
@@ -5575,7 +5449,27 @@ del App Store no lo menciona, no que la app no pueda hacerlo. Los precios son la
 compras dentro de la app que muestra el App Store. Valoraciones de la API pública
 de Apple a %(date)s.</p>
 
-<h2>1. Brainy: pequeña, y hace las tres cosas</h2>
+<h2>1. ChatGPT: la referencia</h2>
+
+<p>La app de OpenAI. Es el asistente general más potente de la lista, hace
+imágenes dentro del chat, admite fotos y voz, y tiene versión gratis. Los planes
+de pago van de Go, a 8 $, a Plus, a 19,99 $ al mes. Su ficha no habla de vídeo.
+Elígela si quieres un asistente que haga bien casi todo.</p>
+
+<h2>2. Google Gemini: imágenes, y vídeo si pagas</h2>
+
+<p>La app de Google hace imágenes con Nano Banana 2, conversa contigo en Gemini
+Live y lee archivos. Su ficha dice que el vídeo está en los planes de pago; AI Plus
+empieza en 4,99 $ al mes y AI Pro cuesta 19,99 $, con almacenamiento de Google
+incluido.</p>
+
+<h2>3. Grok: vídeo con sonido</h2>
+
+<p>La app de xAI hace imágenes y, con Grok Imagine, vídeos con sonido, y busca
+tanto en la web como en X. Tiene versión gratis; SuperGrok Lite cuesta 10 $ y
+SuperGrok 30 $ al mes.</p>
+
+<h2>4. Brainy: pequeña, y hace las tres cosas</h2>
 
 <p><a href="%(brainy)s">Brainy</a> es un chat, un generador de imágenes y un
 escáner con la cámara en una sola app. Las respuestas del chat las da DeepSeek.
@@ -5593,26 +5487,6 @@ mientras ChatGPT, Gemini y Grok usan sus propios modelos punteros y ChatOn te de
 elegir. No hace vídeo (Gemini, Grok y ChatOn sí), no lee PDF y no tiene modo de
 voz. Su plan anual cuesta más que el de Genie o el de ChatOn, y tiene muchas menos
 valoraciones que cualquiera de la lista.</p>
-
-<h2>2. ChatGPT: la referencia</h2>
-
-<p>La app de OpenAI. Es el asistente general más potente de la lista, hace
-imágenes dentro del chat, admite fotos y voz, y tiene versión gratis. Los planes
-de pago van de Go, a 8 $, a Plus, a 19,99 $ al mes. Su ficha no habla de vídeo.
-Elígela si quieres un asistente que haga bien casi todo.</p>
-
-<h2>3. Google Gemini: imágenes, y vídeo si pagas</h2>
-
-<p>La app de Google hace imágenes con Nano Banana 2, conversa contigo en Gemini
-Live y lee archivos. Su ficha dice que el vídeo está en los planes de pago; AI Plus
-empieza en 4,99 $ al mes y AI Pro cuesta 19,99 $, con almacenamiento de Google
-incluido.</p>
-
-<h2>4. Grok: vídeo con sonido</h2>
-
-<p>La app de xAI hace imágenes y, con Grok Imagine, vídeos con sonido, y busca
-tanto en la web como en X. Tiene versión gratis; SuperGrok Lite cuesta 10 $ y
-SuperGrok 30 $ al mes.</p>
 
 <h2>5. ChatOn: varios modelos, y además fotos</h2>
 
@@ -5670,7 +5544,7 @@ corregimos la página.</p>
 CI_FAQ_EN = [
     ("What is the best AI app for chat and images on iPhone?",
      "For the strongest assistant, ChatGPT. For a small app that chats, makes images from text with Google's Nano "
-     "Banana model and scans homework with the camera, Brainy (ours). For video too, Grok or Gemini on a paid plan."),
+     "Banana model and scans homework with the camera, Brainy. For video too, Grok or Gemini on a paid plan."),
     ("Which AI app makes images for free?",
      "ChatGPT, Gemini, Grok and Meta AI all have free tiers that make images, with limits. Brainy lets you try images "
      "for free with a daily limit."),
@@ -5684,7 +5558,7 @@ CI_FAQ_EN = [
 CI_FAQ_ES = [
     ("¿Cuál es la mejor app de IA para chatear y hacer imágenes en iPhone?",
      "Como asistente más potente, ChatGPT. Para una app pequeña que chatea, hace imágenes con el modelo Nano Banana "
-     "de Google y escanea deberes con la cámara, Brainy (nuestra). Si además quieres vídeo, Grok o Gemini con un plan "
+     "de Google y escanea deberes con la cámara, Brainy. Si además quieres vídeo, Grok o Gemini con un plan "
      "de pago."),
     ("¿Qué app de IA hace imágenes gratis?",
      "ChatGPT, Gemini, Grok y Meta AI tienen versiones gratis que hacen imágenes, con límites. Brainy deja probar las "
@@ -5741,7 +5615,7 @@ OFF_RU_FAQ = [
     ("Можно ли пользоваться ChatGPT в России?",
      "Россия не входит в список стран, где OpenAI официально поддерживает ChatGPT. Локальное приложение работает без аккаунта и без серверов, поэтому от этого не зависит."),
     ("Pinku бесплатное?",
-     "Да. Pinku бесплатно скачивается, и шесть моделей до 1 ГБ, включая модель по умолчанию, работают без оплаты и без ограничений. "
+     "Да. Pinku бесплатно скачивается, и чат с моделью по умолчанию, Gemma 3 1B, ничего не стоит. "
      "Pinku Pro — необязательная годовая подписка или разовая покупка: крупные модели, свои инструкции, диктовка и чтение вслух."),
     ("Какой iPhone нужен?",
      "Pinku работает на iOS 18.6 и новее, на устройствах с Metal 3, и на Mac с Apple silicon (macOS 14 и новее). Модели, которые не помещаются в память устройства, Pinku скрывает, а перед загрузкой проверяет свободную память, чтобы не закрыться."),
@@ -5749,10 +5623,10 @@ OFF_RU_FAQ = [
      "Хуже, чем облачные ChatGPT или Claude: модели от 1 до 5 ГБ заметно слабее. Маленькие модели по-русски отвечают проще, чем по-английски; крупные (Qwen3 4B и 8B, Gemma 3n) отвечают лучше. Стоит попробовать две-три модели на своих вопросах."),
 ]
 
-OFF_RU_RANK = [_N[k] for k in ("pinku", "enclave", "pocketpal", "privatellm", "privacyai")]
+OFF_RU_RANK = [_N[k] for k in ("enclave", "pocketpal", "pinku", "privatellm", "privacyai")]
 
 OFF_RU_BODY = ("""
-<p><strong>Важно: Pinku, приложение на первом месте, делаем мы.</strong> Всё, что
+<p><strong>Важно: Pinku, третье приложение в этом списке, делаем мы.</strong> Всё, что
 сказано о других приложениях, взято из их собственных страниц в App Store, и мы
 прямо пишем, в чём они лучше нас. Цены и оценки из российского App Store на
 %(date)s.</p>
@@ -5765,32 +5639,22 @@ OFF_RU_BODY = ("""
 <h2>Рейтинг</h2>
 
 <ol>
-<li><a href="%(pinku)s">Pinku</a>: лучшее для приватного чата без интернета на iPhone и Mac, с интерфейсом на русском.</li>
 <li><a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a>: лучшее, если иногда нужны и облачные модели.</li>
 <li><a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a>: лучшее, чтобы запускать любую модель с Hugging Face.</li>
+<li><a href="%(pinku)s">Pinku</a>: лучшее для приватного чата без интернета на iPhone и Mac, с интерфейсом на русском.</li>
 <li><a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a>: разовая оплата, Siri и модели побольше.</li>
 <li><a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a>: агенты и инструменты, тоже на русском.</li>
 </ol>
 
-<div class="article-note rank-box">
-<p><strong>Почему Pinku на первом месте</strong></p>
-<ul>
-<li>Всё на устройстве: модель скачивается один раз, дальше каждый ответ создаётся на вашем iPhone или Mac, без сети.</li>
-<li>Без аккаунта и без сервера. Чаты никогда не покидают устройство; в этикетке конфиденциальности Apple указаны только история покупок и анонимный идентификатор пользователя для покупки Pinku Pro.</li>
-<li>Интерфейс на русском (а также на английском, испанском, немецком, французском, японском, корейском и китайском).</li>
-<li>Бесплатно для начала; Pinku Pro — годовая подписка или разовая покупка. Без подписки.</li>
-<li>Перед загрузкой модели проверяет память: если модель не помещается, предупреждает и оставляет текущую, а не закрывается.</li>
-</ul>
-</div>
 
 <h2>Пять приложений в одной таблице</h2>
 
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Цена (Россия)</th><th>Русский интерфейс</th><th>Mac App Store</th><th>Модели</th><th>Конфиденциальность</th><th>Оценка (Россия)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(pinku)s">Pinku</a> (наше)</td><td>Бесплатно; Pinku Pro — на год или разово</td><td>Да</td><td>Да</td><td>12 моделей на Apple MLX, от 0,34 до 4,7 ГБ</td><td>История покупок и анонимный ID (для Pro); чаты не покидают устройство</td><td>3,7 &middot; 3</td></tr>
-<tr><td>2. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Бесплатно; есть Pro</td><td>Нет</td><td>Нет в списке</td><td>Сотни открытых моделей; Pro добавляет облачные</td><td>Не связаны с вами</td><td>4,6 &middot; 75</td></tr>
-<tr><td>3. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Бесплатно, открытый код</td><td>Нет</td><td>Нет в списке</td><td>Любая модель GGUF с Hugging Face</td><td>Данные не собираются</td><td>4,3 &middot; 19</td></tr>
+<tr><td>1. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Бесплатно; есть Pro</td><td>Нет</td><td>Нет в списке</td><td>Сотни открытых моделей; Pro добавляет облачные</td><td>Не связаны с вами</td><td>4,6 &middot; 75</td></tr>
+<tr><td>2. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Бесплатно, открытый код</td><td>Нет</td><td>Нет в списке</td><td>Любая модель GGUF с Hugging Face</td><td>Данные не собираются</td><td>4,3 &middot; 19</td></tr>
+<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>Бесплатно; Pinku Pro — на год или разово</td><td>Да</td><td>Да</td><td>11 моделей на Apple MLX, от 0,4 до 4,7 ГБ</td><td>История покупок и анонимный ID (для Pro); чаты не покидают устройство</td><td>3,7 &middot; 3</td></tr>
 <tr><td>4. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>299 &#8381; сразу</td><td>Нет</td><td>Да</td><td>Llama, Gemma, Qwen, Phi, Mistral и другие, до 14B</td><td>Данные не собираются</td><td>3,6 &middot; 18</td></tr>
 <tr><td>5. <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a></td><td>Бесплатно; подписка за облачные функции</td><td>Да</td><td>Нет в списке</td><td>Модели GGUF и MLX, модели Apple, облачные по желанию</td><td>Используются для отслеживания</td><td>нет оценок</td></tr>
 </tbody>
@@ -5802,13 +5666,27 @@ OFF_RU_BODY = ("""
 <strong>Locally AI by LM Studio</strong>, популярное бесплатное приложение, на
 %(date)s недоступно в российском App Store.</p>
 
-<h2>1. Pinku: приватность заложена в устройство</h2>
+<h2>1. Enclave</h2>
+
+<p><a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a> выбирают за
+большой каталог открытых моделей и за то, что в Pro можно подключить облачные
+модели, когда локальной не хватает. Лучшая оценка в этой таблице. Интерфейс не на
+русском, и в его этикетке конфиденциальности указаны аналитика и диагностика.</p>
+
+<h2>2. PocketPal AI</h2>
+
+<p><a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a> —
+бесплатное приложение с <a href="%(gh)s" target="_blank" rel="noopener">открытым
+кодом</a>, которое запускает любую модель GGUF с Hugging Face. Лучший выбор, если вы
+хотите сами пробовать разные модели и не боитесь настроек. Интерфейс на
+английском.</p>
+
+<h2>3. Pinku: приватность заложена в устройство</h2>
 
 <p><a href="%(pinku)s">Pinku</a> запускает двенадцать открытых моделей (Gemma 3,
 Gemma 3n, Llama 3.2, Qwen3, дистилляты DeepSeek-R1, SmolLM3 и LFM2) на iPhone и Mac
 через Apple MLX. Аккаунта и сервера нет: переписка не покидает устройство. Можно
-перегенерировать ответ, отредактировать сообщение и поделиться чатом. Шесть моделей
-до 1 ГБ бесплатны без ограничений; Pinku Pro добавляет шесть крупных моделей,
+перегенерировать ответ, отредактировать сообщение и поделиться чатом. Чат с моделью по умолчанию, Gemma 3 1B, бесплатный; Pinku Pro позволяет выбрать любую другую модель и добавляет
 свои инструкции, диктовку, которая распознаётся на устройстве, и чтение ответов
 вслух.</p>
 
@@ -5816,21 +5694,6 @@ Gemma 3n, Llama 3.2, Qwen3, дистилляты DeepSeek-R1, SmolLM3 и LFM2) �
 и картинки, не синхронизирует чаты между устройствами и не даёт загрузить свою
 модель с Hugging Face: только двенадцать отобранных. Локальная модель заметно
 слабее облачного ChatGPT или Claude. Оценок в российском App Store пока мало.</p>
-
-<h2>2. Enclave</h2>
-
-<p><a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a> выбирают за
-большой каталог открытых моделей и за то, что в Pro можно подключить облачные
-модели, когда локальной не хватает. Лучшая оценка в этой таблице. Интерфейс не на
-русском, и в его этикетке конфиденциальности указаны аналитика и диагностика.</p>
-
-<h2>3. PocketPal AI</h2>
-
-<p><a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a> —
-бесплатное приложение с <a href="%(gh)s" target="_blank" rel="noopener">открытым
-кодом</a>, которое запускает любую модель GGUF с Hugging Face. Лучший выбор, если вы
-хотите сами пробовать разные модели и не боитесь настроек. Интерфейс на
-английском.</p>
 
 <h2>4. Private LLM</h2>
 
@@ -5902,35 +5765,17 @@ _DR = dict(drop=DROP, wn=WNLITE, rain=RAINRAIN, dark=DARKNOISE, mynoise=MYNOISE,
            bs=BETTERSLEEP, calm=CALM, endel=ENDEL)
 
 DROP_RANK = [
-    ("Drop - Meditation & Focus", "https://apps.apple.com/app/id1462269642"),
     ("White Noise Lite", WNLITE),
     ("Rain Rain Sleep Sounds", RAINRAIN),
     ("Dark Noise: Ambient Sounds", DARKNOISE),
+    ("Drop - Meditation & Focus", "https://apps.apple.com/app/id1462269642"),
     ("myNoise - The Soundscape App", MYNOISE),
     ("BetterSleep: Relax and Sleep", BETTERSLEEP),
     ("Calm", CALM),
     ("Endel: Focus & Sleep Sounds", ENDEL),
 ]
 
-_DR_WHY_EN = _rank_box("Why Drop is #1", [
-    "Ten sounds are free to keep, with no ads and no time limit: rain, dewdrops, fire, forest, river, "
-    "coffee shop, ocean waves, thunderstorm, bus and fan.",
-    "It pairs the sounds with a breathing guide you can pace (2 to 8 seconds a breath) for winding down "
-    "before sleep or resetting between tasks.",
-    "A plant that grows through five stages, streaks and achievements make a nightly habit easy to keep.",
-    "No account, works offline, keeps playing with the screen locked, and has home screen widgets.",
-    "One app for iPhone, iPad and Mac.",
-])
 
-_DR_WHY_ES = _rank_box("Por qué Drop es la n.º 1", [
-    "Diez sonidos gratis para siempre, sin anuncios ni límite de tiempo: lluvia, gotas, fuego, bosque, río, "
-    "cafetería, olas, tormenta, autobús y ventilador.",
-    "Junta los sonidos con una guía de respiración a tu ritmo (de 2 a 8 segundos por respiración) para "
-    "relajarte antes de dormir o entre tareas.",
-    "Una planta que crece en cinco fases, rachas y logros ayudan a mantener el hábito cada noche.",
-    "Sin cuenta, funciona sin conexión, sigue sonando con la pantalla bloqueada y tiene widgets.",
-    "Una sola app para iPhone, iPad y Mac.",
-])
 
 DR_FAQ_EN = [
     ("What is the best free white noise app for iPhone?",
@@ -5983,7 +5828,7 @@ DR_FAQ_ES = [
 ]
 
 A16_EN_BODY = ("""
-<p><strong>Disclosure: we make Drop, the app ranked first here.</strong> Everything
+<p><strong>Disclosure: we make Drop, number 4 on this list.</strong> Everything
 we say about the other apps comes from their own App Store pages, and we say plainly
 where they beat us. Ratings and in-app purchases are from the US App Store on
 %(date)s.</p>
@@ -5991,31 +5836,31 @@ where they beat us. Ratings and in-app purchases are from the US App Store on
 <p>"Sleep sound app" covers three different things: a noise machine (white, pink or
 brown noise to mask the street), a soundscape player (rain, fire, ocean, often mixed
 together) and a full sleep programme with stories, meditations and tracking. This
-ranking puts first the app that makes a calm, simple bedtime habit easiest, and says
-which app wins each of the other jobs.</p>
+ranking weighs each app on its sounds, mixing, sleep timer and price, and says which
+app wins each of these jobs.</p>
 
 <h2>The ranking</h2>
 
 <ol>
-<li><a href="%(drop)s">Drop</a>: best for calming sounds plus breathing, free, no ads, no account.</li>
 <li><a href="%(wn)s" target="_blank" rel="noopener">White Noise Lite</a>: best free noise machine, with every colour of noise.</li>
 <li><a href="%(rain)s" target="_blank" rel="noopener">Rain Rain</a>: best free mixer and fade-out timer.</li>
 <li><a href="%(dark)s" target="_blank" rel="noopener">Dark Noise</a>: best for Siri, Shortcuts and widgets on iPhone and Mac.</li>
+<li><a href="%(drop)s">Drop</a>: best for calming sounds plus breathing, free, no ads, no account.</li>
 <li><a href="%(mynoise)s" target="_blank" rel="noopener">myNoise</a>: best for shaping the sound yourself, one purchase for life.</li>
 <li><a href="%(bs)s" target="_blank" rel="noopener">BetterSleep</a>: best for sleep tracking and a huge library.</li>
 <li><a href="%(calm)s" target="_blank" rel="noopener">Calm</a>: best for sleep stories and guided meditation.</li>
 <li><a href="%(endel)s" target="_blank" rel="noopener">Endel</a>: best for adaptive, AI-generated soundscapes.</li>
 </ol>
-""" + _DR_WHY_EN + """
+
 <h2>The eight apps at a glance</h2>
 
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Best for</th><th>Sounds</th><th>Mixing</th><th>Sleep timer</th><th>How it charges (US)</th><th>Rating (US)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(drop)s">Drop</a> (ours)</td><td>Sounds plus breathing, habit</td><td>32, 10 free</td><td>No</td><td>Yes, with fade-out</td><td>Free; Drop Pro subscription or lifetime</td><td>4.4 &middot; 12</td></tr>
-<tr><td>2. <a href="%(wn)s" target="_blank" rel="noopener">White Noise Lite</a></td><td>Noise machine</td><td>50+, white to violet noise</td><td>Yes (Mix Pad)</td><td>Yes, with alarm</td><td>Free with ads; paid full version</td><td>4.8 &middot; 277,066</td></tr>
-<tr><td>3. <a href="%(rain)s" target="_blank" rel="noopener">Rain Rain</a></td><td>Rain and nature mixes</td><td>50+ free, 60+ more in Premium</td><td>Yes, free</td><td>Yes, free</td><td>Free with a banner ad; Premium subscription</td><td>4.8 &middot; 137,141</td></tr>
-<tr><td>4. <a href="%(dark)s" target="_blank" rel="noopener">Dark Noise</a></td><td>Siri, widgets, Mac</td><td>50+</td><td>Yes</td><td>Yes</td><td>Free; Pro subscription or lifetime</td><td>4.8 &middot; 3,685</td></tr>
+<tr><td>1. <a href="%(wn)s" target="_blank" rel="noopener">White Noise Lite</a></td><td>Noise machine</td><td>50+, white to violet noise</td><td>Yes (Mix Pad)</td><td>Yes, with alarm</td><td>Free with ads; paid full version</td><td>4.8 &middot; 277,066</td></tr>
+<tr><td>2. <a href="%(rain)s" target="_blank" rel="noopener">Rain Rain</a></td><td>Rain and nature mixes</td><td>50+ free, 60+ more in Premium</td><td>Yes, free</td><td>Yes, free</td><td>Free with a banner ad; Premium subscription</td><td>4.8 &middot; 137,141</td></tr>
+<tr><td>3. <a href="%(dark)s" target="_blank" rel="noopener">Dark Noise</a></td><td>Siri, widgets, Mac</td><td>50+</td><td>Yes</td><td>Yes</td><td>Free; Pro subscription or lifetime</td><td>4.8 &middot; 3,685</td></tr>
+<tr><td>4. <a href="%(drop)s">Drop</a></td><td>Sounds plus breathing, habit</td><td>32, 10 free</td><td>No</td><td>Yes, with fade-out</td><td>Free; Drop Pro subscription or lifetime</td><td>4.4 &middot; 12</td></tr>
 <tr><td>5. <a href="%(mynoise)s" target="_blank" rel="noopener">myNoise</a></td><td>Fine-tuning, tinnitus</td><td>300+ soundscapes</td><td>Yes (up to 10 sliders)</td><td>Not in its listing</td><td>Free; one purchase, no subscription</td><td>4.7 &middot; 1,135</td></tr>
 <tr><td>6. <a href="%(bs)s" target="_blank" rel="noopener">BetterSleep</a></td><td>Tracking, stories, meditations</td><td>300+ sounds and tracks</td><td>Yes</td><td>Yes</td><td>Free; Premium subscription</td><td>4.7 &middot; 390,803</td></tr>
 <tr><td>7. <a href="%(calm)s" target="_blank" rel="noopener">Calm</a></td><td>Sleep stories, meditation</td><td>Sleep sounds and music</td><td>Not in its listing</td><td>Not in its listing</td><td>Free; Premium subscription</td><td>4.8 &middot; 1,986,904</td></tr>
@@ -6027,7 +5872,35 @@ which app wins each of the other jobs.</p>
 not mention it, not that the app cannot do it. Ratings are from Apple's public
 lookup API on %(date)s.</p>
 
-<h2>1. Drop: calming sounds and a breathing habit</h2>
+<h2>1. White Noise Lite: the classic noise machine</h2>
+
+<p>White Noise by TMSOFT has been on the iPhone since 2008. The Lite version has 50+
+looped sounds, including white, pink, brown, blue and violet noise, fans, air
+conditioners, rain and a dishwasher, with more free downloads from its White Noise
+Market. Its Mix Pad layers sounds and sets the position, volume and pitch of each; it
+can record and loop your own sounds, and has a full screen clock and an alarm and
+timer that fade audio in and out. It is free with ads; the paid full version removes
+them. Best if you want real noise to mask the world around you.</p>
+
+<h2>2. Rain Rain: the most generous free tier</h2>
+
+<p>Rain Rain gives 50+ HD sounds free with no limit on playback, every fade-out timer
+option, a mixer with a volume for each sound, an oscillator that varies volume and a
+"soften" control that muffles high frequencies. Mixes sync between devices through
+iCloud, and it has a bedtime reminder. The free version shows a small image banner,
+with no audio or video ads; Premium is a subscription with a 7-day free trial that
+adds 60+ sounds and removes the banner. Best for mixing rain and nature sounds without
+paying.</p>
+
+<h2>3. Dark Noise: built into iOS</h2>
+
+<p>Dark Noise has 50+ sounds with animated icons, custom mixes and a timer that fades
+the noise out. It goes furthest into the system: start a noise with Siri, even on a
+HomePod, through Shortcuts, AirPlay, interactive home and Lock Screen widgets, ten
+themes and 20+ app icons. It runs on Mac too and needs iOS 26. Pro is a subscription
+or a lifetime purchase. Best if you like starting things with your voice or a widget.</p>
+
+<h2>4. Drop: calming sounds and a breathing habit</h2>
 
 <p><a href="%(drop)s">Drop</a> has 32 nature, ambient and noise sounds, and ten of
 them are free with no ads and no time limit: rain, dewdrops, a crackling fire, a
@@ -6044,34 +5917,6 @@ simple, with no alarm; White Noise Lite adds one. It plays one sound at a time, 
 white, pink or brown noise generator. Its library is small next to the 50 to 300+
 sounds of the others, and it has only 12 ratings on the US App Store. There are no
 sleep stories, guided voice meditations or sleep tracking.</p>
-
-<h2>2. White Noise Lite: the classic noise machine</h2>
-
-<p>White Noise by TMSOFT has been on the iPhone since 2008. The Lite version has 50+
-looped sounds, including white, pink, brown, blue and violet noise, fans, air
-conditioners, rain and a dishwasher, with more free downloads from its White Noise
-Market. Its Mix Pad layers sounds and sets the position, volume and pitch of each; it
-can record and loop your own sounds, and has a full screen clock and an alarm and
-timer that fade audio in and out. It is free with ads; the paid full version removes
-them. Best if you want real noise to mask the world around you.</p>
-
-<h2>3. Rain Rain: the most generous free tier</h2>
-
-<p>Rain Rain gives 50+ HD sounds free with no limit on playback, every fade-out timer
-option, a mixer with a volume for each sound, an oscillator that varies volume and a
-"soften" control that muffles high frequencies. Mixes sync between devices through
-iCloud, and it has a bedtime reminder. The free version shows a small image banner,
-with no audio or video ads; Premium is a subscription with a 7-day free trial that
-adds 60+ sounds and removes the banner. Best for mixing rain and nature sounds without
-paying.</p>
-
-<h2>4. Dark Noise: built into iOS</h2>
-
-<p>Dark Noise has 50+ sounds with animated icons, custom mixes and a timer that fades
-the noise out. It goes furthest into the system: start a noise with Siri, even on a
-HomePod, through Shortcuts, AirPlay, interactive home and Lock Screen widgets, ten
-themes and 20+ app icons. It runs on Mac too and needs iOS 26. Pro is a subscription
-or a lifetime purchase. Best if you like starting things with your voice or a widget.</p>
 
 <h2>5. myNoise: you shape the sound</h2>
 
@@ -6137,39 +5982,38 @@ and we will correct the page.</p>
 """ % dict(_DR, date=DROP_DATE_EN)
 
 A16_ES_BODY = ("""
-<p><strong>Aviso: hacemos Drop, la primera de esta lista.</strong> Lo que decimos de
+<p><strong>Aviso: hacemos Drop, la n.º 4 de esta lista.</strong> Lo que decimos de
 las demás sale de su propia ficha del App Store, y decimos claramente en qué nos
 ganan. Valoraciones y compras dentro de la app del App Store de EE. UU. a %(date)s.</p>
 
 <p>"App de sonidos para dormir" son tres cosas distintas: una máquina de ruido (ruido
 blanco, rosa o marrón para tapar la calle), un reproductor de ambientes (lluvia,
 fuego, mar, a menudo mezclados) y un programa de sueño completo con cuentos,
-meditaciones y seguimiento. Este ranking pone primero la app con la que es más fácil
-tener un hábito tranquilo y sencillo antes de dormir, y dice qué app gana en cada uno
-de los otros trabajos.</p>
+meditaciones y seguimiento. Este ranking valora cada app por sus sonidos, la mezcla,
+el temporizador y el precio, y dice qué app gana en cada uno de estos trabajos.</p>
 
 <h2>El ranking</h2>
 
 <ol>
-<li><a href="%(drop)s">Drop</a>: la mejor para sonidos relajantes y respiración, gratis, sin anuncios y sin cuenta.</li>
 <li><a href="%(wn)s" target="_blank" rel="noopener">White Noise Lite</a>: la mejor máquina de ruido gratis, con todos los colores de ruido.</li>
 <li><a href="%(rain)s" target="_blank" rel="noopener">Rain Rain</a>: el mejor mezclador y temporizador gratis.</li>
 <li><a href="%(dark)s" target="_blank" rel="noopener">Dark Noise</a>: la mejor con Siri, Atajos y widgets en iPhone y Mac.</li>
+<li><a href="%(drop)s">Drop</a>: la mejor para sonidos relajantes y respiración, gratis, sin anuncios y sin cuenta.</li>
 <li><a href="%(mynoise)s" target="_blank" rel="noopener">myNoise</a>: la mejor para ajustar el sonido a tu gusto, con una sola compra.</li>
 <li><a href="%(bs)s" target="_blank" rel="noopener">BetterSleep</a>: la mejor para seguir tu sueño y con el catálogo más grande.</li>
 <li><a href="%(calm)s" target="_blank" rel="noopener">Calm</a>: la mejor para cuentos para dormir y meditación guiada.</li>
 <li><a href="%(endel)s" target="_blank" rel="noopener">Endel</a>: la mejor para ambientes generados con IA que se adaptan.</li>
 </ol>
-""" + _DR_WHY_ES + """
+
 <h2>Las ocho apps de un vistazo</h2>
 
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Para qué</th><th>Sonidos</th><th>Mezcla</th><th>Temporizador</th><th>Cómo cobra (EE. UU.)</th><th>Valoración (EE. UU.)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(drop)s">Drop</a> (nuestra)</td><td>Sonidos y respiración, hábito</td><td>32, 10 gratis</td><td>No</td><td>Sí, con fundido</td><td>Gratis; Drop Pro por suscripción o de por vida</td><td>4,4 &middot; 12</td></tr>
-<tr><td>2. <a href="%(wn)s" target="_blank" rel="noopener">White Noise Lite</a></td><td>Máquina de ruido</td><td>Más de 50, del ruido blanco al violeta</td><td>Sí (Mix Pad)</td><td>Sí, con alarma</td><td>Gratis con anuncios; versión completa de pago</td><td>4,8 &middot; 277.066</td></tr>
-<tr><td>3. <a href="%(rain)s" target="_blank" rel="noopener">Rain Rain</a></td><td>Lluvia y naturaleza mezcladas</td><td>Más de 50 gratis, 60 más en Premium</td><td>Sí, gratis</td><td>Sí, gratis</td><td>Gratis con un banner; Premium por suscripción</td><td>4,8 &middot; 137.141</td></tr>
-<tr><td>4. <a href="%(dark)s" target="_blank" rel="noopener">Dark Noise</a></td><td>Siri, widgets, Mac</td><td>Más de 50</td><td>Sí</td><td>Sí</td><td>Gratis; Pro por suscripción o de por vida</td><td>4,8 &middot; 3.685</td></tr>
+<tr><td>1. <a href="%(wn)s" target="_blank" rel="noopener">White Noise Lite</a></td><td>Máquina de ruido</td><td>Más de 50, del ruido blanco al violeta</td><td>Sí (Mix Pad)</td><td>Sí, con alarma</td><td>Gratis con anuncios; versión completa de pago</td><td>4,8 &middot; 277.066</td></tr>
+<tr><td>2. <a href="%(rain)s" target="_blank" rel="noopener">Rain Rain</a></td><td>Lluvia y naturaleza mezcladas</td><td>Más de 50 gratis, 60 más en Premium</td><td>Sí, gratis</td><td>Sí, gratis</td><td>Gratis con un banner; Premium por suscripción</td><td>4,8 &middot; 137.141</td></tr>
+<tr><td>3. <a href="%(dark)s" target="_blank" rel="noopener">Dark Noise</a></td><td>Siri, widgets, Mac</td><td>Más de 50</td><td>Sí</td><td>Sí</td><td>Gratis; Pro por suscripción o de por vida</td><td>4,8 &middot; 3.685</td></tr>
+<tr><td>4. <a href="%(drop)s">Drop</a></td><td>Sonidos y respiración, hábito</td><td>32, 10 gratis</td><td>No</td><td>Sí, con fundido</td><td>Gratis; Drop Pro por suscripción o de por vida</td><td>4,4 &middot; 12</td></tr>
 <tr><td>5. <a href="%(mynoise)s" target="_blank" rel="noopener">myNoise</a></td><td>Ajuste fino, acúfenos</td><td>Más de 300 ambientes</td><td>Sí (hasta 10 controles)</td><td>No lo menciona</td><td>Gratis; una sola compra, sin suscripción</td><td>4,7 &middot; 1.135</td></tr>
 <tr><td>6. <a href="%(bs)s" target="_blank" rel="noopener">BetterSleep</a></td><td>Seguimiento, cuentos, meditaciones</td><td>Más de 300 sonidos y pistas</td><td>Sí</td><td>Sí</td><td>Gratis; Premium por suscripción</td><td>4,7 &middot; 390.803</td></tr>
 <tr><td>7. <a href="%(calm)s" target="_blank" rel="noopener">Calm</a></td><td>Cuentos para dormir, meditación</td><td>Sonidos y música para dormir</td><td>No lo menciona</td><td>No lo menciona</td><td>Gratis; Premium por suscripción</td><td>4,8 &middot; 1.986.904</td></tr>
@@ -6181,7 +6025,37 @@ de los otros trabajos.</p>
 no lo dice, no que la app no pueda hacerlo. Valoraciones de la API pública de Apple a
 %(date)s.</p>
 
-<h2>1. Drop: sonidos relajantes y el hábito de respirar</h2>
+<h2>1. White Noise Lite: la máquina de ruido de siempre</h2>
+
+<p>White Noise de TMSOFT está en el iPhone desde 2008. La versión Lite trae más de 50
+sonidos en bucle, entre ellos ruido blanco, rosa, marrón, azul y violeta, ventiladores,
+aire acondicionado, lluvia y lavavajillas, y más descargas gratis desde su White Noise
+Market. Su Mix Pad junta sonidos y ajusta la posición, el volumen y el tono de cada
+uno; graba y pone en bucle tus propios sonidos, y tiene reloj a pantalla completa y
+alarma y temporizador que suben y bajan el sonido poco a poco. Es gratis con anuncios;
+la versión completa de pago los quita. La mejor si quieres ruido de verdad para tapar
+lo que suena alrededor.</p>
+
+<h2>2. Rain Rain: la versión gratis más generosa</h2>
+
+<p>Rain Rain da más de 50 sonidos en HD gratis y sin límite de tiempo, todas las
+opciones de temporizador, un mezclador con volumen para cada sonido, un oscilador que
+varía el volumen y un control que apaga los agudos. Las mezclas se sincronizan por
+iCloud y tiene recordatorio para irse a la cama. La versión gratis muestra un pequeño
+banner, sin anuncios de audio ni de vídeo; Premium es una suscripción con 7 días
+gratis que añade más de 60 sonidos y quita el banner. La mejor para mezclar lluvia y
+naturaleza sin pagar.</p>
+
+<h2>3. Dark Noise: metida en iOS</h2>
+
+<p>Dark Noise tiene más de 50 sonidos con iconos animados, mezclas propias y un
+temporizador que baja el ruido poco a poco. Es la que más se mete en el sistema:
+empieza un sonido con Siri, también en un HomePod, con Atajos, AirPlay, widgets
+interactivos en la pantalla de inicio y en la bloqueada, diez temas y más de 20 iconos.
+Funciona también en Mac y pide iOS 26. Pro es una suscripción o una compra de por vida.
+La mejor si te gusta empezar las cosas con la voz o con un widget.</p>
+
+<h2>4. Drop: sonidos relajantes y el hábito de respirar</h2>
 
 <p><a href="%(drop)s">Drop</a> tiene 32 sonidos de naturaleza, ambiente y ruido, y
 diez son gratis, sin anuncios ni límite de tiempo: lluvia, gotas, fuego, bosque, río,
@@ -6199,36 +6073,6 @@ ventilador, autobús y zumbido eléctrico, pero no genera ruido blanco, rosa ni 
 Su catálogo es pequeño al lado de los 50 a más de 300 sonidos de las otras, y solo
 tiene 12 valoraciones en el App Store de EE. UU. No tiene cuentos, meditaciones
 guiadas con voz ni seguimiento del sueño.</p>
-
-<h2>2. White Noise Lite: la máquina de ruido de siempre</h2>
-
-<p>White Noise de TMSOFT está en el iPhone desde 2008. La versión Lite trae más de 50
-sonidos en bucle, entre ellos ruido blanco, rosa, marrón, azul y violeta, ventiladores,
-aire acondicionado, lluvia y lavavajillas, y más descargas gratis desde su White Noise
-Market. Su Mix Pad junta sonidos y ajusta la posición, el volumen y el tono de cada
-uno; graba y pone en bucle tus propios sonidos, y tiene reloj a pantalla completa y
-alarma y temporizador que suben y bajan el sonido poco a poco. Es gratis con anuncios;
-la versión completa de pago los quita. La mejor si quieres ruido de verdad para tapar
-lo que suena alrededor.</p>
-
-<h2>3. Rain Rain: la versión gratis más generosa</h2>
-
-<p>Rain Rain da más de 50 sonidos en HD gratis y sin límite de tiempo, todas las
-opciones de temporizador, un mezclador con volumen para cada sonido, un oscilador que
-varía el volumen y un control que apaga los agudos. Las mezclas se sincronizan por
-iCloud y tiene recordatorio para irse a la cama. La versión gratis muestra un pequeño
-banner, sin anuncios de audio ni de vídeo; Premium es una suscripción con 7 días
-gratis que añade más de 60 sonidos y quita el banner. La mejor para mezclar lluvia y
-naturaleza sin pagar.</p>
-
-<h2>4. Dark Noise: metida en iOS</h2>
-
-<p>Dark Noise tiene más de 50 sonidos con iconos animados, mezclas propias y un
-temporizador que baja el ruido poco a poco. Es la que más se mete en el sistema:
-empieza un sonido con Siri, también en un HomePod, con Atajos, AirPlay, widgets
-interactivos en la pantalla de inicio y en la bloqueada, diez temas y más de 20 iconos.
-Funciona también en Mac y pide iOS 26. Pro es una suscripción o una compra de por vida.
-La mejor si te gusta empezar las cosas con la voz o con un widget.</p>
 
 <h2>5. myNoise: el sonido lo ajustas tú</h2>
 
@@ -6299,7 +6143,7 @@ RANK_ARTICLES.append(dict(
     date_iso=DROP_DATE_ISO, date_en=DROP_DATE_EN, date_es=DROP_DATE_ES,
     en=dict(
         h1="Best white noise and sleep sound apps for iPhone (2026)",
-        desc=("Drop, White Noise Lite, Rain Rain, Dark Noise, myNoise, BetterSleep, Calm and Endel ranked: "
+        desc=("White Noise Lite, Rain Rain, Drop, Dark Noise, myNoise, BetterSleep, Calm and Endel ranked: "
               "sounds, mixing, sleep timer, how each charges and who each is for, from their App Store "
               "pages. Written by Drop's maker, disclosed."),
         kicker="Sleep", section="Sleep",
@@ -6308,7 +6152,7 @@ RANK_ARTICLES.append(dict(
         body=A16_EN_BODY, sources=A16_EN_SOURCES, rank=DROP_RANK, faq=DR_FAQ_EN),
     es=dict(
         h1="Las mejores apps de ruido blanco y sonidos para dormir en iPhone (2026)",
-        desc=("Drop, White Noise Lite, Rain Rain, Dark Noise, myNoise, BetterSleep, Calm y Endel ordenadas: "
+        desc=("White Noise Lite, Rain Rain, Drop, Dark Noise, myNoise, BetterSleep, Calm y Endel ordenadas: "
               "sonidos, mezcla, temporizador, cómo cobra cada una y para quién es, según su ficha del App "
               "Store. Escrito por quien hace Drop, y lo decimos."),
         kicker="Dormir", section="Dormir",
