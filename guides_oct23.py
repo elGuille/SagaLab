@@ -644,9 +644,7 @@ DR2_EN = dict(
                 "the research supports. The details, with the studies linked."),
     tools=["iPhone Background Sounds", "a sleep sound app"],
     intro=f"""
-<p><strong>We make Drop, a sleep and calm sounds app. Drop does not generate white, pink or
-brown noise</strong>, so for this you will mostly use the iPhone's built-in sounds or the
-other apps listed below. We say where Drop fits at the end.</p>
+<p><strong>We make Drop, a sleep and calm sounds app that plays white, pink and brown noise.</strong> It is one option among several: the iPhone's built-in sounds and the other apps listed below also do it. We say where Drop fits at the end.</p>
 
 <h2>The difference in one table</h2>
 
@@ -717,9 +715,9 @@ paediatrician if you are unsure.</p>
         ("Keep the volume low.",
          "Use the lowest level that covers the noise you want to mask. For a baby, put the phone well away from the cot."),
         ("If you want true brown or pink noise, use an app that names it.",
-         "White Noise Lite, myNoise, Rain Rain and Endel list it on the App Store (details below)."),
+         "White Noise Lite, myNoise, Rain Rain, Endel and Drop list it on the App Store (details below)."),
         ("If noise is not for you, try nature sounds or slow breathing.",
-         f"Rain or ocean is easier on the ear for many people. <a href=\"{DROP_STORE}\">Drop</a> has nature sounds and a guided "
+         f"Rain or ocean is easier on the ear for many people. <a href=\"{DROP_STORE}\">Drop</a> has rain, ocean and other nature sounds and a guided "
          "breathing timer."),
     ],
     after=f"""
@@ -732,14 +730,12 @@ noise, each with its own sliders.</li>
 <li><strong>Rain Rain Sleep Sounds</strong> (free, 6.9.10): lists Pink Noise among 50+ sounds, with a free mixer and fade-out timer.</li>
 <li><strong>Endel</strong> (free, Premium for Colored Noise): “choose one of 9 colors of noise”.</li>
 <li><strong>Dark Noise</strong> (free, 3.6.1): 50+ ambient sounds, custom mixes and a fade-out timer.</li>
+<li><strong>Drop</strong> (free, 2.10, 24 October 2026): White Noise free; Pink Noise, Brown Noise and Deep Brown Noise with Drop Pro, among 53 sounds. One sound at a time, no mixer or equaliser, sleep timer with fade-out.</li>
 </ul>
 
 <h2>Where Drop fits</h2>
 
-<p>{a(DROP_AS, "Drop's App Store listing")} (version 2.9, 16 October 2026) describes nature sounds (gentle rain, crystal
-dewdrops, crackling campfire, mystical forest, ocean waves), guided breathing sessions of 2, 5, 10 and 20 minutes,
-widgets, a plant that grows as you practise, offline use and no ads. It does not generate coloured noise. If you tried
-brown or pink noise and found it grating, rain or ocean with a few minutes of slow breathing is the alternative it offers.
+<p>{a(DROP_AS, "Drop's App Store listing")} (version 2.10, 24 October 2026) describes nature sounds (gentle rain, crystal dewdrops, crackling campfire, mystical forest, ocean waves), guided breathing sessions of 2, 5, 10 and 20 minutes, widgets, a plant that grows as you practise, offline use and no ads. Version 2.10 has 53 sounds, 9 of them free. White noise is free; pink, brown and deep brown noise come with Drop Pro. They are fixed looped tracks, one at a time, so if you want to shape the colour or layer it with rain, myNoise or White Noise Lite do more. If you tried brown or pink noise and found it grating, rain or ocean with a few minutes of slow breathing is the other route it offers.
 More on <a href="../drop.html">Drop's page</a>, and the step by step in
 <a href="white-noise-to-fall-asleep-iphone.html">how to use white noise to fall asleep on iPhone</a>.</p>
 
@@ -772,8 +768,8 @@ More on <a href="../drop.html">Drop's page</a>, and the step by step in
          "iPhone's Background Sounds (Settings, Accessibility, Audio & Visual) has Balanced, Bright and Dark Noise. Apple does "
          "not label them by colour."),
         ("Does Drop have brown or pink noise?",
-         "No. Drop has nature sounds and guided breathing. For coloured noise use Background Sounds or an app such as White "
-         "Noise Lite or myNoise."),
+         "Yes, since version 2.10 (24 October 2026). White noise is free; pink, brown and deep brown noise come with Drop Pro. "
+         "For free coloured noise, use the iPhone's Background Sounds or White Noise Lite."),
     ],
 )
 
@@ -790,9 +786,7 @@ DR2_ES = dict(
                 "la investigación. Los detalles, con los estudios enlazados."),
     tools=["Sonidos de fondo del iPhone", "una app de sonidos para dormir"],
     intro=f"""
-<p><strong>Hacemos Drop, una app de sonidos para dormir y relajarse. Drop no genera ruido
-blanco, rosa ni marrón</strong>, así que para esto usarás sobre todo los sonidos del propio
-iPhone o las otras apps de la lista. Al final decimos dónde encaja Drop.</p>
+<p><strong>Hacemos Drop, una app de sonidos para dormir y relajarse que tiene ruido blanco, rosa y marrón.</strong> Es una opción más: los sonidos del propio iPhone y las otras apps de la lista también lo hacen. Al final decimos dónde encaja Drop.</p>
 
 <h2>La diferencia en una tabla</h2>
 
@@ -863,9 +857,9 @@ máquina lejos de la cuna, a volumen bajo y con temporizador; ante la duda, preg
         ("Mantén el volumen bajo.",
          "El más bajo que tape el ruido que quieres ocultar. Para un bebé, el móvil lejos de la cuna."),
         ("Si quieres ruido marrón o rosa de verdad, usa una app que lo nombre.",
-         "White Noise Lite, myNoise, Rain Rain y Endel lo indican en el App Store (detalles abajo)."),
+         "White Noise Lite, myNoise, Rain Rain, Endel y Drop lo indican en el App Store (detalles abajo)."),
         ("Si el ruido no es lo tuyo, prueba sonidos de la naturaleza o respiración lenta.",
-         f"La lluvia o el mar resultan más agradables a mucha gente. <a href=\"{DROP_STORE}\">Drop</a> tiene sonidos de la "
+         f"La lluvia o el mar resultan más agradables a mucha gente. <a href=\"{DROP_STORE}\">Drop</a> tiene lluvia, mar y otros sonidos de la "
          "naturaleza y un temporizador de respiración guiada."),
     ],
     after=f"""
@@ -878,14 +872,12 @@ cada uno con sus controles.</li>
 <li><strong>Rain Rain Sleep Sounds</strong> (gratis, 6.9.10): incluye Pink Noise entre más de 50 sonidos, con mezclador gratis.</li>
 <li><strong>Endel</strong> (gratis; Colored Noise es Premium): «elige uno de 9 colores de ruido».</li>
 <li><strong>Dark Noise</strong> (gratis, 3.6.1): más de 50 sonidos ambientales, mezclas y temporizador con fundido.</li>
+<li><strong>Drop</strong> (gratis, 2.10, 24 de octubre de 2026): ruido blanco gratis; ruido rosa, marrón y marrón profundo con Drop Pro, entre 53 sonidos. Un sonido cada vez, sin mezclador ni ecualizador, temporizador con fundido.</li>
 </ul>
 
 <h2>Dónde encaja Drop</h2>
 
-<p>{a(DROP_AS, "La ficha de Drop en el App Store")} (versión 2.9, 16 de octubre de 2026) describe sonidos de la naturaleza
-(lluvia suave, gotas de rocío, hoguera, bosque, olas del mar), sesiones de respiración guiada de 2, 5, 10 y 20 minutos,
-widgets, una planta que crece con la práctica, uso sin conexión y sin anuncios. No genera ruido de colores. Si probaste el
-marrón o el rosa y se te hizo pesado, lluvia u océano con unos minutos de respiración lenta es la alternativa que ofrece.
+<p>{a(DROP_AS, "La ficha de Drop en el App Store")} (versión 2.10, 24 de octubre de 2026) describe sonidos de la naturaleza (lluvia suave, gotas de rocío, hoguera, bosque, olas del mar), sesiones de respiración guiada de 2, 5, 10 y 20 minutos, widgets, una planta que crece con la práctica, uso sin conexión y sin anuncios. La 2.10 tiene 53 sonidos, 9 gratis. El ruido blanco es gratis; el rosa, el marrón y el marrón profundo van con Drop Pro. Son pistas fijas en bucle, una cada vez, así que si quieres ajustar el color o mezclarlo con lluvia, myNoise o White Noise Lite hacen más. Si probaste el marrón o el rosa y se te hizo pesado, lluvia u océano con unos minutos de respiración lenta es la otra vía que ofrece.
 Más en <a href="../../drop.html">la página de Drop</a> y el paso a paso en
 <a href="ruido-blanco-para-dormir-iphone.html">cómo usar ruido blanco para dormirte con el iPhone</a>.</p>
 
@@ -918,8 +910,8 @@ Más en <a href="../../drop.html">la página de Drop</a> y el paso a paso en
          "Sonidos de fondo (Ajustes, Accesibilidad, Audio y efectos visuales) tiene ruido equilibrado, brillante y oscuro. Apple no "
          "los etiqueta por color."),
         ("¿Drop tiene ruido marrón o rosa?",
-         "No. Drop tiene sonidos de la naturaleza y respiración guiada. Para ruido de colores usa Sonidos de fondo o una app como "
-         "White Noise Lite o myNoise."),
+         "Sí, desde la versión 2.10 (24 de octubre de 2026). El ruido blanco es gratis; el rosa, el marrón y el marrón profundo van "
+         "con Drop Pro. Para ruido de colores gratis, usa Sonidos de fondo del iPhone o White Noise Lite."),
     ],
 )
 

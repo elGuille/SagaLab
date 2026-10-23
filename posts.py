@@ -5781,8 +5781,8 @@ DR_FAQ_EN = [
     ("What is the best free white noise app for iPhone?",
      "For pure noise, White Noise Lite has white, pink, brown, blue and violet noise free with ads, and "
      "Rain Rain gives 50+ sounds, a mixer and every fade-out timer free with a small banner ad. Drop (we make "
-     "it) has ten sounds free with no ads, including fan and bus, plus a breathing guide, but no white, pink "
-     "or brown noise generator."),
+     "it) has nine sounds free with no ads, including white noise, plus a breathing guide; pink and brown "
+     "noise need Drop Pro."),
     ("Which sleep sound app has a sleep timer?",
      "White Noise Lite, Rain Rain, Dark Noise and BetterSleep all list a timer that fades the sound out. "
      "Drop has one too, from 15 minutes to 8 hours (since version 2.8), with a 30-second fade-out."),
@@ -5806,8 +5806,8 @@ DR_FAQ_ES = [
     ("¿Cuál es la mejor app gratis de ruido blanco para iPhone?",
      "Para ruido puro, White Noise Lite trae ruido blanco, rosa, marrón, azul y violeta gratis con anuncios, "
      "y Rain Rain da más de 50 sonidos, mezclador y todos los temporizadores gratis con un pequeño banner. "
-     "Drop (la hacemos nosotros) tiene diez sonidos gratis sin anuncios, entre ellos ventilador y autobús, y "
-     "una guía de respiración, pero no genera ruido blanco, rosa ni marrón."),
+     "Drop (la hacemos nosotros) tiene nueve sonidos gratis sin anuncios, entre ellos el ruido blanco, y "
+     "una guía de respiración; el ruido rosa y el marrón necesitan Drop Pro."),
     ("¿Qué app de sonidos para dormir tiene temporizador?",
      "White Noise Lite, Rain Rain, Dark Noise y BetterSleep tienen un temporizador que baja el sonido poco a "
      "poco. Drop también, de 15 minutos a 8 horas (desde la versión 2.8), con fundido de 30 segundos."),
@@ -5860,7 +5860,7 @@ app wins each of these jobs.</p>
 <tr><td>1. <a href="%(wn)s" target="_blank" rel="noopener">White Noise Lite</a></td><td>Noise machine</td><td>50+, white to violet noise</td><td>Yes (Mix Pad)</td><td>Yes, with alarm</td><td>Free with ads; paid full version</td><td>4.8 &middot; 277,066</td></tr>
 <tr><td>2. <a href="%(rain)s" target="_blank" rel="noopener">Rain Rain</a></td><td>Rain and nature mixes</td><td>50+ free, 60+ more in Premium</td><td>Yes, free</td><td>Yes, free</td><td>Free with a banner ad; Premium subscription</td><td>4.8 &middot; 137,141</td></tr>
 <tr><td>3. <a href="%(dark)s" target="_blank" rel="noopener">Dark Noise</a></td><td>Siri, widgets, Mac</td><td>50+</td><td>Yes</td><td>Yes</td><td>Free; Pro subscription or lifetime</td><td>4.8 &middot; 3,685</td></tr>
-<tr><td>4. <a href="%(drop)s">Drop</a></td><td>Sounds plus breathing, habit</td><td>32, 10 free</td><td>No</td><td>Yes, with fade-out</td><td>Free; Drop Pro subscription or lifetime</td><td>4.4 &middot; 12</td></tr>
+<tr><td>4. <a href="%(drop)s">Drop</a></td><td>Sounds plus breathing, habit</td><td>53, 9 free</td><td>No</td><td>Yes, with fade-out</td><td>Free; Drop Pro subscription or lifetime</td><td>4.4 &middot; 12</td></tr>
 <tr><td>5. <a href="%(mynoise)s" target="_blank" rel="noopener">myNoise</a></td><td>Fine-tuning, tinnitus</td><td>300+ soundscapes</td><td>Yes (up to 10 sliders)</td><td>Not in its listing</td><td>Free; one purchase, no subscription</td><td>4.7 &middot; 1,135</td></tr>
 <tr><td>6. <a href="%(bs)s" target="_blank" rel="noopener">BetterSleep</a></td><td>Tracking, stories, meditations</td><td>300+ sounds and tracks</td><td>Yes</td><td>Yes</td><td>Free; Premium subscription</td><td>4.7 &middot; 390,803</td></tr>
 <tr><td>7. <a href="%(calm)s" target="_blank" rel="noopener">Calm</a></td><td>Sleep stories, meditation</td><td>Sleep sounds and music</td><td>Not in its listing</td><td>Not in its listing</td><td>Free; Premium subscription</td><td>4.8 &middot; 1,986,904</td></tr>
@@ -5902,20 +5902,18 @@ or a lifetime purchase. Best if you like starting things with your voice or a wi
 
 <h2>4. Drop: calming sounds and a breathing habit</h2>
 
-<p><a href="%(drop)s">Drop</a> has 32 nature, ambient and noise sounds, and ten of
-them are free with no ads and no time limit: rain, dewdrops, a crackling fire, a
-forest, a river, a coffee shop, ocean waves, a thunderstorm, a bus and a fan. The
+<p><a href="%(drop)s">Drop</a> has 53 nature, ambient and noise sounds, and nine of
+them are free with no ads and no time limit: white noise, a crackling fire, a forest, a heartbeat, a lake, a coffee shop, falling snow, desert wind and dolphins. The
 sound keeps playing with the screen locked. Next to the sounds there is a breathing
 guide: choose how long each breath lasts (2 to 8 seconds) and how many cycles, and
 follow the animation. Every session grows a plant through five stages, with streaks
 and achievements, and widgets start a session from the home screen. It needs no
-account, works offline and runs on iPhone, iPad and Mac. Drop Pro unlocks the other
-22 sounds, by subscription or with a one-time lifetime purchase.</p>
+account, works offline and runs on iPhone, iPad and Mac. Drop Pro unlocks the other 44
+sounds, by subscription or with a one-time lifetime purchase.</p>
 
 <p>Where others beat it: Drop's sleep timer (15 minutes to 8 hours, 30-second fade-out) is
-simple, with no alarm; White Noise Lite adds one. It plays one sound at a time, with no mixer. It has fan, bus and electric hum but no
-white, pink or brown noise generator. Its library is small next to the 50 to 300+
-sounds of the others, and it has only 12 ratings on the US App Store. There are no
+simple, with no alarm; White Noise Lite adds one. It plays one sound at a time, with no mixer. Since version 2.10 it has white noise free and pink and brown noise with
+Drop Pro, but as fixed tracks with no equaliser. Its 53 sounds are close to Rain Rain's 50+ and far from myNoise's 300+, and it has only 12 ratings on the US App Store. There are no
 sleep stories, guided voice meditations or sleep tracking.</p>
 
 <h2>5. myNoise: you shape the sound</h2>
@@ -6013,7 +6011,7 @@ el temporizador y el precio, y dice qué app gana en cada uno de estos trabajos.
 <tr><td>1. <a href="%(wn)s" target="_blank" rel="noopener">White Noise Lite</a></td><td>Máquina de ruido</td><td>Más de 50, del ruido blanco al violeta</td><td>Sí (Mix Pad)</td><td>Sí, con alarma</td><td>Gratis con anuncios; versión completa de pago</td><td>4,8 &middot; 277.066</td></tr>
 <tr><td>2. <a href="%(rain)s" target="_blank" rel="noopener">Rain Rain</a></td><td>Lluvia y naturaleza mezcladas</td><td>Más de 50 gratis, 60 más en Premium</td><td>Sí, gratis</td><td>Sí, gratis</td><td>Gratis con un banner; Premium por suscripción</td><td>4,8 &middot; 137.141</td></tr>
 <tr><td>3. <a href="%(dark)s" target="_blank" rel="noopener">Dark Noise</a></td><td>Siri, widgets, Mac</td><td>Más de 50</td><td>Sí</td><td>Sí</td><td>Gratis; Pro por suscripción o de por vida</td><td>4,8 &middot; 3.685</td></tr>
-<tr><td>4. <a href="%(drop)s">Drop</a></td><td>Sonidos y respiración, hábito</td><td>32, 10 gratis</td><td>No</td><td>Sí, con fundido</td><td>Gratis; Drop Pro por suscripción o de por vida</td><td>4,4 &middot; 12</td></tr>
+<tr><td>4. <a href="%(drop)s">Drop</a></td><td>Sonidos y respiración, hábito</td><td>53, 9 gratis</td><td>No</td><td>Sí, con fundido</td><td>Gratis; Drop Pro por suscripción o de por vida</td><td>4,4 &middot; 12</td></tr>
 <tr><td>5. <a href="%(mynoise)s" target="_blank" rel="noopener">myNoise</a></td><td>Ajuste fino, acúfenos</td><td>Más de 300 ambientes</td><td>Sí (hasta 10 controles)</td><td>No lo menciona</td><td>Gratis; una sola compra, sin suscripción</td><td>4,7 &middot; 1.135</td></tr>
 <tr><td>6. <a href="%(bs)s" target="_blank" rel="noopener">BetterSleep</a></td><td>Seguimiento, cuentos, meditaciones</td><td>Más de 300 sonidos y pistas</td><td>Sí</td><td>Sí</td><td>Gratis; Premium por suscripción</td><td>4,7 &middot; 390.803</td></tr>
 <tr><td>7. <a href="%(calm)s" target="_blank" rel="noopener">Calm</a></td><td>Cuentos para dormir, meditación</td><td>Sonidos y música para dormir</td><td>No lo menciona</td><td>No lo menciona</td><td>Gratis; Premium por suscripción</td><td>4,8 &middot; 1.986.904</td></tr>
@@ -6057,19 +6055,18 @@ La mejor si te gusta empezar las cosas con la voz o con un widget.</p>
 
 <h2>4. Drop: sonidos relajantes y el hábito de respirar</h2>
 
-<p><a href="%(drop)s">Drop</a> tiene 32 sonidos de naturaleza, ambiente y ruido, y
-diez son gratis, sin anuncios ni límite de tiempo: lluvia, gotas, fuego, bosque, río,
-cafetería, olas, tormenta, autobús y ventilador. El sonido sigue con la pantalla
+<p><a href="%(drop)s">Drop</a> tiene 53 sonidos de naturaleza, ambiente y ruido, y
+nueve son gratis, sin anuncios ni límite de tiempo: ruido blanco, fuego, bosque, latido, lago, cafetería, nieve, desierto y delfines. El sonido sigue con la pantalla
 bloqueada. Junto a los sonidos hay una guía de respiración: eliges cuánto dura cada
 respiración (de 2 a 8 segundos) y cuántos ciclos, y sigues la animación. Cada sesión
 hace crecer una planta en cinco fases, con rachas y logros, y los widgets empiezan una
 sesión desde la pantalla de inicio. No pide cuenta, funciona sin conexión y va en
-iPhone, iPad y Mac. Drop Pro desbloquea los otros 22 sonidos, por suscripción o con
+iPhone, iPad y Mac. Drop Pro desbloquea los otros 44 sonidos, por suscripción o con
 una compra de por vida.</p>
 
 <p>En qué le ganan las demás: el temporizador de Drop (de 15 minutos a 8 horas, con fundido
-de 30 segundos) es sencillo y no lleva alarma; White Noise Lite sí la tiene. Suena un sonido cada vez, sin mezclador. Tiene
-ventilador, autobús y zumbido eléctrico, pero no genera ruido blanco, rosa ni marrón.
+de 30 segundos) es sencillo y no lleva alarma; White Noise Lite sí la tiene. Suena un sonido cada vez, sin mezclador. Desde la
+versión 2.10 tiene ruido blanco gratis y rosa y marrón con Drop Pro, pero grabados y sin ecualizador.
 Su catálogo es pequeño al lado de los 50 a más de 300 sonidos de las otras, y solo
 tiene 12 valoraciones en el App Store de EE. UU. No tiene cuentos, meditaciones
 guiadas con voz ni seguimiento del sueño.</p>

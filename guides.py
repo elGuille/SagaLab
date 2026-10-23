@@ -463,14 +463,14 @@ rain, ocean and stream, and its own timer to stop them. If that is enough for yo
     after="""
 <h2>What Drop does and does not do</h2>
 
-<p>Drop has 32 nature, ambient and noise sounds, ten of them free, a breathing guide,
+<p>Drop has 53 nature, ambient and noise sounds, nine of them free, a breathing guide,
 a plant that grows with each session, streaks, widgets and no ads. It works offline,
-needs no account, and runs on iPhone, iPad and Mac. Drop Pro unlocks the other 22
+needs no account, and runs on iPhone, iPad and Mac. Drop Pro unlocks the other 44
 sounds, by subscription or with a one-time lifetime purchase.</p>
 
 <p>It has a sleep timer (15 minutes to 8 hours, with a 30-second fade-out), plays one sound at a time with no mixer, and
-has no white, pink or brown noise generator: its noise sounds are a fan, a bus and an
-electric hum. More on <a href="../drop.html">Drop's page</a>. If you want to mix sounds or fine-tune noise, other apps do it better,
+since version 2.10 has white noise free and pink, brown and deep brown noise with Drop Pro,
+as looped tracks with no equaliser. More on <a href="../drop.html">Drop's page</a>. If you want to mix sounds or fine-tune noise, other apps do it better,
 and we say which in <a href="../blog/best-white-noise-sleep-sound-apps-iphone.html">the
 best white noise and sleep sound apps for iPhone</a>.</p>
 """,
@@ -488,7 +488,7 @@ best white noise and sleep sound apps for iPhone</a>.</p>
         ("Does Drop keep playing when the screen is locked?",
          "Yes. The sound keeps playing with the screen locked."),
         ("Is Drop free?",
-         "It is free to download, with ten sounds free and no ads. Drop Pro unlocks the other 22 sounds by "
+         "It is free to download, with nine sounds free and no ads. Drop Pro unlocks the other 44 sounds by "
          "subscription or with a one-time lifetime purchase."),
     ],
 )
@@ -544,14 +544,14 @@ ruido, lluvia, mar y arroyo, y su propio temporizador para apagarlos. Si con eso
     after="""
 <h2>Qué hace Drop y qué no</h2>
 
-<p>Drop tiene 32 sonidos de naturaleza, ambiente y ruido, diez gratis, una guía de
+<p>Drop tiene 53 sonidos de naturaleza, ambiente y ruido, nueve gratis, una guía de
 respiración, una planta que crece con cada sesión, rachas, widgets y ningún anuncio.
 Funciona sin conexión, no pide cuenta y va en iPhone, iPad y Mac. Drop Pro desbloquea
-los otros 22 sonidos, por suscripción o con una compra de por vida.</p>
+los otros 44 sonidos, por suscripción o con una compra de por vida.</p>
 
 <p>Tiene temporizador (de 15 minutos a 8 horas, con fundido de 30 segundos), suena un sonido cada vez, sin mezclador, y no
-genera ruido blanco, rosa ni marrón: sus sonidos de ruido son un ventilador, un autobús
-y un zumbido eléctrico. Si quieres mezclar sonidos o afinar el ruido, otras apps lo
+desde la versión 2.10 tiene ruido blanco gratis y ruido rosa, marrón y marrón profundo con Drop Pro,
+grabados en bucle y sin ecualizador. Si quieres mezclar sonidos o afinar el ruido, otras apps lo
 hacen mejor, y decimos cuáles en
 <a href="../../blog/es/mejores-apps-ruido-blanco-sonidos-dormir-iphone.html">las mejores
 apps de ruido blanco y sonidos para dormir en iPhone</a>.</p>
@@ -570,7 +570,7 @@ apps de ruido blanco y sonidos para dormir en iPhone</a>.</p>
         ("¿Drop sigue sonando con la pantalla bloqueada?",
          "Sí. El sonido sigue con la pantalla bloqueada."),
         ("¿Drop es gratis?",
-         "Se descarga gratis, con diez sonidos gratis y sin anuncios. Drop Pro desbloquea los otros 22 "
+         "Se descarga gratis, con nueve sonidos gratis y sin anuncios. Drop Pro desbloquea los otros 44 "
          "sonidos por suscripción o con una compra de por vida."),
     ],
 )
