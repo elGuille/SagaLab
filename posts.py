@@ -4971,7 +4971,7 @@ RANK_ARTICLES.append(dict(
 
 
 # --------------------------------------------------------------------------
-# 16 — Apps de chat con varios modelos de IA para iPhone (ranking, Fast AI 1.a)
+# 16 — Apps de chat con varios modelos de IA para iPhone (ranking; Ask AI, antes Fast AI, 6.a desde el 23 oct 2026)
 # --------------------------------------------------------------------------
 # Fast AI es nuestra: aviso arriba. Lo de Fast AI sale de su repo (ChatGPT) y de
 # App Store Connect el 8 oct 2026: version 1.3.6, chatear exige suscripcion
@@ -4999,35 +4999,20 @@ _MM = dict(
     chatgpt="https://apps.apple.com/us/app/id6448311069",
 )
 MM_RANK = [
-    ("Chat with Fast AI", "https://apps.apple.com/app/id1662608035"),
     ("Poe – Fast AI Chat", "https://apps.apple.com/us/app/id1640745955"),
     ("ChatOn AI - Chat Bot Assistant", "https://apps.apple.com/us/app/id1661308505"),
     ("Chat AI: Ask Agent Anything", "https://apps.apple.com/us/app/id1668787639"),
     ("AI Chatbot - Nova", "https://apps.apple.com/us/app/id1669007652"),
     ("Chatbot AI Assistant - Genie", "https://apps.apple.com/us/app/id1658377526"),
+    ("All AI Models in One: Ask AI", "https://apps.apple.com/app/id1662608035"),
     ("ChatHub - All-in-One AI Client", "https://apps.apple.com/us/app/id6736810266"),
 ]
 
-_FASTAI_WHY_EN = _rank_box("Why Fast AI is #1", [
-    "Models from five companies in one chat: OpenAI, Google, Anthropic, xAI and DeepSeek.",
-    "You switch model whenever you like, in the same conversation.",
-    "Web search when you need current information, and answers read aloud.",
-    "A monthly plan ($9.99 in the US). Most apps here push weekly plans.",
-    "One job, done simply: no image tools, characters or upsells in the way of the chat.",
-])
-_FASTAI_WHY_ES = _rank_box("Por qué Fast AI es la n.º 1", [
-    "Modelos de cinco empresas en un mismo chat: OpenAI, Google, Anthropic, xAI y DeepSeek.",
-    "Cambias de modelo cuando quieras, en la misma conversación.",
-    "Búsqueda web cuando necesitas información actual, y respuestas leídas en voz alta.",
-    "Un plan mensual (9,99 $ en EE. UU.). La mayoría de las de esta lista empujan planes semanales.",
-    "Hace una cosa y la hace simple: sin herramientas de imagen, personajes ni ventas que estorben al chat.",
-])
-
 A16_EN_BODY = ("""
-<p><strong>Disclosure: we make Fast AI, the app ranked first here.</strong>
+<p><strong>Disclosure: we make Ask AI, number 6 on this list.</strong>
 Everything we say about the other apps comes from their own App Store pages, and
 we say plainly where they beat us. Prices and ratings are from the US App Store
-on %(date)s.</p>
+on %(date)s; Ask AI's entry was updated from its listing on 23 October 2026.</p>
 
 <p>Every app here lets you talk to AI models from more than one company without
 paying each company separately. They differ in which models they name, how they
@@ -5036,26 +5021,26 @@ charge, and what else they pack in: images, files, voice, search.</p>
 <h2>The ranking</h2>
 
 <ol>
-<li><a href="%(fastai)s">Fast AI</a>: best simple app for switching between five model families.</li>
 <li><a href="%(poe)s" target="_blank" rel="noopener">Poe</a>: best for the widest choice of models and bots.</li>
 <li><a href="%(chaton)s" target="_blank" rel="noopener">ChatOn</a>: best for current models plus images and video from photos.</li>
 <li><a href="%(chatai)s" target="_blank" rel="noopener">Chat AI: Ask Agent Anything</a>: best if you want a lifetime purchase.</li>
 <li><a href="%(nova)s" target="_blank" rel="noopener">Nova</a>: best for Word and Excel files.</li>
 <li><a href="%(genie)s" target="_blank" rel="noopener">Genie</a>: best for chat, images and PDFs together.</li>
+<li><a href="%(fastai)s">Ask AI</a>: best for trying several model families free, chat only.</li>
 <li><a href="%(chathub)s" target="_blank" rel="noopener">ChatHub</a>: best for privacy.</li>
 </ol>
-""" + _FASTAI_WHY_EN + """
+
 <h2>The seven apps at a glance</h2>
 
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Models named on its page</th><th>Also does</th><th>How it charges (US)</th><th>Rating (US)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(fastai)s">Fast AI</a> (ours)</td><td>OpenAI, Google, Anthropic, xAI, DeepSeek</td><td>Web search, read aloud</td><td>Subscription: $5.99/week, $9.99/month, $69.99/year</td><td>Few ratings</td></tr>
-<tr><td>2. <a href="%(poe)s" target="_blank" rel="noopener">Poe</a></td><td>o3, GPT-4.5, Claude 3.7 Sonnet, Gemini 2.0 and image and video models</td><td>Images, video, web, PDFs, custom bots</td><td>Basic $4.99/month; Plus $19.99/month</td><td>4.7 &middot; 53,850</td></tr>
-<tr><td>3. <a href="%(chaton)s" target="_blank" rel="noopener">ChatOn</a></td><td>GPT-5, Gemini 3.5, Claude Sonnet 5, Sonar</td><td>Images, video from photos, web, PDFs</td><td>Weekly from $6.99; yearly $39.99 to $59.99</td><td>4.7 &middot; 286,441</td></tr>
-<tr><td>4. <a href="%(chatai)s" target="_blank" rel="noopener">Chat AI: Ask Agent Anything</a></td><td>GPT-6, Claude Opus 5, Gemini 3.1 Pro and 3.8 Flash, Grok 4.7, DeepSeek V4 Pro, Perplexity</td><td>Images, web, PDF/DOCX, voice</td><td>Weekly $7.39 to $11.99; lifetime $39.99 or $69.99</td><td>4.8 &middot; 328,211</td></tr>
-<tr><td>5. <a href="%(nova)s" target="_blank" rel="noopener">Nova</a></td><td>GPT-5.6, Gemini 3.6 Flash, Claude Opus 5, Kimi K3, Grok 4.5, DeepSeek V4 Pro</td><td>Images, web, Word/Excel, voice</td><td>Weekly $4.99 to $7.99; yearly $39.99 or $59.99</td><td>4.6 &middot; 127,054</td></tr>
-<tr><td>6. <a href="%(genie)s" target="_blank" rel="noopener">Genie</a></td><td>None by name (&ldquo;advanced third-party AI models&rdquo;)</td><td>Images, web and Deep Search, PDFs, voice</td><td>Weekly $5.99 or $7.99; yearly $39.99</td><td>4.7 &middot; 201,891</td></tr>
+<tr><td>1. <a href="%(poe)s" target="_blank" rel="noopener">Poe</a></td><td>o3, GPT-4.5, Claude 3.7 Sonnet, Gemini 2.0 and image and video models</td><td>Images, video, web, PDFs, custom bots</td><td>Basic $4.99/month; Plus $19.99/month</td><td>4.7 &middot; 53,850</td></tr>
+<tr><td>2. <a href="%(chaton)s" target="_blank" rel="noopener">ChatOn</a></td><td>GPT-5, Gemini 3.5, Claude Sonnet 5, Sonar</td><td>Images, video from photos, web, PDFs</td><td>Weekly from $6.99; yearly $39.99 to $59.99</td><td>4.7 &middot; 286,441</td></tr>
+<tr><td>3. <a href="%(chatai)s" target="_blank" rel="noopener">Chat AI: Ask Agent Anything</a></td><td>GPT-6, Claude Opus 5, Gemini 3.1 Pro and 3.8 Flash, Grok 4.7, DeepSeek V4 Pro, Perplexity</td><td>Images, web, PDF/DOCX, voice</td><td>Weekly $7.39 to $11.99; lifetime $39.99 or $69.99</td><td>4.8 &middot; 328,211</td></tr>
+<tr><td>4. <a href="%(nova)s" target="_blank" rel="noopener">Nova</a></td><td>GPT-5.6, Gemini 3.6 Flash, Claude Opus 5, Kimi K3, Grok 4.5, DeepSeek V4 Pro</td><td>Images, web, Word/Excel, voice</td><td>Weekly $4.99 to $7.99; yearly $39.99 or $59.99</td><td>4.6 &middot; 127,054</td></tr>
+<tr><td>5. <a href="%(genie)s" target="_blank" rel="noopener">Genie</a></td><td>None by name (&ldquo;advanced third-party AI models&rdquo;)</td><td>Images, web and Deep Search, PDFs, voice</td><td>Weekly $5.99 or $7.99; yearly $39.99</td><td>4.7 &middot; 201,891</td></tr>
+<tr><td>6. <a href="%(fastai)s">Ask AI</a></td><td>Gemini, Claude, Grok, DeepSeek, Perplexity Sonar</td><td>Web search (Pro), read aloud</td><td>A few free messages a day; Pro $7.99/week or $69.99/year</td><td>5.0 &middot; 3</td></tr>
 <tr><td>7. <a href="%(chathub)s" target="_blank" rel="noopener">ChatHub</a></td><td>GPT-5, Claude 4.5, Gemini 3 (&ldquo;20+ models&rdquo;)</td><td>Images and web via plugins, image upload</td><td>Pro $24.99/month; Unlimited $49.99/month</td><td>4.4 &middot; 36</td></tr>
 </tbody>
 </table></div>
@@ -5063,29 +5048,9 @@ charge, and what else they pack in: images, files, voice, search.</p>
 <p class="article-note">Model names are what each developer lists on its App
 Store page; some pages lag behind the app. Prices are the in-app purchases the
 App Store shows, which can be incomplete. Ratings are from Apple's public lookup
-API on %(date)s.</p>
+API on %(date)s (Ask AI: 23 October 2026).</p>
 
-<h2>1. Fast AI: the simple one</h2>
-
-<p><a href="%(fastai)s">Fast AI</a> puts models from OpenAI, Google (Gemini),
-Anthropic (Claude), xAI (Grok) and DeepSeek in one chat. You pick a model, ask,
-and switch whenever you like, in the same conversation: a fast one for quick
-questions, a stronger one for hard problems, or a second opinion on the same
-question. Web search is there for current information, and any answer can be read
-aloud. The interface is in English, Spanish, Brazilian Portuguese, Japanese and
-Korean. We keep the models current on our side, so the app shows the latest
-names rather than a fixed list.</p>
-
-<p>It is free to download, but chatting needs a subscription: $5.99 a week,
-$9.99 a month or $69.99 a year in the US.</p>
-
-<p>Where others beat it: Fast AI does not make images or video, does not read
-PDFs or other files, and has no voice input. There is no free tier. Each
-subscription has a daily usage limit, and web search can be used only a few times
-a day. Genie and Nova are cheaper per year, and every app here has far more
-ratings than we do.</p>
-
-<h2>2. Poe: the most models</h2>
+<h2>1. Poe: the most models</h2>
 
 <p>Made by Quora. Its page lists text models from OpenAI, Anthropic and Google
 next to image, video and voice models (FLUX, Ideogram, Stable Diffusion, Veo,
@@ -5094,14 +5059,14 @@ monthly, from $4.99 (Basic) to $19.99 (Plus). The model names on its page look
 older than what the app offers, so check inside the app. Choose it if you want
 the widest menu.</p>
 
-<h2>3. ChatOn: current models, plus pictures and clips</h2>
+<h2>2. ChatOn: current models, plus pictures and clips</h2>
 
 <p>ChatOn names current models (GPT-5, Gemini 3.5, Claude Sonnet 5, Sonar), and
 adds image generation, short videos from photos, web search and PDF reading. It
 sells mostly weekly plans, with yearly options from $39.99. Its privacy label
 reads &ldquo;Data Used to Track You&rdquo;.</p>
 
-<h2>4. Chat AI: Ask Agent Anything: pay once</h2>
+<h2>3. Chat AI: Ask Agent Anything: pay once</h2>
 
 <p>The most ratings of the multi-model apps here, and the longest model list on
 its page: GPT-6, Claude Opus 5, two Gemini models, Grok 4.7, DeepSeek V4 Pro and
@@ -5109,18 +5074,39 @@ Perplexity. It reads PDF, TXT and DOCX files and takes voice. Its weekly plans
 are the most expensive here ($7.39 to $11.99), but it is the only one that sells
 a lifetime purchase ($39.99 or $69.99).</p>
 
-<h2>5. Nova: for office files</h2>
+<h2>4. Nova: for office files</h2>
 
 <p>Nova names GPT-5.6, Gemini 3.6 Flash, Claude Opus 5, Kimi K3, Grok 4.5 and
 DeepSeek V4 Pro, makes images, searches the web, takes voice and reads Word and
 Excel files. Weekly plans start at $4.99 and yearly at $39.99.</p>
 
-<h2>6. Genie: chat, images and PDFs</h2>
+<h2>5. Genie: chat, images and PDFs</h2>
 
 <p>Genie is one of the most popular apps of this kind. Its page does not name
 its models, but describes chat with web search and a Deep Search mode, image
 generation and editing, PDF and text reading, and voice. Yearly plans start at
 $39.99. Its privacy label reads &ldquo;Data Used to Track You&rdquo;.</p>
+
+<h2>6. Ask AI: start free, chat only</h2>
+
+<p><a href="%(fastai)s">Ask AI</a> (on the App Store, &ldquo;All AI Models in
+One: Ask AI&rdquo;; its description still uses its old name, Fast AI) puts models
+from several companies, such as Gemini, Claude, Grok, DeepSeek and Perplexity
+Sonar, in one chat. You pick a model, ask, and switch whenever you like, in the
+same conversation. It writes, rewrites, summarizes and translates, reads answers
+aloud and gives chats automatic titles. With Pro it searches the web by itself
+when a question needs current information. The interface is in English, Spanish,
+Portuguese, Japanese and Korean.</p>
+
+<p>You can send a few messages a day for free. Pro, weekly or yearly, unlocks
+every model, web search and a much higher daily limit: the US App Store lists
+$7.99 a week and $69.99 a year.</p>
+
+<p>Where others beat it: it is chat only, with no images, videos or files, so
+ChatOn, Genie and Nova do much more. Pro still has a daily limit. It needs iOS
+18.6 or later, its privacy label lists usage data used to track you, and it has
+only 3 ratings, far fewer than any other app here. Its listing was checked on
+23 October 2026 (version 1.4.4).</p>
 
 <h2>7. ChatHub: the private one</h2>
 
@@ -5139,7 +5125,7 @@ ratings.</p>
 <h2>How to choose</h2>
 
 <ul>
-<li><strong>Just chat, several model families, a monthly plan:</strong> <a href="%(fastai)s">Fast AI</a>.</li>
+<li><strong>Just chat, several model families, a free daily allowance to try it:</strong> <a href="%(fastai)s">Ask AI</a>.</li>
 <li><strong>The biggest menu, including image and video models:</strong> Poe.</li>
 <li><strong>Images and short videos in the same app:</strong> ChatOn or Genie.</li>
 <li><strong>Pay once:</strong> Chat AI: Ask Agent Anything.</li>
@@ -5157,19 +5143,19 @@ apps for chat and image generation on iPhone</a>.</p>
 A16_EN_SOURCES = """
 <h2>Sources</h2>
 <ul>
-<li>App Store pages (US): <a href="%(fastai)s">Fast AI</a>, <a href="%(poe)s" target="_blank" rel="noopener">Poe</a>, <a href="%(chaton)s" target="_blank" rel="noopener">ChatOn</a>, <a href="%(chatai)s" target="_blank" rel="noopener">Chat AI: Ask Agent Anything</a>, <a href="%(nova)s" target="_blank" rel="noopener">Nova</a>, <a href="%(genie)s" target="_blank" rel="noopener">Genie</a>, <a href="%(chathub)s" target="_blank" rel="noopener">ChatHub</a>, <a href="%(chatgpt)s" target="_blank" rel="noopener">ChatGPT</a>, <a href="%(pplx)s" target="_blank" rel="noopener">Perplexity</a>. Models, features, in-app purchases and privacy labels as shown on %(date)s.</li>
+<li>App Store pages (US): <a href="%(fastai)s">Ask AI</a>, <a href="%(poe)s" target="_blank" rel="noopener">Poe</a>, <a href="%(chaton)s" target="_blank" rel="noopener">ChatOn</a>, <a href="%(chatai)s" target="_blank" rel="noopener">Chat AI: Ask Agent Anything</a>, <a href="%(nova)s" target="_blank" rel="noopener">Nova</a>, <a href="%(genie)s" target="_blank" rel="noopener">Genie</a>, <a href="%(chathub)s" target="_blank" rel="noopener">ChatHub</a>, <a href="%(chatgpt)s" target="_blank" rel="noopener">ChatGPT</a>, <a href="%(pplx)s" target="_blank" rel="noopener">Perplexity</a>. Models, features, in-app purchases and privacy labels as shown on %(date)s.</li>
 <li>Ratings: Apple's public iTunes lookup API, %(date)s.</li>
-<li>Fast AI's features, limits and prices: <a href="../fastai.html">its product page</a>.</li>
+<li>Ask AI's features, limits and prices: its App Store page (version 1.4.4, 23 October 2026) and <a href="../fastai.html">its product page</a>.</li>
 </ul>
 <p>If anything here is out of date, <a href="mailto:sagalabs@proton.me">tell us</a>
 and we will correct the page.</p>
 """ % dict(_MM, date=MM_DATE_EN)
 
 A16_ES_BODY = ("""
-<p><strong>Aviso: Fast AI, la app que va primera, es nuestra.</strong> Todo lo
+<p><strong>Aviso: Ask AI, la n.º 6 de esta lista, es nuestra.</strong> Todo lo
 que decimos de las demás sale de su propia ficha del App Store, y decimos
 claramente en qué nos ganan. Precios y valoraciones de la App Store de EE. UU. a
-%(date)s.</p>
+%(date)s; lo de Ask AI se actualizó con su ficha el 23 de octubre de 2026.</p>
 
 <p>Todas te dejan hablar con modelos de IA de más de una empresa sin pagar a cada
 una por separado. Cambian en qué modelos nombran, cómo cobran y qué más traen:
@@ -5178,26 +5164,26 @@ imágenes, archivos, voz, búsqueda.</p>
 <h2>El ranking</h2>
 
 <ol>
-<li><a href="%(fastai)s">Fast AI</a>: la más sencilla para cambiar entre cinco familias de modelos.</li>
 <li><a href="%(poe)s" target="_blank" rel="noopener">Poe</a>: la que más modelos y bots ofrece.</li>
 <li><a href="%(chaton)s" target="_blank" rel="noopener">ChatOn</a>: modelos actuales e imágenes y vídeos a partir de fotos.</li>
 <li><a href="%(chatai)s" target="_blank" rel="noopener">Chat AI: Ask Agent Anything</a>: la mejor si quieres pagar una sola vez.</li>
 <li><a href="%(nova)s" target="_blank" rel="noopener">Nova</a>: la mejor con archivos de Word y Excel.</li>
 <li><a href="%(genie)s" target="_blank" rel="noopener">Genie</a>: chat, imágenes y PDF juntos.</li>
+<li><a href="%(fastai)s">Ask AI</a>: para probar gratis varias familias de modelos, solo chat.</li>
 <li><a href="%(chathub)s" target="_blank" rel="noopener">ChatHub</a>: la mejor para la privacidad.</li>
 </ol>
-""" + _FASTAI_WHY_ES + """
+
 <h2>Las siete apps de un vistazo</h2>
 
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Modelos que nombra su ficha</th><th>Además</th><th>Cómo cobra (EE. UU.)</th><th>Valoración (EE. UU.)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(fastai)s">Fast AI</a> (nuestra)</td><td>OpenAI, Google, Anthropic, xAI, DeepSeek</td><td>Búsqueda web, lectura en voz alta</td><td>Suscripción: 5,99 $/semana, 9,99 $/mes, 69,99 $/año</td><td>Pocas valoraciones</td></tr>
-<tr><td>2. <a href="%(poe)s" target="_blank" rel="noopener">Poe</a></td><td>o3, GPT-4.5, Claude 3.7 Sonnet, Gemini 2.0 y modelos de imagen y vídeo</td><td>Imágenes, vídeo, web, PDF, bots propios</td><td>Basic 4,99 $/mes; Plus 19,99 $/mes</td><td>4,7 &middot; 53.850</td></tr>
-<tr><td>3. <a href="%(chaton)s" target="_blank" rel="noopener">ChatOn</a></td><td>GPT-5, Gemini 3.5, Claude Sonnet 5, Sonar</td><td>Imágenes, vídeo desde fotos, web, PDF</td><td>Semanal desde 6,99 $; anual de 39,99 a 59,99 $</td><td>4,7 &middot; 286.441</td></tr>
-<tr><td>4. <a href="%(chatai)s" target="_blank" rel="noopener">Chat AI: Ask Agent Anything</a></td><td>GPT-6, Claude Opus 5, Gemini 3.1 Pro y 3.8 Flash, Grok 4.7, DeepSeek V4 Pro, Perplexity</td><td>Imágenes, web, PDF/DOCX, voz</td><td>Semanal de 7,39 a 11,99 $; de por vida 39,99 o 69,99 $</td><td>4,8 &middot; 328.211</td></tr>
-<tr><td>5. <a href="%(nova)s" target="_blank" rel="noopener">Nova</a></td><td>GPT-5.6, Gemini 3.6 Flash, Claude Opus 5, Kimi K3, Grok 4.5, DeepSeek V4 Pro</td><td>Imágenes, web, Word/Excel, voz</td><td>Semanal de 4,99 a 7,99 $; anual 39,99 o 59,99 $</td><td>4,6 &middot; 127.054</td></tr>
-<tr><td>6. <a href="%(genie)s" target="_blank" rel="noopener">Genie</a></td><td>Ninguno por su nombre (&laquo;modelos de IA avanzados de terceros&raquo;)</td><td>Imágenes, web y Deep Search, PDF, voz</td><td>Semanal 5,99 o 7,99 $; anual 39,99 $</td><td>4,7 &middot; 201.891</td></tr>
+<tr><td>1. <a href="%(poe)s" target="_blank" rel="noopener">Poe</a></td><td>o3, GPT-4.5, Claude 3.7 Sonnet, Gemini 2.0 y modelos de imagen y vídeo</td><td>Imágenes, vídeo, web, PDF, bots propios</td><td>Basic 4,99 $/mes; Plus 19,99 $/mes</td><td>4,7 &middot; 53.850</td></tr>
+<tr><td>2. <a href="%(chaton)s" target="_blank" rel="noopener">ChatOn</a></td><td>GPT-5, Gemini 3.5, Claude Sonnet 5, Sonar</td><td>Imágenes, vídeo desde fotos, web, PDF</td><td>Semanal desde 6,99 $; anual de 39,99 a 59,99 $</td><td>4,7 &middot; 286.441</td></tr>
+<tr><td>3. <a href="%(chatai)s" target="_blank" rel="noopener">Chat AI: Ask Agent Anything</a></td><td>GPT-6, Claude Opus 5, Gemini 3.1 Pro y 3.8 Flash, Grok 4.7, DeepSeek V4 Pro, Perplexity</td><td>Imágenes, web, PDF/DOCX, voz</td><td>Semanal de 7,39 a 11,99 $; de por vida 39,99 o 69,99 $</td><td>4,8 &middot; 328.211</td></tr>
+<tr><td>4. <a href="%(nova)s" target="_blank" rel="noopener">Nova</a></td><td>GPT-5.6, Gemini 3.6 Flash, Claude Opus 5, Kimi K3, Grok 4.5, DeepSeek V4 Pro</td><td>Imágenes, web, Word/Excel, voz</td><td>Semanal de 4,99 a 7,99 $; anual 39,99 o 59,99 $</td><td>4,6 &middot; 127.054</td></tr>
+<tr><td>5. <a href="%(genie)s" target="_blank" rel="noopener">Genie</a></td><td>Ninguno por su nombre (&laquo;modelos de IA avanzados de terceros&raquo;)</td><td>Imágenes, web y Deep Search, PDF, voz</td><td>Semanal 5,99 o 7,99 $; anual 39,99 $</td><td>4,7 &middot; 201.891</td></tr>
+<tr><td>6. <a href="%(fastai)s">Ask AI</a></td><td>Gemini, Claude, Grok, DeepSeek, Perplexity Sonar</td><td>Búsqueda web (Pro), lectura en voz alta</td><td>Unos mensajes gratis al día; Pro 7,99 $/semana o 69,99 $/año</td><td>5,0 &middot; 3</td></tr>
 <tr><td>7. <a href="%(chathub)s" target="_blank" rel="noopener">ChatHub</a></td><td>GPT-5, Claude 4.5, Gemini 3 (&laquo;más de 20 modelos&raquo;)</td><td>Imágenes y web con plugins, subir imágenes</td><td>Pro 24,99 $/mes; Unlimited 49,99 $/mes</td><td>4,4 &middot; 36</td></tr>
 </tbody>
 </table></div>
@@ -5205,30 +5191,9 @@ imágenes, archivos, voz, búsqueda.</p>
 <p class="article-note">Los modelos son los que cada desarrollador pone en su
 ficha del App Store; algunas fichas van por detrás de la app. Los precios son las
 compras dentro de la app que muestra el App Store, que pueden estar incompletas.
-Valoraciones de la API pública de Apple a %(date)s.</p>
+Valoraciones de la API pública de Apple a %(date)s (Ask AI: 23 de octubre de 2026).</p>
 
-<h2>1. Fast AI: la sencilla</h2>
-
-<p><a href="%(fastai)s">Fast AI</a> reúne modelos de OpenAI, Google (Gemini),
-Anthropic (Claude), xAI (Grok) y DeepSeek en un mismo chat. Eliges modelo,
-preguntas y cambias cuando quieras, en la misma conversación: uno rápido para
-dudas sencillas, uno más potente para problemas difíciles, o una segunda opinión
-sobre la misma pregunta. Tiene búsqueda web para la información actual y puede
-leer en voz alta cualquier respuesta. La interfaz está en inglés, español,
-portugués de Brasil, japonés y coreano. Los modelos los actualizamos desde
-nuestro lado, así que la app muestra los nombres al día en lugar de una lista
-fija.</p>
-
-<p>Se descarga gratis, pero para chatear hace falta suscripción: 5,99 $ a la
-semana, 9,99 $ al mes o 69,99 $ al año en EE. UU.</p>
-
-<p>En qué le ganan las demás: Fast AI no hace imágenes ni vídeo, no lee PDF ni
-otros archivos y no tiene entrada por voz. No hay versión gratis. Cada suscripción
-tiene un límite de uso diario, y la búsqueda web solo se puede usar unas pocas
-veces al día. Genie y Nova salen más baratas al año, y todas tienen muchas más
-valoraciones que nosotros.</p>
-
-<h2>2. Poe: la que más modelos tiene</h2>
+<h2>1. Poe: la que más modelos tiene</h2>
 
 <p>La hace Quora. Su ficha nombra modelos de texto de OpenAI, Anthropic y Google
 junto a modelos de imagen, vídeo y voz (FLUX, Ideogram, Stable Diffusion, Veo,
@@ -5237,7 +5202,7 @@ mensuales, de 4,99 $ (Basic) a 19,99 $ (Plus). Los nombres de modelos de su fich
 parecen más antiguos que los que ofrece la app, así que conviene mirarlo dentro.
 Elígela si quieres el menú más amplio.</p>
 
-<h2>3. ChatOn: modelos actuales, y además fotos y vídeos</h2>
+<h2>2. ChatOn: modelos actuales, y además fotos y vídeos</h2>
 
 <p>ChatOn nombra modelos actuales (GPT-5, Gemini 3.5, Claude Sonnet 5, Sonar) y
 añade generación de imágenes, vídeos cortos a partir de fotos, búsqueda web y
@@ -5245,7 +5210,7 @@ lectura de PDF. Vende sobre todo planes semanales, con opciones anuales desde
 39,99 $. Su etiqueta de privacidad dice &laquo;Datos usados para
 rastrearte&raquo;.</p>
 
-<h2>4. Chat AI: Ask Agent Anything: pagar una vez</h2>
+<h2>3. Chat AI: Ask Agent Anything: pagar una vez</h2>
 
 <p>La que más valoraciones tiene de las apps de varios modelos de esta lista, y
 la lista de modelos más larga en su ficha: GPT-6, Claude Opus 5, dos modelos
@@ -5254,19 +5219,40 @@ admite voz. Sus planes semanales son los más caros de la lista (de 7,39 a
 11,99 $), pero es la única que vende una compra de por vida (39,99 o
 69,99 $).</p>
 
-<h2>5. Nova: para archivos de oficina</h2>
+<h2>4. Nova: para archivos de oficina</h2>
 
 <p>Nova nombra GPT-5.6, Gemini 3.6 Flash, Claude Opus 5, Kimi K3, Grok 4.5 y
 DeepSeek V4 Pro, hace imágenes, busca en la web, admite voz y lee archivos de Word
 y Excel. Los planes semanales empiezan en 4,99 $ y los anuales en 39,99 $.</p>
 
-<h2>6. Genie: chat, imágenes y PDF</h2>
+<h2>5. Genie: chat, imágenes y PDF</h2>
 
 <p>Genie es de las apps más populares de este tipo. Su ficha no nombra sus
 modelos, pero describe chat con búsqueda web y un modo Deep Search, generación y
 edición de imágenes, lectura de PDF y texto, y voz. Los planes anuales empiezan
 en 39,99 $. Su etiqueta de privacidad dice &laquo;Datos usados para
 rastrearte&raquo;.</p>
+
+<h2>6. Ask AI: empezar gratis, solo chat</h2>
+
+<p><a href="%(fastai)s">Ask AI</a> (en el App Store, &laquo;All AI Models in
+One: Ask AI&raquo;; su descripción aún usa su nombre anterior, Fast AI) reúne
+modelos de varias empresas, como Gemini, Claude, Grok, DeepSeek y Perplexity
+Sonar, en un mismo chat. Eliges modelo, preguntas y cambias cuando quieras, en la
+misma conversación. Escribe, reescribe, resume y traduce, lee las respuestas en
+voz alta y pone título a los chats. Con Pro busca en la web por sí sola cuando la
+pregunta necesita información actual. La interfaz está en inglés, español,
+portugués, japonés y coreano.</p>
+
+<p>Puedes enviar unos pocos mensajes al día gratis. Pro, semanal o anual,
+desbloquea todos los modelos, la búsqueda web y un límite diario mucho más alto:
+el App Store de EE. UU. muestra 7,99 $ a la semana y 69,99 $ al año.</p>
+
+<p>En qué le ganan las demás: es solo chat, sin imágenes, vídeos ni archivos, así
+que ChatOn, Genie y Nova hacen mucho más. Pro también tiene límite diario. Pide
+iOS 18.6 o posterior, su etiqueta de privacidad incluye datos de uso para
+rastrearte y tiene solo 3 valoraciones, muchas menos que cualquier otra de la
+lista. Su ficha se revisó el 23 de octubre de 2026 (versión 1.4.4).</p>
 
 <h2>7. ChatHub: la privada</h2>
 
@@ -5285,7 +5271,7 @@ decenas de valoraciones.</p>
 <h2>Cómo elegir</h2>
 
 <ul>
-<li><strong>Solo chat, varias familias de modelos, plan mensual:</strong> <a href="%(fastai)s">Fast AI</a>.</li>
+<li><strong>Solo chat, varias familias de modelos y unos mensajes gratis al día para probar:</strong> <a href="%(fastai)s">Ask AI</a>.</li>
 <li><strong>El menú más grande, con modelos de imagen y vídeo:</strong> Poe.</li>
 <li><strong>Imágenes y vídeos cortos en la misma app:</strong> ChatOn o Genie.</li>
 <li><strong>Pagar una vez:</strong> Chat AI: Ask Agent Anything.</li>
@@ -5303,21 +5289,22 @@ apps de IA para chatear y crear imágenes en iPhone</a>.</p>
 A16_ES_SOURCES = """
 <h2>Fuentes</h2>
 <ul>
-<li>Fichas del App Store (EE. UU.): <a href="%(fastai)s">Fast AI</a>, <a href="%(poe)s" target="_blank" rel="noopener">Poe</a>, <a href="%(chaton)s" target="_blank" rel="noopener">ChatOn</a>, <a href="%(chatai)s" target="_blank" rel="noopener">Chat AI: Ask Agent Anything</a>, <a href="%(nova)s" target="_blank" rel="noopener">Nova</a>, <a href="%(genie)s" target="_blank" rel="noopener">Genie</a>, <a href="%(chathub)s" target="_blank" rel="noopener">ChatHub</a>, <a href="%(chatgpt)s" target="_blank" rel="noopener">ChatGPT</a>, <a href="%(pplx)s" target="_blank" rel="noopener">Perplexity</a>. Modelos, funciones, compras dentro de la app y etiquetas de privacidad a %(date)s.</li>
+<li>Fichas del App Store (EE. UU.): <a href="%(fastai)s">Ask AI</a>, <a href="%(poe)s" target="_blank" rel="noopener">Poe</a>, <a href="%(chaton)s" target="_blank" rel="noopener">ChatOn</a>, <a href="%(chatai)s" target="_blank" rel="noopener">Chat AI: Ask Agent Anything</a>, <a href="%(nova)s" target="_blank" rel="noopener">Nova</a>, <a href="%(genie)s" target="_blank" rel="noopener">Genie</a>, <a href="%(chathub)s" target="_blank" rel="noopener">ChatHub</a>, <a href="%(chatgpt)s" target="_blank" rel="noopener">ChatGPT</a>, <a href="%(pplx)s" target="_blank" rel="noopener">Perplexity</a>. Modelos, funciones, compras dentro de la app y etiquetas de privacidad a %(date)s.</li>
 <li>Valoraciones: API pública de búsqueda de iTunes de Apple, %(date)s.</li>
-<li>Funciones, límites y precios de Fast AI: <a href="../../fastai.html">su página</a>.</li>
+<li>Funciones, límites y precios de Ask AI: su ficha del App Store (versión 1.4.4, 23 de octubre de 2026) y <a href="../../fastai.html">su página</a>.</li>
 </ul>
 <p>Si algo está desactualizado, <a href="mailto:sagalabs@proton.me">avísanos</a> y
 corregimos la página.</p>
 """ % dict(_MM, date=MM_DATE_ES)
 
 MM_FAQ_EN = [
-    ("Which iPhone app lets me use GPT, Claude, Gemini and Grok in one place?",
-     "Several do: Fast AI, Poe, ChatOn, Chat AI: Ask Agent Anything, Nova, Genie and ChatHub. Fast AI (ours) is the "
-     "simplest, with models from OpenAI, Google, Anthropic, xAI and DeepSeek in one chat and a monthly plan."),
+    ("Which iPhone app lets me use Claude, Gemini, Grok and other models in one place?",
+     "Several do: Poe, ChatOn, Chat AI: Ask Agent Anything, Nova, Genie, Ask AI and ChatHub. Poe has the widest menu; "
+     "ChatOn, Genie and Nova add images and files. Ask AI (ours) is chat only, with models such as Gemini, Claude, Grok, "
+     "DeepSeek and Perplexity Sonar and a few free messages a day."),
     ("Is there a free multi-model AI chat app?",
      "Most of these apps let you download them free but put the stronger models behind a subscription, often weekly. "
-     "Fast AI has no free tier. Poe's cheapest plan is $4.99 a month."),
+     "Ask AI gives a few free messages a day. Poe's cheapest plan is $4.99 a month."),
     ("Is a multi-model app cheaper than paying for ChatGPT, Claude and Gemini separately?",
      "Usually yes: one subscription instead of three at about $20 each. The trade-off is a daily cap on the most "
      "expensive models, which official apps handle differently."),
@@ -5326,12 +5313,13 @@ MM_FAQ_EN = [
      "ChatGPT, Gemini, Claude and Grok, each with one company's models."),
 ]
 MM_FAQ_ES = [
-    ("¿Qué app de iPhone me deja usar GPT, Claude, Gemini y Grok en el mismo sitio?",
-     "Varias: Fast AI, Poe, ChatOn, Chat AI: Ask Agent Anything, Nova, Genie y ChatHub. Fast AI (nuestra) es la más "
-     "sencilla, con modelos de OpenAI, Google, Anthropic, xAI y DeepSeek en un mismo chat y un plan mensual."),
+    ("¿Qué app de iPhone me deja usar Claude, Gemini, Grok y otros modelos en el mismo sitio?",
+     "Varias: Poe, ChatOn, Chat AI: Ask Agent Anything, Nova, Genie, Ask AI y ChatHub. Poe tiene el menú más amplio; "
+     "ChatOn, Genie y Nova añaden imágenes y archivos. Ask AI (nuestra) es solo chat, con modelos como Gemini, Claude, "
+     "Grok, DeepSeek y Perplexity Sonar y unos pocos mensajes gratis al día."),
     ("¿Hay alguna app gratis con varios modelos de IA?",
      "Casi todas se descargan gratis pero ponen los modelos potentes detrás de una suscripción, a menudo semanal. "
-     "Fast AI no tiene versión gratis. El plan más barato de Poe cuesta 4,99 $ al mes."),
+     "Ask AI da unos pocos mensajes gratis al día. El plan más barato de Poe cuesta 4,99 $ al mes."),
     ("¿Sale más barato que pagar ChatGPT, Claude y Gemini por separado?",
      "Normalmente sí: una suscripción en lugar de tres de unos 20 $ cada una. A cambio, los modelos más caros suelen "
      "tener un tope diario."),
@@ -5347,7 +5335,7 @@ RANK_ARTICLES.append(dict(
     en=dict(
         h1="Best AI chat apps with multiple models for iPhone (2026)",
         desc=("Seven iPhone apps that put GPT, Claude, Gemini, Grok and DeepSeek in one place, compared from their "
-              "own App Store pages: models, extras, how they charge, ratings. Written by Fast AI's maker, disclosed."),
+              "own App Store pages: models, extras, how they charge, ratings. Written by Ask AI's maker, disclosed."),
         kicker="AI chat", section="AI chat",
         standfirst=("One subscription instead of one per AI company. Which apps do it, what each one names, and how "
                     "they charge."),
@@ -5355,7 +5343,7 @@ RANK_ARTICLES.append(dict(
     es=dict(
         h1="Mejores apps de chat con IA con varios modelos para iPhone (2026)",
         desc=("Siete apps de iPhone que reúnen GPT, Claude, Gemini, Grok y DeepSeek, comparadas con su propia ficha "
-              "del App Store: modelos, extras, cómo cobran y valoraciones. Escrito por quien hace Fast AI, y lo decimos."),
+              "del App Store: modelos, extras, cómo cobran y valoraciones. Escrito por quien hace Ask AI, y lo decimos."),
         kicker="Chat con IA", section="Chat con IA",
         standfirst=("Una suscripci&oacute;n en lugar de una por cada empresa de IA. Qu&eacute; apps lo hacen, qu&eacute; "
                     "nombra cada una y c&oacute;mo cobran."),
@@ -5389,6 +5377,7 @@ _CI = dict(
     dora="https://aisagalab.com/ai-video-generator.html",
     fastai="best-multi-model-ai-chat-apps-iphone.html",
     fastai_es="mejores-apps-chat-ia-varios-modelos-iphone.html",
+    askai=FASTAI_BLOG,
 )
 CI_RANK = [
     ("Brainy AI Helper Chat & Create", "https://apps.apple.com/app/id1667947372"),
@@ -5511,13 +5500,24 @@ $39.99.</p>
 purchases listed. It does not generate video. Handy if you already use Instagram,
 Facebook or WhatsApp.</p>
 
+<h2>If you only need chat</h2>
+
+<p>If you do not need images, a chat-only app can be simpler. One of them is ours:
+<a href="%(askai)s">Ask AI</a> (&ldquo;All AI Models in One: Ask AI&rdquo; on the
+App Store) puts models from several companies, such as Gemini, Claude, Grok,
+DeepSeek and Perplexity Sonar, in one chat, with a few free messages a day and Pro
+weekly or yearly ($7.99 a week or $69.99 a year in the US). Its listing says it
+makes no images or videos and reads no files, which is why it is not ranked above.
+It has only 3 ratings so far. We compare it with the other multi-model apps in
+<a href="%(fastai)s">our multi-model chat ranking</a>.</p>
+
 <h2>How to choose</h2>
 
 <ul>
 <li><strong>Chat, images and homework scans in one small app:</strong> <a href="%(brainy)s">Brainy</a>.</li>
 <li><strong>The best all-round assistant:</strong> ChatGPT.</li>
 <li><strong>Video:</strong> Grok, or Gemini on a paid plan. For video made from your own photos, an app built for it, such as our <a href="%(dora)s">Dora</a>, gives you more control.</li>
-<li><strong>Several chat models:</strong> ChatOn, or the apps in <a href="%(fastai)s">our multi-model chat ranking</a>.</li>
+<li><strong>Several chat models:</strong> ChatOn, or, for chat only, the apps in <a href="%(fastai)s">our multi-model chat ranking</a>, including our Ask AI.</li>
 <li><strong>Free:</strong> Meta AI, or the free tiers of ChatGPT, Gemini and Grok.</li>
 </ul>
 """) % dict(_CI, date=CI_DATE_EN)
@@ -5633,13 +5633,25 @@ empiezan en 39,99 $.</p>
 app en su ficha. No genera vídeo. Útil si ya usas Instagram, Facebook o
 WhatsApp.</p>
 
+<h2>Si solo necesitas chat</h2>
+
+<p>Si no necesitas imágenes, una app solo de chat puede ser más sencilla. Una es
+nuestra: <a href="%(askai)s">Ask AI</a> (&laquo;All AI Models in One: Ask AI&raquo;
+en el App Store) reúne modelos de varias empresas, como Gemini, Claude, Grok,
+DeepSeek y Perplexity Sonar, en un mismo chat, con unos pocos mensajes gratis al
+día y Pro semanal o anual (7,99 $ a la semana o 69,99 $ al año en EE. UU.). Su
+ficha dice que no hace imágenes ni vídeos ni lee archivos, y por eso no está en el
+ranking de arriba. Por ahora tiene solo 3 valoraciones. La comparamos con las
+demás apps de varios modelos en <a href="%(fastai_es)s">nuestro ranking de chat
+con varios modelos</a>.</p>
+
 <h2>Cómo elegir</h2>
 
 <ul>
 <li><strong>Chat, imágenes y escanear deberes en una app pequeña:</strong> <a href="%(brainy)s">Brainy</a>.</li>
 <li><strong>El mejor asistente en general:</strong> ChatGPT.</li>
 <li><strong>Vídeo:</strong> Grok, o Gemini con un plan de pago. Para vídeo hecho a partir de tus propias fotos, una app pensada para eso, como nuestra <a href="%(dora)s">Dora</a>, te da más control.</li>
-<li><strong>Varios modelos de chat:</strong> ChatOn, o las apps de <a href="%(fastai_es)s">nuestro ranking de chat con varios modelos</a>.</li>
+<li><strong>Varios modelos de chat:</strong> ChatOn o, solo para chat, las apps de <a href="%(fastai_es)s">nuestro ranking de chat con varios modelos</a>, entre ellas nuestra Ask AI.</li>
 <li><strong>Gratis:</strong> Meta AI, o la versión gratis de ChatGPT, Gemini y Grok.</li>
 </ul>
 """) % dict(_CI, date=CI_DATE_ES)
