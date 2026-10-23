@@ -915,4 +915,61 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <!-- Guias del 23 oct 2026 -->
+  <url>
+    <loc>https://aisagalab.com/pinku/is-it-safe-to-tell-chatgpt-private-things.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aisagalab.com/pinku/es/es-seguro-contarle-cosas-privadas-a-chatgpt.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://aisagalab.com/photo-vault/before-lending-iphone-or-taking-it-to-repair.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aisagalab.com/photo-vault/es/antes-de-prestar-el-iphone-o-llevarlo-a-reparar.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://aisagalab.com/drop/brown-noise-vs-pink-noise-vs-white-noise.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aisagalab.com/drop/es/ruido-marron-rosa-o-blanco.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://aisagalab.com/3-tasks/3-task-method-ivy-lee-rule-of-3.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aisagalab.com/3-tasks/es/metodo-de-3-tareas-ivy-lee-regla-de-3.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
