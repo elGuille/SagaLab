@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // the MCP page, which reads as a developer product and lost the
             // App Store link entirely. Android goes in when Play approves it.
             secondaryLinks: [
-                { label: 'iPhone app', href: 'https://apps.apple.com/app/id6754180384' },
+                { label: 'iPhone app', href: 'https://apps.apple.com/app/apple-store/id6754180384?pt=118348020&ct=aisagalab-app-cards&mt=8' },
                 { label: 'Use it in ChatGPT, Claude or Cursor', href: 'ai-video-generator.html?utm_source=sagalab&utm_medium=homepage&utm_campaign=dora_agents' }
             ]
         },
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
             category: 'Productivity',
             image: 'images/pinku.webp',
             description: 'On-device AI assistant running Llama, Qwen, and DeepSeek locally. Zero data collection, works offline.',
-            link: 'https://apps.apple.com/app/id6754878073',
+            link: 'https://apps.apple.com/app/apple-store/id6754878073?pt=118348020&ct=aisagalab-app-cards&mt=8',
             cta: 'Get Pinku',
             appStoreFeatured: true
         },
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
             category: 'Security',
             image: 'images/photolock.webp',
             description: 'Encrypted photo and document vault with biometric authentication.',
-            link: 'https://apps.apple.com/au/app/only-gallery-keeper/id1532670722',
+            link: 'https://apps.apple.com/app/apple-store/id1532670722?pt=118348020&ct=aisagalab-app-cards&mt=8',
             cta: 'Secure Files',
             appStoreFeatured: false
         },
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
             category: 'Productivity',
             image: 'images/3tasks.webp',
             description: 'A simple three-task daily system. Do less, focus on what matters.',
-            link: 'https://apps.apple.com/au/app/3-tasks-daily-productivity/id1553693943',
+            link: 'https://apps.apple.com/app/apple-store/id1553693943?pt=118348020&ct=aisagalab-app-cards&mt=8',
             cta: 'Download App',
             appStoreFeatured: true
         },
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
             category: 'Productivity',
             image: 'images/brainyapp.webp',
             description: 'AI assistant for writing, brainstorming, and creative tasks.',
-            link: 'https://apps.apple.com/au/app/brainy-imagine-ai-art/id1667947372',
+            link: 'https://apps.apple.com/app/apple-store/id1667947372?pt=118348020&ct=aisagalab-app-cards&mt=8',
             cta: 'Get Help',
             appStoreFeatured: true,
             customClass: 'brainy-app'
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function () {
             category: 'Finance',
             image: 'images/crypton.webp',
             description: 'Real-time crypto tracking with price alerts and portfolio insights.',
-            link: 'https://apps.apple.com/au/app/crypton-crypto-tracker/id1143691286',
+            link: 'https://apps.apple.com/app/apple-store/id1143691286?pt=118348020&ct=aisagalab-app-cards&mt=8',
             cta: 'Track Portfolio',
             appStoreFeatured: false
         },
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function () {
             category: 'Health & Wellness',
             image: 'images/drop.webp',
             description: 'Guided meditations and sleep sounds. Reduce stress, sleep better.',
-            link: 'https://apps.apple.com/au/app/drop-relax-focus-sleep-well/id1462269642',
+            link: 'https://apps.apple.com/app/apple-store/id1462269642?pt=118348020&ct=aisagalab-app-cards&mt=8',
             cta: 'Start Meditating',
             appStoreFeatured: true
         }
