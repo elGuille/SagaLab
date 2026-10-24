@@ -416,8 +416,11 @@ IA sin conexión para iPhone y Mac</a>.</p>
 # Drop: ruido blanco para dormir en el iPhone
 # --------------------------------------------------------------------------
 
+D11_U24 = {"en": "11 October 2026, updated 24 October 2026", "es": "11 de octubre de 2026, actualizada el 24 de octubre de 2026"}
+
 DR_EN = dict(
     path="drop/white-noise-to-fall-asleep-iphone.html",
+    date=D11_U24, modified_iso="2026-10-24",
     app_name="Drop - Meditation & Focus",
     h1="How to use white noise to fall asleep on iPhone (Drop guide)",
     desc=("Step by step: pick a steady sound, keep it playing with the screen locked, stop it "
@@ -472,7 +475,7 @@ sounds, by subscription or with a one-time lifetime purchase.</p>
 
 <p>It has a sleep timer (15 minutes to 8 hours, with a 30-second fade-out), plays one sound at a time with no mixer, and
 since version 2.10 has white noise free and pink, brown and deep brown noise with Drop Pro,
-as looped tracks with no equaliser. More on <a href="../drop.html">Drop's page</a>. If you want to mix sounds or fine-tune noise, other apps do it better,
+as looped tracks with no equaliser; since version 2.11 (24 October 2026) the loops have no gap at the join and the sound comes back after a phone call. More on <a href="../drop.html">Drop's page</a>. If you want to mix sounds or fine-tune noise, other apps do it better,
 and we say which in <a href="../blog/best-white-noise-sleep-sound-apps-iphone.html">the
 best white noise and sleep sound apps for iPhone</a>.</p>
 """,
@@ -497,6 +500,7 @@ best white noise and sleep sound apps for iPhone</a>.</p>
 
 DR_ES = dict(
     path="drop/es/ruido-blanco-para-dormir-iphone.html",
+    date=D11_U24, modified_iso="2026-10-24",
     app_name="Drop - Meditation & Focus",
     h1="Cómo usar ruido blanco para dormirte con el iPhone (guía de Drop)",
     desc=("Paso a paso: elige un sonido constante, déjalo sonando con la pantalla bloqueada, apágalo "
@@ -553,7 +557,7 @@ los otros 44 sonidos, por suscripción o con una compra de por vida.</p>
 
 <p>Tiene temporizador (de 15 minutos a 8 horas, con fundido de 30 segundos), suena un sonido cada vez, sin mezclador, y no
 desde la versión 2.10 tiene ruido blanco gratis y ruido rosa, marrón y marrón profundo con Drop Pro,
-grabados en bucle y sin ecualizador. Si quieres mezclar sonidos o afinar el ruido, otras apps lo
+grabados en bucle y sin ecualizador; desde la versión 2.11 (24 de octubre de 2026) el bucle no tiene cortes en el empalme y el sonido vuelve tras una llamada. Si quieres mezclar sonidos o afinar el ruido, otras apps lo
 hacen mejor, y decimos cuáles en
 <a href="../../blog/es/mejores-apps-ruido-blanco-sonidos-dormir-iphone.html">las mejores
 apps de ruido blanco y sonidos para dormir en iPhone</a>.</p>

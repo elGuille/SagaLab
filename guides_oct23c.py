@@ -12,7 +12,7 @@ Cada una lleva un dato de primera mano, comprobado el 23 oct 2026 y dicho en la 
   21688924). Codigo de la 1.3.0 (Reminders.swift: aviso de la manana, 9:00 por defecto).
 - 3 Tasks (Pomodoro): guia de Apple de temporizadores (iph8241d6b2a) y Focus (iphd6288a67f);
   codigo de la 1.3.0 (limite por tarea de 15, 25, 45 o 60 min con aviso). El widget que arranca
-  el tiempo y la frase de Siri son de la 1.4.0, que no esta a la venta: se dice que llegan.
+  el tiempo es de la 1.4.1 (a la venta el 24 oct); la frase de Siri no salio.
 - Pinku (IA local): codigo de la 1.1 en venta (ModelMemory.swift y OnboardingInstallModelView:
   60 % de la RAM para listar, memoria disponible + 10 % para cargar; models.json). Apple ML
   Research, 9 jun 2025 (modelo en el dispositivo de ~3B a 2 bits por peso).
@@ -21,6 +21,7 @@ De nuestras apps: sin precios y sin la palabra «free/gratis». Sin rayas.
 
 D = {"en": "23 October 2026", "es": "23 de octubre de 2026"}
 ISO = "2026-10-23"
+D_U24 = {"en": "23 October 2026, updated 24 October 2026", "es": "23 de octubre de 2026, actualizada el 24 de octubre de 2026"}
 
 BRAINY_STORE = "https://apps.apple.com/app/apple-store/id1667947372?pt=118348020&amp;ct=sagalab-guide&amp;mt=8"
 TT_STORE = "https://apps.apple.com/app/apple-store/id1553693943?pt=118348020&amp;ct=sagalab-guide&amp;mt=8"
@@ -530,7 +531,7 @@ en <a href="../../3things.html">la página de 3 Tasks</a> (en inglés).</li>
 TT3_EN = dict(
     path="3-tasks/pomodoro-timer-on-iphone.html",
     app_name="To Do List & Focus: 3 Tasks",
-    date_iso=ISO, date=D,
+    date_iso=ISO, date=D_U24, modified_iso="2026-10-24",
     h1="Pomodoro timer on iPhone: how to do it with the Clock app, Focus or an app (2026)",
     desc=("How to run Pomodoro sessions on an iPhone: a 25-minute timer in Clock with Siri, presets and multiple "
           "timers, a Focus to silence notifications, and apps such as Focus Keeper, Be Focused, Forest, Flow and 3 "
@@ -573,9 +574,9 @@ certain app" ({a(FOCUS, "Apple")}).</li>
 tasks has a start/pause timer that counts up and keeps counting in the background. You can give a
 task a <strong>time limit of 15, 25, 45 or 60 minutes</strong>: a ring fills towards it, and when
 it is reached a notification says "Time's up" with the task's name, even with the app closed.
-There is no break timer: for the 5-minute break, use Clock. Starting a task's timer straight from
-the Home Screen widget is coming in the next version; today the widget shows your
-three tasks and the timer starts in the app.</p>
+There is no break timer: for the 5-minute break, use Clock. Since version 1.4.1 (24 October 2026)
+you can start a task's timer straight from the Home Screen widget: tap the task, in any widget size.
+There is no Siri command for the timer.</p>
 """,
     steps=[
         ("Choose the task first.",
@@ -607,7 +608,7 @@ three tasks and the timer starts in the app.</p>
 <tr><td>{a(BE_FOCUSED_AS, "Be Focused")}</td><td>Tasks split into intervals separated by short breaks, configurable</td><td>Pomodoro rounds attached to a task list</td></tr>
 <tr><td>{a(FOREST_AS, "Forest")}</td><td>A tree grows while you stay off your phone and withers if you leave early</td><td>People whose problem is picking up the phone</td></tr>
 <tr><td>{a(FLOW_AS, "Flow")}</td><td>A small focus and Pomodoro timer that divides work into sessions</td><td>A simple timer on iPhone and Mac</td></tr>
-<tr><td><a href="{TT_STORE}">3 Tasks</a></td><td>Three tasks a day, a timer on each that counts up, optional 15/25/45/60 min limit with a notification, Home Screen widget with the three tasks</td><td>Timing the few tasks that matter today, without a break timer</td></tr>
+<tr><td><a href="{TT_STORE}">3 Tasks</a></td><td>Three tasks a day, a timer on each that counts up, optional 15/25/45/60 min limit with a notification, Home Screen widget with the three tasks; tap one to start its timer (1.4.1)</td><td>Timing the few tasks that matter today, without a break timer</td></tr>
 </tbody>
 </table>
 </div>
@@ -641,15 +642,15 @@ Tasks Pro adds a history of it. More on <a href="../3things.html">the 3 Tasks pa
          "It times each task and can notify you after 15, 25, 45 or 60 minutes, but it has no break timer. Use "
          "Clock for the breaks, or a dedicated Pomodoro app if you want breaks counted for you."),
         ("Can I start the 3 Tasks timer from the widget?",
-         "Not yet. Today the widget shows your three tasks; starting a task's timer from the widget "
-         "comes in the next version."),
+         "Yes, since version 1.4.1 (24 October 2026): tap a task in the Home Screen widget, in any size, "
+         "and its timer starts."),
     ],
 )
 
 TT3_ES = dict(
     path="3-tasks/es/temporizador-pomodoro-en-el-iphone.html",
     app_name="To Do List & Focus: 3 Tasks",
-    date_iso=ISO, date=D,
+    date_iso=ISO, date=D_U24, modified_iso="2026-10-24",
     h1="Temporizador Pomodoro en el iPhone: cómo hacerlo con Reloj, Concentración o una app (2026)",
     desc=("Cómo hacer Pomodoro en el iPhone: un temporizador de 25 minutos en Reloj con Siri, predefinidos y varios "
           "a la vez, un modo Concentración para silenciar avisos, y apps como Focus Keeper, Be Focused, Forest, Flow "
@@ -692,9 +693,9 @@ concreta ({a(FOCUS_ES, "Apple")}).</li>
 arriba y sigue contando en segundo plano. Puedes darle a una tarea un <strong>tiempo límite de 15,
 25, 45 o 60 minutos</strong>: un anillo se va llenando y, al llegar, un aviso dice «Time's up» con
 el nombre de la tarea, aunque la app esté cerrada. No hay temporizador de descanso: para los 5
-minutos, usa Reloj. Arrancar el tiempo de una tarea desde el widget de la pantalla de inicio
-llega en la próxima versión; hoy el widget enseña tus tres tareas y el tiempo se arranca
-en la app.</p>
+minutos, usa Reloj. Desde la versión 1.4.1 (24 de octubre de 2026)
+puedes arrancar el tiempo de una tarea desde el widget de la pantalla de inicio: toca la tarea, en
+cualquier tamaño del widget. No hay orden de Siri para el temporizador.</p>
 """,
     steps=[
         ("Elige antes la tarea.",
@@ -726,7 +727,7 @@ en la app.</p>
 <tr><td>{a(BE_FOCUSED_AS, "Be Focused")}</td><td>Tareas divididas en intervalos con descansos cortos, configurables</td><td>Rondas Pomodoro unidas a una lista de tareas</td></tr>
 <tr><td>{a(FOREST_AS, "Forest")}</td><td>Un árbol crece mientras no tocas el móvil y se seca si sales antes</td><td>Quien se distrae cogiendo el teléfono</td></tr>
 <tr><td>{a(FLOW_AS, "Flow")}</td><td>Un temporizador pequeño de concentración y Pomodoro que divide el trabajo en sesiones</td><td>Un temporizador sencillo en iPhone y Mac</td></tr>
-<tr><td><a href="{TT_STORE}">3 Tasks</a></td><td>Tres tareas al día, un temporizador en cada una que cuenta hacia arriba, límite opcional de 15/25/45/60 min con aviso, widget con las tres tareas</td><td>Medir el tiempo de las pocas tareas que importan hoy, sin temporizador de descanso</td></tr>
+<tr><td><a href="{TT_STORE}">3 Tasks</a></td><td>Tres tareas al día, un temporizador en cada una que cuenta hacia arriba, límite opcional de 15/25/45/60 min con aviso, widget con las tres tareas; tocar una arranca su tiempo (1.4.1)</td><td>Medir el tiempo de las pocas tareas que importan hoy, sin temporizador de descanso</td></tr>
 </tbody>
 </table>
 </div>
@@ -760,8 +761,8 @@ de 3 tareas</a>.</p>
          "Mide el tiempo de cada tarea y puede avisarte a los 15, 25, 45 o 60 minutos, pero no tiene temporizador "
          "de descanso. Usa Reloj para los descansos, o una app de Pomodoro si quieres que los cuente por ti."),
         ("¿Puedo arrancar el tiempo de 3 Tasks desde el widget?",
-         "Todavía no. Hoy el widget enseña tus tres tareas; arrancar el tiempo desde el widget llega "
-         "en la próxima versión."),
+         "Sí, desde la versión 1.4.1 (24 de octubre de 2026): toca una tarea en el widget de la pantalla "
+         "de inicio, en cualquier tamaño, y arranca su tiempo."),
     ],
 )
 

@@ -731,7 +731,7 @@ noise, each with its own sliders.</li>
 <li><strong>Rain Rain Sleep Sounds</strong> (free, 6.9.10): lists Pink Noise among 50+ sounds, with a free mixer and fade-out timer.</li>
 <li><strong>Endel</strong> (free, Premium for Colored Noise): “choose one of 9 colors of noise”.</li>
 <li><strong>Dark Noise</strong> (free, 3.6.1): 50+ ambient sounds, custom mixes and a fade-out timer.</li>
-<li><strong>Drop</strong> (free, 2.10, 24 October 2026): White Noise free; Pink Noise, Brown Noise and Deep Brown Noise with Drop Pro, among 53 sounds. One sound at a time, no mixer or equaliser, sleep timer with fade-out.</li>
+<li><strong>Drop</strong> (free, 2.11, 24 October 2026): White Noise free; Pink Noise, Brown Noise and Deep Brown Noise with Drop Pro, among 53 sounds. One sound at a time, no mixer or equaliser, sleep timer with fade-out; since 2.11 the loops have no gap and the sound comes back after a call.</li>
 </ul>
 
 <h2>Where Drop fits</h2>
@@ -873,7 +873,7 @@ cada uno con sus controles.</li>
 <li><strong>Rain Rain Sleep Sounds</strong> (gratis, 6.9.10): incluye Pink Noise entre más de 50 sonidos, con mezclador gratis.</li>
 <li><strong>Endel</strong> (gratis; Colored Noise es Premium): «elige uno de 9 colores de ruido».</li>
 <li><strong>Dark Noise</strong> (gratis, 3.6.1): más de 50 sonidos ambientales, mezclas y temporizador con fundido.</li>
-<li><strong>Drop</strong> (gratis, 2.10, 24 de octubre de 2026): ruido blanco gratis; ruido rosa, marrón y marrón profundo con Drop Pro, entre 53 sonidos. Un sonido cada vez, sin mezclador ni ecualizador, temporizador con fundido.</li>
+<li><strong>Drop</strong> (gratis, 2.11, 24 de octubre de 2026): ruido blanco gratis; ruido rosa, marrón y marrón profundo con Drop Pro, entre 53 sonidos. Un sonido cada vez, sin mezclador ni ecualizador, temporizador con fundido; desde la 2.11 el bucle no tiene cortes y el sonido vuelve tras una llamada.</li>
 </ul>
 
 <h2>Dónde encaja Drop</h2>
