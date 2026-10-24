@@ -976,6 +976,8 @@ GUIDES += guides_oct23c.GUIDES
 
 import guides_oct24  # noqa: E402  (Dora: hacer un video con ChatGPT, el dia que sale en su directorio)
 GUIDES += guides_oct24.GUIDES
+import guides_oct25  # noqa: E402  (Photo Vault: si borras la app de la boveda, ¿pierdes las fotos?)
+GUIDES += guides_oct25.GUIDES
 
 
 def _alts(en, es):

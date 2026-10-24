@@ -22,6 +22,7 @@ RD = "https://reditor.cloud/"
 GROUPS = {
     "Photo Vault": {
         "en": ([
+            "photo-vault/delete-photo-vault-app-lose-photos.html",
             "photo-vault/protect-photos-of-id-passport-cards-iphone.html",
             "photo-vault/is-iphone-hidden-album-safe.html",
             "photo-vault/before-lending-iphone-or-taking-it-to-repair.html",
@@ -37,6 +38,7 @@ GROUPS = {
             (RL + "best-photo-vault-apps-no-data-collection-iphone/", "Best photo vault apps with no data collection for iPhone (Reviewland)"),
         ]),
         "es": ([
+            "photo-vault/es/borrar-app-de-boveda-pierdo-las-fotos.html",
             "photo-vault/es/proteger-fotos-del-dni-pasaporte-y-tarjetas-en-iphone.html",
             "photo-vault/es/es-seguro-el-album-oculto-del-iphone.html",
             "photo-vault/es/antes-de-prestar-el-iphone-o-llevarlo-a-reparar.html",
