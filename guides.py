@@ -977,6 +977,9 @@ GUIDES += guides_oct23c.GUIDES
 import guides_oct24  # noqa: E402  (Dora: hacer un video con ChatGPT, el dia que sale en su directorio)
 GUIDES += guides_oct24.GUIDES
 
+import guides_oct26  # noqa: E402  (mejores plugins de ChatGPT para video e imagenes)
+GUIDES += guides_oct26.GUIDES
+
 
 def _alts(en, es):
     s = "https://aisagalab.com/"

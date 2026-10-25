@@ -43,6 +43,8 @@ DORA_SPEC = "https://doravideo.com/ai-video-mcp"
 SORA_END = "https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation"
 PLUGINS = "https://help.openai.com/en/articles/20001256-plugins-in-chatgpt-and-codex"
 DEV_MODE = "https://help.openai.com/en/articles/12584461-developer-mode-and-mcp-apps-in-chatgpt"
+BEST_EN = "best-chatgpt-plugins-video-images-2026.html"
+BEST_ES_REL = "mejores-plugins-chatgpt-video-imagenes-2026.html"
 OPENAI_LISTINGS = "https://openai.com/business/plugins/runway"
 
 
@@ -132,6 +134,8 @@ public https link to the image. Unless you name a model or say “cheapest”, t
 chooses. For a presenter talking to camera, HeyGen or VEED fit better; for editing a recording,
 Descript.</p>
 
+<p>Comparing options? See our <a href="{BEST_EN}">best ChatGPT plugins for making videos and images</a>.</p>
+
 <p>More detail: {a(DORA_CHATGPT, "Dora's ChatGPT page")}, the
 {a(DORA_TEST, "timed test with ChatGPT and Claude")} and the {a(DORA_SPEC, "server specification")}.</p>
 
@@ -141,7 +145,7 @@ Descript.</p>
 <li>{a(PLUGINS, "OpenAI Help Center, Plugins in ChatGPT")}.</li>
 <li>{a(DEV_MODE, "OpenAI Help Center, Developer mode and MCP apps in ChatGPT")}.</li>
 <li>{a(OPENAI_LISTINGS, "OpenAI plugin listings")} for Runway, Kling AI, Higgsfield, OpenArt, HeyGen, VEED, invideo, Visla and Descript, checked 7 October 2026.</li>
-<li>{a(CHATGPT_APP, "Dora AI Video in the ChatGPT directory")}; Dora's connector code and timed test, 23 October 2026.</li>
+<li>{a(CHATGPT_APP, "Dora AI Video in ChatGPT Plugins")}; Dora's connector code and timed test, 23 October 2026.</li>
 </ul>
 """,
     faq=[
@@ -149,8 +153,8 @@ Descript.</p>
          "Not on its own since OpenAI closed Sora (the app on April 26, 2026 and the API on September 24, 2026). "
          "It can make a video through a plugin from its directory, such as Runway, Kling AI, Higgsfield, HeyGen "
          "or Dora AI Video, or through a custom app on ChatGPT Business, Enterprise or Edu."),
-        ("Is Dora in the ChatGPT app directory?",
-         "Yes, as Dora AI Video. Add it, sign in with your Dora account and ask for a video in a chat. Whether you "
+        ("Is Dora a ChatGPT plugin?",
+         "Yes, it is published in ChatGPT Plugins as Dora AI Video. Add it, sign in with your Dora account and ask for a video in a chat. Whether you "
          "can use it depends on your ChatGPT plan, workspace, role and region."),
         ("Do I need a paid ChatGPT plan?",
          "Directory plugins depend on each plugin, your plan and your region. Custom apps that create content need "
@@ -245,6 +249,8 @@ conector necesita un enlace https público a la imagen. Si no nombras un modelo 
 «el más barato», elige el asistente. Para un presentador que habla a cámara encajan mejor
 HeyGen o VEED; para editar una grabación, Descript.</p>
 
+<p>¿Comparas opciones? Mira nuestra guía de los <a href="{BEST_ES_REL}">mejores plugins de ChatGPT para hacer vídeos e imágenes</a>.</p>
+
 <p>Más detalle (en inglés): {a(DORA_CHATGPT, "la página de Dora para ChatGPT")}, la
 {a(DORA_TEST, "prueba cronometrada con ChatGPT y Claude")} y la {a(DORA_SPEC, "especificación del servidor")}.</p>
 
@@ -254,7 +260,7 @@ HeyGen o VEED; para editar una grabación, Descript.</p>
 <li>{a(PLUGINS, "OpenAI Help Center, Plugins in ChatGPT")}.</li>
 <li>{a(DEV_MODE, "OpenAI Help Center, Developer mode and MCP apps in ChatGPT")}.</li>
 <li>{a(OPENAI_LISTINGS, "Fichas de plugins de OpenAI")} de Runway, Kling AI, Higgsfield, OpenArt, HeyGen, VEED, invideo, Visla y Descript, comprobadas el 7 de octubre de 2026.</li>
-<li>{a(CHATGPT_APP, "Dora AI Video en el directorio de ChatGPT")}; código del conector de Dora y prueba cronometrada, 23 de octubre de 2026.</li>
+<li>{a(CHATGPT_APP, "Dora AI Video en ChatGPT Plugins")}; código del conector de Dora y prueba cronometrada, 23 de octubre de 2026.</li>
 </ul>
 """,
     faq=[
@@ -262,8 +268,8 @@ HeyGen o VEED; para editar una grabación, Descript.</p>
          "Por sí solo no, desde que OpenAI cerró Sora (la app el 26 de abril de 2026 y la API el 24 de septiembre "
          "de 2026). Puede hacerlo con un plugin de su directorio, como Runway, Kling AI, Higgsfield, HeyGen o Dora "
          "AI Video, o con una app propia en ChatGPT Business, Enterprise o Edu."),
-        ("¿Está Dora en el directorio de apps de ChatGPT?",
-         "Sí, como Dora AI Video. Añádelo, inicia sesión con tu cuenta de Dora y pide el vídeo en un chat. Que "
+        ("¿Es Dora un plugin de ChatGPT?",
+         "Sí, está publicado en ChatGPT Plugins como Dora AI Video. Añádelo, inicia sesión con tu cuenta de Dora y pide el vídeo en un chat. Que "
          "puedas usarlo depende de tu plan de ChatGPT, tu espacio de trabajo, tu rol y tu país."),
         ("¿Necesito un plan de pago de ChatGPT?",
          "Los plugins del directorio dependen de cada plugin, de tu plan y de tu país. Las apps propias que crean "
