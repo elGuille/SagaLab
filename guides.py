@@ -979,6 +979,9 @@ GUIDES += guides_oct24.GUIDES
 import guides_oct25  # noqa: E402  (Photo Vault: si borras la app de la boveda, ¿pierdes las fotos?)
 GUIDES += guides_oct25.GUIDES
 
+import guides_oct26  # noqa: E402  (mejores plugins de ChatGPT para video e imagenes)
+GUIDES += guides_oct26.GUIDES
+
 
 def _alts(en, es):
     s = "https://aisagalab.com/"

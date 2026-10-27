@@ -158,13 +158,13 @@ GROUPS = {
         ]),
     },
     "Dora": {
-        "en": (["dora/how-to-make-a-video-with-chatgpt.html", "blog/best-ai-video-generator-apps-iphone.html", "blog/best-ai-apps-ugc-video-ads-iphone.html"], [
+        "en": (["dora/how-to-make-a-video-with-chatgpt.html", "dora/best-chatgpt-plugins-video-images-2026.html", "blog/best-ai-video-generator-apps-iphone.html", "blog/best-ai-apps-ugc-video-ads-iphone.html"], [
             (RD + "best-ai-image-to-video-apps-iphone/", "Best AI image to video apps for iPhone in 2026 (Reditor)"),
             (RD + "sora-app-alternatives-iphone/", "Best Sora app alternatives for iPhone in 2026 (Reditor)"),
             (RD + "viggle-ai-alternatives-iphone/", "Viggle AI alternatives for iPhone in 2026 (Reditor)"),
             (RD + "best-ai-apps-dancing-video-from-photo-iphone/", "Best AI apps to make a dancing video from a photo on iPhone (Reditor)"),
         ]),
-        "es": (["dora/es/como-hacer-un-video-con-chatgpt.html", "blog/es/mejores-apps-generador-video-ia-iphone.html", "blog/es/mejores-apps-ia-anuncios-ugc-iphone.html"], [
+        "es": (["dora/es/como-hacer-un-video-con-chatgpt.html", "dora/es/mejores-plugins-chatgpt-video-imagenes-2026.html", "blog/es/mejores-apps-generador-video-ia-iphone.html", "blog/es/mejores-apps-ia-anuncios-ugc-iphone.html"], [
             (RD + "es/mejores-apps-ia-de-foto-a-video-iphone/", "Mejores apps de IA para convertir una foto en vídeo en iPhone (Reditor)"),
             (RD + "es/alternativas-a-sora-iphone/", "Mejores alternativas a la app de Sora en iPhone en 2026 (Reditor)"),
             (RD + "es/alternativas-a-viggle-ai-iphone/", "Alternativas a Viggle AI para iPhone en 2026 (Reditor)"),
