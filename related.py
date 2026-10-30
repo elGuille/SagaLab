@@ -57,6 +57,7 @@ GROUPS = {
     "Pinku": {
         "en": ([
             "pinku/how-does-local-ai-work-on-iphone.html",
+            "pinku/how-fast-llama-gemma-qwen-run-offline-on-iphone.html",
             "pinku/use-ai-offline-on-a-plane-or-travelling.html",
             "pinku/which-ai-model-fits-my-iphone-mac.html",
             "pinku/is-it-safe-to-tell-chatgpt-private-things.html",
@@ -81,6 +82,7 @@ GROUPS = {
         ]),
         "es": ([
             "pinku/es/como-funciona-la-ia-local-en-el-iphone.html",
+            "pinku/es/velocidad-de-llama-gemma-y-qwen-sin-internet-en-el-iphone.html",
             "pinku/es/usar-ia-sin-conexion-en-el-avion-o-de-viaje.html",
             "pinku/es/es-seguro-contarle-cosas-privadas-a-chatgpt.html",
             "pinku/es/usar-ia-en-iphone-sin-internet.html",

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Qué velocidad tienen Llama, Gemma y Qwen sin internet en el iPhone? (2026) | Saga Labs</title>
+    <meta name="description" content="Velocidades medidas de modelos de IA pequeños que funcionan en el propio iPhone: Llama 3.2 1B, Gemma 3 1B, Qwen3 y LFM2.5 en tokens por segundo y tiempo hasta la primera palabra en un iPhone 17 Pro, por qué Gemma va más lenta, qué salió en nuestra prueba en un Mac M3 y qué apps los usan sin conexión.">
+    <link rel="canonical" href="https://aisagalab.com/pinku/es/velocidad-de-llama-gemma-y-qwen-sin-internet-en-el-iphone.html">
+    <link rel="alternate" hreflang="en" href="https://aisagalab.com/pinku/how-fast-llama-gemma-qwen-run-offline-on-iphone.html">
+    <link rel="alternate" hreflang="es" href="https://aisagalab.com/pinku/es/velocidad-de-llama-gemma-y-qwen-sin-internet-en-el-iphone.html">
+    <link rel="alternate" hreflang="x-default" href="https://aisagalab.com/pinku/how-fast-llama-gemma-qwen-run-offline-on-iphone.html">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../blog.css">
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+    <script src="/umami.js" defer></script>
+
+    <meta property="og:title" content="¿Qué velocidad tienen Llama, Gemma y Qwen sin internet en el iPhone? (2026)">
+    <meta property="og:description" content="Velocidades medidas de modelos de IA pequeños que funcionan en el propio iPhone: Llama 3.2 1B, Gemma 3 1B, Qwen3 y LFM2.5 en tokens por segundo y tiempo hasta la primera palabra en un iPhone 17 Pro, por qué Gemma va más lenta, qué salió en nuestra prueba en un Mac M3 y qué apps los usan sin conexión.">
+    <meta property="og:url" content="https://aisagalab.com/pinku/es/velocidad-de-llama-gemma-y-qwen-sin-internet-en-el-iphone.html">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://aisagalab.com/images/preview.jpg">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="¿Qué velocidad tienen Llama, Gemma y Qwen sin internet en el iPhone? (2026)">
+    <meta property="twitter:description" content="Velocidades medidas de modelos de IA pequeños que funcionan en el propio iPhone: Llama 3.2 1B, Gemma 3 1B, Qwen3 y LFM2.5 en tokens por segundo y tiempo hasta la primera palabra en un iPhone 17 Pro, por qué Gemma va más lenta, qué salió en nuestra prueba en un Mac M3 y qué apps los usan sin conexión.">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "¿Qué velocidad tienen Llama, Gemma y Qwen sin internet en el iPhone? (2026)",
+      "description": "Velocidades medidas de modelos de IA pequeños que funcionan en el propio iPhone: Llama 3.2 1B, Gemma 3 1B, Qwen3 y LFM2.5 en tokens por segundo y tiempo hasta la primera palabra en un iPhone 17 Pro, por qué Gemma va más lenta, qué salió en nuestra prueba en un Mac M3 y qué apps los usan sin conexión.",
+      "inLanguage": "es",
+      "articleSection": "Guías",
+      "datePublished": "2026-10-30",
+      "dateModified": "2026-10-30",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://aisagalab.com/pinku/es/velocidad-de-llama-gemma-y-qwen-sin-internet-en-el-iphone.html"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Maruta G",
+        "url": "https://www.linkedin.com/in/maruta/",
+        "sameAs": [
+          "https://www.linkedin.com/in/maruta/",
+          "https://github.com/Saga-Labs",
+          "https://x.com/SagaAILab"
+        ],
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Saga Labs",
+          "url": "https://aisagalab.com/"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Saga Labs",
+        "url": "https://aisagalab.com/",
+        "sameAs": [
+          "https://aisagalab.com/",
+          "https://x.com/SagaAILab",
+          "https://github.com/Saga-Labs"
+        ]
+      }
+    },
+    {
+      "@type": "HowTo",
+      "name": "¿Qué velocidad tienen Llama, Gemma y Qwen sin internet en el iPhone? (2026)",
+      "description": "Velocidades medidas de modelos de IA pequeños que funcionan en el propio iPhone: Llama 3.2 1B, Gemma 3 1B, Qwen3 y LFM2.5 en tokens por segundo y tiempo hasta la primera palabra en un iPhone 17 Pro, por qué Gemma va más lenta, qué salió en nuestra prueba en un Mac M3 y qué apps los usan sin conexión.",
+      "inLanguage": "es",
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "un iPhone con unos GB de espacio libre"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "una app de chat con IA en el dispositivo"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Mira tu espacio.",
+          "text": "Los modelos pequeños ocupan de 0,4 a 1 GB. Ajustes, General, Almacenamiento del iPhone te dice cuánto tienes."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Instala una app de chat en el dispositivo.",
+          "text": "Locally AI, Enclave, Private LLM, PocketPal AI o Pinku."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Descarga un modelo de 1B con wifi.",
+          "text": "Llama 3.2 1B, Qwen3 0.6B o LFM2.5 1.2B fueron los más rápidos en iPhone en el benchmark de arriba."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Activa el modo avión y pregunta algo.",
+          "text": "Si responde, el modelo funciona en el iPhone."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Mide tu teléfono si quieres cifras.",
+          "text": "PocketPal AI tiene una página de Benchmark que da tokens por segundo y memoria, y un AI Phone Leaderboard opcional para comparar aparatos."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 6,
+          "name": "Empieza un chat nuevo cuando vaya lento.",
+          "text": "La velocidad baja a medida que la conversación se alarga, así que un chat nuevo va más rápido."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué velocidad tiene Llama 3.2 1B en el iPhone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Unos 58 tokens por segundo, con el primer token en unos 0,25 segundos, en un iPhone 17 Pro a 4 bits con MLX (benchmark de Ricky Takkar, febrero de 2026). En una app de chat, cuenta con un 10 a 15 % menos."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuál es el modelo de IA local más rápido en el iPhone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En ese benchmark, Qwen3 0.6B (62 tokens por segundo), LFM2.5 1.2B (60) y Llama 3.2 1B (58). Gemma 3 1B y Qwen3 1.7B fueron más lentos, con 37 y 40."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Por qué Gemma 3 1B va más lenta que Llama en el iPhone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tarda más en leer la pregunta antes de responder: unos 0,4 segundos con una pregunta corta y 1,3 con una larga en un iPhone 17 Pro, frente a unos 0,25 segundos de Llama 3.2 1B."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puede un iPhone usar un modelo de 3B o 4B?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depende de su memoria y de la app. En el benchmark del iPhone 17 Pro, Qwen3 4B y Llama 3.2 3B se quedaron fuera porque pasaban de la memoria que iOS dejaba usar a la app. Los modelos pequeños caben en casi todos los iPhone recientes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Un modelo de IA local en el iPhone necesita internet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Solo para descargar el modelo una vez. Después responde en modo avión."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo mido la velocidad en mi iPhone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PocketPal AI tiene una página de Benchmark que da los tokens por segundo y la memoria del modelo que cargues."
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+<nav class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="nav-logo">
+                <h1>Saga <span class="ai-gradient">AI</span> <span class="lab-gradient">Lab</span></h1>
+            </a>
+            <div class="nav-menu">
+                <a href="/blog/" class="nav-link">Blog</a>
+                <a href="../../index.html#mobile-apps" class="nav-link">Apps</a>
+                <a href="../../faq.html" class="nav-link">FAQ</a>
+                <a href="mailto:sagalabs@proton.me" class="nav-link">Contact</a>
+                <a href="https://x.com/SagaAILab" target="_blank" class="icon-link" aria-label="X (Twitter)">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                        <path d="M18.244 2H21l-6.5 7.43L22.5 22H15.9l-4.7-6.2L5.7 22H3l7-8.02L1.8 2h6.8l4.3 5.7L18.244 2zm-2.43 18h1.64L8.29 4H6.57l9.244 16z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/Saga-Labs" target="_blank" class="icon-link" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                        <path d="M12 2C6.477 2 2 6.486 2 12.017c0 4.424 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.238-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.464-1.11-1.464-.908-.62.069-.607.069-.607 1.004.071 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.833.092-.647.35-1.088.636-1.338-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.748-1.026 2.748-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.337 4.695-4.565 4.943.359.31.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .268.18.58.688.481A10.019 10.019 0 0 0 22 12.017C22 6.486 17.523 2 12 2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="article-wrap">
+        <p class="article-kicker">Guía de Pinku</p>
+        <h1>¿Qué velocidad tienen Llama, Gemma y Qwen sin internet en el iPhone? (2026)</h1>
+        <p class="article-standfirst">Un modelo de 1.000 millones de parámetros en un iPhone reciente escribe unos 58 tokens por segundo sin conexión. Aquí van las cifras publicadas, modelo a modelo, y cómo medir tu teléfono.</p>
+        <p class="article-meta"><a href="https://www.linkedin.com/in/maruta/" rel="author me noopener" target="_blank">Maruta G</a> &middot; 30 de octubre de 2026
+            <span class="lang-switch"> &middot; <a href="../how-fast-llama-gemma-qwen-run-offline-on-iphone.html">Read in English</a></span>
+        </p>
+        <div class="article-body">
+<p><strong>Hacemos Pinku, una de las apps que usan estos modelos en el iPhone.</strong> Las cifras
+de iPhone de abajo no son nuestras: vienen de un benchmark público de un desarrollador
+independiente, enlazado en cada tabla. Nuestra medida se hizo en un Mac con chip M3, no en un
+iPhone, y así se indica. Todavía no hemos medido Pinku en un iPhone; actualizaremos esta página
+cuando lo hagamos.</p>
+
+<h2>La respuesta corta</h2>
+
+<p>En un iPhone 17 Pro, los modelos pequeños, de 0,6 a 1,7 mil millones de parámetros a 4 bits,
+generan <strong>de 37 a 62 tokens por segundo</strong> y sacan la primera palabra en <strong>0,16
+a 0,7 segundos</strong>, sin internet. Llama 3.2 1B, Qwen3 0.6B y LFM2.5 1.2B son los más rápidos;
+Gemma 3 1B es la que más tarda en empezar, y va más lenta cuanto más larga es la conversación. En
+una app de chat, cuenta con un 10 a 15 % menos que estas cifras.</p>
+
+<h2>Velocidades en un iPhone 17 Pro (benchmark de terceros)</h2>
+
+<div class="table-scroll">
+<table>
+<thead><tr><th>Modelo (4 bits, MLX)</th><th>Tamaño</th><th>Tokens por segundo</th><th>Tiempo hasta el primer token</th></tr></thead>
+<tbody>
+<tr><td>Qwen3 0.6B</td><td>351 MB</td><td>62,2</td><td>163 ms</td></tr>
+<tr><td>LFM2.5 1.2B Instruct</td><td>663 MB</td><td>59,7</td><td>244 ms</td></tr>
+<tr><td>Llama 3.2 1B</td><td>713 MB</td><td>58,1</td><td>253 ms</td></tr>
+<tr><td>Qwen3 1.7B</td><td>984 MB</td><td>39,5</td><td>360 ms</td></tr>
+<tr><td>Gemma 3 1B (QAT)</td><td>772 MB</td><td>37,1</td><td>693 ms</td></tr>
+</tbody>
+</table>
+</div>
+
+<p class="article-note">iPhone 17 Pro (A19 Pro, 12 GB, iOS 26.3 RC), mediana de 10 pasadas con
+una pregunta de unos 279 tokens y 256 tokens de respuesta. De <a href="https://rickytakkar.com/blog_russet_mlx_benchmark.html" target="_blank" rel="noopener">Ricky Takkar, How Fast Are On-Device LLMs on iPhone 17 Pro and iPad Pro?</a> (en inglés), 8 de febrero de 2026, medido en su
+app Russet con MLX, el framework de Apple. El autor dice que son el techo del chip: en uso real,
+convertir los tokens en texto y actualizar la pantalla restan alrededor de un 10 a 15 %.</p>
+
+<h3>Qué más encontró esa prueba</h3>
+<ul>
+<li><strong>Las conversaciones largas van más lentas en el iPhone.</strong> Qwen3 0.6B pasó de 69,7
+a 43,4 tokens por segundo entre la pregunta corta y la larga. Un iPad Pro M5 con la misma memoria
+fue de 1,2 a 2,2 veces más rápido y casi no se frenó.</li>
+<li><strong>Gemma 3 1B tarda en arrancar.</strong> Su tiempo hasta el primer token subió de 407 ms
+con una pregunta de 47 tokens a 1.330 ms con una de 690.</li>
+<li><strong>Los modelos más grandes no cupieron.</strong> Qwen3 4B y Llama 3.2 3B se quedaron fuera
+porque pasaban de la memoria que iOS dejaba usar a esa app en un iPhone de 12 GB.</li>
+<li><strong>4 bits mejor que 6.</strong> LFM2.5 a 6 bits fue de un 21 a un 27 % más lento que a 4.</li>
+</ul>
+
+<h2>Nuestra prueba, en un Mac M3 (no en un iPhone)</h2>
+
+<p>El 23 de octubre de 2026 cronometramos el propio Pinku en un Mac con chip M3, sin nada más
+pesado en marcha, para elegir su modelo por defecto. Son cifras desde dentro de la app, con la
+pantalla actualizándose, y son de un Mac:</p>
+
+<div class="table-scroll">
+<table>
+<thead><tr><th>Modelo</th><th>Primer texto en pantalla</th><th>Tokens por segundo</th></tr></thead>
+<tbody>
+<tr><td>Llama 3.2 1B</td><td>0,13 a 0,16 s</td><td>34 a 52</td></tr>
+<tr><td>Gemma 3 1B</td><td>0,5 a 8 s, más con cada pregunta</td><td>no se anotó</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Coincide con el benchmark en iPhone: Gemma 3 1B tarda más en empezar y la espera crece a medida
+que el chat se alarga. Por eso Pinku cambió su modelo por defecto de Gemma 3 1B a Llama 3.2 1B en la
+versión 1.2.</p>
+
+<h2>Apps que usan estos modelos sin conexión en el iPhone</h2>
+
+<div class="table-scroll">
+<table>
+<thead><tr><th>App</th><th>Valoraciones en EE. UU. (30 oct 2026)</th><th>Qué saber</th></tr></thead>
+<tbody>
+<tr><td><a href="https://apps.apple.com/us/app/id6741426692" target="_blank" rel="noopener">Locally AI by LM Studio</a></td><td>1.872 (4,7)</td><td>Usa los modelos con MLX en iPhone, iPad y Mac</td></tr>
+<tr><td><a href="https://apps.apple.com/us/app/id6476614556" target="_blank" rel="noopener">Enclave</a></td><td>1.110 (4,7)</td><td>Modelos locales; Pro añade modelos en la nube</td></tr>
+<tr><td><a href="https://apps.apple.com/us/app/id6448106860" target="_blank" rel="noopener">Private LLM</a></td><td>741 (4,1)</td><td>De pago al descargar (4,99 $ en EE. UU.); funciona con Siri y Atajos</td></tr>
+<tr><td><a href="https://apps.apple.com/us/app/id6502579498" target="_blank" rel="noopener">PocketPal AI</a></td><td>165 (4,0)</td><td>Código abierto, usa cualquier modelo GGUF con llama.cpp y trae una página de Benchmark</td></tr>
+<tr><td><a href="https://apps.apple.com/app/apple-store/id6754878073?pt=118348020&amp;ct=aisagalab-velocidad-de-llama-gemma-73d3&amp;mt=8">Pinku</a></td><td>12 (4,7)</td><td>Usa los modelos con MLX en iPhone, iPad y Mac; su catálogo tiene los cinco modelos de la tabla de arriba, a 4 bits; los chats se quedan en el dispositivo</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Ordenadas por número de valoraciones en el App Store de EE. UU. La velocidad depende del chip,
+del modelo y del motor (MLX o llama.cpp) más que de la app, así que el mismo modelo debería ir a una
+velocidad parecida en apps que usan el mismo motor.</p>
+
+<h2>Pros y contras de usar un modelo en el iPhone</h2>
+<ul>
+<li><strong>Pros:</strong> funciona en modo avión; tu texto se procesa en el teléfono; no hay que
+esperar a un servidor; los modelos pequeños empiezan a responder en menos de un segundo.</li>
+<li><strong>Contras:</strong> los modelos pequeños saben menos y se equivocan más que ChatGPT o
+Gemini; no buscan en internet; los chats largos van más lentos; generar texto calienta el teléfono
+y gasta batería.</li>
+</ul>
+
+<h2>Para quién es</h2>
+<ul>
+<li>Para respuestas rápidas, reescribir o traducir sin conexión: un modelo de 1B basta.</li>
+<li>Para quien no quiere que una conversación salga del teléfono.</li>
+<li>No para investigar ni para datos que deben ser exactos: usa un modelo en la nube con búsqueda web, y compruébalo.</li>
+</ul>
+
+<h2>Paso a paso</h2>
+<ol class="howto-steps">
+<li><strong>Mira tu espacio.</strong> Los modelos pequeños ocupan de 0,4 a 1 GB. Ajustes, General, Almacenamiento del iPhone te dice cuánto tienes.</li>
+<li><strong>Instala una app de chat en el dispositivo.</strong> Locally AI, Enclave, Private LLM, PocketPal AI o <a href="https://apps.apple.com/app/apple-store/id6754878073?pt=118348020&amp;ct=aisagalab-velocidad-de-llama-gemma-73d3&amp;mt=8">Pinku</a>.</li>
+<li><strong>Descarga un modelo de 1B con wifi.</strong> Llama 3.2 1B, Qwen3 0.6B o LFM2.5 1.2B fueron los más rápidos en iPhone en el benchmark de arriba.</li>
+<li><strong>Activa el modo avión y pregunta algo.</strong> Si responde, el modelo funciona en el iPhone.</li>
+<li><strong>Mide tu teléfono si quieres cifras.</strong> PocketPal AI tiene una página de Benchmark que da tokens por segundo y memoria, y un <a href="https://pocketpal.dev/leaderboard" target="_blank" rel="noopener">AI Phone Leaderboard</a> opcional para comparar aparatos.</li>
+<li><strong>Empieza un chat nuevo cuando vaya lento.</strong> La velocidad baja a medida que la conversación se alarga, así que un chat nuevo va más rápido.</li>
+</ol>
+
+<h2>Relacionado</h2>
+<p>Para ver qué modelos caben en la memoria de tu iPhone, usa
+<a href="../which-ai-model-fits-my-iphone-mac.html">qué modelo de IA cabe en mi iPhone o Mac</a> (en
+inglés). Para saber cómo funcionan los modelos en el dispositivo, lee
+<a href="como-funciona-la-ia-local-en-el-iphone.html">cómo funciona la IA local en el iPhone</a>, y
+para un viaje, <a href="usar-ia-sin-conexion-en-el-avion-o-de-viaje.html">cómo usar IA sin conexión
+en el avión</a>.</p>
+
+<h2>Fuentes</h2>
+<ul>
+<li><a href="https://rickytakkar.com/blog_russet_mlx_benchmark.html" target="_blank" rel="noopener">Ricky Takkar, How Fast Are On-Device LLMs on iPhone 17 Pro and iPad Pro?</a>, 8 de febrero de 2026, leído el 30 de octubre de 2026.</li>
+<li>Pinku, nuestra medida en un Mac M3, 23 de octubre de 2026 (diario de desarrollo de la app).</li>
+<li><a href="https://github.com/a-ghorbani/pocketpal-ai" target="_blank" rel="noopener">PocketPal AI en GitHub</a>: llama.cpp, GGUF y la página de Benchmark.</li>
+<li>Fichas del App Store de EE. UU. de cada app, valoraciones leídas el 30 de octubre de 2026.</li>
+<li><a href="https://github.com/ml-explore/mlx" target="_blank" rel="noopener">MLX, el framework de Apple para Apple silicon</a>.</li>
+</ul>
+
+<h2>Preguntas frecuentes</h2>
+<h3>¿Qué velocidad tiene Llama 3.2 1B en el iPhone?</h3>
+<p>Unos 58 tokens por segundo, con el primer token en unos 0,25 segundos, en un iPhone 17 Pro a 4 bits con MLX (benchmark de Ricky Takkar, febrero de 2026). En una app de chat, cuenta con un 10 a 15 % menos.</p>
+<h3>¿Cuál es el modelo de IA local más rápido en el iPhone?</h3>
+<p>En ese benchmark, Qwen3 0.6B (62 tokens por segundo), LFM2.5 1.2B (60) y Llama 3.2 1B (58). Gemma 3 1B y Qwen3 1.7B fueron más lentos, con 37 y 40.</p>
+<h3>¿Por qué Gemma 3 1B va más lenta que Llama en el iPhone?</h3>
+<p>Tarda más en leer la pregunta antes de responder: unos 0,4 segundos con una pregunta corta y 1,3 con una larga en un iPhone 17 Pro, frente a unos 0,25 segundos de Llama 3.2 1B.</p>
+<h3>¿Puede un iPhone usar un modelo de 3B o 4B?</h3>
+<p>Depende de su memoria y de la app. En el benchmark del iPhone 17 Pro, Qwen3 4B y Llama 3.2 3B se quedaron fuera porque pasaban de la memoria que iOS dejaba usar a la app. Los modelos pequeños caben en casi todos los iPhone recientes.</p>
+<h3>¿Un modelo de IA local en el iPhone necesita internet?</h3>
+<p>Solo para descargar el modelo una vez. Después responde en modo avión.</p>
+<h3>¿Cómo mido la velocidad en mi iPhone?</h3>
+<p>PocketPal AI tiene una página de Benchmark que da los tokens por segundo y la memoria del modelo que cargues.</p>
+<!-- related:start -->
+<h2>Guías relacionadas</h2>
+<ul class="related-guides">
+<li><a href="como-funciona-la-ia-local-en-el-iphone.html">¿Cómo funciona la IA local en el iPhone? Modelos en el dispositivo, memoria y qué se ejecuta dónde (2026)</a></li>
+<li><a href="usar-ia-sin-conexion-en-el-avion-o-de-viaje.html">Cómo usar la IA sin conexión en el avión o de viaje (iPhone, 2026)</a></li>
+<li><a href="es-seguro-contarle-cosas-privadas-a-chatgpt.html">¿Es seguro contarle cosas privadas a ChatGPT? Qué guardan las apps de IA y cómo dejarlo en tu móvil (2026)</a></li>
+<li><a href="https://reditor.cloud/es/alternativas-a-private-llm-iphone/" target="_blank" rel="noopener">Mejores alternativas a Private LLM en iPhone y Mac en 2026 (Reditor)</a></li>
+</ul>
+<!-- related:end -->
+</div>
+    </main>
+
+<footer>
+        <div class="container">
+            <p>&copy; 2026 Saga Labs.</p>
+            <div class="footer-social">
+                <a href="https://x.com/SagaAILab" target="_blank" aria-label="X (Twitter)">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                        <path d="M18.244 2H21l-6.5 7.43L22.5 22H15.9l-4.7-6.2L5.7 22H3l7-8.02L1.8 2h6.8l4.3 5.7L18.244 2zm-2.43 18h1.64L8.29 4H6.57l9.244 16z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/Saga-Labs" target="_blank" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                        <path d="M12 2C6.477 2 2 6.486 2 12.017c0 4.424 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.238-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.464-1.11-1.464-.908-.62.069-.607.069-.607 1.004.071 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.833.092-.647.35-1.088.636-1.338-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.748-1.026 2.748-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.337 4.695-4.565 4.943.359.31.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .268.18.58.688.481A10.019 10.019 0 0 0 22 12.017C22 6.486 17.523 2 12 2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+</html>

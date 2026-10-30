@@ -981,6 +981,8 @@ GUIDES += guides_oct25.GUIDES
 
 import guides_oct26  # noqa: E402  (mejores plugins de ChatGPT para video e imagenes)
 GUIDES += guides_oct26.GUIDES
+import guides_oct30  # noqa: E402  (Pinku: velocidad de Llama, Gemma y Qwen sin internet en el iPhone)
+GUIDES += guides_oct30.GUIDES
 
 
 def _alts(en, es):
