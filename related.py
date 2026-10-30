@@ -85,6 +85,7 @@ GROUPS = {
             "pinku/es/velocidad-de-llama-gemma-y-qwen-sin-internet-en-el-iphone.html",
             "pinku/es/usar-ia-sin-conexion-en-el-avion-o-de-viaje.html",
             "pinku/es/es-seguro-contarle-cosas-privadas-a-chatgpt.html",
+            "blog/es/se-borran-de-verdad-los-chats-de-ia.html",
             "pinku/es/usar-ia-en-iphone-sin-internet.html",
             "pinku/es/comprobar-si-una-app-de-ia-guarda-tus-chats-en-el-iphone.html",
             "blog/es/mejores-apps-ia-privada-iphone.html",

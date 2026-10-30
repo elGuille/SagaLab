@@ -12,146 +12,223 @@ PINKU_PRIV = ("Pinku keeps chats on the device: they never leave it. Apple's pri
 
 # --------------------------------------------------------------------------
 KEEP = dict(
-    h1="What ChatGPT, Claude, Gemini and other AI chatbots keep, and what happens when you delete or export your chats (2026)",
-    desc=("How long ChatGPT, Claude, Gemini, Copilot, Perplexity, Grok, DeepSeek, Mistral, Meta AI, Alice, Doubao "
-          "and Kimi keep your conversations, what the delete button does, and how to export your data, from each "
-          "company's own help pages, checked on 20 October 2026."),
+    h1="Are deleted AI chats really deleted? What ChatGPT, Claude, Gemini and other chatbots keep (2026)",
+    desc=("What happens when you delete a chat in ChatGPT, Claude, Gemini, Copilot, Perplexity, Grok, DeepSeek, "
+          "Mistral or Meta AI: what leaves your screen, what is erased from the servers and when, what is kept for "
+          "training or safety, and what a court order kept anyway. From each company's own pages, checked on "
+          "30 October 2026."),
     kicker="Privacy", section="Privacy",
-    standfirst=("Deleting a chat removes it from your list at once. What happens on the company's side depends "
-                "on the company, the setting and the kind of copy. Here is what each one says, with links."),
+    standfirst=("Deleting a chat removes it from your list at once. On the company's side, a copy can stay for 30 "
+                "days, for years if it was reviewed or used for training, or for as long as a court says. Here is "
+                "what each one says, with links."),
     body="""
 <h2>The short answer</h2>
 
-<p>Most big chatbots keep your conversations until you delete them or until an
-automatic timer runs out. When you delete one, it disappears from your list at
-once, and the company says it is erased from its systems within a set window,
-usually <strong>30 days</strong>. Every policy below has exceptions: copies kept
-for safety reviews, for legal obligations, or because they were already
-de-identified or used to train a model. Exporting gives you a copy of your chat
-history; it does not tell you what else the company keeps.</p>
+<p>Not right away, and not always. When you delete a chat, every service below
+removes it from your list at once. Most then say they erase it from their
+servers within <strong>30 days</strong>. Three kinds of copy can outlive that:
+chats kept <strong>for training</strong> (up to 5 years at Anthropic if you allowed
+it), chats kept <strong>for safety review</strong> (up to 3 years at Google when a
+human read them, 2 years at Anthropic when flagged), and chats kept <strong>because a
+court ordered it</strong>: from May to September 2025, OpenAI had to keep deleted
+ChatGPT chats for a copyright case, and it still holds what it saved then.</p>
+
+<h2>Deleted from your screen is not deleted from the servers</h2>
 
 <div class="table-scroll"><table>
-<thead><tr><th>Service</th><th>Kept by default</th><th>When you delete a chat</th><th>Trains on chats by default?</th><th>Export</th></tr></thead>
+<thead><tr><th>Service</th><th>Leaves your screen</th><th>Erased from the servers</th><th>Kept for training or safety</th><th>Kept for courts or the law</th></tr></thead>
 <tbody>
-<tr><td>ChatGPT (Free, Go, Plus, Pro)</td><td>Until you delete them</td><td>Gone from view at once; deleted within 30 days, with exceptions</td><td>Yes, unless you turn it off</td><td>Settings, Data controls, Export: a ZIP link by email or SMS, up to 7 days, link valid 24 hours</td></tr>
-<tr><td>Claude (Free, Pro, Max)</td><td>Until you delete them</td><td>Gone from history at once; from back-end storage within 30 days</td><td>Only if you allow it in Privacy settings</td><td>Settings, Privacy, Export data; link valid 24 hours</td></tr>
-<tr><td>Gemini Apps</td><td>Auto-deleted after 18 months (3 or 36 months, or never)</td><td>Removal starts at once; chats a human reviewed stay up to 3 years</td><td>Yes while Keep Activity is on</td><td>Google Takeout; email link active 7 days</td></tr>
-<tr><td>Microsoft Copilot</td><td>18 months</td><td>You can delete one chat or all; back-end timing not stated</td><td>Yes; you can opt out at any time</td><td>Not described on the pages we read</td></tr>
-<tr><td>Perplexity</td><td>While the account is active</td><td>Threads deletable one by one or all; account data removed within 30 days of deleting the account</td><td>Memory may be used; a setting turns it off</td><td>Not described on the pages we read</td></tr>
-<tr><td>Grok</td><td>Not stated as a number</td><td>Deleted within 30 days, unless needed for legal, compliance or safety reasons</td><td>Training is listed among the uses of your content</td><td>Requests through x.ai's privacy portal</td></tr>
-<tr><td>DeepSeek</td><td>As long as necessary to provide the service</td><td>You can delete or copy chat history in settings; no timeline given</td><td>Yes; the policy gives a right to opt out</td><td>A right to a portable copy, no button described</td></tr>
-<tr><td>Vibe by Mistral (ex Le Chat)</td><td>Until you delete them</td><td>Removed on deletion; account deletion after a short grace period</td><td>Yes, users are not opted out by default</td><td>Not described on the pages we read</td></tr>
-<tr><td>Meta AI</td><td>Not stated on the help page we read</td><td>Delete all chats and media in Settings; public vibes are not deleted</td><td>Meta says it uses your interactions with its AIs to improve AI at Meta</td><td>Export your information in Accounts Center</td></tr>
+<tr><td>ChatGPT</td><td>At once; cannot be restored, not even by support</td><td>Within 30 days, unless already de-identified</td><td>Trains on Free, Plus and Pro chats unless you turn it off; temporary chats kept up to 30 days for safety</td><td>Court order of May 2025 kept deleted chats until 26 September 2025; OpenAI keeps what it saved then</td></tr>
+<tr><td>Claude</td><td>At once</td><td>Within 30 days</td><td>Only if you allow training: up to 5 years, de-identified; flagged chats 2 years, their safety scores 7 years; feedback 5 years</td><td>Not stated on the pages we read</td></tr>
+<tr><td>Gemini</td><td>When you delete the activity</td><td>Auto-deleted after 18 months by default (3 or 36, or never); 72 hours with Keep Activity off</td><td>Chats a human reviewed are not deleted with your activity: up to 3 years, disconnected from your account</td><td>Not stated on the pages we read</td></tr>
+<tr><td>Microsoft Copilot</td><td>One chat or all, at any time</td><td>Older app: stored 18 months by default. The new app's privacy page gives no period</td><td>Trains on conversations unless you opt out; some get automated and human review</td><td>Not stated on the pages we read</td></tr>
+<tr><td>Perplexity</td><td>One thread or all</td><td>Account data within 30 days of deleting the account; files after 30 days</td><td>Memory may be used to improve models unless you turn off AI Data Retention</td><td>Not stated on the pages we read</td></tr>
+<tr><td>Grok</td><td>One chat or all</td><td>Within 30 days</td><td>Training is one of the listed uses</td><td>Longer &ldquo;for legal, compliance, or safety purposes&rdquo;</td></tr>
+<tr><td>DeepSeek</td><td>Delete history in settings</td><td>&ldquo;As long as necessary&rdquo;; no timeline</td><td>Used for training; the policy gives a right to object</td><td>Stored on servers in the People's Republic of China</td></tr>
+<tr><td>Vibe by Mistral</td><td>On deletion</td><td>&ldquo;Upon manual deletion&rdquo;; account after a short grace period</td><td>Users are not opted out of training by default</td><td>&ldquo;Monitoring and legal retention purposes&rdquo;</td></tr>
+<tr><td>Meta AI</td><td>Delete all chats and media; public vibes stay</td><td>No period on the help pages we read</td><td>Interactions are used &ldquo;to improve AI at Meta&rdquo;</td><td>Not stated on the pages we read</td></tr>
 </tbody>
 </table></div>
 
 <p class="article-note">From each company's privacy policy and help centre, read on
-%(date)s. Links and dates of each page are in the sources at the end. Where a cell
-says &ldquo;not described&rdquo;, we looked and did not find it; it does not mean the
-feature does not exist.</p>
+%(date)s. Links and the date of each page are in the sources at the end. &ldquo;Not
+stated&rdquo; means we looked and did not find it on those pages, not that the company
+never keeps anything for those reasons.</p>
 
 <h2>ChatGPT (OpenAI)</h2>
 
-<p>OpenAI's retention page, updated the day before we read it, says regular and
-archived chats &ldquo;remain saved to your account until you delete them&rdquo;.
-When you delete one, ChatGPT removes it from view immediately and OpenAI
-&ldquo;schedules it for permanent deletion from its systems within 30 days&rdquo;,
-unless the chat was already de-identified and disassociated from your account, or
-OpenAI must keep it longer for security or legal obligations. A deleted chat cannot
-be restored, not even by support. A temporary chat is not shown in your history,
-but OpenAI may keep a copy for up to 30 days for safety purposes. One detail people
-miss: deleting a chat does not delete a file saved in your Library.</p>
+<p>OpenAI's retention page (updated 29 October 2026) says regular and archived
+chats &ldquo;remain saved to your account until you delete them&rdquo; or a
+workspace retention policy removes them. When you delete one, ChatGPT removes it
+from view immediately and OpenAI &ldquo;schedules it for permanent deletion from its
+systems within 30 days&rdquo;, unless the chat was already de-identified and
+disassociated from your account, or OpenAI must keep it longer for security or legal
+obligations. You cannot restore a deleted chat, &ldquo;in ChatGPT or through OpenAI
+Support&rdquo;. A temporary chat is not shown in your history, but OpenAI &ldquo;may
+keep a copy for up to 30 days for safety purposes&rdquo;. Deleting a chat does not
+delete a file you saved separately in Library or a Space.</p>
 
 <p>On training, OpenAI says that for Free, Plus and Pro it &ldquo;may use your
-content to train our models&rdquo;. You turn that off with <em>Improve the model for
-everyone</em> in Settings, Data controls, or with <em>Do not train on my content</em>
-in its Privacy Portal. Even after you opt out, if you press thumbs up or thumbs down
-on a reply, &ldquo;the entire conversation associated with that feedback may be used
-to train our models&rdquo;.</p>
+content to train our models&rdquo;. Even after you opt out, if you press thumbs up or
+down, &ldquo;the entire conversation associated with that feedback may be used to
+train our models&rdquo;.</p>
 
-<p>To export: Settings, Data controls, Export, then Confirm export. The link
-arrives by email or SMS, &ldquo;can take up to 7 days&rdquo;, and expires 24 hours
-after you receive it. The ZIP holds your chat history and other account data; it
-cannot bring back chats you already deleted. The Privacy Portal is the other route
-(Make a Privacy Request, Download my data).</p>
-
-<p>Court orders can override all of this. In 2025 a US court ordered OpenAI to
-preserve chats users had deleted, in the New York Times copyright case; that order
-was later lifted for new chats. The full timeline is in
-<a href="%(gdpr)s">our earlier article</a>.</p>
+<p><strong>Settings:</strong> turn training off in Settings, Data controls,
+<em>Improve the model for everyone</em> (or <em>Do not train on my content</em> in
+the Privacy Portal). Start a temporary chat by opening a new chat and selecting
+<em>Temporary</em>. Delete one chat from its &bull;&bull;&bull; menu, Delete; delete
+all in Settings, Data controls, <em>Delete all chats</em>. Export in Settings, Data
+controls, Export: the link can take up to 7 days and expires 24 hours after you get
+it, and an export cannot bring back chats you already deleted.</p>
 
 <h2>Claude (Anthropic)</h2>
 
-<p>Anthropic's retention page (dated 1 July 2026) covers Free, Pro and Max. A
-deleted conversation is &ldquo;removed from your chat history immediately&rdquo; and
+<p>Anthropic's retention page (1 July 2026) covers Free, Pro and Max. A deleted
+conversation is &ldquo;removed from your chat history immediately&rdquo; and
 &ldquo;deleted from our back-end storage systems within 30 days&rdquo;. The
-exceptions are spelled out with numbers:</p>
+exceptions come with numbers:</p>
 <ul>
-<li>If you allow your chats to be used to improve Claude, they are kept
-&ldquo;in a de-identified format for up to 5 years&rdquo; in training pipelines.</li>
+<li>If you allow your chats to be used to improve Claude, they are kept &ldquo;in a
+de-identified format for up to 5 years&rdquo; in training pipelines, and data already
+in a finished or running training run stays there.</li>
 <li>Conversations flagged by its safety systems: inputs and outputs up to 2 years,
 and the classification scores up to 7 years.</li>
 <li>Feedback you send (thumbs up or down): 5 years.</li>
+<li>Incognito chats are not saved to your history and not used for training, but they
+are kept for 30 days by default.</li>
 </ul>
-<p>Training only happens if you choose to allow it, with the model improvement
-switch in Settings, Privacy. Turning it off stops future use; data already in a
-finished training run stays in that model. Incognito chats are not used for
-training even if the setting is on. To export: Settings, Privacy, Export data; the
-download link expires 24 hours after delivery.</p>
+<p><strong>Settings:</strong> training only happens if you switch on <em>Help improve
+our AI models</em> in Settings, Privacy. Start an incognito chat with the ghost icon
+at the top right. Delete a chat from its &#8942; menu, or tick several and use
+<em>Select all</em>. Export from Settings, Privacy on the web or desktop app (not
+from the iPhone or Android app); the link expires 24 hours after delivery.</p>
 
 <h2>Gemini (Google)</h2>
 
-<p>Google's Gemini Apps privacy hub (updated 19 October 2026) says your activity is
+<p>Google's Gemini Apps privacy hub (updated 26 October 2026) says your activity is
 auto-deleted after <strong>18 months</strong> by default, and you can change that to 3
-or 36 months, or turn auto-delete off. With Keep Activity off, and for temporary
-chats, conversations are still kept with your account for <strong>72 hours</strong>
-and are not used to train Google's models.</p>
+or 36 months, or turn auto-delete off. Temporary chats, and chats with Keep Activity
+off, are still kept with your account for <strong>72 hours</strong>, and temporary
+chats are not used to train Google's models.</p>
 
 <p>The exception that matters most: &ldquo;a subset of chats are reviewed by human
-reviewers&rdquo;, and those reviewed chats &ldquo;are not deleted when you delete your
-activity&rdquo;; they are kept for up to three years, disconnected from your account.
-To export, use Google Takeout and select Gemini and My Activity, Gemini Apps; the
-email download link stays active for 7 days.</p>
+reviewers&rdquo;, and those chats &ldquo;are not deleted when you delete your
+activity&rdquo;; they are kept for up to three years, disconnected from your
+account.</p>
+
+<p><strong>Settings:</strong> in Settings &amp; help, Activity, choose <em>Turn
+off</em> or <em>Turn off and delete activity</em>. Start a temporary chat with
+<em>Temporary chat</em> next to New chat. Delete one item with <em>Delete activity
+item</em>, or everything with Delete, <em>All time</em>. Export with Google Takeout
+(My Activity, Gemini Apps); the email link stays active for 7 days.</p>
 
 <h2>Microsoft Copilot</h2>
 
-<p>Microsoft's consumer Copilot FAQ says: &ldquo;By default, we store conversation
-activity for 18 months.&rdquo; You can delete single conversations or the whole
-history at any time; the pages do not say how long deletion takes on Microsoft's
-side. Some conversations go through automated and human review. Microsoft lists
-training its models among the uses of your conversations and says you can opt out at
-any time, in Privacy, with separate switches for text and voice conversations.</p>
+<p>Microsoft's consumer Copilot privacy FAQ says: &ldquo;By default, we store
+conversation activity for 18 months. You can delete individual conversations or your
+entire conversation history at any time.&rdquo; Since we first read it, Microsoft has
+added a line saying that the article &ldquo;applies only to the older version of the
+Microsoft Copilot app&rdquo;. The privacy page for the new app does not give a
+retention period, so we cannot tell you how long the new app keeps chats. Some
+conversations go through automated and human review, and you &ldquo;can opt out of use
+of your conversation activity for model training at any time&rdquo;.</p>
+
+<p><strong>Settings (older app):</strong> Privacy, <em>Training on conversation
+activity</em> and <em>Training on voice conversations</em>. Delete one conversation
+from the three dots next to it, or all of them with <em>Delete all activity
+history</em>. We did not find a temporary chat mode on Microsoft's pages.</p>
 
 <h2>Perplexity, Grok, DeepSeek, Mistral and Meta AI</h2>
 
 <ul>
 <li><strong>Perplexity</strong> keeps personal information &ldquo;as long as your
 account is active&rdquo;. If you delete the account, it is removed from its servers
-within 30 days, and signing back in before then cancels the deletion. You can
-delete threads one by one or all at once; uploaded files are kept for 30 days by
-default. Content from Memory may be used to improve its models; Perplexity says you can turn that off.</li>
-<li><strong>Grok</strong> (xAI, now SpaceXSI; policy of 11 October 2026): Private
-Chat conversations, deleted conversations and deleted accounts are erased
-&ldquo;within 30 days unless it is necessary to retain the data for legal,
-compliance, or safety purposes&rdquo;. Training the models is one of the listed uses
-of your content. Privacy requests go through x.ai's privacy portal.</li>
-<li><strong>DeepSeek</strong> (policy of 10 February 2026) keeps personal data
-&ldquo;for as long as necessary to provide our Services&rdquo;, uses it to train its
-technology, and says it stores data in the People's Republic of China. You can copy
-or delete your chat history in settings; deleting the account cannot be undone, and
-no deletion timeline is given.</li>
+within 30 days, and signing back in before then cancels the deletion. You can delete
+threads one by one or all at once (the &hellip; next to the threads tab, <em>Delete
+sessions</em>); uploaded files are kept for 30 days by default. Content from Memory
+may be used to improve its models unless you turn off <em>AI Data Retention</em> in
+Settings, Preferences, Artificial Intelligence, and a log of cleared memories may be
+kept for up to 30 days.</li>
+<li><strong>Grok</strong> (xAI, now SpaceXSI; policy of 27 October 2026): Private
+Chat conversations, deleted conversations and deleted accounts are erased within 30
+days &ldquo;unless it is necessary to retain the data for legal, compliance, or safety
+purposes&rdquo;. Training is one of the listed uses of your content. Its FAQ gives the
+switches: Settings, Data Controls, <em>Improve the model</em>; the ghost icon at the top
+right for a Private Chat; and Settings, Data Controls, <em>Delete All
+Conversations</em>.</li>
+<li><strong>DeepSeek</strong> (policy of 10 February 2026) keeps personal data for as
+long as necessary, uses it to train and improve its technology, gives a right to object
+to that, and stores data on servers in the People's Republic of China. You can delete
+your chat history in settings; deleting the account cannot be undone, and no deletion
+timeline is given. DeepSeek has no help pages with the steps.</li>
 <li><strong>Vibe by Mistral</strong> (formerly Le Chat): conversations &ldquo;are
-removed from our systems upon manual deletion&rdquo;, with possible retention for
-monitoring and legal purposes. Users &ldquo;are not opted out by default&rdquo; of
-training; the switch is <em>Enable data sharing</em> in the app's data settings.</li>
-<li><strong>Meta AI</strong>: the help centre explains how to delete all chats and
-media (Settings, Data &amp; privacy, Manage your information); public vibes are not
-deleted with them. The same page says Meta uses your interactions with its AIs
-&ldquo;to improve AI at Meta&rdquo;, and that when its AIs cannot answer, Meta
-shares your messages and general information such as your region with select
-partners. Your information can be exported from Accounts Center. We did not find a
-retention period for chats.</li>
+removed from our systems upon manual deletion&rdquo; or when you delete your account,
+typically after a short grace period, with retention for monitoring and legal purposes.
+Users &ldquo;are not opted out by default&rdquo; of training: on the phone the switch
+is <em>Enable data sharing</em>; on the web, <em>Allow your interactions to be used to
+train our models</em>.</li>
+<li><strong>Meta AI</strong>: Settings, Data &amp; privacy, Manage your information,
+<em>Delete all chats and media</em>; public vibes are not deleted with them. The same
+page says Meta uses your interactions with its AIs &ldquo;to improve AI at Meta&rdquo;,
+and that when its AIs cannot answer, Meta shares your messages and general information
+such as your region with select partners. You can export your information from
+Accounts Center. We did not find a retention period for chats.</li>
 </ul>
+
+<h2>Four times chats were kept or exposed anyway</h2>
+
+<h3>A court ordered OpenAI to keep deleted chats (2025)</h3>
+<p>In the New York Times copyright case, Magistrate Judge Ona Wang ordered OpenAI on
+13 May 2025 to &ldquo;preserve and segregate all output log data that would otherwise be
+deleted&rdquo;, &ldquo;whether such data might be deleted at a user's request&rdquo; or
+because of privacy laws. OpenAI says this covered ChatGPT Free, Plus, Pro and Team and
+the API without a zero data retention agreement, not Enterprise or Edu. A stipulated
+order of 9 October 2025 ended the obligation &ldquo;as of September 26, 2025&rdquo;.
+OpenAI keeps what it had already saved, except data from the European Economic Area,
+Switzerland and the United Kingdom, and keeps preserving chats from accounts linked to
+the domains the newspapers listed. OpenAI's own page says it &ldquo;will securely store
+limited historical April&ndash;September 2025 user data&rdquo;. The case is still
+open; we found no change to the preservation terms since.</p>
+
+<h3>Italy limited ChatGPT and fined OpenAI (2023 and 2024)</h3>
+<p>On 30 March 2023, Italy's data protection authority, the Garante, ordered an
+immediate temporary limitation of ChatGPT's processing of data of people in Italy, and
+on 11 April set the conditions for lifting it, to be met by 30 April 2023. On 20 December 2024 it fined
+OpenAI fifteen million euros, for reasons that included not reporting the March 2023
+breach, training without a legal basis, a lack of transparency and no age checks. The
+Garante's page now says that, after the Court of Rome upheld OpenAI's appeal in a
+judgment published on 18 March 2026, the decision has been temporarily taken off its
+website.</p>
+
+<h3>A ChatGPT bug showed other people's chat titles (March 2023)</h3>
+<p>OpenAI wrote that a bug &ldquo;allowed some users to see titles from another active
+user's chat history&rdquo;, and exposed payment-related information of 1.2%% of ChatGPT
+Plus subscribers active during a nine-hour window; full card numbers were not
+exposed.</p>
+
+<h3>A DeepSeek database was open to the internet (January 2025)</h3>
+<p>Wiz Research found a DeepSeek database reachable without a password, with
+&ldquo;over a million lines of log streams containing chat history, secret keys, backend
+details&rdquo;; DeepSeek closed it promptly after being told. The next day, 30 January
+2025, the Garante ordered an urgent limitation of DeepSeek's processing of data of users
+in Italy.</p>
+
+<h2>Never paste passwords, API keys or card numbers</h2>
+
+<p>The companies say it themselves. OpenAI: &ldquo;Please don't share any sensitive
+information in your conversations.&rdquo; Google: &ldquo;Please don't enter confidential
+information that you wouldn't want a reviewer to see or Google to use to improve our
+services&rdquo;, and &ldquo;Don't enter login or payment information into Gemini
+chats&rdquo;. Microsoft: you &ldquo;shouldn't provide any confidential or sensitive
+personal data&rdquo;. xAI: &ldquo;please do not share any personal or sensitive
+information in your questions to Grok.&rdquo; The UK's National Cyber Security Centre
+recommends &ldquo;not to include sensitive information in queries to public
+LLMs&rdquo;.</p>
+
+<p>The reasons are in the sections above: a deleted chat can stay up to 30 days, a
+reviewed one up to three years, a court can freeze deletion, and a leak exposes
+whatever is in the logs. If you have already pasted a password or a key into a chatbot,
+deleting the chat is not enough: change the password or revoke the key.</p>
 
 <h2>Chatbots popular in Russian and Chinese</h2>
 
@@ -161,8 +238,8 @@ for 14 days; with Alice Plus, without a time limit. You delete a chat from the
 history, and data by category from Yandex ID's data management page, which warns
 that some data is kept longer &ldquo;because the law requires it&rdquo;. Yandex ID
 also lets you order an archive of your data.</li>
-<li><strong>GigaChat (Sber)</strong>: the user agreement for individuals (6 February
-2026) does not give a retention period for conversations.</li>
+<li><strong>GigaChat (Sber)</strong>: the agreement we read (6 February 2026) does not
+give a retention period for conversations.</li>
 <li><strong>Doubao (ByteDance)</strong>: keeps personal information only for the
 period necessary to provide the service and stores data collected in China inside
 China. You can delete single conversations and the account. The policy says it uses
@@ -194,62 +271,83 @@ quoted, is in <a href="%(gdpr)s">I sent OpenAI and Anthropic a GDPR erasure requ
 <h2>How to keep a conversation out of all of this</h2>
 
 <ol>
-<li><strong>Before typing</strong>, turn off training (ChatGPT, Copilot, Mistral,
-Doubao) or leave it off (Claude). Do not press thumbs up or down on chats you
-care about: on ChatGPT, Claude and Mistral, feedback has its own rules.</li>
+<li><strong>Before typing</strong>, turn off training (ChatGPT, Copilot, Grok,
+Mistral, Perplexity's Memory, Doubao) or leave it off (Claude). Do not press thumbs
+up or down on chats you care about: on ChatGPT, Claude and Mistral, feedback has its
+own rules.</li>
 <li><strong>Use temporary or incognito chats</strong> for sensitive questions, and
-remember they are still kept for a while: up to 30 days on ChatGPT and Grok, 72
-hours on Gemini.</li>
+remember they are still kept for a while: up to 30 days on ChatGPT, Claude and Grok,
+72 hours on Gemini.</li>
 <li><strong>Delete what you do not need</strong>, and export first if you want a
 copy: an export cannot bring back deleted chats.</li>
-<li><strong>For conversations that should never reach a server</strong>, use a model
-that runs on your own device. On a computer that means tools such as Ollama or LM
-Studio; on an iPhone or Mac, apps such as Locally AI, PocketPal AI, Private LLM or
-<a href="%(pinku)s">Pinku</a>. %(pinku_priv)s We tested what these apps actually send over the network on a
-Mac: <a href="%(p_net)s">the results are here</a>.</li>
+<li><strong>Keep secrets out of every chat</strong>: passwords, API keys, card and ID
+numbers.</li>
 </ol>
+
+<h2>When a model on your own device makes sense</h2>
+
+<p>None of the cloud chatbots above promise to keep nothing: deletion takes time,
+there are exceptions, and a court or a leak can override both. A model that runs on
+your own device avoids that for the conversations where it matters (health, money,
+work documents, anything you would not want a reviewer to read), because the text never
+reaches a server. The trade-off is a smaller model: it knows less, makes more mistakes
+and cannot search the web, so it suits private drafting, summaries and questions, not
+research.</p>
+
+<p>On a computer, tools such as Ollama or LM Studio run open models; on an iPhone or
+Mac, apps such as Locally AI, PocketPal AI and Private LLM do, and so does
+<a href="%(pinku)s">Pinku</a>, which we make. %(pinku_priv)s We tested what these
+apps actually send over the network on a Mac (<a href="%(p_net)s">results</a>), and
+how fast small models run on an iPhone (<a href="%(speed)s">speeds</a>).</p>
 """,
     faq=[
-        ("When I delete a ChatGPT chat, is it really deleted?",
-         "It disappears from your account at once, and OpenAI says it schedules it for permanent deletion "
-         "within 30 days, unless the chat was already de-identified and disassociated from your account or "
-         "OpenAI must keep it longer for security or legal obligations. It cannot be restored."),
+        ("Are deleted ChatGPT chats really deleted?",
+         "They disappear from your account at once and cannot be restored. OpenAI says it deletes them from its "
+         "systems within 30 days, unless they were already de-identified or it must keep them for security or legal "
+         "obligations. Deleted chats saved under the court order of May to September 2025 are still kept."),
+        ("Does OpenAI still have to keep my deleted ChatGPT chats?",
+         "Not new ones. The obligation ended on 26 September 2025. OpenAI keeps what it had saved before that date, "
+         "except data from the European Economic Area, Switzerland and the United Kingdom, and keeps preserving chats "
+         "of accounts linked to domains the New York Times listed."),
         ("How long does Claude keep my chats after I delete them?",
-         "Anthropic says a deleted chat leaves your history immediately and its back-end storage within 30 "
-         "days. Chats flagged by safety systems are kept up to 2 years (scores up to 7 years), and chats used "
-         "for training with your permission up to 5 years, de-identified."),
+         "Anthropic says a deleted chat leaves your history immediately and its back-end storage within 30 days. "
+         "Chats flagged by safety systems are kept up to 2 years (scores up to 7 years), and chats used for training "
+         "with your permission up to 5 years, de-identified."),
         ("Does deleting Gemini activity delete chats that a human reviewed?",
-         "No. Google says reviewed chats are not deleted when you delete your activity; they are kept for up "
-         "to three years, disconnected from your account."),
-        ("How do I download my ChatGPT history?",
-         "Settings, Data controls, Export, then Confirm export. OpenAI emails or texts a link, which can take "
-         "up to 7 days to arrive and expires 24 hours after you receive it."),
+         "No. Google says reviewed chats are not deleted when you delete your activity; they are kept for up to three "
+         "years, disconnected from your account."),
         ("Is a temporary or incognito chat stored anywhere?",
-         "Yes, for a while. OpenAI may keep temporary chats up to 30 days for safety, Google keeps Gemini chats "
-         "72 hours with Keep Activity off, and Grok deletes Private Chat within 30 days unless it must keep it."),
+         "Yes, for a while: up to 30 days on ChatGPT and Grok, 30 days by default on Claude, and 72 hours on Gemini."),
+        ("Is it safe to paste a password or API key into ChatGPT?",
+         "No. OpenAI, Google, Microsoft and xAI all ask you not to share sensitive information, and deleted chats can "
+         "stay on their servers for weeks or longer. If you already did, change the password or revoke the key."),
         ("Which AI chat does not store my conversations at all?",
-         "None of the cloud chatbots in this list promise that. A model that runs on your own device, such as "
-         "Ollama or LM Studio on a computer, or Locally AI, PocketPal AI, Private LLM or Pinku on iPhone or Mac, "
-         "keeps the conversation on the device."),
+         "None of the cloud chatbots in this list promise that. A model that runs on your own device, such as Ollama "
+         "or LM Studio on a computer, or Locally AI, PocketPal AI, Private LLM or Pinku on iPhone or Mac, keeps the "
+         "conversation on the device."),
     ],
     sources="""
 <h2>Sources</h2>
 <ul>
-<li>OpenAI Help Center: <a href="https://help.openai.com/en/articles/8983778-chat-and-file-retention-in-chatgpt"%(x)s>Chat and file retention in ChatGPT</a> (updated 19 October 2026), <a href="https://help.openai.com/en/articles/7260999-exporting-your-chatgpt-history-and-data"%(x)s>Exporting your ChatGPT history and data</a> and <a href="https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance"%(x)s>How your data is used to improve model performance</a> (both updated 20 October 2026).</li>
-<li>Anthropic Privacy Center: <a href="https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data"%(x)s>How long do you store my data?</a> (1 July 2026), <a href="https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training"%(x)s>Is my data used for model training?</a> (16 March 2026); Claude Help Center, <a href="https://support.claude.com/en/articles/9450526-export-your-claude-data"%(x)s>Export your Claude data</a>.</li>
-<li>Google: <a href="https://support.google.com/gemini/answer/13594961?hl=en"%(x)s>Gemini Apps Privacy Hub</a> (updated 19 October 2026) and <a href="https://support.google.com/gemini/answer/16920332"%(x)s>export with Google Takeout</a>.</li>
-<li>Microsoft: <a href="https://support.microsoft.com/en-us/microsoft-copilot/privacy-faq-for-microsoft-copilot"%(x)s>Privacy FAQ for Microsoft Copilot</a> and <a href="https://support.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-privacy-controls"%(x)s>Microsoft Copilot privacy controls</a>.</li>
-<li>Perplexity Help Center: <a href="https://www.perplexity.ai/help-center/en/articles/10354873-how-long-does-perplexity-retain-my-search-history-profile-data-and-personal-information"%(x)s>retention</a>, <a href="https://www.perplexity.ai/help-center/en/articles/10354879-account-deletion"%(x)s>account deletion</a>, <a href="https://www.perplexity.ai/help-center/en/articles/11564562-self-serve-data-deletion"%(x)s>self-serve data deletion</a>, <a href="https://www.perplexity.ai/help-center/en/articles/10968016-memory"%(x)s>memory</a>.</li>
-<li><a href="https://x.ai/legal/privacy-policy"%(x)s>SpaceXSI (xAI) Privacy Policy</a>, last updated 11 October 2026.</li>
+<li>OpenAI Help Center: <a href="https://help.openai.com/en/articles/8983778-chat-and-file-retention-in-chatgpt"%(x)s>Chat and file retention in ChatGPT</a> (updated 29 October 2026), <a href="https://help.openai.com/en/articles/7260999-exporting-your-chatgpt-history-and-data"%(x)s>Exporting your ChatGPT history and data</a> (26 October 2026), <a href="https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance"%(x)s>How your data is used to improve model performance</a> (20 October 2026), <a href="https://help.openai.com/en/articles/8914046-temporary-chat-in-chatgpt"%(x)s>Temporary Chat</a> and <a href="https://help.openai.com/en/articles/8809935-deleting-and-archiving-chats-in-chatgpt"%(x)s>Deleting and archiving chats</a> (29 October 2026), <a href="https://help.openai.com/en/articles/6783457-what-is-chatgpt"%(x)s>What is ChatGPT?</a> (20 October 2026).</li>
+<li>Anthropic: <a href="https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data"%(x)s>How long do you store my data?</a> (1 July 2026), <a href="https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training"%(x)s>Is my data used for model training?</a> (16 March 2026), <a href="https://privacy.claude.com/en/articles/12109829-how-do-i-change-my-model-improvement-privacy-settings"%(x)s>model improvement settings</a> (3 August 2026); Claude Help Center: <a href="https://support.claude.com/en/articles/12260368-use-incognito-chats"%(x)s>incognito chats</a>, <a href="https://support.claude.com/en/articles/8230524-delete-or-rename-a-conversation"%(x)s>delete a conversation</a>, <a href="https://support.claude.com/en/articles/9450526-export-your-claude-data"%(x)s>export your data</a> (14 October 2026).</li>
+<li>Google: <a href="https://support.google.com/gemini/answer/13594961?hl=en"%(x)s>Gemini Apps Privacy Hub</a> (updated 26 October 2026), <a href="https://support.google.com/gemini/answer/13278892"%(x)s>manage your Gemini Apps activity</a>, <a href="https://support.google.com/gemini/answer/13275745"%(x)s>temporary chats</a> and <a href="https://support.google.com/gemini/answer/16920332"%(x)s>export with Google Takeout</a>.</li>
+<li>Microsoft: <a href="https://support.microsoft.com/en-us/microsoft-copilot/privacy-faq-for-microsoft-copilot"%(x)s>Privacy FAQ for Microsoft Copilot</a>, <a href="https://support.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-privacy-controls"%(x)s>Copilot privacy controls</a> and <a href="https://support.microsoft.com/en-us/microsoft-copilot/conversation-history-in-microsoft-copilot"%(x)s>conversation history</a> (older app); <a href="https://support.microsoft.com/en-us/privacy/microsoft-copilot/overview"%(x)s>privacy for the new Copilot app</a>.</li>
+<li>Perplexity Help Center: <a href="https://www.perplexity.ai/help-center/en/articles/10354873-how-long-does-perplexity-retain-my-search-history-profile-data-and-personal-information"%(x)s>retention</a>, <a href="https://www.perplexity.ai/help-center/en/articles/10354879-account-deletion"%(x)s>account deletion</a> (22 October 2026), <a href="https://www.perplexity.ai/help-center/en/articles/11564562-self-serve-data-deletion"%(x)s>self-serve data deletion</a> (27 October 2026), <a href="https://www.perplexity.ai/help-center/en/articles/10968016-memory"%(x)s>memory</a>.</li>
+<li><a href="https://x.ai/legal/privacy-policy"%(x)s>SpaceXSI (xAI) Privacy Policy</a> (27 October 2026) and <a href="https://x.ai/legal/faq"%(x)s>Grok FAQ</a>.</li>
 <li><a href="https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html"%(x)s>DeepSeek Privacy Policy</a>, last updated 10 February 2026.</li>
-<li>Mistral Help Center: <a href="https://help.mistral.ai/en/articles/347612-can-i-activate-zero-data-retention-zdr"%(x)s>zero data retention and deletion</a> and <a href="https://help.mistral.ai/en/articles/455207-can-i-opt-out-of-my-input-or-output-data-being-used-for-training"%(x)s>training opt-out</a> (3 September 2026).</li>
-<li>Meta Help Center: <a href="https://www.meta.com/help/artificial-intelligence/2457110494637611/"%(x)s>delete your Meta AI chats</a> and <a href="https://www.meta.com/help/artificial-intelligence/1771195753735844/"%(x)s>export your information</a>.</li>
-<li>Yandex: <a href="https://alice.yandex.ru/support/ru/assistant/alice-app"%(x)s>Alice app help</a> and <a href="https://yandex.ru/support/yandex-app-android-alice/ru/privacy/clear-data"%(x)s>deleting your data</a>; Sber: <a href="https://developers.sber.ru/docs/ru/policies/gigachat-agreement/individuals"%(x)s>GigaChat agreement for individuals</a> (6 February 2026).</li>
+<li>Mistral Help Center: <a href="https://help.mistral.ai/en/articles/347612-can-i-activate-zero-data-retention-zdr"%(x)s>zero data retention and deletion</a> (12 August 2026) and <a href="https://help.mistral.ai/en/articles/455207-can-i-opt-out-of-my-input-or-output-data-being-used-for-training"%(x)s>training opt-out</a> (3 September 2026).</li>
+<li>Meta Help Center: <a href="https://www.meta.com/help/artificial-intelligence/2457110494637611/"%(x)s>remove chats and media from Meta AI</a> and <a href="https://www.meta.com/help/artificial-intelligence/1771195753735844/"%(x)s>export your information</a>.</li>
+<li>New York Times v. Microsoft and OpenAI, S.D.N.Y. 1:23-cv-11195: <a href="https://storage.courtlistener.com/recap/gov.uscourts.nysd.612697/gov.uscourts.nysd.612697.551.0.pdf"%(x)s>preservation order of 13 May 2025 (ECF 551)</a> and <a href="https://storage.courtlistener.com/recap/gov.uscourts.nysd.612697/gov.uscourts.nysd.612697.922.0.pdf"%(x)s>stipulation and order of 9 October 2025 (ECF 922)</a>; OpenAI, <a href="https://openai.com/index/response-to-nyt-data-demands/"%(x)s>How we're responding to The New York Times' data demands</a> (5 June 2025, updated 22 October 2025).</li>
+<li>Garante per la protezione dei dati personali: <a href="https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/9870832"%(x)s>limitation of ChatGPT, 30 March 2023</a>, <a href="https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/10085432"%(x)s>fine of 20 December 2024</a> (with the note on the Court of Rome judgment), <a href="https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/10097450"%(x)s>DeepSeek, 30 January 2025</a>.</li>
+<li>OpenAI, <a href="https://openai.com/index/march-20-chatgpt-outage/"%(x)s>March 20 ChatGPT outage</a> (24 March 2023); Wiz Research, <a href="https://www.wiz.io/blog/wiz-research-uncovers-exposed-deepseek-database-leak"%(x)s>exposed DeepSeek database</a> (29 January 2025); NCSC, <a href="https://www.ncsc.gov.uk/blog-post/chatgpt-and-large-language-models-whats-the-risk"%(x)s>ChatGPT and large language models: what's the risk?</a> (14 March 2023).</li>
+<li>Yandex: <a href="https://alice.yandex.ru/support/ru/assistant/alice-app"%(x)s>Alice app help</a> and <a href="https://yandex.ru/support/yandex-app-android-alice/ru/privacy/clear-data"%(x)s>deleting your data</a>; Sber: <a href="https://developers.sber.ru/docs/ru/policies/gigachat-agreement/individuals"%(x)s>GigaChat agreement</a> (6 February 2026).</li>
 <li><a href="https://www.doubao.com/legal/privacy"%(x)s>Doubao privacy policy</a> (10 September 2026) and <a href="https://www.kimi.com/user/agreement/userPrivacy?version=v2"%(x)s>Kimi privacy policy</a> (24 August 2026).</li>
 <li>GDPR <a href="https://gdpr-info.eu/art-12-gdpr/"%(x)s>Article 12</a>, <a href="https://gdpr-info.eu/art-15-gdpr/"%(x)s>15</a> and <a href="https://gdpr-info.eu/art-17-gdpr/"%(x)s>17</a>.</li>
 </ul>
-<p>All pages read on %(date)s. Policies change; if one of these is out of date,
-<a href="mailto:sagalabs@proton.me">tell us</a> and we will correct the page.</p>
+<p>First published on 20 October 2026; every page re-read on %(date)s. Policies
+change; if one of these is out of date, <a href="mailto:sagalabs@proton.me">tell
+us</a> and we will correct the page.</p>
 """ + DISCLOSE,
 )
 
