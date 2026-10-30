@@ -874,7 +874,7 @@ def build(render, hreflang):
                 desc=L["desc"], og_title=L["h1"], alternates=alt,
                 jsonld=_jsonld_rank(_jsonld(L["h1"], L["desc"], "https://aisagalab.com/" + path, lang,
                                             L["section"], spec.get("date_iso", RANK_DATE_ISO)), L["h1"], L["rank"],
-                                    faq=L.get("faq")),
+                                    modified=spec.get("date_modified"), faq=L.get("faq")),
                 body=_head(L["kicker"], L["h1"], L["standfirst"], _byline + date, other[0], other[1])
                   + '\n        <div class="article-body">' + L["body"]
                   + (_faq_html(L["faq"], "Questions people ask" if lang == "en" else "Preguntas frecuentes")
@@ -1813,7 +1813,7 @@ does.</p>
 <tbody>
 <tr><td>1. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a></td><td>Free</td><td>Yes</td><td>Llama, Gemma, Qwen, DeepSeek and more, on Apple MLX</td><td>Data Not Collected</td><td>4.7 &middot; 1,740</td></tr>
 <tr><td>2. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>$4.99 upfront</td><td>Yes</td><td>Llama, Gemma, Qwen, Phi, Mistral and more, up to 14B</td><td>Data Not Collected</td><td>4.2 &middot; 734</td></tr>
-<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>Free; Pinku Pro $16.99/year or one-time from $9.99</td><td>Yes</td><td>11 open models on Apple MLX, 0.4 to 4.7 GB</td><td>Purchase history and an anonymous user ID (for Pro); chats stay on the device</td><td>4.7 &middot; 12</td></tr>
+<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>Free; Pinku Pro $16.99/year or a one-time purchase</td><td>Yes</td><td>11 open models on Apple MLX, 0.4 to 4.7 GB</td><td>Purchase history and an anonymous user ID (for Pro); chats stay on the device</td><td>4.7 &middot; 12</td></tr>
 <tr><td>4. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Free; Pro $9.99</td><td>Not listed</td><td>Hundreds of open models; Pro adds cloud models</td><td>Data Not Linked to You</td><td>4.7 &middot; 1,087</td></tr>
 <tr><td>5. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Free, open source</td><td>Not listed</td><td>Any GGUF model from Hugging Face</td><td>Data Not Collected</td><td>4.1 &middot; 160</td></tr>
 <tr><td>6. <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a></td><td>Free; subscription for cloud features</td><td>Not listed</td><td>GGUF and MLX models, Apple's models, optional cloud providers</td><td>Data Used to Track You</td><td>4.8 &middot; 20</td></tr>
@@ -1852,7 +1852,7 @@ regenerate an answer, edit a message and rerun from it, and share a message or a
 whole conversation. The interface is in English, Spanish, German, French,
 Japanese, Korean, Simplified Chinese and Russian.</p>
 
-<p>It is free to download, and chatting with the default model, Gemma 3 1B, costs nothing. Pinku Pro is optional, as a yearly subscription ($16.99) or a one-time purchase (from $9.99), and lets you choose any of the other models, plus custom instructions, voice dictation recognised on the device and read aloud.</p>
+<p>It is free to download, and chatting with the default model, Llama 3.2 1B, costs nothing. Pinku Pro is optional, as a yearly subscription ($16.99) or a one-time purchase, and lets you choose any of the other models, plus custom instructions, voice dictation recognised on the device and read aloud.</p>
 
 <p>Where others beat it: Pinku does not read images or documents, does not browse
 Hugging Face for arbitrary models, has no cloud option and no agent tools, and
@@ -1982,7 +1982,7 @@ puedes usar, cuánto pagas y qué más hace la app.</p>
 <tbody>
 <tr><td>1. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a></td><td>Gratis</td><td>Sí</td><td>Llama, Gemma, Qwen, DeepSeek y más, con Apple MLX</td><td>Datos no recopilados</td><td>4,7 &middot; 1.740</td></tr>
 <tr><td>2. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>4,99 $ por adelantado</td><td>Sí</td><td>Llama, Gemma, Qwen, Phi, Mistral y más, hasta 14B</td><td>Datos no recopilados</td><td>4,2 &middot; 734</td></tr>
-<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>Gratis; Pinku Pro 16,99 $/año o pago único desde 9,99 $</td><td>Sí</td><td>11 modelos abiertos con Apple MLX, de 0,4 a 4,7 GB</td><td>Historial de compras e ID de usuario anónimo (para Pro); los chats no salen del dispositivo</td><td>4,7 &middot; 12</td></tr>
+<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>Gratis; Pinku Pro 16,99 $/año o pago único</td><td>Sí</td><td>11 modelos abiertos con Apple MLX, de 0,4 a 4,7 GB</td><td>Historial de compras e ID de usuario anónimo (para Pro); los chats no salen del dispositivo</td><td>4,7 &middot; 12</td></tr>
 <tr><td>4. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Gratis; Pro 9,99 $</td><td>No aparece</td><td>Cientos de modelos abiertos; Pro añade modelos en la nube</td><td>Datos no vinculados a ti</td><td>4,7 &middot; 1.087</td></tr>
 <tr><td>5. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Gratis, código abierto</td><td>No aparece</td><td>Cualquier modelo GGUF de Hugging Face</td><td>Datos no recopilados</td><td>4,1 &middot; 160</td></tr>
 <tr><td>6. <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a></td><td>Gratis; suscripción para la nube</td><td>No aparece</td><td>Modelos GGUF y MLX, los de Apple y proveedores en la nube opcionales</td><td>Datos usados para rastrearte</td><td>4,8 &middot; 20</td></tr>
@@ -2022,7 +2022,7 @@ mensaje y volver a generar desde ahí, y compartir un mensaje o la conversación
 entera. La interfaz está en inglés, español, alemán, francés, japonés, coreano,
 chino simplificado y ruso.</p>
 
-<p>Se descarga gratis, y chatear con el modelo por defecto, Gemma 3 1B, no cuesta nada. Pinku Pro es opcional, con suscripción anual (16,99 $) o compra única (desde 9,99 $), y te deja elegir cualquier otro modelo, además de instrucciones personalizadas, dictado por voz reconocido en el dispositivo y lectura en voz alta.</p>
+<p>Se descarga gratis, y chatear con el modelo por defecto, Llama 3.2 1B, no cuesta nada. Pinku Pro es opcional, con suscripción anual (16,99 $) o compra única, y te deja elegir cualquier otro modelo, además de instrucciones personalizadas, dictado por voz reconocido en el dispositivo y lectura en voz alta.</p>
 
 <p>En qué le ganan las demás: Pinku no lee imágenes ni documentos, no busca en
 Hugging Face cualquier modelo, no tiene opción en la nube ni herramientas de
@@ -2631,7 +2631,7 @@ being in your country's App Store. On %(date)s, Apple's lookup API showed:</p>
 <tbody>
 <tr><td>1. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI</a></td><td>Free</td><td>No</td><td>No</td><td>Yes</td><td>4.7 &middot; 1,740</td></tr>
 <tr><td>2. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>$4.99 upfront</td><td>Yes</td><td>Yes</td><td>Yes</td><td>4.2 &middot; 734</td></tr>
-<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>Free; Pro $16.99/year or one-time from $9.99</td><td>Yes</td><td>Yes</td><td>Yes</td><td>4.7 &middot; 12</td></tr>
+<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>Free; Pro $16.99/year or a one-time purchase</td><td>Yes</td><td>Yes</td><td>Yes</td><td>4.7 &middot; 12</td></tr>
 <tr><td>4. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Free, open source</td><td>Yes</td><td>Yes</td><td>Yes</td><td>4.1 &middot; 160</td></tr>
 <tr><td>5. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Free; Pro $9.99</td><td>Yes</td><td>No</td><td>Yes</td><td>4.7 &middot; 1,087</td></tr>
 </tbody>
@@ -2675,7 +2675,7 @@ iPad and Mac with Apple MLX. No account, no server, nothing sent anywhere. It is
 the App Store in all three countries above, its interface is in English, Spanish,
 German, French, Japanese, Korean, Simplified Chinese and Russian, and an
 &ldquo;alternative download source&rdquo; setting fetches models through a mirror
-when Hugging Face is slow or unreachable. Chatting with the default model, Gemma 3 1B, is free; Pinku Pro (yearly or one-time) lets you choose any other model and adds custom instructions and on-device voice.
+when Hugging Face is slow or unreachable. Chatting with the default model, Llama 3.2 1B, is free; Pinku Pro (yearly or one-time) lets you choose any other model and adds custom instructions and on-device voice.
 Where others beat it: no image or document input, a curated list rather than any
 model, and no sync between devices.</p>
 
@@ -2755,7 +2755,7 @@ el App Store de tu país. A %(date)s, la API de Apple mostraba:</p>
 <tbody>
 <tr><td>1. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI</a></td><td>Gratis</td><td>No</td><td>No</td><td>Sí</td><td>4,7 &middot; 1.740</td></tr>
 <tr><td>2. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>4,99 $ por adelantado</td><td>Sí</td><td>Sí</td><td>Sí</td><td>4,2 &middot; 734</td></tr>
-<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>Gratis; Pro 16,99 $/año o pago único desde 9,99 $</td><td>Sí</td><td>Sí</td><td>Sí</td><td>4,7 &middot; 12</td></tr>
+<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>Gratis; Pro 16,99 $/año o pago único</td><td>Sí</td><td>Sí</td><td>Sí</td><td>4,7 &middot; 12</td></tr>
 <tr><td>4. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Gratis, código abierto</td><td>Sí</td><td>Sí</td><td>Sí</td><td>4,1 &middot; 160</td></tr>
 <tr><td>5. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Gratis; Pro 9,99 $</td><td>Sí</td><td>No</td><td>Sí</td><td>4,7 &middot; 1.087</td></tr>
 </tbody>
@@ -2799,7 +2799,7 @@ en iPhone, iPad y Mac con Apple MLX. Sin cuenta, sin servidor, sin enviar nada a
 ningún sitio. Está en el App Store de los tres países de arriba, su interfaz está
 en inglés, español, alemán, francés, japonés, coreano, chino simplificado y ruso, y
 un ajuste de &laquo;fuente de descarga alternativa&raquo; baja los modelos por un
-espejo cuando Hugging Face va lento o no responde. Chatear con el modelo por defecto, Gemma 3 1B, es gratis; Pinku Pro (anual o de pago único) te deja elegir cualquier otro modelo y añade instrucciones
+espejo cuando Hugging Face va lento o no responde. Chatear con el modelo por defecto, Llama 3.2 1B, es gratis; Pinku Pro (anual o de pago único) te deja elegir cualquier otro modelo y añade instrucciones
 personalizadas y voz en el dispositivo. En qué le ganan otras: no lee imágenes ni
 documentos, tiene una lista cerrada de modelos y no sincroniza entre
 dispositivos.</p>
@@ -2897,7 +2897,7 @@ or a cloud mode that could send a chat elsewhere?</p>
 <tr><td>1. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI</a></td><td>Data Not Collected</td><td>Not mentioned</td><td>Closed</td><td>Free</td></tr>
 <tr><td>2. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Data Not Collected</td><td>Not mentioned</td><td>Open (MIT)</td><td>Free</td></tr>
 <tr><td>3. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>Data Not Collected</td><td>Not mentioned</td><td>Closed</td><td>$4.99 upfront</td></tr>
-<tr><td>4. <a href="%(pinku)s">Pinku</a></td><td>Purchase history and an anonymous user ID (for Pro); chats stay on the device</td><td>None</td><td>Closed</td><td>Free; Pro $16.99/year or one-time from $9.99</td></tr>
+<tr><td>4. <a href="%(pinku)s">Pinku</a></td><td>Purchase history and an anonymous user ID (for Pro); chats stay on the device</td><td>None</td><td>Closed</td><td>Free; Pro $16.99/year or a one-time purchase</td></tr>
 <tr><td>5. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Data Not Linked to You</td><td>Optional, with Pro</td><td>Closed</td><td>Free; Pro $9.99</td></tr>
 <tr><td>6. <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a></td><td>Data Used to Track You</td><td>Optional, by subscription</td><td>Closed</td><td>Free; $3.99/week to $99.99/year</td></tr>
 </tbody>
@@ -3024,7 +3024,7 @@ cuenta o un modo en la nube que pueda mandar un chat a otra parte?</p>
 <tr><td>1. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI</a></td><td>Datos no recopilados</td><td>No los menciona</td><td>Cerrado</td><td>Gratis</td></tr>
 <tr><td>2. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Datos no recopilados</td><td>No los menciona</td><td>Abierto (MIT)</td><td>Gratis</td></tr>
 <tr><td>3. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>Datos no recopilados</td><td>No los menciona</td><td>Cerrado</td><td>4,99 $ por adelantado</td></tr>
-<tr><td>4. <a href="%(pinku)s">Pinku</a></td><td>Historial de compras e ID de usuario anónimo (para Pro); los chats no salen del dispositivo</td><td>Ninguno</td><td>Cerrado</td><td>Gratis; Pro 16,99 $/año o pago único desde 9,99 $</td></tr>
+<tr><td>4. <a href="%(pinku)s">Pinku</a></td><td>Historial de compras e ID de usuario anónimo (para Pro); los chats no salen del dispositivo</td><td>Ninguno</td><td>Cerrado</td><td>Gratis; Pro 16,99 $/año o pago único</td></tr>
 <tr><td>5. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Datos no vinculados a ti</td><td>Opcionales, con Pro</td><td>Cerrado</td><td>Gratis; Pro 9,99 $</td></tr>
 <tr><td>6. <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a></td><td>Datos usados para rastrearte</td><td>Opcionales, con suscripción</td><td>Cerrado</td><td>Gratis; de 3,99 $/semana a 99,99 $/año</td></tr>
 </tbody>
@@ -4864,11 +4864,13 @@ RANK_ARTICLES.append(dict(
 # 16 — Apps de chat con varios modelos de IA para iPhone (ranking; Ask AI, antes Fast AI, 6.a desde el 23 oct 2026)
 # --------------------------------------------------------------------------
 # Fast AI es nuestra: aviso arriba. Lo de Fast AI sale de su repo (ChatGPT) y de
-# App Store Connect el 8 oct 2026: version 1.3.6, chatear exige suscripcion
-# (FreemiumManager.canSendMessage), limite diario por suscripcion que se reinicia
-# a medianoche UTC, busqueda web pocas veces al dia, lectura en voz alta,
-# interfaz en en/es/pt-BR/ja/ko; precios EE. UU. 5,99 $/semana, 9,99 $/mes,
-# 69,99 $/ano. Modelos por empresa, no por version: el servidor los actualiza.
+# App Store Connect el 8 oct 2026: version 1.3.6, busqueda web pocas veces al
+# dia, lectura en voz alta, interfaz en en/es/pt-BR/ja/ko. Precios y limites
+# revisados el 30 oct 2026 (App Store EE. UU. y repo): unos pocos mensajes
+# gratis al dia; solo vende Pro anual, 49,99 $/ano en EE. UU. con 3 dias de
+# prueba gratis (ya no hay plan semanal); el limite de Pro es mucho mas alto y
+# se cuenta por semana (no decir "limite diario" de Pro).
+# Modelos por empresa, no por version: el servidor los actualiza.
 # Las demas, de su ficha del App Store (EE. UU.) y la API de lookup, 8 oct 2026.
 # Sin rayas en el texto.
 
@@ -4930,7 +4932,7 @@ charge, and what else they pack in: images, files, voice, search.</p>
 <tr><td>3. <a href="%(chatai)s" target="_blank" rel="noopener">Chat AI: Ask Agent Anything</a></td><td>GPT-6, Claude Opus 5, Gemini 3.1 Pro and 3.8 Flash, Grok 4.7, DeepSeek V4 Pro, Perplexity</td><td>Images, web, PDF/DOCX, voice</td><td>Weekly $7.39 to $11.99; lifetime $39.99 or $69.99</td><td>4.8 &middot; 328,211</td></tr>
 <tr><td>4. <a href="%(nova)s" target="_blank" rel="noopener">Nova</a></td><td>GPT-5.6, Gemini 3.6 Flash, Claude Opus 5, Kimi K3, Grok 4.5, DeepSeek V4 Pro</td><td>Images, web, Word/Excel, voice</td><td>Weekly $4.99 to $7.99; yearly $39.99 or $59.99</td><td>4.6 &middot; 127,054</td></tr>
 <tr><td>5. <a href="%(genie)s" target="_blank" rel="noopener">Genie</a></td><td>None by name (&ldquo;advanced third-party AI models&rdquo;)</td><td>Images, web and Deep Search, PDFs, voice</td><td>Weekly $5.99 or $7.99; yearly $39.99</td><td>4.7 &middot; 201,891</td></tr>
-<tr><td>6. <a href="%(fastai)s">Ask AI</a></td><td>Gemini, Claude, Grok, DeepSeek, Perplexity Sonar</td><td>Web search (Pro), read aloud</td><td>A few free messages a day; Pro $7.99/week or $69.99/year</td><td>5.0 &middot; 3</td></tr>
+<tr><td>6. <a href="%(fastai)s">Ask AI</a></td><td>Gemini, Claude, Grok, DeepSeek, Perplexity Sonar</td><td>Web search (Pro), read aloud</td><td>A few free messages a day; Pro $49.99/year</td><td>5.0 &middot; 3</td></tr>
 <tr><td>7. <a href="%(chathub)s" target="_blank" rel="noopener">ChatHub</a></td><td>GPT-5, Claude 4.5, Gemini 3 (&ldquo;20+ models&rdquo;)</td><td>Images and web via plugins, image upload</td><td>Pro $24.99/month; Unlimited $49.99/month</td><td>4.4 &middot; 36</td></tr>
 </tbody>
 </table></div>
@@ -4988,12 +4990,12 @@ aloud and gives chats automatic titles. With Pro it searches the web by itself
 when a question needs current information. The interface is in English, Spanish,
 Portuguese, Japanese and Korean.</p>
 
-<p>You can send a few messages a day for free. Pro, weekly or yearly, unlocks
-every model, web search and a much higher daily limit: the US App Store lists
-$7.99 a week and $69.99 a year.</p>
+<p>You can send a few messages a day for free. Pro, a yearly subscription, unlocks
+every model, web search and a much higher limit: $49.99 a year on the US App
+Store, with a 3-day free trial.</p>
 
 <p>Where others beat it: it is chat only, with no images, videos or files, so
-ChatOn, Genie and Nova do much more. Pro still has a daily limit. It needs iOS
+ChatOn, Genie and Nova do much more. Pro still has a usage limit. It needs iOS
 18.6 or later, its privacy label lists usage data used to track you, and it has
 only 3 ratings, far fewer than any other app here. Its listing was checked on
 23 October 2026 (version 1.4.4).</p>
@@ -5073,7 +5075,7 @@ imágenes, archivos, voz, búsqueda.</p>
 <tr><td>3. <a href="%(chatai)s" target="_blank" rel="noopener">Chat AI: Ask Agent Anything</a></td><td>GPT-6, Claude Opus 5, Gemini 3.1 Pro y 3.8 Flash, Grok 4.7, DeepSeek V4 Pro, Perplexity</td><td>Imágenes, web, PDF/DOCX, voz</td><td>Semanal de 7,39 a 11,99 $; de por vida 39,99 o 69,99 $</td><td>4,8 &middot; 328.211</td></tr>
 <tr><td>4. <a href="%(nova)s" target="_blank" rel="noopener">Nova</a></td><td>GPT-5.6, Gemini 3.6 Flash, Claude Opus 5, Kimi K3, Grok 4.5, DeepSeek V4 Pro</td><td>Imágenes, web, Word/Excel, voz</td><td>Semanal de 4,99 a 7,99 $; anual 39,99 o 59,99 $</td><td>4,6 &middot; 127.054</td></tr>
 <tr><td>5. <a href="%(genie)s" target="_blank" rel="noopener">Genie</a></td><td>Ninguno por su nombre (&laquo;modelos de IA avanzados de terceros&raquo;)</td><td>Imágenes, web y Deep Search, PDF, voz</td><td>Semanal 5,99 o 7,99 $; anual 39,99 $</td><td>4,7 &middot; 201.891</td></tr>
-<tr><td>6. <a href="%(fastai)s">Ask AI</a></td><td>Gemini, Claude, Grok, DeepSeek, Perplexity Sonar</td><td>Búsqueda web (Pro), lectura en voz alta</td><td>Unos mensajes gratis al día; Pro 7,99 $/semana o 69,99 $/año</td><td>5,0 &middot; 3</td></tr>
+<tr><td>6. <a href="%(fastai)s">Ask AI</a></td><td>Gemini, Claude, Grok, DeepSeek, Perplexity Sonar</td><td>Búsqueda web (Pro), lectura en voz alta</td><td>Unos mensajes gratis al día; Pro 49,99 $/año</td><td>5,0 &middot; 3</td></tr>
 <tr><td>7. <a href="%(chathub)s" target="_blank" rel="noopener">ChatHub</a></td><td>GPT-5, Claude 4.5, Gemini 3 (&laquo;más de 20 modelos&raquo;)</td><td>Imágenes y web con plugins, subir imágenes</td><td>Pro 24,99 $/mes; Unlimited 49,99 $/mes</td><td>4,4 &middot; 36</td></tr>
 </tbody>
 </table></div>
@@ -5134,12 +5136,12 @@ voz alta y pone título a los chats. Con Pro busca en la web por sí sola cuando
 pregunta necesita información actual. La interfaz está en inglés, español,
 portugués, japonés y coreano.</p>
 
-<p>Puedes enviar unos pocos mensajes al día gratis. Pro, semanal o anual,
-desbloquea todos los modelos, la búsqueda web y un límite diario mucho más alto:
-el App Store de EE. UU. muestra 7,99 $ a la semana y 69,99 $ al año.</p>
+<p>Puedes enviar unos pocos mensajes al día gratis. Pro, una suscripción anual,
+desbloquea todos los modelos, la búsqueda web y un límite mucho más alto:
+49,99 $ al año en el App Store de EE. UU., con 3 días de prueba gratis.</p>
 
 <p>En qué le ganan las demás: es solo chat, sin imágenes, vídeos ni archivos, así
-que ChatOn, Genie y Nova hacen mucho más. Pro también tiene límite diario. Pide
+que ChatOn, Genie y Nova hacen mucho más. Pro también tiene límite de uso. Pide
 iOS 18.6 o posterior, su etiqueta de privacidad incluye datos de uso para
 rastrearte y tiene solo 3 valoraciones, muchas menos que cualquier otra de la
 lista. Su ficha se revisó el 23 de octubre de 2026 (versión 1.4.4).</p>
@@ -5221,7 +5223,7 @@ MM_FAQ_ES = [
 RANK_ARTICLES.append(dict(
     en_path="blog/best-multi-model-ai-chat-apps-iphone.html",
     es_path="blog/es/mejores-apps-chat-ia-varios-modelos-iphone.html",
-    date_iso=MM_DATE_ISO, date_en=MM_DATE_EN, date_es=MM_DATE_ES,
+    date_iso=MM_DATE_ISO, date_en=MM_DATE_EN, date_es=MM_DATE_ES, date_modified="2026-10-30",
     en=dict(
         h1="Best AI chat apps with multiple models for iPhone (2026)",
         desc=("Seven iPhone apps that put GPT, Claude, Gemini, Grok and DeepSeek in one place, compared from their "
@@ -5244,11 +5246,16 @@ RANK_ARTICLES.append(dict(
 # --------------------------------------------------------------------------
 # 17 — Apps de IA para chatear y crear imagenes en iPhone (ranking, Brainy 1.a)
 # --------------------------------------------------------------------------
-# Brainy es nuestra: aviso arriba. Lo de Brainy sale de su repo y de App Store
-# Connect el 8 oct 2026: chat con DeepSeek (V3.1, via OpenRouter), imagenes con
-# Gemini 2.5 Flash Image (Nano Banana), escaner de texto con la camara (Vision
-# OCR que pasa el texto al chat), limites diarios en el uso gratis, interfaz
-# en/es/ja/ko; precios EE. UU. 6,99 $/semana y 89,99 $/ano. Las demas, de su
+# Brainy es nuestra: aviso arriba. Lo de Brainy, revisado el 30 oct 2026 con su
+# repo y el App Store de EE. UU. (version 1.5.0, 25 oct 2026, nombre en el App
+# Store "Easy AI Assistant: Brainy"): el chat responde con Google Gemini (Gemini
+# 3.1 Flash Lite), ya no via OpenRouter; imagenes y, desde 1.5, videos con
+# varios modelos que se eligen en la app, cada uno con su precio en creditos;
+# desde el 19 oct 2026 hacer imagenes exige la suscripcion o creditos (ya no se
+# prueban gratis), los videos la suscripcion y creditos; el chat se prueba gratis
+# con limites diarios. Escaner de texto con la camara (Vision OCR que pasa el
+# texto al chat), interfaz en/es/ja/ko; precios EE. UU. 6,99 $/semana o
+# 49,99 $/ano. No nombrar modelos de imagen concretos de Brainy. Las demas, de su
 # ficha del App Store (EE. UU.) y la API de lookup, 8 oct 2026. Sin rayas.
 
 CI_DATE_ISO = "2026-10-08"
@@ -5273,7 +5280,7 @@ CI_RANK = [
     ("ChatGPT", "https://apps.apple.com/us/app/id6448311069"),
     ("Google Gemini", "https://apps.apple.com/us/app/id6477489729"),
     ("Grok AI", "https://apps.apple.com/us/app/id6670324846"),
-    ("Brainy AI Helper Chat & Create", "https://apps.apple.com/app/id1667947372"),
+    ("Easy AI Assistant: Brainy", "https://apps.apple.com/app/id1667947372"),
     ("ChatOn AI - Chat Bot Assistant", "https://apps.apple.com/us/app/id1661308505"),
     ("Chatbot AI Assistant - Genie", "https://apps.apple.com/us/app/id1658377526"),
     ("Meta AI", "https://apps.apple.com/us/app/id1558240027"),
@@ -5284,7 +5291,7 @@ A17_EN_BODY = ("""
 <p><strong>Disclosure: we make Brainy, number 4 on this list.</strong>
 Everything we say about the other apps comes from their own App Store pages, and
 we say plainly where they beat us. Prices and ratings are from the US App Store
-on %(date)s.</p>
+on %(date)s; Brainy's entry was updated on 30 October 2026.</p>
 
 <p>These apps answer questions and also make pictures from a sentence. Some add
 video, files or voice. The big names are made by the companies that build the
@@ -5310,7 +5317,7 @@ models; the others put someone else's models in a simpler package.</p>
 <tr><td>1. <a href="%(chatgpt)s" target="_blank" rel="noopener">ChatGPT</a></td><td>Yes</td><td>Not on its page</td><td>Voice, photo upload</td><td>Free; Go $8, Plus $19.99, Pro from $100</td><td>4.8 &middot; 11,079,400</td></tr>
 <tr><td>2. <a href="%(gemini)s" target="_blank" rel="noopener">Google Gemini</a></td><td>Yes (Nano Banana 2)</td><td>Paid plans</td><td>Gemini Live voice, files</td><td>Free; AI Plus $4.99, AI Pro $19.99</td><td>4.7 &middot; 2,321,604</td></tr>
 <tr><td>3. <a href="%(grok)s" target="_blank" rel="noopener">Grok</a></td><td>Yes</td><td>Yes, with sound</td><td>Web and X search, files, voice</td><td>Free; SuperGrok Lite $10, SuperGrok $30</td><td>4.9 &middot; 1,487,413</td></tr>
-<tr><td>4. <a href="%(brainy)s">Brainy</a></td><td>Yes (Nano Banana)</td><td>No</td><td>Camera scanner for text and math</td><td>Free to try; $6.99/week or $89.99/year</td><td>Few ratings</td></tr>
+<tr><td>4. <a href="%(brainy)s">Brainy</a></td><td>Yes (several models)</td><td>Yes, with subscription and credits</td><td>Camera scanner for text and math</td><td>Chat free to try; $6.99/week or $49.99/year</td><td>Few ratings</td></tr>
 <tr><td>5. <a href="%(chaton)s" target="_blank" rel="noopener">ChatOn</a></td><td>Yes</td><td>From photos</td><td>Several chat models, web, PDFs</td><td>Weekly from $6.99; yearly $39.99 to $59.99</td><td>4.7 &middot; 286,441</td></tr>
 <tr><td>6. <a href="%(genie)s" target="_blank" rel="noopener">Genie</a></td><td>Yes, plus editing</td><td>Not on its page</td><td>Web and Deep Search, PDFs, voice</td><td>Weekly $5.99 or $7.99; yearly $39.99</td><td>4.7 &middot; 201,891</td></tr>
 <tr><td>7. <a href="%(meta)s" target="_blank" rel="noopener">Meta AI</a></td><td>Yes</td><td>No (only as input)</td><td>PDFs, voice, research reports</td><td>Free, no in-app purchases listed</td><td>4.7 &middot; 268,932</td></tr>
@@ -5344,20 +5351,22 @@ SuperGrok $30 a month.</p>
 <h2>4. Brainy: small, and does the three things</h2>
 
 <p><a href="%(brainy)s">Brainy</a> is a chat, an image generator and a camera
-scanner in one app. Chat answers come from DeepSeek. Images are made with
-Google's Nano Banana model (Gemini 2.5 Flash Image): describe a picture, an
-illustration or a design and Brainy draws it. The scanner reads a math problem, a
+scanner in one app. Chat answers come from Google's Gemini (Gemini 3.1 Flash
+Lite). Images, and since version 1.5 videos, are made with several models you
+choose in the app, each priced in credits: describe a picture, an illustration
+or a design and Brainy draws it. The scanner reads a math problem, a
 formula or a page of text into the chat, so you can ask for an explanation
 without typing it. The interface is in English, Spanish, Japanese and Korean.</p>
 
-<p>You can try chat and images for free, with daily limits. The subscription
-costs $6.99 a week or $89.99 a year in the US.</p>
+<p>You can try chat for free, with daily limits. Making images needs the
+subscription or credits, and videos need the subscription and credits. The
+subscription costs $6.99 a week or $49.99 a year in the US.</p>
 
-<p>Where others beat it: Brainy chats with one model, DeepSeek, while ChatGPT,
-Gemini and Grok use their own frontier models and ChatOn lets you pick. It makes
-no video (Gemini, Grok and ChatOn do), does not read PDFs, and has no voice mode.
-Its yearly plan costs more than Genie's or ChatOn's, and it has far fewer
-ratings than any app here.</p>
+<p>Where others beat it: Brainy chats with one model it picks for you (Gemini),
+so you can't choose the model, while ChatGPT, Gemini and Grok use their own
+frontier models and ChatOn lets you pick. It does not read PDFs and has no voice
+mode. Its yearly plan costs more than Genie's, images are not free to try, and
+it has far fewer ratings than any app here.</p>
 
 <h2>5. ChatOn: several models, plus pictures</h2>
 
@@ -5384,7 +5393,7 @@ Facebook or WhatsApp.</p>
 <a href="%(askai)s">Ask AI</a> (&ldquo;All AI Models in One: Ask AI&rdquo; on the
 App Store) puts models from several companies, such as Gemini, Claude, Grok,
 DeepSeek and Perplexity Sonar, in one chat, with a few free messages a day and Pro
-weekly or yearly ($7.99 a week or $69.99 a year in the US). Its listing says it
+at $49.99 a year in the US. Its listing says it
 makes no images or videos and reads no files, which is why it is not ranked above.
 It has only 3 ratings so far. We compare it with the other multi-model apps in
 <a href="%(fastai)s">our multi-model chat ranking</a>.</p>
@@ -5414,7 +5423,8 @@ and we will correct the page.</p>
 A17_ES_BODY = ("""
 <p><strong>Aviso: Brainy, la n.º 4 de esta lista, es nuestra.</strong> Todo lo que
 decimos de las demás sale de su propia ficha del App Store, y decimos claramente
-en qué nos ganan. Precios y valoraciones de la App Store de EE. UU. a %(date)s.</p>
+en qué nos ganan. Precios y valoraciones de la App Store de EE. UU. a %(date)s;
+lo de Brainy se actualizó el 30 de octubre de 2026.</p>
 
 <p>Estas apps responden preguntas y además hacen imágenes a partir de una frase.
 Algunas añaden vídeo, archivos o voz. Las grandes las hacen las mismas empresas
@@ -5441,7 +5451,7 @@ sencillo.</p>
 <tr><td>1. <a href="%(chatgpt)s" target="_blank" rel="noopener">ChatGPT</a></td><td>Sí</td><td>No lo dice su ficha</td><td>Voz, subir fotos</td><td>Gratis; Go 8 $, Plus 19,99 $, Pro desde 100 $</td><td>4,8 &middot; 11.079.400</td></tr>
 <tr><td>2. <a href="%(gemini)s" target="_blank" rel="noopener">Google Gemini</a></td><td>Sí (Nano Banana 2)</td><td>Planes de pago</td><td>Voz con Gemini Live, archivos</td><td>Gratis; AI Plus 4,99 $, AI Pro 19,99 $</td><td>4,7 &middot; 2.321.604</td></tr>
 <tr><td>3. <a href="%(grok)s" target="_blank" rel="noopener">Grok</a></td><td>Sí</td><td>Sí, con sonido</td><td>Búsqueda en la web y en X, archivos, voz</td><td>Gratis; SuperGrok Lite 10 $, SuperGrok 30 $</td><td>4,9 &middot; 1.487.413</td></tr>
-<tr><td>4. <a href="%(brainy)s">Brainy</a></td><td>Sí (Nano Banana)</td><td>No</td><td>Escáner de textos y matemáticas con la cámara</td><td>Gratis para probar; 6,99 $/semana o 89,99 $/año</td><td>Pocas valoraciones</td></tr>
+<tr><td>4. <a href="%(brainy)s">Brainy</a></td><td>Sí (varios modelos)</td><td>Sí, con suscripción y créditos</td><td>Escáner de textos y matemáticas con la cámara</td><td>Chat gratis para probar; 6,99 $/semana o 49,99 $/año</td><td>Pocas valoraciones</td></tr>
 <tr><td>5. <a href="%(chaton)s" target="_blank" rel="noopener">ChatOn</a></td><td>Sí</td><td>A partir de fotos</td><td>Varios modelos de chat, web, PDF</td><td>Semanal desde 6,99 $; anual de 39,99 a 59,99 $</td><td>4,7 &middot; 286.441</td></tr>
 <tr><td>6. <a href="%(genie)s" target="_blank" rel="noopener">Genie</a></td><td>Sí, y edición</td><td>No lo dice su ficha</td><td>Web y Deep Search, PDF, voz</td><td>Semanal 5,99 o 7,99 $; anual 39,99 $</td><td>4,7 &middot; 201.891</td></tr>
 <tr><td>7. <a href="%(meta)s" target="_blank" rel="noopener">Meta AI</a></td><td>Sí</td><td>No (solo como entrada)</td><td>PDF, voz, informes de investigación</td><td>Gratis, sin compras en la ficha</td><td>4,7 &middot; 268.932</td></tr>
@@ -5476,21 +5486,24 @@ SuperGrok 30 $ al mes.</p>
 <h2>4. Brainy: pequeña, y hace las tres cosas</h2>
 
 <p><a href="%(brainy)s">Brainy</a> es un chat, un generador de imágenes y un
-escáner con la cámara en una sola app. Las respuestas del chat las da DeepSeek.
-Las imágenes las hace el modelo Nano Banana de Google (Gemini 2.5 Flash Image):
-describe una foto, una ilustración o un diseño y Brainy lo dibuja. El escáner lee
+escáner con la cámara en una sola app. Las respuestas del chat las da Gemini, de
+Google (Gemini 3.1 Flash Lite). Las imágenes y, desde la versión 1.5, los vídeos
+se hacen con varios modelos que eliges en la app, cada uno con su precio en
+créditos: describe una foto, una ilustración o un diseño y Brainy lo dibuja. El escáner lee
 un problema de matemáticas, una fórmula o una página de texto y lo pasa al chat,
 para que pidas la explicación sin teclearlo. La interfaz está en inglés, español,
 japonés y coreano.</p>
 
-<p>Puedes probar el chat y las imágenes gratis, con límites diarios. La
-suscripción cuesta 6,99 $ a la semana o 89,99 $ al año en EE. UU.</p>
+<p>Puedes probar el chat gratis, con límites diarios. Para hacer imágenes
+necesitas la suscripción o créditos, y para los vídeos, la suscripción y
+créditos. La suscripción cuesta 6,99 $ a la semana o 49,99 $ al año en
+EE. UU.</p>
 
-<p>En qué le ganan las demás: Brainy chatea con un solo modelo, DeepSeek,
-mientras ChatGPT, Gemini y Grok usan sus propios modelos punteros y ChatOn te deja
-elegir. No hace vídeo (Gemini, Grok y ChatOn sí), no lee PDF y no tiene modo de
-voz. Su plan anual cuesta más que el de Genie o el de ChatOn, y tiene muchas menos
-valoraciones que cualquiera de la lista.</p>
+<p>En qué le ganan las demás: Brainy chatea con un solo modelo que elige por ti
+(Gemini), así que no puedes elegir el modelo, mientras ChatGPT, Gemini y Grok usan
+sus propios modelos punteros y ChatOn te deja elegir. No lee PDF y no tiene modo
+de voz. Su plan anual cuesta más que el de Genie, las imágenes no se pueden probar
+gratis y tiene muchas menos valoraciones que cualquiera de la lista.</p>
 
 <h2>5. ChatOn: varios modelos, y además fotos</h2>
 
@@ -5517,7 +5530,7 @@ WhatsApp.</p>
 nuestra: <a href="%(askai)s">Ask AI</a> (&laquo;All AI Models in One: Ask AI&raquo;
 en el App Store) reúne modelos de varias empresas, como Gemini, Claude, Grok,
 DeepSeek y Perplexity Sonar, en un mismo chat, con unos pocos mensajes gratis al
-día y Pro semanal o anual (7,99 $ a la semana o 69,99 $ al año en EE. UU.). Su
+día y Pro a 49,99 $ al año en EE. UU. Su
 ficha dice que no hace imágenes ni vídeos ni lee archivos, y por eso no está en el
 ranking de arriba. Por ahora tiene solo 3 valoraciones. La comparamos con las
 demás apps de varios modelos en <a href="%(fastai_es)s">nuestro ranking de chat
@@ -5547,38 +5560,38 @@ corregimos la página.</p>
 
 CI_FAQ_EN = [
     ("What is the best AI app for chat and images on iPhone?",
-     "For the strongest assistant, ChatGPT. For a small app that chats, makes images from text with Google's Nano "
-     "Banana model and scans homework with the camera, Brainy. For video too, Grok or Gemini on a paid plan."),
+     "For the strongest assistant, ChatGPT. For a small app that chats, makes images from text with several models "
+     "and scans homework with the camera, Brainy. For video too, Grok or Gemini on a paid plan."),
     ("Which AI app makes images for free?",
-     "ChatGPT, Gemini, Grok and Meta AI all have free tiers that make images, with limits. Brainy lets you try images "
-     "for free with a daily limit."),
+     "ChatGPT, Gemini, Grok and Meta AI all have free tiers that make images, with limits. In Brainy, making images "
+     "needs the subscription or credits; its chat is free to try."),
     ("Can these apps make videos?",
-     "Grok (with sound), Gemini on paid plans and ChatOn (from photos) say so on their pages. Brainy, Genie, ChatGPT "
-     "and Meta AI do not mention video generation."),
+     "Grok (with sound), Gemini on paid plans and ChatOn (from photos) say so on their pages. Brainy makes videos "
+     "since version 1.5, with the subscription and credits. Genie, ChatGPT and Meta AI do not mention video "
+     "generation."),
     ("What is Nano Banana?",
-     "Google's image model, Gemini 2.5 Flash Image, nicknamed Nano Banana; Gemini now uses Nano Banana 2. Brainy "
-     "uses Nano Banana to make its images."),
+     "Google's image model, Gemini 2.5 Flash Image, nicknamed Nano Banana; Gemini now uses Nano Banana 2."),
 ]
 CI_FAQ_ES = [
     ("¿Cuál es la mejor app de IA para chatear y hacer imágenes en iPhone?",
-     "Como asistente más potente, ChatGPT. Para una app pequeña que chatea, hace imágenes con el modelo Nano Banana "
-     "de Google y escanea deberes con la cámara, Brainy. Si además quieres vídeo, Grok o Gemini con un plan "
+     "Como asistente más potente, ChatGPT. Para una app pequeña que chatea, hace imágenes con varios modelos "
+     "y escanea deberes con la cámara, Brainy. Si además quieres vídeo, Grok o Gemini con un plan "
      "de pago."),
     ("¿Qué app de IA hace imágenes gratis?",
-     "ChatGPT, Gemini, Grok y Meta AI tienen versiones gratis que hacen imágenes, con límites. Brainy deja probar las "
-     "imágenes gratis con un límite diario."),
+     "ChatGPT, Gemini, Grok y Meta AI tienen versiones gratis que hacen imágenes, con límites. En Brainy, hacer "
+     "imágenes necesita la suscripción o créditos; su chat se puede probar gratis."),
     ("¿Estas apps hacen vídeos?",
-     "Grok (con sonido), Gemini en los planes de pago y ChatOn (a partir de fotos) lo dicen en su ficha. Brainy, "
-     "Genie, ChatGPT y Meta AI no mencionan generar vídeo."),
+     "Grok (con sonido), Gemini en los planes de pago y ChatOn (a partir de fotos) lo dicen en su ficha. Brainy "
+     "hace vídeos desde la versión 1.5, con la suscripción y créditos. Genie, ChatGPT y Meta AI no mencionan "
+     "generar vídeo."),
     ("¿Qué es Nano Banana?",
-     "El modelo de imágenes de Google, Gemini 2.5 Flash Image, apodado Nano Banana; Gemini ya usa Nano Banana 2. "
-     "Brainy hace sus imágenes con Nano Banana."),
+     "El modelo de imágenes de Google, Gemini 2.5 Flash Image, apodado Nano Banana; Gemini ya usa Nano Banana 2."),
 ]
 
 RANK_ARTICLES.append(dict(
     en_path="blog/best-ai-chat-and-image-generator-apps-iphone.html",
     es_path="blog/es/mejores-apps-ia-chat-e-imagenes-iphone.html",
-    date_iso=CI_DATE_ISO, date_en=CI_DATE_EN, date_es=CI_DATE_ES,
+    date_iso=CI_DATE_ISO, date_en=CI_DATE_EN, date_es=CI_DATE_ES, date_modified="2026-10-30",
     en=dict(
         h1="Best AI apps for chat and image generation on iPhone (2026)",
         desc=("Seven iPhone apps that chat and make images from text, some with video, compared from their own App "
@@ -5619,7 +5632,7 @@ OFF_RU_FAQ = [
     ("Можно ли пользоваться ChatGPT в России?",
      "Россия не входит в список стран, где OpenAI официально поддерживает ChatGPT. Локальное приложение работает без аккаунта и без серверов, поэтому от этого не зависит."),
     ("Pinku бесплатное?",
-     "Да. Pinku бесплатно скачивается, и чат с моделью по умолчанию, Gemma 3 1B, ничего не стоит. "
+     "Да. Pinku бесплатно скачивается, и чат с моделью по умолчанию, Llama 3.2 1B, ничего не стоит. "
      "Pinku Pro — необязательная годовая подписка или разовая покупка: крупные модели, свои инструкции, диктовка и чтение вслух."),
     ("Какой iPhone нужен?",
      "Pinku работает на iOS 18.6 и новее, на устройствах с Metal 3, и на Mac с Apple silicon (macOS 14 и новее). Модели, которые не помещаются в память устройства, Pinku скрывает, а перед загрузкой проверяет свободную память, чтобы не закрыться."),
@@ -5690,7 +5703,7 @@ OFF_RU_BODY = ("""
 <p><a href="%(pinku)s">Pinku</a> запускает двенадцать открытых моделей (Gemma 3,
 Gemma 3n, Llama 3.2, Qwen3, дистилляты DeepSeek-R1, SmolLM3 и LFM2) на iPhone и Mac
 через Apple MLX. Аккаунта и сервера нет: переписка не покидает устройство. Можно
-перегенерировать ответ, отредактировать сообщение и поделиться чатом. Чат с моделью по умолчанию, Gemma 3 1B, бесплатный; Pinku Pro позволяет выбрать любую другую модель и добавляет
+перегенерировать ответ, отредактировать сообщение и поделиться чатом. Чат с моделью по умолчанию, Llama 3.2 1B, бесплатный; Pinku Pro позволяет выбрать любую другую модель и добавляет
 свои инструкции, диктовку, которая распознаётся на устройстве, и чтение ответов
 вслух.</p>
 

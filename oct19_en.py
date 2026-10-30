@@ -283,7 +283,7 @@ others) on the iPhone with Apple's MLX framework. You download a model once, and
 from then on every answer is generated on the phone, in airplane mode too. No
 account; chats are saved only on the device. """ + PINKU_PRIV + """ It only lists the
 models your iPhone has enough memory for, and checks free memory before loading one.
-The default model (Gemma 3 1B) is free; Pinku Pro, an in-app purchase, adds larger
+The default model (Llama 3.2 1B) is free; Pinku Pro, an in-app purchase, adds larger
 models, custom instructions, dictation and read aloud. Its interface is in eight
 languages, Russian and Chinese among them, and it also runs on Macs with Apple
 silicon. Limits: it does not run on the iPhone 11 or the SE (2nd generation), which

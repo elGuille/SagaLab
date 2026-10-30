@@ -818,8 +818,8 @@ much, so the limit is the memory iOS lets one app use, not storage.</li>
 download is <strong>no more than 60% of the device's physical memory</strong>. Before loading one
 on an iPhone, it asks iOS how much memory the app may still use (<code>os_proc_available_memory</code>)
 and loads the model only if that is at least the model's size <strong>plus 10%</strong>; if not, it
-says so and suggests a smaller model instead of crashing. In practice Gemma 3 1B (0.8 GB, the
-default) needs about 1.4 GB of memory, Qwen 3 4B (2.3 GB) about 3.9 GB, and Qwen 3 8B (4.7 GB) about
+says so and suggests a smaller model instead of crashing. In practice Llama 3.2 1B (0.7 GB, the
+default) needs about 1.2 GB of memory, Qwen 3 4B (2.3 GB) about 3.9 GB, and Qwen 3 8B (4.7 GB) about
 7.9 GB, which on most iPhones rules it out and leaves it to iPads and Macs with more memory.</p>
 
 <h2>What runs where on an iPhone</h2>
@@ -946,7 +946,7 @@ modelo si su descarga es <strong>como mucho el 60 % de la memoria física del di
 Antes de cargarlo en un iPhone, le pregunta a iOS cuánta memoria puede usar todavía la app
 (<code>os_proc_available_memory</code>) y solo lo carga si es al menos el tamaño del modelo
 <strong>más un 10 %</strong>; si no, lo dice y propone uno más pequeño en vez de cerrarse. En la
-práctica, Gemma 3 1B (0,8 GB, el que viene por defecto) necesita unos 1,4 GB de memoria, Qwen 3 4B
+práctica, Llama 3.2 1B (0,7 GB, el que viene por defecto) necesita unos 1,2 GB de memoria, Qwen 3 4B
 (2,3 GB) unos 3,9 GB y Qwen 3 8B (4,7 GB) unos 7,9 GB, lo que lo deja fuera de la mayoría de iPhone y
 para iPad y Mac con más memoria.</p>
 

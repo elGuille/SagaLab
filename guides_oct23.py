@@ -146,7 +146,7 @@ about something personal, it is enough, and there is no server to trust.</p>
 <ul>
 <li><strong>Pinku</strong> (version 1.1, 22 October 2026). Runs 11 open models on iPhone or Mac
 with Apple's MLX, from Qwen3 0.6B (0.4 GB) to Qwen3 8B (4.7 GB); works in airplane mode once a model is
-downloaded; no account; chats saved only on the device. Free with Gemma 3 1B; Pinku Pro (yearly or a
+downloaded; no account; chats saved only on the device. Free with Llama 3.2 1B; Pinku Pro (yearly or a
 one-time purchase) lets you choose any model and adds custom instructions, on-device dictation and read
 aloud. Requires iOS 18.6. It is weaker than a cloud model, and only lists the models your device has
 the memory for.</li>
@@ -289,7 +289,7 @@ y no hay ningún servidor del que fiarse.</p>
 <ul>
 <li><strong>Pinku</strong> (versión 1.1, 22 de octubre de 2026). Ejecuta 11 modelos abiertos en
 iPhone o Mac con MLX de Apple, de Qwen3 0.6B (0,4 GB) a Qwen3 8B (4,7 GB); funciona en modo avión una vez
-descargado el modelo; sin cuenta; los chats se guardan solo en el dispositivo. Gratis con Gemma 3 1B;
+descargado el modelo; sin cuenta; los chats se guardan solo en el dispositivo. Gratis con Llama 3.2 1B;
 Pinku Pro (anual o compra única) deja elegir cualquier modelo y añade instrucciones personalizadas,
 dictado en el dispositivo y lectura en voz alta. Requiere iOS 18.6. Es más flojo que un modelo en la
 nube y solo muestra los modelos para los que tu aparato tiene memoria.</li>

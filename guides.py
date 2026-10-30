@@ -289,13 +289,13 @@ answer is generated on the iPhone, and nothing you type leaves it.</p>
          'Get <a href="%s">Pinku</a> from the App Store. It runs on iPhone, iPad and Mac with Apple '
          "silicon, on devices that support Metal 3. There is no account." % PINKU_STORE),
         ("Download a model while you are online.",
-         "Do this on Wi-Fi before you need it. The default model, Gemma 3 1B, is under 1 GB. Pinku only "
+         "Do this on Wi-Fi before you need it. The default model, Llama 3.2 1B, is under 1 GB. Pinku only "
          "lists the models that fit your device's memory."),
         ("Turn on airplane mode and test it.",
          "Open Control Center, turn on airplane mode and ask a question. The answer is generated on the "
          "device, so it works with no connection at all."),
         ("Pick the right model for the job.",
-         "Smaller models answer faster; larger ones answer better. Chatting with the default model, Gemma 3 1B, is free; "
+         "Smaller models answer faster; larger ones answer better. Chatting with the default model, Llama 3.2 1B, is free; "
          "Pinku Pro, yearly or one-time, lets you choose any of the other models, up to 4.7 GB."),
         ("Start a chat with Siri, if you like.",
          "Pinku has a Siri and Shortcuts action to start a chat, which also works offline."),
@@ -313,7 +313,7 @@ documents, has a shorter memory of the conversation, and its speed depends on yo
 device. Pinku checks the memory actually free before loading a model, so a model that
 does not fit gives a warning instead of a crash.</p>
 
-<p>Pinku is free to download, and chatting with the default model, Gemma 3 1B, costs nothing.
+<p>Pinku is free to download, and chatting with the default model, Llama 3.2 1B, costs nothing.
 Pinku Pro (a yearly subscription or a one-time purchase) lets you choose any model and adds custom instructions, dictation recognised on the device and read aloud. More
 on <a href="../pinku.html">Pinku's page</a>.</p>
 
@@ -328,7 +328,7 @@ for iPhone and Mac</a>.</p>
         ("Does ChatGPT work offline?",
          "No. ChatGPT runs on OpenAI's servers, so every message needs a connection."),
         ("How much space does an offline AI model take?",
-         "In Pinku, from 0.4 GB to 4.7 GB depending on the model. The default, Gemma 3 1B, is under 1 GB."),
+         "In Pinku, from 0.4 GB to 4.7 GB depending on the model. The default, Llama 3.2 1B, is under 1 GB."),
         ("Is an offline AI as good as ChatGPT?",
          "No. A small model on a phone is clearly weaker, has a shorter context and cannot browse the web. "
          "Its advantage is that it works anywhere and nothing you type leaves the device."),
@@ -364,13 +364,13 @@ escribes sale de él.</p>
          'Descarga <a href="%s">Pinku</a> del App Store. Funciona en iPhone, iPad y Mac con Apple '
          "silicon, en dispositivos compatibles con Metal 3. No hay cuenta." % PINKU_STORE),
         ("Descarga un modelo mientras tienes conexión.",
-         "Hazlo con wifi antes de necesitarlo. El modelo por defecto, Gemma 3 1B, ocupa menos de 1 GB. Pinku "
+         "Hazlo con wifi antes de necesitarlo. El modelo por defecto, Llama 3.2 1B, ocupa menos de 1 GB. Pinku "
          "solo te enseña los modelos que caben en la memoria de tu dispositivo."),
         ("Pon el modo avión y pruébalo.",
          "Abre el Centro de control, activa el modo avión y haz una pregunta. La respuesta se genera en "
          "el dispositivo, así que funciona sin ninguna conexión."),
         ("Elige el modelo adecuado.",
-         "Los modelos pequeños responden más rápido; los grandes, mejor. Chatear con el modelo por defecto, Gemma 3 1B, es "
+         "Los modelos pequeños responden más rápido; los grandes, mejor. Chatear con el modelo por defecto, Llama 3.2 1B, es "
          "gratis; Pinku Pro, anual o de pago único, te deja elegir cualquier otro modelo, de hasta 4,7 GB."),
         ("Empieza un chat con Siri, si quieres.",
          "Pinku tiene una acción de Siri y Atajos para empezar un chat, que también funciona sin conexión."),
@@ -387,7 +387,7 @@ y sacar ideas. No busca en internet, no lee imágenes ni documentos, recuerda me
 la conversación y su velocidad depende de tu dispositivo. Pinku comprueba la memoria
 libre antes de cargar un modelo, así que si no cabe te avisa en lugar de cerrarse.</p>
 
-<p>Pinku se descarga gratis, y chatear con el modelo por defecto, Gemma 3 1B, no cuesta nada.
+<p>Pinku se descarga gratis, y chatear con el modelo por defecto, Llama 3.2 1B, no cuesta nada.
 Pinku Pro (suscripción anual o compra única) te deja elegir cualquier modelo y añade instrucciones propias, dictado reconocido en el dispositivo y lectura
 en voz alta. Más en <a href="../../pinku.html">la página de Pinku</a> (en inglés).</p>
 
@@ -402,7 +402,7 @@ IA sin conexión para iPhone y Mac</a>.</p>
         ("¿ChatGPT funciona sin conexión?",
          "No. ChatGPT funciona en los servidores de OpenAI, así que cada mensaje necesita conexión."),
         ("¿Cuánto ocupa un modelo de IA sin conexión?",
-         "En Pinku, de 0,4 GB a 4,7 GB según el modelo. El de por defecto, Gemma 3 1B, ocupa menos de 1 GB."),
+         "En Pinku, de 0,4 GB a 4,7 GB según el modelo. El de por defecto, Llama 3.2 1B, ocupa menos de 1 GB."),
         ("¿Una IA sin conexión es tan buena como ChatGPT?",
          "No. Un modelo pequeño en un móvil es claramente más flojo, recuerda menos y no busca en internet. "
          "Su ventaja es que funciona en cualquier sitio y nada de lo que escribes sale del dispositivo."),
@@ -851,7 +851,7 @@ that is what you should expect to see, and nothing else, in App Privacy Report a
 Voice dictation, if you buy Pinku Pro, is recognised on the device.</p>
 
 <p>The trade-off is capability: a model of 1 to 5 GB on a phone is clearly weaker than ChatGPT or Claude
-in the cloud, it cannot browse the web, and it does not read images or documents. Pinku is free to download, chatting with the default model, Gemma 3 1B, costs nothing, and Pinku Pro (a yearly subscription or a one-time purchase) lets you choose any model. How to set it up and use it on a plane:
+in the cloud, it cannot browse the web, and it does not read images or documents. Pinku is free to download, chatting with the default model, Llama 3.2 1B, costs nothing, and Pinku Pro (a yearly subscription or a one-time purchase) lets you choose any model. How to set it up and use it on a plane:
 <a href="use-ai-on-iphone-without-internet.html">how to use AI on iPhone without internet</a>.
 Other apps that run a model on the device, ranked honestly:
 <a href="../blog/best-private-ai-apps-iphone.html">the best private AI apps for iPhone</a>.</p>
@@ -933,7 +933,7 @@ descargar un modelo la primera vez y para las compras del App Store, así que es
 en el Informe de privacidad después de chatear. El dictado por voz, si compras Pinku Pro, se reconoce en el dispositivo.</p>
 
 <p>La contrapartida es la capacidad: un modelo de 1 a 5 GB en un móvil es claramente más débil que ChatGPT o Claude en la
-nube, no navega por la web y no lee imágenes ni documentos. Pinku se descarga gratis, chatear con el modelo por defecto, Gemma 3 1B, no cuesta nada y Pinku Pro (suscripción anual o compra única) te deja elegir cualquier modelo.
+nube, no navega por la web y no lee imágenes ni documentos. Pinku se descarga gratis, chatear con el modelo por defecto, Llama 3.2 1B, no cuesta nada y Pinku Pro (suscripción anual o compra única) te deja elegir cualquier modelo.
 Cómo instalarla y usarla en un avión:
 <a href="usar-ia-en-iphone-sin-internet.html">cómo usar IA en el iPhone sin internet</a>.
 Otras apps que ejecutan el modelo en el dispositivo, ordenadas con honestidad:
