@@ -5248,7 +5248,7 @@ RANK_ARTICLES.append(dict(
 # --------------------------------------------------------------------------
 # AI Assistant es nuestra: aviso arriba. Lo de AI Assistant, revisado el 30 oct 2026 con su
 # repo y el App Store de EE. UU. (version 1.5.0, 25 oct 2026, nombre en el App
-# Store "Easy AI Assistant: AI Assistant"): el chat responde con Google Gemini (Gemini
+# Store "Easy AI Assistant: Chat Bot"): el chat responde con Google Gemini (Gemini
 # 3.1 Flash Lite), ya no via OpenRouter; imagenes y, desde 1.5, videos con
 # varios modelos que se eligen en la app, cada uno con su precio en creditos;
 # desde el 19 oct 2026 hacer imagenes exige la suscripcion o creditos (ya no se
@@ -5280,7 +5280,7 @@ CI_RANK = [
     ("ChatGPT", "https://apps.apple.com/us/app/id6448311069"),
     ("Google Gemini", "https://apps.apple.com/us/app/id6477489729"),
     ("Grok AI", "https://apps.apple.com/us/app/id6670324846"),
-    ("Easy AI Assistant: AI Assistant", "https://apps.apple.com/app/id1667947372"),
+    ("Easy AI Assistant: Chat Bot", "https://apps.apple.com/app/id1667947372"),
     ("ChatOn AI - Chat Bot Assistant", "https://apps.apple.com/us/app/id1661308505"),
     ("Chatbot AI Assistant - Genie", "https://apps.apple.com/us/app/id1658377526"),
     ("Meta AI", "https://apps.apple.com/us/app/id1558240027"),
