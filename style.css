@@ -569,7 +569,7 @@ body.dark-mode .featured-project-img {
     transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Pio App Specific - 20% size increase */
+/* AI Assistant App Specific - 20% size increase */
 .brainy-app .app-showcase-img {
     max-width: 120%;
 }

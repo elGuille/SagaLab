@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
             appStoreFeatured: true
         },
         {
-            name: 'Pio: AI Helper',
+            name: 'AI Assistant: AI Helper',
             category: 'Productivity',
             image: 'images/brainyapp.webp',
             description: 'AI assistant for writing, brainstorming, and creative tasks.',

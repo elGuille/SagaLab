@@ -5244,18 +5244,18 @@ RANK_ARTICLES.append(dict(
 
 
 # --------------------------------------------------------------------------
-# 17 — Apps de IA para chatear y crear imagenes en iPhone (ranking, Pio 1.a)
+# 17 — Apps de IA para chatear y crear imagenes en iPhone (ranking, AI Assistant 1.a)
 # --------------------------------------------------------------------------
-# Pio es nuestra: aviso arriba. Lo de Pio, revisado el 30 oct 2026 con su
+# AI Assistant es nuestra: aviso arriba. Lo de AI Assistant, revisado el 30 oct 2026 con su
 # repo y el App Store de EE. UU. (version 1.5.0, 25 oct 2026, nombre en el App
-# Store "Easy AI Assistant: Pio"): el chat responde con Google Gemini (Gemini
+# Store "Easy AI Assistant: AI Assistant"): el chat responde con Google Gemini (Gemini
 # 3.1 Flash Lite), ya no via OpenRouter; imagenes y, desde 1.5, videos con
 # varios modelos que se eligen en la app, cada uno con su precio en creditos;
 # desde el 19 oct 2026 hacer imagenes exige la suscripcion o creditos (ya no se
 # prueban gratis), los videos la suscripcion y creditos; el chat se prueba gratis
 # con limites diarios. Escaner de texto con la camara (Vision OCR que pasa el
 # texto al chat), interfaz en/es/ja/ko; precios EE. UU. 6,99 $/semana o
-# 49,99 $/ano. No nombrar modelos de imagen concretos de Pio. Las demas, de su
+# 49,99 $/ano. No nombrar modelos de imagen concretos de AI Assistant. Las demas, de su
 # ficha del App Store (EE. UU.) y la API de lookup, 8 oct 2026. Sin rayas.
 
 CI_DATE_ISO = "2026-10-08"
@@ -5280,7 +5280,7 @@ CI_RANK = [
     ("ChatGPT", "https://apps.apple.com/us/app/id6448311069"),
     ("Google Gemini", "https://apps.apple.com/us/app/id6477489729"),
     ("Grok AI", "https://apps.apple.com/us/app/id6670324846"),
-    ("Easy AI Assistant: Pio", "https://apps.apple.com/app/id1667947372"),
+    ("Easy AI Assistant: AI Assistant", "https://apps.apple.com/app/id1667947372"),
     ("ChatOn AI - Chat Bot Assistant", "https://apps.apple.com/us/app/id1661308505"),
     ("Chatbot AI Assistant - Genie", "https://apps.apple.com/us/app/id1658377526"),
     ("Meta AI", "https://apps.apple.com/us/app/id1558240027"),
@@ -5288,10 +5288,10 @@ CI_RANK = [
 
 
 A17_EN_BODY = ("""
-<p><strong>Disclosure: we make Pio, number 4 on this list.</strong>
+<p><strong>Disclosure: we make AI Assistant, number 4 on this list.</strong>
 Everything we say about the other apps comes from their own App Store pages, and
 we say plainly where they beat us. Prices and ratings are from the US App Store
-on %(date)s; Pio's entry was updated on 30 October 2026.</p>
+on %(date)s; AI Assistant's entry was updated on 30 October 2026.</p>
 
 <p>These apps answer questions and also make pictures from a sentence. Some add
 video, files or voice. The big names are made by the companies that build the
@@ -5303,7 +5303,7 @@ models; the others put someone else's models in a simpler package.</p>
 <li><a href="%(chatgpt)s" target="_blank" rel="noopener">ChatGPT</a>: best overall assistant, with image generation built in.</li>
 <li><a href="%(gemini)s" target="_blank" rel="noopener">Google Gemini</a>: best for images, and video on paid plans.</li>
 <li><a href="%(grok)s" target="_blank" rel="noopener">Grok</a>: best for video with sound.</li>
-<li><a href="%(brainy)s">Pio</a>: best small all-in-one for chat, images and homework scans.</li>
+<li><a href="%(brainy)s">AI Assistant</a>: best small all-in-one for chat, images and homework scans.</li>
 <li><a href="%(chaton)s" target="_blank" rel="noopener">ChatOn</a>: best for several chat models plus images.</li>
 <li><a href="%(genie)s" target="_blank" rel="noopener">Genie</a>: best for image editing and PDFs.</li>
 <li><a href="%(meta)s" target="_blank" rel="noopener">Meta AI</a>: best free option.</li>
@@ -5317,7 +5317,7 @@ models; the others put someone else's models in a simpler package.</p>
 <tr><td>1. <a href="%(chatgpt)s" target="_blank" rel="noopener">ChatGPT</a></td><td>Yes</td><td>Not on its page</td><td>Voice, photo upload</td><td>Free; Go $8, Plus $19.99, Pro from $100</td><td>4.8 &middot; 11,079,400</td></tr>
 <tr><td>2. <a href="%(gemini)s" target="_blank" rel="noopener">Google Gemini</a></td><td>Yes (Nano Banana 2)</td><td>Paid plans</td><td>Gemini Live voice, files</td><td>Free; AI Plus $4.99, AI Pro $19.99</td><td>4.7 &middot; 2,321,604</td></tr>
 <tr><td>3. <a href="%(grok)s" target="_blank" rel="noopener">Grok</a></td><td>Yes</td><td>Yes, with sound</td><td>Web and X search, files, voice</td><td>Free; SuperGrok Lite $10, SuperGrok $30</td><td>4.9 &middot; 1,487,413</td></tr>
-<tr><td>4. <a href="%(brainy)s">Pio</a></td><td>Yes (several models)</td><td>Yes, with subscription and credits</td><td>Camera scanner for text and math</td><td>Chat free to try; $6.99/week or $49.99/year</td><td>Few ratings</td></tr>
+<tr><td>4. <a href="%(brainy)s">AI Assistant</a></td><td>Yes (several models)</td><td>Yes, with subscription and credits</td><td>Camera scanner for text and math</td><td>Chat free to try; $6.99/week or $49.99/year</td><td>Few ratings</td></tr>
 <tr><td>5. <a href="%(chaton)s" target="_blank" rel="noopener">ChatOn</a></td><td>Yes</td><td>From photos</td><td>Several chat models, web, PDFs</td><td>Weekly from $6.99; yearly $39.99 to $59.99</td><td>4.7 &middot; 286,441</td></tr>
 <tr><td>6. <a href="%(genie)s" target="_blank" rel="noopener">Genie</a></td><td>Yes, plus editing</td><td>Not on its page</td><td>Web and Deep Search, PDFs, voice</td><td>Weekly $5.99 or $7.99; yearly $39.99</td><td>4.7 &middot; 201,891</td></tr>
 <tr><td>7. <a href="%(meta)s" target="_blank" rel="noopener">Meta AI</a></td><td>Yes</td><td>No (only as input)</td><td>PDFs, voice, research reports</td><td>Free, no in-app purchases listed</td><td>4.7 &middot; 268,932</td></tr>
@@ -5348,13 +5348,13 @@ at $4.99 a month and AI Pro is $19.99, with Google storage included.</p>
 searches both the web and X. It has a free tier; SuperGrok Lite is $10 and
 SuperGrok $30 a month.</p>
 
-<h2>4. Pio: small, and does the three things</h2>
+<h2>4. AI Assistant: small, and does the three things</h2>
 
-<p><a href="%(brainy)s">Pio</a> is a chat, an image generator and a camera
+<p><a href="%(brainy)s">AI Assistant</a> is a chat, an image generator and a camera
 scanner in one app. Chat answers come from Google's Gemini (Gemini 3.1 Flash
 Lite). Images, and since version 1.5 videos, are made with several models you
 choose in the app, each priced in credits: describe a picture, an illustration
-or a design and Pio draws it. The scanner reads a math problem, a
+or a design and AI Assistant draws it. The scanner reads a math problem, a
 formula or a page of text into the chat, so you can ask for an explanation
 without typing it. The interface is in English, Spanish, Japanese and Korean.</p>
 
@@ -5362,7 +5362,7 @@ without typing it. The interface is in English, Spanish, Japanese and Korean.</p
 subscription or credits, and videos need the subscription and credits. The
 subscription costs $6.99 a week or $49.99 a year in the US.</p>
 
-<p>Where others beat it: Pio chats with one model it picks for you (Gemini),
+<p>Where others beat it: AI Assistant chats with one model it picks for you (Gemini),
 so you can't choose the model, while ChatGPT, Gemini and Grok use their own
 frontier models and ChatOn lets you pick. It does not read PDFs and has no voice
 mode. Its yearly plan costs more than Genie's, images are not free to try, and
@@ -5401,7 +5401,7 @@ It has only 3 ratings so far. We compare it with the other multi-model apps in
 <h2>How to choose</h2>
 
 <ul>
-<li><strong>Chat, images and homework scans in one small app:</strong> <a href="%(brainy)s">Pio</a>.</li>
+<li><strong>Chat, images and homework scans in one small app:</strong> <a href="%(brainy)s">AI Assistant</a>.</li>
 <li><strong>The best all-round assistant:</strong> ChatGPT.</li>
 <li><strong>Video:</strong> Grok, or Gemini on a paid plan. For video made from your own photos, an app built for it, such as our <a href="%(dora)s">Dora</a>, gives you more control.</li>
 <li><strong>Several chat models:</strong> ChatOn, or, for chat only, the apps in <a href="%(fastai)s">our multi-model chat ranking</a>, including our Ask AI.</li>
@@ -5412,19 +5412,19 @@ It has only 3 ratings so far. We compare it with the other multi-model apps in
 A17_EN_SOURCES = """
 <h2>Sources</h2>
 <ul>
-<li>App Store pages (US): <a href="%(brainy)s">Pio</a>, <a href="%(chatgpt)s" target="_blank" rel="noopener">ChatGPT</a>, <a href="%(gemini)s" target="_blank" rel="noopener">Google Gemini</a>, <a href="%(grok)s" target="_blank" rel="noopener">Grok</a>, <a href="%(chaton)s" target="_blank" rel="noopener">ChatOn</a>, <a href="%(genie)s" target="_blank" rel="noopener">Genie</a>, <a href="%(meta)s" target="_blank" rel="noopener">Meta AI</a>. Features, in-app purchases and privacy labels as shown on %(date)s.</li>
+<li>App Store pages (US): <a href="%(brainy)s">AI Assistant</a>, <a href="%(chatgpt)s" target="_blank" rel="noopener">ChatGPT</a>, <a href="%(gemini)s" target="_blank" rel="noopener">Google Gemini</a>, <a href="%(grok)s" target="_blank" rel="noopener">Grok</a>, <a href="%(chaton)s" target="_blank" rel="noopener">ChatOn</a>, <a href="%(genie)s" target="_blank" rel="noopener">Genie</a>, <a href="%(meta)s" target="_blank" rel="noopener">Meta AI</a>. Features, in-app purchases and privacy labels as shown on %(date)s.</li>
 <li>Ratings: Apple's public iTunes lookup API, %(date)s.</li>
-<li>Pio's features, limits and prices: <a href="../brainy.html">its product page</a>.</li>
+<li>AI Assistant's features, limits and prices: <a href="../brainy.html">its product page</a>.</li>
 </ul>
 <p>If anything here is out of date, <a href="mailto:sagalabs@proton.me">tell us</a>
 and we will correct the page.</p>
 """ % dict(_CI, date=CI_DATE_EN)
 
 A17_ES_BODY = ("""
-<p><strong>Aviso: Pio, la n.º 4 de esta lista, es nuestra.</strong> Todo lo que
+<p><strong>Aviso: AI Assistant, la n.º 4 de esta lista, es nuestra.</strong> Todo lo que
 decimos de las demás sale de su propia ficha del App Store, y decimos claramente
 en qué nos ganan. Precios y valoraciones de la App Store de EE. UU. a %(date)s;
-lo de Pio se actualizó el 30 de octubre de 2026.</p>
+lo de AI Assistant se actualizó el 30 de octubre de 2026.</p>
 
 <p>Estas apps responden preguntas y además hacen imágenes a partir de una frase.
 Algunas añaden vídeo, archivos o voz. Las grandes las hacen las mismas empresas
@@ -5437,7 +5437,7 @@ sencillo.</p>
 <li><a href="%(chatgpt)s" target="_blank" rel="noopener">ChatGPT</a>: el mejor asistente en general, con generación de imágenes incluida.</li>
 <li><a href="%(gemini)s" target="_blank" rel="noopener">Google Gemini</a>: la mejor para imágenes, y vídeo en los planes de pago.</li>
 <li><a href="%(grok)s" target="_blank" rel="noopener">Grok</a>: la mejor para vídeo con sonido.</li>
-<li><a href="%(brainy)s">Pio</a>: la mejor todo en uno pequeña para chat, imágenes y escanear deberes.</li>
+<li><a href="%(brainy)s">AI Assistant</a>: la mejor todo en uno pequeña para chat, imágenes y escanear deberes.</li>
 <li><a href="%(chaton)s" target="_blank" rel="noopener">ChatOn</a>: la mejor para varios modelos de chat e imágenes.</li>
 <li><a href="%(genie)s" target="_blank" rel="noopener">Genie</a>: la mejor para editar imágenes y leer PDF.</li>
 <li><a href="%(meta)s" target="_blank" rel="noopener">Meta AI</a>: la mejor gratis.</li>
@@ -5451,7 +5451,7 @@ sencillo.</p>
 <tr><td>1. <a href="%(chatgpt)s" target="_blank" rel="noopener">ChatGPT</a></td><td>Sí</td><td>No lo dice su ficha</td><td>Voz, subir fotos</td><td>Gratis; Go 8 $, Plus 19,99 $, Pro desde 100 $</td><td>4,8 &middot; 11.079.400</td></tr>
 <tr><td>2. <a href="%(gemini)s" target="_blank" rel="noopener">Google Gemini</a></td><td>Sí (Nano Banana 2)</td><td>Planes de pago</td><td>Voz con Gemini Live, archivos</td><td>Gratis; AI Plus 4,99 $, AI Pro 19,99 $</td><td>4,7 &middot; 2.321.604</td></tr>
 <tr><td>3. <a href="%(grok)s" target="_blank" rel="noopener">Grok</a></td><td>Sí</td><td>Sí, con sonido</td><td>Búsqueda en la web y en X, archivos, voz</td><td>Gratis; SuperGrok Lite 10 $, SuperGrok 30 $</td><td>4,9 &middot; 1.487.413</td></tr>
-<tr><td>4. <a href="%(brainy)s">Pio</a></td><td>Sí (varios modelos)</td><td>Sí, con suscripción y créditos</td><td>Escáner de textos y matemáticas con la cámara</td><td>Chat gratis para probar; 6,99 $/semana o 49,99 $/año</td><td>Pocas valoraciones</td></tr>
+<tr><td>4. <a href="%(brainy)s">AI Assistant</a></td><td>Sí (varios modelos)</td><td>Sí, con suscripción y créditos</td><td>Escáner de textos y matemáticas con la cámara</td><td>Chat gratis para probar; 6,99 $/semana o 49,99 $/año</td><td>Pocas valoraciones</td></tr>
 <tr><td>5. <a href="%(chaton)s" target="_blank" rel="noopener">ChatOn</a></td><td>Sí</td><td>A partir de fotos</td><td>Varios modelos de chat, web, PDF</td><td>Semanal desde 6,99 $; anual de 39,99 a 59,99 $</td><td>4,7 &middot; 286.441</td></tr>
 <tr><td>6. <a href="%(genie)s" target="_blank" rel="noopener">Genie</a></td><td>Sí, y edición</td><td>No lo dice su ficha</td><td>Web y Deep Search, PDF, voz</td><td>Semanal 5,99 o 7,99 $; anual 39,99 $</td><td>4,7 &middot; 201.891</td></tr>
 <tr><td>7. <a href="%(meta)s" target="_blank" rel="noopener">Meta AI</a></td><td>Sí</td><td>No (solo como entrada)</td><td>PDF, voz, informes de investigación</td><td>Gratis, sin compras en la ficha</td><td>4,7 &middot; 268.932</td></tr>
@@ -5483,13 +5483,13 @@ incluido.</p>
 tanto en la web como en X. Tiene versión gratis; SuperGrok Lite cuesta 10 $ y
 SuperGrok 30 $ al mes.</p>
 
-<h2>4. Pio: pequeña, y hace las tres cosas</h2>
+<h2>4. AI Assistant: pequeña, y hace las tres cosas</h2>
 
-<p><a href="%(brainy)s">Pio</a> es un chat, un generador de imágenes y un
+<p><a href="%(brainy)s">AI Assistant</a> es un chat, un generador de imágenes y un
 escáner con la cámara en una sola app. Las respuestas del chat las da Gemini, de
 Google (Gemini 3.1 Flash Lite). Las imágenes y, desde la versión 1.5, los vídeos
 se hacen con varios modelos que eliges en la app, cada uno con su precio en
-créditos: describe una foto, una ilustración o un diseño y Pio lo dibuja. El escáner lee
+créditos: describe una foto, una ilustración o un diseño y AI Assistant lo dibuja. El escáner lee
 un problema de matemáticas, una fórmula o una página de texto y lo pasa al chat,
 para que pidas la explicación sin teclearlo. La interfaz está en inglés, español,
 japonés y coreano.</p>
@@ -5499,7 +5499,7 @@ necesitas la suscripción o créditos, y para los vídeos, la suscripción y
 créditos. La suscripción cuesta 6,99 $ a la semana o 49,99 $ al año en
 EE. UU.</p>
 
-<p>En qué le ganan las demás: Pio chatea con un solo modelo que elige por ti
+<p>En qué le ganan las demás: AI Assistant chatea con un solo modelo que elige por ti
 (Gemini), así que no puedes elegir el modelo, mientras ChatGPT, Gemini y Grok usan
 sus propios modelos punteros y ChatOn te deja elegir. No lee PDF y no tiene modo
 de voz. Su plan anual cuesta más que el de Genie, las imágenes no se pueden probar
@@ -5539,7 +5539,7 @@ con varios modelos</a>.</p>
 <h2>Cómo elegir</h2>
 
 <ul>
-<li><strong>Chat, imágenes y escanear deberes en una app pequeña:</strong> <a href="%(brainy)s">Pio</a>.</li>
+<li><strong>Chat, imágenes y escanear deberes en una app pequeña:</strong> <a href="%(brainy)s">AI Assistant</a>.</li>
 <li><strong>El mejor asistente en general:</strong> ChatGPT.</li>
 <li><strong>Vídeo:</strong> Grok, o Gemini con un plan de pago. Para vídeo hecho a partir de tus propias fotos, una app pensada para eso, como nuestra <a href="%(dora)s">Dora</a>, te da más control.</li>
 <li><strong>Varios modelos de chat:</strong> ChatOn o, solo para chat, las apps de <a href="%(fastai_es)s">nuestro ranking de chat con varios modelos</a>, entre ellas nuestra Ask AI.</li>
@@ -5550,9 +5550,9 @@ con varios modelos</a>.</p>
 A17_ES_SOURCES = """
 <h2>Fuentes</h2>
 <ul>
-<li>Fichas del App Store (EE. UU.): <a href="%(brainy)s">Pio</a>, <a href="%(chatgpt)s" target="_blank" rel="noopener">ChatGPT</a>, <a href="%(gemini)s" target="_blank" rel="noopener">Google Gemini</a>, <a href="%(grok)s" target="_blank" rel="noopener">Grok</a>, <a href="%(chaton)s" target="_blank" rel="noopener">ChatOn</a>, <a href="%(genie)s" target="_blank" rel="noopener">Genie</a>, <a href="%(meta)s" target="_blank" rel="noopener">Meta AI</a>. Funciones, compras dentro de la app y etiquetas de privacidad a %(date)s.</li>
+<li>Fichas del App Store (EE. UU.): <a href="%(brainy)s">AI Assistant</a>, <a href="%(chatgpt)s" target="_blank" rel="noopener">ChatGPT</a>, <a href="%(gemini)s" target="_blank" rel="noopener">Google Gemini</a>, <a href="%(grok)s" target="_blank" rel="noopener">Grok</a>, <a href="%(chaton)s" target="_blank" rel="noopener">ChatOn</a>, <a href="%(genie)s" target="_blank" rel="noopener">Genie</a>, <a href="%(meta)s" target="_blank" rel="noopener">Meta AI</a>. Funciones, compras dentro de la app y etiquetas de privacidad a %(date)s.</li>
 <li>Valoraciones: API pública de búsqueda de iTunes de Apple, %(date)s.</li>
-<li>Funciones, límites y precios de Pio: <a href="../../brainy.html">su página</a>.</li>
+<li>Funciones, límites y precios de AI Assistant: <a href="../../brainy.html">su página</a>.</li>
 </ul>
 <p>Si algo está desactualizado, <a href="mailto:sagalabs@proton.me">avísanos</a> y
 corregimos la página.</p>
@@ -5561,12 +5561,12 @@ corregimos la página.</p>
 CI_FAQ_EN = [
     ("What is the best AI app for chat and images on iPhone?",
      "For the strongest assistant, ChatGPT. For a small app that chats, makes images from text with several models "
-     "and scans homework with the camera, Pio. For video too, Grok or Gemini on a paid plan."),
+     "and scans homework with the camera, AI Assistant. For video too, Grok or Gemini on a paid plan."),
     ("Which AI app makes images for free?",
-     "ChatGPT, Gemini, Grok and Meta AI all have free tiers that make images, with limits. In Pio, making images "
+     "ChatGPT, Gemini, Grok and Meta AI all have free tiers that make images, with limits. In AI Assistant, making images "
      "needs the subscription or credits; its chat is free to try."),
     ("Can these apps make videos?",
-     "Grok (with sound), Gemini on paid plans and ChatOn (from photos) say so on their pages. Pio makes videos "
+     "Grok (with sound), Gemini on paid plans and ChatOn (from photos) say so on their pages. AI Assistant makes videos "
      "since version 1.5, with the subscription and credits. Genie, ChatGPT and Meta AI do not mention video "
      "generation."),
     ("What is Nano Banana?",
@@ -5575,13 +5575,13 @@ CI_FAQ_EN = [
 CI_FAQ_ES = [
     ("¿Cuál es la mejor app de IA para chatear y hacer imágenes en iPhone?",
      "Como asistente más potente, ChatGPT. Para una app pequeña que chatea, hace imágenes con varios modelos "
-     "y escanea deberes con la cámara, Pio. Si además quieres vídeo, Grok o Gemini con un plan "
+     "y escanea deberes con la cámara, AI Assistant. Si además quieres vídeo, Grok o Gemini con un plan "
      "de pago."),
     ("¿Qué app de IA hace imágenes gratis?",
-     "ChatGPT, Gemini, Grok y Meta AI tienen versiones gratis que hacen imágenes, con límites. En Pio, hacer "
+     "ChatGPT, Gemini, Grok y Meta AI tienen versiones gratis que hacen imágenes, con límites. En AI Assistant, hacer "
      "imágenes necesita la suscripción o créditos; su chat se puede probar gratis."),
     ("¿Estas apps hacen vídeos?",
-     "Grok (con sonido), Gemini en los planes de pago y ChatOn (a partir de fotos) lo dicen en su ficha. Pio "
+     "Grok (con sonido), Gemini en los planes de pago y ChatOn (a partir de fotos) lo dicen en su ficha. AI Assistant "
      "hace vídeos desde la versión 1.5, con la suscripción y créditos. Genie, ChatGPT y Meta AI no mencionan "
      "generar vídeo."),
     ("¿Qué es Nano Banana?",
@@ -5595,7 +5595,7 @@ RANK_ARTICLES.append(dict(
     en=dict(
         h1="Best AI apps for chat and image generation on iPhone (2026)",
         desc=("Seven iPhone apps that chat and make images from text, some with video, compared from their own App "
-              "Store pages: what they make, how they charge, ratings. Written by Pio's maker, disclosed."),
+              "Store pages: what they make, how they charge, ratings. Written by AI Assistant's maker, disclosed."),
         kicker="AI apps", section="AI apps",
         standfirst=("Ask a question, then ask for a picture, in the same app. Which apps do both, which add video, "
                     "and what each one costs."),
@@ -5603,7 +5603,7 @@ RANK_ARTICLES.append(dict(
     es=dict(
         h1="Mejores apps de IA para chatear y crear imágenes en iPhone (2026)",
         desc=("Siete apps de iPhone que chatean y hacen imágenes a partir de texto, algunas también vídeo, comparadas "
-              "con su propia ficha del App Store: qué hacen, cómo cobran y valoraciones. Escrito por quien hace Pio, "
+              "con su propia ficha del App Store: qué hacen, cómo cobran y valoraciones. Escrito por quien hace AI Assistant, "
               "y lo decimos."),
         kicker="Apps de IA", section="Apps de IA",
         standfirst=("Haz una pregunta y luego pide una imagen, en la misma app. Qu&eacute; apps hacen las dos cosas, "
