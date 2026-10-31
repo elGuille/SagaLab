@@ -2,7 +2,7 @@
 """Cuatro guias mas (23 oct 2026, noche), EN + ES, con la plantilla de guides.py.
 
 Cada una lleva un dato de primera mano, comprobado el 23 oct 2026 y dicho en la pagina:
-- Brainy (imagenes con IA): codigo de la 1.4.0 en venta (CreateView.swift: una foto de
+- Pio (imagenes con IA): codigo de la 1.4.0 en venta (CreateView.swift: una foto de
   referencia, formatos 1:1, 9:16, 16:9, 2:3, 3:2, coste en creditos antes de crear, Pro para
   crear) y firebase/brainy/models.js desplegado (cinco opciones de imagen con nombres llanos).
   Valoraciones del App Store de EE. UU. leidas por la API de lookup. support.apple.com 121115
@@ -59,23 +59,23 @@ APPLE_FM = "https://machinelearning.apple.com/research/apple-foundation-models-2
 MLX = "https://github.com/ml-explore/mlx"
 
 # --------------------------------------------------------------------------
-# Brainy: como crear imagenes con IA en el iPhone
+# Pio: como crear imagenes con IA en el iPhone
 # --------------------------------------------------------------------------
 
 BR_EN = dict(
     path="brainy/how-to-make-ai-images-on-iphone.html",
-    app_name="AI Homework Helper: Brainy",
+    app_name="AI Homework Helper: Pio",
     date_iso=ISO, date=D,
     h1="How to make AI images on iPhone: Image Playground and 6 apps compared (2026)",
     desc=("How to make an image with AI on an iPhone, step by step: Apple's Image Playground, and the ChatGPT, "
-          "Gemini, Meta AI, Grok, Adobe Firefly and Brainy apps, with App Store ratings checked on 23 October 2026 "
+          "Gemini, Meta AI, Grok, Adobe Firefly and Pio apps, with App Store ratings checked on 23 October 2026 "
           "and how to write a prompt that works."),
-    section="Guides", kicker="Brainy guide",
+    section="Guides", kicker="Pio guide",
     standfirst=("You do not need a computer or a design tool: describe the picture, pick a shape, and an AI model "
                 "draws it in seconds. What changes from app to app is where it runs, what it limits and what it is good at."),
     tools=["Image Playground", "an AI chat app that makes images"],
     intro=f"""
-<p><strong>We make Brainy, number five of the seven options on this page.</strong> Apple's own
+<p><strong>We make Pio, number five of the seven options on this page.</strong> Apple's own
 app comes first because it is already on many iPhones.</p>
 
 <h2>Seven ways to make an AI image on iPhone</h2>
@@ -90,27 +90,27 @@ app comes first because it is already on many iPhones.</p>
 <tr><td>{a(CHATGPT_AS, "ChatGPT")}</td><td>Generates images from a description and transforms existing ones with words</td><td>Images live inside a general chat app</td><td>4.8 (11.5 million)</td></tr>
 <tr><td>{a(GEMINI_AS, "Google Gemini")}</td><td>Generates and edits photos with Nano Banana 2: camera and lighting controls, mockups from several images, posters with sharp text</td><td>Google account</td><td>4.7 (2.4 million)</td></tr>
 <tr><td>{a(META_AS, "Meta AI")}</td><td>Creates and edits images; edit a photo by sketching on it or asking for a change</td><td>Tied to Meta's apps and account</td><td>4.7 (282,000)</td></tr>
-<tr><td><a href="{BRAINY_STORE}">Brainy</a></td><td>A Create tab for images and short videos, from words or from one photo, with five image options and five shapes</td><td>Creating needs Brainy Pro; cost in credits shown before you create</td><td>4.7 (3 ratings)</td></tr>
+<tr><td><a href="{BRAINY_STORE}">Pio</a></td><td>A Create tab for images and short videos, from words or from one photo, with five image options and five shapes</td><td>Creating needs Pio Pro; cost in credits shown before you create</td><td>4.7 (3 ratings)</td></tr>
 <tr><td>{a(GROK_AS, "Grok")}</td><td>Grok Imagine: images from text or voice, edits to existing images, photos turned into videos</td><td>X account</td><td>4.9 (1.5 million)</td></tr>
 <tr><td>{a(FIREFLY_AS, "Adobe Firefly")}</td><td>Images and video from text, Generative Fill, background removal, a choice of resolutions and aspect ratios, partner models</td><td>Made for creative work; Adobe account</td><td>4.7 (10,900)</td></tr>
 </tbody>
 </table>
 </div>
 
-<h2>What we checked in Brainy's code</h2>
+<h2>What we checked in Pio's code</h2>
 
 <p>We read the Create screen of the version on sale today (1.4.0) and the server list it loads.
 You can add <strong>one reference photo</strong> or start from words only; choose between
 <strong>five image options</strong>, named by what they are good at (Fast, Detailed, Best
 quality, Text &amp; posters, Creative); and pick one of <strong>five shapes</strong>: 1:1, 9:16,
 16:9, 2:3 or 3:2. The credit cost of each option is shown before you tap, and a Surprise Me
-button writes an example prompt. Creating is part of Brainy Pro, and before the first image the
+button writes an example prompt. Creating is part of Pio Pro, and before the first image the
 app asks your permission to send the prompt to the image provider.</p>
 """,
     steps=[
         ("Pick where the image is made.",
          "Image Playground if your iPhone has Apple Intelligence and you want it built in; a chat app you already "
-         "use (ChatGPT, Gemini, Meta AI, Grok) if you also want to talk the idea through; Firefly or Brainy if you "
+         "use (ChatGPT, Gemini, Meta AI, Grok) if you also want to talk the idea through; Firefly or Pio if you "
          "want a screen made only for creating."),
         ("Describe the picture in one sentence.",
          "Subject, what it is doing, where, and the style: \"a golden retriever in a velvet cape, oil painting, "
@@ -125,7 +125,7 @@ app asks your permission to send the prompt to the image provider.</p>
          "If the result is close, ask for a single change (\"warmer light\", \"remove the text\") instead of "
          "rewriting the whole prompt."),
         ("For text in the image, say the exact words.",
-         "Put the words in quotes and keep them short. Some models spell better than others; in Brainy that is "
+         "Put the words in quotes and keep them short. Some models spell better than others; in Pio that is "
          "the Text &amp; posters option."),
         ("Save it and check how you may use it.",
          "Save to Photos, then read the app's terms before using an image commercially, and label AI images as AI "
@@ -139,23 +139,23 @@ Keynote and Freeform. Its App Store rating is the lowest here, and Apple warns o
 <li><strong>ChatGPT, Gemini, Meta AI and Grok</strong> are general assistants that also draw; useful if you already
 use one of them every day.</li>
 <li><strong>Adobe Firefly</strong> is the most complete for design work: fills, background removal and video.</li>
-<li><strong>Brainy</strong> puts chat, homework help from a photo and image and video creation in one iPhone app,
+<li><strong>Pio</strong> puts chat, homework help from a photo and image and video creation in one iPhone app,
 with the cost of each image shown before you make it. It has very few ratings so far, it is iPhone only, and you
-cannot make images without Brainy Pro. More on <a href="../brainy.html">the Brainy page</a> and in our comparison
+cannot make images without Pio Pro. More on <a href="../brainy.html">the Pio page</a> and in our comparison
 of <a href="../blog/best-ai-chat-and-image-generator-apps-iphone.html">AI apps for chat and images</a>.</li>
 </ul>
 
 <h2>Sources</h2>
 <ul>
-<li>App Store pages (descriptions and ratings, US store) of Image Playground, ChatGPT, Google Gemini, Meta AI, Grok, Adobe Firefly and Brainy, read 23 October 2026.</li>
+<li>App Store pages (descriptions and ratings, US store) of Image Playground, ChatGPT, Google Gemini, Meta AI, Grok, Adobe Firefly and Pio, read 23 October 2026.</li>
 <li>{a(AI_FEATURES, "Apple, Apple Intelligence features and requirements (121115)")}, published 22 October 2026.</li>
-<li>Brainy 1.4.0 source code (Create screen) and its server model list, read 23 October 2026.</li>
+<li>Pio 1.4.0 source code (Create screen) and its server model list, read 23 October 2026.</li>
 </ul>
 """,
     faq=[
         ("How do I make an AI image on my iPhone?",
          "Open an app that makes images (Image Playground on iPhones with Apple Intelligence, or an app such as "
-         "ChatGPT, Gemini, Meta AI, Grok, Adobe Firefly or Brainy), describe the picture, choose the shape and "
+         "ChatGPT, Gemini, Meta AI, Grok, Adobe Firefly or Pio), describe the picture, choose the shape and "
          "generate. Most can also start from one of your photos."),
         ("Does Image Playground run on the iPhone?",
          "Apple lists Image Playground among the Apple Intelligence features that rely on server models and have "
@@ -164,31 +164,31 @@ of <a href="../blog/best-ai-chat-and-image-generator-apps-iphone.html">AI apps f
          "iPhones with Apple Intelligence: iPhone 15 Pro and Pro Max, iPhone 16 and later, iPhone Air and iPhone "
          "Duo, according to Apple's list of 22 October 2026."),
         ("Can I turn my own photo into an AI image?",
-         "Yes. Image Playground, ChatGPT, Gemini, Meta AI, Grok, Firefly and Brainy can all start from a photo and "
+         "Yes. Image Playground, ChatGPT, Gemini, Meta AI, Grok, Firefly and Pio can all start from a photo and "
          "change it from a description."),
         ("How do I get readable text in an AI image?",
          "Write the exact words in quotes and keep them short. Gemini says its model designs posters with sharp "
-         "text; in Brainy, pick the Text & posters option."),
-        ("Does Brainy make images?",
+         "text; in Pio, pick the Text & posters option."),
+        ("Does Pio make images?",
          "Yes, in its Create tab, from words or one photo, with five image options and five shapes. Creating "
-         "needs Brainy Pro."),
+         "needs Pio Pro."),
     ],
 )
 
 BR_ES = dict(
     path="brainy/es/como-crear-imagenes-con-ia-en-el-iphone.html",
-    app_name="AI Homework Helper: Brainy",
+    app_name="AI Homework Helper: Pio",
     date_iso=ISO, date=D,
     h1="Cómo crear imágenes con IA en el iPhone: Image Playground y 6 apps comparadas (2026)",
     desc=("Cómo hacer una imagen con IA en el iPhone, paso a paso: Image Playground de Apple y las apps ChatGPT, "
-          "Gemini, Meta AI, Grok, Adobe Firefly y Brainy, con las valoraciones del App Store del 23 de octubre de "
+          "Gemini, Meta AI, Grok, Adobe Firefly y Pio, con las valoraciones del App Store del 23 de octubre de "
           "2026 y cómo escribir una descripción que funcione."),
-    section="Guías", kicker="Guía de Brainy",
+    section="Guías", kicker="Guía de Pio",
     standfirst=("No necesitas ordenador ni programa de diseño: describes la imagen, eliges el formato y un modelo de "
                 "IA la dibuja en segundos. Lo que cambia de una app a otra es dónde se hace, qué límites tiene y en qué es buena."),
     tools=["Image Playground", "una app de IA que crea imágenes"],
     intro=f"""
-<p><strong>Hacemos Brainy, la quinta de las siete opciones de esta página.</strong> La app de
+<p><strong>Hacemos Pio, la quinta de las siete opciones de esta página.</strong> La app de
 Apple va primero porque ya está en muchos iPhone.</p>
 
 <h2>Siete formas de crear una imagen con IA en el iPhone</h2>
@@ -203,28 +203,28 @@ Apple va primero porque ya está en muchos iPhone.</p>
 <tr><td>{a(CHATGPT_AS, "ChatGPT")}</td><td>Genera imágenes a partir de una descripción y transforma las que ya tienes con palabras</td><td>Las imágenes van dentro de una app de chat general</td><td>4,8 (11,5 millones)</td></tr>
 <tr><td>{a(GEMINI_AS, "Google Gemini")}</td><td>Genera y edita fotos con Nano Banana 2: controles de cámara y luz, montajes con varias imágenes, carteles con texto nítido</td><td>Cuenta de Google</td><td>4,7 (2,4 millones)</td></tr>
 <tr><td>{a(META_AS, "Meta AI")}</td><td>Crea y edita imágenes; cambias una foto dibujando encima o pidiéndolo</td><td>Unida a las apps y la cuenta de Meta</td><td>4,7 (282.000)</td></tr>
-<tr><td><a href="{BRAINY_STORE}">Brainy</a></td><td>Una pestaña Create para imágenes y vídeos cortos, desde palabras o desde una foto, con cinco opciones de imagen y cinco formatos</td><td>Crear necesita Brainy Pro; el coste en créditos sale antes de crear</td><td>4,7 (3 valoraciones)</td></tr>
+<tr><td><a href="{BRAINY_STORE}">Pio</a></td><td>Una pestaña Create para imágenes y vídeos cortos, desde palabras o desde una foto, con cinco opciones de imagen y cinco formatos</td><td>Crear necesita Pio Pro; el coste en créditos sale antes de crear</td><td>4,7 (3 valoraciones)</td></tr>
 <tr><td>{a(GROK_AS, "Grok")}</td><td>Grok Imagine: imágenes desde texto o voz, cambios en imágenes, fotos convertidas en vídeo</td><td>Cuenta de X</td><td>4,9 (1,5 millones)</td></tr>
 <tr><td>{a(FIREFLY_AS, "Adobe Firefly")}</td><td>Imágenes y vídeo desde texto, Relleno generativo, quitar fondos, varias resoluciones y formatos, modelos de socios</td><td>Pensada para trabajo creativo; cuenta de Adobe</td><td>4,7 (10.900)</td></tr>
 </tbody>
 </table>
 </div>
 
-<h2>Lo que comprobamos en el código de Brainy</h2>
+<h2>Lo que comprobamos en el código de Pio</h2>
 
 <p>Leímos la pantalla Create de la versión que está hoy a la venta (1.4.0) y la lista del
 servidor que carga. Puedes añadir <strong>una foto de referencia</strong> o empezar solo con
 palabras; elegir entre <strong>cinco opciones de imagen</strong>, con el nombre de lo que hacen
 bien (Fast, Detailed, Best quality, Text &amp; posters, Creative), y uno de <strong>cinco
 formatos</strong>: 1:1, 9:16, 16:9, 2:3 o 3:2. El coste en créditos de cada opción se ve antes de
-tocar, y el botón Surprise Me escribe una descripción de ejemplo. Crear forma parte de Brainy
+tocar, y el botón Surprise Me escribe una descripción de ejemplo. Crear forma parte de Pio
 Pro, y antes de la primera imagen la app te pide permiso para mandar la descripción al proveedor
 de imágenes. La app está en inglés.</p>
 """,
     steps=[
         ("Elige dónde se hace la imagen.",
          "Image Playground si tu iPhone tiene Apple Intelligence y la quieres de serie; una app de chat que ya uses "
-         "(ChatGPT, Gemini, Meta AI, Grok) si además quieres hablar la idea; Firefly o Brainy si quieres una "
+         "(ChatGPT, Gemini, Meta AI, Grok) si además quieres hablar la idea; Firefly o Pio si quieres una "
          "pantalla solo para crear."),
         ("Describe la imagen en una frase.",
          "Qué sale, qué hace, dónde y en qué estilo: «un golden retriever con capa de terciopelo, óleo, luz de "
@@ -239,7 +239,7 @@ de imágenes. La app está en inglés.</p>
          "Si el resultado se acerca, pide un solo cambio («luz más cálida», «quita el texto») en vez de reescribir "
          "toda la descripción."),
         ("Para texto en la imagen, escribe las palabras exactas.",
-         "Ponlas entre comillas y que sean pocas. Unos modelos escriben mejor que otros; en Brainy es la opción "
+         "Ponlas entre comillas y que sean pocas. Unos modelos escriben mejor que otros; en Pio es la opción "
          "Text &amp; posters."),
         ("Guárdala y mira cómo puedes usarla.",
          "Guárdala en Fotos, lee las condiciones de la app antes de usarla para un negocio y di que es de IA cuando "
@@ -253,24 +253,24 @@ Freeform. Su valoración en el App Store es la más baja de la lista, y Apple av
 <li><strong>ChatGPT, Gemini, Meta AI y Grok</strong> son asistentes generales que también dibujan; útiles si ya usas
 uno a diario.</li>
 <li><strong>Adobe Firefly</strong> es la más completa para diseño: rellenos, quitar fondos y vídeo.</li>
-<li><strong>Brainy</strong> junta chat, ayuda con deberes desde una foto y creación de imágenes y vídeos en una app de
+<li><strong>Pio</strong> junta chat, ayuda con deberes desde una foto y creación de imágenes y vídeos en una app de
 iPhone, con el coste de cada imagen a la vista antes de hacerla. Aún tiene muy pocas valoraciones, es solo para
-iPhone y no se pueden hacer imágenes sin Brainy Pro. Más en <a href="../../brainy.html">la página de Brainy</a> (en
+iPhone y no se pueden hacer imágenes sin Pio Pro. Más en <a href="../../brainy.html">la página de Pio</a> (en
 inglés) y en nuestra comparativa de <a href="../../blog/es/mejores-apps-ia-chat-e-imagenes-iphone.html">apps de IA
 para chat e imágenes</a>.</li>
 </ul>
 
 <h2>Fuentes</h2>
 <ul>
-<li>Páginas del App Store (descripciones y valoraciones, tienda de EE. UU.) de Image Playground, ChatGPT, Google Gemini, Meta AI, Grok, Adobe Firefly y Brainy, leídas el 23 de octubre de 2026.</li>
+<li>Páginas del App Store (descripciones y valoraciones, tienda de EE. UU.) de Image Playground, ChatGPT, Google Gemini, Meta AI, Grok, Adobe Firefly y Pio, leídas el 23 de octubre de 2026.</li>
 <li>{a(AI_FEATURES_ES, "Apple, funciones y requisitos de Apple Intelligence (121115)")}, publicada el 22 de octubre de 2026.</li>
-<li>Código de Brainy 1.4.0 (pantalla Create) y su lista de modelos del servidor, leídos el 23 de octubre de 2026.</li>
+<li>Código de Pio 1.4.0 (pantalla Create) y su lista de modelos del servidor, leídos el 23 de octubre de 2026.</li>
 </ul>
 """,
     faq=[
         ("¿Cómo creo una imagen con IA en el iPhone?",
          "Abre una app que haga imágenes (Image Playground en los iPhone con Apple Intelligence, o una app como "
-         "ChatGPT, Gemini, Meta AI, Grok, Adobe Firefly o Brainy), describe la imagen, elige el formato y genera. "
+         "ChatGPT, Gemini, Meta AI, Grok, Adobe Firefly o Pio), describe la imagen, elige el formato y genera. "
          "Casi todas pueden partir también de una foto tuya."),
         ("¿Image Playground funciona en el propio iPhone?",
          "Apple pone Image Playground entre las funciones de Apple Intelligence que usan modelos en servidor y "
@@ -279,14 +279,14 @@ para chat e imágenes</a>.</li>
          "Los que tienen Apple Intelligence: iPhone 15 Pro y Pro Max, iPhone 16 y posteriores, iPhone Air e "
          "iPhone Duo, según la lista de Apple del 22 de octubre de 2026."),
         ("¿Puedo convertir una foto mía en una imagen con IA?",
-         "Sí. Image Playground, ChatGPT, Gemini, Meta AI, Grok, Firefly y Brainy pueden partir de una foto y "
+         "Sí. Image Playground, ChatGPT, Gemini, Meta AI, Grok, Firefly y Pio pueden partir de una foto y "
          "cambiarla a partir de una descripción."),
         ("¿Cómo consigo texto legible en una imagen con IA?",
          "Escribe las palabras exactas entre comillas y que sean pocas. Gemini dice que su modelo hace carteles con "
-         "texto nítido; en Brainy, elige la opción Text & posters."),
-        ("¿Brainy crea imágenes?",
+         "texto nítido; en Pio, elige la opción Text & posters."),
+        ("¿Pio crea imágenes?",
          "Sí, en su pestaña Create, desde palabras o desde una foto, con cinco opciones de imagen y cinco "
-         "formatos. Crear necesita Brainy Pro."),
+         "formatos. Crear necesita Pio Pro."),
     ],
 )
 

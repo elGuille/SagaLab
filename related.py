@@ -149,7 +149,7 @@ GROUPS = {
             (RL + "es/alternativas-a-coinstats-y-delta-iphone/", "Alternativas a CoinStats y Delta para iPhone en 2026 (Reviewland)"),
         ]),
     },
-    "Brainy": {
+    "Pio": {
         "en": (["brainy/how-to-make-ai-images-on-iphone.html", "blog/best-ai-chat-and-image-generator-apps-iphone.html"], [
             (RL + "best-ai-chat-apps-iphone-no-account/", "Best AI chat apps for iPhone without an account in 2026 (Reviewland)"),
             (RD + "chaton-alternatives-iphone/", "ChatOn alternatives for iPhone in 2026 (Reditor)"),
@@ -177,7 +177,7 @@ GROUPS = {
 
 # ficha de cada app (en la raiz, en ingles) -> app
 LANDINGS = {"keeper.html": "Photo Vault", "pinku.html": "Pinku", "drop.html": "Drop",
-            "3things.html": "3 Tasks", "crypton.html": "Crypton", "brainy.html": "Brainy"}
+            "3things.html": "3 Tasks", "crypton.html": "Crypton", "brainy.html": "Pio"}
 
 START, END = "<!-- related:start -->", "<!-- related:end -->"
 _BLOCK = re.compile(r"\n?" + re.escape(START) + r".*?" + re.escape(END) + r"\n?", re.S)
