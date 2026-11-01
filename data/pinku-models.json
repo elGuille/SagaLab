@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-19",
+  "updated": "2026-10-31",
   "models": [
     {
       "id": "mlx-community/gemma-3-1b-it-qat-4bit",
@@ -69,6 +69,20 @@
       "architecture": "qwen3",
       "reasoning": true,
       "quality": 35,
+      "strengths": [
+        "Reasoning step by step",
+        "Chatting and summarizing",
+        "Strong in Chinese and 100+ languages"
+      ]
+    },
+    {
+      "id": "mlx-community/Qwen3.5-2B-MLX-4bit",
+      "name": "Qwen 3.5 · 2B",
+      "icon": "qwen",
+      "sizeGB": 1.7,
+      "architecture": "qwen3_5",
+      "reasoning": true,
+      "quality": 45,
       "strengths": [
         "Reasoning step by step",
         "Chatting and summarizing",
@@ -171,7 +185,8 @@
         "Chatting and writing",
         "Writing and summarizing",
         "Translating 140+ languages"
-      ]
+      ],
+      "vision": true
     },
     {
       "id": "mlx-community/DeepSeek-R1-Distill-Qwen-1.5B-4bit",
@@ -186,6 +201,38 @@
         "Reasoning model. May ramble on small devices."
       ],
       "status": "hidden"
+    },
+    {
+      "id": "mlx-community/NVIDIA-Nemotron-3.5-Bolt-E4B-OptiQ-4bit",
+      "name": "Nemotron 3.5 Bolt · E4B",
+      "sizeGB": 7.5,
+      "architecture": "gemma4",
+      "platforms": [
+        "macos"
+      ],
+      "minMemoryGB": 16,
+      "quality": 40,
+      "strengths": [
+        "Chatting and writing",
+        "Writing and summarizing"
+      ],
+      "slowStart": true
+    },
+    {
+      "id": "mlx-community/Astrea-R8-Chat-9B-OptiQ-4bit",
+      "name": "Astrea R8 · 9B",
+      "sizeGB": 8.0,
+      "architecture": "qwen3_5",
+      "platforms": [
+        "macos"
+      ],
+      "minMemoryGB": 16,
+      "quality": 40,
+      "strengths": [
+        "Chatting and writing",
+        "Writing and summarizing"
+      ],
+      "slowStart": true
     }
   ]
 }

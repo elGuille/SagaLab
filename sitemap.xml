@@ -996,6 +996,24 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://aisagalab.com/pinku/models/qwen3-5-2b.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/models/nemotron-3-5-bolt-e4b.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/models/astrea-r8-9b.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://aisagalab.com/pinku/models/gemma-3-1b.html</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
@@ -1062,6 +1080,24 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://aisagalab.com/pinku/ru/models/qwen3-5-2b.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/ru/models/nemotron-3-5-bolt-e4b.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/ru/models/astrea-r8-9b.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://aisagalab.com/pinku/ru/models/gemma-3-1b.html</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
@@ -1124,6 +1160,24 @@
   <url>
     <loc>https://aisagalab.com/pinku/zh/models/llama-3-2-1b.html</loc>
     <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/zh/models/qwen3-5-2b.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/zh/models/nemotron-3-5-bolt-e4b.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aisagalab.com/pinku/zh/models/astrea-r8-9b.html</loc>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

@@ -36,8 +36,8 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 SITE = "https://aisagalab.com"
 CATALOG_URL = "https://pinku-models.web.app/models.json"
 CATALOG = os.path.join(ROOT, "data", "pinku-models.json")
-DATE_ISO = "2026-10-30"
-DATE = {"en": "30 October 2026", "ru": "30 октября 2026 г.", "zh": "2026年10月30日"}
+DATE_ISO = "2026-11-01"
+DATE = {"en": "1 November 2026", "ru": "1 ноября 2026 г.", "zh": "2026年11月1日"}
 LINKEDIN = "https://www.linkedin.com/in/maruta/"
 PT = "118348020"
 STORE = "https://apps.apple.com/app/apple-store/id6754878073?pt=%s&amp;ct=%%s&amp;mt=8" % PT
@@ -76,6 +76,7 @@ LIC = {
     "gemma": ("Gemma Terms of Use", "https://ai.google.dev/gemma/terms"),
     "llama3.2": ("Llama 3.2 Community License", "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct/blob/main/LICENSE.txt"),
     "apache-2.0": ("Apache 2.0", "https://www.apache.org/licenses/LICENSE-2.0"),
+    "openmdw": ("OpenMDW 1.1", "https://openmdw.ai/license/1-1/"),
     "lfm1.0": ("LFM Open License v1.0", "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct/blob/main/LICENSE"),
 }
 
@@ -141,6 +142,19 @@ ED = {
                 "zh": "23 亿有效参数（含嵌入层为 51 亿）"}, test=5,
         st={"ru": ["Разговор и письмо", "Письмо и пересказ", "Перевод на 140+ языков"],
             "zh": ["聊天和写作", "写作和总结", "翻译 140 多种语言"]}),
+    "mlx-community/Qwen3.5-2B-MLX-4bit": dict(
+        slug="qwen3-5-2b", short="Qwen3.5 2B", maker="Qwen (Alibaba)", base="Qwen/Qwen3.5-2B", lic="apache-2.0",
+        params={"en": "2 billion", "ru": "2 млрд", "zh": "20 亿"}, test=5,
+        st={"ru": ["Пошаговые рассуждения", "Разговор и пересказ", "Сильна в китайском и 100+ языках"],
+            "zh": ["一步步推理", "聊天和总结", "中文和 100 多种语言表现好"]}),
+    "mlx-community/NVIDIA-Nemotron-3.5-Bolt-E4B-OptiQ-4bit": dict(
+        slug="nemotron-3-5-bolt-e4b", short="Nemotron 3.5 Bolt E4B", maker="NVIDIA", base="nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16", lic="openmdw",
+        params={"en": "8 billion (4 billion effective)", "ru": "8 млрд (4 млрд эффективных)", "zh": "80 亿（有效参数 40 亿）"}, test=5,
+        st={"ru": ["Разговор и письмо", "Письмо и пересказ"], "zh": ["聊天和写作", "写作和总结"]}),
+    "mlx-community/Astrea-R8-Chat-9B-OptiQ-4bit": dict(
+        slug="astrea-r8-9b", short="Astrea R8 9B", maker="Altworld", base="HemmingwayAI/Astrea-R8-Chat-9B", lic="apache-2.0",
+        params={"en": "9 billion", "ru": "9 млрд", "zh": "90 亿"}, test=5,
+        st={"ru": ["Разговор и письмо", "Письмо и пересказ"], "zh": ["聊天和写作", "写作和总结"]}),
 }
 
 T = {
@@ -341,6 +355,29 @@ T = {
 
 # ---------------------------------------------------------------- datos
 
+T["en"].update(m_h1_mac="%s on Mac: size, memory and which Macs run it", m_title_mac="%s on Mac: size, RAM needed | Pinku",
+    m_desc_mac="%s by %s offline on Mac with Pinku: %s GB download, needs %s GB of memory, licence %s. Which Macs run it.", mac_col16="Mac 16 GB+",
+    dev_mac_only="Pinku offers this model only on a Mac. It is not listed on iPhone or iPad.",
+    dev_ans_mac="Only on a Mac: Pinku lists it on Macs with Apple silicon and at least %s GB of memory, not on iPhone or iPad.",
+    try_mac=["Install Pinku on your Mac from the App Store.", "Open the model list; Pinku only shows models your Mac has memory for.", "Choose %s. It needs Pinku Pro (yearly subscription or one-time purchase); chatting with Llama 3.2 1B is free.", "Download it once. After that it works offline."],
+    slow_note="It takes about 15 seconds to start answering; Pinku tells you so in the model list.",
+    m_stand_mac="%s by %s, as it runs offline in Pinku for Mac: a %s GB download that needs %s GB of memory. Which Macs can run it, and how to try it.")
+T["ru"].update(m_h1_mac="%s на Mac: размер, память и на каких Mac работает", m_title_mac="%s на Mac: размер, сколько нужно ОЗУ | Pinku",
+    m_desc_mac="%s от %s офлайн на Mac в Pinku: загрузка %s ГБ, нужно %s ГБ памяти, лицензия %s. На каких Mac работает.", mac_col16="Mac 16 ГБ+",
+    dev_mac_only="Pinku предлагает эту модель только на Mac. На iPhone и iPad её нет в списке.",
+    dev_ans_mac="Только на Mac: Pinku показывает её на Mac с Apple silicon и не меньше %s ГБ памяти, но не на iPhone и iPad.",
+    try_mac=["Установите Pinku на Mac из App Store.", "Откройте список моделей: Pinku показывает только те, на которые хватает памяти.", "Выберите %s. Для неё нужен Pinku Pro (годовая подписка или разовая покупка); общение с Llama 3.2 1B бесплатно.", "Скачайте её один раз. Дальше она работает без интернета."],
+    slow_note="Она начинает отвечать примерно через 15 секунд; Pinku предупреждает об этом в списке моделей.",
+    m_stand_mac="%s от %s в офлайн-режиме в Pinku для Mac: загрузка %s ГБ, нужно %s ГБ памяти. На каких Mac она работает и как её попробовать.")
+T["zh"].update(m_h1_mac="%s 在 Mac 上：大小、内存和支持的 Mac", m_title_mac="%s 在 Mac 上：大小、所需内存 | Pinku",
+    m_desc_mac="在 Pinku 中离线运行 %s（%s）：下载 %s GB，需要 %s GB 内存，许可证 %s。哪些 Mac 能运行。", mac_col16="Mac 16 GB+",
+    dev_mac_only="Pinku 只在 Mac 上提供这个模型，iPhone 和 iPad 的列表中没有它。",
+    dev_ans_mac="只能在 Mac 上运行：Pinku 只在至少 %s GB 内存的 Apple 芯片 Mac 上显示它，iPhone 和 iPad 上没有。",
+    try_mac=["从 App Store 在 Mac 上安装 Pinku。", "打开模型列表；Pinku 只显示内存足够的模型。", "选择 %s。它需要 Pinku Pro（年度订阅或一次性购买）；使用 Llama 3.2 1B 聊天是免费的。", "下载一次，之后可离线使用。"],
+    slow_note="它大约需要 15 秒才开始回答；Pinku 在模型列表中会提示。",
+    m_stand_mac="%s（%s），在 Mac 版 Pinku 中离线运行：下载 %s GB，需要 %s GB 内存。哪些 Mac 能运行，以及如何试用。")
+
+
 def fetch():
     data = urllib.request.urlopen(CATALOG_URL, timeout=20).read()
     json.loads(data)
@@ -360,7 +397,9 @@ def models():
         e = dict(ED[m["id"]])
         e.update(id=m["id"], size=m["sizeGB"], free=bool(m.get("freeFrom")) or (bool(m.get("free")) and not m.get("proFrom")), reasoning=bool(m.get("reasoning")),
                  strengths_en=m.get("strengths", []), quality=m.get("quality", 0))
-        e["min"] = math.ceil(m["sizeGB"] / SHARE * 10) / 10
+        e["min"] = max(math.ceil(m["sizeGB"] / SHARE * 10) / 10, m.get("minMemoryGB", 0))
+        e["mac_only"] = m.get("platforms") == ["macos"]
+        e["slow"] = bool(m.get("slowStart"))
         out.append(e)
     out.sort(key=lambda e: (e["size"], e["short"]))
     return cat.get("updated", ""), out
@@ -373,6 +412,15 @@ def status(size, ram, ios=True):
     if ios and size > limit * EDGE:
         return "edge"
     return "yes"
+
+
+def fit(e, ram, ios=True):
+    """status() más lo que dice el catálogo: platforms y minMemoryGB (Mac 1.4)."""
+    if ios and e["mac_only"]:
+        return "no"
+    if not ios and ram < e["min"]:
+        return "no"
+    return status(e["size"], ram, ios)
 
 
 def num(x, lang):
@@ -501,7 +549,7 @@ TOOL_JS = """<script>
     var v = sel.value; out.innerHTML = '';
     if (!v) return;
     var p = v.split('|'), ram = parseFloat(p[1]), ios = p[0] !== 'mac', name = sel.options[sel.selectedIndex].text;
-    var rows = D.models.map(function (m) { return [m, status(m.size, ram, ios)]; });
+    var rows = D.models.map(function (m) { return [m, (ios && m.macOnly) || (!ios && ram < m.min) ? 'no' : status(m.size, ram, ios)]; });
     var ok = rows.filter(function (r) { return r[1] !== 'no'; });
     var h = '<h3>' + esc(D.t.head.replace('%s', name).replace('%d', ok.length).replace('%d', D.models.length)) + '</h3>';
     if (!ok.length) h += '<p>' + esc(D.t.none) + '</p>';
@@ -540,18 +588,18 @@ def tool_page(lang, updated, ms):
     opts.append('</optgroup>')
     data = {"share": SHARE, "edge": EDGE,
             "t": {"head": t["res_head"], "none": t["res_none"], "yes": t["st_yes"], "edge": t["st_edge"], "no": t["st_no"], "edgeNote": t["edge_note"]},
-            "models": [{"name": e["short"], "size": e["size"], "sizeTxt": sz(e["size"]), "plan": plan_cell(e, lang),
+            "models": [{"name": e["short"], "size": e["size"], "min": e["min"], "macOnly": e["mac_only"], "sizeTxt": sz(e["size"]), "plan": plan_cell(e, lang),
                         "href": rel(path, model_path(e, lang))} for e in ms]}
     tool = ('<div class="fit-tool">\n<form onsubmit="return false"><label for="fit-device">%s</label>\n<select id="fit-device">\n%s\n</select></form>\n'
             '<div id="fit-out" class="fit-out" aria-live="polite"></div>\n<noscript><p>%s</p></noscript>\n</div>\n'
             % (t["pick"], "\n".join(opts), t["noscript"]))
     # tabla completa (funciona sin JavaScript)
     mark = {"yes": "&#10003;", "edge": "&#8776;", "no": "&ndash;"}
-    head = "".join("<th>%s</th>" % (t["tier"] % r) for r in TIERS) + "<th>%s</th>" % t["mac_col"]
+    head = "".join("<th>%s</th>" % (t["tier"] % r) for r in TIERS) + "<th>%s</th><th>%s</th>" % (t["mac_col"], t["mac_col16"])
     rows = []
     for e in ms:
-        cells = "".join('<td title="%s">%s</td>' % (t["st_" + status(e["size"], r)], mark[status(e["size"], r)]) for r in TIERS)
-        cells += "<td>%s</td>" % mark[status(e["size"], 8, ios=False)]
+        cells = "".join('<td title="%s">%s</td>' % (t["st_" + fit(e, r)], mark[fit(e, r)]) for r in TIERS)
+        cells += "<td>%s</td><td>%s</td>" % (mark[fit(e, 8, ios=False)], mark[fit(e, 16, ios=False)])
         rows.append('<tr><td><a href="%s">%s</a></td><td>%s</td><td>%s</td>%s<td>%s</td><td>%s</td></tr>'
                     % (rel(path, model_path(e, lang)), esc(e["short"]), sz(e["size"]), sz(e["min"]), cells, plan_cell(e, lang), test_cell(e, lang)))
     legend = "&#10003; %s &middot; &#8776; %s &middot; &ndash; %s" % (t["st_yes"], t["st_edge"], t["st_no"])
@@ -615,8 +663,8 @@ def model_page(lang, updated, ms, e):
     good = "<h2>%s</h2>\n<ul>\n%s\n</ul>\n<p>%s</p>\n" % (t["h_good"], "\n".join("<li>%s</li>" % esc(s) for s in strengths), t["good_src"])
     if e.get("test") is not None:
         good += "<p>%s %s</p>\n" % (esc(t["test_expl"]), esc(test_cell(e, lang)) + ("." if lang != "zh" else "。"))
-    yes = [iphone_name(n, lang) for n, r in IPHONES if status(e["size"], r) == "yes"]
-    edge = [iphone_name(n, lang) for n, r in IPHONES if status(e["size"], r) == "edge"]
+    yes = [iphone_name(n, lang) for n, r in IPHONES if fit(e, r) == "yes"]
+    edge = [iphone_name(n, lang) for n, r in IPHONES if fit(e, r) == "edge"]
     sep = "、" if lang == "zh" else ", "
     colon = "：" if lang == "zh" else ":"
     dev = "<h2>%s</h2>\n" % t["h_dev"]
@@ -624,21 +672,26 @@ def model_page(lang, updated, ms, e):
         dev += "<p><strong>%s%s</strong> %s</p>\n" % (t["dev_iphone"], colon, esc(sep.join(yes)))
     if edge:
         dev += "<p><strong>%s%s</strong> %s</p>\n" % (t["dev_edge"], colon, esc(sep.join(edge)))
-    if not yes and not edge:
-        dev += "<p><strong>%s%s</strong> %s</p>\n" % (t["dev_iphone"], colon, t["dev_none"])
-    dev += "<p><strong>%s%s</strong> %s</p>\n" % (t["dev_ipad"], colon, t["dev_ipad_txt"] % num(e["min"], lang))
+    if e["mac_only"]:
+        dev += "<p>%s</p>\n" % t["dev_mac_only"]
+    else:
+        if not yes and not edge:
+            dev += "<p><strong>%s%s</strong> %s</p>\n" % (t["dev_iphone"], colon, t["dev_none"])
+        dev += "<p><strong>%s%s</strong> %s</p>\n" % (t["dev_ipad"], colon, t["dev_ipad_txt"] % num(e["min"], lang))
     mac = t["dev_mac_all"] if e["min"] <= 8 else t["dev_mac_txt"] % num(e["min"], lang)
     dev += "<p><strong>%s%s</strong> %s</p>\n" % (t["dev_mac"], colon, mac)
     if edge:
         dev += '<p class="article-note">%s</p>\n' % t["edge_note"]
     dev += '<p><a href="%s">%s</a></p>\n' % (rel(path, TOOL_PATH[lang]), t["tool_link"])
-    steps = [s % e["short"] if "%s" in s else s for s in (t["try_free"] if e["free"] else t["try_pro"])]
+    steps = [s % e["short"] if "%s" in s else s for s in (t["try_free"] if e["free"] else t["try_mac"] if e["mac_only"] else t["try_pro"])]
     tr = '<h2>%s</h2>\n<ol>\n%s\n</ol>\n<p><a href="%s">%s</a></p>\n' % (
         t["h_try"], "\n".join("<li>%s</li>" % esc(s) for s in steps), store(ctv), t["get"])
     other = "<h2>%s</h2>\n<ul>\n%s\n</ul>\n" % (t["h_other"], "\n".join(
         '<li><a href="%s">%s</a> &middot; %s</li>' % (rel(path, model_path(o, lang)), esc(o["short"]), sz(o["size"]))
         for o in ms if o is not e))
-    if yes:
+    if e["mac_only"]:
+        dev_ans = t["dev_ans_mac"] % num(e["min"], lang)
+    elif yes:
         dev_ans = t["dev_ans"] % (num(e["min"], lang), sep.join(yes)) + (t["edge_ans"] % sep.join(edge) if edge else "")
     elif edge:
         dev_ans = t["edge_only"] % (num(e["min"], lang), sep.join(edge))
@@ -646,9 +699,14 @@ def model_page(lang, updated, ms, e):
         dev_ans = t["dev_ans_none"] % num(e["min"], lang)
     vals = {"m": e["short"], "dev": dev_ans, "plan": t["plan_free"] if e["free"] else t["plan_pro"], "size": num(e["size"], lang)}
     faq = [(q % vals, a % vals) for q, a in t["faq_model"]]
-    h1 = t["m_h1"] % e["short"]
+    if e["slow"]:
+        good += "<p>%s</p>\n" % t["slow_note"]
+    mo = "_mac" if e["mac_only"] else ""
+    h1 = t["m_h1" + mo] % e["short"]
     stand = t["m_stand"] % (e["short"], e["maker"], num(e["size"], lang), num(e["min"], lang))
-    desc = t["m_desc"] % (e["short"], e["maker"], num(e["size"], lang), num(e["min"], lang), lname)
+    if e["mac_only"]:
+        stand = t["m_stand_mac"] % (e["short"], e["maker"], num(e["size"], lang), num(e["min"], lang))
+    desc = t["m_desc" + mo] % (e["short"], e["maker"], num(e["size"], lang), num(e["min"], lang), lname)
     body = (header(lang, t["model_kicker"], h1, stand, path, paths)
             + '        <div class="article-body">\n'
             + "<p>%s</p>\n" % (t["disc_model"] % fdate(updated, lang))
@@ -663,7 +721,7 @@ def model_page(lang, updated, ms, e):
               "about": {"@type": "SoftwareSourceCode", "name": e["short"], "codeRepository": card,
                         "license": llink, "author": {"@type": "Organization", "name": e["maker"]}}},
              faq_ld(faq)]
-    return dict(path=path, lang=HTML_LANG[lang], title=t["m_title"] % e["short"], desc=desc, og_title=h1,
+    return dict(path=path, lang=HTML_LANG[lang], title=t["m_title" + mo] % e["short"], desc=desc, og_title=h1,
                 body=body, jsonld=ld(graph), alternates=alternates(paths), ct=ctv)
 
 
