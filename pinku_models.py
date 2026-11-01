@@ -153,7 +153,7 @@ ED = {
         st={"ru": ["Разговор и письмо", "Письмо и пересказ"], "zh": ["聊天和写作", "写作和总结"]}),
     "mlx-community/Astrea-R8-Chat-9B-OptiQ-4bit": dict(
         slug="astrea-r8-9b", short="Astrea R8 9B", maker="Altworld", base="HemmingwayAI/Astrea-R8-Chat-9B", lic="apache-2.0",
-        params={"en": "9 billion", "ru": "9 млрд", "zh": "90 亿"}, test=5,
+        params={"en": "9 billion", "ru": "9 млрд", "zh": "90 亿"}, test=4,
         st={"ru": ["Разговор и письмо", "Письмо и пересказ"], "zh": ["聊天和写作", "写作和总结"]}),
 }
 
@@ -360,21 +360,21 @@ T["en"].update(m_h1_mac="%s on Mac: size, memory and which Macs run it", m_title
     dev_mac_only="Pinku offers this model only on a Mac. It is not listed on iPhone or iPad.",
     dev_ans_mac="Only on a Mac: Pinku lists it on Macs with Apple silicon and at least %s GB of memory, not on iPhone or iPad.",
     try_mac=["Install Pinku on your Mac from the App Store.", "Open the model list; Pinku only shows models your Mac has memory for.", "Choose %s. It needs Pinku Pro (yearly subscription or one-time purchase); chatting with Llama 3.2 1B is free.", "Download it once. After that it works offline."],
-    slow_note="It takes about 15 seconds to start answering; Pinku tells you so in the model list.",
+    slow_note="The first answer after loading is slow to start: on an M3 Mac with 16 GB we measured from under 30 seconds to about a minute. Pinku warns about the slow start in the model list.",
     m_stand_mac="%s by %s, as it runs offline in Pinku for Mac: a %s GB download that needs %s GB of memory. Which Macs can run it, and how to try it.")
 T["ru"].update(m_h1_mac="%s на Mac: размер, память и на каких Mac работает", m_title_mac="%s на Mac: размер, сколько нужно ОЗУ | Pinku",
     m_desc_mac="%s от %s офлайн на Mac в Pinku: загрузка %s ГБ, нужно %s ГБ памяти, лицензия %s. На каких Mac работает.", mac_col16="Mac 16 ГБ+",
     dev_mac_only="Pinku предлагает эту модель только на Mac. На iPhone и iPad её нет в списке.",
     dev_ans_mac="Только на Mac: Pinku показывает её на Mac с Apple silicon и не меньше %s ГБ памяти, но не на iPhone и iPad.",
     try_mac=["Установите Pinku на Mac из App Store.", "Откройте список моделей: Pinku показывает только те, на которые хватает памяти.", "Выберите %s. Для неё нужен Pinku Pro (годовая подписка или разовая покупка); общение с Llama 3.2 1B бесплатно.", "Скачайте её один раз. Дальше она работает без интернета."],
-    slow_note="Она начинает отвечать примерно через 15 секунд; Pinku предупреждает об этом в списке моделей.",
+    slow_note="Первый ответ после загрузки начинается не сразу: на Mac с M3 и 16 ГБ мы намерили от менее 30 секунд до примерно минуты. Pinku предупреждает о медленном старте в списке моделей.",
     m_stand_mac="%s от %s в офлайн-режиме в Pinku для Mac: загрузка %s ГБ, нужно %s ГБ памяти. На каких Mac она работает и как её попробовать.")
 T["zh"].update(m_h1_mac="%s 在 Mac 上：大小、内存和支持的 Mac", m_title_mac="%s 在 Mac 上：大小、所需内存 | Pinku",
     m_desc_mac="在 Pinku 中离线运行 %s（%s）：下载 %s GB，需要 %s GB 内存，许可证 %s。哪些 Mac 能运行。", mac_col16="Mac 16 GB+",
     dev_mac_only="Pinku 只在 Mac 上提供这个模型，iPhone 和 iPad 的列表中没有它。",
     dev_ans_mac="只能在 Mac 上运行：Pinku 只在至少 %s GB 内存的 Apple 芯片 Mac 上显示它，iPhone 和 iPad 上没有。",
     try_mac=["从 App Store 在 Mac 上安装 Pinku。", "打开模型列表；Pinku 只显示内存足够的模型。", "选择 %s。它需要 Pinku Pro（年度订阅或一次性购买）；使用 Llama 3.2 1B 聊天是免费的。", "下载一次，之后可离线使用。"],
-    slow_note="它大约需要 15 秒才开始回答；Pinku 在模型列表中会提示。",
+    slow_note="加载后的第一次回答启动较慢：在 16 GB 内存的 M3 Mac 上，我们测得不到 30 秒到约 1 分钟。Pinku 在模型列表中会提示启动较慢。",
     m_stand_mac="%s（%s），在 Mac 版 Pinku 中离线运行：下载 %s GB，需要 %s GB 内存。哪些 Mac 能运行，以及如何试用。")
 
 
