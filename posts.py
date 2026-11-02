@@ -417,6 +417,14 @@ INDEX_EN = """
                 first, disclosed.</p>
             </li>
             <li>
+                <a href="best-ai-apps-youtube-shorts-iphone.html">Best AI apps to make YouTube Shorts on iPhone (2026)</a>
+                <p>CapCut, Faceless, Dora, Vizard and VEED Lite, by where your video starts. Dora is ours, and third.</p>
+            </li>
+            <li>
+                <a href="best-ai-anime-video-apps-iphone.html">Best AI anime video apps for iPhone (2026)</a>
+                <p>Anijam, Kling AI, Dora, PixVerse Lite and ToonMe for anime-style video and portraits. Dora is ours, and third.</p>
+            </li>
+            <li>
                 <a href="best-ai-video-generator-apps-iphone.html">Best AI video generator apps for iPhone in 2026</a>
                 <p>Runway, Kling AI, Pika, PixVerse, Luma Dream Machine, invideo,
                 CapCut and our own Dora: what each one is best at, how it
@@ -522,6 +530,14 @@ INDEX_ES = """
                 <p>HeyGen, Captions, Dora, Vmake Labs y Zeely ordenadas para anuncios
                 estilo UGC: escenas de producto, avatares que hablan, edici&oacute;n y
                 lanzamiento. Una es nuestra, y lo decimos.</p>
+            </li>
+            <li>
+                <a href="mejores-apps-ia-youtube-shorts-iphone.html">Mejores apps de IA para YouTube Shorts en iPhone (2026)</a>
+                <p>CapCut, Faceless, Dora, Vizard y VEED Lite, seg&uacute;n de d&oacute;nde parte tu v&iacute;deo. Dora es nuestra y va tercera.</p>
+            </li>
+            <li>
+                <a href="mejores-apps-ia-video-anime-iphone.html">Mejores apps de IA para v&iacute;deos de anime en iPhone (2026)</a>
+                <p>Anijam, Kling AI, Dora, PixVerse Lite y ToonMe para v&iacute;deo y retratos estilo anime. Dora es nuestra y va tercera.</p>
             </li>
             <li>
                 <a href="mejores-apps-generador-video-ia-iphone.html">Las mejores apps para generar v&iacute;deo con IA en iPhone (2026)</a>
