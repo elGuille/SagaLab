@@ -987,6 +987,8 @@ import guides_nov02  # noqa: E402  (Dora: cuanto cuesta un video o una imagen de
 GUIDES += guides_nov02.GUIDES
 import guides_nov02b  # noqa: E402  (Dora: como hacer imagenes en Claude)
 GUIDES += guides_nov02b.GUIDES
+import guides_nov03  # noqa: E402  (Dora: como animar una foto con Claude)
+GUIDES += guides_nov03.GUIDES
 
 
 def _alts(en, es):

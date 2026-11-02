@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to animate a photo in Claude (2026) | Saga Labs</title>
+    <meta name="description" content="Claude cannot animate a photo by itself; with a video connector it can. How to give it the photo, how to write the motion, what it costs (31 coins for 8 seconds by default) and three real photo-to-video results with their prompts.">
+    <link rel="canonical" href="https://aisagalab.com/dora/how-to-animate-a-photo-in-claude.html">
+    <link rel="alternate" hreflang="en" href="https://aisagalab.com/dora/how-to-animate-a-photo-in-claude.html">
+    <link rel="alternate" hreflang="es" href="https://aisagalab.com/dora/es/como-animar-una-foto-con-claude.html">
+    <link rel="alternate" hreflang="x-default" href="https://aisagalab.com/dora/how-to-animate-a-photo-in-claude.html">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../blog.css">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <script src="/umami.js" defer></script>
+
+    <meta property="og:title" content="How to animate a photo in Claude (2026)">
+    <meta property="og:description" content="Claude cannot animate a photo by itself; with a video connector it can. How to give it the photo, how to write the motion, what it costs (31 coins for 8 seconds by default) and three real photo-to-video results with their prompts.">
+    <meta property="og:url" content="https://aisagalab.com/dora/how-to-animate-a-photo-in-claude.html">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://aisagalab.com/images/preview.jpg">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="How to animate a photo in Claude (2026)">
+    <meta property="twitter:description" content="Claude cannot animate a photo by itself; with a video connector it can. How to give it the photo, how to write the motion, what it costs (31 coins for 8 seconds by default) and three real photo-to-video results with their prompts.">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "How to animate a photo in Claude (2026)",
+      "description": "Claude cannot animate a photo by itself; with a video connector it can. How to give it the photo, how to write the motion, what it costs (31 coins for 8 seconds by default) and three real photo-to-video results with their prompts.",
+      "inLanguage": "en",
+      "articleSection": "Guides",
+      "datePublished": "2026-11-03",
+      "dateModified": "2026-11-03",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://aisagalab.com/dora/how-to-animate-a-photo-in-claude.html"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Maruta G",
+        "url": "https://www.linkedin.com/in/maruta/",
+        "sameAs": [
+          "https://www.linkedin.com/in/maruta/",
+          "https://github.com/Saga-Labs",
+          "https://x.com/SagaAILab"
+        ],
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Saga Labs",
+          "url": "https://aisagalab.com/"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Saga Labs",
+        "url": "https://aisagalab.com/",
+        "sameAs": [
+          "https://aisagalab.com/",
+          "https://x.com/SagaAILab",
+          "https://github.com/Saga-Labs"
+        ]
+      }
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to animate a photo in Claude (2026)",
+      "description": "Claude cannot animate a photo by itself; with a video connector it can. How to give it the photo, how to write the motion, what it costs (31 coins for 8 seconds by default) and three real photo-to-video results with their prompts.",
+      "inLanguage": "en",
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "Claude"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Dora connector"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Have the photo ready.",
+          "text": "In our three examples the photo was a public https link to an image. See below for what we know about other ways."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Say how it should move.",
+          "text": "One or two actions, who does them, and what the camera does: “she smiles and picks up the phone, fixed camera”."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Choose the length.",
+          "text": "Four seconds for one action, eight for a walk and a wave. Say vertical, horizontal or square."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Ask for the price first.",
+          "text": "Add “tell me the cost first and wait for my confirmation”; otherwise Claude may start straight away."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Open the video.",
+          "text": "The video comes back as a link to the file, not inside the chat. Download it from there."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can Claude animate a photo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not by itself: Claude has no video model. With a video connector such as Dora, you give it the photo and describe the movement, and the connector makes a short clip and returns a link to it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does it cost to animate a photo in Claude?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your Claude plan does not pay for it. With Dora the default, Seedance 2 Mini, is 31 coins for 8 seconds and 16 for 4 seconds at 480p, roughly $0.16 to $0.62."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I give Claude the photo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In our examples the photo was a public https link to the image. We have not tested attaching it straight to the chat, so if that fails, use a public link."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long should the clip be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Four seconds is enough for one action, like picking up a phone; a walk and a wave took eight."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the video come with sound?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "None of our three examples has a sound track. Some models can add sound, and it costs more."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the result shown in the chat?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Videos come back as a link to the file, not inside the chat."
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+<nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <h1>Saga <span class="ai-gradient">AI</span> <span class="lab-gradient">Lab</span></h1>
+            </a>
+            <div class="nav-menu">
+                <a href="/blog/" class="nav-link">Blog</a>
+                <a href="../index.html#mobile-apps" class="nav-link">Apps</a>
+                <a href="../faq.html" class="nav-link">FAQ</a>
+                <a href="mailto:sagalabs@proton.me" class="nav-link">Contact</a>
+                <a href="https://x.com/SagaAILab" target="_blank" class="icon-link" aria-label="X (Twitter)">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                        <path d="M18.244 2H21l-6.5 7.43L22.5 22H15.9l-4.7-6.2L5.7 22H3l7-8.02L1.8 2h6.8l4.3 5.7L18.244 2zm-2.43 18h1.64L8.29 4H6.57l9.244 16z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/Saga-Labs" target="_blank" class="icon-link" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                        <path d="M12 2C6.477 2 2 6.486 2 12.017c0 4.424 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.238-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.464-1.11-1.464-.908-.62.069-.607.069-.607 1.004.071 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.833.092-.647.35-1.088.636-1.338-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.748-1.026 2.748-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.337 4.695-4.565 4.943.359.31.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .268.18.58.688.481A10.019 10.019 0 0 0 22 12.017C22 6.486 17.523 2 12 2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="article-wrap">
+        <p class="article-kicker">How to</p>
+        <h1>How to animate a photo in Claude (2026)</h1>
+        <p class="article-standfirst">Give Claude a photo, say how it should move, and a video connector turns it into a short clip. Here is how, what it costs, and three photos animated that way, with the exact prompts.</p>
+        <p class="article-meta"><a href="https://www.linkedin.com/in/maruta/" rel="author me noopener" target="_blank">Maruta G</a> &middot; 3 November 2026
+            <span class="lang-switch"> &middot; <a href="es/como-animar-una-foto-con-claude.html">Leer en espa&ntilde;ol</a></span>
+        </p>
+        <div class="article-body">
+<p><strong>Short answer:</strong> Claude has no image or video model of its own (Anthropic's help
+center says it does not generate photos or illustrations, <a href="https://support.claude.com/en/articles/9002504-can-claude-produce-images" target="_blank" rel="noopener">Can Claude produce images?</a>),
+so it cannot animate a photo by itself. With a video connector it can: you give it the photo and
+describe the movement, and the connector makes the clip. With Dora's connector the default model,
+Seedance 2 Mini, costs 31 coins for 8 seconds, roughly $0.31 to $0.62, paid with Dora coins, not your
+Claude plan.</p>
+
+<h2>Before you start</h2>
+<p>You need Claude with a custom connector (Anthropic lists every plan, Free limited to one,
+<a href="https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp" target="_blank" rel="noopener">Claude Help Center</a>) and a Dora account with coins. Adding the connector takes
+about a minute; the steps are in <a href="how-to-make-images-in-claude.html">how to make images in
+Claude</a>, so they are not repeated here.</p>
+
+<h2>Step by step</h2>
+<ol class="howto-steps">
+<li><strong>Have the photo ready.</strong> In our three examples the photo was a public https link to an image. See below for what we know about other ways.</li>
+<li><strong>Say how it should move.</strong> One or two actions, who does them, and what the camera does: “she smiles and picks up the phone, fixed camera”.</li>
+<li><strong>Choose the length.</strong> Four seconds for one action, eight for a walk and a wave. Say vertical, horizontal or square.</li>
+<li><strong>Ask for the price first.</strong> Add “tell me the cost first and wait for my confirmation”; otherwise Claude may start straight away.</li>
+<li><strong>Open the video.</strong> The video comes back as a link to the file, not inside the chat. Download it from there.</li>
+</ol>
+
+<h2>How to give Claude the photo</h2>
+<p>In all three examples below, the photo was passed as a public https link to an image (the address
+of a picture already stored in Dora). That is what we can show worked. We have not tested attaching a
+photo straight to the Claude chat for this, so we do not say whether it works; if it fails, put the
+photo somewhere it has a public link and give Claude that link.</p>
+
+<h2>How to write the movement</h2>
+<ul>
+<li><strong>Start from what is in the photo.</strong> “The woman from the photo…” keeps the person;
+naming objects that are in the picture (the wall phone, the lamp) gives the motion something to act on.</li>
+<li><strong>One action per short clip.</strong> Picking up a phone fits in 4 seconds; walking across a
+room and waving needed 8.</li>
+<li><strong>Say what the camera does.</strong> “Fixed camera” keeps the frame still; “handheld” lets it
+move and follow.</li>
+<li><strong>Keep the look.</strong> Repeat the style of the photo (“warm 1980s film look”) so the clip
+matches it.</li>
+</ul>
+
+<h2>Three photos animated this way</h2>
+<p>All three were made with Dora's connector called from Claude, on 1 and 2 November 2026, with
+Seedance 2 Mini, and are kept in Dora's records with their prompt, settings and cost. None was made
+for this page. The woman is not a real person: the first photo was generated with Dora, and the other
+two are versions of it. None of the three files has a sound track. Click a frame to watch the clip.</p>
+<h3>1. A walk and a wave</h3>
+<div style="display:flex;gap:12px;flex-wrap:wrap;margin:16px 0">
+<figure style="margin:0;flex:1 1 140px;max-width:240px"><img src="../images/dora/claude/photo-living-room.webp" width="360" height="645" loading="lazy" alt="Starting photo" style="display:block;width:100%;height:auto;border-radius:8px"><figcaption>Starting photo</figcaption></figure>
+<figure style="margin:0;flex:1 1 140px;max-width:240px"><a href="https://doravideo.com/v/3V5hZeAlmR2wFIm_jNXwzA" target="_blank" rel="noopener"><img src="../images/dora/claude/clip-walk-wave.webp" width="360" height="628" loading="lazy" alt="A frame from the video" style="display:block;width:100%;height:auto;border-radius:8px"></a><figcaption>A frame from the video</figcaption></figure>
+</div>
+<p><a href="https://doravideo.com/v/3V5hZeAlmR2wFIm_jNXwzA" target="_blank" rel="noopener">Watch the video (MP4)</a> &middot; Seedance 2 Mini, vertical 9:16, 8 seconds, 480p, 31 coins.</p>
+<p><strong>Exact video prompt:</strong></p>
+<blockquote>The woman from the photo walks toward the camera across the bright room, smiles and waves, her hair moving slightly, handheld camera, natural daylight</blockquote>
+<p>She walks up to the camera, smiles and waves, and the room stays the same. The camera follows her so closely that the clip ends on her face and shoulders, not her whole body.</p>
+<h3>2. A 1980s photo picks up the phone</h3>
+<div style="display:flex;gap:12px;flex-wrap:wrap;margin:16px 0">
+<figure style="margin:0;flex:1 1 140px;max-width:240px"><img src="../images/dora/claude/photo-1980s-wall-phone.webp" width="360" height="645" loading="lazy" alt="Starting photo" style="display:block;width:100%;height:auto;border-radius:8px"><figcaption>Starting photo</figcaption></figure>
+<figure style="margin:0;flex:1 1 140px;max-width:240px"><a href="https://doravideo.com/v/RCSbVmF_CT1CYPfOry6xkg" target="_blank" rel="noopener"><img src="../images/dora/claude/clip-wall-phone.webp" width="360" height="628" loading="lazy" alt="A frame from the video" style="display:block;width:100%;height:auto;border-radius:8px"></a><figcaption>A frame from the video</figcaption></figure>
+</div>
+<p><a href="https://doravideo.com/v/RCSbVmF_CT1CYPfOry6xkg" target="_blank" rel="noopener">Watch the video (MP4)</a> &middot; Seedance 2 Mini, vertical 9:16, 4 seconds, 480p, 16 coins.</p>
+<p><strong>Exact video prompt:</strong></p>
+<blockquote>She smiles, tilts her head and picks up the wall phone, curls moving slightly, fixed camera, warm 1980s film look with slight grain</blockquote>
+<p>She takes the receiver off the wall and holds it to her ear, smiling, with the cord moving. Four seconds is enough for one action like this.</p>
+<p>The starting photo was itself made from the first one, with this prompt (Nano Banana 2, 8 coins):</p>
+<blockquote>Turn the person in the reference photo into a real 1980s snapshot: same face, big curly 80s hair, patterned blouse, standing against wood-panelled wall next to a beige wall phone, warm faded film colours, soft flash, slight grain, natural smile, looks like a genuine photo from 1985, vertical, no text</blockquote>
+<h3>3. A 1970s photo switches the lamp off and on</h3>
+<div style="display:flex;gap:12px;flex-wrap:wrap;margin:16px 0">
+<figure style="margin:0;flex:1 1 140px;max-width:240px"><img src="../images/dora/claude/photo-1970s-lamp.webp" width="360" height="645" loading="lazy" alt="Starting photo" style="display:block;width:100%;height:auto;border-radius:8px"><figcaption>Starting photo</figcaption></figure>
+<figure style="margin:0;flex:1 1 140px;max-width:240px"><a href="https://doravideo.com/v/9gLNAZWk_OgTeBplOA0gmw" target="_blank" rel="noopener"><img src="../images/dora/claude/clip-lamp.webp" width="360" height="628" loading="lazy" alt="A frame from the video" style="display:block;width:100%;height:auto;border-radius:8px"></a><figcaption>A frame from the video</figcaption></figure>
+</div>
+<p><a href="https://doravideo.com/v/9gLNAZWk_OgTeBplOA0gmw" target="_blank" rel="noopener">Watch the video (MP4)</a> &middot; Seedance 2 Mini, vertical 9:16, 4 seconds, 480p, 16 coins.</p>
+<p><strong>Exact video prompt:</strong></p>
+<blockquote>She smiles, turns to the table and switches the lamp off and on, wavy hair moving slightly, warm light changes on the wood walls, fixed camera, golden 1970s film look with slight grain</blockquote>
+<p>She reaches for the lamp and it goes off and on again near the end. The change of light on the walls is weaker than the prompt asked.</p>
+<p>The starting photo was itself made from the first one, with this prompt (Nano Banana 2, 8 coins):</p>
+<blockquote>Turn the person in the reference photo into a real 1970s snapshot: same face, long feathered wavy hair, brown patterned blouse with a wide collar, warm wood-panelled living room with a lamp, golden faded film colours, slight grain, soft smile, looks like a genuine photo from 1975, vertical, no text</blockquote>
+
+
+<h2>What it costs</h2>
+<div class="table-scroll">
+<table>
+<thead><tr><th>Video model in Dora's connector</th><th>Coins</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>Seedance 2 Mini</td><td>31 for 8 s</td><td>The default; 16 for 4 s at 480p, 66 for 8 s at 720p</td></tr>
+<tr><td>Grok Imagine 1.5</td><td>20</td><td>Cheaper; one photo at most</td></tr>
+<tr><td>Kling 2.6 Motion Control</td><td>11 per second</td><td>Copies the movement of a video you give it onto the person in the photo; 3 seconds minimum</td></tr>
+</tbody>
+</table>
+</div>
+<p>Prices from Dora's connector model list on 2 November 2026; longer clips, higher resolution and
+sound cost more (<a href="https://doravideo.com/models?utm_source=aisagalab&amp;utm_medium=referral&amp;utm_campaign=claude_animate" target="_blank" rel="noopener">Dora's models page</a>). A coin is about $0.01 on the weekly plan and $0.02
+on the yearly one (<a href="https://doravideo.com/pricing?utm_source=aisagalab&amp;utm_medium=referral&amp;utm_campaign=claude_animate" target="_blank" rel="noopener">pricing</a>). If you first change the photo, as in examples 2 and 3,
+add the image: 10 coins with Nano Banana 2 (8 when those were made). With no coins nothing is made or
+charged, and a failed generation gives the coins back.</p>
+
+<h2>More</h2>
+<p>For videos from a description instead of a photo, and Dora's own timed tests, see
+<a href="https://doravideo.com/blog/how-to-make-videos-in-claude?utm_source=aisagalab&amp;utm_medium=referral&amp;utm_campaign=claude_animate" target="_blank" rel="noopener">how to make videos in Claude</a>. For still images, see
+<a href="how-to-make-images-in-claude.html">how to make images in Claude</a>. Setup with a button that
+opens the form: <a href="https://doravideo.com/claude?utm_source=aisagalab&amp;utm_medium=referral&amp;utm_campaign=claude_animate" target="_blank" rel="noopener">Dora for Claude</a>. On iPhone, the same account and coins work in the
+<a href="https://apps.apple.com/app/apple-store/id6754180384?pt=118348020&amp;ct=aisagalab-how-to-animate-a-photo-in-4e92&amp;mt=8" target="_blank" rel="noopener">Dora app</a>.</p>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://support.claude.com/en/articles/9002504-can-claude-produce-images" target="_blank" rel="noopener">Claude Help Center, Can Claude produce images?</a> and <a href="https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp" target="_blank" rel="noopener">Get started with custom connectors using remote MCP</a>, checked 2 November 2026.</li>
+<li>Dora's connector model list and <a href="https://doravideo.com/pricing?utm_source=aisagalab&amp;utm_medium=referral&amp;utm_campaign=claude_animate" target="_blank" rel="noopener">pricing</a>, read on 2 November 2026; <a href="https://doravideo.com/models?utm_source=aisagalab&amp;utm_medium=referral&amp;utm_campaign=claude_animate" target="_blank" rel="noopener">Dora models and costs</a>.</li>
+<li>Dora's generation records for the three videos and their starting photos: model, settings, coins, prompt and photo link.</li>
+</ul>
+<p><strong>Disclosure:</strong> Saga Labs, which publishes this site, makes Dora. The photos and videos
+were made with Dora; costs are Dora's own.</p>
+
+<h2>Questions people ask</h2>
+<h3>Can Claude animate a photo?</h3>
+<p>Not by itself: Claude has no video model. With a video connector such as Dora, you give it the photo and describe the movement, and the connector makes a short clip and returns a link to it.</p>
+<h3>How much does it cost to animate a photo in Claude?</h3>
+<p>Your Claude plan does not pay for it. With Dora the default, Seedance 2 Mini, is 31 coins for 8 seconds and 16 for 4 seconds at 480p, roughly $0.16 to $0.62.</p>
+<h3>How do I give Claude the photo?</h3>
+<p>In our examples the photo was a public https link to the image. We have not tested attaching it straight to the chat, so if that fails, use a public link.</p>
+<h3>How long should the clip be?</h3>
+<p>Four seconds is enough for one action, like picking up a phone; a walk and a wave took eight.</p>
+<h3>Does the video come with sound?</h3>
+<p>None of our three examples has a sound track. Some models can add sound, and it costs more.</p>
+<h3>Is the result shown in the chat?</h3>
+<p>Videos come back as a link to the file, not inside the chat.</p>
+<!-- related:start -->
+<h2>Related guides</h2>
+<ul class="related-guides">
+<li><a href="how-to-make-a-video-with-chatgpt.html">How to make a video with ChatGPT: video plugins, Dora AI Video and the manual route (2026)</a></li>
+<li><a href="best-chatgpt-plugins-video-images-2026.html">Best ChatGPT plugins for making videos and images (2026)</a></li>
+<li><a href="../blog/best-ai-video-generator-apps-iphone.html">Best AI video generator apps for iPhone in 2026</a></li>
+<li><a href="https://reditor.cloud/best-ai-apps-dancing-video-from-photo-iphone/" target="_blank" rel="noopener">Best AI apps to make a dancing video from a photo on iPhone (Reditor)</a></li>
+</ul>
+<!-- related:end -->
+</div>
+    </main>
+
+<footer>
+        <div class="container">
+            <p>&copy; 2026 Saga Labs.</p>
+            <div class="footer-social">
+                <a href="https://x.com/SagaAILab" target="_blank" aria-label="X (Twitter)">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                        <path d="M18.244 2H21l-6.5 7.43L22.5 22H15.9l-4.7-6.2L5.7 22H3l7-8.02L1.8 2h6.8l4.3 5.7L18.244 2zm-2.43 18h1.64L8.29 4H6.57l9.244 16z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/Saga-Labs" target="_blank" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                        <path d="M12 2C6.477 2 2 6.486 2 12.017c0 4.424 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.238-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.464-1.11-1.464-.908-.62.069-.607.069-.607 1.004.071 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.833.092-.647.35-1.088.636-1.338-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.748-1.026 2.748-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.337 4.695-4.565 4.943.359.31.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .268.18.58.688.481A10.019 10.019 0 0 0 22 12.017C22 6.486 17.523 2 12 2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
