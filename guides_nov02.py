@@ -2,9 +2,9 @@
 """Guia: cuanto cuesta un video o una imagen desde ChatGPT, modelo a modelo (EN + ES), plantilla de guides.py.
 
 Datos, todos del 2 nov 2026:
-- Coste en monedas por modelo: respuesta de list_models del conector de Dora (lo que ve ChatGPT), 13 modelos.
+- Coste en monedas por modelo: respuesta de list_models del conector de Dora (lo que ve ChatGPT), 12 modelos tras quitar Veo.
 - Configuraciones concretas: doravideo.com/chatgpt (Grok Imagine 1.5 4 s 480p = 10; Seedance 2 Mini 4 s 480p = 16;
-  Veo 3 Fast 8 s con audio = 60) y doravideo.com/models (Seedance 2 Mini 31 para 8 s y 66 para 8 s a 720p;
+  Veo 3 salio del conector a las 11:11 UTC del 2 nov, issue #114 de ios-playbook) y doravideo.com/models (Seedance 2 Mini 31 para 8 s y 66 para 8 s a 720p;
   SeeDance 2 328 para 8 s a 720p).
 - Precio de la moneda: doravideo.com/pricing (Annual Pro 119,99 $ con 500 monedas al mes, 6.000 al ano; Weekly Pro
   1,99 $ la primera semana con 300 monedas, luego 4,99 $ con 500 a la semana; recargas desde 3,99 $ para Pro, sin
@@ -60,8 +60,8 @@ them on the same day. For what the other video plugins do, see
 we have not checked their prices for this page.</p>
 
 <h2>Cost per model, in coins and dollars</h2>
-<p>These are the starting costs Dora's plugin gives ChatGPT when it lists its models (13 of them,
-7 for video and 6 for images). Dollars use the coin price of each plan below: about $0.01 a coin
+<p>These are the starting costs Dora's plugin gives ChatGPT when it lists its models (12 of them,
+6 for video and 6 for images). Dollars use the coin price of each plan below: about $0.01 a coin
 weekly, $0.02 yearly.</p>
 
 <div class="table-scroll">
@@ -77,7 +77,6 @@ weekly, $0.02 yearly.</p>
 <tr><td>Grok Imagine 1.5</td><td>Video</td><td>20</td><td>$0.20 to $0.40</td><td>With sound; 10 coins for 4 s at 480p</td></tr>
 <tr><td>Seedance 2 Mini</td><td>Video</td><td>31</td><td>$0.31 to $0.62</td><td>Default video model; 16 coins for 4 s at 480p, 66 for 8 s at 720p</td></tr>
 <tr><td>Kling 2.6 Motion Control</td><td>Video</td><td>55</td><td>$0.55 to $1.10</td><td>Moves the person in a photo like a video you give it; 11 coins per second of that video, 3 s minimum</td></tr>
-<tr><td>Veo 3</td><td>Video</td><td>60</td><td>$0.60 to $1.20</td><td>Fixed 8 s, with sound and lip-synced speech</td></tr>
 <tr><td>Seedance 2</td><td>Video</td><td>76</td><td>$0.76 to $1.52</td><td>Highest quality; 328 coins for 8 s at 720p</td></tr>
 </tbody>
 </table>
@@ -107,7 +106,7 @@ month ($10). Extra credits are for Pro members and do not expire.</p>
 <h2>What a plan buys, in clips</h2>
 <ul>
 <li>500 coins (one week weekly, or one month yearly): about 16 default videos (Seedance 2 Mini, 31
-coins), 8 Veo 3 clips, 25 Grok Imagine 1.5 clips or 62 default images (Nano Banana 2, 8 coins).</li>
+coins), 25 Grok Imagine 1.5 clips or 62 default images (Nano Banana 2, 8 coins).</li>
 <li>The first week's 300 coins: about 9 default videos or 37 default images.</li>
 </ul>
 <p>These are at the default settings. Longer or sharper clips use more coins each.</p>
@@ -199,7 +198,7 @@ de ChatGPT para vídeo e imágenes</a>; sus precios no los hemos comprobado para
 
 <h2>Coste por modelo, en monedas y en dólares</h2>
 <p>Son los costes de partida que el plugin de Dora da a ChatGPT cuando le pasa la lista de modelos
-(13: 7 de vídeo y 6 de imagen). Los dólares salen del precio de la moneda en cada plan, más abajo:
+(12: 6 de vídeo y 6 de imagen). Los dólares salen del precio de la moneda en cada plan, más abajo:
 unos 0,01 $ la moneda en el semanal y 0,02 $ en el anual.</p>
 
 <div class="table-scroll">
@@ -215,7 +214,6 @@ unos 0,01 $ la moneda en el semanal y 0,02 $ en el anual.</p>
 <tr><td>Grok Imagine 1.5</td><td>Vídeo</td><td>20</td><td>0,20 a 0,40 $</td><td>Con sonido; 10 monedas por 4 s a 480p</td></tr>
 <tr><td>Seedance 2 Mini</td><td>Vídeo</td><td>31</td><td>0,31 a 0,62 $</td><td>Modelo de vídeo por defecto; 16 monedas por 4 s a 480p, 66 por 8 s a 720p</td></tr>
 <tr><td>Kling 2.6 Motion Control</td><td>Vídeo</td><td>55</td><td>0,55 a 1,10 $</td><td>Mueve a la persona de una foto como en un vídeo que le das; 11 monedas por segundo de ese vídeo, mínimo 3 s</td></tr>
-<tr><td>Veo 3</td><td>Vídeo</td><td>60</td><td>0,60 a 1,20 $</td><td>8 s fijos, con sonido y voz sincronizada con los labios</td></tr>
 <tr><td>Seedance 2</td><td>Vídeo</td><td>76</td><td>0,76 a 1,52 $</td><td>La mejor calidad; 328 monedas por 8 s a 720p</td></tr>
 </tbody>
 </table>
@@ -245,7 +243,7 @@ cuesta menos al mes (10 $). Los créditos extra son para miembros Pro y no caduc
 <h2>Lo que da un plan, en vídeos</h2>
 <ul>
 <li>500 monedas (una semana del semanal o un mes del anual): unos 16 vídeos por defecto (Seedance 2
-Mini, 31 monedas), 8 de Veo 3, 25 de Grok Imagine 1.5 o 62 imágenes por defecto (Nano Banana 2,
+Mini, 31 monedas), 25 de Grok Imagine 1.5 o 62 imágenes por defecto (Nano Banana 2,
 8 monedas).</li>
 <li>Las 300 monedas de la primera semana: unos 9 vídeos o 37 imágenes por defecto.</li>
 </ul>
