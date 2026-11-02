@@ -96,6 +96,8 @@ def render(*, path, lang, title, desc, og_title, body, jsonld,
         up=up, site=SITE, og_type=og_type, jsonld=jsonld,
         nav=nav, body=body, footer=footer,
     )
+    if lang == "ar":
+        html = html.replace('<html lang="ar">', '<html lang="ar" dir="rtl">', 1)
     html = ct.retag(html, path)
     full = os.path.join(ROOT, path)
     os.makedirs(os.path.dirname(full), exist_ok=True)
@@ -124,6 +126,9 @@ if __name__ == "__main__":
         print("%-42s %6d bytes" % (path, size))
     import posts_nov02
     for path, size in posts_nov02.build():
+        print("%-42s %6d bytes" % (path, size))
+    import posts_nov02b
+    for path, size in posts_nov02b.build(render):
         print("%-42s %6d bytes" % (path, size))
     import guides
     for path, size in guides.build(render):

@@ -14,7 +14,7 @@ PT = "118348020"
 OURS = {"1667947372", "6754878073", "1143691286", "6754180384",
         "1553693943", "1462269642", "1662608035", "1532670722"}
 MAX = 40
-LANGS = {"de", "fr", "pt", "ja", "es", "ru", "zh"}
+LANGS = {"de", "fr", "pt", "ja", "es", "ru", "zh", "ar"}
 
 # Sin ")" y sin puntuacion final: en texto plano (llms.txt) la URL va entre
 # parentesis o acaba la frase, y el ct se colaba detras ("id123).?pt=").

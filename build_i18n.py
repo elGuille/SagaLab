@@ -27,6 +27,7 @@ LANGS = {
     "fr": ("fr", "Fran&ccedil;ais"),
     "pt": ("pt-BR", "Portugu&ecirc;s"),
     "ja": ("ja", "&#26085;&#26412;&#35486;"),
+    "ar": ("ar", "&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;"),
 }
 NAMES = {"en": "English", "es": "Espa&ntilde;ol", "ru": "&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;"}
 for _d, (_c, _n) in LANGS.items():
@@ -97,7 +98,9 @@ def _jsonld(en_html, t, path, code):
         elif node.get("@type") == "ItemList" and "name" in node:
             node["name"] = t["h1"]
         elif node.get("@type") == "FAQPage":
-            qs = node["mainEntity"]
+            # faq_drop: preguntas de la inglesa que esta version no lleva (indices)
+            drop = set(t.get("faq_drop") or [])
+            node["mainEntity"] = qs = [q for i, q in enumerate(node["mainEntity"]) if i not in drop]
             if len(t.get("faq") or []) != len(qs):
                 raise SystemExit("%s: la inglesa tiene %d preguntas y la traduccion %d"
                                  % (path, len(qs), len(t.get("faq") or [])))

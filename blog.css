@@ -107,3 +107,9 @@
 .post-list p { margin: 8px 0 0; opacity: 0.75; line-height: 1.6; }
 
 .lang-switch { font-size: 0.88rem; opacity: 0.7; margin-top: 8px; }
+
+/* Paginas en arabe (html dir="rtl"): el texto va de derecha a izquierda; la barra y el pie siguen en ingles */
+html[dir="rtl"] .navbar, html[dir="rtl"] footer { direction: ltr; }
+html[dir="rtl"] .article-body ul, html[dir="rtl"] .article-body ol { padding-left: 0; padding-right: 22px; }
+html[dir="rtl"] .article-body blockquote { border-left: 0; border-right: 3px solid rgba(128, 128, 128, 0.4); }
+html[dir="rtl"] .article-body th, html[dir="rtl"] .article-body td { text-align: right; }

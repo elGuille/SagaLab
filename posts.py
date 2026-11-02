@@ -417,6 +417,10 @@ INDEX_EN = """
                 first, disclosed.</p>
             </li>
             <li>
+                <a href="best-photo-to-video-ai-apps-iphone.html">Best photo-to-video AI apps on iPhone for your own and family photos (2026)</a>
+                <p>MyHeritage, Google Photos, Kling AI, Dora, Runway and Motionleap, compared by what each does with your pictures. Dora is ours, and fourth.</p>
+            </li>
+            <li>
                 <a href="best-ai-apps-youtube-shorts-iphone.html">Best AI apps to make YouTube Shorts on iPhone (2026)</a>
                 <p>CapCut, Faceless, Dora, Vizard and VEED Lite, by where your video starts. Dora is ours, and third.</p>
             </li>
@@ -530,6 +534,10 @@ INDEX_ES = """
                 <p>HeyGen, Captions, Dora, Vmake Labs y Zeely ordenadas para anuncios
                 estilo UGC: escenas de producto, avatares que hablan, edici&oacute;n y
                 lanzamiento. Una es nuestra, y lo decimos.</p>
+            </li>
+            <li>
+                <a href="mejores-apps-ia-foto-a-video-iphone.html">Mejores apps de IA para convertir tus fotos y las de tu familia en v&iacute;deo en iPhone (2026)</a>
+                <p>MyHeritage, Google Fotos, Kling AI, Dora, Runway y Motionleap, comparadas por lo que hace cada una con tus im&aacute;genes. Dora es nuestra y va cuarta.</p>
             </li>
             <li>
                 <a href="mejores-apps-ia-youtube-shorts-iphone.html">Mejores apps de IA para YouTube Shorts en iPhone (2026)</a>
