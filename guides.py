@@ -985,6 +985,8 @@ import guides_oct30  # noqa: E402  (Pinku: velocidad de Llama, Gemma y Qwen sin 
 GUIDES += guides_oct30.GUIDES
 import guides_nov02  # noqa: E402  (Dora: cuanto cuesta un video o una imagen desde ChatGPT)
 GUIDES += guides_nov02.GUIDES
+import guides_nov02b  # noqa: E402  (Dora: como hacer imagenes en Claude)
+GUIDES += guides_nov02b.GUIDES
 
 
 def _alts(en, es):

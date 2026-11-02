@@ -161,7 +161,7 @@ GROUPS = {
         ]),
     },
     "Dora": {
-        "en": (["dora/how-to-make-a-video-with-chatgpt.html", "dora/best-chatgpt-plugins-video-images-2026.html", "blog/best-ai-video-generator-apps-iphone.html", "blog/best-ai-apps-ugc-video-ads-iphone.html", "blog/best-ai-apps-youtube-shorts-iphone.html", "blog/best-ai-anime-video-apps-iphone.html", "blog/best-photo-to-video-ai-apps-iphone.html", "dora/chatgpt-video-generator-cost.html"], [
+        "en": (["dora/how-to-make-a-video-with-chatgpt.html", "dora/best-chatgpt-plugins-video-images-2026.html", "blog/best-ai-video-generator-apps-iphone.html", "blog/best-ai-apps-ugc-video-ads-iphone.html", "blog/best-ai-apps-youtube-shorts-iphone.html", "blog/best-ai-anime-video-apps-iphone.html", "blog/best-photo-to-video-ai-apps-iphone.html", "dora/chatgpt-video-generator-cost.html", "dora/how-to-make-images-in-claude.html"], [
             (RD + "best-ai-image-to-video-apps-iphone/", "Best AI image to video apps for iPhone in 2026 (Reditor)"),
             (RD + "sora-app-alternatives-iphone/", "Best Sora app alternatives for iPhone in 2026 (Reditor)"),
             (RD + "viggle-ai-alternatives-iphone/", "Viggle AI alternatives for iPhone in 2026 (Reditor)"),
@@ -169,7 +169,7 @@ GROUPS = {
             (RD + "hailuo-alternatives-iphone/", "Best Hailuo AI alternatives for iPhone in 2026 (Reditor)"),
             (RD + "pixverse-alternatives-iphone/", "Best PixVerse alternatives for iPhone in 2026 (Reditor)"),
         ]),
-        "es": (["dora/es/como-hacer-un-video-con-chatgpt.html", "dora/es/mejores-plugins-chatgpt-video-imagenes-2026.html", "blog/es/mejores-apps-generador-video-ia-iphone.html", "blog/es/mejores-apps-ia-anuncios-ugc-iphone.html", "blog/es/mejores-apps-ia-youtube-shorts-iphone.html", "blog/es/mejores-apps-ia-video-anime-iphone.html", "blog/es/mejores-apps-ia-foto-a-video-iphone.html", "dora/es/cuanto-cuesta-generar-video-con-chatgpt.html"], [
+        "es": (["dora/es/como-hacer-un-video-con-chatgpt.html", "dora/es/mejores-plugins-chatgpt-video-imagenes-2026.html", "blog/es/mejores-apps-generador-video-ia-iphone.html", "blog/es/mejores-apps-ia-anuncios-ugc-iphone.html", "blog/es/mejores-apps-ia-youtube-shorts-iphone.html", "blog/es/mejores-apps-ia-video-anime-iphone.html", "blog/es/mejores-apps-ia-foto-a-video-iphone.html", "dora/es/cuanto-cuesta-generar-video-con-chatgpt.html", "dora/es/como-hacer-imagenes-con-claude.html"], [
             (RD + "es/mejores-apps-ia-de-foto-a-video-iphone/", "Mejores apps de IA para convertir una foto en vídeo en iPhone (Reditor)"),
             (RD + "es/alternativas-a-sora-iphone/", "Mejores alternativas a la app de Sora en iPhone en 2026 (Reditor)"),
             (RD + "es/alternativas-a-viggle-ai-iphone/", "Alternativas a Viggle AI para iPhone en 2026 (Reditor)"),
