@@ -6,7 +6,7 @@ Datos, todos del 2 nov 2026:
   diagramas y visuales en HTML y SVG, beta en web y escritorio: Help Center 13979539 (Custom visuals in chat).
 - Conectores propios: Help Center 11175166 (Free, Pro, Max, Ultra, Team y Enterprise; Free, uno solo).
 - Pasos para anadir Dora: doravideo.com/claude y doravideo.com/blog/how-to-make-videos-in-claude.
-- Coste: list_models del conector (Nano Banana 2 da 8; Marta fija «10 monedas» el 2 nov, asi que «about 10 coins»).
+- Coste: list_models del conector (Nano Banana 2 paso de 8 a 10 monedas el 2 nov, 13:53 UTC; las 4 del catalogo se cobraron a 8).
   Las 4 imagenes del catalogo de saga-growth (data/generaciones/catalogo.csv, origen claude_mcp) costaron 8 cada una.
 - Precio de la moneda: doravideo.com/pricing (ver guides_nov02.py).
 No se generan imagenes nuevas. Sin precios de herramientas de terceros. Sin Veo. Aviso de Dora al final. Sin rayas.
@@ -104,7 +104,7 @@ BP_EN = dict(
 help center says so ({a(HC_IMAGES, "Can Claude produce images?")}). It can draw diagrams and charts in
 code, and it can ask an image service to make a picture through a connector. This page uses Dora's
 connector, because we have checked it and can show what it made. The default image model, Nano
-Banana 2, costs about 10 coins an image, roughly $0.10 to $0.20, paid with Dora coins, not your Claude
+Banana 2, costs 10 coins an image, roughly $0.10 to $0.20, paid with Dora coins, not your Claude
 plan.</p>
 
 <h2>Three ways to get an image out of Claude</h2>
@@ -174,14 +174,14 @@ different uses, including one where the model missed part of the prompt.</p>
 <tr><td>Z-Image</td><td>1</td><td>Cheapest, from text only</td></tr>
 <tr><td>Nano Banana</td><td>4</td><td>Also edits a reference photo at the same price</td></tr>
 <tr><td>GPT Image 2</td><td>6</td><td>OpenAI's image model</td></tr>
-<tr><td>Nano Banana 2</td><td>about 10</td><td>The default; can take a reference photo; more at higher resolution</td></tr>
+<tr><td>Nano Banana 2</td><td>10</td><td>The default; can take a reference photo; more at higher resolution</td></tr>
 <tr><td>Nano Banana Pro</td><td>18</td><td>Best at keeping a face from a photo; 24 at 4K</td></tr>
 </tbody>
 </table>
 </div>
 <p>A coin costs about $0.01 on Dora's weekly plan and about $0.02 on the yearly one
 ({a(PRICING, "pricing")}, 2 November 2026), so a default image is roughly $0.10 to $0.20. The four
-images above were charged 8 coins each. With no coins, nothing is made and nothing is charged; if a
+images above were charged 8 coins each, the price before 2 November. With no coins, nothing is made and nothing is charged; if a
 generation fails, the coins go back. For the same costs in ChatGPT, see
 <a href="chatgpt-video-generator-cost.html">ChatGPT video generator cost</a>.</p>
 
@@ -220,7 +220,7 @@ made with Dora; costs are Dora's own, read on 2 November 2026.</p>
          "Not built in. You add one as a connector under Customize, then Connectors, Add custom connector. With Dora the "
          "address is https://doravideo.com/mcp."),
         ("How much does an image in Claude cost?",
-         "Your Claude plan does not pay for it. With Dora the default image model, Nano Banana 2, is about 10 coins, "
+         "Your Claude plan does not pay for it. With Dora the default image model, Nano Banana 2, is 10 coins, "
          "roughly $0.10 to $0.20; the cheapest model is 1 coin."),
         ("Does it work on the free Claude plan?",
          "Anthropic lists custom connectors on Free, limited to one. You still need coins in your Dora account."),
@@ -249,7 +249,7 @@ BP_ES = dict(
 centro de ayuda de Anthropic ({a(HC_IMAGES, "Can Claude produce images?")}). Puede dibujar diagramas y
 gráficos con código, y puede pedirle una imagen a un servicio a través de un conector. Esta página usa
 el conector de Dora, porque lo hemos comprobado y podemos enseñar lo que hizo. El modelo de imagen por
-defecto, Nano Banana 2, cuesta unas 10 monedas por imagen, entre 0,10 y 0,20 $, que se pagan con
+defecto, Nano Banana 2, cuesta 10 monedas por imagen, entre 0,10 y 0,20 $, que se pagan con
 monedas de Dora, no con tu plan de Claude.</p>
 
 <h2>Tres formas de sacar una imagen de Claude</h2>
@@ -319,14 +319,14 @@ enseñar usos distintos, incluida una en la que el modelo no hizo parte de lo qu
 <tr><td>Z-Image</td><td>1</td><td>El más barato, solo desde texto</td></tr>
 <tr><td>Nano Banana</td><td>4</td><td>También retoca una foto de referencia, al mismo precio</td></tr>
 <tr><td>GPT Image 2</td><td>6</td><td>El modelo de imagen de OpenAI</td></tr>
-<tr><td>Nano Banana 2</td><td>unas 10</td><td>El de por defecto; admite una foto de referencia; más a más resolución</td></tr>
+<tr><td>Nano Banana 2</td><td>10</td><td>El de por defecto; admite una foto de referencia; más a más resolución</td></tr>
 <tr><td>Nano Banana Pro</td><td>18</td><td>El que mejor conserva una cara de la foto; 24 en 4K</td></tr>
 </tbody>
 </table>
 </div>
 <p>Una moneda sale por unos 0,01 $ en el plan semanal de Dora y unos 0,02 $ en el anual
 ({a(PRICING, "precios")}, 2 de noviembre de 2026), así que una imagen por defecto cuesta entre 0,10 y
-0,20 $. Las cuatro imágenes de arriba se cobraron a 8 monedas cada una. Sin monedas no se genera ni se
+0,20 $. Las cuatro imágenes de arriba se cobraron a 8 monedas cada una, el precio de antes del 2 de noviembre. Sin monedas no se genera ni se
 cobra nada; si una generación falla, las monedas vuelven. Para los mismos costes en ChatGPT, mira
 <a href="cuanto-cuesta-generar-video-con-chatgpt.html">cuánto cuesta generar un vídeo con ChatGPT</a>.</p>
 
@@ -366,7 +366,7 @@ con Dora; los costes son de Dora, leídos el 2 de noviembre de 2026.</p>
          "No viene incluido. Se añade como conector en Customize, Connectors, Add custom connector. Con Dora, la dirección "
          "es https://doravideo.com/mcp."),
         ("¿Cuánto cuesta una imagen en Claude?",
-         "Tu plan de Claude no la paga. Con Dora, el modelo de imagen por defecto, Nano Banana 2, cuesta unas 10 monedas, "
+         "Tu plan de Claude no la paga. Con Dora, el modelo de imagen por defecto, Nano Banana 2, cuesta 10 monedas, "
          "entre 0,10 y 0,20 $; el más barato, 1 moneda."),
         ("¿Funciona con el plan gratis de Claude?",
          "Anthropic incluye los conectores propios en Free, con uno solo. Necesitas igualmente monedas en tu cuenta de Dora."),

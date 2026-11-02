@@ -71,7 +71,7 @@ weekly, $0.02 yearly.</p>
 <tr><td>Z-Image</td><td>Image</td><td>1</td><td>$0.01 to $0.02</td><td>Cheapest image, text only</td></tr>
 <tr><td>Nano Banana</td><td>Image</td><td>4</td><td>$0.04 to $0.08</td><td>Also an edit version from a reference photo, same price</td></tr>
 <tr><td>GPT Image 2</td><td>Image</td><td>6</td><td>$0.06 to $0.12</td><td>OpenAI's image model, flat price</td></tr>
-<tr><td>Nano Banana 2</td><td>Image</td><td>8</td><td>$0.08 to $0.16</td><td>Default image model; can take a reference photo; Dora's models page lists 10 coins; more at higher resolution</td></tr>
+<tr><td>Nano Banana 2</td><td>Image</td><td>10</td><td>$0.10 to $0.20</td><td>Default image model; can take a reference photo; 8 coins until 2 November; more at higher resolution</td></tr>
 <tr><td>Nano Banana Pro</td><td>Image</td><td>18</td><td>$0.18 to $0.36</td><td>Best at keeping a face from a photo; 24 coins at 4K</td></tr>
 <tr><td>Grok Imagine</td><td>Video</td><td>15</td><td>$0.15 to $0.30</td><td>From text or from an image, up to 15 s</td></tr>
 <tr><td>Grok Imagine 1.5</td><td>Video</td><td>20</td><td>$0.20 to $0.40</td><td>With sound; 10 coins for 4 s at 480p</td></tr>
@@ -106,8 +106,8 @@ month ($10). Extra credits are for Pro members and do not expire.</p>
 <h2>What a plan buys, in clips</h2>
 <ul>
 <li>500 coins (one week weekly, or one month yearly): about 16 default videos (Seedance 2 Mini, 31
-coins), 25 Grok Imagine 1.5 clips or 62 default images (Nano Banana 2, 8 coins).</li>
-<li>The first week's 300 coins: about 9 default videos or 37 default images.</li>
+coins), 25 Grok Imagine 1.5 clips or 50 default images (Nano Banana 2, 10 coins).</li>
+<li>The first week's 300 coins: about 9 default videos or 30 default images.</li>
 </ul>
 <p>These are at the default settings. Longer or sharper clips use more coins each.</p>
 
@@ -157,7 +157,7 @@ this page are Dora's own, read from its pages and its plugin on 2 November 2026.
         ("What is the cheapest video I can make from ChatGPT with Dora?",
          "Grok Imagine 1.5 at 4 seconds and 480p, 10 coins, about $0.10 to $0.20."),
         ("How much is an image?",
-         "1 to 18 coins: Z-Image 1, Nano Banana 4, GPT Image 2 6, Nano Banana 2 (the default) 8 and Nano Banana Pro 18."),
+         "1 to 18 coins: Z-Image 1, Nano Banana 4, GPT Image 2 6, Nano Banana 2 (the default) 10 and Nano Banana Pro 18."),
         ("What happens if I have no coins?",
          "Nothing is made and nothing is charged. ChatGPT tells you that generating needs coins and links to your "
          "balance and the plans."),
@@ -208,7 +208,7 @@ unos 0,01 $ la moneda en el semanal y 0,02 $ en el anual.</p>
 <tr><td>Z-Image</td><td>Imagen</td><td>1</td><td>0,01 a 0,02 $</td><td>La imagen más barata, solo desde texto</td></tr>
 <tr><td>Nano Banana</td><td>Imagen</td><td>4</td><td>0,04 a 0,08 $</td><td>También edita a partir de una foto, al mismo precio</td></tr>
 <tr><td>GPT Image 2</td><td>Imagen</td><td>6</td><td>0,06 a 0,12 $</td><td>El modelo de imagen de OpenAI, precio fijo</td></tr>
-<tr><td>Nano Banana 2</td><td>Imagen</td><td>8</td><td>0,08 a 0,16 $</td><td>Modelo de imagen por defecto; admite una foto de referencia; la página de modelos de Dora dice 10 monedas; más a más resolución</td></tr>
+<tr><td>Nano Banana 2</td><td>Imagen</td><td>10</td><td>0,10 a 0,20 $</td><td>Modelo de imagen por defecto; admite una foto de referencia; 8 monedas hasta el 2 de noviembre; más a más resolución</td></tr>
 <tr><td>Nano Banana Pro</td><td>Imagen</td><td>18</td><td>0,18 a 0,36 $</td><td>El que mejor conserva una cara de la foto; 24 monedas en 4K</td></tr>
 <tr><td>Grok Imagine</td><td>Vídeo</td><td>15</td><td>0,15 a 0,30 $</td><td>Desde texto o desde una imagen, hasta 15 s</td></tr>
 <tr><td>Grok Imagine 1.5</td><td>Vídeo</td><td>20</td><td>0,20 a 0,40 $</td><td>Con sonido; 10 monedas por 4 s a 480p</td></tr>
@@ -243,9 +243,9 @@ cuesta menos al mes (10 $). Los créditos extra son para miembros Pro y no caduc
 <h2>Lo que da un plan, en vídeos</h2>
 <ul>
 <li>500 monedas (una semana del semanal o un mes del anual): unos 16 vídeos por defecto (Seedance 2
-Mini, 31 monedas), 25 de Grok Imagine 1.5 o 62 imágenes por defecto (Nano Banana 2,
-8 monedas).</li>
-<li>Las 300 monedas de la primera semana: unos 9 vídeos o 37 imágenes por defecto.</li>
+Mini, 31 monedas), 25 de Grok Imagine 1.5 o 50 imágenes por defecto (Nano Banana 2,
+10 monedas).</li>
+<li>Las 300 monedas de la primera semana: unos 9 vídeos o 30 imágenes por defecto.</li>
 </ul>
 <p>Con los ajustes por defecto. Un vídeo más largo o más nítido gasta más monedas.</p>
 
@@ -295,7 +295,7 @@ página son de Dora, leídos en sus páginas y en su plugin el 2 de noviembre de
         ("¿Cuál es el vídeo más barato que puedo hacer desde ChatGPT con Dora?",
          "Grok Imagine 1.5 de 4 segundos a 480p: 10 monedas, unos 0,10 a 0,20 $."),
         ("¿Cuánto cuesta una imagen?",
-         "De 1 a 18 monedas: Z-Image 1, Nano Banana 4, GPT Image 2 6, Nano Banana 2 (la de por defecto) 8 y Nano Banana Pro 18."),
+         "De 1 a 18 monedas: Z-Image 1, Nano Banana 4, GPT Image 2 6, Nano Banana 2 (la de por defecto) 10 y Nano Banana Pro 18."),
         ("¿Qué pasa si no tengo monedas?",
          "No se genera ni se cobra nada. ChatGPT te dice que hacen falta monedas y te enlaza a tu saldo y a los planes."),
         ("¿Pierdo las monedas si el vídeo falla?",
