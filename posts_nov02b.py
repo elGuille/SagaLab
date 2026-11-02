@@ -35,7 +35,7 @@ T = {
  desc="Six iPhone apps that animate your own and family photos: MyHeritage, Google Photos, Kling AI, Dora, Runway and Motionleap, compared by what each does with your pictures, from App Store pages and privacy labels.",
  stand="A family photo is not a product shot. Here is which apps are built for it, and what each one's privacy label says about the pictures you give it.",
  switch='<a href="es/mejores-apps-ia-foto-a-video-iphone.html" hreflang="es">Leer en espa&ntilde;ol</a>',
- disc="<strong>Disclosure: we make Dora, number 4 on this list.</strong> Everything here comes from App Store pages, privacy labels and help pages read on 2 November 2026. We did not test video quality, so the order is by how directly each app serves this job, not by which looks best.",
+ disc="Everything here comes from App Store pages, privacy labels and help pages read on 2 November 2026. We did not test video quality, so the order is by how directly each app serves this job, not by which looks best.",
  intro="<p>Most photo-to-video rankings judge effects and models. With your own photos, and above all with photos of relatives, two other questions come first: is the app made for this kind of picture, and where do the pictures go? Read the label column before you upload anything.</p>",
  th=("#", "App", "Best for", "How it charges", "User content on its privacy label", "US rating"),
  rows=dict(
@@ -65,6 +65,7 @@ T = {
   ("Are these apps free?", "All can be downloaded for free and sell in-app purchases. Runway says it is free to start. Google Photos gives a limited number of generations a day. Dora needs a paid plan.")],
  src_h="Sources",
  src=["App Store pages and privacy labels, US, read on 2 November 2026: %s." % ", ".join(a(url(k), NAMES[k]) for k in ORDER), "Ratings: Apple's public lookup API, US store, 2 November 2026.", a(GP, "Use AI to create with Google Photos") + ", Google Photos Help, read on 2 November 2026."],
+ own='Disclosure: we make Dora, number 4 on this list.',
  fix='If something here is out of date, <a href="mailto:sagalabs@proton.me">tell us</a> and we will fix the page.',
  cta='Dora on the <a href="%s" target="_blank" rel="noopener">App Store</a> or <a href="%s">on the web</a>.' % (DORA, DORA_WEB),
 ),
@@ -74,7 +75,7 @@ T = {
  desc="Seis apps de iPhone para animar fotos propias y familiares: MyHeritage, Google Fotos, Kling AI, Dora, Runway y Motionleap, comparadas por lo que hace cada una con tus imágenes, según su ficha y su etiqueta de privacidad.",
  stand="Una foto de familia no es una foto de producto. Aquí va qué apps están pensadas para ella y qué dice la etiqueta de privacidad de cada una sobre las imágenes que le das.",
  switch='<a href="../best-photo-to-video-ai-apps-iphone.html" hreflang="en">Read in English</a>',
- disc="<strong>Aviso: hacemos Dora, la número 4 de esta lista.</strong> Todo sale de las fichas del App Store, las etiquetas de privacidad y las páginas de ayuda, leídas el 2 de noviembre de 2026. No hemos probado la calidad de los vídeos: el orden va por lo directamente que cada app resuelve esta tarea, no por cuál se ve mejor.",
+ disc="Todo sale de las fichas del App Store, las etiquetas de privacidad y las páginas de ayuda, leídas el 2 de noviembre de 2026. No hemos probado la calidad de los vídeos: el orden va por lo directamente que cada app resuelve esta tarea, no por cuál se ve mejor.",
  intro="<p>Casi todas las listas de foto a vídeo juzgan efectos y modelos. Con tus propias fotos, y sobre todo con las de tus familiares, antes van otras dos preguntas: si la app está hecha para ese tipo de imagen y adónde van las fotos. Lee la columna de la etiqueta antes de subir nada.</p>",
  th=("#", "App", "Mejor para", "Cómo cobra", "Contenido del usuario en su etiqueta", "Nota (España)"),
  rows=dict(
@@ -104,6 +105,7 @@ T = {
   ("¿Son gratis estas apps?", "Todas se descargan gratis y venden compras dentro de la app. Runway dice que es gratis para empezar. Google Fotos da un número limitado de generaciones al día. Dora necesita un plan de pago.")],
  src_h="Fuentes",
  src=["Fichas del App Store y etiquetas de privacidad, EE. UU., leídas el 2 de noviembre de 2026: %s." % ", ".join(a(url(k), NAMES[k]) for k in ORDER), "Notas: API pública de Apple, tienda de España, 2 de noviembre de 2026; la de Dora, de EE. UU.", a(GP + "?hl=es", "Usar la IA para crear con Google Fotos") + ", Ayuda de Google Fotos, leída el 2 de noviembre de 2026."],
+ own='Aviso: hacemos Dora, la número 4 de esta lista.',
  fix='Si algo está desactualizado, <a href="mailto:sagalabs@proton.me">avísanos</a> y lo corregimos.',
  cta='Dora en el <a href="%s" target="_blank" rel="noopener">App Store</a> o <a href="%s">en la web</a>.' % (DORA, DORA_WEB),
 )}
@@ -125,11 +127,11 @@ def build(render):
                 '<p class="article-meta"><a href="https://www.linkedin.com/in/maruta/" rel="author me noopener" target="_blank">Maruta G</a> &middot; %s <span class="lang-switch"> &middot; %s</span></p>\n'
                 '<div class="article-body">\n<p>%s</p>\n%s\n<div class="table-scroll"><table><thead><tr>%s</tr></thead><tbody>\n%s</tbody></table></div>\n<p class="article-note">%s</p>\n%s<p>%s</p>\n'
                 '<h2>%s</h2>\n<ul>\n%s</ul>\n<h2>%s</h2>\n<p>%s</p>\n<h2>%s</h2>\n%s</div>\n'
-                '<div class="article-body article-sources">\n<h2>%s</h2>\n<ul>\n%s</ul>\n<p>%s</p>\n</div>') % (
+                '<div class="article-body article-sources">\n<h2>%s</h2>\n<ul>\n%s</ul>\n<p>%s</p>\n<p>%s</p>\n</div>') % (
             c["kicker"], c["h1"], c["stand"], c["date"], c["switch"], c["disc"], c["intro"],
             "".join("<th>%s</th>" % h for h in c["th"]), rows, c["note"], secs, c["cta"], c["tips_h"],
             "".join("<li>%s</li>\n" % t for t in c["tips"]), c["left_h"], c["left"], c["faq_h"], faq, c["src_h"],
-            "".join("<li>%s</li>\n" % s for s in c["src"]), c["fix"])
+            "".join("<li>%s</li>\n" % s for s in c["src"]), c["own"], c["fix"])
         art = {"@type": "BlogPosting", "headline": c["h1"], "description": c["desc"], "inLanguage": lang, "datePublished": ISO, "dateModified": ISO,
                "mainEntityOfPage": {"@type": "WebPage", "@id": "https://aisagalab.com/" + c["path"]},
                "author": {"@type": "Person", "name": "Maruta G", "url": "https://www.linkedin.com/in/maruta/"},
