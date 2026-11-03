@@ -61,3 +61,4 @@ Allow: /
 User-agent: *
 Disallow: /admin/
 Disallow: /.well-known/
+Disallow: /harada/
