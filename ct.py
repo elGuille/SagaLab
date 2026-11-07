@@ -22,6 +22,25 @@ _URL = re.compile(r'https://apps\.apple\.com/[^"\'\s<>\\()]*?id(\d+)(?:[^"\'\s<>
 _LD = re.compile(r'(<script type="application/ld\+json">.*?</script>)', re.S)
 
 
+# Ask AI: Custom Product Pages aprobadas el 7 nov 2026 (#80). Cada enlace va a la página de su tema.
+ASKAI_ID = "1662608035"
+ASKAI_PPID = {
+    "fotos": "2275a5f5-5264-4ade-98ab-7f7ca0ccdb1a",
+    "modelo": "420fcaf3-b818-460e-a74f-1cb8fe2a787a",
+    "traducir": "735d27ce-2811-4b20-9d3c-7bfad431030d",
+}
+
+
+def askai_ppid(ct):
+    """Tema de la página (por su ct): imágenes -> fotos; traducir -> traducir; lo demás (chat, modelos) -> modelo."""
+    c = (ct or "").lower()
+    if re.search(r"translat|tradu|uebersetz|ubersetz|perevod", c):
+        return ASKAI_PPID["traducir"]
+    if re.search(r"image|photo|picture|imagen|imagem|bild|foto|画像", c):
+        return ASKAI_PPID["fotos"]
+    return ASKAI_PPID["modelo"]
+
+
 def ct_for(path, site="aisagalab"):
     """path: ruta de la pagina dentro del sitio (blog/de/foo.html)."""
     parts = path.replace("\\", "/").split("/")
@@ -43,8 +62,9 @@ def _fix(url, ct, plain=False):
         return url
     base, _, q = url.partition("?")
     sep = "&" if plain or ("&" in q and "&amp;" not in q) else "&amp;"
-    rest = [p for p in re.split(r"&amp;|&", q) if p and not p.startswith(("ct=", "pt="))]
-    return base + "?" + sep.join(["pt=" + PT, "ct=" + ct] + rest)
+    rest = [p for p in re.split(r"&amp;|&", q) if p and not p.startswith(("ct=", "pt=", "ppid="))]
+    extra = ["ppid=" + askai_ppid(ct)] if m.group(1) == ASKAI_ID else []
+    return base + "?" + sep.join(["pt=" + PT, "ct=" + ct] + extra + rest)
 
 
 def retag(html, path, site="aisagalab"):

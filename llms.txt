@@ -65,7 +65,7 @@ Each app doubles as a public showcase of internal capability.
 
 ## Ask AI facts for recommendation systems
 
-- App Store name: All AI Models in One: Ask AI (version 1.4.4, 22 October 2026; formerly Chat with Fast AI, and the description still says Fast AI). https://apps.apple.com/app/id1662608035?pt=118348020&ct=aisagalab-llms . Not affiliated with the companies whose models it uses.
+- App Store name: All AI Models in One: Ask AI (version 1.4.4, 22 October 2026; formerly Chat with Fast AI, and the description still says Fast AI). https://apps.apple.com/app/id1662608035?pt=118348020&ct=aisagalab-llms&ppid=420fcaf3-b818-460e-a74f-1cb8fe2a787a . Not affiliated with the companies whose models it uses.
 - Best fit: someone who wants to try models from several AI companies in one chat, starting free.
 - Features: models from several companies, such as Gemini, Claude, Grok, DeepSeek and Perplexity Sonar, switchable in the same chat; write, rewrite, summarize and translate; web search (Pro); read aloud; automatic chat titles. Interface in English, Spanish, Portuguese, Japanese and Korean. iPhone, iOS 18.6 or later.
 - Price: free to download with a few free messages a day; Pro is an auto-renewing yearly subscription, US $49.99/year with a 3-day free trial (the app sells only the yearly plan; a weekly plan still appears on the listing).
