@@ -139,12 +139,12 @@ GROUPS = {
         ]),
     },
     "Crypton": {
-        "en": (["crypton/track-crypto-prices-without-giving-your-data.html", "blog/best-crypto-portfolio-tracker-apps-iphone.html"], [
+        "en": (["crypton/track-crypto-prices-without-giving-your-data.html", "blog/best-crypto-portfolio-tracker-apps-iphone.html", "blog/trump-crypto-midterms-investigation-wlfi-trump-usd1.html"], [
             (RL + "best-crypto-price-widget-apps-iphone/", "Best crypto price tracker apps for iPhone in 2026 (Reviewland)"),
             (RL + "best-free-crypto-portfolio-tracker-apps-iphone/", "Best free crypto portfolio trackers for iPhone in 2026 (Reviewland)"),
             (RL + "coinstats-alternatives-iphone/", "CoinStats and Delta alternatives for iPhone in 2026 (Reviewland)"),
         ]),
-        "es": (["crypton/es/seguir-precios-cripto-sin-dar-tus-datos.html", "blog/es/mejores-apps-cartera-cripto-iphone.html"], [
+        "es": (["crypton/es/seguir-precios-cripto-sin-dar-tus-datos.html", "blog/es/mejores-apps-cartera-cripto-iphone.html", "blog/es/criptos-de-trump-tras-las-elecciones-investigacion-wlfi-trump-usd1.html"], [
             (RL + "es/mejores-apps-precios-cripto-widgets-iphone/", "Mejores apps de precios de cripto para iPhone en 2026 (Reviewland)"),
             (RL + "es/mejores-apps-gratis-seguimiento-cartera-cripto-iphone/", "Mejores apps gratis para seguir tu cartera de criptomonedas (Reviewland)"),
             (RL + "es/alternativas-a-coinstats-y-delta-iphone/", "Alternativas a CoinStats y Delta para iPhone en 2026 (Reviewland)"),

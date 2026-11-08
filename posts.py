@@ -362,6 +362,10 @@ INDEX_EN = """
         <div class="article-body">
         <ul class="post-list">
             <li>
+                <a href="trump-crypto-midterms-investigation-wlfi-trump-usd1.html">Trump family crypto after the midterms: what Democrats plan to investigate, and how WLFI, TRUMP and USD1 moved</a>
+                <p>News, 8 November 2026: what has been reported, a dated timeline, CoinGecko prices from 1 to 8 November and how to follow these tokens on iPhone.</p>
+            </li>
+            <li>
                 <a href="do-local-ai-apps-send-data-mac-test.html">Do local AI apps send your data to the internet? We watched Ollama, LM Studio and Pinku on a Mac</a>
                 <p>A network test on 20 October 2026: what each app connects to when you open it,
                 download a model, chat and leave it idle. Methodology and raw numbers.</p>
@@ -511,6 +515,10 @@ INDEX_ES = """
         </p>
         <div class="article-body">
         <ul class="post-list">
+            <li>
+                <a href="criptos-de-trump-tras-las-elecciones-investigacion-wlfi-trump-usd1.html">Las criptos de la familia Trump tras las elecciones: qu&eacute; quieren investigar los dem&oacute;cratas y c&oacute;mo se han movido WLFI, TRUMP y USD1</a>
+                <p>Noticia del 8 de noviembre de 2026: lo publicado, cronolog&iacute;a, precios de CoinGecko del 1 al 8 de noviembre y c&oacute;mo seguir estos tokens en el iPhone.</p>
+            </li>
             <li>
                 <a href="mejores-apps-ruido-blanco-sonidos-dormir-iphone.html">Las mejores apps de ruido blanco y sonidos para dormir en iPhone (2026)</a>
                 <p>White Noise Lite, Rain Rain, Drop, Dark Noise, myNoise, BetterSleep,

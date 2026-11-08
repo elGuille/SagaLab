@@ -130,6 +130,9 @@ if __name__ == "__main__":
     import posts_nov02b
     for path, size in posts_nov02b.build(render):
         print("%-42s %6d bytes" % (path, size))
+    import posts_nov08
+    for path, size in posts_nov08.build(render):
+        print("%-42s %6d bytes" % (path, size))
     import guides
     for path, size in guides.build(render):
         print("%-42s %6d bytes" % (path, size))
