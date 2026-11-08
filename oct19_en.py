@@ -229,14 +229,14 @@ cloud assistants that need the internet but are far more capable.</p>
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Where the AI runs</th><th>Needs</th><th>Price (US)</th><th>Rating (US)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(locally)s"%(x)s>Locally AI</a></td><td>On the iPhone</td><td>iOS 18.1</td><td>Free</td><td>4.7 (1,805)</td></tr>
-<tr><td>2. <a href="%(pocketpal)s"%(x)s>PocketPal AI</a></td><td>On the iPhone</td><td>iOS 15.1</td><td>Free; optional paid &ldquo;Pals&rdquo; from $0.99</td><td>4.1 (162)</td></tr>
-<tr><td>3. <a href="%(privatellm)s"%(x)s>Private LLM</a></td><td>On the iPhone</td><td>iOS 17, A12 Bionic or later</td><td>$4.99 upfront</td><td>4.2 (736)</td></tr>
-<tr><td>4. <a href="%(pinku)s">Pinku</a></td><td>On the iPhone</td><td>iOS 18.6, iPhone 12 or later</td><td>Free; Pinku Pro in-app purchase</td><td>4.7 (12)</td></tr>
-<tr><td>5. <a href="%(chatgpt)s"%(x)s>ChatGPT</a></td><td>Cloud</td><td>iOS 18.0, internet</td><td>Free; Go $8, Plus $19.99 a month</td><td>4.8 (11.4 million)</td></tr>
-<tr><td>6. <a href="%(gemini)s"%(x)s>Google Gemini</a></td><td>Cloud</td><td>iOS 17.4, internet</td><td>Free; Google AI Plus $4.99, Pro $19.99</td><td>4.7 (2.36 million)</td></tr>
-<tr><td>7. <a href="%(claude)s"%(x)s>Claude</a></td><td>Cloud</td><td>iOS 18.0, internet</td><td>Free; Pro $20 a month</td><td>4.7 (282,163)</td></tr>
-<tr><td>8. <a href="%(vibe)s"%(x)s>Vibe by Mistral</a></td><td>Cloud</td><td>iOS 16.4, internet</td><td>Free; Vibe Pro $14.99</td><td>4.8 (1,318)</td></tr>
+<tr><td>1. <a href="%(locally)s"%(x)s>Locally AI</a></td><td>On the iPhone</td><td>iOS 18.1</td><td>Free</td><td>4.7</td></tr>
+<tr><td>2. <a href="%(pocketpal)s"%(x)s>PocketPal AI</a></td><td>On the iPhone</td><td>iOS 15.1</td><td>Free; optional paid &ldquo;Pals&rdquo; from $0.99</td><td>4.1</td></tr>
+<tr><td>3. <a href="%(privatellm)s"%(x)s>Private LLM</a></td><td>On the iPhone</td><td>iOS 17, A12 Bionic or later</td><td>$4.99 upfront</td><td>4.2</td></tr>
+<tr><td>4. <a href="%(pinku)s">Pinku</a></td><td>On the iPhone</td><td>iOS 18.6, iPhone 12 or later</td><td>Free; Pinku Pro in-app purchase</td><td>4.7</td></tr>
+<tr><td>5. <a href="%(chatgpt)s"%(x)s>ChatGPT</a></td><td>Cloud</td><td>iOS 18.0, internet</td><td>Free; Go $8, Plus $19.99 a month</td><td>4.8</td></tr>
+<tr><td>6. <a href="%(gemini)s"%(x)s>Google Gemini</a></td><td>Cloud</td><td>iOS 17.4, internet</td><td>Free; Google AI Plus $4.99, Pro $19.99</td><td>4.7</td></tr>
+<tr><td>7. <a href="%(claude)s"%(x)s>Claude</a></td><td>Cloud</td><td>iOS 18.0, internet</td><td>Free; Pro $20 a month</td><td>4.7</td></tr>
+<tr><td>8. <a href="%(vibe)s"%(x)s>Vibe by Mistral</a></td><td>Cloud</td><td>iOS 16.4, internet</td><td>Free; Vibe Pro $14.99</td><td>4.8</td></tr>
 </tbody>
 </table></div>
 
@@ -425,12 +425,12 @@ in the EU and China. In Russia there is a second wall: Russian is not one of
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Where it runs</th><th>Price (US)</th><th>Rating (US)</th><th>Privacy label</th></tr></thead>
 <tbody>
-<tr><td><a href="%(chatgpt)s"%(x)s>ChatGPT</a></td><td>Cloud (OpenAI, US)</td><td>Free; Go $8, Plus $19.99 a month</td><td>4.8 (11.4 million)</td><td>Data linked to you, incl. contact info and user content</td></tr>
-<tr><td><a href="%(gemini)s"%(x)s>Google Gemini</a></td><td>Cloud (Google, US)</td><td>Free; Google AI Plus $4.99, Pro $19.99</td><td>4.7 (2.36 million)</td><td>Data linked to you, incl. location, contact info and identifiers</td></tr>
-<tr><td><a href="%(claude)s"%(x)s>Claude</a></td><td>Cloud (Anthropic, US)</td><td>Free; Pro $20 a month</td><td>4.7 (282,163)</td><td>Data linked to you, incl. contact info and user content</td></tr>
-<tr><td><a href="%(vibe)s"%(x)s>Vibe by Mistral</a></td><td>Cloud (Mistral AI, France)</td><td>Free; Vibe Pro $14.99</td><td>4.8 (1,318)</td><td>Contact info linked to you; usage and user content not linked</td></tr>
-<tr><td><a href="%(pinku)s">Pinku</a></td><td>On the iPhone</td><td>Free; Pinku Pro in-app purchase</td><td>4.7 (12)</td><td>Purchase history and an anonymous user ID (for Pro); chats stay on the device</td></tr>
-<tr><td><a href="%(locally)s"%(x)s>Locally AI</a></td><td>On the iPhone</td><td>Free</td><td>4.7 (1,805)</td><td>Data Not Collected</td></tr>
+<tr><td><a href="%(chatgpt)s"%(x)s>ChatGPT</a></td><td>Cloud (OpenAI, US)</td><td>Free; Go $8, Plus $19.99 a month</td><td>4.8</td><td>Data linked to you, incl. contact info and user content</td></tr>
+<tr><td><a href="%(gemini)s"%(x)s>Google Gemini</a></td><td>Cloud (Google, US)</td><td>Free; Google AI Plus $4.99, Pro $19.99</td><td>4.7</td><td>Data linked to you, incl. location, contact info and identifiers</td></tr>
+<tr><td><a href="%(claude)s"%(x)s>Claude</a></td><td>Cloud (Anthropic, US)</td><td>Free; Pro $20 a month</td><td>4.7</td><td>Data linked to you, incl. contact info and user content</td></tr>
+<tr><td><a href="%(vibe)s"%(x)s>Vibe by Mistral</a></td><td>Cloud (Mistral AI, France)</td><td>Free; Vibe Pro $14.99</td><td>4.8</td><td>Contact info linked to you; usage and user content not linked</td></tr>
+<tr><td><a href="%(pinku)s">Pinku</a></td><td>On the iPhone</td><td>Free; Pinku Pro in-app purchase</td><td>4.7</td><td>Purchase history and an anonymous user ID (for Pro); chats stay on the device</td></tr>
+<tr><td><a href="%(locally)s"%(x)s>Locally AI</a></td><td>On the iPhone</td><td>Free</td><td>4.7</td><td>Data Not Collected</td></tr>
 </tbody>
 </table></div>
 

@@ -170,14 +170,14 @@ NOAI = dict(
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>AI 在哪里运行</th><th>要求</th><th>价格</th><th>评分（中国大陆）</th><th>中文界面</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(pocketpal)s"%(x)s>PocketPal AI</a></td><td>iPhone 本机</td><td>iOS 15.1</td><td>免费</td><td>3.2（89）</td><td>无</td></tr>
-<tr><td>2. <a href="%(privatellm)s"%(x)s>Private LLM</a></td><td>iPhone 本机</td><td>iOS 17，A12 仿生及以上</td><td>¥38</td><td>3.4（45）</td><td>无</td></tr>
-<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>iPhone 本机</td><td>iOS 18.6，iPhone 12 及以上</td><td>免费；Pinku Pro 为 App 内购买</td><td>3.2（6）</td><td>有</td></tr>
-<tr><td>4. <a href="%(doubao)s"%(x)s>豆包</a></td><td>云端</td><td>iOS 15.0，联网</td><td>免费</td><td>4.7（4,947,221）</td><td>有</td></tr>
-<tr><td>5. <a href="%(kimi)s"%(x)s>Kimi</a></td><td>云端</td><td>iOS 15.0，联网</td><td>免费</td><td>4.9（194,948）</td><td>有</td></tr>
-<tr><td>6. <a href="%(qwen)s"%(x)s>千问</a></td><td>云端</td><td>iOS 14.0，联网</td><td>免费</td><td>4.3（337,233）</td><td>有</td></tr>
-<tr><td>7. <a href="%(deepseek)s"%(x)s>DeepSeek</a></td><td>云端</td><td>iOS 15.0，联网</td><td>免费</td><td>3.9（90,935）</td><td>有</td></tr>
-<tr><td>8. <a href="%(vibe)s"%(x)s>Vibe by Mistral</a></td><td>云端</td><td>iOS 16.4，联网</td><td>免费</td><td>4.8（118）</td><td>无</td></tr>
+<tr><td>1. <a href="%(pocketpal)s"%(x)s>PocketPal AI</a></td><td>iPhone 本机</td><td>iOS 15.1</td><td>免费</td><td>3.2</td><td>无</td></tr>
+<tr><td>2. <a href="%(privatellm)s"%(x)s>Private LLM</a></td><td>iPhone 本机</td><td>iOS 17，A12 仿生及以上</td><td>¥38</td><td>3.4</td><td>无</td></tr>
+<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>iPhone 本机</td><td>iOS 18.6，iPhone 12 及以上</td><td>免费；Pinku Pro 为 App 内购买</td><td>3.2</td><td>有</td></tr>
+<tr><td>4. <a href="%(doubao)s"%(x)s>豆包</a></td><td>云端</td><td>iOS 15.0，联网</td><td>免费</td><td>4.7</td><td>有</td></tr>
+<tr><td>5. <a href="%(kimi)s"%(x)s>Kimi</a></td><td>云端</td><td>iOS 15.0，联网</td><td>免费</td><td>4.9</td><td>有</td></tr>
+<tr><td>6. <a href="%(qwen)s"%(x)s>千问</a></td><td>云端</td><td>iOS 14.0，联网</td><td>免费</td><td>4.3</td><td>有</td></tr>
+<tr><td>7. <a href="%(deepseek)s"%(x)s>DeepSeek</a></td><td>云端</td><td>iOS 15.0，联网</td><td>免费</td><td>3.9</td><td>有</td></tr>
+<tr><td>8. <a href="%(vibe)s"%(x)s>Vibe by Mistral</a></td><td>云端</td><td>iOS 16.4，联网</td><td>免费</td><td>4.8</td><td>无</td></tr>
 </tbody>
 </table></div>
 
@@ -206,7 +206,7 @@ Pinku 需要 iPhone 12 是因为它需要 Metal 3，Apple 列出的是 <a href="
 模型只需下载一次，之后每个回答都在手机上生成，飞行模式也能用。无需账户，聊天只保存在设备上。""" + PINKU_PRIV + """
 它只显示内存够用的模型，加载前会检查可用内存。默认模型（Llama 3.2 1B）免费；Pinku Pro（App 内购买）增加更大的模型、
 自定义指令、听写和朗读。这里唯一有中文界面的离线 App，也能在 Apple 芯片的 Mac 上运行。不足：iPhone 11 和 SE（第二代）
-没有 Metal 3，无法运行；代码不开源；不能读取图片和文档；在中国大陆的评分人数还很少（3.2，6 个评分）。</p>
+没有 Metal 3，无法运行；代码不开源；不能读取图片和文档。</p>
 
 <h2>4. 豆包</h2>
 
@@ -309,12 +309,12 @@ SIRI = dict(
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>运行位置</th><th>价格</th><th>评分（中国大陆）</th><th>iOS</th></tr></thead>
 <tbody>
-<tr><td><a href="%(doubao)s"%(x)s>豆包</a></td><td>云端（字节跳动）</td><td>免费</td><td>4.7（4,947,221）</td><td>15.0</td></tr>
-<tr><td><a href="%(kimi)s"%(x)s>Kimi</a></td><td>云端（月之暗面）</td><td>免费</td><td>4.9（194,948）</td><td>15.0</td></tr>
-<tr><td><a href="%(qwen)s"%(x)s>千问</a></td><td>云端（阿里巴巴）</td><td>免费</td><td>4.3（337,233）</td><td>14.0</td></tr>
-<tr><td><a href="%(deepseek)s"%(x)s>DeepSeek</a></td><td>云端</td><td>免费</td><td>3.9（90,935）</td><td>15.0</td></tr>
-<tr><td><a href="%(pinku)s">Pinku</a></td><td>iPhone 本机</td><td>免费；Pinku Pro 为 App 内购买</td><td>3.2（6）</td><td>18.6</td></tr>
-<tr><td><a href="%(pocketpal)s"%(x)s>PocketPal AI</a></td><td>iPhone 本机</td><td>免费</td><td>3.2（89）</td><td>15.1</td></tr>
+<tr><td><a href="%(doubao)s"%(x)s>豆包</a></td><td>云端（字节跳动）</td><td>免费</td><td>4.7</td><td>15.0</td></tr>
+<tr><td><a href="%(kimi)s"%(x)s>Kimi</a></td><td>云端（月之暗面）</td><td>免费</td><td>4.9</td><td>15.0</td></tr>
+<tr><td><a href="%(qwen)s"%(x)s>千问</a></td><td>云端（阿里巴巴）</td><td>免费</td><td>4.3</td><td>14.0</td></tr>
+<tr><td><a href="%(deepseek)s"%(x)s>DeepSeek</a></td><td>云端</td><td>免费</td><td>3.9</td><td>15.0</td></tr>
+<tr><td><a href="%(pinku)s">Pinku</a></td><td>iPhone 本机</td><td>免费；Pinku Pro 为 App 内购买</td><td>3.2</td><td>18.6</td></tr>
+<tr><td><a href="%(pocketpal)s"%(x)s>PocketPal AI</a></td><td>iPhone 本机</td><td>免费</td><td>3.2</td><td>15.1</td></tr>
 </tbody>
 </table></div>
 

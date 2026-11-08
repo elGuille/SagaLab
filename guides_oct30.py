@@ -126,18 +126,18 @@ in version 1.2.</p>
 
 <div class="table-scroll">
 <table>
-<thead><tr><th>App</th><th>US ratings (30 Oct 2026)</th><th>What to know</th></tr></thead>
+<thead><tr><th>App</th><th>US rating (30 Oct 2026)</th><th>What to know</th></tr></thead>
 <tbody>
-<tr><td>{a(LOCALLY_AS, "Locally AI by LM Studio")}</td><td>1,872 (4.7)</td><td>Runs models with MLX on iPhone, iPad and Mac</td></tr>
-<tr><td>{a(ENCLAVE_AS, "Enclave")}</td><td>1,110 (4.7)</td><td>Local models; Pro adds cloud models</td></tr>
-<tr><td>{a(PRIVATELLM_AS, "Private LLM")}</td><td>741 (4.1)</td><td>Paid upfront ($4.99 in the US); works with Siri and Shortcuts</td></tr>
-<tr><td>{a(POCKETPAL_AS, "PocketPal AI")}</td><td>165 (4.0)</td><td>Open source, runs any GGUF model with llama.cpp, has a built-in Benchmark page</td></tr>
-<tr><td><a href="{PINKU_STORE}">Pinku</a></td><td>12 (4.7)</td><td>Runs models with MLX on iPhone, iPad and Mac; its catalogue has all five models in the table above, at 4 bits; chats stay on the device</td></tr>
+<tr><td>{a(LOCALLY_AS, "Locally AI by LM Studio")}</td><td>4.7</td><td>Runs models with MLX on iPhone, iPad and Mac</td></tr>
+<tr><td>{a(ENCLAVE_AS, "Enclave")}</td><td>4.7</td><td>Local models; Pro adds cloud models</td></tr>
+<tr><td>{a(PRIVATELLM_AS, "Private LLM")}</td><td>4.1</td><td>Paid upfront ($4.99 in the US); works with Siri and Shortcuts</td></tr>
+<tr><td>{a(POCKETPAL_AS, "PocketPal AI")}</td><td>4.0</td><td>Open source, runs any GGUF model with llama.cpp, has a built-in Benchmark page</td></tr>
+<tr><td><a href="{PINKU_STORE}">Pinku</a></td><td>4.7</td><td>Runs models with MLX on iPhone, iPad and Mac; its catalogue has all five models in the table above, at 4 bits; chats stay on the device</td></tr>
 </tbody>
 </table>
 </div>
 
-<p>Ordered by number of ratings in the US App Store. The speed of a model depends on the chip, the
+<p>The speed of a model depends on the chip, the
 model and the runtime (MLX or llama.cpp) more than on the app, so the same model should run at a
 similar speed in apps that use the same runtime.</p>
 
@@ -292,18 +292,18 @@ versión 1.2.</p>
 
 <div class="table-scroll">
 <table>
-<thead><tr><th>App</th><th>Valoraciones en EE. UU. (30 oct 2026)</th><th>Qué saber</th></tr></thead>
+<thead><tr><th>App</th><th>Valoración en EE. UU. (30 oct 2026)</th><th>Qué saber</th></tr></thead>
 <tbody>
-<tr><td>{a(LOCALLY_AS, "Locally AI by LM Studio")}</td><td>1.872 (4,7)</td><td>Usa los modelos con MLX en iPhone, iPad y Mac</td></tr>
-<tr><td>{a(ENCLAVE_AS, "Enclave")}</td><td>1.110 (4,7)</td><td>Modelos locales; Pro añade modelos en la nube</td></tr>
-<tr><td>{a(PRIVATELLM_AS, "Private LLM")}</td><td>741 (4,1)</td><td>De pago al descargar (4,99 $ en EE. UU.); funciona con Siri y Atajos</td></tr>
-<tr><td>{a(POCKETPAL_AS, "PocketPal AI")}</td><td>165 (4,0)</td><td>Código abierto, usa cualquier modelo GGUF con llama.cpp y trae una página de Benchmark</td></tr>
-<tr><td><a href="{PINKU_STORE}">Pinku</a></td><td>12 (4,7)</td><td>Usa los modelos con MLX en iPhone, iPad y Mac; su catálogo tiene los cinco modelos de la tabla de arriba, a 4 bits; los chats se quedan en el dispositivo</td></tr>
+<tr><td>{a(LOCALLY_AS, "Locally AI by LM Studio")}</td><td>4,7</td><td>Usa los modelos con MLX en iPhone, iPad y Mac</td></tr>
+<tr><td>{a(ENCLAVE_AS, "Enclave")}</td><td>4,7</td><td>Modelos locales; Pro añade modelos en la nube</td></tr>
+<tr><td>{a(PRIVATELLM_AS, "Private LLM")}</td><td>4,1</td><td>De pago al descargar (4,99 $ en EE. UU.); funciona con Siri y Atajos</td></tr>
+<tr><td>{a(POCKETPAL_AS, "PocketPal AI")}</td><td>4,0</td><td>Código abierto, usa cualquier modelo GGUF con llama.cpp y trae una página de Benchmark</td></tr>
+<tr><td><a href="{PINKU_STORE}">Pinku</a></td><td>4,7</td><td>Usa los modelos con MLX en iPhone, iPad y Mac; su catálogo tiene los cinco modelos de la tabla de arriba, a 4 bits; los chats se quedan en el dispositivo</td></tr>
 </tbody>
 </table>
 </div>
 
-<p>Ordenadas por número de valoraciones en el App Store de EE. UU. La velocidad depende del chip,
+<p>La velocidad depende del chip,
 del modelo y del motor (MLX o llama.cpp) más que de la app, así que el mismo modelo debería ir a una
 velocidad parecida en apps que usan el mismo motor.</p>
 

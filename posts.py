@@ -1557,10 +1557,10 @@ main library and syncs with iCloud Photos. If that matters, read on.</p>
 <div class="table-scroll"><table>
 <thead><tr><th>#</th><th>App</th><th>Price (US)</th><th>Cloud</th><th>Backup file you keep</th><th>Decoy PIN</th><th>Disguised icon</th><th>Rating (US)</th></tr></thead>
 <tbody>
-<tr><td>1</td><td><a href="%(arca)s" target="_blank" rel="noopener">Arca</a></td><td>$29.99/year, $9.99/month or $79.99 once</td><td>No</td><td>Yes, encrypted</td><td>Yes</td><td>Yes</td><td>4.8 &middot; 29</td></tr>
-<tr><td>2</td><td><a href="%(pv)s">Photo Vault</a></td><td>$29.99/year, 7 days free</td><td>Optional: your own iCloud, end-to-end encrypted, off by default</td><td>Yes, encrypted</td><td>Yes (Premium)</td><td>Yes</td><td>4.2 &middot; 6</td></tr>
-<tr><td>3</td><td><a href="%(picsafe)s" target="_blank" rel="noopener">Private Photo Vault &ndash; Pic Safe</a></td><td>Plans from $6.99 to $39.99</td><td>Yes</td><td>&mdash;</td><td>Yes</td><td>&mdash;</td><td>4.8 &middot; 1,016,507</td></tr>
-<tr><td>4</td><td><a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a></td><td>$23.99/year or $9.99/month</td><td>Yes, up to 10,000 items</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>4.7 &middot; 383,963</td></tr>
+<tr><td>1</td><td><a href="%(arca)s" target="_blank" rel="noopener">Arca</a></td><td>$29.99/year, $9.99/month or $79.99 once</td><td>No</td><td>Yes, encrypted</td><td>Yes</td><td>Yes</td><td>4.8</td></tr>
+<tr><td>2</td><td><a href="%(pv)s">Photo Vault</a></td><td>$29.99/year, 7 days free</td><td>Optional: your own iCloud, end-to-end encrypted, off by default</td><td>Yes, encrypted</td><td>Yes (Premium)</td><td>Yes</td><td>4.2</td></tr>
+<tr><td>3</td><td><a href="%(picsafe)s" target="_blank" rel="noopener">Private Photo Vault &ndash; Pic Safe</a></td><td>Plans from $6.99 to $39.99</td><td>Yes</td><td>&mdash;</td><td>Yes</td><td>&mdash;</td><td>4.8</td></tr>
+<tr><td>4</td><td><a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a></td><td>$23.99/year or $9.99/month</td><td>Yes, up to 10,000 items</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>4.7</td></tr>
 </tbody>
 </table></div>
 
@@ -1588,8 +1588,7 @@ a new iPhone. <a href="../photo-vault-security.html">How it protects your
 files</a>.</p>
 
 <p><strong>Where others beat it:</strong> no intruder photo yet (its decoy code, a second passcode that opens a separate vault, needs Premium),
-no per-file encryption of its own on top of iOS (Arca has both), and very few
-ratings so far.</p>
+and no per-file encryption of its own on top of iOS (Arca has both).</p>
 
 <h2>3. Private Photo Vault &ndash; Pic Safe: most features, most history</h2>
 
@@ -1638,10 +1637,10 @@ fototeca y se sincroniza con Fotos de iCloud. Si eso te importa, sigue leyendo.<
 <div class="table-scroll"><table>
 <thead><tr><th>#</th><th>App</th><th>Precio (EE. UU.)</th><th>Nube</th><th>Copia en archivo propio</th><th>PIN se&ntilde;uelo</th><th>Icono disfrazado</th><th>Valoraci&oacute;n (EE. UU.)</th></tr></thead>
 <tbody>
-<tr><td>1</td><td><a href="%(arca)s" target="_blank" rel="noopener">Arca</a></td><td>$29,99/a&ntilde;o, $9,99/mes o $79,99 de una vez</td><td>No</td><td>S&iacute;, cifrada</td><td>S&iacute;</td><td>S&iacute;</td><td>4,8 &middot; 29</td></tr>
-<tr><td>2</td><td><a href="%(pv)s">Photo Vault</a></td><td>$29,99/a&ntilde;o, 7 d&iacute;as gratis</td><td>Opcional: tu propio iCloud, cifrada de extremo a extremo, desactivada por defecto</td><td>S&iacute;, cifrada</td><td>S&iacute; (Premium)</td><td>S&iacute;</td><td>4,2 &middot; 6</td></tr>
-<tr><td>3</td><td><a href="%(picsafe)s" target="_blank" rel="noopener">Private Photo Vault &ndash; Pic Safe</a></td><td>Planes de $6,99 a $39,99</td><td>S&iacute;</td><td>&mdash;</td><td>S&iacute;</td><td>&mdash;</td><td>4,8 &middot; 1.016.507</td></tr>
-<tr><td>4</td><td><a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a></td><td>$23,99/a&ntilde;o o $9,99/mes</td><td>S&iacute;, hasta 10.000 elementos</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>4,7 &middot; 383.963</td></tr>
+<tr><td>1</td><td><a href="%(arca)s" target="_blank" rel="noopener">Arca</a></td><td>$29,99/a&ntilde;o, $9,99/mes o $79,99 de una vez</td><td>No</td><td>S&iacute;, cifrada</td><td>S&iacute;</td><td>S&iacute;</td><td>4,8</td></tr>
+<tr><td>2</td><td><a href="%(pv)s">Photo Vault</a></td><td>$29,99/a&ntilde;o, 7 d&iacute;as gratis</td><td>Opcional: tu propio iCloud, cifrada de extremo a extremo, desactivada por defecto</td><td>S&iacute;, cifrada</td><td>S&iacute; (Premium)</td><td>S&iacute;</td><td>4,2</td></tr>
+<tr><td>3</td><td><a href="%(picsafe)s" target="_blank" rel="noopener">Private Photo Vault &ndash; Pic Safe</a></td><td>Planes de $6,99 a $39,99</td><td>S&iacute;</td><td>&mdash;</td><td>S&iacute;</td><td>&mdash;</td><td>4,8</td></tr>
+<tr><td>4</td><td><a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a></td><td>$23,99/a&ntilde;o o $9,99/mes</td><td>S&iacute;, hasta 10.000 elementos</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>4,7</td></tr>
 </tbody>
 </table></div>
 
@@ -1671,9 +1670,7 @@ exportar toda la b&oacute;veda a un archivo cifrado con AES-256-GCM y restaurarl
 en un iPhone nuevo. <a href="../../photo-vault-security.html">C&oacute;mo protege
 tus archivos</a> (en ingl&eacute;s).</p>
 
-<p><strong>En qu&eacute; le ganan:</strong> todav&iacute;a no tiene foto del intruso (su c&oacute;digo se&ntilde;uelo, un segundo c&oacute;digo que abre otra b&oacute;veda, es de Premium), no a&ntilde;ade cifrado propio por archivo
-encima del de iOS (Arca tiene las dos cosas) y de momento tiene muy pocas
-valoraciones.</p>
+<p><strong>En qu&eacute; le ganan:</strong> todav&iacute;a no tiene foto del intruso (su c&oacute;digo se&ntilde;uelo, un segundo c&oacute;digo que abre otra b&oacute;veda, es de Premium), y no a&ntilde;ade cifrado propio por archivo encima del de iOS (Arca tiene las dos cosas).</p>
 
 <h2>3. Private Photo Vault &ndash; Pic Safe: la m&aacute;s completa y veterana</h2>
 
@@ -1835,12 +1832,12 @@ does.</p>
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Price (US)</th><th>Mac App Store</th><th>Models</th><th>Privacy label</th><th>Rating (US)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a></td><td>Free</td><td>Yes</td><td>Llama, Gemma, Qwen, DeepSeek and more, on Apple MLX</td><td>Data Not Collected</td><td>4.7 &middot; 1,740</td></tr>
-<tr><td>2. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>$4.99 upfront</td><td>Yes</td><td>Llama, Gemma, Qwen, Phi, Mistral and more, up to 14B</td><td>Data Not Collected</td><td>4.2 &middot; 734</td></tr>
-<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>Free; Pinku Pro $16.99/year or a one-time purchase</td><td>Yes</td><td>11 open models on Apple MLX, 0.4 to 4.7 GB</td><td>Purchase history and an anonymous user ID (for Pro); chats stay on the device</td><td>4.7 &middot; 12</td></tr>
-<tr><td>4. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Free; Pro $9.99</td><td>Not listed</td><td>Hundreds of open models; Pro adds cloud models</td><td>Data Not Linked to You</td><td>4.7 &middot; 1,087</td></tr>
-<tr><td>5. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Free, open source</td><td>Not listed</td><td>Any GGUF model from Hugging Face</td><td>Data Not Collected</td><td>4.1 &middot; 160</td></tr>
-<tr><td>6. <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a></td><td>Free; subscription for cloud features</td><td>Not listed</td><td>GGUF and MLX models, Apple's models, optional cloud providers</td><td>Data Used to Track You</td><td>4.8 &middot; 20</td></tr>
+<tr><td>1. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a></td><td>Free</td><td>Yes</td><td>Llama, Gemma, Qwen, DeepSeek and more, on Apple MLX</td><td>Data Not Collected</td><td>4.7</td></tr>
+<tr><td>2. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>$4.99 upfront</td><td>Yes</td><td>Llama, Gemma, Qwen, Phi, Mistral and more, up to 14B</td><td>Data Not Collected</td><td>4.2</td></tr>
+<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>Free; Pinku Pro $16.99/year or a one-time purchase</td><td>Yes</td><td>11 open models on Apple MLX, 0.4 to 4.7 GB</td><td>Purchase history and an anonymous user ID (for Pro); chats stay on the device</td><td>4.7</td></tr>
+<tr><td>4. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Free; Pro $9.99</td><td>Not listed</td><td>Hundreds of open models; Pro adds cloud models</td><td>Data Not Linked to You</td><td>4.7</td></tr>
+<tr><td>5. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Free, open source</td><td>Not listed</td><td>Any GGUF model from Hugging Face</td><td>Data Not Collected</td><td>4.1</td></tr>
+<tr><td>6. <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a></td><td>Free; subscription for cloud features</td><td>Not listed</td><td>GGUF and MLX models, Apple's models, optional cloud providers</td><td>Data Used to Track You</td><td>4.8</td></tr>
 </tbody>
 </table></div>
 
@@ -1879,9 +1876,7 @@ Japanese, Korean, Simplified Chinese and Russian.</p>
 <p>It is free to download, and chatting with the default model, Llama 3.2 1B, costs nothing. Pinku Pro is optional, as a yearly subscription ($16.99) or a one-time purchase, and lets you choose any of the other models, plus custom instructions, voice dictation recognised on the device and read aloud.</p>
 
 <p>Where others beat it: Pinku does not read images or documents, does not browse
-Hugging Face for arbitrary models, has no cloud option and no agent tools, and
-does not sync chats between your devices. It also has far fewer ratings than
-Locally AI, Enclave or Private LLM.</p>
+Hugging Face for arbitrary models, has no cloud option and no agent tools, and does not sync chats between your devices.</p>
 
 <h2>4. Enclave: local first, cloud if you want it</h2>
 
@@ -2004,12 +1999,12 @@ puedes usar, cuánto pagas y qué más hace la app.</p>
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Precio (EE. UU.)</th><th>Mac App Store</th><th>Modelos</th><th>Etiqueta de privacidad</th><th>Valoración (EE. UU.)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a></td><td>Gratis</td><td>Sí</td><td>Llama, Gemma, Qwen, DeepSeek y más, con Apple MLX</td><td>Datos no recopilados</td><td>4,7 &middot; 1.740</td></tr>
-<tr><td>2. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>4,99 $ por adelantado</td><td>Sí</td><td>Llama, Gemma, Qwen, Phi, Mistral y más, hasta 14B</td><td>Datos no recopilados</td><td>4,2 &middot; 734</td></tr>
-<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>Gratis; Pinku Pro 16,99 $/año o pago único</td><td>Sí</td><td>11 modelos abiertos con Apple MLX, de 0,4 a 4,7 GB</td><td>Historial de compras e ID de usuario anónimo (para Pro); los chats no salen del dispositivo</td><td>4,7 &middot; 12</td></tr>
-<tr><td>4. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Gratis; Pro 9,99 $</td><td>No aparece</td><td>Cientos de modelos abiertos; Pro añade modelos en la nube</td><td>Datos no vinculados a ti</td><td>4,7 &middot; 1.087</td></tr>
-<tr><td>5. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Gratis, código abierto</td><td>No aparece</td><td>Cualquier modelo GGUF de Hugging Face</td><td>Datos no recopilados</td><td>4,1 &middot; 160</td></tr>
-<tr><td>6. <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a></td><td>Gratis; suscripción para la nube</td><td>No aparece</td><td>Modelos GGUF y MLX, los de Apple y proveedores en la nube opcionales</td><td>Datos usados para rastrearte</td><td>4,8 &middot; 20</td></tr>
+<tr><td>1. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a></td><td>Gratis</td><td>Sí</td><td>Llama, Gemma, Qwen, DeepSeek y más, con Apple MLX</td><td>Datos no recopilados</td><td>4,7</td></tr>
+<tr><td>2. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>4,99 $ por adelantado</td><td>Sí</td><td>Llama, Gemma, Qwen, Phi, Mistral y más, hasta 14B</td><td>Datos no recopilados</td><td>4,2</td></tr>
+<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>Gratis; Pinku Pro 16,99 $/año o pago único</td><td>Sí</td><td>11 modelos abiertos con Apple MLX, de 0,4 a 4,7 GB</td><td>Historial de compras e ID de usuario anónimo (para Pro); los chats no salen del dispositivo</td><td>4,7</td></tr>
+<tr><td>4. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Gratis; Pro 9,99 $</td><td>No aparece</td><td>Cientos de modelos abiertos; Pro añade modelos en la nube</td><td>Datos no vinculados a ti</td><td>4,7</td></tr>
+<tr><td>5. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Gratis, código abierto</td><td>No aparece</td><td>Cualquier modelo GGUF de Hugging Face</td><td>Datos no recopilados</td><td>4,1</td></tr>
+<tr><td>6. <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a></td><td>Gratis; suscripción para la nube</td><td>No aparece</td><td>Modelos GGUF y MLX, los de Apple y proveedores en la nube opcionales</td><td>Datos usados para rastrearte</td><td>4,8</td></tr>
 </tbody>
 </table></div>
 
@@ -2050,8 +2045,7 @@ chino simplificado y ruso.</p>
 
 <p>En qué le ganan las demás: Pinku no lee imágenes ni documentos, no busca en
 Hugging Face cualquier modelo, no tiene opción en la nube ni herramientas de
-agente, y no sincroniza los chats entre tus dispositivos. Además tiene muchas menos
-valoraciones que Locally AI, Enclave o Private LLM.</p>
+agente, y no sincroniza los chats entre tus dispositivos.</p>
 
 <h2>4. Enclave: local primero, nube si la quieres</h2>
 
@@ -2315,14 +2309,14 @@ they charge.</p>
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Strongest at</th><th>How it charges</th><th>Rating (US)</th></tr></thead>
 <tbody>
-<tr><td><a href="%(runway)s" target="_blank" rel="noopener">Runway</a></td><td>Many top models in one app, an agent that builds a whole video</td><td>Free to start; subscriptions and credit packs</td><td>4.5 &middot; 16,768</td></tr>
-<tr><td><a href="%(kling)s" target="_blank" rel="noopener">Kling AI</a></td><td>Longer clips, 1080p or 4K, extension up to 3 minutes</td><td>Credit packs and plans, weekly or monthly</td><td>4.7 &middot; 31,559</td></tr>
-<tr><td><a href="%(pika)s" target="_blank" rel="noopener">Pika</a></td><td>Playful effects: swap, add or melt things in your clips</td><td>Subscriptions, weekly, monthly or yearly</td><td>4.7 &middot; 4,185</td></tr>
-<tr><td><a href="%(pixverse)s" target="_blank" rel="noopener">PixVerse Lite</a></td><td>Trending templates, AI dance, lip sync, Motion Control</td><td>Plans, weekly or yearly, and credit packs</td><td>4.3 &middot; 1,228</td></tr>
-<tr><td><a href="%(luma)s" target="_blank" rel="noopener">Luma Dream Machine</a></td><td>Consistent characters from one face photo; edit by describing</td><td>Subscriptions, plus credit packs</td><td>4.5 &middot; 1,795</td></tr>
-<tr><td><a href="%(invideo)s" target="_blank" rel="noopener">invideo</a></td><td>A full multitrack editor plus 200+ models, team editing</td><td>Plans and add-on packs</td><td>4.5 &middot; 27,821</td></tr>
-<tr><td><a href="%(capcut)s" target="_blank" rel="noopener">CapCut</a></td><td>Editing: timeline, captions, effects, 4K export</td><td>Free editor; monthly or yearly subscriptions</td><td>4.6 &middot; 1,123,165</td></tr>
-<tr><td><a href="%(dora_ios)s" target="_blank" rel="noopener">Dora</a></td><td>Many short vertical clips from photos; works inside Claude and ChatGPT</td><td>Paid plans only, no free generations</td><td>4.3 &middot; 15</td></tr>
+<tr><td><a href="%(runway)s" target="_blank" rel="noopener">Runway</a></td><td>Many top models in one app, an agent that builds a whole video</td><td>Free to start; subscriptions and credit packs</td><td>4.5</td></tr>
+<tr><td><a href="%(kling)s" target="_blank" rel="noopener">Kling AI</a></td><td>Longer clips, 1080p or 4K, extension up to 3 minutes</td><td>Credit packs and plans, weekly or monthly</td><td>4.7</td></tr>
+<tr><td><a href="%(pika)s" target="_blank" rel="noopener">Pika</a></td><td>Playful effects: swap, add or melt things in your clips</td><td>Subscriptions, weekly, monthly or yearly</td><td>4.7</td></tr>
+<tr><td><a href="%(pixverse)s" target="_blank" rel="noopener">PixVerse Lite</a></td><td>Trending templates, AI dance, lip sync, Motion Control</td><td>Plans, weekly or yearly, and credit packs</td><td>4.3</td></tr>
+<tr><td><a href="%(luma)s" target="_blank" rel="noopener">Luma Dream Machine</a></td><td>Consistent characters from one face photo; edit by describing</td><td>Subscriptions, plus credit packs</td><td>4.5</td></tr>
+<tr><td><a href="%(invideo)s" target="_blank" rel="noopener">invideo</a></td><td>A full multitrack editor plus 200+ models, team editing</td><td>Plans and add-on packs</td><td>4.5</td></tr>
+<tr><td><a href="%(capcut)s" target="_blank" rel="noopener">CapCut</a></td><td>Editing: timeline, captions, effects, 4K export</td><td>Free editor; monthly or yearly subscriptions</td><td>4.6</td></tr>
+<tr><td><a href="%(dora_ios)s" target="_blank" rel="noopener">Dora</a></td><td>Many short vertical clips from photos; works inside Claude and ChatGPT</td><td>Paid plans only, no free generations</td><td>4.3</td></tr>
 </tbody>
 </table></div>
 
@@ -2417,8 +2411,7 @@ plans only, with no free generations.</p>
 
 <p>Where others beat it: Dora is not an editor. It has no timeline, does not cut
 clips together and does not publish to social networks; you get the file and take
-it to CapCut, invideo or wherever you edit. It has no community feed or agent that
-assembles a whole video, and it has far fewer ratings than any other app here.</p>
+it to CapCut, invideo or wherever you edit. It has no community feed or agent that assembles a whole video.</p>
 
 <h2>Left out, and why</h2>
 
@@ -2471,14 +2464,14 @@ cuánto te dejan editar después y cómo cobran.</p>
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>En qué destaca</th><th>Cómo cobra</th><th>Valoración (EE. UU.)</th></tr></thead>
 <tbody>
-<tr><td><a href="%(runway)s" target="_blank" rel="noopener">Runway</a></td><td>Muchos de los mejores modelos en una app, un agente que monta el vídeo entero</td><td>Se empieza gratis; suscripciones y packs de créditos</td><td>4,5 &middot; 16.768</td></tr>
-<tr><td><a href="%(kling)s" target="_blank" rel="noopener">Kling AI</a></td><td>Clips más largos, 1080p o 4K, extensión hasta 3 minutos</td><td>Packs de créditos y planes, semanales o mensuales</td><td>4,7 &middot; 31.559</td></tr>
-<tr><td><a href="%(pika)s" target="_blank" rel="noopener">Pika</a></td><td>Efectos divertidos: cambiar, añadir o derretir cosas en tus clips</td><td>Suscripciones semanales, mensuales o anuales</td><td>4,7 &middot; 4.185</td></tr>
-<tr><td><a href="%(pixverse)s" target="_blank" rel="noopener">PixVerse Lite</a></td><td>Plantillas de tendencia, baile con IA, lip sync, Motion Control</td><td>Planes semanales o anuales y packs de créditos</td><td>4,3 &middot; 1.228</td></tr>
-<tr><td><a href="%(luma)s" target="_blank" rel="noopener">Luma Dream Machine</a></td><td>Personajes coherentes a partir de una foto de la cara; editar describiendo</td><td>Suscripciones y packs de créditos</td><td>4,5 &middot; 1.795</td></tr>
-<tr><td><a href="%(invideo)s" target="_blank" rel="noopener">invideo</a></td><td>Editor multipista completo, más de 200 modelos, edición en equipo</td><td>Planes y packs adicionales</td><td>4,5 &middot; 27.821</td></tr>
-<tr><td><a href="%(capcut)s" target="_blank" rel="noopener">CapCut</a></td><td>Editar: línea de tiempo, subtítulos, efectos, exportar en 4K</td><td>Editor gratis; suscripciones mensuales o anuales</td><td>4,6 &middot; 1.123.165</td></tr>
-<tr><td><a href="%(dora_ios)s" target="_blank" rel="noopener">Dora</a></td><td>Muchos clips verticales cortos a partir de fotos; funciona dentro de Claude y ChatGPT</td><td>Solo planes de pago, sin generaciones gratis</td><td>4,3 &middot; 15</td></tr>
+<tr><td><a href="%(runway)s" target="_blank" rel="noopener">Runway</a></td><td>Muchos de los mejores modelos en una app, un agente que monta el vídeo entero</td><td>Se empieza gratis; suscripciones y packs de créditos</td><td>4,5</td></tr>
+<tr><td><a href="%(kling)s" target="_blank" rel="noopener">Kling AI</a></td><td>Clips más largos, 1080p o 4K, extensión hasta 3 minutos</td><td>Packs de créditos y planes, semanales o mensuales</td><td>4,7</td></tr>
+<tr><td><a href="%(pika)s" target="_blank" rel="noopener">Pika</a></td><td>Efectos divertidos: cambiar, añadir o derretir cosas en tus clips</td><td>Suscripciones semanales, mensuales o anuales</td><td>4,7</td></tr>
+<tr><td><a href="%(pixverse)s" target="_blank" rel="noopener">PixVerse Lite</a></td><td>Plantillas de tendencia, baile con IA, lip sync, Motion Control</td><td>Planes semanales o anuales y packs de créditos</td><td>4,3</td></tr>
+<tr><td><a href="%(luma)s" target="_blank" rel="noopener">Luma Dream Machine</a></td><td>Personajes coherentes a partir de una foto de la cara; editar describiendo</td><td>Suscripciones y packs de créditos</td><td>4,5</td></tr>
+<tr><td><a href="%(invideo)s" target="_blank" rel="noopener">invideo</a></td><td>Editor multipista completo, más de 200 modelos, edición en equipo</td><td>Planes y packs adicionales</td><td>4,5</td></tr>
+<tr><td><a href="%(capcut)s" target="_blank" rel="noopener">CapCut</a></td><td>Editar: línea de tiempo, subtítulos, efectos, exportar en 4K</td><td>Editor gratis; suscripciones mensuales o anuales</td><td>4,6</td></tr>
+<tr><td><a href="%(dora_ios)s" target="_blank" rel="noopener">Dora</a></td><td>Muchos clips verticales cortos a partir de fotos; funciona dentro de Claude y ChatGPT</td><td>Solo planes de pago, sin generaciones gratis</td><td>4,3</td></tr>
 </tbody>
 </table></div>
 
@@ -2573,8 +2566,7 @@ sin generaciones gratis.</p>
 
 <p>En qué le ganan las demás: Dora no es un editor. No tiene línea de tiempo, no
 une clips y no publica en redes; te da el archivo y lo llevas a CapCut, a invideo
-o a donde edites. No tiene muro de la comunidad ni un agente que monte un vídeo
-entero, y tiene muchas menos valoraciones que cualquier otra app de la lista.</p>
+o a donde edites. No tiene muro de la comunidad ni un agente que monte un vídeo entero.</p>
 
 <h2>Las que faltan, y por qué</h2>
 
@@ -2653,11 +2645,11 @@ being in your country's App Store. On %(date)s, Apple's lookup API showed:</p>
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Price (US)</th><th>Russia</th><th>Mainland China</th><th>Hong Kong</th><th>Rating (US)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI</a></td><td>Free</td><td>No</td><td>No</td><td>Yes</td><td>4.7 &middot; 1,740</td></tr>
-<tr><td>2. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>$4.99 upfront</td><td>Yes</td><td>Yes</td><td>Yes</td><td>4.2 &middot; 734</td></tr>
-<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>Free; Pro $16.99/year or a one-time purchase</td><td>Yes</td><td>Yes</td><td>Yes</td><td>4.7 &middot; 12</td></tr>
-<tr><td>4. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Free, open source</td><td>Yes</td><td>Yes</td><td>Yes</td><td>4.1 &middot; 160</td></tr>
-<tr><td>5. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Free; Pro $9.99</td><td>Yes</td><td>No</td><td>Yes</td><td>4.7 &middot; 1,087</td></tr>
+<tr><td>1. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI</a></td><td>Free</td><td>No</td><td>No</td><td>Yes</td><td>4.7</td></tr>
+<tr><td>2. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>$4.99 upfront</td><td>Yes</td><td>Yes</td><td>Yes</td><td>4.2</td></tr>
+<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>Free; Pro $16.99/year or a one-time purchase</td><td>Yes</td><td>Yes</td><td>Yes</td><td>4.7</td></tr>
+<tr><td>4. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Free, open source</td><td>Yes</td><td>Yes</td><td>Yes</td><td>4.1</td></tr>
+<tr><td>5. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Free; Pro $9.99</td><td>Yes</td><td>No</td><td>Yes</td><td>4.7</td></tr>
 </tbody>
 </table></div>
 
@@ -2777,11 +2769,11 @@ el App Store de tu país. A %(date)s, la API de Apple mostraba:</p>
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Precio (EE. UU.)</th><th>Rusia</th><th>China continental</th><th>Hong Kong</th><th>Valoración (EE. UU.)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI</a></td><td>Gratis</td><td>No</td><td>No</td><td>Sí</td><td>4,7 &middot; 1.740</td></tr>
-<tr><td>2. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>4,99 $ por adelantado</td><td>Sí</td><td>Sí</td><td>Sí</td><td>4,2 &middot; 734</td></tr>
-<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>Gratis; Pro 16,99 $/año o pago único</td><td>Sí</td><td>Sí</td><td>Sí</td><td>4,7 &middot; 12</td></tr>
-<tr><td>4. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Gratis, código abierto</td><td>Sí</td><td>Sí</td><td>Sí</td><td>4,1 &middot; 160</td></tr>
-<tr><td>5. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Gratis; Pro 9,99 $</td><td>Sí</td><td>No</td><td>Sí</td><td>4,7 &middot; 1.087</td></tr>
+<tr><td>1. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI</a></td><td>Gratis</td><td>No</td><td>No</td><td>Sí</td><td>4,7</td></tr>
+<tr><td>2. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>4,99 $ por adelantado</td><td>Sí</td><td>Sí</td><td>Sí</td><td>4,2</td></tr>
+<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>Gratis; Pro 16,99 $/año o pago único</td><td>Sí</td><td>Sí</td><td>Sí</td><td>4,7</td></tr>
+<tr><td>4. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Gratis, código abierto</td><td>Sí</td><td>Sí</td><td>Sí</td><td>4,1</td></tr>
+<tr><td>5. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Gratis; Pro 9,99 $</td><td>Sí</td><td>No</td><td>Sí</td><td>4,7</td></tr>
 </tbody>
 </table></div>
 
@@ -3531,11 +3523,11 @@ ten times. These five apps do that job in different ways.</p>
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Strongest at</th><th>How it charges</th><th>Rating (US)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(heygen)s" target="_blank" rel="noopener">HeyGen</a></td><td>Your own avatar and voice reading a script; translation into 100+ languages</td><td>Weekly or monthly plans, plus credit packs</td><td>4.8 &middot; 26,783</td></tr>
-<tr><td>2. <a href="%(captions)s" target="_blank" rel="noopener">Captions</a></td><td>AI editing, subtitles, dubbing, AI actors and an AI twin from a selfie</td><td>Weekly, monthly or yearly subscriptions</td><td>4.7 &middot; 38,320</td></tr>
-<tr><td>3. <a href="%(dora_ios)s">Dora</a></td><td>Product scenes, a recurring character, Motion Control; also on the web and inside Claude and ChatGPT</td><td>Paid plans only, no free generations</td><td>4.3 &middot; 15</td></tr>
-<tr><td>4. <a href="%(vmake)s" target="_blank" rel="noopener">Vmake Labs</a></td><td>Templates: unboxing, before and after, product in hand, lip sync</td><td>Subscriptions and credit packs</td><td>4.8 &middot; 5,170</td></tr>
-<tr><td>5. <a href="%(zeely)s" target="_blank" rel="noopener">Zeely</a></td><td>Ads from a product link, launched on Facebook and Instagram from the app</td><td>Weekly or multi-month plans, plus credits</td><td>4.6 &middot; 22,813</td></tr>
+<tr><td>1. <a href="%(heygen)s" target="_blank" rel="noopener">HeyGen</a></td><td>Your own avatar and voice reading a script; translation into 100+ languages</td><td>Weekly or monthly plans, plus credit packs</td><td>4.8</td></tr>
+<tr><td>2. <a href="%(captions)s" target="_blank" rel="noopener">Captions</a></td><td>AI editing, subtitles, dubbing, AI actors and an AI twin from a selfie</td><td>Weekly, monthly or yearly subscriptions</td><td>4.7</td></tr>
+<tr><td>3. <a href="%(dora_ios)s">Dora</a></td><td>Product scenes, a recurring character, Motion Control; also on the web and inside Claude and ChatGPT</td><td>Paid plans only, no free generations</td><td>4.3</td></tr>
+<tr><td>4. <a href="%(vmake)s" target="_blank" rel="noopener">Vmake Labs</a></td><td>Templates: unboxing, before and after, product in hand, lip sync</td><td>Subscriptions and credit packs</td><td>4.8</td></tr>
+<tr><td>5. <a href="%(zeely)s" target="_blank" rel="noopener">Zeely</a></td><td>Ads from a product link, launched on Facebook and Instagram from the app</td><td>Weekly or multi-month plans, plus credits</td><td>4.6</td></tr>
 </tbody>
 </table></div>
 
@@ -3664,11 +3656,11 @@ distintas.</p>
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>En qué destaca</th><th>Cómo cobra</th><th>Valoración (EE. UU.)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(heygen)s" target="_blank" rel="noopener">HeyGen</a></td><td>Tu propio avatar y tu voz leyendo un guion; traducción a más de 100 idiomas</td><td>Planes semanales o mensuales y packs de créditos</td><td>4,8 &middot; 26.783</td></tr>
-<tr><td>2. <a href="%(captions)s" target="_blank" rel="noopener">Captions</a></td><td>Edición con IA, subtítulos, doblaje, actores con IA y un gemelo a partir de un selfie</td><td>Suscripciones semanales, mensuales o anuales</td><td>4,7 &middot; 38.320</td></tr>
-<tr><td>3. <a href="%(dora_ios)s">Dora</a></td><td>Escenas de producto, un personaje que se repite, Motion Control; también en la web y dentro de Claude y ChatGPT</td><td>Solo planes de pago, sin generaciones gratis</td><td>4,3 &middot; 15</td></tr>
-<tr><td>4. <a href="%(vmake)s" target="_blank" rel="noopener">Vmake Labs</a></td><td>Plantillas: unboxing, antes y después, producto en mano, lip sync</td><td>Suscripciones y packs de créditos</td><td>4,8 &middot; 5.170</td></tr>
-<tr><td>5. <a href="%(zeely)s" target="_blank" rel="noopener">Zeely</a></td><td>Anuncios a partir del enlace del producto, lanzados en Facebook e Instagram desde la app</td><td>Planes semanales o de varios meses y créditos</td><td>4,6 &middot; 22.813</td></tr>
+<tr><td>1. <a href="%(heygen)s" target="_blank" rel="noopener">HeyGen</a></td><td>Tu propio avatar y tu voz leyendo un guion; traducción a más de 100 idiomas</td><td>Planes semanales o mensuales y packs de créditos</td><td>4,8</td></tr>
+<tr><td>2. <a href="%(captions)s" target="_blank" rel="noopener">Captions</a></td><td>Edición con IA, subtítulos, doblaje, actores con IA y un gemelo a partir de un selfie</td><td>Suscripciones semanales, mensuales o anuales</td><td>4,7</td></tr>
+<tr><td>3. <a href="%(dora_ios)s">Dora</a></td><td>Escenas de producto, un personaje que se repite, Motion Control; también en la web y dentro de Claude y ChatGPT</td><td>Solo planes de pago, sin generaciones gratis</td><td>4,3</td></tr>
+<tr><td>4. <a href="%(vmake)s" target="_blank" rel="noopener">Vmake Labs</a></td><td>Plantillas: unboxing, antes y después, producto en mano, lip sync</td><td>Suscripciones y packs de créditos</td><td>4,8</td></tr>
+<tr><td>5. <a href="%(zeely)s" target="_blank" rel="noopener">Zeely</a></td><td>Anuncios a partir del enlace del producto, lanzados en Facebook e Instagram desde la app</td><td>Planes semanales o de varios meses y créditos</td><td>4,6</td></tr>
 </tbody>
 </table></div>
 
@@ -3848,11 +3840,11 @@ enforce the limit. Three do, and two popular planners can be bent to it.</p>
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Limit of three</th><th>Timer</th><th>Price (US)</th><th>Privacy label</th><th>Rating (US)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(threetodo)s" target="_blank" rel="noopener">Three Todo</a></td><td>Yes, shows three at a time</td><td>No</td><td>$0.99 upfront</td><td>Data Not Collected</td><td>4.9 &middot; 16</td></tr>
-<tr><td>2. <a href="%(top3)s" target="_blank" rel="noopener">Top 3</a></td><td>Yes, three per day, daily reset</td><td>No</td><td>Free; premium one-time purchase</td><td>Data Not Collected</td><td>4.0 &middot; 5</td></tr>
-<tr><td>3. <a href="%(t3)s">3 Tasks</a></td><td>Yes, three fixed slots</td><td>Stopwatch per task</td><td>Free, no in-app purchases</td><td>Data Used to Track You (usage data)</td><td>5.0 &middot; 5</td></tr>
-<tr><td>4. <a href="%(structured)s" target="_blank" rel="noopener">Structured</a></td><td>No</td><td>Pomodoro</td><td>Free; Pro subscription or lifetime</td><td>Data Linked to You</td><td>4.8 &middot; 167,145</td></tr>
-<tr><td>5. <a href="%(ticktick)s" target="_blank" rel="noopener">TickTick</a></td><td>No</td><td>Pomo timer</td><td>Free; Premium subscription</td><td>Data Linked to You</td><td>4.9 &middot; 46,242</td></tr>
+<tr><td>1. <a href="%(threetodo)s" target="_blank" rel="noopener">Three Todo</a></td><td>Yes, shows three at a time</td><td>No</td><td>$0.99 upfront</td><td>Data Not Collected</td><td>4.9</td></tr>
+<tr><td>2. <a href="%(top3)s" target="_blank" rel="noopener">Top 3</a></td><td>Yes, three per day, daily reset</td><td>No</td><td>Free; premium one-time purchase</td><td>Data Not Collected</td><td>4.0</td></tr>
+<tr><td>3. <a href="%(t3)s">3 Tasks</a></td><td>Yes, three fixed slots</td><td>Stopwatch per task</td><td>Free, no in-app purchases</td><td>Data Used to Track You (usage data)</td><td>5.0</td></tr>
+<tr><td>4. <a href="%(structured)s" target="_blank" rel="noopener">Structured</a></td><td>No</td><td>Pomodoro</td><td>Free; Pro subscription or lifetime</td><td>Data Linked to You</td><td>4.8</td></tr>
+<tr><td>5. <a href="%(ticktick)s" target="_blank" rel="noopener">TickTick</a></td><td>No</td><td>Pomo timer</td><td>Free; Premium subscription</td><td>Data Linked to You</td><td>4.9</td></tr>
 </tbody>
 </table></div>
 
@@ -3958,11 +3950,11 @@ se pueden adaptar a ello.</p>
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Límite de tres</th><th>Temporizador</th><th>Precio (EE. UU.)</th><th>Etiqueta de privacidad</th><th>Valoración (EE. UU.)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(threetodo)s" target="_blank" rel="noopener">Three Todo</a></td><td>Sí, muestra tres a la vez</td><td>No</td><td>0,99 $ por adelantado</td><td>Datos no recopilados</td><td>4,9 &middot; 16</td></tr>
-<tr><td>2. <a href="%(top3)s" target="_blank" rel="noopener">Top 3</a></td><td>Sí, tres al día, se reinicia cada día</td><td>No</td><td>Gratis; premium de pago único</td><td>Datos no recopilados</td><td>4,0 &middot; 5</td></tr>
-<tr><td>3. <a href="%(t3)s">3 Tasks</a></td><td>Sí, tres huecos fijos</td><td>Cronómetro por tarea</td><td>Gratis, sin compras dentro de la app</td><td>Datos usados para rastrearte (datos de uso)</td><td>5,0 &middot; 5</td></tr>
-<tr><td>4. <a href="%(structured)s" target="_blank" rel="noopener">Structured</a></td><td>No</td><td>Pomodoro</td><td>Gratis; Pro por suscripción o de por vida</td><td>Datos vinculados a ti</td><td>4,8 &middot; 167.145</td></tr>
-<tr><td>5. <a href="%(ticktick)s" target="_blank" rel="noopener">TickTick</a></td><td>No</td><td>Pomo</td><td>Gratis; Premium por suscripción</td><td>Datos vinculados a ti</td><td>4,9 &middot; 46.242</td></tr>
+<tr><td>1. <a href="%(threetodo)s" target="_blank" rel="noopener">Three Todo</a></td><td>Sí, muestra tres a la vez</td><td>No</td><td>0,99 $ por adelantado</td><td>Datos no recopilados</td><td>4,9</td></tr>
+<tr><td>2. <a href="%(top3)s" target="_blank" rel="noopener">Top 3</a></td><td>Sí, tres al día, se reinicia cada día</td><td>No</td><td>Gratis; premium de pago único</td><td>Datos no recopilados</td><td>4,0</td></tr>
+<tr><td>3. <a href="%(t3)s">3 Tasks</a></td><td>Sí, tres huecos fijos</td><td>Cronómetro por tarea</td><td>Gratis, sin compras dentro de la app</td><td>Datos usados para rastrearte (datos de uso)</td><td>5,0</td></tr>
+<tr><td>4. <a href="%(structured)s" target="_blank" rel="noopener">Structured</a></td><td>No</td><td>Pomodoro</td><td>Gratis; Pro por suscripción o de por vida</td><td>Datos vinculados a ti</td><td>4,8</td></tr>
+<tr><td>5. <a href="%(ticktick)s" target="_blank" rel="noopener">TickTick</a></td><td>No</td><td>Pomo</td><td>Gratis; Premium por suscripción</td><td>Datos vinculados a ti</td><td>4,9</td></tr>
 </tbody>
 </table></div>
 
@@ -4185,13 +4177,13 @@ second, CoinStats, Delta and CoinTracker below are built for it.</p>
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Portfolio</th><th>Connects wallets / exchanges</th><th>How it charges (US)</th><th>Privacy label</th><th>Rating (US)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(cryptopro)s" target="_blank" rel="noopener">Crypto Pro</a></td><td>By hand or imported</td><td>Wallet addresses and exchange API keys</td><td>Free; Premium subscription</td><td>Data Not Linked to You</td><td>4.7 &middot; 46,609</td></tr>
-<tr><td>2. <a href="%(coingecko)s" target="_blank" rel="noopener">CoinGecko</a></td><td>From your transactions, several portfolios</td><td>Not in its listing</td><td>Free; Premium subscription</td><td>Data Linked to You (email)</td><td>4.8 &middot; 27,104</td></tr>
-<tr><td>3. <a href="%(cmc)s" target="_blank" rel="noopener">CoinMarketCap</a></td><td>Portfolio and watchlists</td><td>Not in its listing</td><td>Free; subscription plans</td><td>Data Used to Track You (usage data)</td><td>4.8 &middot; 172,884</td></tr>
-<tr><td>4. <a href="%(crypton)s">Crypton</a></td><td>Entered by hand, top 250 coins</td><td>No</td><td>Free, no in-app purchases</td><td>Data Used to Track You (usage data)</td><td>4.7 &middot; 182</td></tr>
-<tr><td>5. <a href="%(coinstats)s" target="_blank" rel="noopener">CoinStats</a></td><td>Synced, with profit and loss</td><td>300+ wallets and exchanges</td><td>Free; Premium subscription</td><td>Data Not Linked to You</td><td>4.8 &middot; 85,783</td></tr>
-<tr><td>6. <a href="%(delta)s" target="_blank" rel="noopener">Delta</a></td><td>Crypto, stocks, ETFs, forex</td><td>200+ exchanges, brokers and wallets</td><td>Free up to 10 assets; PRO and PRO+ subscriptions</td><td>Data Used to Track You (identifiers, usage data)</td><td>4.7 &middot; 11,366</td></tr>
-<tr><td>7. <a href="%(cointracker)s" target="_blank" rel="noopener">CoinTracker</a></td><td>Net worth, gains and losses</td><td>500+ integrations</td><td>Free app, no in-app purchases listed</td><td>Data Not Linked to You</td><td>4.7 &middot; 14,351</td></tr>
+<tr><td>1. <a href="%(cryptopro)s" target="_blank" rel="noopener">Crypto Pro</a></td><td>By hand or imported</td><td>Wallet addresses and exchange API keys</td><td>Free; Premium subscription</td><td>Data Not Linked to You</td><td>4.7</td></tr>
+<tr><td>2. <a href="%(coingecko)s" target="_blank" rel="noopener">CoinGecko</a></td><td>From your transactions, several portfolios</td><td>Not in its listing</td><td>Free; Premium subscription</td><td>Data Linked to You (email)</td><td>4.8</td></tr>
+<tr><td>3. <a href="%(cmc)s" target="_blank" rel="noopener">CoinMarketCap</a></td><td>Portfolio and watchlists</td><td>Not in its listing</td><td>Free; subscription plans</td><td>Data Used to Track You (usage data)</td><td>4.8</td></tr>
+<tr><td>4. <a href="%(crypton)s">Crypton</a></td><td>Entered by hand, top 250 coins</td><td>No</td><td>Free, no in-app purchases</td><td>Data Used to Track You (usage data)</td><td>4.7</td></tr>
+<tr><td>5. <a href="%(coinstats)s" target="_blank" rel="noopener">CoinStats</a></td><td>Synced, with profit and loss</td><td>300+ wallets and exchanges</td><td>Free; Premium subscription</td><td>Data Not Linked to You</td><td>4.8</td></tr>
+<tr><td>6. <a href="%(delta)s" target="_blank" rel="noopener">Delta</a></td><td>Crypto, stocks, ETFs, forex</td><td>200+ exchanges, brokers and wallets</td><td>Free up to 10 assets; PRO and PRO+ subscriptions</td><td>Data Used to Track You (identifiers, usage data)</td><td>4.7</td></tr>
+<tr><td>7. <a href="%(cointracker)s" target="_blank" rel="noopener">CoinTracker</a></td><td>Net worth, gains and losses</td><td>500+ integrations</td><td>Free app, no in-app purchases listed</td><td>Data Not Linked to You</td><td>4.7</td></tr>
 </tbody>
 </table></div>
 
@@ -4337,13 +4329,13 @@ CoinStats, Delta y CoinTracker, más abajo, están hechas para eso.</p>
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Cartera</th><th>Conecta monederos / exchanges</th><th>Cómo cobra (EE. UU.)</th><th>Etiqueta de privacidad</th><th>Valoración (EE. UU.)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(cryptopro)s" target="_blank" rel="noopener">Crypto Pro</a></td><td>A mano o importada</td><td>Direcciones de monedero y claves de API de exchanges</td><td>Gratis; Premium por suscripción</td><td>Datos no vinculados a ti</td><td>4,7 &middot; 46.609</td></tr>
-<tr><td>2. <a href="%(coingecko)s" target="_blank" rel="noopener">CoinGecko</a></td><td>A partir de tus operaciones, varias carteras</td><td>No lo dice su ficha</td><td>Gratis; Premium por suscripción</td><td>Datos vinculados a ti (correo)</td><td>4,8 &middot; 27.104</td></tr>
-<tr><td>3. <a href="%(cmc)s" target="_blank" rel="noopener">CoinMarketCap</a></td><td>Cartera y listas de seguimiento</td><td>No lo dice su ficha</td><td>Gratis; planes por suscripción</td><td>Datos usados para rastrearte (datos de uso)</td><td>4,8 &middot; 172.884</td></tr>
-<tr><td>4. <a href="%(crypton)s">Crypton</a></td><td>Apuntada a mano, 250 principales monedas</td><td>No</td><td>Gratis, sin compras dentro de la app</td><td>Datos usados para rastrearte (datos de uso)</td><td>4,7 &middot; 182</td></tr>
-<tr><td>5. <a href="%(coinstats)s" target="_blank" rel="noopener">CoinStats</a></td><td>Sincronizada, con ganancias y pérdidas</td><td>Más de 300 monederos y exchanges</td><td>Gratis; Premium por suscripción</td><td>Datos no vinculados a ti</td><td>4,8 &middot; 85.783</td></tr>
-<tr><td>6. <a href="%(delta)s" target="_blank" rel="noopener">Delta</a></td><td>Cripto, acciones, ETF, divisas</td><td>Más de 200 exchanges, brókers y monederos</td><td>Gratis hasta 10 activos; PRO y PRO+ por suscripción</td><td>Datos usados para rastrearte (identificadores, datos de uso)</td><td>4,7 &middot; 11.366</td></tr>
-<tr><td>7. <a href="%(cointracker)s" target="_blank" rel="noopener">CoinTracker</a></td><td>Patrimonio, ganancias y pérdidas</td><td>Más de 500 integraciones</td><td>App gratis, sin compras dentro de la app en su ficha</td><td>Datos no vinculados a ti</td><td>4,7 &middot; 14.351</td></tr>
+<tr><td>1. <a href="%(cryptopro)s" target="_blank" rel="noopener">Crypto Pro</a></td><td>A mano o importada</td><td>Direcciones de monedero y claves de API de exchanges</td><td>Gratis; Premium por suscripción</td><td>Datos no vinculados a ti</td><td>4,7</td></tr>
+<tr><td>2. <a href="%(coingecko)s" target="_blank" rel="noopener">CoinGecko</a></td><td>A partir de tus operaciones, varias carteras</td><td>No lo dice su ficha</td><td>Gratis; Premium por suscripción</td><td>Datos vinculados a ti (correo)</td><td>4,8</td></tr>
+<tr><td>3. <a href="%(cmc)s" target="_blank" rel="noopener">CoinMarketCap</a></td><td>Cartera y listas de seguimiento</td><td>No lo dice su ficha</td><td>Gratis; planes por suscripción</td><td>Datos usados para rastrearte (datos de uso)</td><td>4,8</td></tr>
+<tr><td>4. <a href="%(crypton)s">Crypton</a></td><td>Apuntada a mano, 250 principales monedas</td><td>No</td><td>Gratis, sin compras dentro de la app</td><td>Datos usados para rastrearte (datos de uso)</td><td>4,7</td></tr>
+<tr><td>5. <a href="%(coinstats)s" target="_blank" rel="noopener">CoinStats</a></td><td>Sincronizada, con ganancias y pérdidas</td><td>Más de 300 monederos y exchanges</td><td>Gratis; Premium por suscripción</td><td>Datos no vinculados a ti</td><td>4,8</td></tr>
+<tr><td>6. <a href="%(delta)s" target="_blank" rel="noopener">Delta</a></td><td>Cripto, acciones, ETF, divisas</td><td>Más de 200 exchanges, brókers y monederos</td><td>Gratis hasta 10 activos; PRO y PRO+ por suscripción</td><td>Datos usados para rastrearte (identificadores, datos de uso)</td><td>4,7</td></tr>
+<tr><td>7. <a href="%(cointracker)s" target="_blank" rel="noopener">CoinTracker</a></td><td>Patrimonio, ganancias y pérdidas</td><td>Más de 500 integraciones</td><td>App gratis, sin compras dentro de la app en su ficha</td><td>Datos no vinculados a ti</td><td>4,7</td></tr>
 </tbody>
 </table></div>
 
@@ -4536,13 +4528,13 @@ someone without opening the rest.</p>
 <div class="table-scroll"><table>
 <thead><tr><th>#</th><th>App</th><th>Price (US)</th><th>Cloud backup</th><th>Decoy PIN</th><th>Rating (US)</th></tr></thead>
 <tbody>
-<tr><td>1</td><td><a href="%(safety)s" target="_blank" rel="noopener">Safety Photo+Video Pro</a></td><td>Free; cloud sync $2.99/month, $19.99/year or $59.99 once</td><td>Optional, encrypted on the device first</td><td>Yes</td><td>4.7 &middot; 5,176</td></tr>
-<tr><td>2</td><td><a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a></td><td>$23.99/year or $9.99/month</td><td>Yes, up to 10,000 items</td><td>&mdash;</td><td>4.7 &middot; 384,037</td></tr>
-<tr><td>3</td><td><a href="%(picsafe)s" target="_blank" rel="noopener">Private Photo Vault &ndash; Pic Safe</a></td><td>Plans from $6.99 to $39.99</td><td>Yes (Cloud Vault, premium)</td><td>Yes</td><td>4.8 &middot; 1,016,507</td></tr>
-<tr><td>4</td><td><a href="%(pv)s">Photo Vault</a></td><td>Free to try; yearly subscription, 7 days free</td><td>Optional iCloud copy (your own iCloud, end-to-end encrypted, off by default); encrypted backup file you keep</td><td>Yes (Premium)</td><td>4.2 &middot; 6</td></tr>
-<tr><td>5</td><td><a href="%(secretpv)s" target="_blank" rel="noopener">Secret Photo Vault &ndash; Hide Pics</a></td><td>Premium from $4.99 to $39.99</td><td>Multi-device backup</td><td>&mdash;</td><td>4.7 &middot; 436</td></tr>
-<tr><td>6</td><td><a href="%(spvlock)s" target="_blank" rel="noopener">Lock: Private Photo Vault SPV</a></td><td>$2.99/month, $4.99/year or $12.99 once</td><td>&mdash;</td><td>&mdash;</td><td>4.6 &middot; 76</td></tr>
-<tr><td>7</td><td><a href="%(keepps)s" target="_blank" rel="noopener">Keep Photo Safe Vault</a></td><td>$6.99 upfront, no in-app purchases</td><td>&mdash;</td><td>&mdash;</td><td>4.6 &middot; 42</td></tr>
+<tr><td>1</td><td><a href="%(safety)s" target="_blank" rel="noopener">Safety Photo+Video Pro</a></td><td>Free; cloud sync $2.99/month, $19.99/year or $59.99 once</td><td>Optional, encrypted on the device first</td><td>Yes</td><td>4.7</td></tr>
+<tr><td>2</td><td><a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a></td><td>$23.99/year or $9.99/month</td><td>Yes, up to 10,000 items</td><td>&mdash;</td><td>4.7</td></tr>
+<tr><td>3</td><td><a href="%(picsafe)s" target="_blank" rel="noopener">Private Photo Vault &ndash; Pic Safe</a></td><td>Plans from $6.99 to $39.99</td><td>Yes (Cloud Vault, premium)</td><td>Yes</td><td>4.8</td></tr>
+<tr><td>4</td><td><a href="%(pv)s">Photo Vault</a></td><td>Free to try; yearly subscription, 7 days free</td><td>Optional iCloud copy (your own iCloud, end-to-end encrypted, off by default); encrypted backup file you keep</td><td>Yes (Premium)</td><td>4.2</td></tr>
+<tr><td>5</td><td><a href="%(secretpv)s" target="_blank" rel="noopener">Secret Photo Vault &ndash; Hide Pics</a></td><td>Premium from $4.99 to $39.99</td><td>Multi-device backup</td><td>&mdash;</td><td>4.7</td></tr>
+<tr><td>6</td><td><a href="%(spvlock)s" target="_blank" rel="noopener">Lock: Private Photo Vault SPV</a></td><td>$2.99/month, $4.99/year or $12.99 once</td><td>&mdash;</td><td>&mdash;</td><td>4.6</td></tr>
+<tr><td>7</td><td><a href="%(keepps)s" target="_blank" rel="noopener">Keep Photo Safe Vault</a></td><td>$6.99 upfront, no in-app purchases</td><td>&mdash;</td><td>&mdash;</td><td>4.6</td></tr>
 </tbody>
 </table></div>
 
@@ -4573,7 +4565,7 @@ pass as Calculator, Notes or Weather, turning the phone face down jumps to anoth
 app, and you can export the whole vault, album passwords included, to one encrypted
 file. <a href="%(sec)s">How it protects your files</a>.</p>
 <p><strong>Where others beat it:</strong> an album password controls who can open the
-album in the app; the files are not encrypted again with it. Its decoy code (a second passcode that opens a separate vault) needs Premium, and it has very few ratings.</p>
+album in the app; the files are not encrypted again with it. Its decoy code (a second passcode that opens a separate vault) needs Premium.</p>
 
 <h2>5 to 7. Smaller apps that do the basics</h2>
 <p><strong>Secret Photo Vault &ndash; Hide Pics</strong> adds a unique password to
@@ -4606,13 +4598,13 @@ ense&ntilde;ar el de las vacaciones sin abrir el resto.</p>
 <div class="table-scroll"><table>
 <thead><tr><th>#</th><th>App</th><th>Precio (EE. UU.)</th><th>Copia en la nube</th><th>PIN se&ntilde;uelo</th><th>Valoraci&oacute;n (EE. UU.)</th></tr></thead>
 <tbody>
-<tr><td>1</td><td><a href="%(safety)s" target="_blank" rel="noopener">Safety Photo+Video Pro</a></td><td>Gratis; nube $2,99/mes, $19,99/a&ntilde;o o $59,99 de una vez</td><td>Opcional, cifrada antes en el m&oacute;vil</td><td>S&iacute;</td><td>4,7 &middot; 5.176</td></tr>
-<tr><td>2</td><td><a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a></td><td>$23,99/a&ntilde;o o $9,99/mes</td><td>S&iacute;, hasta 10.000 elementos</td><td>&mdash;</td><td>4,7 &middot; 384.037</td></tr>
-<tr><td>3</td><td><a href="%(picsafe)s" target="_blank" rel="noopener">Private Photo Vault &ndash; Pic Safe</a></td><td>Planes de $6,99 a $39,99</td><td>S&iacute; (Cloud Vault, de pago)</td><td>S&iacute;</td><td>4,8 &middot; 1.016.507</td></tr>
-<tr><td>4</td><td><a href="%(pv)s">Photo Vault</a></td><td>Prueba gratis; suscripci&oacute;n anual, 7 d&iacute;as gratis</td><td>Copia opcional en tu iCloud (cifrada de extremo a extremo, desactivada por defecto); archivo de copia cifrado que guardas t&uacute;</td><td>S&iacute; (Premium)</td><td>4,2 &middot; 6</td></tr>
-<tr><td>5</td><td><a href="%(secretpv)s" target="_blank" rel="noopener">Secret Photo Vault &ndash; Hide Pics</a></td><td>Premium de $4,99 a $39,99</td><td>Copia en varios dispositivos</td><td>&mdash;</td><td>4,7 &middot; 436</td></tr>
-<tr><td>6</td><td><a href="%(spvlock)s" target="_blank" rel="noopener">Lock: Private Photo Vault SPV</a></td><td>$2,99/mes, $4,99/a&ntilde;o o $12,99 de una vez</td><td>&mdash;</td><td>&mdash;</td><td>4,6 &middot; 76</td></tr>
-<tr><td>7</td><td><a href="%(keepps)s" target="_blank" rel="noopener">Keep Photo Safe Vault</a></td><td>$6,99 de entrada, sin compras dentro</td><td>&mdash;</td><td>&mdash;</td><td>4,6 &middot; 42</td></tr>
+<tr><td>1</td><td><a href="%(safety)s" target="_blank" rel="noopener">Safety Photo+Video Pro</a></td><td>Gratis; nube $2,99/mes, $19,99/a&ntilde;o o $59,99 de una vez</td><td>Opcional, cifrada antes en el m&oacute;vil</td><td>S&iacute;</td><td>4,7</td></tr>
+<tr><td>2</td><td><a href="%(keepsafe)s" target="_blank" rel="noopener">Keepsafe</a></td><td>$23,99/a&ntilde;o o $9,99/mes</td><td>S&iacute;, hasta 10.000 elementos</td><td>&mdash;</td><td>4,7</td></tr>
+<tr><td>3</td><td><a href="%(picsafe)s" target="_blank" rel="noopener">Private Photo Vault &ndash; Pic Safe</a></td><td>Planes de $6,99 a $39,99</td><td>S&iacute; (Cloud Vault, de pago)</td><td>S&iacute;</td><td>4,8</td></tr>
+<tr><td>4</td><td><a href="%(pv)s">Photo Vault</a></td><td>Prueba gratis; suscripci&oacute;n anual, 7 d&iacute;as gratis</td><td>Copia opcional en tu iCloud (cifrada de extremo a extremo, desactivada por defecto); archivo de copia cifrado que guardas t&uacute;</td><td>S&iacute; (Premium)</td><td>4,2</td></tr>
+<tr><td>5</td><td><a href="%(secretpv)s" target="_blank" rel="noopener">Secret Photo Vault &ndash; Hide Pics</a></td><td>Premium de $4,99 a $39,99</td><td>Copia en varios dispositivos</td><td>&mdash;</td><td>4,7</td></tr>
+<tr><td>6</td><td><a href="%(spvlock)s" target="_blank" rel="noopener">Lock: Private Photo Vault SPV</a></td><td>$2,99/mes, $4,99/a&ntilde;o o $12,99 de una vez</td><td>&mdash;</td><td>&mdash;</td><td>4,6</td></tr>
+<tr><td>7</td><td><a href="%(keepps)s" target="_blank" rel="noopener">Keep Photo Safe Vault</a></td><td>$6,99 de entrada, sin compras dentro</td><td>&mdash;</td><td>&mdash;</td><td>4,6</td></tr>
 </tbody>
 </table></div>
 
@@ -4647,7 +4639,7 @@ a un archivo cifrado. <a href="%(sec)s">C&oacute;mo protege tus archivos</a> (en
 ingl&eacute;s).</p>
 <p><strong>En qu&eacute; le ganan:</strong> la contrase&ntilde;a del &aacute;lbum decide
 qui&eacute;n lo abre dentro de la app; los archivos no se vuelven a cifrar con ella.
-Su c&oacute;digo se&ntilde;uelo (un segundo c&oacute;digo que abre otra b&oacute;veda) es de Premium, y tiene muy pocas valoraciones.</p>
+Su c&oacute;digo se&ntilde;uelo (un segundo c&oacute;digo que abre otra b&oacute;veda) es de Premium.</p>
 
 <h2>5 a 7. Apps peque&ntilde;as que cumplen lo b&aacute;sico</h2>
 <p><strong>Secret Photo Vault &ndash; Hide Pics</strong> pone una contrase&ntilde;a a
@@ -4951,13 +4943,13 @@ charge, and what else they pack in: images, files, voice, search.</p>
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Models named on its page</th><th>Also does</th><th>How it charges (US)</th><th>Rating (US)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(poe)s" target="_blank" rel="noopener">Poe</a></td><td>o3, GPT-4.5, Claude 3.7 Sonnet, Gemini 2.0 and image and video models</td><td>Images, video, web, PDFs, custom bots</td><td>Basic $4.99/month; Plus $19.99/month</td><td>4.7 &middot; 53,850</td></tr>
-<tr><td>2. <a href="%(chaton)s" target="_blank" rel="noopener">ChatOn</a></td><td>GPT-5, Gemini 3.5, Claude Sonnet 5, Sonar</td><td>Images, video from photos, web, PDFs</td><td>Weekly from $6.99; yearly $39.99 to $59.99</td><td>4.7 &middot; 286,441</td></tr>
-<tr><td>3. <a href="%(chatai)s" target="_blank" rel="noopener">Chat AI: Ask Agent Anything</a></td><td>GPT-6, Claude Opus 5, Gemini 3.1 Pro and 3.8 Flash, Grok 4.7, DeepSeek V4 Pro, Perplexity</td><td>Images, web, PDF/DOCX, voice</td><td>Weekly $7.39 to $11.99; lifetime $39.99 or $69.99</td><td>4.8 &middot; 328,211</td></tr>
-<tr><td>4. <a href="%(nova)s" target="_blank" rel="noopener">Nova</a></td><td>GPT-5.6, Gemini 3.6 Flash, Claude Opus 5, Kimi K3, Grok 4.5, DeepSeek V4 Pro</td><td>Images, web, Word/Excel, voice</td><td>Weekly $4.99 to $7.99; yearly $39.99 or $59.99</td><td>4.6 &middot; 127,054</td></tr>
-<tr><td>5. <a href="%(genie)s" target="_blank" rel="noopener">Genie</a></td><td>None by name (&ldquo;advanced third-party AI models&rdquo;)</td><td>Images, web and Deep Search, PDFs, voice</td><td>Weekly $5.99 or $7.99; yearly $39.99</td><td>4.7 &middot; 201,891</td></tr>
-<tr><td>6. <a href="%(fastai)s">Ask AI</a></td><td>Gemini, Claude, Grok, DeepSeek, Perplexity Sonar</td><td>Web search (Pro), read aloud</td><td>A few free messages a day; Pro $49.99/year</td><td>5.0 &middot; 3</td></tr>
-<tr><td>7. <a href="%(chathub)s" target="_blank" rel="noopener">ChatHub</a></td><td>GPT-5, Claude 4.5, Gemini 3 (&ldquo;20+ models&rdquo;)</td><td>Images and web via plugins, image upload</td><td>Pro $24.99/month; Unlimited $49.99/month</td><td>4.4 &middot; 36</td></tr>
+<tr><td>1. <a href="%(poe)s" target="_blank" rel="noopener">Poe</a></td><td>o3, GPT-4.5, Claude 3.7 Sonnet, Gemini 2.0 and image and video models</td><td>Images, video, web, PDFs, custom bots</td><td>Basic $4.99/month; Plus $19.99/month</td><td>4.7</td></tr>
+<tr><td>2. <a href="%(chaton)s" target="_blank" rel="noopener">ChatOn</a></td><td>GPT-5, Gemini 3.5, Claude Sonnet 5, Sonar</td><td>Images, video from photos, web, PDFs</td><td>Weekly from $6.99; yearly $39.99 to $59.99</td><td>4.7</td></tr>
+<tr><td>3. <a href="%(chatai)s" target="_blank" rel="noopener">Chat AI: Ask Agent Anything</a></td><td>GPT-6, Claude Opus 5, Gemini 3.1 Pro and 3.8 Flash, Grok 4.7, DeepSeek V4 Pro, Perplexity</td><td>Images, web, PDF/DOCX, voice</td><td>Weekly $7.39 to $11.99; lifetime $39.99 or $69.99</td><td>4.8</td></tr>
+<tr><td>4. <a href="%(nova)s" target="_blank" rel="noopener">Nova</a></td><td>GPT-5.6, Gemini 3.6 Flash, Claude Opus 5, Kimi K3, Grok 4.5, DeepSeek V4 Pro</td><td>Images, web, Word/Excel, voice</td><td>Weekly $4.99 to $7.99; yearly $39.99 or $59.99</td><td>4.6</td></tr>
+<tr><td>5. <a href="%(genie)s" target="_blank" rel="noopener">Genie</a></td><td>None by name (&ldquo;advanced third-party AI models&rdquo;)</td><td>Images, web and Deep Search, PDFs, voice</td><td>Weekly $5.99 or $7.99; yearly $39.99</td><td>4.7</td></tr>
+<tr><td>6. <a href="%(fastai)s">Ask AI</a></td><td>Gemini, Claude, Grok, DeepSeek, Perplexity Sonar</td><td>Web search (Pro), read aloud</td><td>A few free messages a day; Pro $49.99/year</td><td>5.0</td></tr>
+<tr><td>7. <a href="%(chathub)s" target="_blank" rel="noopener">ChatHub</a></td><td>GPT-5, Claude 4.5, Gemini 3 (&ldquo;20+ models&rdquo;)</td><td>Images and web via plugins, image upload</td><td>Pro $24.99/month; Unlimited $49.99/month</td><td>4.4</td></tr>
 </tbody>
 </table></div>
 
@@ -5019,9 +5011,7 @@ every model, web search and a much higher limit: $49.99 a year on the US App
 Store, with a 3-day free trial.</p>
 
 <p>Where others beat it: it is chat only, with no images, videos or files, so
-ChatOn, Genie and Nova do much more. Pro still has a usage limit. It needs iOS
-18.6 or later, its privacy label lists usage data used to track you, and it has
-only 3 ratings, far fewer than any other app here. Its listing was checked on
+ChatOn, Genie and Nova do much more. Pro still has a usage limit. It needs iOS 18.6 or later, and its privacy label lists usage data used to track you. Its listing was checked on
 23 October 2026 (version 1.4.4).</p>
 
 <h2>7. ChatHub: the private one</h2>
@@ -5094,13 +5084,13 @@ imágenes, archivos, voz, búsqueda.</p>
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Modelos que nombra su ficha</th><th>Además</th><th>Cómo cobra (EE. UU.)</th><th>Valoración (EE. UU.)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(poe)s" target="_blank" rel="noopener">Poe</a></td><td>o3, GPT-4.5, Claude 3.7 Sonnet, Gemini 2.0 y modelos de imagen y vídeo</td><td>Imágenes, vídeo, web, PDF, bots propios</td><td>Basic 4,99 $/mes; Plus 19,99 $/mes</td><td>4,7 &middot; 53.850</td></tr>
-<tr><td>2. <a href="%(chaton)s" target="_blank" rel="noopener">ChatOn</a></td><td>GPT-5, Gemini 3.5, Claude Sonnet 5, Sonar</td><td>Imágenes, vídeo desde fotos, web, PDF</td><td>Semanal desde 6,99 $; anual de 39,99 a 59,99 $</td><td>4,7 &middot; 286.441</td></tr>
-<tr><td>3. <a href="%(chatai)s" target="_blank" rel="noopener">Chat AI: Ask Agent Anything</a></td><td>GPT-6, Claude Opus 5, Gemini 3.1 Pro y 3.8 Flash, Grok 4.7, DeepSeek V4 Pro, Perplexity</td><td>Imágenes, web, PDF/DOCX, voz</td><td>Semanal de 7,39 a 11,99 $; de por vida 39,99 o 69,99 $</td><td>4,8 &middot; 328.211</td></tr>
-<tr><td>4. <a href="%(nova)s" target="_blank" rel="noopener">Nova</a></td><td>GPT-5.6, Gemini 3.6 Flash, Claude Opus 5, Kimi K3, Grok 4.5, DeepSeek V4 Pro</td><td>Imágenes, web, Word/Excel, voz</td><td>Semanal de 4,99 a 7,99 $; anual 39,99 o 59,99 $</td><td>4,6 &middot; 127.054</td></tr>
-<tr><td>5. <a href="%(genie)s" target="_blank" rel="noopener">Genie</a></td><td>Ninguno por su nombre (&laquo;modelos de IA avanzados de terceros&raquo;)</td><td>Imágenes, web y Deep Search, PDF, voz</td><td>Semanal 5,99 o 7,99 $; anual 39,99 $</td><td>4,7 &middot; 201.891</td></tr>
-<tr><td>6. <a href="%(fastai)s">Ask AI</a></td><td>Gemini, Claude, Grok, DeepSeek, Perplexity Sonar</td><td>Búsqueda web (Pro), lectura en voz alta</td><td>Unos mensajes gratis al día; Pro 49,99 $/año</td><td>5,0 &middot; 3</td></tr>
-<tr><td>7. <a href="%(chathub)s" target="_blank" rel="noopener">ChatHub</a></td><td>GPT-5, Claude 4.5, Gemini 3 (&laquo;más de 20 modelos&raquo;)</td><td>Imágenes y web con plugins, subir imágenes</td><td>Pro 24,99 $/mes; Unlimited 49,99 $/mes</td><td>4,4 &middot; 36</td></tr>
+<tr><td>1. <a href="%(poe)s" target="_blank" rel="noopener">Poe</a></td><td>o3, GPT-4.5, Claude 3.7 Sonnet, Gemini 2.0 y modelos de imagen y vídeo</td><td>Imágenes, vídeo, web, PDF, bots propios</td><td>Basic 4,99 $/mes; Plus 19,99 $/mes</td><td>4,7</td></tr>
+<tr><td>2. <a href="%(chaton)s" target="_blank" rel="noopener">ChatOn</a></td><td>GPT-5, Gemini 3.5, Claude Sonnet 5, Sonar</td><td>Imágenes, vídeo desde fotos, web, PDF</td><td>Semanal desde 6,99 $; anual de 39,99 a 59,99 $</td><td>4,7</td></tr>
+<tr><td>3. <a href="%(chatai)s" target="_blank" rel="noopener">Chat AI: Ask Agent Anything</a></td><td>GPT-6, Claude Opus 5, Gemini 3.1 Pro y 3.8 Flash, Grok 4.7, DeepSeek V4 Pro, Perplexity</td><td>Imágenes, web, PDF/DOCX, voz</td><td>Semanal de 7,39 a 11,99 $; de por vida 39,99 o 69,99 $</td><td>4,8</td></tr>
+<tr><td>4. <a href="%(nova)s" target="_blank" rel="noopener">Nova</a></td><td>GPT-5.6, Gemini 3.6 Flash, Claude Opus 5, Kimi K3, Grok 4.5, DeepSeek V4 Pro</td><td>Imágenes, web, Word/Excel, voz</td><td>Semanal de 4,99 a 7,99 $; anual 39,99 o 59,99 $</td><td>4,6</td></tr>
+<tr><td>5. <a href="%(genie)s" target="_blank" rel="noopener">Genie</a></td><td>Ninguno por su nombre (&laquo;modelos de IA avanzados de terceros&raquo;)</td><td>Imágenes, web y Deep Search, PDF, voz</td><td>Semanal 5,99 o 7,99 $; anual 39,99 $</td><td>4,7</td></tr>
+<tr><td>6. <a href="%(fastai)s">Ask AI</a></td><td>Gemini, Claude, Grok, DeepSeek, Perplexity Sonar</td><td>Búsqueda web (Pro), lectura en voz alta</td><td>Unos mensajes gratis al día; Pro 49,99 $/año</td><td>5,0</td></tr>
+<tr><td>7. <a href="%(chathub)s" target="_blank" rel="noopener">ChatHub</a></td><td>GPT-5, Claude 4.5, Gemini 3 (&laquo;más de 20 modelos&raquo;)</td><td>Imágenes y web con plugins, subir imágenes</td><td>Pro 24,99 $/mes; Unlimited 49,99 $/mes</td><td>4,4</td></tr>
 </tbody>
 </table></div>
 
@@ -5165,10 +5155,7 @@ desbloquea todos los modelos, la búsqueda web y un límite mucho más alto:
 49,99 $ al año en el App Store de EE. UU., con 3 días de prueba gratis.</p>
 
 <p>En qué le ganan las demás: es solo chat, sin imágenes, vídeos ni archivos, así
-que ChatOn, Genie y Nova hacen mucho más. Pro también tiene límite de uso. Pide
-iOS 18.6 o posterior, su etiqueta de privacidad incluye datos de uso para
-rastrearte y tiene solo 3 valoraciones, muchas menos que cualquier otra de la
-lista. Su ficha se revisó el 23 de octubre de 2026 (versión 1.4.4).</p>
+que ChatOn, Genie y Nova hacen mucho más. Pro también tiene límite de uso. Pide iOS 18.6 o posterior, y su etiqueta de privacidad incluye datos de uso para rastrearte. Su ficha se revisó el 23 de octubre de 2026 (versión 1.4.4).</p>
 
 <h2>7. ChatHub: la privada</h2>
 
@@ -5338,13 +5325,13 @@ models; the others put someone else's models in a simpler package.</p>
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Images</th><th>Video</th><th>Also does</th><th>How it charges (US)</th><th>Rating (US)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(chatgpt)s" target="_blank" rel="noopener">ChatGPT</a></td><td>Yes</td><td>Not on its page</td><td>Voice, photo upload</td><td>Free; Go $8, Plus $19.99, Pro from $100</td><td>4.8 &middot; 11,079,400</td></tr>
-<tr><td>2. <a href="%(gemini)s" target="_blank" rel="noopener">Google Gemini</a></td><td>Yes (Nano Banana 2)</td><td>Paid plans</td><td>Gemini Live voice, files</td><td>Free; AI Plus $4.99, AI Pro $19.99</td><td>4.7 &middot; 2,321,604</td></tr>
-<tr><td>3. <a href="%(grok)s" target="_blank" rel="noopener">Grok</a></td><td>Yes</td><td>Yes, with sound</td><td>Web and X search, files, voice</td><td>Free; SuperGrok Lite $10, SuperGrok $30</td><td>4.9 &middot; 1,487,413</td></tr>
-<tr><td>4. <a href="%(brainy)s">Brainy</a></td><td>Yes (several models)</td><td>Yes, with subscription and credits</td><td>Camera scanner for text and math</td><td>Chat free to try; $6.99/week or $49.99/year</td><td>Few ratings</td></tr>
-<tr><td>5. <a href="%(chaton)s" target="_blank" rel="noopener">ChatOn</a></td><td>Yes</td><td>From photos</td><td>Several chat models, web, PDFs</td><td>Weekly from $6.99; yearly $39.99 to $59.99</td><td>4.7 &middot; 286,441</td></tr>
-<tr><td>6. <a href="%(genie)s" target="_blank" rel="noopener">Genie</a></td><td>Yes, plus editing</td><td>Not on its page</td><td>Web and Deep Search, PDFs, voice</td><td>Weekly $5.99 or $7.99; yearly $39.99</td><td>4.7 &middot; 201,891</td></tr>
-<tr><td>7. <a href="%(meta)s" target="_blank" rel="noopener">Meta AI</a></td><td>Yes</td><td>No (only as input)</td><td>PDFs, voice, research reports</td><td>Free, no in-app purchases listed</td><td>4.7 &middot; 268,932</td></tr>
+<tr><td>1. <a href="%(chatgpt)s" target="_blank" rel="noopener">ChatGPT</a></td><td>Yes</td><td>Not on its page</td><td>Voice, photo upload</td><td>Free; Go $8, Plus $19.99, Pro from $100</td><td>4.8</td></tr>
+<tr><td>2. <a href="%(gemini)s" target="_blank" rel="noopener">Google Gemini</a></td><td>Yes (Nano Banana 2)</td><td>Paid plans</td><td>Gemini Live voice, files</td><td>Free; AI Plus $4.99, AI Pro $19.99</td><td>4.7</td></tr>
+<tr><td>3. <a href="%(grok)s" target="_blank" rel="noopener">Grok</a></td><td>Yes</td><td>Yes, with sound</td><td>Web and X search, files, voice</td><td>Free; SuperGrok Lite $10, SuperGrok $30</td><td>4.9</td></tr>
+<tr><td>4. <a href="%(brainy)s">Brainy</a></td><td>Yes (several models)</td><td>Yes, with subscription and credits</td><td>Camera scanner for text and math</td><td>Chat free to try; $6.99/week or $49.99/year</td><td>4.7</td></tr>
+<tr><td>5. <a href="%(chaton)s" target="_blank" rel="noopener">ChatOn</a></td><td>Yes</td><td>From photos</td><td>Several chat models, web, PDFs</td><td>Weekly from $6.99; yearly $39.99 to $59.99</td><td>4.7</td></tr>
+<tr><td>6. <a href="%(genie)s" target="_blank" rel="noopener">Genie</a></td><td>Yes, plus editing</td><td>Not on its page</td><td>Web and Deep Search, PDFs, voice</td><td>Weekly $5.99 or $7.99; yearly $39.99</td><td>4.7</td></tr>
+<tr><td>7. <a href="%(meta)s" target="_blank" rel="noopener">Meta AI</a></td><td>Yes</td><td>No (only as input)</td><td>PDFs, voice, research reports</td><td>Free, no in-app purchases listed</td><td>4.7</td></tr>
 </tbody>
 </table></div>
 
@@ -5389,8 +5376,7 @@ subscription costs $6.99 a week or $49.99 a year in the US.</p>
 <p>Where others beat it: Brainy chats with one model it picks for you (Gemini),
 so you can't choose the model, while ChatGPT, Gemini and Grok use their own
 frontier models and ChatOn lets you pick. It does not read PDFs and has no voice
-mode. Its yearly plan costs more than Genie's, images are not free to try, and
-it has far fewer ratings than any app here.</p>
+mode. Its yearly plan costs more than Genie's, and images are not free to try.</p>
 
 <h2>5. ChatOn: several models, plus pictures</h2>
 
@@ -5418,8 +5404,7 @@ Facebook or WhatsApp.</p>
 App Store) puts models from several companies, such as Gemini, Claude, Grok,
 DeepSeek and Perplexity Sonar, in one chat, with a few free messages a day and Pro
 at $49.99 a year in the US. Its listing says it
-makes no images or videos and reads no files, which is why it is not ranked above.
-It has only 3 ratings so far. We compare it with the other multi-model apps in
+makes no images or videos and reads no files, which is why it is not ranked above. We compare it with the other multi-model apps in
 <a href="%(fastai)s">our multi-model chat ranking</a>.</p>
 
 <h2>How to choose</h2>
@@ -5472,13 +5457,13 @@ sencillo.</p>
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Imágenes</th><th>Vídeo</th><th>Además</th><th>Cómo cobra (EE. UU.)</th><th>Valoración (EE. UU.)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(chatgpt)s" target="_blank" rel="noopener">ChatGPT</a></td><td>Sí</td><td>No lo dice su ficha</td><td>Voz, subir fotos</td><td>Gratis; Go 8 $, Plus 19,99 $, Pro desde 100 $</td><td>4,8 &middot; 11.079.400</td></tr>
-<tr><td>2. <a href="%(gemini)s" target="_blank" rel="noopener">Google Gemini</a></td><td>Sí (Nano Banana 2)</td><td>Planes de pago</td><td>Voz con Gemini Live, archivos</td><td>Gratis; AI Plus 4,99 $, AI Pro 19,99 $</td><td>4,7 &middot; 2.321.604</td></tr>
-<tr><td>3. <a href="%(grok)s" target="_blank" rel="noopener">Grok</a></td><td>Sí</td><td>Sí, con sonido</td><td>Búsqueda en la web y en X, archivos, voz</td><td>Gratis; SuperGrok Lite 10 $, SuperGrok 30 $</td><td>4,9 &middot; 1.487.413</td></tr>
-<tr><td>4. <a href="%(brainy)s">Brainy</a></td><td>Sí (varios modelos)</td><td>Sí, con suscripción y créditos</td><td>Escáner de textos y matemáticas con la cámara</td><td>Chat gratis para probar; 6,99 $/semana o 49,99 $/año</td><td>Pocas valoraciones</td></tr>
-<tr><td>5. <a href="%(chaton)s" target="_blank" rel="noopener">ChatOn</a></td><td>Sí</td><td>A partir de fotos</td><td>Varios modelos de chat, web, PDF</td><td>Semanal desde 6,99 $; anual de 39,99 a 59,99 $</td><td>4,7 &middot; 286.441</td></tr>
-<tr><td>6. <a href="%(genie)s" target="_blank" rel="noopener">Genie</a></td><td>Sí, y edición</td><td>No lo dice su ficha</td><td>Web y Deep Search, PDF, voz</td><td>Semanal 5,99 o 7,99 $; anual 39,99 $</td><td>4,7 &middot; 201.891</td></tr>
-<tr><td>7. <a href="%(meta)s" target="_blank" rel="noopener">Meta AI</a></td><td>Sí</td><td>No (solo como entrada)</td><td>PDF, voz, informes de investigación</td><td>Gratis, sin compras en la ficha</td><td>4,7 &middot; 268.932</td></tr>
+<tr><td>1. <a href="%(chatgpt)s" target="_blank" rel="noopener">ChatGPT</a></td><td>Sí</td><td>No lo dice su ficha</td><td>Voz, subir fotos</td><td>Gratis; Go 8 $, Plus 19,99 $, Pro desde 100 $</td><td>4,8</td></tr>
+<tr><td>2. <a href="%(gemini)s" target="_blank" rel="noopener">Google Gemini</a></td><td>Sí (Nano Banana 2)</td><td>Planes de pago</td><td>Voz con Gemini Live, archivos</td><td>Gratis; AI Plus 4,99 $, AI Pro 19,99 $</td><td>4,7</td></tr>
+<tr><td>3. <a href="%(grok)s" target="_blank" rel="noopener">Grok</a></td><td>Sí</td><td>Sí, con sonido</td><td>Búsqueda en la web y en X, archivos, voz</td><td>Gratis; SuperGrok Lite 10 $, SuperGrok 30 $</td><td>4,9</td></tr>
+<tr><td>4. <a href="%(brainy)s">Brainy</a></td><td>Sí (varios modelos)</td><td>Sí, con suscripción y créditos</td><td>Escáner de textos y matemáticas con la cámara</td><td>Chat gratis para probar; 6,99 $/semana o 49,99 $/año</td><td>4,7</td></tr>
+<tr><td>5. <a href="%(chaton)s" target="_blank" rel="noopener">ChatOn</a></td><td>Sí</td><td>A partir de fotos</td><td>Varios modelos de chat, web, PDF</td><td>Semanal desde 6,99 $; anual de 39,99 a 59,99 $</td><td>4,7</td></tr>
+<tr><td>6. <a href="%(genie)s" target="_blank" rel="noopener">Genie</a></td><td>Sí, y edición</td><td>No lo dice su ficha</td><td>Web y Deep Search, PDF, voz</td><td>Semanal 5,99 o 7,99 $; anual 39,99 $</td><td>4,7</td></tr>
+<tr><td>7. <a href="%(meta)s" target="_blank" rel="noopener">Meta AI</a></td><td>Sí</td><td>No (solo como entrada)</td><td>PDF, voz, informes de investigación</td><td>Gratis, sin compras en la ficha</td><td>4,7</td></tr>
 </tbody>
 </table></div>
 
@@ -5526,8 +5511,7 @@ EE. UU.</p>
 <p>En qué le ganan las demás: Brainy chatea con un solo modelo que elige por ti
 (Gemini), así que no puedes elegir el modelo, mientras ChatGPT, Gemini y Grok usan
 sus propios modelos punteros y ChatOn te deja elegir. No lee PDF y no tiene modo
-de voz. Su plan anual cuesta más que el de Genie, las imágenes no se pueden probar
-gratis y tiene muchas menos valoraciones que cualquiera de la lista.</p>
+de voz. Su plan anual cuesta más que el de Genie y las imágenes no se pueden probar gratis.</p>
 
 <h2>5. ChatOn: varios modelos, y además fotos</h2>
 
@@ -5555,8 +5539,7 @@ nuestra: <a href="%(askai)s">Ask AI</a> (&laquo;All AI Models in One: Ask AI&raq
 en el App Store) reúne modelos de varias empresas, como Gemini, Claude, Grok,
 DeepSeek y Perplexity Sonar, en un mismo chat, con unos pocos mensajes gratis al
 día y Pro a 49,99 $ al año en EE. UU. Su
-ficha dice que no hace imágenes ni vídeos ni lee archivos, y por eso no está en el
-ranking de arriba. Por ahora tiene solo 3 valoraciones. La comparamos con las
+ficha dice que no hace imágenes ni vídeos ni lee archivos, y por eso no está en el ranking de arriba. La comparamos con las
 demás apps de varios modelos en <a href="%(fastai_es)s">nuestro ranking de chat
 con varios modelos</a>.</p>
 
@@ -5693,10 +5676,10 @@ OFF_RU_BODY = ("""
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Цена (Россия)</th><th>Русский интерфейс</th><th>Mac App Store</th><th>Модели</th><th>Конфиденциальность</th><th>Оценка (Россия)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Бесплатно; есть Pro</td><td>Нет</td><td>Нет в списке</td><td>Сотни открытых моделей; Pro добавляет облачные</td><td>Не связаны с вами</td><td>4,6 &middot; 75</td></tr>
-<tr><td>2. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Бесплатно, открытый код</td><td>Нет</td><td>Нет в списке</td><td>Любая модель GGUF с Hugging Face</td><td>Данные не собираются</td><td>4,3 &middot; 19</td></tr>
-<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>Бесплатно; Pinku Pro — на год или разово</td><td>Да</td><td>Да</td><td>11 моделей на Apple MLX, от 0,4 до 4,7 ГБ</td><td>История покупок и анонимный ID (для Pro); чаты не покидают устройство</td><td>3,7 &middot; 3</td></tr>
-<tr><td>4. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>299 &#8381; сразу</td><td>Нет</td><td>Да</td><td>Llama, Gemma, Qwen, Phi, Mistral и другие, до 14B</td><td>Данные не собираются</td><td>3,6 &middot; 18</td></tr>
+<tr><td>1. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Бесплатно; есть Pro</td><td>Нет</td><td>Нет в списке</td><td>Сотни открытых моделей; Pro добавляет облачные</td><td>Не связаны с вами</td><td>4,6</td></tr>
+<tr><td>2. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Бесплатно, открытый код</td><td>Нет</td><td>Нет в списке</td><td>Любая модель GGUF с Hugging Face</td><td>Данные не собираются</td><td>4,3</td></tr>
+<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>Бесплатно; Pinku Pro — на год или разово</td><td>Да</td><td>Да</td><td>11 моделей на Apple MLX, от 0,4 до 4,7 ГБ</td><td>История покупок и анонимный ID (для Pro); чаты не покидают устройство</td><td>3,7</td></tr>
+<tr><td>4. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>299 &#8381; сразу</td><td>Нет</td><td>Да</td><td>Llama, Gemma, Qwen, Phi, Mistral и другие, до 14B</td><td>Данные не собираются</td><td>3,6</td></tr>
 <tr><td>5. <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a></td><td>Бесплатно; подписка за облачные функции</td><td>Да</td><td>Нет в списке</td><td>Модели GGUF и MLX, модели Apple, облачные по желанию</td><td>Используются для отслеживания</td><td>нет оценок</td></tr>
 </tbody>
 </table></div>
@@ -5734,7 +5717,7 @@ Gemma 3n, Llama 3.2, Qwen3, дистилляты DeepSeek-R1, SmolLM3 и LFM2) �
 <p><strong>Чего Pinku не умеет:</strong> не ищет в интернете, не читает документы
 и картинки, не синхронизирует чаты между устройствами и не даёт загрузить свою
 модель с Hugging Face: только двенадцать отобранных. Локальная модель заметно
-слабее облачного ChatGPT или Claude. Оценок в российском App Store пока мало.</p>
+слабее облачного ChatGPT или Claude. </p>
 
 <h2>4. Private LLM</h2>
 
@@ -5898,14 +5881,14 @@ app wins each of these jobs.</p>
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Best for</th><th>Sounds</th><th>Mixing</th><th>Sleep timer</th><th>How it charges (US)</th><th>Rating (US)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(wn)s" target="_blank" rel="noopener">White Noise Lite</a></td><td>Noise machine</td><td>50+, white to violet noise</td><td>Yes (Mix Pad)</td><td>Yes, with alarm</td><td>Free with ads; paid full version</td><td>4.8 &middot; 277,066</td></tr>
-<tr><td>2. <a href="%(rain)s" target="_blank" rel="noopener">Rain Rain</a></td><td>Rain and nature mixes</td><td>50+ free, 60+ more in Premium</td><td>Yes, free</td><td>Yes, free</td><td>Free with a banner ad; Premium subscription</td><td>4.8 &middot; 137,141</td></tr>
-<tr><td>3. <a href="%(dark)s" target="_blank" rel="noopener">Dark Noise</a></td><td>Siri, widgets, Mac</td><td>50+</td><td>Yes</td><td>Yes</td><td>Free; Pro subscription or lifetime</td><td>4.8 &middot; 3,685</td></tr>
-<tr><td>4. <a href="%(drop)s">Drop</a></td><td>Sounds plus breathing, habit</td><td>53, 9 free</td><td>No</td><td>Yes, with fade-out</td><td>Free; Drop Pro subscription or lifetime</td><td>4.4 &middot; 12</td></tr>
-<tr><td>5. <a href="%(mynoise)s" target="_blank" rel="noopener">myNoise</a></td><td>Fine-tuning, tinnitus</td><td>300+ soundscapes</td><td>Yes (up to 10 sliders)</td><td>Not in its listing</td><td>Free; one purchase, no subscription</td><td>4.7 &middot; 1,135</td></tr>
-<tr><td>6. <a href="%(bs)s" target="_blank" rel="noopener">BetterSleep</a></td><td>Tracking, stories, meditations</td><td>300+ sounds and tracks</td><td>Yes</td><td>Yes</td><td>Free; Premium subscription</td><td>4.7 &middot; 390,803</td></tr>
-<tr><td>7. <a href="%(calm)s" target="_blank" rel="noopener">Calm</a></td><td>Sleep stories, meditation</td><td>Sleep sounds and music</td><td>Not in its listing</td><td>Not in its listing</td><td>Free; Premium subscription</td><td>4.8 &middot; 1,986,904</td></tr>
-<tr><td>8. <a href="%(endel)s" target="_blank" rel="noopener">Endel</a></td><td>Adaptive AI soundscapes</td><td>Focus, Sleep, Relax, Move; more in Premium</td><td>No (generated)</td><td>Not in its listing</td><td>Free edition; Premium subscription or lifetime</td><td>4.6 &middot; 33,935</td></tr>
+<tr><td>1. <a href="%(wn)s" target="_blank" rel="noopener">White Noise Lite</a></td><td>Noise machine</td><td>50+, white to violet noise</td><td>Yes (Mix Pad)</td><td>Yes, with alarm</td><td>Free with ads; paid full version</td><td>4.8</td></tr>
+<tr><td>2. <a href="%(rain)s" target="_blank" rel="noopener">Rain Rain</a></td><td>Rain and nature mixes</td><td>50+ free, 60+ more in Premium</td><td>Yes, free</td><td>Yes, free</td><td>Free with a banner ad; Premium subscription</td><td>4.8</td></tr>
+<tr><td>3. <a href="%(dark)s" target="_blank" rel="noopener">Dark Noise</a></td><td>Siri, widgets, Mac</td><td>50+</td><td>Yes</td><td>Yes</td><td>Free; Pro subscription or lifetime</td><td>4.8</td></tr>
+<tr><td>4. <a href="%(drop)s">Drop</a></td><td>Sounds plus breathing, habit</td><td>53, 9 free</td><td>No</td><td>Yes, with fade-out</td><td>Free; Drop Pro subscription or lifetime</td><td>4.4</td></tr>
+<tr><td>5. <a href="%(mynoise)s" target="_blank" rel="noopener">myNoise</a></td><td>Fine-tuning, tinnitus</td><td>300+ soundscapes</td><td>Yes (up to 10 sliders)</td><td>Not in its listing</td><td>Free; one purchase, no subscription</td><td>4.7</td></tr>
+<tr><td>6. <a href="%(bs)s" target="_blank" rel="noopener">BetterSleep</a></td><td>Tracking, stories, meditations</td><td>300+ sounds and tracks</td><td>Yes</td><td>Yes</td><td>Free; Premium subscription</td><td>4.7</td></tr>
+<tr><td>7. <a href="%(calm)s" target="_blank" rel="noopener">Calm</a></td><td>Sleep stories, meditation</td><td>Sleep sounds and music</td><td>Not in its listing</td><td>Not in its listing</td><td>Free; Premium subscription</td><td>4.8</td></tr>
+<tr><td>8. <a href="%(endel)s" target="_blank" rel="noopener">Endel</a></td><td>Adaptive AI soundscapes</td><td>Focus, Sleep, Relax, Move; more in Premium</td><td>No (generated)</td><td>Not in its listing</td><td>Free edition; Premium subscription or lifetime</td><td>4.6</td></tr>
 </tbody>
 </table></div>
 
@@ -5954,7 +5937,7 @@ sounds, by subscription or with a one-time lifetime purchase.</p>
 
 <p>Where others beat it: Drop's sleep timer (15 minutes to 8 hours, 30-second fade-out) is
 simple, with no alarm; White Noise Lite adds one. It plays one sound at a time, with no mixer. Since version 2.10 it has white noise free and pink and brown noise with
-Drop Pro, but as fixed tracks with no equaliser. Its 53 sounds are close to Rain Rain's 50+ and far from myNoise's 300+, and it has only 12 ratings on the US App Store. There are no
+Drop Pro, but as fixed tracks with no equaliser. Its 53 sounds are close to Rain Rain's 50+ and far from myNoise's 300+. There are no
 sleep stories, guided voice meditations or sleep tracking.</p>
 
 <h2>5. myNoise: you shape the sound</h2>
@@ -6049,14 +6032,14 @@ el temporizador y el precio, y dice qué app gana en cada uno de estos trabajos.
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Para qué</th><th>Sonidos</th><th>Mezcla</th><th>Temporizador</th><th>Cómo cobra (EE. UU.)</th><th>Valoración (EE. UU.)</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(wn)s" target="_blank" rel="noopener">White Noise Lite</a></td><td>Máquina de ruido</td><td>Más de 50, del ruido blanco al violeta</td><td>Sí (Mix Pad)</td><td>Sí, con alarma</td><td>Gratis con anuncios; versión completa de pago</td><td>4,8 &middot; 277.066</td></tr>
-<tr><td>2. <a href="%(rain)s" target="_blank" rel="noopener">Rain Rain</a></td><td>Lluvia y naturaleza mezcladas</td><td>Más de 50 gratis, 60 más en Premium</td><td>Sí, gratis</td><td>Sí, gratis</td><td>Gratis con un banner; Premium por suscripción</td><td>4,8 &middot; 137.141</td></tr>
-<tr><td>3. <a href="%(dark)s" target="_blank" rel="noopener">Dark Noise</a></td><td>Siri, widgets, Mac</td><td>Más de 50</td><td>Sí</td><td>Sí</td><td>Gratis; Pro por suscripción o de por vida</td><td>4,8 &middot; 3.685</td></tr>
-<tr><td>4. <a href="%(drop)s">Drop</a></td><td>Sonidos y respiración, hábito</td><td>53, 9 gratis</td><td>No</td><td>Sí, con fundido</td><td>Gratis; Drop Pro por suscripción o de por vida</td><td>4,4 &middot; 12</td></tr>
-<tr><td>5. <a href="%(mynoise)s" target="_blank" rel="noopener">myNoise</a></td><td>Ajuste fino, acúfenos</td><td>Más de 300 ambientes</td><td>Sí (hasta 10 controles)</td><td>No lo menciona</td><td>Gratis; una sola compra, sin suscripción</td><td>4,7 &middot; 1.135</td></tr>
-<tr><td>6. <a href="%(bs)s" target="_blank" rel="noopener">BetterSleep</a></td><td>Seguimiento, cuentos, meditaciones</td><td>Más de 300 sonidos y pistas</td><td>Sí</td><td>Sí</td><td>Gratis; Premium por suscripción</td><td>4,7 &middot; 390.803</td></tr>
-<tr><td>7. <a href="%(calm)s" target="_blank" rel="noopener">Calm</a></td><td>Cuentos para dormir, meditación</td><td>Sonidos y música para dormir</td><td>No lo menciona</td><td>No lo menciona</td><td>Gratis; Premium por suscripción</td><td>4,8 &middot; 1.986.904</td></tr>
-<tr><td>8. <a href="%(endel)s" target="_blank" rel="noopener">Endel</a></td><td>Ambientes con IA que se adaptan</td><td>Focus, Sleep, Relax, Move; más en Premium</td><td>No (se generan)</td><td>No lo menciona</td><td>Edición gratis; Premium por suscripción o de por vida</td><td>4,6 &middot; 33.935</td></tr>
+<tr><td>1. <a href="%(wn)s" target="_blank" rel="noopener">White Noise Lite</a></td><td>Máquina de ruido</td><td>Más de 50, del ruido blanco al violeta</td><td>Sí (Mix Pad)</td><td>Sí, con alarma</td><td>Gratis con anuncios; versión completa de pago</td><td>4,8</td></tr>
+<tr><td>2. <a href="%(rain)s" target="_blank" rel="noopener">Rain Rain</a></td><td>Lluvia y naturaleza mezcladas</td><td>Más de 50 gratis, 60 más en Premium</td><td>Sí, gratis</td><td>Sí, gratis</td><td>Gratis con un banner; Premium por suscripción</td><td>4,8</td></tr>
+<tr><td>3. <a href="%(dark)s" target="_blank" rel="noopener">Dark Noise</a></td><td>Siri, widgets, Mac</td><td>Más de 50</td><td>Sí</td><td>Sí</td><td>Gratis; Pro por suscripción o de por vida</td><td>4,8</td></tr>
+<tr><td>4. <a href="%(drop)s">Drop</a></td><td>Sonidos y respiración, hábito</td><td>53, 9 gratis</td><td>No</td><td>Sí, con fundido</td><td>Gratis; Drop Pro por suscripción o de por vida</td><td>4,4</td></tr>
+<tr><td>5. <a href="%(mynoise)s" target="_blank" rel="noopener">myNoise</a></td><td>Ajuste fino, acúfenos</td><td>Más de 300 ambientes</td><td>Sí (hasta 10 controles)</td><td>No lo menciona</td><td>Gratis; una sola compra, sin suscripción</td><td>4,7</td></tr>
+<tr><td>6. <a href="%(bs)s" target="_blank" rel="noopener">BetterSleep</a></td><td>Seguimiento, cuentos, meditaciones</td><td>Más de 300 sonidos y pistas</td><td>Sí</td><td>Sí</td><td>Gratis; Premium por suscripción</td><td>4,7</td></tr>
+<tr><td>7. <a href="%(calm)s" target="_blank" rel="noopener">Calm</a></td><td>Cuentos para dormir, meditación</td><td>Sonidos y música para dormir</td><td>No lo menciona</td><td>No lo menciona</td><td>Gratis; Premium por suscripción</td><td>4,8</td></tr>
+<tr><td>8. <a href="%(endel)s" target="_blank" rel="noopener">Endel</a></td><td>Ambientes con IA que se adaptan</td><td>Focus, Sleep, Relax, Move; más en Premium</td><td>No (se generan)</td><td>No lo menciona</td><td>Edición gratis; Premium por suscripción o de por vida</td><td>4,6</td></tr>
 </tbody>
 </table></div>
 
@@ -6108,8 +6091,7 @@ una compra de por vida.</p>
 <p>En qué le ganan las demás: el temporizador de Drop (de 15 minutos a 8 horas, con fundido
 de 30 segundos) es sencillo y no lleva alarma; White Noise Lite sí la tiene. Suena un sonido cada vez, sin mezclador. Desde la
 versión 2.10 tiene ruido blanco gratis y rosa y marrón con Drop Pro, pero grabados y sin ecualizador.
-Su catálogo es pequeño al lado de los 50 a más de 300 sonidos de las otras, y solo
-tiene 12 valoraciones en el App Store de EE. UU. No tiene cuentos, meditaciones
+Su catálogo es pequeño al lado de los 50 a más de 300 sonidos de las otras. No tiene cuentos, meditaciones
 guiadas con voz ni seguimiento del sueño.</p>
 
 <h2>5. myNoise: el sonido lo ajustas tú</h2>

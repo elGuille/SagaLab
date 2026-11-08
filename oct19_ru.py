@@ -225,14 +225,14 @@ Max, любой iPhone 16 и новее или iPhone Air, и ещё один и
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Где работает ИИ</th><th>Нужно</th><th>Цена</th><th>Оценка (Россия)</th><th>Интерфейс на русском</th></tr></thead>
 <tbody>
-<tr><td>1. <a href="%(pocketpal)s"%(x)s>PocketPal AI</a></td><td>На iPhone</td><td>iOS 15.1</td><td>Бесплатно</td><td>4,2 (19)</td><td>Нет</td></tr>
-<tr><td>2. <a href="%(privatellm)s"%(x)s>Private LLM</a></td><td>На iPhone</td><td>iOS 17, A12 Bionic+</td><td>299 ₽</td><td>3,6 (18)</td><td>Нет</td></tr>
-<tr><td>3. <a href="%(enclave)s"%(x)s>Enclave</a></td><td>На iPhone (Pro: облако)</td><td>iOS 27</td><td>Бесплатно</td><td>4,6 (75)</td><td>Нет</td></tr>
-<tr><td>4. <a href="%(pinku)s">Pinku</a></td><td>На iPhone</td><td>iOS 18.6, iPhone 12+</td><td>Бесплатно; Pinku Pro в приложении</td><td>4,4 (7)</td><td>Да</td></tr>
-<tr><td>5. <a href="%(alice)s"%(x)s>Алиса AI</a></td><td>Облако (Яндекс)</td><td>iOS 16.0, интернет</td><td>Бесплатно</td><td>4,8 (53 071)</td><td>Да</td></tr>
-<tr><td>6. <a href="%(perplexity)s"%(x)s>Perplexity</a></td><td>Облако</td><td>iOS 18.0, интернет</td><td>Бесплатно</td><td>4,9 (37 853)</td><td>Да</td></tr>
-<tr><td>7. <a href="%(deepseek)s"%(x)s>DeepSeek</a></td><td>Облако</td><td>iOS 15.0, интернет</td><td>Бесплатно</td><td>3,9 (9770)</td><td>Да</td></tr>
-<tr><td>8. <a href="%(vibe)s"%(x)s>Vibe by Mistral</a></td><td>Облако</td><td>iOS 16.4, интернет</td><td>Бесплатно</td><td>4,8 (262)</td><td>Нет</td></tr>
+<tr><td>1. <a href="%(pocketpal)s"%(x)s>PocketPal AI</a></td><td>На iPhone</td><td>iOS 15.1</td><td>Бесплатно</td><td>4,2</td><td>Нет</td></tr>
+<tr><td>2. <a href="%(privatellm)s"%(x)s>Private LLM</a></td><td>На iPhone</td><td>iOS 17, A12 Bionic+</td><td>299 ₽</td><td>3,6</td><td>Нет</td></tr>
+<tr><td>3. <a href="%(enclave)s"%(x)s>Enclave</a></td><td>На iPhone (Pro: облако)</td><td>iOS 27</td><td>Бесплатно</td><td>4,6</td><td>Нет</td></tr>
+<tr><td>4. <a href="%(pinku)s">Pinku</a></td><td>На iPhone</td><td>iOS 18.6, iPhone 12+</td><td>Бесплатно; Pinku Pro в приложении</td><td>4,4</td><td>Да</td></tr>
+<tr><td>5. <a href="%(alice)s"%(x)s>Алиса AI</a></td><td>Облако (Яндекс)</td><td>iOS 16.0, интернет</td><td>Бесплатно</td><td>4,8</td><td>Да</td></tr>
+<tr><td>6. <a href="%(perplexity)s"%(x)s>Perplexity</a></td><td>Облако</td><td>iOS 18.0, интернет</td><td>Бесплатно</td><td>4,9</td><td>Да</td></tr>
+<tr><td>7. <a href="%(deepseek)s"%(x)s>DeepSeek</a></td><td>Облако</td><td>iOS 15.0, интернет</td><td>Бесплатно</td><td>3,9</td><td>Да</td></tr>
+<tr><td>8. <a href="%(vibe)s"%(x)s>Vibe by Mistral</a></td><td>Облако</td><td>iOS 16.4, интернет</td><td>Бесплатно</td><td>4,8</td><td>Нет</td></tr>
 </tbody>
 </table></div>
 
@@ -399,12 +399,12 @@ iPhone с английским интерфейсом, и всё общение 
 <div class="table-scroll"><table>
 <thead><tr><th></th><th>Где работает</th><th>Цена</th><th>Оценка (Россия)</th><th>iOS</th></tr></thead>
 <tbody>
-<tr><td><a href="%(alice)s"%(x)s>Алиса AI</a></td><td>Облако (Яндекс)</td><td>Бесплатно</td><td>4,8 (53 071)</td><td>16.0</td></tr>
-<tr><td><a href="%(perplexity)s"%(x)s>Perplexity</a></td><td>Облако</td><td>Бесплатно</td><td>4,9 (37 853)</td><td>18.0</td></tr>
-<tr><td><a href="%(deepseek)s"%(x)s>DeepSeek</a></td><td>Облако</td><td>Бесплатно</td><td>3,9 (9770)</td><td>15.0</td></tr>
-<tr><td><a href="%(vibe)s"%(x)s>Vibe by Mistral</a></td><td>Облако (Франция)</td><td>Бесплатно</td><td>4,8 (262)</td><td>16.4</td></tr>
-<tr><td><a href="%(pinku)s">Pinku</a></td><td>На iPhone</td><td>Бесплатно; Pinku Pro в приложении</td><td>4,4 (7)</td><td>18.6</td></tr>
-<tr><td><a href="%(pocketpal)s"%(x)s>PocketPal AI</a></td><td>На iPhone</td><td>Бесплатно</td><td>4,2 (19)</td><td>15.1</td></tr>
+<tr><td><a href="%(alice)s"%(x)s>Алиса AI</a></td><td>Облако (Яндекс)</td><td>Бесплатно</td><td>4,8</td><td>16.0</td></tr>
+<tr><td><a href="%(perplexity)s"%(x)s>Perplexity</a></td><td>Облако</td><td>Бесплатно</td><td>4,9</td><td>18.0</td></tr>
+<tr><td><a href="%(deepseek)s"%(x)s>DeepSeek</a></td><td>Облако</td><td>Бесплатно</td><td>3,9</td><td>15.0</td></tr>
+<tr><td><a href="%(vibe)s"%(x)s>Vibe by Mistral</a></td><td>Облако (Франция)</td><td>Бесплатно</td><td>4,8</td><td>16.4</td></tr>
+<tr><td><a href="%(pinku)s">Pinku</a></td><td>На iPhone</td><td>Бесплатно; Pinku Pro в приложении</td><td>4,4</td><td>18.6</td></tr>
+<tr><td><a href="%(pocketpal)s"%(x)s>PocketPal AI</a></td><td>На iPhone</td><td>Бесплатно</td><td>4,2</td><td>15.1</td></tr>
 </tbody>
 </table></div>
 

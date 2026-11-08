@@ -86,13 +86,13 @@ app comes first because it is already on many iPhones.</p>
 <table>
 <thead><tr><th>App</th><th>What it does with images</th><th>Good to know</th><th>Rating</th></tr></thead>
 <tbody>
-<tr><td>{a(IP_AS, "Image Playground")} (Apple)</td><td>Images from a description, from your photos or from people in your library; tap or circle part of an image to change it; choose the aspect ratio</td><td>Needs an iPhone with Apple Intelligence; Apple says it uses server models with daily usage limits ({a(AI_FEATURES, "Apple, 121115")})</td><td>2.7 (about 5,000 ratings)</td></tr>
-<tr><td>{a(CHATGPT_AS, "ChatGPT")}</td><td>Generates images from a description and transforms existing ones with words</td><td>Images live inside a general chat app</td><td>4.8 (11.5 million)</td></tr>
-<tr><td>{a(GEMINI_AS, "Google Gemini")}</td><td>Generates and edits photos with Nano Banana 2: camera and lighting controls, mockups from several images, posters with sharp text</td><td>Google account</td><td>4.7 (2.4 million)</td></tr>
-<tr><td>{a(META_AS, "Meta AI")}</td><td>Creates and edits images; edit a photo by sketching on it or asking for a change</td><td>Tied to Meta's apps and account</td><td>4.7 (282,000)</td></tr>
-<tr><td><a href="{BRAINY_STORE}">Brainy</a></td><td>A Create tab for images and short videos, from words or from one photo, with five image options and five shapes</td><td>Creating needs Brainy Pro; cost in credits shown before you create</td><td>4.7 (3 ratings)</td></tr>
-<tr><td>{a(GROK_AS, "Grok")}</td><td>Grok Imagine: images from text or voice, edits to existing images, photos turned into videos</td><td>X account</td><td>4.9 (1.5 million)</td></tr>
-<tr><td>{a(FIREFLY_AS, "Adobe Firefly")}</td><td>Images and video from text, Generative Fill, background removal, a choice of resolutions and aspect ratios, partner models</td><td>Made for creative work; Adobe account</td><td>4.7 (10,900)</td></tr>
+<tr><td>{a(IP_AS, "Image Playground")} (Apple)</td><td>Images from a description, from your photos or from people in your library; tap or circle part of an image to change it; choose the aspect ratio</td><td>Needs an iPhone with Apple Intelligence; Apple says it uses server models with daily usage limits ({a(AI_FEATURES, "Apple, 121115")})</td><td>2.7</td></tr>
+<tr><td>{a(CHATGPT_AS, "ChatGPT")}</td><td>Generates images from a description and transforms existing ones with words</td><td>Images live inside a general chat app</td><td>4.8</td></tr>
+<tr><td>{a(GEMINI_AS, "Google Gemini")}</td><td>Generates and edits photos with Nano Banana 2: camera and lighting controls, mockups from several images, posters with sharp text</td><td>Google account</td><td>4.7</td></tr>
+<tr><td>{a(META_AS, "Meta AI")}</td><td>Creates and edits images; edit a photo by sketching on it or asking for a change</td><td>Tied to Meta's apps and account</td><td>4.7</td></tr>
+<tr><td><a href="{BRAINY_STORE}">Brainy</a></td><td>A Create tab for images and short videos, from words or from one photo, with five image options and five shapes</td><td>Creating needs Brainy Pro; cost in credits shown before you create</td><td>4.7</td></tr>
+<tr><td>{a(GROK_AS, "Grok")}</td><td>Grok Imagine: images from text or voice, edits to existing images, photos turned into videos</td><td>X account</td><td>4.9</td></tr>
+<tr><td>{a(FIREFLY_AS, "Adobe Firefly")}</td><td>Images and video from text, Generative Fill, background removal, a choice of resolutions and aspect ratios, partner models</td><td>Made for creative work; Adobe account</td><td>4.7</td></tr>
 </tbody>
 </table>
 </div>
@@ -140,8 +140,7 @@ Keynote and Freeform. Its App Store rating is the lowest here, and Apple warns o
 use one of them every day.</li>
 <li><strong>Adobe Firefly</strong> is the most complete for design work: fills, background removal and video.</li>
 <li><strong>Brainy</strong> puts chat, homework help from a photo and image and video creation in one iPhone app,
-with the cost of each image shown before you make it. It has very few ratings so far, it is iPhone only, and you
-cannot make images without Brainy Pro. More on <a href="../brainy.html">the Brainy page</a> and in our comparison
+with the cost of each image shown before you make it. It is iPhone only, and you cannot make images without Brainy Pro. More on <a href="../brainy.html">the Brainy page</a> and in our comparison
 of <a href="../blog/best-ai-chat-and-image-generator-apps-iphone.html">AI apps for chat and images</a>.</li>
 </ul>
 
@@ -199,13 +198,13 @@ Apple va primero porque ya está en muchos iPhone.</p>
 <table>
 <thead><tr><th>App</th><th>Qué hace con imágenes</th><th>Conviene saber</th><th>Valoración</th></tr></thead>
 <tbody>
-<tr><td>{a(IP_AS, "Image Playground")} (Apple)</td><td>Imágenes a partir de una descripción, de tus fotos o de personas de tu fototeca; toca o rodea una parte para cambiarla; eliges el formato</td><td>Necesita un iPhone con Apple Intelligence; Apple dice que usa modelos en servidor con límites diarios ({a(AI_FEATURES_ES, "Apple, 121115")})</td><td>2,7 (unas 5.000)</td></tr>
-<tr><td>{a(CHATGPT_AS, "ChatGPT")}</td><td>Genera imágenes a partir de una descripción y transforma las que ya tienes con palabras</td><td>Las imágenes van dentro de una app de chat general</td><td>4,8 (11,5 millones)</td></tr>
-<tr><td>{a(GEMINI_AS, "Google Gemini")}</td><td>Genera y edita fotos con Nano Banana 2: controles de cámara y luz, montajes con varias imágenes, carteles con texto nítido</td><td>Cuenta de Google</td><td>4,7 (2,4 millones)</td></tr>
-<tr><td>{a(META_AS, "Meta AI")}</td><td>Crea y edita imágenes; cambias una foto dibujando encima o pidiéndolo</td><td>Unida a las apps y la cuenta de Meta</td><td>4,7 (282.000)</td></tr>
-<tr><td><a href="{BRAINY_STORE}">Brainy</a></td><td>Una pestaña Create para imágenes y vídeos cortos, desde palabras o desde una foto, con cinco opciones de imagen y cinco formatos</td><td>Crear necesita Brainy Pro; el coste en créditos sale antes de crear</td><td>4,7 (3 valoraciones)</td></tr>
-<tr><td>{a(GROK_AS, "Grok")}</td><td>Grok Imagine: imágenes desde texto o voz, cambios en imágenes, fotos convertidas en vídeo</td><td>Cuenta de X</td><td>4,9 (1,5 millones)</td></tr>
-<tr><td>{a(FIREFLY_AS, "Adobe Firefly")}</td><td>Imágenes y vídeo desde texto, Relleno generativo, quitar fondos, varias resoluciones y formatos, modelos de socios</td><td>Pensada para trabajo creativo; cuenta de Adobe</td><td>4,7 (10.900)</td></tr>
+<tr><td>{a(IP_AS, "Image Playground")} (Apple)</td><td>Imágenes a partir de una descripción, de tus fotos o de personas de tu fototeca; toca o rodea una parte para cambiarla; eliges el formato</td><td>Necesita un iPhone con Apple Intelligence; Apple dice que usa modelos en servidor con límites diarios ({a(AI_FEATURES_ES, "Apple, 121115")})</td><td>2,7</td></tr>
+<tr><td>{a(CHATGPT_AS, "ChatGPT")}</td><td>Genera imágenes a partir de una descripción y transforma las que ya tienes con palabras</td><td>Las imágenes van dentro de una app de chat general</td><td>4,8</td></tr>
+<tr><td>{a(GEMINI_AS, "Google Gemini")}</td><td>Genera y edita fotos con Nano Banana 2: controles de cámara y luz, montajes con varias imágenes, carteles con texto nítido</td><td>Cuenta de Google</td><td>4,7</td></tr>
+<tr><td>{a(META_AS, "Meta AI")}</td><td>Crea y edita imágenes; cambias una foto dibujando encima o pidiéndolo</td><td>Unida a las apps y la cuenta de Meta</td><td>4,7</td></tr>
+<tr><td><a href="{BRAINY_STORE}">Brainy</a></td><td>Una pestaña Create para imágenes y vídeos cortos, desde palabras o desde una foto, con cinco opciones de imagen y cinco formatos</td><td>Crear necesita Brainy Pro; el coste en créditos sale antes de crear</td><td>4,7</td></tr>
+<tr><td>{a(GROK_AS, "Grok")}</td><td>Grok Imagine: imágenes desde texto o voz, cambios en imágenes, fotos convertidas en vídeo</td><td>Cuenta de X</td><td>4,9</td></tr>
+<tr><td>{a(FIREFLY_AS, "Adobe Firefly")}</td><td>Imágenes y vídeo desde texto, Relleno generativo, quitar fondos, varias resoluciones y formatos, modelos de socios</td><td>Pensada para trabajo creativo; cuenta de Adobe</td><td>4,7</td></tr>
 </tbody>
 </table>
 </div>
@@ -254,8 +253,7 @@ Freeform. Su valoración en el App Store es la más baja de la lista, y Apple av
 uno a diario.</li>
 <li><strong>Adobe Firefly</strong> es la más completa para diseño: rellenos, quitar fondos y vídeo.</li>
 <li><strong>Brainy</strong> junta chat, ayuda con deberes desde una foto y creación de imágenes y vídeos en una app de
-iPhone, con el coste de cada imagen a la vista antes de hacerla. Aún tiene muy pocas valoraciones, es solo para
-iPhone y no se pueden hacer imágenes sin Brainy Pro. Más en <a href="../../brainy.html">la página de Brainy</a> (en
+iPhone, con el coste de cada imagen a la vista antes de hacerla. Es solo para iPhone y no se pueden hacer imágenes sin Brainy Pro. Más en <a href="../../brainy.html">la página de Brainy</a> (en
 inglés) y en nuestra comparativa de <a href="../../blog/es/mejores-apps-ia-chat-e-imagenes-iphone.html">apps de IA
 para chat e imágenes</a>.</li>
 </ul>

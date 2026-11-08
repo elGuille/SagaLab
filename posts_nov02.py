@@ -60,10 +60,10 @@ def build():
                 usnote = ""
                 if lang in LOCAL:
                     if k in LOCAL[lang]: r, cnt = LOCAL[lang][k]
-                    else: usnote = ", EE. UU.; sin valoraciones en España" if lang == "es" else ", États-Unis ; aucun avis en France"
-                cnt2 = cnt.replace(",", " ") if lang == "fr" else cnt.replace(",", ".") if lang == "es" else cnt
+                    else: usnote = " (EE. UU.)" if lang == "es" else " (États-Unis)"
+                # solo las estrellas, sin el número de valoraciones (Marta, 8 nov 2026)
                 r2 = r if lang == "en" else r.replace(".", ",")
-                rows += "<tr><td>%d</td><td><a href=\"%s\">%s</a></td><td>%s</td><td>%s</td><td>%s (%s %s%s)</td></tr>\n" % (i, url, name, best, ch, r2, cnt2, x["ratings"], usnote)
+                rows += "<tr><td>%d</td><td><a href=\"%s\">%s</a></td><td>%s</td><td>%s</td><td>%s%s</td></tr>\n" % (i, url, name, best, ch, r2, usnote)
                 sections += "<h2>%d. %s</h2>\n<p>%s</p>\n" % (i, name, fact)
             faq = "".join("<h3>%s</h3>\n<p>%s</p>\n" % q for q in c["faq"])
             switch = " &middot; ".join('<a href="%s" hreflang="%s">%s</a>' % (os.path.relpath(p, os.path.dirname(path)), l, l.upper()) for l, p in g["paths"].items() if l != lang)
