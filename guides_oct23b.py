@@ -21,6 +21,7 @@ De nuestras apps: sin precios y sin la palabra «free/gratis». Sin rayas.
 """
 
 D = {"en": "23 October 2026", "es": "23 de octubre de 2026"}
+D_U9 = {"en": "23 October 2026, updated 9 November 2026", "es": "23 de octubre de 2026, actualizada el 9 de noviembre de 2026"}
 ISO = "2026-10-23"
 
 PV_STORE = "https://apps.apple.com/app/apple-store/id1532670722?pt=118348020&amp;ct=sagalab-guide&amp;mt=8"
@@ -1020,8 +1021,8 @@ LABELS_STORY = "https://apps.apple.com/us/iphone/story/id1539235847"
 CR_EN = dict(
     path="crypton/track-crypto-prices-without-giving-your-data.html",
     app_name="Crypto Tracker: Crypton",
-    date_iso=ISO, date=D,
-    h1="How to track crypto prices without giving your data: no-account trackers, widgets and alerts (2026)",
+    date_iso=ISO, date=D_U9, modified_iso="2026-11-09",
+    h1="How to track crypto prices while sharing less data: no-account trackers, widgets and alerts (2026)",
     desc=("The App Store privacy labels of 7 crypto trackers, read on 23 October 2026 (CoinGecko, CoinMarketCap, "
           "CoinStats, Delta, HODL, Crypto Pro, Crypton), what connecting a wallet or exchange gives away, and how to "
           "follow prices with a widget and alerts while sharing as little as possible."),
@@ -1033,7 +1034,7 @@ CR_EN = dict(
 <p><strong>We make Crypton, a crypto price tracker, and it is one of the seven apps below.</strong>
 The others are real alternatives with features Crypton does not have.</p>
 
-<h2>What 7 trackers declare on the App Store (read 23 October 2026)</h2>
+<h2>What 7 trackers declare on the App Store (read 23 October 2026, rechecked 9 November 2026)</h2>
 
 <p>We read the privacy label of each app from its public App Store page (US store). These are
 the developers' own declarations; Apple shows them but does not verify them
@@ -1044,7 +1045,7 @@ the developers' own declarations; Apple shows them but does not verify them
 <thead><tr><th>App</th><th>Data used to track you</th><th>Data linked to you</th><th>Data not linked to you</th></tr></thead>
 <tbody>
 <tr><td>{a(CRYPTOPRO_AS, "Crypto Pro")}</td><td>None</td><td>None</td><td>Identifiers</td></tr>
-<tr><td>{a(CRYPTON_AS, "Crypton")}</td><td>None</td><td>None</td><td>Usage Data, Diagnostics</td></tr>
+<tr><td>{a(CRYPTON_AS, "Crypton")}</td><td>None</td><td>Purchases, Identifiers</td><td>Usage Data, Diagnostics</td></tr>
 <tr><td>{a(COINSTATS_AS, "CoinStats")}</td><td>None</td><td>None</td><td>Contact Info, Identifiers, Usage Data, Diagnostics</td></tr>
 <tr><td>{a(COINGECKO_AS, "CoinGecko")}</td><td>None</td><td>Contact Info</td><td>Identifiers, Usage Data, Diagnostics</td></tr>
 <tr><td>{a(CMC_AS, "CoinMarketCap")}</td><td>Usage Data</td><td>Identifiers</td><td>Identifiers, Usage Data, Diagnostics</td></tr>
@@ -1124,8 +1125,8 @@ for iPhone</a>. More on <a href="../crypton.html">Crypton's page</a>.</p>
         ("Can I track crypto prices without an account?",
          "Yes. Crypto Pro, Crypton and CoinMarketCap's incognito mode show prices and let you keep a portfolio without signing in."),
         ("Which crypto tracker collects the least data?",
-         "Of seven we checked on 23 October 2026, Crypto Pro declares only identifiers not linked to you, and Crypton "
-         "only usage and diagnostics not linked to you. Neither declares data used to track you."),
+         "Of seven we checked (23 October 2026, rechecked 9 November 2026), Crypto Pro declares only identifiers not linked to you. "
+         "Crypton declares purchases and identifiers linked to you, and usage data and diagnostics not linked to you. Neither declares data used to track you."),
         ("Is it safe to connect my exchange to a portfolio app?",
          "Read-only API keys cannot move funds, but the app then knows your real balances and trades. Entering holdings "
          "by hand shares nothing about where they are."),
@@ -1142,8 +1143,8 @@ for iPhone</a>. More on <a href="../crypton.html">Crypton's page</a>.</p>
 CR_ES = dict(
     path="crypton/es/seguir-precios-cripto-sin-dar-tus-datos.html",
     app_name="Crypto Tracker: Crypton",
-    date_iso=ISO, date=D,
-    h1="Cómo seguir los precios de las criptomonedas sin dar tus datos: apps sin cuenta, widgets y alertas (2026)",
+    date_iso=ISO, date=D_U9, modified_iso="2026-11-09",
+    h1="Cómo seguir los precios de las criptomonedas compartiendo menos datos: apps sin cuenta, widgets y alertas (2026)",
     desc=("Las etiquetas de privacidad del App Store de 7 apps de cripto, leídas el 23 de octubre de 2026 (CoinGecko, "
           "CoinMarketCap, CoinStats, Delta, HODL, Crypto Pro, Crypton), qué regalas al conectar un monedero o un "
           "exchange, y cómo seguir precios con widget y alertas compartiendo lo mínimo."),
@@ -1155,7 +1156,7 @@ CR_ES = dict(
 <p><strong>Hacemos Crypton, una app de precios de criptomonedas, y es una de las siete de abajo.</strong>
 Las demás son alternativas reales con funciones que Crypton no tiene.</p>
 
-<h2>Lo que declaran 7 apps en el App Store (leído el 23 de octubre de 2026)</h2>
+<h2>Lo que declaran 7 apps en el App Store (leído el 23 de octubre de 2026 y revisado el 9 de noviembre de 2026)</h2>
 
 <p>Leímos la etiqueta de privacidad de cada app en su página pública del App Store (tienda de
 EE. UU.). Son declaraciones de los propios desarrolladores; Apple las enseña pero no las comprueba
@@ -1166,7 +1167,7 @@ EE. UU.). Son declaraciones de los propios desarrolladores; Apple las enseña pe
 <thead><tr><th>App</th><th>Datos para rastrearte</th><th>Datos vinculados a ti</th><th>Datos no vinculados a ti</th></tr></thead>
 <tbody>
 <tr><td>{a(CRYPTOPRO_AS, "Crypto Pro")}</td><td>Ninguno</td><td>Ninguno</td><td>Identificadores</td></tr>
-<tr><td>{a(CRYPTON_AS, "Crypton")}</td><td>Ninguno</td><td>Ninguno</td><td>Datos de uso, Diagnóstico</td></tr>
+<tr><td>{a(CRYPTON_AS, "Crypton")}</td><td>Ninguno</td><td>Compras, Identificadores</td><td>Datos de uso, Diagnóstico</td></tr>
 <tr><td>{a(COINSTATS_AS, "CoinStats")}</td><td>Ninguno</td><td>Ninguno</td><td>Información de contacto, Identificadores, Datos de uso, Diagnóstico</td></tr>
 <tr><td>{a(COINGECKO_AS, "CoinGecko")}</td><td>Ninguno</td><td>Información de contacto</td><td>Identificadores, Datos de uso, Diagnóstico</td></tr>
 <tr><td>{a(CMC_AS, "CoinMarketCap")}</td><td>Datos de uso</td><td>Identificadores</td><td>Identificadores, Datos de uso, Diagnóstico</td></tr>
@@ -1246,8 +1247,8 @@ cartera de criptomonedas en iPhone</a>. Más en <a href="../../crypton.html">la 
         ("¿Puedo seguir los precios de cripto sin crear una cuenta?",
          "Sí. Crypto Pro, Crypton y el modo incógnito de CoinMarketCap enseñan precios y dejan llevar una cartera sin iniciar sesión."),
         ("¿Qué app de cripto recoge menos datos?",
-         "De las siete que miramos el 23 de octubre de 2026, Crypto Pro solo declara identificadores no vinculados a ti, y "
-         "Crypton solo datos de uso y diagnóstico no vinculados a ti. Ninguna declara datos para rastrearte."),
+         "De las siete que miramos (23 de octubre de 2026, revisadas el 9 de noviembre de 2026), Crypto Pro solo declara identificadores no vinculados a ti. "
+         "Crypton declara compras e identificadores vinculados a ti, y datos de uso y diagnóstico no vinculados a ti. Ninguna de las dos declara datos para rastrearte."),
         ("¿Es seguro conectar mi exchange a una app de cartera?",
          "Las claves API de solo lectura no pueden mover fondos, pero la app sabe entonces tus saldos y operaciones reales. "
          "Si metes las cantidades a mano no compartes dónde están."),
