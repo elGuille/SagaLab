@@ -36,7 +36,7 @@ def askai_ppid(ct):
     c = (ct or "").lower()
     if re.search(r"translat|tradu|uebersetz|ubersetz|perevod", c):
         return ASKAI_PPID["traducir"]
-    if re.search(r"image|photo|picture|imagen|imagem|bild|foto|画像", c):
+    if re.search(r"image|photo|picture|imagen|imagem|bild|foto|kartink|画像", c):
         return ASKAI_PPID["fotos"]
     return ASKAI_PPID["modelo"]
 

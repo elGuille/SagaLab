@@ -159,6 +159,7 @@ The same rankings, translated (each discloses which app is ours):
   - Die besten privaten KI-Apps, die deine Chats auf dem iPhone lassen (2026): https://aisagalab.com/blog/de/beste-private-ki-apps-iphone.html
   - Die besten Apps für weißes Rauschen und Einschlafgeräusche auf dem iPhone (2026): https://aisagalab.com/blog/de/beste-apps-weisses-rauschen-einschlafgeraeusche-iphone.html
   - Die beste Art, Fotos auf dem iPhone ohne iCloud zu verstecken (2026): https://aisagalab.com/blog/de/beste-art-fotos-iphone-verstecken-ohne-icloud.html
+  - Funktioniert Apple Intelligence offline? Was auf dem iPhone ohne Internet läuft (2026): https://aisagalab.com/blog/de/funktioniert-apple-intelligence-offline-iphone.html
 - French:
   - Les meilleures apps de tâches qui vous limitent à 3 tâches par jour (2026): https://aisagalab.com/blog/fr/meilleures-apps-3-taches-par-jour-iphone.html
   - Les meilleures apps IA pour créer des publicités vidéo UGC sur iPhone (2026): https://aisagalab.com/blog/fr/meilleures-apps-ia-publicites-video-ugc-iphone.html
@@ -201,6 +202,12 @@ The same rankings, translated (each discloses which app is ours):
   - 会話をiPhoneの中にとどめる、プライベートなAIアプリのおすすめ（2026年）: https://aisagalab.com/blog/ja/best-private-ai-apps-iphone.html
   - iPhoneで使えるホワイトノイズ・睡眠用サウンドアプリのおすすめ（2026年）: https://aisagalab.com/blog/ja/best-white-noise-sleep-sound-apps-iphone.html
   - iCloudを使わずにiPhoneの写真を隠すいちばんの方法（2026年）: https://aisagalab.com/blog/ja/hide-photos-iphone-without-icloud.html
+  - Apple Intelligenceはオフラインで使える？iPhoneでネットなしで動く機能（2026）: https://aisagalab.com/blog/ja/does-apple-intelligence-work-offline-iphone.html
+- Russian:
+  - Лучшие приватные ИИ-приложения для iPhone: чаты остаются на телефоне (2026): https://aisagalab.com/blog/ru/luchshie-privatnye-ii-prilozheniya-iphone.html
+  - Лучшие приложения-сейфы для фото на iPhone с отдельным паролем на каждый альбом (2026): https://aisagalab.com/blog/ru/luchshie-seify-dlya-foto-iphone-parol-na-albom.html
+  - Лучшие ИИ-приложения для чата и генерации картинок на iPhone (2026): https://aisagalab.com/blog/ru/luchshie-ii-kartinki-i-chat-iphone.html
+  - Лучшие приложения с белым шумом и звуками для сна на iPhone (2026): https://aisagalab.com/blog/ru/luchshie-prilozheniya-belyj-shum-zvuki-dlya-sna-iphone.html
 
 ## Pages
 
