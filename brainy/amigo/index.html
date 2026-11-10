@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<title>A friend on your iPhone</title>
+<meta name="description" content="A friend that remembers you, talks with you out loud, and never leaves your iPhone. Leave your email to hear when it is ready.">
+<style>
+:root{--bg:#faf8f5;--card:#fff;--ink:#1d1b19;--mute:#6b665f;--line:#e4dfd8;--acc:#3b5bdb;--accInk:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#161514;--card:#201f1d;--ink:#f1eee9;--mute:#a39d95;--line:#35322e;--acc:#7c95ff;--accInk:#101010}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:560px;margin:0 auto;padding:40px 16px 60px}
+h1{font-size:32px;line-height:1.15;margin:0 0 14px;letter-spacing:-.01em}
+p{margin:0 0 14px}.mute{color:var(--mute);font-size:15px}
+ul{list-style:none;padding:0;margin:22px 0}
+li{padding:14px 0;border-top:1px solid var(--line)}li:last-child{border-bottom:1px solid var(--line)}
+li b{display:block}
+form{display:flex;flex-direction:column;gap:10px;margin:26px 0 10px}
+input{min-height:50px;padding:0 14px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);font:inherit}
+button{min-height:50px;border:0;border-radius:12px;background:var(--acc);color:var(--accInk);font:inherit;font-weight:600;cursor:pointer}
+button:disabled{opacity:.5}
+#ok{font-weight:600}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<main>
+  <h1>A friend that remembers you, talks with you, and never leaves your iPhone.</h1>
+  <p>We are building it now. It is not in the App Store yet.</p>
+  <ul>
+    <li><b>Talk out loud</b><span class="mute">Like a phone call with someone who is always glad to hear from you. Typing works too.</span></li>
+    <li><b>It remembers</b><span class="mute">Your sister's birthday, the job interview, that you hate mornings. Next time, it asks how it went.</span></li>
+    <li><b>It stays on your phone</b><span class="mute">The voice and the conversations run on the iPhone itself. Nothing you say is sent to a server.</span></li>
+  </ul>
+  <form id="f">
+    <input id="email" type="email" required autocomplete="email" placeholder="Your email" aria-label="Your email">
+    <button id="b">Tell me when it's ready</button>
+  </form>
+  <p class="mute" id="note">We will email you once, when it comes out. Nothing else, and we never share your address.</p>
+  <p id="ok" hidden>You're on the list. Thank you!</p>
+  <p class="mute">Made by <a href="/" style="color:inherit">Saga Labs</a>.</p>
+</main>
+<script>
+(function(){
+  var API = "https://us-central1-brainy-ai-chat.cloudfunctions.net/brainyPrueba";
+  var f = document.getElementById("f"), b = document.getElementById("b");
+  f.onsubmit = function(e){
+    e.preventDefault(); b.disabled = true;
+    fetch(API, {method:"POST", headers:{"Content-Type":"application/json"},
+      body: JSON.stringify({test:"espera", email:document.getElementById("email").value, lang:(navigator.language||"").slice(0,5)})})
+      .then(function(r){ if(!r.ok) throw 0;
+        try{ window.umami && umami.track("espera-alta") }catch(x){}
+        f.hidden = true; document.getElementById("note").hidden = true; document.getElementById("ok").hidden = false })
+      .catch(function(){ b.disabled = false; b.textContent = "That didn't work, try again" });
+  };
+})();
+</script>
+<script src="/umami.js" defer></script>
+</body>
+</html>

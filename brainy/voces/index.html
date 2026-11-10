@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<title>Which voice sounds human?</title>
+<meta name="description" content="A 4-minute blind listening test: rate short voice clips and pick the one you would rather talk to.">
+<style>
+:root{--bg:#faf8f5;--card:#fff;--ink:#1d1b19;--mute:#6b665f;--line:#e4dfd8;--acc:#3b5bdb;--accInk:#fff;--sel:#e7ecff}
+@media (prefers-color-scheme:dark){:root{--bg:#161514;--card:#201f1d;--ink:#f1eee9;--mute:#a39d95;--line:#35322e;--acc:#7c95ff;--accInk:#101010;--sel:#262d4a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:560px;margin:0 auto;padding:28px 16px 60px}
+h1{font-size:26px;line-height:1.2;margin:0 0 10px}
+p{margin:0 0 14px}.mute{color:var(--mute);font-size:15px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin:16px 0}
+.q{font-size:15px;color:var(--mute);margin:14px 0 6px}
+.say{font-style:italic;margin:10px 0 4px}
+.row{display:flex;gap:8px}
+.row button{flex:1;min-height:44px;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:10px;font:inherit;cursor:pointer}
+.row button.on{background:var(--sel);border-color:var(--acc);font-weight:600}
+.scale{display:flex;justify-content:space-between;font-size:13px;color:var(--mute);margin-top:4px}
+.play{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:22px;border:1px solid var(--acc);background:transparent;color:var(--acc);font:inherit;font-weight:600;cursor:pointer}
+.main{display:block;width:100%;min-height:50px;margin-top:18px;border:0;border-radius:12px;background:var(--acc);color:var(--accInk);font:inherit;font-weight:600;cursor:pointer}
+.main:disabled{opacity:.4;cursor:default}
+.ab{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.ab div{border:1px solid var(--line);border-radius:12px;padding:12px;text-align:center}
+.ab div.on{border-color:var(--acc);background:var(--sel)}
+.ab .pick{margin-top:10px;width:100%;min-height:44px;border-radius:10px;border:1px solid var(--line);background:transparent;color:var(--ink);font:inherit;cursor:pointer}
+.bar{height:6px;background:var(--line);border-radius:3px;overflow:hidden;margin:6px 0 0}.bar i{display:block;height:100%;background:var(--acc);width:0}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<main>
+  <section id="intro">
+    <h1>Which voice sounds like a real person?</h1>
+    <p>We are choosing a voice for a friend you can talk to on your iPhone. You will hear 10 short clips and then 4 pairs. It takes about 4 minutes. Headphones help.</p>
+    <p class="mute">The voices have no names, so nobody knows which is which. We save only your answers: no name, no email, nothing about your device.</p>
+    <button class="main" id="start">Start</button>
+  </section>
+
+  <section id="rate" hidden>
+    <div class="mute"><span id="rateN"></span></div><div class="bar"><i id="rateBar"></i></div>
+    <div class="card">
+      <button class="play" data-play="rate">▶ Play</button>
+      <p class="say" id="rateSay"></p>
+      <div class="q">Does it sound like a real person?</div>
+      <div class="row" id="human"></div>
+      <div class="scale"><span>Clearly a machine</span><span>A real person</span></div>
+      <div class="q">Would you happily talk with this voice for 10 minutes?</div>
+      <div class="row" id="talk"></div>
+      <div class="scale"><span>No way</span><span>Gladly</span></div>
+    </div>
+    <button class="main" id="rateNext" disabled>Next</button>
+  </section>
+
+  <section id="pair" hidden>
+    <div class="mute"><span id="pairN"></span></div><div class="bar"><i id="pairBar"></i></div>
+    <div class="card">
+      <p>Same sentence, two voices. Which would you rather talk to?</p>
+      <p class="say" id="pairSay"></p>
+      <div class="ab">
+        <div id="boxA"><button class="play" data-play="A">▶ A</button><button class="pick" data-pick="A">This one</button></div>
+        <div id="boxB"><button class="play" data-play="B">▶ B</button><button class="pick" data-pick="B">This one</button></div>
+      </div>
+    </div>
+    <button class="main" id="pairNext" disabled>Next</button>
+  </section>
+
+  <section id="done" hidden>
+    <h1>Thank you!</h1>
+    <p id="doneMsg">Your answers are saved. That's all.</p>
+  </section>
+</main>
+<script>
+(function(){
+  var API = "https://us-central1-brainy-ai-chat.cloudfunctions.net/brainyPrueba";
+  var VOICES = ["tm","zt","kk","qs","jd"], CONTROL = "jd";
+  var SAY = ["", "Hey! How did the job interview go? I've been wondering about it all day.",
+    "Wait, isn't today your sister's birthday? Did you end up getting her that book?",
+    "That sounds exhausting. Do you want to talk about it, or should I just distract you?",
+    "Okay, you told me you hate mornings. So how are you awake at seven?",
+    "Honestly, I think you handled that really well. I'd have been way more nervous.",
+    "Good night! Tomorrow you have to tell me how the dinner with Marco went."];
+  function shuffle(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),t=a[i];a[i]=a[j];a[j]=t}return a}
+  function $(id){return document.getElementById(id)}
+  function track(n,d){try{window.umami&&umami.track(n,d)}catch(e){}}
+
+  // 2 sentences per voice to rate, then each candidate against the control on another sentence.
+  var items = [], pairs = [];
+  VOICES.forEach(function(v){ shuffle([1,2,3,4,5,6]).slice(0,2).forEach(function(s){ items.push(v+s) }) });
+  shuffle(items);
+  VOICES.filter(function(v){return v!==CONTROL}).forEach(function(v){
+    var s = 1+Math.floor(Math.random()*6), p = shuffle([v+s, CONTROL+s]);
+    pairs.push({a:p[0], b:p[1], win:null});
+  });
+  shuffle(pairs);
+
+  var sid = Array.from(crypto.getRandomValues(new Uint8Array(12)), function(x){return (x%36).toString(36)}).join("");
+  var ratings = {}, i = 0, k = 0, audio = new Audio(), cur = {};
+  function play(clip){ audio.pause(); audio.src = "a/"+clip+".m4a"; audio.currentTime = 0; audio.play().catch(function(){}) }
+  document.addEventListener("click", function(e){
+    var p = e.target.closest("[data-play]"); if (p) play(cur[p.dataset.play]);
+    var q = e.target.closest("[data-pick]");
+    if (q) { pairs[k].win = cur[q.dataset.pick]; $("boxA").classList.toggle("on", q.dataset.pick==="A"); $("boxB").classList.toggle("on", q.dataset.pick==="B"); $("pairNext").disabled = false }
+  });
+  function scale(id, key){
+    var row = $(id); row.innerHTML = "";
+    [1,2,3,4,5].forEach(function(n){
+      var b = document.createElement("button"); b.textContent = n;
+      b.onclick = function(){ ratings[items[i]][key] = n; [].forEach.call(row.children, function(c){c.classList.toggle("on", c===b)}); check() };
+      row.appendChild(b);
+    });
+  }
+  function check(){ var r = ratings[items[i]]; $("rateNext").disabled = !(r.human && r.talk) }
+  function showRate(){
+    cur.rate = items[i]; ratings[items[i]] = {};
+    $("rateN").textContent = "Clip "+(i+1)+" of "+items.length; $("rateBar").style.width = (i/items.length*100)+"%";
+    $("rateSay").textContent = "“"+SAY[+items[i].slice(2)]+"”";
+    scale("human","human"); scale("talk","talk"); check(); play(items[i]);
+  }
+  function showPair(){
+    cur.A = pairs[k].a; cur.B = pairs[k].b;
+    $("pairN").textContent = "Pair "+(k+1)+" of "+pairs.length; $("pairBar").style.width = (k/pairs.length*100)+"%";
+    $("pairSay").textContent = "“"+SAY[+pairs[k].a.slice(2)]+"”";
+    $("boxA").classList.remove("on"); $("boxB").classList.remove("on"); $("pairNext").disabled = true;
+  }
+  $("start").onclick = function(){ $("intro").hidden = true; $("rate").hidden = false; track("voces-start"); showRate() };
+  $("rateNext").onclick = function(){ if (++i < items.length) return showRate(); $("rate").hidden = true; $("pair").hidden = false; audio.pause(); showPair() };
+  $("pairNext").onclick = function(){
+    if (++k < pairs.length) return showPair();
+    audio.pause(); $("pair").hidden = true; $("done").hidden = false;
+    fetch(API, {method:"POST", headers:{"Content-Type":"application/json"},
+      body: JSON.stringify({test:"voces", sid:sid, ratings:ratings, pairs:pairs, lang:(navigator.language||"").slice(0,5)})})
+      .then(function(r){ if(!r.ok) throw 0; track("voces-done") })
+      .catch(function(){ $("doneMsg").textContent = "We could not save your answers. Please try again in a minute (reload the page)." });
+  };
+})();
+</script>
+<script src="/umami.js" defer></script>
+</body>
+</html>
