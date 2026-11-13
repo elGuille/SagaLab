@@ -181,7 +181,7 @@ Apple Intelligence</a>.</p>
 <li>App Store pages (US) of Pinku, Locally AI, PocketPal AI and Private LLM, as shown on %(date)s.</li>
 </ul>
 <p>All checked on %(date)s. If anything here is out of date,
-<a href="mailto:sagalabs@proton.me">tell us</a> and we will correct the page.</p>
+<a href="mailto:aisagalab@gmail.com">tell us</a> and we will correct the page.</p>
 """ + DISCLOSE,
 )
 
@@ -351,7 +351,7 @@ servers</a>.</p>
 <li>App Store pages (US), including requirements, in-app purchases, ratings and App Privacy: <a href="%(pinku)s">Pinku</a>, <a href="%(locally)s"%(x)s>Locally AI</a>, <a href="%(pocketpal)s"%(x)s>PocketPal AI</a>, <a href="%(privatellm)s"%(x)s>Private LLM</a>, <a href="%(chatgpt)s"%(x)s>ChatGPT</a>, <a href="%(gemini)s"%(x)s>Google Gemini</a>, <a href="%(claude)s"%(x)s>Claude</a>, <a href="%(vibe)s"%(x)s>Vibe by Mistral</a>, <a href="%(enclave)s"%(x)s>Enclave</a>, as shown on %(date)s. Availability in Russia and China from the App Store lookup for those countries, same day.</li>
 <li>PocketPal AI source code: <a href="%(gh)s"%(x)s>github.com/a-ghorbani/pocketpal-ai</a>.</li>
 </ul>
-<p>If anything here is out of date, <a href="mailto:sagalabs@proton.me">tell us</a>
+<p>If anything here is out of date, <a href="mailto:aisagalab@gmail.com">tell us</a>
 and we will correct the page.</p>
 """ + DISCLOSE,
 )
@@ -537,7 +537,7 @@ Private LLM are sold there.</p>
 <li>Apple, <a href="%(reqs)s"%(x)s>How to get the next generation of Apple Intelligence</a> (supported languages, features available in the EU, China, devices), published 14 September 2026.</li>
 <li>App Store pages (US), including prices, ratings and App Privacy: <a href="%(chatgpt)s"%(x)s>ChatGPT</a>, <a href="%(gemini)s"%(x)s>Google Gemini</a>, <a href="%(claude)s"%(x)s>Claude</a>, <a href="%(vibe)s"%(x)s>Vibe by Mistral</a>, <a href="%(pinku)s">Pinku</a>, <a href="%(locally)s"%(x)s>Locally AI</a>, as shown on %(date)s. Russian and Chinese availability, prices and ratings from the App Store in those countries, same day.</li>
 </ul>
-<p>If anything here is out of date, <a href="mailto:sagalabs@proton.me">tell us</a>
+<p>If anything here is out of date, <a href="mailto:aisagalab@gmail.com">tell us</a>
 and we will correct the page.</p>
 """ + DISCLOSE,
 )

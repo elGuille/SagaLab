@@ -346,7 +346,7 @@ how fast small models run on an iPhone (<a href="%(speed)s">speeds</a>).</p>
 <li>GDPR <a href="https://gdpr-info.eu/art-12-gdpr/"%(x)s>Article 12</a>, <a href="https://gdpr-info.eu/art-15-gdpr/"%(x)s>15</a> and <a href="https://gdpr-info.eu/art-17-gdpr/"%(x)s>17</a>.</li>
 </ul>
 <p>First published on 20 October 2026; every page re-read on %(date)s. Policies
-change; if one of these is out of date, <a href="mailto:sagalabs@proton.me">tell
+change; if one of these is out of date, <a href="mailto:aisagalab@gmail.com">tell
 us</a> and we will correct the page.</p>
 """ + DISCLOSE,
 )
@@ -544,7 +544,7 @@ does</a>.</p>
 <li>Models: <a href="https://ollama.com/library/qwen3"%(x)s>qwen3:0.6b</a> (Ollama) and <a href="https://huggingface.co/mlx-community/Qwen3-0.6B-4bit"%(x)s>mlx-community/Qwen3-0.6B-4bit</a> (LM Studio and Pinku).</li>
 </ul>
 <p>If you repeat the test and get different results,
-<a href="mailto:sagalabs@proton.me">tell us</a>; we will add them.</p>
+<a href="mailto:aisagalab@gmail.com">tell us</a>; we will add them.</p>
 """ + DISCLOSE,
 )
 

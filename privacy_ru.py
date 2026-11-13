@@ -240,7 +240,7 @@ Private LLM или <a href="%(pinku)s">Pinku</a>. %(pinku_priv)s Мы прове
 <li>GDPR, <a href="https://gdpr-info.eu/art-12-gdpr/"%(x)s>статья 12</a>, <a href="https://gdpr-info.eu/art-15-gdpr/"%(x)s>15</a> и <a href="https://gdpr-info.eu/art-17-gdpr/"%(x)s>17</a>.</li>
 </ul>
 <p>Все страницы прочитаны %(date)s. Политики меняются; если что-то устарело,
-<a href="mailto:sagalabs@proton.me">напишите нам</a>, и мы исправим.</p>
+<a href="mailto:aisagalab@gmail.com">напишите нам</a>, и мы исправим.</p>
 """ + DISCLOSE,
 )
 
@@ -432,7 +432,7 @@ Studio), из журналов macOS и по DNS.</li>
 <li>Модели: <a href="https://ollama.com/library/qwen3"%(x)s>qwen3:0.6b</a> (Ollama) и <a href="https://huggingface.co/mlx-community/Qwen3-0.6B-4bit"%(x)s>mlx-community/Qwen3-0.6B-4bit</a> (LM Studio и Pinku).</li>
 </ul>
 <p>Если вы повторите тест и получите другие результаты,
-<a href="mailto:sagalabs@proton.me">напишите нам</a>; мы их добавим.</p>
+<a href="mailto:aisagalab@gmail.com">напишите нам</a>; мы их добавим.</p>
 """ + DISCLOSE,
 )
 

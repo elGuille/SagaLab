@@ -18,7 +18,7 @@ Independent app studio. Builds and runs its own software — eight apps on the A
 ## Key facts
 
 - Founded 2023.
-- Public contact email: sagalabs@proton.me
+- Public contact email: aisagalab@gmail.com
 - Website: https://aisagalab.com/
 - Active across iOS and web. Eight apps on the App Store.
 - Engagement model: short briefs (two to twelve weeks). Asynchronous-first. Fixed-scope or staged-gates depending on uncertainty.
@@ -220,7 +220,7 @@ The same rankings, translated (each discloses which app is ours):
 
 ## Contact
 
-Email: sagalabs@proton.me
+Email: aisagalab@gmail.com
 For project enquiries, include problem, surface (iOS / web / MCP / backend), timeline, and budget range.
 
 ## Social

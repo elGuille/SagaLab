@@ -125,7 +125,7 @@ Hugging Face 上任意 GGUF 模型；界面为英文。</li>
 <li>Apple，<a href="%(ios)s"%(x)s>iOS 27</a> 和 <a href="%(metal)s"%(x)s>Apple 设备对 Metal 的支持</a>（iPhone 12 起支持 Metal 3）。</li>
 <li>中国大陆 App Store 页面：Pinku、PocketPal AI、Private LLM，查看于 %(date)s。</li>
 </ul>
-<p>以上均核对于 %(date)s。如有过时信息，请<a href="mailto:sagalabs@proton.me">告诉我们</a>。</p>
+<p>以上均核对于 %(date)s。如有过时信息，请<a href="mailto:aisagalab@gmail.com">告诉我们</a>。</p>
 """ + DISCLOSE,
 )
 
@@ -252,7 +252,7 @@ Pinku 需要 iPhone 12 是因为它需要 Metal 3，Apple 列出的是 <a href="
 <li>中国大陆 App Store 页面（要求、价格、评分、语言）：<a href="%(pinku)s">Pinku</a>、<a href="%(pocketpal)s"%(x)s>PocketPal AI</a>、<a href="%(privatellm)s"%(x)s>Private LLM</a>、<a href="%(doubao)s"%(x)s>豆包</a>、<a href="%(kimi)s"%(x)s>Kimi</a>、<a href="%(qwen)s"%(x)s>千问</a>、<a href="%(deepseek)s"%(x)s>DeepSeek</a>、<a href="%(vibe)s"%(x)s>Vibe by Mistral</a>，查看于 %(date)s；同日用中国大陆 App Store 查询确认 ChatGPT、Gemini、Claude、Locally AI 和 Enclave 未上架。</li>
 <li>PocketPal AI 源代码：<a href="%(gh)s"%(x)s>github.com/a-ghorbani/pocketpal-ai</a>。</li>
 </ul>
-<p>如有过时信息，请<a href="mailto:sagalabs@proton.me">告诉我们</a>。</p>
+<p>如有过时信息，请<a href="mailto:aisagalab@gmail.com">告诉我们</a>。</p>
 """ + DISCLOSE,
 )
 
@@ -356,7 +356,7 @@ Kimi（月之暗面）评分最高，千问（阿里巴巴）iOS 14 就能用，
 <li>Apple，<a href="%(reqs)s"%(x)s>如何获取新一代 Apple Intelligence</a>（中国大陆、语言、设备），发布于 2026 年 9 月 14 日。</li>
 <li>中国大陆 App Store 页面：<a href="%(doubao)s"%(x)s>豆包</a>、<a href="%(kimi)s"%(x)s>Kimi</a>、<a href="%(qwen)s"%(x)s>千问</a>、<a href="%(deepseek)s"%(x)s>DeepSeek</a>、<a href="%(pinku)s">Pinku</a>、<a href="%(pocketpal)s"%(x)s>PocketPal AI</a>，查看于 %(date)s。</li>
 </ul>
-<p>如有过时信息，请<a href="mailto:sagalabs@proton.me">告诉我们</a>。</p>
+<p>如有过时信息，请<a href="mailto:aisagalab@gmail.com">告诉我们</a>。</p>
 """ + DISCLOSE,
 )
 

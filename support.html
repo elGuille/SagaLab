@@ -23,7 +23,7 @@
                 <li><a href="/blog/">Blog</a></li>
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="index.html#about">About</a></li>
-                <li><a href="mailto:sagalabs@proton.me" class="nav-link">Contact</a></li>
+                <li><a href="mailto:aisagalab@gmail.com" class="nav-link">Contact</a></li>
                 <li>
                     <a href="https://x.com/SagaAILab" target="_blank" class="icon-link" aria-label="X (Twitter)">
                         <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
@@ -105,7 +105,7 @@
                             <button type="submit" class="cta-primary" id="supportSubmit">Send Message</button>
                             <p class="form-status" id="supportStatus" role="status" aria-live="polite"></p>
                         </form>
-                        <p class="form-note">We read every message and reply to the address you give us. You can also write to <a href="mailto:sagalabs@proton.me">sagalabs@proton.me</a> directly.</p>
+                        <p class="form-note">We read every message and reply to the address you give us. You can also write to <a href="mailto:aisagalab@gmail.com">aisagalab@gmail.com</a> directly.</p>
                     </div>
                 </div>
             </div>
@@ -140,7 +140,7 @@
     <script src="script.js"></script>
     <script>
         // Send the message to the same endpoint Dora's support form uses, which
-        // emails sagalabs@proton.me through Resend and rate-limits by IP.
+        // emails aisagalab@gmail.com through Resend and rate-limits by IP.
         //
         // Until 6 Sep 2026 this form built a `mailto:` link and opened the
         // visitor's email client, then showed an alert saying the message had
@@ -191,13 +191,13 @@
                         return;
                     }
                     if (res.status === 429) {
-                        say('That is a few messages in a short time. Please try again in an hour, or write to sagalabs@proton.me.', 'error');
+                        say('That is a few messages in a short time. Please try again in an hour, or write to aisagalab@gmail.com.', 'error');
                         return;
                     }
                     // Never claim success we cannot see. Give them the address.
-                    say('That did not go through. Please write to sagalabs@proton.me and we will pick it up there.', 'error');
+                    say('That did not go through. Please write to aisagalab@gmail.com and we will pick it up there.', 'error');
                 }).catch(function () {
-                    say('That did not go through. Please write to sagalabs@proton.me and we will pick it up there.', 'error');
+                    say('That did not go through. Please write to aisagalab@gmail.com and we will pick it up there.', 'error');
                 }).finally(function () {
                     button.disabled = false;
                 });

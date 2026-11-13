@@ -203,7 +203,7 @@ A1_EN_SOURCES = """
 <li><a href="https://openai.com/index/response-to-nyt-data-demands/" rel="nofollow noopener" target="_blank">How we're responding to The New York Times' data demands</a> &mdash; OpenAI.</li>
 </ul>
 <p>Figures checked on 5 September 2026. Policies change; if you find one of these
-out of date, <a href="mailto:sagalabs@proton.me">tell us</a> and we will correct
+out of date, <a href="mailto:aisagalab@gmail.com">tell us</a> and we will correct
 the page.</p>
 """
 
@@ -342,7 +342,7 @@ A1_ES_SOURCES = """
 <li><a href="https://openai.com/index/response-to-nyt-data-demands/" rel="nofollow noopener" target="_blank">How we're responding to The New York Times' data demands</a> &mdash; OpenAI.</li>
 </ul>
 <p>Cifras comprobadas el 5 de septiembre de 2026. Las pol&iacute;ticas cambian; si
-encuentras alguna desactualizada, <a href="mailto:sagalabs@proton.me">av&iacute;sanos</a>
+encuentras alguna desactualizada, <a href="mailto:aisagalab@gmail.com">av&iacute;sanos</a>
 y corregimos la p&aacute;gina.</p>
 """
 
@@ -1204,7 +1204,7 @@ typing into someone else's computer because it is easier.</p>
 <p class="article-note">Every figure in this article is quoted from a provider's
 own published policy or a court filing, all linked below. Check them rather than
 taking our word for it &mdash; and if one is out of date,
-<a href="mailto:sagalabs@proton.me">tell us</a> and we will correct the page.</p>
+<a href="mailto:aisagalab@gmail.com">tell us</a> and we will correct the page.</p>
 """ % (APP_STORE, KEEPER)
 
 A4_EN_SOURCES = """
@@ -1512,7 +1512,7 @@ c&oacute;modo.</p>
 <p class="article-note">Toda cifra de este art&iacute;culo est&aacute; citada de la
 pol&iacute;tica publicada por el proveedor o de una resoluci&oacute;n judicial,
 enlazadas abajo. Compru&eacute;balas en vez de creernos &mdash; y si alguna
-est&aacute; desactualizada, <a href="mailto:sagalabs@proton.me">av&iacute;sanos</a>
+est&aacute; desactualizada, <a href="mailto:aisagalab@gmail.com">av&iacute;sanos</a>
 y corregimos la p&aacute;gina.</p>
 """ % (APP_STORE, KEEPER)
 
@@ -1969,7 +1969,7 @@ A6_EN_SOURCES = """
 <li>OpenAI, <a href="%(oai)s" target="_blank" rel="noopener">ChatGPT supported countries</a>.</li>
 <li>Pinku's features and prices: <a href="../pinku.html">its product page</a>.</li>
 </ul>
-<p>If anything here is out of date, <a href="mailto:sagalabs@proton.me">tell us</a>
+<p>If anything here is out of date, <a href="mailto:aisagalab@gmail.com">tell us</a>
 and we will correct the page.</p>
 """ % dict(_OFF, date=OFF_DATE_EN)
 
@@ -2141,7 +2141,7 @@ A6_ES_SOURCES = """
 <li>OpenAI, <a href="%(oai)s" target="_blank" rel="noopener">ChatGPT supported countries</a>.</li>
 <li>Funciones y precios de Pinku: <a href="../../pinku.html">su página</a>.</li>
 </ul>
-<p>Si algo está desactualizado, <a href="mailto:sagalabs@proton.me">avísanos</a> y
+<p>Si algo está desactualizado, <a href="mailto:aisagalab@gmail.com">avísanos</a> y
 corregimos la página.</p>
 """ % dict(_OFF, date=OFF_DATE_ES)
 
@@ -2443,7 +2443,7 @@ A7_EN_SOURCES = """
 <li>CapCut, <a href="%(seedance)s" target="_blank" rel="noopener">Seedance 2.5 for Video Editor</a>.</li>
 <li>Dora's connectors for Claude and ChatGPT: <a href="%(connectors)s">doravideo.com/connectors</a>. Dora's generation times are medians we measured on our own production jobs.</li>
 </ul>
-<p>If anything here is out of date, <a href="mailto:sagalabs@proton.me">tell us</a>
+<p>If anything here is out of date, <a href="mailto:aisagalab@gmail.com">tell us</a>
 and we will correct the page.</p>
 """ % dict(_AIV, date=AIV_DATE_EN)
 
@@ -2598,7 +2598,7 @@ A7_ES_SOURCES = """
 <li>CapCut, <a href="%(seedance)s" target="_blank" rel="noopener">Seedance 2.5 for Video Editor</a>.</li>
 <li>Conectores de Dora para Claude y ChatGPT: <a href="%(connectors)s">doravideo.com/connectors</a>. Los tiempos de Dora son medianas que medimos en nuestros propios trabajos de producción.</li>
 </ul>
-<p>Si algo está desactualizado, <a href="mailto:sagalabs@proton.me">avísanos</a> y
+<p>Si algo está desactualizado, <a href="mailto:aisagalab@gmail.com">avísanos</a> y
 corregimos la página.</p>
 """ % dict(_AIV, date=AIV_DATE_ES)
 
@@ -2734,7 +2734,7 @@ A8_EN_SOURCES = """
 <li>Ratings and availability in Russia, mainland China and Hong Kong: Apple's public iTunes lookup API, %(date)s.</li>
 <li>Pinku's features and prices: <a href="../pinku.html">its product page</a>.</li>
 </ul>
-<p>If anything here is out of date, <a href="mailto:sagalabs@proton.me">tell us</a>
+<p>If anything here is out of date, <a href="mailto:aisagalab@gmail.com">tell us</a>
 and we will correct the page.</p>
 """ % dict(_OFF, date=OFF_DATE_EN)
 
@@ -2859,7 +2859,7 @@ A8_ES_SOURCES = """
 <li>Valoraciones y disponibilidad en Rusia, China continental y Hong Kong: API pública de búsqueda de iTunes de Apple, %(date)s.</li>
 <li>Funciones y precios de Pinku: <a href="../../pinku.html">su página</a>.</li>
 </ul>
-<p>Si algo está desactualizado, <a href="mailto:sagalabs@proton.me">avísanos</a> y
+<p>Si algo está desactualizado, <a href="mailto:aisagalab@gmail.com">avísanos</a> y
 corregimos la página.</p>
 """ % dict(_OFF, date=OFF_DATE_ES)
 
@@ -3001,7 +3001,7 @@ A9_EN_SOURCES = """
 <li>Cloud assistants' retention rules: <a href="what-ai-does-with-your-conversations.html">our summary of their published policies</a>, with links to each one.</li>
 <li>Pinku's features and prices: <a href="../pinku.html">its product page</a>.</li>
 </ul>
-<p>If anything here is out of date, <a href="mailto:sagalabs@proton.me">tell us</a>
+<p>If anything here is out of date, <a href="mailto:aisagalab@gmail.com">tell us</a>
 and we will correct the page.</p>
 """ % dict(_OFF, date=OFF_DATE_EN)
 
@@ -3133,7 +3133,7 @@ A9_ES_SOURCES = """
 <li>Reglas de retención de los asistentes en la nube: <a href="que-hace-la-ia-con-tus-conversaciones.html">nuestro resumen de sus políticas</a>, con enlace a cada una.</li>
 <li>Funciones y precios de Pinku: <a href="../../pinku.html">su página</a>.</li>
 </ul>
-<p>Si algo está desactualizado, <a href="mailto:sagalabs@proton.me">avísanos</a> y
+<p>Si algo está desactualizado, <a href="mailto:aisagalab@gmail.com">avísanos</a> y
 corregimos la página.</p>
 """ % dict(_OFF, date=OFF_DATE_ES)
 
@@ -3270,7 +3270,7 @@ A10_EN_SOURCES = """
 <li>App Store pages (US): <a href="%(pv)s">Photo Vault</a>, <a href="%(arca)s" target="_blank" rel="noopener">Arca</a>, as shown on %(date)s.</li>
 <li>Photo Vault's features and security: <a href="../keeper.html">its product page</a> and <a href="../photo-vault-security.html">what it does and does not do</a>.</li>
 </ul>
-<p>If anything here is out of date, <a href="mailto:sagalabs@proton.me">tell us</a>
+<p>If anything here is out of date, <a href="mailto:aisagalab@gmail.com">tell us</a>
 and we will correct the page.</p>
 """ % dict(_PV, date=RANK_DATE_EN)
 
@@ -3382,7 +3382,7 @@ A10_ES_SOURCES = """
 <li>Fichas del App Store (EE. UU.): <a href="%(pv)s">Photo Vault</a>, <a href="%(arca)s" target="_blank" rel="noopener">Arca</a>, a %(date)s.</li>
 <li>Funciones y seguridad de Photo Vault: <a href="../../keeper.html">su página</a> y <a href="../../photo-vault-security.html">qué hace y qué no</a>.</li>
 </ul>
-<p>Si algo está desactualizado, <a href="mailto:sagalabs@proton.me">avísanos</a> y
+<p>Si algo está desactualizado, <a href="mailto:aisagalab@gmail.com">avísanos</a> y
 corregimos la página.</p>
 """ % dict(_PV, date=RANK_DATE_ES)
 
@@ -3622,7 +3622,7 @@ A11_EN_SOURCES = """
 <li>Ratings: Apple's public iTunes lookup API, %(date)s.</li>
 <li>Dora's features and connectors: <a href="../ai-video-generator.html">its page on this site</a> and <a href="%(connectors)s">doravideo.com/connectors</a>.</li>
 </ul>
-<p>If anything here is out of date, <a href="mailto:sagalabs@proton.me">tell us</a>
+<p>If anything here is out of date, <a href="mailto:aisagalab@gmail.com">tell us</a>
 and we will correct the page.</p>
 """ % dict(_UGC, date=RANK_DATE_EN)
 
@@ -3756,7 +3756,7 @@ A11_ES_SOURCES = """
 <li>Valoraciones: API pública de búsqueda de iTunes de Apple, %(date)s.</li>
 <li>Funciones y conectores de Dora: <a href="../../ai-video-generator.html">su página en este sitio</a> y <a href="%(connectors)s">doravideo.com/connectors</a>.</li>
 </ul>
-<p>Si algo está desactualizado, <a href="mailto:sagalabs@proton.me">avísanos</a> y
+<p>Si algo está desactualizado, <a href="mailto:aisagalab@gmail.com">avísanos</a> y
 corregimos la página.</p>
 """ % dict(_UGC, date=RANK_DATE_ES)
 
@@ -3919,7 +3919,7 @@ A12_EN_SOURCES = """
 <li>Ratings: Apple's public iTunes lookup API, %(date)s.</li>
 <li>3 Tasks: <a href="../3things.html">its page on this site</a>.</li>
 </ul>
-<p>If anything here is out of date, <a href="mailto:sagalabs@proton.me">tell us</a>
+<p>If anything here is out of date, <a href="mailto:aisagalab@gmail.com">tell us</a>
 and we will correct the page.</p>
 """ % dict(_T3, date=RANK_DATE_EN)
 
@@ -4032,7 +4032,7 @@ A12_ES_SOURCES = """
 <li>Valoraciones: API pública de búsqueda de iTunes de Apple, %(date)s.</li>
 <li>3 Tasks: <a href="../../3things.html">su página en este sitio</a>.</li>
 </ul>
-<p>Si algo está desactualizado, <a href="mailto:sagalabs@proton.me">avísanos</a> y
+<p>Si algo está desactualizado, <a href="mailto:aisagalab@gmail.com">avísanos</a> y
 corregimos la página.</p>
 """ % dict(_T3, date=RANK_DATE_ES)
 
@@ -4295,7 +4295,7 @@ A13_EN_SOURCES = """
 <li>Ratings: Apple's public iTunes lookup API, %(date)s.</li>
 <li>Crypton: <a href="../crypton.html">its page on this site</a> and <a href="../llms.txt">our llms.txt</a>, %(date)s.</li>
 </ul>
-<p>If anything here is out of date, <a href="mailto:sagalabs@proton.me">tell us</a>
+<p>If anything here is out of date, <a href="mailto:aisagalab@gmail.com">tell us</a>
 and we will correct the page.</p>
 """ % dict(_CR, date=RANK_DATE_EN)
 
@@ -4451,7 +4451,7 @@ A13_ES_SOURCES = """
 <li>Valoraciones: API pública de búsqueda de iTunes de Apple, %(date)s.</li>
 <li>Crypton: <a href="../../crypton.html">su página en este sitio</a> y <a href="../../llms.txt">nuestro llms.txt</a>, %(date)s.</li>
 </ul>
-<p>Si algo está desactualizado, <a href="mailto:sagalabs@proton.me">avísanos</a> y
+<p>Si algo está desactualizado, <a href="mailto:aisagalab@gmail.com">avísanos</a> y
 corregimos la página.</p>
 """ % dict(_CR, date=RANK_DATE_ES)
 
@@ -5053,7 +5053,7 @@ A16_EN_SOURCES = """
 <li>Ratings: Apple's public iTunes lookup API, %(date)s.</li>
 <li>Ask AI's features, limits and prices: its App Store page (version 1.4.4, 23 October 2026) and <a href="../fastai.html">its product page</a>.</li>
 </ul>
-<p>If anything here is out of date, <a href="mailto:sagalabs@proton.me">tell us</a>
+<p>If anything here is out of date, <a href="mailto:aisagalab@gmail.com">tell us</a>
 and we will correct the page.</p>
 """ % dict(_MM, date=MM_DATE_EN)
 
@@ -5196,7 +5196,7 @@ A16_ES_SOURCES = """
 <li>Valoraciones: API pública de búsqueda de iTunes de Apple, %(date)s.</li>
 <li>Funciones, límites y precios de Ask AI: su ficha del App Store (versión 1.4.4, 23 de octubre de 2026) y <a href="../../fastai.html">su página</a>.</li>
 </ul>
-<p>Si algo está desactualizado, <a href="mailto:sagalabs@proton.me">avísanos</a> y
+<p>Si algo está desactualizado, <a href="mailto:aisagalab@gmail.com">avísanos</a> y
 corregimos la página.</p>
 """ % dict(_MM, date=MM_DATE_ES)
 
@@ -5425,7 +5425,7 @@ A17_EN_SOURCES = """
 <li>Ratings: Apple's public iTunes lookup API, %(date)s.</li>
 <li>Brainy's features, limits and prices: <a href="../brainy.html">its product page</a>.</li>
 </ul>
-<p>If anything here is out of date, <a href="mailto:sagalabs@proton.me">tell us</a>
+<p>If anything here is out of date, <a href="mailto:aisagalab@gmail.com">tell us</a>
 and we will correct the page.</p>
 """ % dict(_CI, date=CI_DATE_EN)
 
@@ -5561,7 +5561,7 @@ A17_ES_SOURCES = """
 <li>Valoraciones: API pública de búsqueda de iTunes de Apple, %(date)s.</li>
 <li>Funciones, límites y precios de Brainy: <a href="../../brainy.html">su página</a>.</li>
 </ul>
-<p>Si algo está desactualizado, <a href="mailto:sagalabs@proton.me">avísanos</a> y
+<p>Si algo está desactualizado, <a href="mailto:aisagalab@gmail.com">avísanos</a> y
 corregimos la página.</p>
 """ % dict(_CI, date=CI_DATE_ES)
 
@@ -5752,7 +5752,7 @@ OFF_RU_SOURCES = """
 <li>OpenAI, <a href="%(oai)s" target="_blank" rel="noopener">страны, где поддерживается ChatGPT</a>.</li>
 <li>Pinku: <a href="../../pinku.html">страница продукта</a>.</li>
 </ul>
-<p>Если что-то устарело, <a href="mailto:sagalabs@proton.me">напишите нам</a>, и мы
+<p>Если что-то устарело, <a href="mailto:aisagalab@gmail.com">напишите нам</a>, и мы
 исправим страницу.</p>
 """ % dict(_OFF, date=OFF_RU_DATE)
 
@@ -5999,7 +5999,7 @@ A16_EN_SOURCES = """
 <li>Ratings: Apple's public iTunes lookup API, %(date)s.</li>
 <li>Drop: checked against the app itself (version 2.7), %(date)s.</li>
 </ul>
-<p>If anything here is out of date, <a href="mailto:sagalabs@proton.me">tell us</a>
+<p>If anything here is out of date, <a href="mailto:aisagalab@gmail.com">tell us</a>
 and we will correct the page.</p>
 """ % dict(_DR, date=DROP_DATE_EN)
 
@@ -6153,7 +6153,7 @@ A16_ES_SOURCES = """
 <li>Valoraciones: API pública de búsqueda de iTunes de Apple, %(date)s.</li>
 <li>Drop: comprobado en la propia app (versión 2.7), %(date)s.</li>
 </ul>
-<p>Si algo está desactualizado, <a href="mailto:sagalabs@proton.me">avísanos</a> y
+<p>Si algo está desactualizado, <a href="mailto:aisagalab@gmail.com">avísanos</a> y
 corregimos la página.</p>
 """ % dict(_DR, date=DROP_DATE_ES)
 

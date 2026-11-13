@@ -175,7 +175,7 @@ Bionic или новее, Siri и Команды; интерфейс на анг
 <li>Страницы в российском App Store: Pinku, PocketPal AI, Private LLM, Enclave, на %(date)s.</li>
 </ul>
 <p>Всё проверено %(date)s. Если что-то устарело,
-<a href="mailto:sagalabs@proton.me">напишите нам</a>, и мы исправим.</p>
+<a href="mailto:aisagalab@gmail.com">напишите нам</a>, и мы исправим.</p>
 """ + DISCLOSE,
 )
 
@@ -331,7 +331,7 @@ iPhone 11 и SE второго поколения (нет Metal 3), код за�
 <li>Страницы российского App Store с требованиями, ценами, оценками и языками: <a href="%(pinku)s">Pinku</a>, <a href="%(pocketpal)s"%(x)s>PocketPal AI</a>, <a href="%(privatellm)s"%(x)s>Private LLM</a>, <a href="%(enclave)s"%(x)s>Enclave</a>, <a href="%(alice)s"%(x)s>Алиса AI</a>, <a href="%(perplexity)s"%(x)s>Perplexity</a>, <a href="%(deepseek)s"%(x)s>DeepSeek</a>, <a href="%(vibe)s"%(x)s>Vibe by Mistral</a>, на %(date)s. Отсутствие ChatGPT, Gemini, Claude и Locally AI проверено через поиск App Store для России в тот же день.</li>
 <li>Исходный код PocketPal AI: <a href="%(gh)s"%(x)s>github.com/a-ghorbani/pocketpal-ai</a>.</li>
 </ul>
-<p>Если что-то устарело, <a href="mailto:sagalabs@proton.me">напишите нам</a>.</p>
+<p>Если что-то устарело, <a href="mailto:aisagalab@gmail.com">напишите нам</a>.</p>
 """ + DISCLOSE,
 )
 
@@ -472,7 +472,7 @@ iPhone с английским интерфейсом, и всё общение 
 <li>Apple, <a href="%(reqs)s"%(x)s>Как получить новое поколение Apple Intelligence</a> (поддерживаемые языки, устройства), опубликовано 14 сентября 2026 г.</li>
 <li>Страницы российского App Store: <a href="%(alice)s"%(x)s>Алиса AI</a>, <a href="%(perplexity)s"%(x)s>Perplexity</a>, <a href="%(deepseek)s"%(x)s>DeepSeek</a>, <a href="%(vibe)s"%(x)s>Vibe by Mistral</a>, <a href="%(pinku)s">Pinku</a>, <a href="%(pocketpal)s"%(x)s>PocketPal AI</a>, на %(date)s.</li>
 </ul>
-<p>Если что-то устарело, <a href="mailto:sagalabs@proton.me">напишите нам</a>.</p>
+<p>Если что-то устарело, <a href="mailto:aisagalab@gmail.com">напишите нам</a>.</p>
 """ + DISCLOSE,
 )
 

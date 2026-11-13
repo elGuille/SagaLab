@@ -308,8 +308,8 @@ Locally AI, PocketPal AI y Private LLM, y también <a href="%(pinku)s">Pinku</a>
 _S = __import__("privacy_en").KEEP["sources"]
 for _en, _es in [
     ("<h2>Sources</h2>", "<h2>Fuentes</h2>"),
-    ("First published on 20 October 2026; every page re-read on %(date)s. Policies\nchange; if one of these is out of date, <a href=\"mailto:sagalabs@proton.me\">tell\nus</a> and we will correct the page.",
-     "Publicado el 20 de octubre de 2026 en inglés; todas las páginas se releyeron el %(date)s. Las políticas\ncambian; si alguna está desfasada, <a href=\"mailto:sagalabs@proton.me\">avísanos</a> y corregiremos la página. Las fechas de la lista están en inglés, como en cada página."),
+    ("First published on 20 October 2026; every page re-read on %(date)s. Policies\nchange; if one of these is out of date, <a href=\"mailto:aisagalab@gmail.com\">tell\nus</a> and we will correct the page.",
+     "Publicado el 20 de octubre de 2026 en inglés; todas las páginas se releyeron el %(date)s. Las políticas\ncambian; si alguna está desfasada, <a href=\"mailto:aisagalab@gmail.com\">avísanos</a> y corregiremos la página. Las fechas de la lista están en inglés, como en cada página."),
 ]:
     assert _en in _S, _en
     _S = _S.replace(_en, _es)

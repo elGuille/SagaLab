@@ -66,7 +66,7 @@ T = {
  src_h="Sources",
  src=["App Store pages and privacy labels, US, read on 2 November 2026: %s." % ", ".join(a(url(k), NAMES[k]) for k in ORDER), "Ratings: Apple's public lookup API, US store, 2 November 2026.", a(GP, "Use AI to create with Google Photos") + ", Google Photos Help, read on 2 November 2026."],
  own='Disclosure: we make Dora, number 4 on this list.',
- fix='If something here is out of date, <a href="mailto:sagalabs@proton.me">tell us</a> and we will fix the page.',
+ fix='If something here is out of date, <a href="mailto:aisagalab@gmail.com">tell us</a> and we will fix the page.',
  cta='Dora on the <a href="%s" target="_blank" rel="noopener">App Store</a> or <a href="%s">on the web</a>.' % (DORA, DORA_WEB),
 ),
 "es": dict(
@@ -106,7 +106,7 @@ T = {
  src_h="Fuentes",
  src=["Fichas del App Store y etiquetas de privacidad, EE. UU., leídas el 2 de noviembre de 2026: %s." % ", ".join(a(url(k), NAMES[k]) for k in ORDER), "Notas: API pública de Apple, tienda de España, 2 de noviembre de 2026; la de Dora, de EE. UU.", a(GP + "?hl=es", "Usar la IA para crear con Google Fotos") + ", Ayuda de Google Fotos, leída el 2 de noviembre de 2026."],
  own='Aviso: hacemos Dora, la número 4 de esta lista.',
- fix='Si algo está desactualizado, <a href="mailto:sagalabs@proton.me">avísanos</a> y lo corregimos.',
+ fix='Si algo está desactualizado, <a href="mailto:aisagalab@gmail.com">avísanos</a> y lo corregimos.',
  cta='Dora en el <a href="%s" target="_blank" rel="noopener">App Store</a> o <a href="%s">en la web</a>.' % (DORA, DORA_WEB),
 )}
 T["es"]["names"] = dict(NAMES, gphotos="Google Fotos")

@@ -193,7 +193,7 @@ Qwen3、SmolLM3、LFM 等），只显示设备内存装得下的；无需账户�
 <li>GitHub：<a href="https://github.com/ggml-org/llama.cpp"%(x)s>llama.cpp</a>、<a href="https://github.com/ml-explore/mlx-lm"%(x)s>mlx-lm</a>、<a href="https://github.com/a-ghorbani/pocketpal-ai"%(x)s>PocketPal AI</a>。</li>
 <li>五题测试：Pinku 自测（5 个事实问题，MLX 4 位，Mac），2026 年 10 月。</li>
 </ul>
-<p>如有过时信息，请<a href="mailto:sagalabs@proton.me">告诉我们</a>。</p>
+<p>如有过时信息，请<a href="mailto:aisagalab@gmail.com">告诉我们</a>。</p>
 <h2>来自 Saga Labs 团队</h2>
 <p>Pinku 是我们开发的，也是本页提到的 App 之一。我们做它，是因为 Ollama、LM Studio 等运行开放模型的优秀工具需要一定的技术知识：选择模型文件和量化方式，有时还要用终端。Pinku 面向其他所有人：从 App Store 安装，点一下模型，就能在 iPhone 或 Mac 上私密聊天，不用终端，也不用任何设置。代价是只有一份为每台设备挑选的小模型清单，所以对想运行任意模型的人来说，它替代不了那些工具。本页关于 Pinku 的信息和其他 App 一样，来自 App Store 页面。</p>
 """,

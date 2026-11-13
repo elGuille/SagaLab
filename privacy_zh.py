@@ -166,7 +166,7 @@ iPhone 或 Mac 上有 PocketPal AI、Private LLM 或 <a href="%(pinku)s">Pinku</
 <li><a href="https://www.doubao.com/legal/privacy"%(x)s>豆包隐私政策</a>（2026年9月10日更新，9月17日生效）和 <a href="https://www.kimi.com/user/agreement/userPrivacy?version=v2"%(x)s>Kimi 隐私政策</a>（2026年8月24日更新，8月31日生效）。</li>
 <li>GDPR <a href="https://gdpr-info.eu/art-12-gdpr/"%(x)s>第 12 条</a>、<a href="https://gdpr-info.eu/art-15-gdpr/"%(x)s>第 15 条</a>和<a href="https://gdpr-info.eu/art-17-gdpr/"%(x)s>第 17 条</a>。</li>
 </ul>
-<p>所有页面均于%(date)s阅读。政策会变化；如有过时内容，请<a href="mailto:sagalabs@proton.me">告诉我们</a>，我们会更正。</p>
+<p>所有页面均于%(date)s阅读。政策会变化；如有过时内容，请<a href="mailto:aisagalab@gmail.com">告诉我们</a>，我们会更正。</p>
 """ + DISCLOSE,
 )
 
@@ -301,7 +301,7 @@ Pinku 在加载已安装的模型时向 huggingface.co 发出了四个小请求�
 <li><a href="%(pinku)s">Pinku</a> Mac 版 1.0.7，由源代码编译；App Store 隐私标签为%(date)s所见。</li>
 <li>模型：<a href="https://ollama.com/library/qwen3"%(x)s>qwen3:0.6b</a>（Ollama）和 <a href="https://huggingface.co/mlx-community/Qwen3-0.6B-4bit"%(x)s>mlx-community/Qwen3-0.6B-4bit</a>（LM Studio 和 Pinku）。</li>
 </ul>
-<p>如果你重复测试得到了不同结果，请<a href="mailto:sagalabs@proton.me">告诉我们</a>，我们会补充。</p>
+<p>如果你重复测试得到了不同结果，请<a href="mailto:aisagalab@gmail.com">告诉我们</a>，我们会补充。</p>
 """ + DISCLOSE,
 )
 
