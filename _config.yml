@@ -1,0 +1,2 @@
+# GitHub Pages (Jekyll) ignora las carpetas con punto; .well-known hace falta para los enlaces universales de iOS.
+include: [".well-known"]

@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["BBQAM83NK5.saga.biblevideo"],
+        "components": [
+          { "/": "/bible/*", "comment": "Bible Videos: enlace de un capítulo, /bible/?v=<id>" }
+        ]
+      }
+    ]
+  }
+}
