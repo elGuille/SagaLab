@@ -2258,7 +2258,7 @@ def _jsonld_list(article_jsonld, items):
         "numberOfItems": len(items),
         "itemListElement": [
             {"@type": "ListItem", "position": i + 1,
-             "item": {"@type": "MobileApplication", "name": n, "operatingSystem": "iOS", "url": u}}
+             "item": {"@type": "MobileApplication", "name": n, "operatingSystem": "iOS, Android" if ("id1532670722" in u or "id6754180384" in u) else "iOS", "url": u}}
             for i, (n, u) in enumerate(items)
         ],
     }

@@ -67,12 +67,45 @@ def _fix(url, ct, plain=False):
     return base + "?" + sep.join(["pt=" + PT, "ct=" + ct] + extra + rest)
 
 
+# Google Play (Android): junto a cada enlace nuestro al App Store de Dora y Photo Vault, otro a Google Play con
+# referrer de atribucion (Marta, 24 nov 2026). Idempotente.
+PLAY = {"6754180384": "com.sagalabs.aivideo", "1532670722": "com.sagalabs.photovault"}
+_A = re.compile(r'<a\b([^>]*?)href="https://apps\.apple\.com/[^"]*?id(6754180384|1532670722)[^"]*"([^>]*)>(.*?)</a>(?!\s*(?:\(|·)?\s*<a [^>]*play\.google\.com)', re.S)
+
+
+def play_url(app_id, path, site="aisagalab"):
+    parts = path.replace("\\", "/").split("/")
+    slug = os.path.splitext(parts[-1])[0]
+    if slug == "index" and len(parts) > 1:
+        slug = parts[-2]
+    lang = parts[-2] if len(parts) > 1 and parts[-2] in LANGS else ""
+    if lang:
+        slug += "-" + lang
+    slug = re.sub(r"[^A-Za-z0-9_-]", "-", slug)
+    return ("https://play.google.com/store/apps/details?id=%s&amp;referrer=utm_source%%3D%s%%26utm_medium%%3Darticle%%26utm_campaign%%3D%s"
+            % (PLAY[app_id], site, slug))
+
+
+def add_play(html, path, site="aisagalab"):
+    def sub(m):
+        attrs = m.group(1) + m.group(3)
+        extra = ' target="_blank" rel="noopener"' if "target=" in attrs else ""
+        u = play_url(m.group(2), path, site)
+        if 'class="cta"' in attrs:
+            return m.group(0) + ' <a class="cta"%s href="%s">Google Play</a>' % (extra, u)
+        return m.group(0) + ' (<a href="%s"%s>Google Play</a>)' % (u, extra)
+    return _A.sub(sub, html)
+
+
 def retag(html, path, site="aisagalab"):
     ct = ct_for(path, site)
     out = []
     for i, chunk in enumerate(_LD.split(html)):
         out.append(chunk if i % 2 else _URL.sub(lambda m: _fix(m.group(0), ct, path.endswith(".txt")), chunk))
-    return "".join(out)
+    html = "".join(out)
+    if not path.endswith(".txt"):
+        html = "".join(c if i % 2 else add_play(c, path, site) for i, c in enumerate(_LD.split(html)))
+    return html
 
 
 def retag_static(root, site="aisagalab"):
