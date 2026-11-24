@@ -16,6 +16,21 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // App landings: the sticky screenshot follows the feature heading in view.
+  var feats = document.querySelectorAll('.feat-list li');
+  var phones = document.querySelectorAll('.feat-phone img');
+  if (feats.length && 'IntersectionObserver' in window) {
+    var fo = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        var i = Array.prototype.indexOf.call(feats, e.target);
+        feats.forEach(function (f, k) { f.classList.toggle('on', k === i); });
+        phones.forEach(function (p, k) { p.classList.toggle('on', k === i); });
+      });
+    }, { rootMargin: '-45% 0px -45% 0px' });
+    feats.forEach(function (f) { fo.observe(f); });
+  }
+
   var items = document.querySelectorAll('.reveal');
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (reduce || !('IntersectionObserver' in window)) { items.forEach(function (el) { el.classList.add('in'); }); return; }
