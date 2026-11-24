@@ -38,7 +38,7 @@
     <meta property="twitter:creator" content="@SagaAILab">
 
     <link rel="canonical" href="https://aisagalab.com/">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="studio.css">
 
     <!-- Favicon References -->
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -51,10 +51,9 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="Saga Labs">
     <meta name="application-name" content="Saga Labs">
-    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#0b0b0c" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#08090c">
 
-    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
 
     <!-- Structured Data: WebSite -->
     <script type="application/ld+json">
@@ -233,55 +232,39 @@
 </head>
 
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="#" class="nav-logo" id="home-logo">
-                <h1>Saga Labs</h1>
-            </a>
-            <ul class="nav-menu">
-                <li><a href="ai-video-generator.html">Dora</a></li>
-                <li><a href="/blog/">Blog</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="mailto:aisagalab@gmail.com" class="nav-link">Contact</a></li>
-                <li>
-                    <a href="https://x.com/SagaAILab" target="_blank" class="icon-link" aria-label="X (Twitter)">
-                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
-                            <path d="M18.244 2H21l-6.5 7.43L22.5 22H15.9l-4.7-6.2L5.7 22H3l7-8.02L1.8 2h6.8l4.3 5.7L18.244 2zm-2.43 18h1.64L8.29 4H6.57l9.244 16z" />
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <button class="nav-theme-toggle" id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
-                        <svg id="nav-theme-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-                        </svg>
-                    </button>
-                </li>
-            </ul>
-            <button class="nav-toggle" aria-label="Toggle navigation menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
-
-    <header class="hero-section">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Saga Lab, an AI Studio</h1>
-                <p class="hero-subtitle">We build and run our own apps. Seven on the App Store &mdash; and <a href="https://doravideo.com/">Dora</a>, an AI video generator that people and AI assistants both use.</p>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <section class="app-section" id="apps">
-            <div class="app-showcase-container combined-apps-grid"></div>
-        </section>
-
-        <section class="home-faq" id="faq">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap">
+    <a href="index.html" class="brand" aria-label="Saga Lab home"><svg viewBox="0 0 22 22" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff4f8f"/><stop offset=".55" stop-color="#ff9f1c"/><stop offset="1" stop-color="#19c3b4"/></linearGradient></defs><rect width="22" height="22" rx="6.5" fill="url(#lg)"/><path d="M7 14.6c.9.8 2.3 1.3 3.9 1.3 2 0 3.3-.9 3.3-2.3 0-3.2-6.8-1.6-6.8-4.7 0-1.3 1.2-2.3 3.1-2.3 1.3 0 2.5.4 3.3 1.1" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>Saga Lab</a>
+    <button class="nav-menu-btn" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#apps">Apps</a></li>
+      <li><a href="agentic-ai.html">AI services</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a class="btn btn-sm" href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+<main id="main">
+<section class="hero">
+  <div class="glow" aria-hidden="true"><span class="g1"></span><span class="g2"></span><span class="g3"></span></div>
+  <div class="wrap">
+    <div>
+      <h1>Saga Lab, an AI <em>app studio.</em></h1>
+      <p class="sub">We build and run our own apps: ten on the App Store and Google Play, and Dora, an AI video generator on the web.</p>
+      <div class="actions"><a class="btn btn-light" href="#apps">See our apps</a><a class="btn btn-ghost" href="https://doravideo.com/?utm_source=sagalab&amp;utm_medium=homepage&amp;utm_campaign=dora_hero" target="_blank" rel="noopener noreferrer">Open Dora</a></div>
+    </div>
+    <div class="fan" aria-hidden="true"><figure class="f1"><img src="images/apps/drop/shot3.webp" alt="" width="1290" height="2796"></figure><figure class="f2"><img src="images/apps/pinku/shot1.webp" alt="" width="1290" height="2796"></figure><figure class="f3"><img src="images/apps/dora/shot1.webp" alt="" width="1290" height="2796" fetchpriority="high"></figure><figure class="f4"><img src="images/apps/crypton/shot3.webp" alt="" width="1290" height="2796"></figure><figure class="f5"><img src="images/apps/android-biblevideo/shot1.webp" alt="" width="1290" height="2796"></figure></div>
+  </div>
+</section>
+<div class="wrap">
+  <section class="chapter" id="apps" aria-labelledby="apps-title">
+    <div class="chapter-head"><h2 id="apps-title">Our apps</h2><p>Designed, built and run in-house since 2023.</p></div>
+    <div class="cards"><article class="ficha wide reveal" style="--bg:linear-gradient(150deg,#b30e54 0%,#7d0a3d 60%,#4a0624 100%)"><div class="copy"><div class="app-id"><img src="images/apps/dora/icon.webp" alt="" width="64" height="64" loading="lazy"><div><h3>Dora</h3><span class="platform">AI video · Web, iPhone and Android</span></div></div><p class="line">Turn text or photos into videos.</p><div class="links"><a class="btn btn-sm alt" href="https://doravideo.com/?utm_source=sagalab&amp;utm_medium=homepage&amp;utm_campaign=dora" target="_blank" rel="noopener noreferrer">Open Dora</a><a class="badge" href="https://apps.apple.com/app/apple-store/id6754180384?pt=118348020&amp;ct=aisagalab-dora&amp;mt=8" target="_blank" rel="noopener noreferrer" aria-label="Download Dora on the App Store"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg><span><small>Download on the</small>App Store</span></a><a class="badge" href="https://play.google.com/store/apps/details?id=com.sagalabs.aivideo&amp;referrer=utm_source%3Daisagalab%26utm_medium%3Darticle%26utm_campaign%3Dindex" target="_blank" rel="noopener noreferrer" aria-label="Get Dora on Google Play"><svg viewBox="0 0 24 26" aria-hidden="true"><path fill="#4285F4" d="M1.2.6 13.6 13 1.2 25.4C.5 25.1 0 24.4 0 23.5v-21C0 1.6.5.9 1.2.6z"/><path fill="#34A853" d="M1.2.6 13.6 13l4-4L3.6.9C2.7.4 1.8.3 1.2.6z"/><path fill="#EA4335" d="M1.2 25.4 13.6 13l4 4-14 8.1c-.9.5-1.8.6-2.4.3z"/><path fill="#FBBC04" d="m17.6 9 4.4 2.5c1.3.8 1.3 2.2 0 3L17.6 17l-4-4z"/></svg><span><small>GET IT ON</small>Google Play</span></a></div></div><div class="shots"><img src="images/apps/dora/shot2.webp" alt="Dora screenshot" width="1290" height="2796" loading="lazy"><img src="images/apps/dora/shot1.webp" alt="Dora screenshot" width="1290" height="2796" loading="lazy"><img src="images/apps/dora/shot3.webp" alt="Dora screenshot" width="1290" height="2796" loading="lazy"></div></article><article class="ficha reveal" style="--bg:linear-gradient(150deg,#8f1550 0%,#4c0d2e 60%,#1f0714 100%)"><div class="copy"><div class="app-id"><img src="images/apps/pinku/icon.webp" alt="" width="64" height="64" loading="lazy"><div><h3>Pinku</h3><span class="platform">Private local AI · iPhone</span></div></div><p class="line">Offline AI chat that stays private.</p><div class="links"><a class="btn btn-sm alt" href="pinku.html">About</a><a class="badge" href="https://apps.apple.com/app/apple-store/id6754878073?pt=118348020&amp;ct=aisagalab-pinku&amp;mt=8" target="_blank" rel="noopener noreferrer" aria-label="Download Pinku on the App Store"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg><span><small>Download on the</small>App Store</span></a></div></div><div class="shots"><img src="images/apps/pinku/shot1.webp" alt="Pinku screenshot" width="1290" height="2796" loading="lazy"><img src="images/apps/pinku/shot3.webp" alt="Pinku screenshot" width="1290" height="2796" loading="lazy"><img src="images/apps/pinku/shot2.webp" alt="Pinku screenshot" width="1290" height="2796" loading="lazy"></div></article><article class="ficha reveal" style="--bg:linear-gradient(150deg,#1d3b8a 0%,#142a63 60%,#0a1533 100%)"><div class="copy"><div class="app-id"><img src="images/apps/keeper/icon.webp" alt="" width="64" height="64" loading="lazy"><div><h3>Photo Vault</h3><span class="platform">Private photos · iPhone and Android</span></div></div><p class="line">Lock away private photos and videos.</p><div class="links"><a class="btn btn-sm alt" href="keeper.html">About</a><a class="badge" href="https://apps.apple.com/app/apple-store/id1532670722?pt=118348020&amp;ct=aisagalab-photovault&amp;mt=8" target="_blank" rel="noopener noreferrer" aria-label="Download Photo Vault on the App Store"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg><span><small>Download on the</small>App Store</span></a><a class="badge" href="https://play.google.com/store/apps/details?id=com.sagalabs.photovault&amp;referrer=utm_source%3Daisagalab%26utm_medium%3Darticle%26utm_campaign%3Dindex" target="_blank" rel="noopener noreferrer" aria-label="Get Photo Vault on Google Play"><svg viewBox="0 0 24 26" aria-hidden="true"><path fill="#4285F4" d="M1.2.6 13.6 13 1.2 25.4C.5 25.1 0 24.4 0 23.5v-21C0 1.6.5.9 1.2.6z"/><path fill="#34A853" d="M1.2.6 13.6 13l4-4L3.6.9C2.7.4 1.8.3 1.2.6z"/><path fill="#EA4335" d="M1.2 25.4 13.6 13l4 4-14 8.1c-.9.5-1.8.6-2.4.3z"/><path fill="#FBBC04" d="m17.6 9 4.4 2.5c1.3.8 1.3 2.2 0 3L17.6 17l-4-4z"/></svg><span><small>GET IT ON</small>Google Play</span></a></div></div><div class="shots"><img src="images/apps/keeper/shot1.webp" alt="Photo Vault screenshot" width="1290" height="2796" loading="lazy"><img src="images/apps/keeper/shot2.webp" alt="Photo Vault screenshot" width="1290" height="2796" loading="lazy"><img src="images/apps/keeper/shot4.webp" alt="Photo Vault screenshot" width="1290" height="2796" loading="lazy"></div></article><article class="ficha reveal" style="--bg:linear-gradient(150deg,#1c2f8f 0%,#141b55 60%,#0a0c24 100%)"><div class="copy"><div class="app-id"><img src="images/apps/all-ai/icon.webp" alt="" width="64" height="64" loading="lazy"><div><h3>Ask AI</h3><span class="platform">All AI models in one · iPhone</span></div></div><p class="line">The top AI models in one chat.</p><div class="links"><a class="btn btn-sm alt" href="fastai.html">About</a><a class="badge" href="https://apps.apple.com/app/apple-store/id1662608035?pt=118348020&amp;ct=aisagalab-askai&amp;ppid=420fcaf3-b818-460e-a74f-1cb8fe2a787a&amp;mt=8" target="_blank" rel="noopener noreferrer" aria-label="Download Ask AI on the App Store"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg><span><small>Download on the</small>App Store</span></a></div></div><div class="shots"><img src="images/apps/all-ai/shot1.webp" alt="Ask AI screenshot" width="1290" height="2796" loading="lazy"><img src="images/apps/all-ai/shot2.webp" alt="Ask AI screenshot" width="1290" height="2796" loading="lazy"><img src="images/apps/all-ai/shot4.webp" alt="Ask AI screenshot" width="1290" height="2796" loading="lazy"></div></article><article class="ficha reveal" style="--bg:linear-gradient(150deg,#0b63b8 0%,#0a4785 60%,#062a52 100%)"><div class="copy"><div class="app-id"><img src="images/apps/easy-ai/icon.webp" alt="" width="64" height="64" loading="lazy"><div><h3>Brainy</h3><span class="platform">AI chat and images · iPhone</span></div></div><p class="line">Answers, homework help and AI images.</p><div class="links"><a class="btn btn-sm alt" href="brainy.html">About</a><a class="badge" href="https://apps.apple.com/app/apple-store/id1667947372?pt=118348020&amp;ct=aisagalab-brainy&amp;mt=8" target="_blank" rel="noopener noreferrer" aria-label="Download Brainy on the App Store"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg><span><small>Download on the</small>App Store</span></a></div></div><div class="shots"><img src="images/apps/easy-ai/shot1.webp" alt="Brainy screenshot" width="1290" height="2796" loading="lazy"><img src="images/apps/easy-ai/shot2.webp" alt="Brainy screenshot" width="1290" height="2796" loading="lazy"><img src="images/apps/easy-ai/shot3.webp" alt="Brainy screenshot" width="1290" height="2796" loading="lazy"></div></article><article class="ficha reveal" style="--bg:linear-gradient(150deg,#13733f 0%,#0c4a29 60%,#062214 100%)"><div class="copy"><div class="app-id"><img src="images/apps/carscreen/icon.webp" alt="" width="64" height="64" loading="lazy"><div><h3>CarScreen</h3><span class="platform">Car widgets and video · iPhone</span></div></div><p class="line">Widgets and parked video on your car screen.</p><div class="links"><a class="badge" href="https://apps.apple.com/app/apple-store/id6833951195?pt=118348020&amp;ct=aisagalab-index&amp;mt=8" target="_blank" rel="noopener noreferrer" aria-label="Download CarScreen on the App Store"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg><span><small>Download on the</small>App Store</span></a></div></div><div class="shots"><img src="images/apps/carscreen/shot1.webp" alt="CarScreen screenshot" width="1290" height="2796" loading="lazy"><img src="images/apps/carscreen/shot3.webp" alt="CarScreen screenshot" width="1290" height="2796" loading="lazy"><img src="images/apps/carscreen/shot4.webp" alt="CarScreen screenshot" width="1290" height="2796" loading="lazy"></div></article><article class="ficha reveal" style="--bg:linear-gradient(150deg,#28407a 0%,#1a2a52 55%,#7a3550 100%)"><div class="copy"><div class="app-id"><img src="images/apps/drop/icon.webp" alt="" width="64" height="64" loading="lazy"><div><h3>Drop</h3><span class="platform">Sleep sounds and focus · iPhone</span></div></div><p class="line">Sounds for sleep and focus.</p><div class="links"><a class="btn btn-sm alt" href="drop.html">About</a><a class="badge" href="https://apps.apple.com/app/apple-store/id1462269642?pt=118348020&amp;ct=aisagalab-drop&amp;mt=8" target="_blank" rel="noopener noreferrer" aria-label="Download Drop on the App Store"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg><span><small>Download on the</small>App Store</span></a></div></div><div class="shots"><img src="images/apps/drop/shot1.webp" alt="Drop screenshot" width="1290" height="2796" loading="lazy"><img src="images/apps/drop/shot3.webp" alt="Drop screenshot" width="1290" height="2796" loading="lazy"><img src="images/apps/drop/shot2.webp" alt="Drop screenshot" width="1290" height="2796" loading="lazy"></div></article><article class="ficha reveal" style="--bg:linear-gradient(150deg,#0b6b5a 0%,#123f6b 60%,#2b1d6b 100%)"><div class="copy"><div class="app-id"><img src="images/apps/crypton/icon.webp" alt="" width="64" height="64" loading="lazy"><div><h3>Crypton</h3><span class="platform">Crypto tracker · iPhone</span></div></div><p class="line">Live prices, alerts and your portfolio.</p><div class="links"><a class="btn btn-sm alt" href="crypton.html">About</a><a class="badge" href="https://apps.apple.com/app/apple-store/id1143691286?pt=118348020&amp;ct=aisagalab-crypton&amp;mt=8" target="_blank" rel="noopener noreferrer" aria-label="Download Crypton on the App Store"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg><span><small>Download on the</small>App Store</span></a></div></div><div class="shots"><img src="images/apps/crypton/shot2.webp" alt="Crypton screenshot" width="1290" height="2796" loading="lazy"><img src="images/apps/crypton/shot3.webp" alt="Crypton screenshot" width="1290" height="2796" loading="lazy"><img src="images/apps/crypton/shot1.webp" alt="Crypton screenshot" width="1290" height="2796" loading="lazy"></div></article><article class="ficha reveal" style="--bg:linear-gradient(150deg,#2a50c4 0%,#1c3485 60%,#0f1c4a 100%)"><div class="copy"><div class="app-id"><img src="images/apps/3tasks/icon.webp" alt="" width="64" height="64" loading="lazy"><div><h3>3 Tasks</h3><span class="platform">Daily to-do list · iPhone</span></div></div><p class="line">Three tasks a day. Get what matters done.</p><div class="links"><a class="btn btn-sm alt" href="3things.html">About</a><a class="badge" href="https://apps.apple.com/app/apple-store/id1553693943?pt=118348020&amp;ct=aisagalab-3tasks&amp;mt=8" target="_blank" rel="noopener noreferrer" aria-label="Download 3 Tasks on the App Store"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg><span><small>Download on the</small>App Store</span></a></div></div><div class="shots"><img src="images/apps/3tasks/shot1.webp" alt="3 Tasks screenshot" width="1290" height="2796" loading="lazy"><img src="images/apps/3tasks/shot2.webp" alt="3 Tasks screenshot" width="1290" height="2796" loading="lazy"><img src="images/apps/3tasks/shot4.webp" alt="3 Tasks screenshot" width="1290" height="2796" loading="lazy"></div></article><article class="ficha wide reveal" style="--bg:linear-gradient(150deg,#6b4a1f 0%,#3a2812 55%,#140d06 100%)"><div class="copy"><div class="app-id"><img src="images/apps/android-biblevideo/icon.webp" alt="" width="64" height="64" loading="lazy"><div><h3>Bible Videos</h3><span class="platform">Stories and verses · Android</span></div></div><p class="line">Bible stories told as short films.</p><div class="links"><a class="badge" href="https://play.google.com/store/apps/details?id=com.sagalabs.biblevideo&amp;referrer=utm_source%3Daisagalab%26utm_medium%3Darticle%26utm_campaign%3Dindex" target="_blank" rel="noopener noreferrer" aria-label="Get Bible Videos on Google Play"><svg viewBox="0 0 24 26" aria-hidden="true"><path fill="#4285F4" d="M1.2.6 13.6 13 1.2 25.4C.5 25.1 0 24.4 0 23.5v-21C0 1.6.5.9 1.2.6z"/><path fill="#34A853" d="M1.2.6 13.6 13l4-4L3.6.9C2.7.4 1.8.3 1.2.6z"/><path fill="#EA4335" d="M1.2 25.4 13.6 13l4 4-14 8.1c-.9.5-1.8.6-2.4.3z"/><path fill="#FBBC04" d="m17.6 9 4.4 2.5c1.3.8 1.3 2.2 0 3L17.6 17l-4-4z"/></svg><span><small>GET IT ON</small>Google Play</span></a></div></div><div class="shots"><img src="images/apps/android-biblevideo/shot1.webp" alt="Bible Videos screenshot" width="1290" height="2796" loading="lazy"><img src="images/apps/android-biblevideo/shot2.webp" alt="Bible Videos screenshot" width="1290" height="2796" loading="lazy"><img src="images/apps/android-biblevideo/shot4.webp" alt="Bible Videos screenshot" width="1290" height="2796" loading="lazy"></div></article></div>
+  </section>
+  <div class="prose">
+<section class="home-faq" id="faq">
             <div class="container">
                 <h2>Questions</h2>
                 <details>
@@ -342,27 +325,33 @@
                 </div>
             </div>
         </section>
-    </main>
-
-    <footer>
-        <div class="container footer-container">
-            <p>&copy; 2026 Saga Labs. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="privacy.html">Privacy</a>
-                <a href="terms.html">Terms</a>
-                <a href="support.html">Support</a>
-            </div>
-            <div class="footer-social">
-                <a href="https://x.com/SagaAILab" target="_blank" aria-label="X (Twitter)">
-                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
-                        <path d="M18.244 2H21l-6.5 7.43L22.5 22H15.9l-4.7-6.2L5.7 22H3l7-8.02L1.8 2h6.8l4.3 5.7L18.244 2zm-2.43 18h1.64L8.29 4H6.57l9.244 16z" />
-                    </svg>
-                </a>
-            </div>
-        </div>
+    
+  </div>
+</div>
+</main>
+<section class="closing" id="contact" aria-labelledby="contact-title">
+  <div class="glow" aria-hidden="true"><span class="g1"></span><span class="g2"></span><span class="g3"></span></div>
+  <div class="wrap">
+    <div class="cta">
+      <div>
+        <h2 id="contact-title">Have an app to build?</h2>
+        <p>We take a few briefs a quarter, in the same shape as our own work. Email a short brief and we reply with a scope.</p>
+        <div class="actions"><a class="btn btn-light" href="mailto:aisagalab@gmail.com?subject=Project%20brief&amp;body=Problem%3A%0A%0ASurface%20(iOS%20%2F%20web%20%2F%20MCP%20%2F%20backend)%3A%0A%0ATimeline%3A%0A%0ABudget%20range%3A%0A">Email a project brief</a><a class="btn btn-ghost" href="faq.html">FAQ</a></div>
+        <p class="mail">aisagalab@gmail.com</p>
+      </div>
+      <ul class="brief" aria-label="What to include in the brief">
+        <li style="--c:#ff8fb5"><b>Problem</b><span>What is broken or missing.</span></li>
+        <li style="--c:#5fe0d2"><b>Surface</b><span>iOS, web, MCP or backend.</span></li>
+        <li style="--c:#ffc46b"><b>Timeline</b><span>When it must ship.</span></li>
+        <li style="--c:#9bb4ff"><b>Budget</b><span>A rough range.</span></li>
+      </ul>
+    </div>
+    <footer class="foot">
+      <span>&copy; 2026 Saga Lab. Independent app studio since 2023.</span>
+      <nav aria-label="Footer"><a href="agentic-ai.html">AI services</a><a href="/blog/">Blog</a><a href="faq.html">FAQ</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a><a href="https://x.com/SagaAILab" target="_blank" rel="noopener noreferrer">X</a></nav>
     </footer>
-
-    <script src="script.js" defer></script>
+  </div>
+</section>
+<script src="studio.js" defer></script>
 </body>
-
 </html>
