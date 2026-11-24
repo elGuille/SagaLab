@@ -245,3 +245,14 @@ h1, h2, h3 { font-family: var(--display); font-optical-sizing: auto; }
 .foot-guides { flex-basis: 100%; display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 8px; font-size: 12px; line-height: 1.5; }
 .foot .foot-guides a { color: #8a8b95; }
 .foot .foot-guides a:hover { color: var(--text-2); }
+
+/* Closing: the brief shown as the email it becomes */
+.draft { display: block; max-width: 440px; justify-self: end; background: #fbfaf7; color: #1b1b1f; border-radius: 14px; padding: 6px 22px 22px; text-decoration: none; box-shadow: 0 40px 60px -30px rgba(0, 0, 0, 0.8); transform: rotate(2deg); transition: transform .5s var(--ease); font-size: 15px; }
+.draft:hover { transform: rotate(0deg) translateY(-4px); }
+.draft-row { display: flex; gap: 12px; padding: 12px 0; border-bottom: 1px solid #e6e3dc; }
+.draft-row span { width: 64px; color: #6b6a70; }
+.draft-body { display: block; padding: 16px 0 20px; line-height: 1.9; }
+.draft-body i { font-style: normal; color: #6b6a70; }
+.draft-send { display: inline-flex; align-items: center; height: 38px; padding: 0 18px; border-radius: 999px; background: #1b1b1f; color: #fff; font-weight: 600; font-size: 14px; }
+@media (max-width: 1020px) { .draft { justify-self: start; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .draft { transition: none; } }
