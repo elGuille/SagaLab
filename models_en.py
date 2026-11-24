@@ -185,7 +185,7 @@ shows whether a phone-sized model gets basic facts right.</p>
 
 <h3>On a computer</h3>
 <ul>
-<li><a href="%(pinku)s">Pinku for Mac</a>: in the Mac App Store (version 1.0.7 on sale), Apple silicon with macOS 14 or later. Twelve curated models from 0.34 to 4.7 GB: Gemma 3 1B and Gemma 3n E2B, Llama 3.2 1B and 3B, Qwen3 0.6B, 1.7B, 4B and 8B, DeepSeek-R1 Distill Qwen 1.5B (4-bit and 8-bit), SmolLM3 3B and LFM2 1.2B. No terminal or setup: pick a model and chat. Free to download; larger models with Pinku Pro. It does not yet include Gemma 4 or Qwen3.5.</li>
+<li><a href="%(pinku)s">Pinku for Mac</a>: in the Mac App Store (version 1.0.7 on sale), Apple silicon with macOS 14 or later. Twelve curated models from 0.34 to 4.7 GB: Gemma 3 1B and Gemma 3n E2B, Llama 3.2 1B and 3B, Qwen3 0.6B, 1.7B, 4B and 8B, DeepSeek-R1 Distill Qwen 1.5B (4-bit and 8-bit), SmolLM3 3B and LFM2 1.2B. No terminal or setup: pick a model and chat. Free to download; chatting needs Pinku Pro. It does not yet include Gemma 4 or Qwen3.5.</li>
 <li><a href="https://ollama.com/"%(x)s>Ollama</a>: free and open source (MIT), macOS
 14 or later, Windows and Linux. A command line plus a desktop chat app since July 2025.
 Its library has Gemma 4, Qwen3.5, gpt-oss, Llama 4 and LFM2.5 to run locally; the giant
@@ -209,7 +209,7 @@ library for running models on Apple silicon, for developers.</li>
 <li><a href="%(pinku)s">Pinku</a> (iPhone 12 or later with iOS 18.6, and Macs with
 Apple silicon): a curated list of small models (Gemma, Llama 3.2, Qwen3, SmolLM3, LFM
 and others) that it only shows if your device has the memory for them; no account; the
-default model is free and larger ones come with Pinku Pro. """ + PINKU_PRIV + """ Where
+download is free and chatting needs Pinku Pro. """ + PINKU_PRIV + """ Where
 Hugging Face is blocked it downloads from ModelScope.</li>
 <li><a href="https://apps.apple.com/us/app/id6741426692"%(x)s>Locally AI</a>: free, from
 the LM Studio team, iPhone and iPad (iOS 18.1) and Mac (macOS 26).</li>

@@ -133,8 +133,8 @@ first download needs the internet.</p>
 <ul>
 <li><a href="%(pinku)s">Pinku</a>: iPhone and Mac, no account. Needs iOS 18.6 and a
 Metal 3 iPhone, which Apple lists as <a href="%(metal)s"%(x)s>iPhone 12 or
-later</a>. The default model is free; larger models, custom instructions, dictation
-and read aloud need Pinku Pro, an in-app purchase. """ + PINKU_PRIV + """</li>
+later</a>. The download is free; chatting needs Pinku Pro, an in-app purchase, which
+includes every model, custom instructions, dictation and read aloud. """ + PINKU_PRIV + """</li>
 <li><a href="%(locally)s"%(x)s>Locally AI by LM Studio</a>: free, iOS 18.1 or later,
 label <em>Data Not Collected</em>.</li>
 <li><a href="%(pocketpal)s"%(x)s>PocketPal AI</a>: free and
@@ -232,7 +232,7 @@ cloud assistants that need the internet but are far more capable.</p>
 <tr><td>1. <a href="%(locally)s"%(x)s>Locally AI</a></td><td>On the iPhone</td><td>iOS 18.1</td><td>Free</td><td>4.7</td></tr>
 <tr><td>2. <a href="%(pocketpal)s"%(x)s>PocketPal AI</a></td><td>On the iPhone</td><td>iOS 15.1</td><td>Free; optional paid &ldquo;Pals&rdquo; from $0.99</td><td>4.1</td></tr>
 <tr><td>3. <a href="%(privatellm)s"%(x)s>Private LLM</a></td><td>On the iPhone</td><td>iOS 17, A12 Bionic or later</td><td>$4.99 upfront</td><td>4.2</td></tr>
-<tr><td>4. <a href="%(pinku)s">Pinku</a></td><td>On the iPhone</td><td>iOS 18.6, iPhone 12 or later</td><td>Free; Pinku Pro in-app purchase</td><td>4.7</td></tr>
+<tr><td>4. <a href="%(pinku)s">Pinku</a></td><td>On the iPhone</td><td>iOS 18.6, iPhone 12 or later</td><td>Free download; Pinku Pro in-app purchase to chat</td><td>4.7</td></tr>
 <tr><td>5. <a href="%(chatgpt)s"%(x)s>ChatGPT</a></td><td>Cloud</td><td>iOS 18.0, internet</td><td>Free; Go $8, Plus $19.99 a month</td><td>4.8</td></tr>
 <tr><td>6. <a href="%(gemini)s"%(x)s>Google Gemini</a></td><td>Cloud</td><td>iOS 17.4, internet</td><td>Free; Google AI Plus $4.99, Pro $19.99</td><td>4.7</td></tr>
 <tr><td>7. <a href="%(claude)s"%(x)s>Claude</a></td><td>Cloud</td><td>iOS 18.0, internet</td><td>Free; Pro $20 a month</td><td>4.7</td></tr>
@@ -283,8 +283,8 @@ others) on the iPhone with Apple's MLX framework. You download a model once, and
 from then on every answer is generated on the phone, in airplane mode too. No
 account; chats are saved only on the device. """ + PINKU_PRIV + """ It only lists the
 models your iPhone has enough memory for, and checks free memory before loading one.
-The default model (Llama 3.2 1B) is free; Pinku Pro, an in-app purchase, adds larger
-models, custom instructions, dictation and read aloud. Its interface is in eight
+The download is free; chatting needs Pinku Pro, an in-app purchase, which includes every
+model, custom instructions, dictation and read aloud. Its interface is in eight
 languages, Russian and Chinese among them, and it also runs on Macs with Apple
 silicon. Limits: it does not run on the iPhone 11 or the SE (2nd generation), which
 lack Metal 3; its code is not public; and it reads no images or documents.</p>
@@ -429,7 +429,7 @@ in the EU and China. In Russia there is a second wall: Russian is not one of
 <tr><td><a href="%(gemini)s"%(x)s>Google Gemini</a></td><td>Cloud (Google, US)</td><td>Free; Google AI Plus $4.99, Pro $19.99</td><td>4.7</td><td>Data linked to you, incl. location, contact info and identifiers</td></tr>
 <tr><td><a href="%(claude)s"%(x)s>Claude</a></td><td>Cloud (Anthropic, US)</td><td>Free; Pro $20 a month</td><td>4.7</td><td>Data linked to you, incl. contact info and user content</td></tr>
 <tr><td><a href="%(vibe)s"%(x)s>Vibe by Mistral</a></td><td>Cloud (Mistral AI, France)</td><td>Free; Vibe Pro $14.99</td><td>4.8</td><td>Contact info linked to you; usage and user content not linked</td></tr>
-<tr><td><a href="%(pinku)s">Pinku</a></td><td>On the iPhone</td><td>Free; Pinku Pro in-app purchase</td><td>4.7</td><td>Purchase history and an anonymous user ID (for Pro); chats stay on the device</td></tr>
+<tr><td><a href="%(pinku)s">Pinku</a></td><td>On the iPhone</td><td>Free download; Pinku Pro in-app purchase to chat</td><td>4.7</td><td>Purchase history and an anonymous user ID (for Pro); chats stay on the device</td></tr>
 <tr><td><a href="%(locally)s"%(x)s>Locally AI</a></td><td>On the iPhone</td><td>Free</td><td>4.7</td><td>Data Not Collected</td></tr>
 </tbody>
 </table></div>
@@ -470,8 +470,8 @@ messages, see your screen or act in other apps. It answers on the iPhone itself,
 an open model you download once, so the conversation goes to no server and it works
 in airplane mode. No account. """ + PINKU_PRIV + """ Its interface is in eight
 languages, including Russian, Chinese, Japanese and Korean, and it runs on any iPhone
-12 or later with iOS 18.6, with or without Apple Intelligence. The default model is
-free; Pinku Pro, an in-app purchase, adds larger models, custom instructions,
+12 or later with iOS 18.6, with or without Apple Intelligence. The download is
+free; chatting needs Pinku Pro, an in-app purchase, which includes every model, custom instructions,
 dictation and read aloud. A phone-sized model is much weaker than the cloud apps
 above.</p>
 

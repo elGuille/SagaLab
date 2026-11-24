@@ -144,7 +144,7 @@ V4.1-Flash。需要数据中心级硬件，多数人通过 API 使用。小型�
 
 <h3>在电脑上</h3>
 <ul>
-<li><a href="%(pinku)s">Pinku（Mac 版）</a>：在 Mac App Store 上架（在售版本 1.0.7），需 Apple 芯片和 macOS 14 及以上。12 个精选模型，0.34 到 4.7 GB：Gemma 3 1B 和 Gemma 3n E2B、Llama 3.2 1B 和 3B、Qwen3 0.6B、1.7B、4B 和 8B、DeepSeek-R1 Distill Qwen 1.5B（4 位和 8 位）、SmolLM3 3B 和 LFM2 1.2B。不用终端、不用设置：选一个模型就能聊天。免费下载；更大的模型需 Pinku Pro。目前还没有 Gemma 4 和 Qwen3.5。</li>
+<li><a href="%(pinku)s">Pinku（Mac 版）</a>：在 Mac App Store 上架（在售版本 1.0.7），需 Apple 芯片和 macOS 14 及以上。12 个精选模型，0.34 到 4.7 GB：Gemma 3 1B 和 Gemma 3n E2B、Llama 3.2 1B 和 3B、Qwen3 0.6B、1.7B、4B 和 8B、DeepSeek-R1 Distill Qwen 1.5B（4 位和 8 位）、SmolLM3 3B 和 LFM2 1.2B。不用终端、不用设置：选一个模型就能聊天。免费下载；聊天需要 Pinku Pro。目前还没有 Gemma 4 和 Qwen3.5。</li>
 <li><a href="https://ollama.com/"%(x)s>Ollama</a>：免费开源（MIT），macOS 14 及以上、Windows 和 Linux；
 命令行，2025 年 7 月起还有桌面聊天 App。模型库里有 Gemma 4、Qwen3.5、gpt-oss、Llama 4 和 LFM2.5 可在本机运行；
 超大模型（DeepSeek V4、Kimi K3、GLM-5.3）在 Ollama 云端运行，按用量付费。</li>
@@ -158,7 +158,7 @@ Mac 需 Apple 芯片和 macOS 14，建议 16 GB 内存。</li>
 <h3>在手机上</h3>
 <ul>
 <li><a href="%(pinku)s">Pinku</a>（iOS 18.6 的 iPhone 12 及以上，以及 Apple 芯片的 Mac）：精选的小模型（Gemma、Llama 3.2、
-Qwen3、SmolLM3、LFM 等），只显示设备内存装得下的；无需账户；有简体中文界面；默认模型免费，更大的模型在 Pinku Pro 中。
+Qwen3、SmolLM3、LFM 等），只显示设备内存装得下的；无需账户；有简体中文界面；下载免费，聊天需要 Pinku Pro。
 """ + PINKU_PRIV + """ 在 Hugging Face 无法访问时，它会从 ModelScope 下载模型。</li>
 <li><a href="https://github.com/a-ghorbani/pocketpal-ai"%(x)s>PocketPal AI</a>：免费开源，iPhone 和安卓；可加载 Hugging Face 上任意 GGUF 模型。</li>
 <li><a href="https://apps.apple.com/cn/app/id6448106860"%(x)s>Private LLM</a>：一次性 ¥38，iPhone、iPad 和 Mac。</li>

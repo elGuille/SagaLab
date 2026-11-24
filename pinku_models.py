@@ -14,7 +14,7 @@ De dónde sale cada dato (comprobado el 23 oct 2026):
   (el que lee Pinku 1.1; los "status": "hidden" no se ofrecen y aquí no salen).
 - Regla para listar un modelo: Pinku 1.1, OnboardingInstallModelView.modelMemoryThreshold
   = 0.6 (tamaño <= 60 % de la RAM física) y ModelMemory.fits() antes de cargar.
-- Gratis: solo Llama 3.2 1B desde Pinku 1.2 (en models.json, freeFrom "1.2" en Llama y proFrom
+- Gratis: ninguno desde Pinku 1.5.3 (19 nov 2026; antes, solo Llama 3.2 1B desde Pinku 1.2 (en models.json, freeFrom "1.2" en Llama y proFrom
   "1.2" en Gemma 3 1B; ficha del App Store de la 1.2). Comprobado el 30 oct 2026.
 - RAM de cada iPhone: Apple no la publica; se toma de Wikipedia «List of iPhone models»
   (revisión 1380986775). Metal 3: support.apple.com/en-us/102894 (iPhone 12 o posterior).
@@ -180,7 +180,7 @@ T = {
               "Pinku needs iOS or iPadOS 18.6 or later and a device with Metal 3, which Apple lists for iPhone 12 or later, iPad Pro 11-inch (3rd generation), iPad Pro 12.9-inch (5th generation), iPad Air (4th generation), iPad mini (6th generation), iPad (9th generation) or later. On a Mac it needs Apple silicon and macOS 14 or later. The iPhone 11 and the iPhone SE (2nd generation) cannot run it."],
         h_ram="Memory of each iPhone", ram_note="Apple does not publish how much memory an iPhone has. These figures come from Wikipedia's list of iPhone models, which cites teardowns and regulatory filings, read on %s. iPad and Mac memory is on Apple's tech specs page for each model.",
         t_iphone="iPhone", t_ram="Memory",
-        h_free="Which models are free", free_txt="Downloading Pinku and chatting with the default model, Llama 3.2 1B, is free. Pinku Pro, a yearly subscription or a one-time purchase, lets you choose any other model.",
+        h_free="What it costs", free_txt="Pinku is free to download. Chatting needs Pinku Pro, a yearly subscription with a free trial or a one-time purchase, which includes every model on this list. If you installed a model before version 1.5.3, you keep it.",
         get="Get Pinku on the App Store",
         h_models="The models", h_sources="Sources", h_faq="Questions people ask",
         test_none="Not in the test", test_val="%d of 5",
@@ -204,7 +204,7 @@ T = {
         dev_none="No iPhone has enough memory for it.",
         h_try="How to try it in Pinku",
         try_free=["Install Pinku from the App Store (iPhone, iPad or Mac).", "Open it: %s is the default model, so the first download is this one.", "When it finishes, start a chat. It works offline from then on, and it is free."],
-        try_pro=["Install Pinku from the App Store (iPhone, iPad or Mac).", "Open the model list; Pinku only shows models your device has memory for.", "Choose %s. It needs Pinku Pro (yearly subscription or one-time purchase); chatting with Llama 3.2 1B is free.", "Download it once. After that it works offline."],
+        try_pro=["Install Pinku from the App Store (iPhone, iPad or Mac).", "Open the model list; Pinku only shows models your device has memory for.", "Choose %s. It needs Pinku Pro (yearly subscription or one-time purchase), like every model in Pinku.", "Download it once. After that it works offline."],
         h_other="Other models in Pinku", tool_link="Which model fits my device? (tool)",
         faq_model=[
             ("Can my iPhone run %(m)s?", "%(dev)s"),
@@ -212,7 +212,7 @@ T = {
             ("Does %(m)s work offline?", "Yes. In Pinku you download it once (%(size)s GB) and every answer is then generated on the device, with no connection."),
         ],
         plan_free="Yes. It is Pinku's default model, and chatting with it is free.",
-        plan_pro="It is one of the models that come with Pinku Pro, a yearly subscription or a one-time purchase. Chatting with Llama 3.2 1B is free.",
+        plan_pro="No. Pinku is free to download, but chatting with any model needs Pinku Pro, a yearly subscription with a free trial or a one-time purchase.",
         dev_ans="Pinku lists it on devices with at least %s GB of memory. iPhones: %s.",
         edge_ans=" At the limit, so it may not be listed: %s.", edge_only="Pinku lists it on devices with at least %s GB of memory. No iPhone is clearly above that; at the limit, so it may not be listed: %s.",
         dev_ans_none="No: it needs %s GB of memory, more than any iPhone has. It runs on a Mac with Apple silicon.",
@@ -244,7 +244,7 @@ T = {
               "Pinku нужен iOS или iPadOS 18.6 и новее и устройство с Metal 3: по данным Apple, это iPhone 12 и новее, iPad Pro 11 дюймов (3-го поколения), iPad Pro 12,9 дюйма (5-го поколения), iPad Air (4-го поколения), iPad mini (6-го поколения), iPad (9-го поколения) и новее. На Mac нужен Apple silicon и macOS 14 и новее. На iPhone 11 и iPhone SE (2-го поколения) Pinku не работает."],
         h_ram="Память каждого iPhone", ram_note="Apple не публикует объём памяти iPhone. Эти цифры взяты из списка моделей iPhone в английской Википедии, который ссылается на разборы и регистрационные документы; проверено %s. Память iPad и Mac указана в технических характеристиках каждой модели на сайте Apple.",
         t_iphone="iPhone", t_ram="Память",
-        h_free="Какие модели бесплатны", free_txt="Скачать Pinku и общаться с моделью по умолчанию, Llama 3.2 1B, можно бесплатно. Pinku Pro — годовая подписка или разовая покупка — позволяет выбрать любую другую модель.",
+        h_free="Сколько это стоит", free_txt="Скачать Pinku можно бесплатно. Чтобы общаться с моделями, нужен Pinku Pro — годовая подписка с бесплатным пробным периодом или разовая покупка; в него входят все модели из списка. Если модель была установлена до версии 1.5.3, она остаётся у вас.",
         get="Скачать Pinku в App Store",
         h_models="Модели", h_sources="Источники", h_faq="Частые вопросы",
         test_none="Не участвовала", test_val="%d из 5",
@@ -268,7 +268,7 @@ T = {
         dev_none="Ни у одного iPhone не хватает для неё памяти.",
         h_try="Как попробовать в Pinku",
         try_free=["Установите Pinku из App Store (iPhone, iPad или Mac).", "Откройте его: %s — модель по умолчанию, поэтому первой скачается она.", "Когда загрузка закончится, начните чат. Дальше всё работает без интернета и бесплатно."],
-        try_pro=["Установите Pinku из App Store (iPhone, iPad или Mac).", "Откройте список моделей: Pinku показывает только те, на которые хватает памяти.", "Выберите %s. Для неё нужен Pinku Pro (годовая подписка или разовая покупка); общение с Llama 3.2 1B бесплатно.", "Скачайте её один раз. Дальше она работает без интернета."],
+        try_pro=["Установите Pinku из App Store (iPhone, iPad или Mac).", "Откройте список моделей: Pinku показывает только те, на которые хватает памяти.", "Выберите %s. Для неё, как и для любой модели в Pinku, нужен Pinku Pro (годовая подписка или разовая покупка).", "Скачайте её один раз. Дальше она работает без интернета."],
         h_other="Другие модели в Pinku", tool_link="Какая модель подойдёт для моего устройства? (инструмент)",
         faq_model=[
             ("Потянет ли мой iPhone %(m)s?", "%(dev)s"),
@@ -276,7 +276,7 @@ T = {
             ("Работает ли %(m)s без интернета?", "Да. В Pinku модель скачивается один раз (%(size)s ГБ), после этого каждый ответ создаётся на устройстве без подключения."),
         ],
         plan_free="Да. Это модель Pinku по умолчанию, общаться с ней бесплатно.",
-        plan_pro="Она входит в Pinku Pro — годовую подписку или разовую покупку. Общение с Llama 3.2 1B бесплатно.",
+        plan_pro="Нет. Скачать Pinku можно бесплатно, но для общения с любой моделью нужен Pinku Pro — годовая подписка с бесплатным пробным периодом или разовая покупка.",
         dev_ans="Pinku показывает её на устройствах, где не меньше %s ГБ памяти. iPhone: %s.",
         edge_ans=" На пределе, может не появиться: %s.", edge_only="Pinku показывает её на устройствах, где не меньше %s ГБ памяти. Ни один iPhone не проходит с запасом; на пределе, может не появиться: %s.",
         dev_ans_none="Нет: ей нужно %s ГБ памяти, больше, чем есть у любого iPhone. Она работает на Mac с Apple silicon.",
@@ -308,7 +308,7 @@ T = {
               "Pinku 需要 iOS 或 iPadOS 18.6 及以上，并且设备支持 Metal 3。Apple 列出的是 iPhone 12 及以后、iPad Pro 11 英寸（第三代）、iPad Pro 12.9 英寸（第五代）、iPad Air（第四代）、iPad mini（第六代）、iPad（第九代）及以后。在 Mac 上需要 Apple 芯片和 macOS 14 及以上。iPhone 11 和 iPhone SE（第二代）无法运行。"],
         h_ram="每款 iPhone 的内存", ram_note="Apple 不公布 iPhone 的内存大小。这些数字来自英文维基百科的 iPhone 机型列表，该列表引用拆机报告和监管文件，查阅于 %s。iPad 和 Mac 的内存可在 Apple 网站上各机型的技术规格页查到。",
         t_iphone="iPhone", t_ram="内存",
-        h_free="哪些模型免费", free_txt="下载 Pinku 并使用默认模型 Llama 3.2 1B 聊天是免费的。Pinku Pro（按年订阅或一次性购买）可以选择任何其他模型。",
+        h_free="需要付费吗", free_txt="下载 Pinku 免费。要与模型聊天，需要 Pinku Pro：带免费试用的年度订阅，或一次性购买，包含列表中的所有模型。如果在 1.5.3 版本之前已经安装了模型，可以继续使用。",
         get="在 App Store 获取 Pinku",
         h_models="模型", h_sources="来源", h_faq="常见问题",
         test_none="未参加测试", test_val="5 题答对 %d 题",
@@ -332,7 +332,7 @@ T = {
         dev_none="没有哪款 iPhone 的内存够用。",
         h_try="如何在 Pinku 中试用",
         try_free=["从 App Store 安装 Pinku（iPhone、iPad 或 Mac）。", "打开应用：%s 是默认模型，所以第一个下载的就是它。", "下载完成后开始聊天。之后离线也能用，而且免费。"],
-        try_pro=["从 App Store 安装 Pinku（iPhone、iPad 或 Mac）。", "打开模型列表；Pinku 只显示你的设备内存够用的模型。", "选择 %s。它需要 Pinku Pro（按年订阅或一次性购买）；使用 Llama 3.2 1B 聊天是免费的。", "下载一次，之后离线可用。"],
+        try_pro=["从 App Store 安装 Pinku（iPhone、iPad 或 Mac）。", "打开模型列表；Pinku 只显示你的设备内存够用的模型。", "选择 %s。和 Pinku 中的所有模型一样，它需要 Pinku Pro（按年订阅或一次性购买）。", "下载一次，之后离线可用。"],
         h_other="Pinku 中的其他模型", tool_link="我的设备适合哪个模型？（工具）",
         faq_model=[
             ("我的 iPhone 能运行 %(m)s 吗？", "%(dev)s"),
@@ -340,7 +340,7 @@ T = {
             ("%(m)s 不联网能用吗？", "能。在 Pinku 中下载一次（%(size)s GB）后，每个回答都在设备上生成，不需要网络。"),
         ],
         plan_free="是的。它是 Pinku 的默认模型，用它聊天免费。",
-        plan_pro="它属于 Pinku Pro（按年订阅或一次性购买）包含的模型。使用 Llama 3.2 1B 聊天是免费的。",
+        plan_pro="不是。下载 Pinku 免费，但与任何模型聊天都需要 Pinku Pro：带免费试用的年度订阅，或一次性购买。",
         dev_ans="在至少有 %s GB 内存的设备上，Pinku 会显示它。iPhone：%s。",
         edge_ans="刚好在边界、可能不显示的：%s。", edge_only="在至少有 %s GB 内存的设备上，Pinku 会显示它。没有哪款 iPhone 明显高于这个数；刚好在边界、可能不显示的：%s。",
         dev_ans_none="不能：它需要 %s GB 内存，超过所有 iPhone。它可以在 Apple 芯片 Mac 上运行。",
@@ -359,21 +359,21 @@ T["en"].update(m_h1_mac="%s on Mac: size, memory and which Macs run it", m_title
     m_desc_mac="%s by %s offline on Mac with Pinku: %s GB download, needs %s GB of memory, licence %s. Which Macs run it.", mac_col16="Mac 16 GB+",
     dev_mac_only="Pinku offers this model only on a Mac. It is not listed on iPhone or iPad.",
     dev_ans_mac="Only on a Mac: Pinku lists it on Macs with Apple silicon and at least %s GB of memory, not on iPhone or iPad.",
-    try_mac=["Install Pinku on your Mac from the App Store.", "Open the model list; Pinku only shows models your Mac has memory for.", "Choose %s. It needs Pinku Pro (yearly subscription or one-time purchase); chatting with Llama 3.2 1B is free.", "Download it once. After that it works offline."],
+    try_mac=["Install Pinku on your Mac from the App Store.", "Open the model list; Pinku only shows models your Mac has memory for.", "Choose %s. It needs Pinku Pro (yearly subscription or one-time purchase), like every model in Pinku.", "Download it once. After that it works offline."],
     slow_note="The first answer after loading is slow to start: on an M3 Mac with 16 GB we measured from under 30 seconds to about a minute. Pinku warns about the slow start in the model list.",
     m_stand_mac="%s by %s, as it runs offline in Pinku for Mac: a %s GB download that needs %s GB of memory. Which Macs can run it, and how to try it.")
 T["ru"].update(m_h1_mac="%s на Mac: размер, память и на каких Mac работает", m_title_mac="%s на Mac: размер, сколько нужно ОЗУ | Pinku",
     m_desc_mac="%s от %s офлайн на Mac в Pinku: загрузка %s ГБ, нужно %s ГБ памяти, лицензия %s. На каких Mac работает.", mac_col16="Mac 16 ГБ+",
     dev_mac_only="Pinku предлагает эту модель только на Mac. На iPhone и iPad её нет в списке.",
     dev_ans_mac="Только на Mac: Pinku показывает её на Mac с Apple silicon и не меньше %s ГБ памяти, но не на iPhone и iPad.",
-    try_mac=["Установите Pinku на Mac из App Store.", "Откройте список моделей: Pinku показывает только те, на которые хватает памяти.", "Выберите %s. Для неё нужен Pinku Pro (годовая подписка или разовая покупка); общение с Llama 3.2 1B бесплатно.", "Скачайте её один раз. Дальше она работает без интернета."],
+    try_mac=["Установите Pinku на Mac из App Store.", "Откройте список моделей: Pinku показывает только те, на которые хватает памяти.", "Выберите %s. Для неё, как и для любой модели в Pinku, нужен Pinku Pro (годовая подписка или разовая покупка).", "Скачайте её один раз. Дальше она работает без интернета."],
     slow_note="Первый ответ после загрузки начинается не сразу: на Mac с M3 и 16 ГБ мы намерили от менее 30 секунд до примерно минуты. Pinku предупреждает о медленном старте в списке моделей.",
     m_stand_mac="%s от %s в офлайн-режиме в Pinku для Mac: загрузка %s ГБ, нужно %s ГБ памяти. На каких Mac она работает и как её попробовать.")
 T["zh"].update(m_h1_mac="%s 在 Mac 上：大小、内存和支持的 Mac", m_title_mac="%s 在 Mac 上：大小、所需内存 | Pinku",
     m_desc_mac="在 Pinku 中离线运行 %s（%s）：下载 %s GB，需要 %s GB 内存，许可证 %s。哪些 Mac 能运行。", mac_col16="Mac 16 GB+",
     dev_mac_only="Pinku 只在 Mac 上提供这个模型，iPhone 和 iPad 的列表中没有它。",
     dev_ans_mac="只能在 Mac 上运行：Pinku 只在至少 %s GB 内存的 Apple 芯片 Mac 上显示它，iPhone 和 iPad 上没有。",
-    try_mac=["从 App Store 在 Mac 上安装 Pinku。", "打开模型列表；Pinku 只显示内存足够的模型。", "选择 %s。它需要 Pinku Pro（年度订阅或一次性购买）；使用 Llama 3.2 1B 聊天是免费的。", "下载一次，之后可离线使用。"],
+    try_mac=["从 App Store 在 Mac 上安装 Pinku。", "打开模型列表；Pinku 只显示内存足够的模型。", "选择 %s。和 Pinku 中的所有模型一样，它需要 Pinku Pro（年度订阅或一次性购买）。", "下载一次，之后可离线使用。"],
     slow_note="加载后的第一次回答启动较慢：在 16 GB 内存的 M3 Mac 上，我们测得不到 30 秒到约 1 分钟。Pinku 在模型列表中会提示启动较慢。",
     m_stand_mac="%s（%s），在 Mac 版 Pinku 中离线运行：下载 %s GB，需要 %s GB 内存。哪些 Mac 能运行，以及如何试用。")
 
@@ -395,7 +395,8 @@ def models():
         if m["id"] not in ED:
             raise SystemExit("pinku_models: modelo nuevo en models.json sin datos en ED: %s" % m["id"])
         e = dict(ED[m["id"]])
-        e.update(id=m["id"], size=m["sizeGB"], free=bool(m.get("freeFrom")) or (bool(m.get("free")) and not m.get("proFrom")), reasoning=bool(m.get("reasoning")),
+        e.update(id=m["id"], size=m["sizeGB"], free=False,  # desde la 1.5.3 (19 nov 2026) ningun modelo es gratis; el catalogo ya no decide
+                  reasoning=bool(m.get("reasoning")),
                  strengths_en=m.get("strengths", []), quality=m.get("quality", 0))
         e["min"] = max(math.ceil(m["sizeGB"] / SHARE * 10) / 10, m.get("minMemoryGB", 0))
         e["mac_only"] = m.get("platforms") == ["macos"]

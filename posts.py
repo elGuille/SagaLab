@@ -1834,7 +1834,7 @@ does.</p>
 <tbody>
 <tr><td>1. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a></td><td>Free</td><td>Yes</td><td>Llama, Gemma, Qwen, DeepSeek and more, on Apple MLX</td><td>Data Not Collected</td><td>4.7</td></tr>
 <tr><td>2. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>$4.99 upfront</td><td>Yes</td><td>Llama, Gemma, Qwen, Phi, Mistral and more, up to 14B</td><td>Data Not Collected</td><td>4.2</td></tr>
-<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>Free; Pinku Pro $16.99/year or a one-time purchase</td><td>Yes</td><td>11 open models on Apple MLX, 0.4 to 4.7 GB</td><td>Purchase history and an anonymous user ID (for Pro); chats stay on the device</td><td>4.7</td></tr>
+<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>Free download; Pinku Pro (yearly or one-time) to chat</td><td>Yes</td><td>11 open models on Apple MLX, 0.4 to 4.7 GB</td><td>Purchase history and an anonymous user ID (for Pro); chats stay on the device</td><td>4.7</td></tr>
 <tr><td>4. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Free; Pro $9.99</td><td>Not listed</td><td>Hundreds of open models; Pro adds cloud models</td><td>Data Not Linked to You</td><td>4.7</td></tr>
 <tr><td>5. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Free, open source</td><td>Not listed</td><td>Any GGUF model from Hugging Face</td><td>Data Not Collected</td><td>4.1</td></tr>
 <tr><td>6. <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a></td><td>Free; subscription for cloud features</td><td>Not listed</td><td>GGUF and MLX models, Apple's models, optional cloud providers</td><td>Data Used to Track You</td><td>4.8</td></tr>
@@ -1873,7 +1873,7 @@ regenerate an answer, edit a message and rerun from it, and share a message or a
 whole conversation. The interface is in English, Spanish, German, French,
 Japanese, Korean, Simplified Chinese and Russian.</p>
 
-<p>It is free to download, and chatting with the default model, Llama 3.2 1B, costs nothing. Pinku Pro is optional, as a yearly subscription ($16.99) or a one-time purchase, and lets you choose any of the other models, plus custom instructions, voice dictation recognised on the device and read aloud.</p>
+<p>It is free to download. Chatting needs Pinku Pro, a yearly subscription with a free trial or a one-time purchase, which includes every model, plus custom instructions, voice dictation recognised on the device and read aloud.</p>
 
 <p>Where others beat it: Pinku does not read images or documents, does not browse
 Hugging Face for arbitrary models, has no cloud option and no agent tools, and does not sync chats between your devices.</p>
@@ -2001,7 +2001,7 @@ puedes usar, cuánto pagas y qué más hace la app.</p>
 <tbody>
 <tr><td>1. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI by LM Studio</a></td><td>Gratis</td><td>Sí</td><td>Llama, Gemma, Qwen, DeepSeek y más, con Apple MLX</td><td>Datos no recopilados</td><td>4,7</td></tr>
 <tr><td>2. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>4,99 $ por adelantado</td><td>Sí</td><td>Llama, Gemma, Qwen, Phi, Mistral y más, hasta 14B</td><td>Datos no recopilados</td><td>4,2</td></tr>
-<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>Gratis; Pinku Pro 16,99 $/año o pago único</td><td>Sí</td><td>11 modelos abiertos con Apple MLX, de 0,4 a 4,7 GB</td><td>Historial de compras e ID de usuario anónimo (para Pro); los chats no salen del dispositivo</td><td>4,7</td></tr>
+<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>Descarga gratis; Pinku Pro (anual o pago único) para chatear</td><td>Sí</td><td>11 modelos abiertos con Apple MLX, de 0,4 a 4,7 GB</td><td>Historial de compras e ID de usuario anónimo (para Pro); los chats no salen del dispositivo</td><td>4,7</td></tr>
 <tr><td>4. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Gratis; Pro 9,99 $</td><td>No aparece</td><td>Cientos de modelos abiertos; Pro añade modelos en la nube</td><td>Datos no vinculados a ti</td><td>4,7</td></tr>
 <tr><td>5. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Gratis, código abierto</td><td>No aparece</td><td>Cualquier modelo GGUF de Hugging Face</td><td>Datos no recopilados</td><td>4,1</td></tr>
 <tr><td>6. <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a></td><td>Gratis; suscripción para la nube</td><td>No aparece</td><td>Modelos GGUF y MLX, los de Apple y proveedores en la nube opcionales</td><td>Datos usados para rastrearte</td><td>4,8</td></tr>
@@ -2041,7 +2041,7 @@ mensaje y volver a generar desde ahí, y compartir un mensaje o la conversación
 entera. La interfaz está en inglés, español, alemán, francés, japonés, coreano,
 chino simplificado y ruso.</p>
 
-<p>Se descarga gratis, y chatear con el modelo por defecto, Llama 3.2 1B, no cuesta nada. Pinku Pro es opcional, con suscripción anual (16,99 $) o compra única, y te deja elegir cualquier otro modelo, además de instrucciones personalizadas, dictado por voz reconocido en el dispositivo y lectura en voz alta.</p>
+<p>Se descarga gratis. Para chatear hace falta Pinku Pro, con suscripción anual con prueba gratuita o compra única, que incluye todos los modelos, además de instrucciones personalizadas, dictado por voz reconocido en el dispositivo y lectura en voz alta.</p>
 
 <p>En qué le ganan las demás: Pinku no lee imágenes ni documentos, no busca en
 Hugging Face cualquier modelo, no tiene opción en la nube ni herramientas de
@@ -2647,7 +2647,7 @@ being in your country's App Store. On %(date)s, Apple's lookup API showed:</p>
 <tbody>
 <tr><td>1. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI</a></td><td>Free</td><td>No</td><td>No</td><td>Yes</td><td>4.7</td></tr>
 <tr><td>2. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>$4.99 upfront</td><td>Yes</td><td>Yes</td><td>Yes</td><td>4.2</td></tr>
-<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>Free; Pro $16.99/year or a one-time purchase</td><td>Yes</td><td>Yes</td><td>Yes</td><td>4.7</td></tr>
+<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>Free download; Pro (yearly or one-time) to chat</td><td>Yes</td><td>Yes</td><td>Yes</td><td>4.7</td></tr>
 <tr><td>4. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Free, open source</td><td>Yes</td><td>Yes</td><td>Yes</td><td>4.1</td></tr>
 <tr><td>5. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Free; Pro $9.99</td><td>Yes</td><td>No</td><td>Yes</td><td>4.7</td></tr>
 </tbody>
@@ -2691,7 +2691,7 @@ iPad and Mac with Apple MLX. No account, no server, nothing sent anywhere. It is
 the App Store in all three countries above, its interface is in English, Spanish,
 German, French, Japanese, Korean, Simplified Chinese and Russian, and an
 &ldquo;alternative download source&rdquo; setting fetches models through a mirror
-when Hugging Face is slow or unreachable. Chatting with the default model, Llama 3.2 1B, is free; Pinku Pro (yearly or one-time) lets you choose any other model and adds custom instructions and on-device voice.
+when Hugging Face is slow or unreachable. The download is free; chatting needs Pinku Pro (yearly or one-time), which includes every model and adds custom instructions and on-device voice.
 Where others beat it: no image or document input, a curated list rather than any
 model, and no sync between devices.</p>
 
@@ -2771,7 +2771,7 @@ el App Store de tu país. A %(date)s, la API de Apple mostraba:</p>
 <tbody>
 <tr><td>1. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI</a></td><td>Gratis</td><td>No</td><td>No</td><td>Sí</td><td>4,7</td></tr>
 <tr><td>2. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>4,99 $ por adelantado</td><td>Sí</td><td>Sí</td><td>Sí</td><td>4,2</td></tr>
-<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>Gratis; Pro 16,99 $/año o pago único</td><td>Sí</td><td>Sí</td><td>Sí</td><td>4,7</td></tr>
+<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>Descarga gratis; Pro (anual o pago único) para chatear</td><td>Sí</td><td>Sí</td><td>Sí</td><td>4,7</td></tr>
 <tr><td>4. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Gratis, código abierto</td><td>Sí</td><td>Sí</td><td>Sí</td><td>4,1</td></tr>
 <tr><td>5. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Gratis; Pro 9,99 $</td><td>Sí</td><td>No</td><td>Sí</td><td>4,7</td></tr>
 </tbody>
@@ -2815,7 +2815,7 @@ en iPhone, iPad y Mac con Apple MLX. Sin cuenta, sin servidor, sin enviar nada a
 ningún sitio. Está en el App Store de los tres países de arriba, su interfaz está
 en inglés, español, alemán, francés, japonés, coreano, chino simplificado y ruso, y
 un ajuste de &laquo;fuente de descarga alternativa&raquo; baja los modelos por un
-espejo cuando Hugging Face va lento o no responde. Chatear con el modelo por defecto, Llama 3.2 1B, es gratis; Pinku Pro (anual o de pago único) te deja elegir cualquier otro modelo y añade instrucciones
+espejo cuando Hugging Face va lento o no responde. La descarga es gratis; para chatear hace falta Pinku Pro (anual o de pago único), que incluye todos los modelos y añade instrucciones
 personalizadas y voz en el dispositivo. En qué le ganan otras: no lee imágenes ni
 documentos, tiene una lista cerrada de modelos y no sincroniza entre
 dispositivos.</p>
@@ -2913,7 +2913,7 @@ or a cloud mode that could send a chat elsewhere?</p>
 <tr><td>1. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI</a></td><td>Data Not Collected</td><td>Not mentioned</td><td>Closed</td><td>Free</td></tr>
 <tr><td>2. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Data Not Collected</td><td>Not mentioned</td><td>Open (MIT)</td><td>Free</td></tr>
 <tr><td>3. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>Data Not Collected</td><td>Not mentioned</td><td>Closed</td><td>$4.99 upfront</td></tr>
-<tr><td>4. <a href="%(pinku)s">Pinku</a></td><td>Purchase history and an anonymous user ID (for Pro); chats stay on the device</td><td>None</td><td>Closed</td><td>Free; Pro $16.99/year or a one-time purchase</td></tr>
+<tr><td>4. <a href="%(pinku)s">Pinku</a></td><td>Purchase history and an anonymous user ID (for Pro); chats stay on the device</td><td>None</td><td>Closed</td><td>Free download; Pro (yearly or one-time) to chat</td></tr>
 <tr><td>5. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Data Not Linked to You</td><td>Optional, with Pro</td><td>Closed</td><td>Free; Pro $9.99</td></tr>
 <tr><td>6. <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a></td><td>Data Used to Track You</td><td>Optional, by subscription</td><td>Closed</td><td>Free; $3.99/week to $99.99/year</td></tr>
 </tbody>
@@ -3040,7 +3040,7 @@ cuenta o un modo en la nube que pueda mandar un chat a otra parte?</p>
 <tr><td>1. <a href="%(locally)s" target="_blank" rel="noopener">Locally AI</a></td><td>Datos no recopilados</td><td>No los menciona</td><td>Cerrado</td><td>Gratis</td></tr>
 <tr><td>2. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Datos no recopilados</td><td>No los menciona</td><td>Abierto (MIT)</td><td>Gratis</td></tr>
 <tr><td>3. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>Datos no recopilados</td><td>No los menciona</td><td>Cerrado</td><td>4,99 $ por adelantado</td></tr>
-<tr><td>4. <a href="%(pinku)s">Pinku</a></td><td>Historial de compras e ID de usuario anónimo (para Pro); los chats no salen del dispositivo</td><td>Ninguno</td><td>Cerrado</td><td>Gratis; Pro 16,99 $/año o pago único</td></tr>
+<tr><td>4. <a href="%(pinku)s">Pinku</a></td><td>Historial de compras e ID de usuario anónimo (para Pro); los chats no salen del dispositivo</td><td>Ninguno</td><td>Cerrado</td><td>Descarga gratis; Pro (anual o pago único) para chatear</td></tr>
 <tr><td>5. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Datos no vinculados a ti</td><td>Opcionales, con Pro</td><td>Cerrado</td><td>Gratis; Pro 9,99 $</td></tr>
 <tr><td>6. <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a></td><td>Datos usados para rastrearte</td><td>Opcionales, con suscripción</td><td>Cerrado</td><td>Gratis; de 3,99 $/semana a 99,99 $/año</td></tr>
 </tbody>
@@ -5639,8 +5639,8 @@ OFF_RU_FAQ = [
     ("Можно ли пользоваться ChatGPT в России?",
      "Россия не входит в список стран, где OpenAI официально поддерживает ChatGPT. Локальное приложение работает без аккаунта и без серверов, поэтому от этого не зависит."),
     ("Pinku бесплатное?",
-     "Да. Pinku бесплатно скачивается, и чат с моделью по умолчанию, Llama 3.2 1B, ничего не стоит. "
-     "Pinku Pro — необязательная годовая подписка или разовая покупка: крупные модели, свои инструкции, диктовка и чтение вслух."),
+     "Скачать Pinku можно бесплатно, но для чата нужен Pinku Pro. "
+     "Pinku Pro — годовая подписка с бесплатным пробным периодом или разовая покупка: все модели, свои инструкции, диктовка и чтение вслух."),
     ("Какой iPhone нужен?",
      "Pinku работает на iOS 18.6 и новее, на устройствах с Metal 3, и на Mac с Apple silicon (macOS 14 и новее). Модели, которые не помещаются в память устройства, Pinku скрывает, а перед загрузкой проверяет свободную память, чтобы не закрыться."),
     ("Насколько хорошо локальная модель отвечает по-русски?",
@@ -5678,7 +5678,7 @@ OFF_RU_BODY = ("""
 <tbody>
 <tr><td>1. <a href="%(enclave)s" target="_blank" rel="noopener">Enclave</a></td><td>Бесплатно; есть Pro</td><td>Нет</td><td>Нет в списке</td><td>Сотни открытых моделей; Pro добавляет облачные</td><td>Не связаны с вами</td><td>4,6</td></tr>
 <tr><td>2. <a href="%(pocketpal)s" target="_blank" rel="noopener">PocketPal AI</a></td><td>Бесплатно, открытый код</td><td>Нет</td><td>Нет в списке</td><td>Любая модель GGUF с Hugging Face</td><td>Данные не собираются</td><td>4,3</td></tr>
-<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>Бесплатно; Pinku Pro — на год или разово</td><td>Да</td><td>Да</td><td>11 моделей на Apple MLX, от 0,4 до 4,7 ГБ</td><td>История покупок и анонимный ID (для Pro); чаты не покидают устройство</td><td>3,7</td></tr>
+<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>Скачать бесплатно; для чата нужен Pinku Pro — на год или разово</td><td>Да</td><td>Да</td><td>11 моделей на Apple MLX, от 0,4 до 4,7 ГБ</td><td>История покупок и анонимный ID (для Pro); чаты не покидают устройство</td><td>3,7</td></tr>
 <tr><td>4. <a href="%(privatellm)s" target="_blank" rel="noopener">Private LLM</a></td><td>299 &#8381; сразу</td><td>Нет</td><td>Да</td><td>Llama, Gemma, Qwen, Phi, Mistral и другие, до 14B</td><td>Данные не собираются</td><td>3,6</td></tr>
 <tr><td>5. <a href="%(privacyai)s" target="_blank" rel="noopener">Privacy AI</a></td><td>Бесплатно; подписка за облачные функции</td><td>Да</td><td>Нет в списке</td><td>Модели GGUF и MLX, модели Apple, облачные по желанию</td><td>Используются для отслеживания</td><td>нет оценок</td></tr>
 </tbody>
@@ -5710,7 +5710,7 @@ OFF_RU_BODY = ("""
 <p><a href="%(pinku)s">Pinku</a> запускает двенадцать открытых моделей (Gemma 3,
 Gemma 3n, Llama 3.2, Qwen3, дистилляты DeepSeek-R1, SmolLM3 и LFM2) на iPhone и Mac
 через Apple MLX. Аккаунта и сервера нет: переписка не покидает устройство. Можно
-перегенерировать ответ, отредактировать сообщение и поделиться чатом. Чат с моделью по умолчанию, Llama 3.2 1B, бесплатный; Pinku Pro позволяет выбрать любую другую модель и добавляет
+перегенерировать ответ, отредактировать сообщение и поделиться чатом. Скачать приложение можно бесплатно; для чата нужен Pinku Pro, в который входят все модели, а также
 свои инструкции, диктовку, которая распознаётся на устройстве, и чтение ответов
 вслух.</p>
 

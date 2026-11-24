@@ -93,8 +93,8 @@ iPhone 15、15 Plus 和更早的机型都不支持，尽管 <a href="%(ios)s"%(x
 
 <ul>
 <li><a href="%(pinku)s">Pinku</a>：iPhone 和 Mac，无需账户，界面有简体中文。需要 iOS 18.6 以及支持 Metal 3 的
-iPhone，Apple 列出的是 <a href="%(metal)s"%(x)s>iPhone 12 及更新机型</a>。默认模型免费；更大的模型、自定义指令、
-听写和朗读需要 Pinku Pro（App 内购买）。""" + PINKU_PRIV + """</li>
+iPhone，Apple 列出的是 <a href="%(metal)s"%(x)s>iPhone 12 及更新机型</a>。下载免费；聊天需要 Pinku Pro（App 内购买），包含所有模型、自定义指令、
+听写和朗读。""" + PINKU_PRIV + """</li>
 <li><a href="%(pocketpal)s"%(x)s>PocketPal AI</a>：免费、<a href="%(gh)s"%(x)s>开源</a>，iOS 15.1 及以上，可加载
 Hugging Face 上任意 GGUF 模型；界面为英文。</li>
 <li><a href="%(privatellm)s"%(x)s>Private LLM</a>：一次性 ¥38，iOS 17 及 A12 仿生芯片或更新，支持 Siri 和快捷指令；
@@ -172,7 +172,7 @@ NOAI = dict(
 <tbody>
 <tr><td>1. <a href="%(pocketpal)s"%(x)s>PocketPal AI</a></td><td>iPhone 本机</td><td>iOS 15.1</td><td>免费</td><td>3.2</td><td>无</td></tr>
 <tr><td>2. <a href="%(privatellm)s"%(x)s>Private LLM</a></td><td>iPhone 本机</td><td>iOS 17，A12 仿生及以上</td><td>¥38</td><td>3.4</td><td>无</td></tr>
-<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>iPhone 本机</td><td>iOS 18.6，iPhone 12 及以上</td><td>免费；Pinku Pro 为 App 内购买</td><td>3.2</td><td>有</td></tr>
+<tr><td>3. <a href="%(pinku)s">Pinku</a></td><td>iPhone 本机</td><td>iOS 18.6，iPhone 12 及以上</td><td>免费下载；聊天需要 Pinku Pro（App 内购买）</td><td>3.2</td><td>有</td></tr>
 <tr><td>4. <a href="%(doubao)s"%(x)s>豆包</a></td><td>云端</td><td>iOS 15.0，联网</td><td>免费</td><td>4.7</td><td>有</td></tr>
 <tr><td>5. <a href="%(kimi)s"%(x)s>Kimi</a></td><td>云端</td><td>iOS 15.0，联网</td><td>免费</td><td>4.9</td><td>有</td></tr>
 <tr><td>6. <a href="%(qwen)s"%(x)s>千问</a></td><td>云端</td><td>iOS 14.0，联网</td><td>免费</td><td>4.3</td><td>有</td></tr>
@@ -204,7 +204,7 @@ Pinku 需要 iPhone 12 是因为它需要 Metal 3，Apple 列出的是 <a href="
 
 <p><a href="%(pinku)s">Pinku</a> 通过 Apple MLX 在 iPhone 上运行开源模型（Gemma 3、Llama 3.2、Qwen3 等）。
 模型只需下载一次，之后每个回答都在手机上生成，飞行模式也能用。无需账户，聊天只保存在设备上。""" + PINKU_PRIV + """
-它只显示内存够用的模型，加载前会检查可用内存。默认模型（Llama 3.2 1B）免费；Pinku Pro（App 内购买）增加更大的模型、
+它只显示内存够用的模型，加载前会检查可用内存。下载免费；聊天需要 Pinku Pro（App 内购买），包含所有模型、
 自定义指令、听写和朗读。这里唯一有中文界面的离线 App，也能在 Apple 芯片的 Mac 上运行。不足：iPhone 11 和 SE（第二代）
 没有 Metal 3，无法运行；代码不开源；不能读取图片和文档。</p>
 
@@ -313,7 +313,7 @@ SIRI = dict(
 <tr><td><a href="%(kimi)s"%(x)s>Kimi</a></td><td>云端（月之暗面）</td><td>免费</td><td>4.9</td><td>15.0</td></tr>
 <tr><td><a href="%(qwen)s"%(x)s>千问</a></td><td>云端（阿里巴巴）</td><td>免费</td><td>4.3</td><td>14.0</td></tr>
 <tr><td><a href="%(deepseek)s"%(x)s>DeepSeek</a></td><td>云端</td><td>免费</td><td>3.9</td><td>15.0</td></tr>
-<tr><td><a href="%(pinku)s">Pinku</a></td><td>iPhone 本机</td><td>免费；Pinku Pro 为 App 内购买</td><td>3.2</td><td>18.6</td></tr>
+<tr><td><a href="%(pinku)s">Pinku</a></td><td>iPhone 本机</td><td>免费下载；聊天需要 Pinku Pro（App 内购买）</td><td>3.2</td><td>18.6</td></tr>
 <tr><td><a href="%(pocketpal)s"%(x)s>PocketPal AI</a></td><td>iPhone 本机</td><td>免费</td><td>3.2</td><td>15.1</td></tr>
 </tbody>
 </table></div>
@@ -329,7 +329,7 @@ Kimi（月之暗面）评分最高，千问（阿里巴巴）iOS 14 就能用，
 
 <p><a href="%(pinku)s">Pinku</a> 不能代替 Siri：它不读取信息、看不到屏幕，也不能操作其他 App。它直接在 iPhone 上用你下载一次的开源模型回答，
 对话不会发到任何服务器，飞行模式也能用。无需账户，有简体中文界面。""" + PINKU_PRIV + """
-支持 iOS 18.6 的 iPhone 12 及以上机型，有没有 Apple Intelligence 都可以。默认模型免费；Pinku Pro 增加更大的模型、自定义指令、听写和朗读。
+支持 iOS 18.6 的 iPhone 12 及以上机型，有没有 Apple Intelligence 都可以。下载免费；聊天需要 Pinku Pro，包含所有模型、自定义指令、听写和朗读。
 手机大小的模型明显弱于上面的云端 App。</p>
 
 <h2>PocketPal AI</h2>

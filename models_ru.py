@@ -164,7 +164,7 @@ AI, 1,2B работает меньше чем в 1 ГБ памяти, конте
 
 <h3>На компьютере</h3>
 <ul>
-<li><a href="%(pinku)s">Pinku для Mac</a>: в Mac App Store (в продаже версия 1.0.7), Apple silicon и macOS 14 или новее. Двенадцать моделей от 0,34 до 4,7 ГБ: Gemma 3 1B и Gemma 3n E2B, Llama 3.2 1B и 3B, Qwen3 0,6B, 1,7B, 4B и 8B, DeepSeek-R1 Distill Qwen 1,5B (4 и 8 бит), SmolLM3 3B и LFM2 1,2B. Без терминала и настроек: выберите модель и общайтесь. Скачать бесплатно; большие модели с Pinku Pro. Gemma 4 и Qwen3.5 пока нет.</li>
+<li><a href="%(pinku)s">Pinku для Mac</a>: в Mac App Store (в продаже версия 1.0.7), Apple silicon и macOS 14 или новее. Двенадцать моделей от 0,34 до 4,7 ГБ: Gemma 3 1B и Gemma 3n E2B, Llama 3.2 1B и 3B, Qwen3 0,6B, 1,7B, 4B и 8B, DeepSeek-R1 Distill Qwen 1,5B (4 и 8 бит), SmolLM3 3B и LFM2 1,2B. Без терминала и настроек: выберите модель и общайтесь. Скачать бесплатно; для чата нужен Pinku Pro. Gemma 4 и Qwen3.5 пока нет.</li>
 <li><a href="https://ollama.com/"%(x)s>Ollama</a>: бесплатно, открытый код (MIT), macOS 14+,
 Windows и Linux; командная строка и с июля 2025 года приложение для чата. В библиотеке
 есть Gemma 4, Qwen3.5, gpt-oss, Llama 4 и LFM2.5 для запуска у себя; гиганты (DeepSeek V4,
@@ -184,8 +184,8 @@ macOS 13.6+; для локальных моделей на Mac нужен Apple 
 <ul>
 <li><a href="%(pinku)s">Pinku</a> (iPhone 12+ с iOS 18.6 и Mac на Apple silicon): подборка
 малых моделей (Gemma, Llama 3.2, Qwen3, SmolLM3, LFM и другие), показывает только те, на
-которые хватает памяти; без аккаунта; интерфейс на русском; модель по умолчанию
-бесплатна, большие входят в Pinku Pro. """ + PINKU_PRIV + """</li>
+которые хватает памяти; без аккаунта; интерфейс на русском; скачать можно
+бесплатно, для чата нужен Pinku Pro. """ + PINKU_PRIV + """</li>
 <li><a href="https://github.com/a-ghorbani/pocketpal-ai"%(x)s>PocketPal AI</a>: бесплатно и
 с открытым кодом, iPhone и Android; любые GGUF-модели с Hugging Face.</li>
 <li><a href="https://apps.apple.com/ru/app/id6448106860"%(x)s>Private LLM</a>: 299 ₽ один
