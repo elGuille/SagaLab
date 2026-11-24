@@ -196,9 +196,16 @@ def page(a):
 '''
 
 
+# Estas apps tienen su página propia en la raíz (restyle_app_pages.py);
+# apps/<slug>.html de estas es solo una redirección y no se regenera.
+OWN_PAGE = {"dora", "pinku", "photo-vault", "ask-ai", "brainy", "drop", "crypton", "3-tasks"}
+
+
 def main():
     os.makedirs("apps", exist_ok=True)
     for a in APPS:
+        if a[0] in OWN_PAGE:
+            continue
         path = "apps/%s.html" % a[0]
         html = ct.retag(page(a), path)
         with open(path, "w", encoding="utf-8") as f:

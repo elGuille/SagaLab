@@ -318,3 +318,67 @@ body.landing { background: var(--bg); min-height: 100vh; overflow-x: clip; }
   .l-shots img { animation: none; }
   .feat-phone img, .feat-list h2 { transition: none; }
 }
+
+/* App pages: the long content under the landing, on the card colour */
+.l-more { padding: 60px 0 0; }
+.l-more-body { background: rgba(0, 0, 0, .26); border: 1px solid rgba(255, 255, 255, .12); border-radius: 32px; padding: 56px clamp(22px, 5vw, 64px); color: rgba(255, 255, 255, .9); font-size: 17px; line-height: 1.6; }
+.l-more-body > * + * { margin-top: 18px; }
+.l-more-body h2 { margin: 64px 0 22px; font-size: clamp(30px, 3.4vw, 46px); line-height: 1.02; letter-spacing: -0.03em; font-weight: 800; color: #fff; max-width: 22ch; }
+.l-more-body > h2:first-child, .l-more-body section:first-child h2 { margin-top: 0; }
+.l-more-body h3 { margin: 0 0 8px; font: 700 20px/1.2 var(--display); color: #fff; }
+.l-more-body p { max-width: 68ch; }
+.l-more-body a { color: #fff; text-decoration-color: rgba(255, 255, 255, .45); text-underline-offset: 3px; }
+.l-more-body a:hover { text-decoration-color: #fff; }
+.l-more-body .container { max-width: none; padding: 0; }
+.l-more-body section + section { margin-top: 64px; }
+.l-more-body ul.features { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.l-more-body ul.features li, .l-more-body .dora-card, .l-more-body .dora-guide, .l-more-body .dora-proof { background: rgba(255, 255, 255, .08); border: 1px solid rgba(255, 255, 255, .12); border-radius: 20px; padding: 22px 24px; font-size: 16px; }
+.l-more-body ul.features b { display: block; margin-bottom: 6px; font: 700 19px/1.2 var(--display); color: #fff; }
+.l-more-body .table-scroll { overflow-x: auto; }
+.l-more-body table { width: 100%; border-collapse: collapse; font-size: 15px; }
+.l-more-body th, .l-more-body td { padding: 12px 14px; text-align: left; border-bottom: 1px solid rgba(255, 255, 255, .14); vertical-align: top; }
+.l-more-body th { font-weight: 600; color: #fff; }
+.l-more-body .note, .l-more-body .dora-note { font-size: 15px; color: rgba(255, 255, 255, .7); }
+.l-more-body details { border-top: 1px solid rgba(255, 255, 255, .16); padding: 18px 0; margin: 0; }
+.l-more-body details + :not(details) { border-top: 1px solid rgba(255, 255, 255, .16); padding-top: 18px; }
+.l-more-body summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 16px; font: 700 19px/1.3 var(--display); color: #fff; }
+.l-more-body summary::-webkit-details-marker { display: none; }
+.l-more-body summary::after { content: "+"; font-weight: 400; font-size: 24px; line-height: 1; transition: transform .3s var(--ease); }
+.l-more-body details[open] summary::after { transform: rotate(45deg); }
+.l-more-body details p { margin-top: 10px; }
+/* related guides: quiet, for readers who want more and for crawlers */
+.l-more-body .app-guides { margin-top: 64px; font-size: 13px; }
+.l-more-body .app-guides h2 { font-size: 15px; font-family: var(--sans); letter-spacing: 0; margin: 0 0 10px; color: rgba(255, 255, 255, .7); font-weight: 600; }
+.l-more-body .app-guides ul { list-style: none; padding: 0; columns: 2; column-gap: 32px; }
+.l-more-body .app-guides li { padding: 3px 0; break-inside: avoid; }
+.l-more-body .app-guides a { color: rgba(255, 255, 255, .6); text-decoration: none; }
+.l-more-body .app-guides a:hover { color: #fff; }
+.l-more-body .app-guides p { margin: 14px 0 6px; color: rgba(255, 255, 255, .6); }
+/* Dora page blocks */
+.l-more-body .dora-proof__top { display: flex; gap: 28px; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; }
+.l-more-body .dora-proof__top h2 { margin-top: 0; }
+.l-more-body .dora-stat strong { display: block; font: 800 52px/1 var(--display); letter-spacing: -0.03em; color: #fff; }
+.l-more-body .dora-stat span { font-size: 14px; color: rgba(255, 255, 255, .75); }
+.l-more-body .dora-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+.l-more-body .dora-pills span { padding: 6px 12px; border-radius: 999px; background: rgba(255, 255, 255, .12); font-size: 14px; }
+.l-more-body .dora-guides, .l-more-body .dora-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 22px; }
+.l-more-body .dora-guide { text-decoration: none; display: block; transition: background .3s; }
+.l-more-body .dora-guide:hover { background: rgba(255, 255, 255, .14); }
+.l-more-body .dora-split { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.l-more-body .dora-list { padding-left: 18px; margin: 8px 0 0; }
+.l-more-body .dora-request { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.l-more-body .dora-bubble { background: #fff; color: #1b1b1f; border-radius: 20px 20px 20px 6px; padding: 22px; }
+.l-more-body .dora-bubble small { display: block; color: #6b6a70; margin-bottom: 6px; }
+.l-more-body .dora-decision { padding: 12px 0; border-bottom: 1px solid rgba(255, 255, 255, .14); }
+.l-more-body .dora-decision span { display: block; font-size: 13px; color: rgba(255, 255, 255, .7); }
+.l-more-body .dora-price { display: grid; grid-template-columns: 2fr 1fr 80px; gap: 12px; padding: 14px 0; border-bottom: 1px solid rgba(255, 255, 255, .14); }
+.l-more-body .dora-price small { display: block; color: rgba(255, 255, 255, .7); }
+.l-more-body .dora-price--head { font-size: 13px; color: rgba(255, 255, 255, .7); }
+.l-more-body .dora-section__head p { color: rgba(255, 255, 255, .85); }
+@media (max-width: 900px) {
+  .l-more-body { border-radius: 24px; }
+  .l-more-body ul.features, .l-more-body .dora-guides, .l-more-body .dora-grid, .l-more-body .dora-split, .l-more-body .dora-request { grid-template-columns: 1fr; }
+  .l-more-body .app-guides ul { columns: 1; }
+}
+.l-more-body .app-guides, .l-more-body .app-guides h2 { font-size: 13px !important; text-align: left !important; }
+.l-more-body .app-guides h2 { font-size: 15px !important; }

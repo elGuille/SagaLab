@@ -31,179 +31,39 @@
     }
   }
   </script>
-  <style>
-    :root { --bg:#fff; --fg:#0b0b0b; --muted:#5b5b5b; --btn:#111; --btnfg:#fff; }
-    @media (prefers-color-scheme: dark) {
-      :root { --bg:#0b0b0b; --fg:#f8f8f8; --muted:#b5b5b5; --btn:#fff; --btnfg:#111; }
-    }
-    * { box-sizing: border-box; }
-    html,body { height:100%; }
-    body {
-      margin:0;
-      background:var(--bg);
-      color:var(--fg);
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif;
-      -webkit-font-smoothing: antialiased;
-      line-height:1.15;
-    }
-    .wrap {
-      min-height:100%;
-      display:grid;
-      place-items:center;
-      padding: clamp(16px, 4vw, 48px);
-    }
-    .card {
-      text-align:center;
-      max-width: 1400px;
-      width:100%;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 50px;
-      align-items: center;
-    }
-    .card-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-    }
-    .logo-img {
-      width: clamp(380px, 50vw, 520px);
-      height: auto;
-      margin-bottom: 0;
-      border-radius: 0;
-      box-shadow: none;
-      order: -1;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .logo-img img {
-      width: 100%;
-      height: auto;
-      border-radius: 16px;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-      transition: box-shadow 0.3s ease;
-    }
-    .logo-img img:hover {
-      box-shadow: 0 20px 50px rgba(59, 130, 246, 0.2);
-    }
-    @media (min-width: 1024px) {
-      .card {
-        grid-template-columns: 1fr 1fr;
-        max-width: 1400px;
-        gap: 80px;
-      }
-      .card-content {
-        gap: 28px;
-        text-align: center;
-        align-items: center;
-        grid-column: 2;
-        grid-row: 1;
-      }
-      .logo-img {
-        width: 100%;
-        grid-column: 1;
-        grid-row: 1;
-        order: 0;
-      }
-    }
-    h1 {
-      margin:0 0 20px;
-      font-weight:800;
-      letter-spacing:-0.02em;
-      font-size: clamp(40px, 8vw, 88px);
-      line-height: 0.97;
-    }
-    p {
-      margin:0 0 28px;
-      font-size: clamp(16px, 2.8vw, 24px);
-      color:var(--muted);
-    }
-    @keyframes vibrate {
-      0%, 100% { transform: rotate(0deg); }
-      2%, 98% { transform: rotate(0deg); }
-      5% { transform: rotate(-3deg); }
-      8% { transform: rotate(3deg); }
-      11% { transform: rotate(-3deg); }
-      14% { transform: rotate(3deg); }
-      17% { transform: rotate(-3deg); }
-      20% { transform: rotate(0deg); }
-    }
-    .cta {
-      display:inline-block;
-      text-decoration:none;
-      background:#3b82f6;
-      color:#fff;
-      border-radius: 14px;
-      padding: clamp(14px, 3.2vw, 22px) clamp(24px, 6vw, 40px);
-      font-size: clamp(18px, 3.5vw, 28px);
-      font-weight: 800;
-      letter-spacing: 0.2px;
-      line-height:1;
-      transition: transform .06s ease;
-      animation: vibrate 2.5s linear infinite;
-    }
-    .cta:active { transform: translateY(1px); }
-    footer {
-      margin-top: 28px;
-      font-size: 12px;
-      color: var(--muted);
-      opacity:.9;
-    }
-    footer a {
-      color: var(--muted);
-      text-decoration: none;
-      transition: color 0.2s ease;
-    }
-    footer a:hover {
-      color: var(--fg);
-      text-decoration: underline;
-    }
-    @media (min-width: 1024px) {
-      footer {
-        grid-column: 1 / -1;
-        margin-top: 40px;
-        text-align: center;
-      }
-    }
-    .sticky-cta {
-      position: fixed;
-      left: 50%;
-      bottom: clamp(12px, 3vw, 24px);
-      transform: translateX(-50%);
-      z-index: 10;
-      display: none;
-    }
-    @media (max-width: 640px) {
-      .card {
-        text-align: center;
-      }
-      h1, p, .cta {
-        text-align: center;
-      }
-      .logo-img {
-        width: 280px;
-      }
-    }
-    .sr-only {
-      position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden;
-      clip:rect(0,0,0,0); border:0;
-    }
-  </style>
     <script src="/umami.js" defer></script>
+<link rel="preload" href="fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="studio.css">
+<meta name="theme-color" content="#08090c">
 </head>
-<body>
-  <main class="wrap">
-    <div class="card">
-      <img src="images/crypton.png" alt="Crypton Crypto Portfolio Tracker" class="logo-img" loading="lazy" />
-      <div class="card-content">
-        <h1>Crypton<br/>Crypto<br/>Tracker</h1>
-        <p>Prices for the top 250 coins, favourites and a simple portfolio tracker. Free, no account needed.</p>
-
-        <a class="cta" href="https://apps.apple.com/app/id1143691286?pt=118348020&amp;ct=aisagalab-crypton">
-          Download on the App Store
-        </a>
+<body class="landing" style="--bg:linear-gradient(150deg,#0b6b5a 0%,#123f6b 60%,#2b1d6b 100%)">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap">
+    <a href="index.html" class="brand" aria-label="Saga Lab home"><svg viewBox="0 0 22 22" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff4f8f"/><stop offset=".55" stop-color="#ff9f1c"/><stop offset="1" stop-color="#19c3b4"/></linearGradient></defs><rect width="22" height="22" rx="6.5" fill="url(#lg)"/><path d="M7 14.6c.9.8 2.3 1.3 3.9 1.3 2 0 3.3-.9 3.3-2.3 0-3.2-6.8-1.6-6.8-4.7 0-1.3 1.2-2.3 3.1-2.3 1.3 0 2.5.4 3.3 1.1" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>Saga Lab</a>
+    <a class="l-back" href="index.html#apps">All apps</a>
+  </div>
+</header>
+<main id="main">
+  <section class="l-hero">
+    <div class="wrap">
+      <div class="l-copy">
+        <div class="app-id"><img src="images/apps/crypton/icon.webp" alt="" width="64" height="64"><div><p class="l-name">Crypton</p><span class="platform">Crypto tracker · iPhone</span></div></div>
+        <h1>Live prices, alerts and your portfolio.</h1>
+        <p class="l-desc">Every coin with its live price, charts from one day to one year, and home screen widgets.</p>
+        <div class="links"><a class="badge" href="https://apps.apple.com/app/apple-store/id1143691286?pt=118348020&amp;ct=aisagalab-crypton&amp;mt=8" target="_blank" rel="noopener noreferrer" aria-label="Download Crypton on the App Store"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg><span><small>Download on the</small>App Store</span></a></div>
       </div>
+      <div class="l-shots" aria-hidden="true"><img src="images/apps/crypton/shot2.webp" alt="Crypton screenshot" width="1290" height="2796"><img src="images/apps/crypton/shot3.webp" alt="Crypton screenshot" width="1290" height="2796" fetchpriority="high"><img src="images/apps/crypton/shot1.webp" alt="Crypton screenshot" width="1290" height="2796" loading="lazy"></div>
+    </div>
+  </section>
+  <section class="l-feat" aria-label="What Crypton does">
+    <div class="wrap feat-grid">
+      <div class="feat-phone" aria-hidden="true"><img src="images/apps/crypton/shot1.webp" alt="" width="1290" height="2796" loading="lazy" class="on"><img src="images/apps/crypton/shot2.webp" alt="" width="1290" height="2796" loading="lazy"><img src="images/apps/crypton/shot3.webp" alt="" width="1290" height="2796" loading="lazy"><img src="images/apps/crypton/shot4.webp" alt="" width="1290" height="2796" loading="lazy"></div>
+      <ol class="feat-list"><li class="on"><img class="m-only" src="images/apps/crypton/shot1.webp" alt="" width="1290" height="2796" loading="lazy"><h2>Home screen widgets.</h2></li><li><img class="m-only" src="images/apps/crypton/shot2.webp" alt="" width="1290" height="2796" loading="lazy"><h2>Every coin, live prices.</h2></li><li><img class="m-only" src="images/apps/crypton/shot3.webp" alt="" width="1290" height="2796" loading="lazy"><h2>Beautifully simple.</h2></li><li><img class="m-only" src="images/apps/crypton/shot4.webp" alt="" width="1290" height="2796" loading="lazy"><h2>Charts from 1D to 1Y.</h2></li></ol>
+    </div>
+  </section>
+  <section class="l-more" aria-label="Crypton in detail"><div class="wrap"><div class="l-more-body">
+<p>Prices for the top 250 coins, favourites and a simple portfolio tracker. Free, no account needed.</p>
 <!-- related:start -->
 <div class="app-guides" style="text-align:left;margin:16px 0 0;font-size:.95rem">
 <h2 style="font-size:1.1rem">Guides</h2>
@@ -221,27 +81,20 @@
 </ul>
 </div>
 <!-- related:end -->
-      <footer>
-        <a href="privacy.html">Privacy</a> • <a href="terms.html">Terms</a>
-      </footer>
+</div></div></section><!-- /l-more -->
+<section class="l-end">
+    <div class="wrap">
+      <h2>Crypton</h2>
+      <div class="links"><a class="badge" href="https://apps.apple.com/app/apple-store/id1143691286?pt=118348020&amp;ct=aisagalab-crypton&amp;mt=8" target="_blank" rel="noopener noreferrer" aria-label="Download Crypton on the App Store"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg><span><small>Download on the</small>App Store</span></a></div>
     </div>
-  </main>
-
-  <!-- UTM Parameter Tracking -->
-  <script>
-    (function(){
-      const params = new URLSearchParams(location.search);
-      const utm = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term']
-        .reduce((acc,k)=>{ if(params.get(k)) acc[k]=params.get(k); return acc; },{});
-      const links = document.querySelectorAll('.cta');
-      links.forEach(a=>{
-        try {
-          const url = new URL(a.href);
-          Object.entries(utm).forEach(([k,v])=> url.searchParams.set(k,v));
-          a.href = url.toString();
-        } catch(e){}
-      });
-    })();
-  </script>
+  </section>
+</main>
+<footer class="l-foot">
+  <div class="wrap">
+    <span>&copy; 2026 Saga Lab</span>
+    <nav aria-label="More about Crypton"><a href="index.html">Saga Lab</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav>
+  </div>
+</footer>
+<script src="studio.js" defer></script>
 </body>
 </html>
