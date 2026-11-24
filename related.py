@@ -186,7 +186,7 @@ GROUPS = {
 }
 
 # ficha de cada app (en la raiz, en ingles) -> app
-LANDINGS = {"keeper.html": "Photo Vault", "pinku.html": "Pinku", "drop.html": "Drop",
+LANDINGS = {"ai-video-generator.html": "Dora", "keeper.html": "Photo Vault", "pinku.html": "Pinku", "drop.html": "Drop",
             "3things.html": "3 Tasks", "crypton.html": "Crypton", "brainy.html": "Brainy"}
 
 START, END = "<!-- related:start -->", "<!-- related:end -->"
@@ -264,7 +264,10 @@ def inject():
     for f, app in LANDINGS.items():
         full = os.path.join(ROOT, f)
         s = _BLOCK.sub("\n", open(full, encoding="utf-8").read())
-        if f in ("3things.html", "crypton.html"):
+        if "<!-- related:slot -->" in s:  # paginas con el diseño de tarjeta: guias en el footer
+            k = s.find("<!-- related:slot -->")
+            s = s[:k] + landing_block(f, app) + s[k:]
+        elif f in ("3things.html", "crypton.html"):
             k = s.find("      <footer>")
             s = s[:k] + landing_block(f, app, card=True) + s[k:]
         else:

@@ -13,7 +13,8 @@ import sys
 import ct
 import build_app_landings as L
 
-PAGE = {"ai-video-generator.html": "dora", "pinku.html": "pinku", "keeper.html": "photo-vault",
+PAGE = {  # pagina -> slug en build_app_landings.APPS
+        "ai-video-generator.html": "dora", "pinku.html": "pinku", "keeper.html": "photo-vault",
         "fastai.html": "ask-ai", "brainy.html": "brainy", "drop.html": "drop",
         "crypton.html": "crypton", "3things.html": "3-tasks"}
 HEAD_ADD = ('<link rel="preload" href="fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>\n'
@@ -44,6 +45,9 @@ def convert(path):
     head, body = src.split("<body", 1)
     body = body.split(">", 1)[1]
     content = old_content(body)
+    rel = re.search(r"<!-- related:start -->.*?<!-- related:end -->", body, re.S)
+    rel = rel.group(0) if rel else ""
+    content = content.replace(rel, "").strip() if rel else content
     # head: fuera el estilo antiguo, dentro studio.css
     head = re.sub(r"\s*<style>.*?</style>", "", head, flags=re.S)
     head = re.sub(r'\s*<link rel="(?:stylesheet|preload)" href="style\.css"[^>]*>', "", head)
@@ -61,6 +65,9 @@ def convert(path):
             % (a[2], content))
     end = end.replace('<section class="l-end">', more + '<section class="l-end">', 1)
     body = top + end
+    more_foot = ('<details class="foot-more"><summary>Guides and articles about %s</summary>\n%s\n<!-- related:slot -->\n</details>\n' % (a[2], rel))
+    body = re.sub(r'<details class="foot-more">.*?</details>\n', "", body, flags=re.S)
+    body = body.replace('<footer class="l-foot">\n  <div class="wrap">', '<footer class="l-foot">\n  <div class="wrap">\n' + more_foot, 1)
     html = "%s<body class=\"landing\" style=\"--bg:%s\">\n%s\n<script src=\"studio.js\" defer></script>\n</body>\n</html>\n" % (head, a[6], body.strip())
     html = ct.retag(html, path)
     open(path, "w", encoding="utf-8").write(html)
