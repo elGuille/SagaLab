@@ -56,14 +56,25 @@ def ct_for(path, site="aisagalab"):
     return key
 
 
-def _fix(url, ct, plain=False):
+# Un solo ct por web y app (Growth, 24 nov 2026): aisagalab-dora, aisagalab-photovault...
+# Apple oculta las campanas con pocas descargas; la atribucion por pagina sale del evento store_click de Umami.
+APP_SLUG = {"6754180384": "dora", "1532670722": "photovault", "6754878073": "pinku", "6833951195": "carscreen",
+            "1662608035": "askai", "1667947372": "brainy", "1462269642": "drop", "1143691286": "crypton",
+            "1553693943": "3tasks"}
+
+
+def site_ct(app_id, site="aisagalab"):
+    return "%s-%s" % (site, APP_SLUG.get(app_id, app_id))
+
+
+def _fix(url, ct, plain=False, page_ct=None):
     m = _URL.match(url)
     if not m or m.group(1) not in OURS:
         return url
     base, _, q = url.partition("?")
     sep = "&" if plain or ("&" in q and "&amp;" not in q) else "&amp;"
     rest = [p for p in re.split(r"&amp;|&", q) if p and not p.startswith(("ct=", "pt=", "ppid="))]
-    extra = ["ppid=" + askai_ppid(ct)] if m.group(1) == ASKAI_ID else []
+    extra = ["ppid=" + askai_ppid(page_ct or ct)] if m.group(1) == ASKAI_ID else []
     return base + "?" + sep.join(["pt=" + PT, "ct=" + ct] + extra + rest)
 
 
@@ -97,14 +108,35 @@ def add_play(html, path, site="aisagalab"):
     return _A.sub(sub, html)
 
 
+def add_banner(html, path, site="aisagalab"):
+    """Smart App Banner (una meta por pagina): Dora en paginas de IA video; Photo Vault si la pagina va de fotos privadas."""
+    html = re.sub(r'<meta name="apple-itunes-app"[^>]*>\n?', "", html)
+    p = path.replace("\\", "/")
+    if not (p.startswith("blog/") and p.endswith(".html") and not p.endswith("index.html")) or "<head" not in html:
+        return html
+    body = _LD.sub("", html)
+    dora = len(re.findall(r"apps\.apple\.com/[^\"'\s<>]*id6754180384", body))
+    pv = len(re.findall(r"apps\.apple\.com/[^\"'\s<>]*id1532670722", body))
+    if pv > dora:
+        app, tag = "1532670722", "pv"
+    elif dora:
+        app, tag = "6754180384", "dora"
+    else:
+        return html
+    meta = '<meta name="apple-itunes-app" content="app-id=%s, affiliate-data=ct=%s-%s-banner&amp;pt=%s">' % (app, site, tag, PT)
+    return re.sub(r"(<meta charset=[^>]*>)", lambda m: m.group(1) + "\n" + meta, html, count=1) if "<meta charset" in html else html.replace("<head>", "<head>\n" + meta, 1)
+
+
 def retag(html, path, site="aisagalab"):
-    ct = ct_for(path, site)
+    page_ct = ct_for(path, site)
     out = []
     for i, chunk in enumerate(_LD.split(html)):
-        out.append(chunk if i % 2 else _URL.sub(lambda m: _fix(m.group(0), ct, path.endswith(".txt")), chunk))
+        out.append(chunk if i % 2 else _URL.sub(lambda m: _fix(m.group(0), site_ct(m.group(1), site), path.endswith(".txt"), page_ct), chunk))
     html = "".join(out)
     if not path.endswith(".txt"):
         html = "".join(c if i % 2 else add_play(c, path, site) for i, c in enumerate(_LD.split(html)))
+    if not path.endswith(".txt"):
+        html = add_banner(html, path, site)
     return html
 
 

@@ -88,3 +88,35 @@
   document.addEventListener('click', onPress, true);
   document.addEventListener('auxclick', onPress, true);
 })();
+
+/* Clics a tiendas y a doravideo.com como evento de Umami (Growth, 24 nov 2026).
+   Apple oculta las campanas ct por articulo (<5 descargas/dia): la atribucion por pagina sale de aqui.
+   store_click {store: app_store|google_play|doravideo, app: id de la app / package / 'dora-web', page: ruta}.
+   No cancela el clic: el enlace sigue su camino. */
+(function () {
+  function info(href) {
+    var u;
+    try { u = new URL(href, location.href); } catch (e) { return null; }
+    var h = u.hostname.replace(/^www\./, '');
+    if (h === 'apps.apple.com') {
+      var m = u.pathname.match(/\/id(\d+)/);
+      return { store: 'app_store', app: m ? m[1] : 'unknown' };
+    }
+    if (h === 'play.google.com') return { store: 'google_play', app: u.searchParams.get('id') || 'unknown' };
+    if (h === 'doravideo.com') return { store: 'doravideo', app: 'dora-web' };
+    return null;
+  }
+  function onClick(e) {
+    try {
+      var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+      if (!a) return;
+      var d = info(a.getAttribute('href'));
+      if (d && window.umami && typeof window.umami.track === 'function') {
+        d.page = location.pathname;
+        window.umami.track('store_click', d);
+      }
+    } catch (err) {}
+  }
+  document.addEventListener('click', onClick, true);
+  document.addEventListener('auxclick', onClick, true);
+})();
