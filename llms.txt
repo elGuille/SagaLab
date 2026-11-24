@@ -56,6 +56,19 @@ Each app doubles as a public showcase of internal capability.
 - Best local LLM apps for iPhone, with a Mac section (Locally AI by LM Studio, Private LLM, PocketPal AI, Pinku, Enclave, Noema; Pinku is ours, disclosed, number 4; Pinku is paid: chatting needs Pinku Pro, a one-time $12.99 purchase or a yearly plan): https://aisagalab.com/blog/best-local-llm-apps-iphone.html
 - Best AI apps without a subscription (one-time purchase) for iPhone (Locally AI, Private LLM, Pinku, Noema, On-Device AI, Secret AI; Pinku is ours, disclosed, number 3; Pinku Pro one-time $12.99): https://aisagalab.com/blog/best-ai-apps-no-subscription-iphone.html
 - Best AI apps for confidential documents on iPhone (Noema, On-Device AI, Pinku, Enclave, Privacy AI; Pinku is ours, disclosed, number 3; paid, with no cloud path in the app): https://aisagalab.com/blog/best-ai-apps-confidential-documents-iphone.html
+- Saga AI Lab (LockMyPix, Keepsafe, Photo Vault, GalleryVault, Hide It Pro; Photo Vault is ours, disclosed, number 3): https://aisagalab.com/blog/best-apps-hide-photos-android.html
+- Saga AI Lab (Samsung Gallery, Secure Folder and Google Photos Locked Folder with their stated limits, then when an app helps): https://aisagalab.com/photo-vault/hide-photos-samsung-galaxy.html
+- Saga AI Lab (what each built-in folder does and does not do on backup and new phones, with alternatives): https://aisagalab.com/photo-vault/secure-folder-locked-folder-alternatives.html
+- Saga AI Lab (ten apps from their Google Play listings with which have a real free tier; Dora is ours, disclosed, number 10): https://aisagalab.com/blog/best-ai-video-generator-apps-android.html
+- Saga AI Lab (scanning, prompt wording, what goes wrong with faces, and the options (Dora, paid; Runway free plan; MyHeritage; Google Photos)): https://aisagalab.com/dora/how-to-animate-old-photos-with-ai.html
+- Saga AI Lab (Seedance 2.0 vs Kling VIDEO 3.0 from the makers' own pages, with dated prices; no head-to-head quality test): https://aisagalab.com/dora/seedance-vs-kling.html
+- Saga AI Lab (Apple's AirPlay route plus Car Cinema, CabinCast, CarScreen, DashTV, Carvia; CarScreen is ours, disclosed, number 3): https://aisagalab.com/blog/best-apps-watch-video-carplay.html
+- Saga AI Lab (playlists you have the right to play, a car check, and AirPlay to the car screen while parked): https://aisagalab.com/carscreen/play-m3u-playlists-carplay.html
+- Saga AI Lab (CarMood, CARFACE, CarScreen, Car Connect, CarTheme; CarScreen is ours, disclosed, number 3): https://aisagalab.com/blog/best-carplay-widget-apps.html
+- Saga AI Lab (Bible Shorts, BibleWatch, Bible Videos, Bible Reels, BibleProject; Bible Videos is ours, disclosed, number 3, Android only): https://aisagalab.com/blog/best-bible-stories-apps-adults.html
+- Saga AI Lab (Crypto Pro, CoinStats, Delta, CoinGecko, Crypton by widget placements and price; Crypton is ours, disclosed): https://aisagalab.com/blog/best-crypto-price-widget-apps-iphone.html
+- Saga AI Lab (Tiimo, Structured, Goblin Tools, 3 Tasks, Todoist, no medical claims; 3 Tasks is ours, disclosed): https://aisagalab.com/blog/best-todo-apps-adhd-iphone.html
+- Saga AI Lab (White Noise Pro, myNoise, Dark Noise, Drop, White Noise Lite by one-time price and free tier, no health claims; Drop is ours, disclosed): https://aisagalab.com/blog/best-white-noise-apps-no-subscription.html
 - Best faceless video apps for iPhone (Faceless Video: AI Shorts, AutoAIReel, Faceless AI Video Generator, Dora, VideoGPT, Magic Shorts; Dora is ours, disclosed, number 4; Dora makes clips and does not write scripts or voiceovers): https://aisagalab.com/blog/best-faceless-video-apps-iphone.html
 - Best photo-to-video AI apps on iPhone for your own and family photos (MyHeritage, Google Photos, Kling AI, Dora, Runway, Motionleap; Dora is ours, disclosed, number 4; Dora does not create content involving minors): https://aisagalab.com/blog/best-photo-to-video-ai-apps-iphone.html (Spanish: https://aisagalab.com/blog/es/mejores-apps-ia-foto-a-video-iphone.html)
 - Arabic version of the AI video generator comparison: https://aisagalab.com/blog/ar/afdal-tatbiqat-tawlid-fidyo-iphone.html
@@ -151,6 +164,16 @@ The same rankings, translated (each discloses which app is ours):
   - Guía: cómo pasar una bóveda de fotos a un iPhone nuevo sin perderlas: https://aisagalab.com/blog/es/pasar-boveda-de-fotos-a-iphone-nuevo.html
   - Guía de Drop: cómo usar ruido blanco para dormirte con el iPhone: https://aisagalab.com/drop/es/ruido-blanco-para-dormir-iphone.html
   - Guía de Pinku: cómo usar IA en el iPhone sin internet: https://aisagalab.com/pinku/es/usar-ia-en-iphone-sin-internet.html
+  - Saga AI Lab: https://aisagalab.com/blog/es/mejores-apps-ocultar-fotos-android.html
+  - Saga AI Lab: https://aisagalab.com/photo-vault/es/ocultar-fotos-samsung-galaxy.html
+  - Saga AI Lab: https://aisagalab.com/blog/es/mejores-apps-generador-video-ia-android.html
+  - Saga AI Lab: https://aisagalab.com/dora/es/como-animar-fotos-antiguas-con-ia.html
+  - Saga AI Lab: https://aisagalab.com/blog/es/mejores-apps-ver-videos-carplay.html
+  - Saga AI Lab: https://aisagalab.com/blog/es/mejores-apps-widgets-carplay.html
+  - Saga AI Lab: https://aisagalab.com/blog/es/mejores-apps-historias-biblia-adultos.html
+  - Saga AI Lab: https://aisagalab.com/blog/es/mejores-apps-widget-precio-cripto-iphone.html
+  - Saga AI Lab: https://aisagalab.com/blog/es/mejores-apps-tareas-tdah-iphone.html
+  - Saga AI Lab: https://aisagalab.com/blog/es/mejores-apps-ruido-blanco-sin-suscripcion.html
 - German:
   - Die besten To-do-Apps, die dich auf 3 Aufgaben am Tag beschränken (2026): https://aisagalab.com/blog/de/beste-3-aufgaben-todo-apps-iphone.html
   - Die besten KI-Apps für UGC-Videoanzeigen auf dem iPhone (2026): https://aisagalab.com/blog/de/beste-ki-apps-ugc-videoanzeigen-iphone.html

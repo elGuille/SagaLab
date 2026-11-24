@@ -22,7 +22,7 @@ RD = "https://reditor.cloud/"
 GROUPS = {
     "Photo Vault": {
         "en": ([
-            "photo-vault/delete-photo-vault-app-lose-photos.html",
+"blog/best-apps-hide-photos-android.html", "photo-vault/hide-photos-samsung-galaxy.html", "photo-vault/secure-folder-locked-folder-alternatives.html",             "photo-vault/delete-photo-vault-app-lose-photos.html",
             "photo-vault/protect-photos-of-id-passport-cards-iphone.html",
             "photo-vault/is-iphone-hidden-album-safe.html",
             "photo-vault/before-lending-iphone-or-taking-it-to-repair.html",
@@ -38,7 +38,7 @@ GROUPS = {
             (RL + "best-photo-vault-apps-no-data-collection-iphone/", "Best photo vault apps with no data collection for iPhone (Reviewland)"),
         ]),
         "es": ([
-            "photo-vault/es/borrar-app-de-boveda-pierdo-las-fotos.html",
+"blog/es/mejores-apps-ocultar-fotos-android.html", "photo-vault/es/ocultar-fotos-samsung-galaxy.html",             "photo-vault/es/borrar-app-de-boveda-pierdo-las-fotos.html",
             "photo-vault/es/proteger-fotos-del-dni-pasaporte-y-tarjetas-en-iphone.html",
             "photo-vault/es/es-seguro-el-album-oculto-del-iphone.html",
             "photo-vault/es/antes-de-prestar-el-iphone-o-llevarlo-a-reparar.html",
@@ -103,7 +103,7 @@ GROUPS = {
     },
     "Drop": {
         "en": ([
-            "drop/white-noise-for-baby-sleep.html",
+"blog/best-white-noise-apps-no-subscription.html",             "drop/white-noise-for-baby-sleep.html",
             "drop/brown-noise-vs-pink-noise-vs-white-noise.html",
             "drop/white-noise-to-fall-asleep-iphone.html",
             "blog/best-white-noise-sleep-sound-apps-iphone.html",
@@ -112,7 +112,7 @@ GROUPS = {
             (RL + "calm-alternatives-iphone/", "Calm alternatives for iPhone in 2026 (Reviewland)"),
         ]),
         "es": ([
-            "drop/es/ruido-blanco-para-que-el-bebe-duerma.html",
+"blog/es/mejores-apps-ruido-blanco-sin-suscripcion.html",             "drop/es/ruido-blanco-para-que-el-bebe-duerma.html",
             "drop/es/ruido-marron-rosa-o-blanco.html",
             "drop/es/ruido-blanco-para-dormir-iphone.html",
             "blog/es/mejores-apps-ruido-blanco-sonidos-dormir-iphone.html",
@@ -123,7 +123,7 @@ GROUPS = {
     },
     "3 Tasks": {
         "en": ([
-            "3-tasks/stop-procrastinating-with-a-3-task-list.html",
+"blog/best-todo-apps-adhd-iphone.html",             "3-tasks/stop-procrastinating-with-a-3-task-list.html",
             "3-tasks/pomodoro-timer-on-iphone.html",
             "3-tasks/3-task-method-ivy-lee-rule-of-3.html",
             "blog/best-3-task-todo-apps-iphone.html",
@@ -132,7 +132,7 @@ GROUPS = {
             (RL + "todoist-alternatives-iphone/", "Todoist alternatives for iPhone in 2026 (Reviewland)"),
         ]),
         "es": ([
-            "3-tasks/es/dejar-de-procrastinar-con-una-lista-de-3-tareas.html",
+"blog/es/mejores-apps-tareas-tdah-iphone.html",             "3-tasks/es/dejar-de-procrastinar-con-una-lista-de-3-tareas.html",
             "3-tasks/es/temporizador-pomodoro-en-el-iphone.html",
             "3-tasks/es/metodo-de-3-tareas-ivy-lee-regla-de-3.html",
             "blog/es/mejores-apps-3-tareas-al-dia-iphone.html",
@@ -142,12 +142,12 @@ GROUPS = {
         ]),
     },
     "Crypton": {
-        "en": (["crypton/track-crypto-prices-without-giving-your-data.html", "blog/best-crypto-portfolio-tracker-apps-iphone.html"], [
+        "en": (["blog/best-crypto-price-widget-apps-iphone.html", "crypton/track-crypto-prices-without-giving-your-data.html", "blog/best-crypto-portfolio-tracker-apps-iphone.html"], [
             (RL + "best-crypto-price-widget-apps-iphone/", "Best crypto price tracker apps for iPhone in 2026 (Reviewland)"),
             (RL + "best-free-crypto-portfolio-tracker-apps-iphone/", "Best free crypto portfolio trackers for iPhone in 2026 (Reviewland)"),
             (RL + "coinstats-alternatives-iphone/", "CoinStats and Delta alternatives for iPhone in 2026 (Reviewland)"),
         ]),
-        "es": (["crypton/es/seguir-precios-cripto-sin-dar-tus-datos.html", "blog/es/mejores-apps-cartera-cripto-iphone.html"], [
+        "es": (["blog/es/mejores-apps-widget-precio-cripto-iphone.html", "crypton/es/seguir-precios-cripto-sin-dar-tus-datos.html", "blog/es/mejores-apps-cartera-cripto-iphone.html"], [
             (RL + "es/mejores-apps-precios-cripto-widgets-iphone/", "Mejores apps de precios de cripto para iPhone en 2026 (Reviewland)"),
             (RL + "es/mejores-apps-gratis-seguimiento-cartera-cripto-iphone/", "Mejores apps gratis para seguir tu cartera de criptomonedas (Reviewland)"),
             (RL + "es/alternativas-a-coinstats-y-delta-iphone/", "Alternativas a CoinStats y Delta para iPhone en 2026 (Reviewland)"),
@@ -164,7 +164,7 @@ GROUPS = {
         ]),
     },
     "Dora": {
-        "en": (["dora/how-to-make-a-video-with-chatgpt.html", "dora/best-chatgpt-plugins-video-images-2026.html", "blog/best-ai-video-generator-apps-iphone.html", "blog/best-ai-apps-ugc-video-ads-iphone.html", "blog/best-ai-apps-youtube-shorts-iphone.html", "blog/best-ai-anime-video-apps-iphone.html", "blog/best-photo-to-video-ai-apps-iphone.html", "dora/chatgpt-video-generator-cost.html", "dora/how-to-make-images-in-claude.html", "dora/how-to-animate-a-photo-in-claude.html"], [
+        "en": (["blog/best-ai-video-generator-apps-android.html", "dora/how-to-animate-old-photos-with-ai.html", "dora/seedance-vs-kling.html", "dora/how-to-make-a-video-with-chatgpt.html", "dora/best-chatgpt-plugins-video-images-2026.html", "blog/best-ai-video-generator-apps-iphone.html", "blog/best-ai-apps-ugc-video-ads-iphone.html", "blog/best-ai-apps-youtube-shorts-iphone.html", "blog/best-ai-anime-video-apps-iphone.html", "blog/best-photo-to-video-ai-apps-iphone.html", "dora/chatgpt-video-generator-cost.html", "dora/how-to-make-images-in-claude.html", "dora/how-to-animate-a-photo-in-claude.html"], [
             (RD + "best-ai-image-to-video-apps-iphone/", "Best AI image to video apps for iPhone in 2026 (Reditor)"),
             (RD + "sora-app-alternatives-iphone/", "Best Sora app alternatives for iPhone in 2026 (Reditor)"),
             (RD + "viggle-ai-alternatives-iphone/", "Viggle AI alternatives for iPhone in 2026 (Reditor)"),
@@ -172,7 +172,7 @@ GROUPS = {
             (RD + "hailuo-alternatives-iphone/", "Best Hailuo AI alternatives for iPhone in 2026 (Reditor)"),
             (RD + "pixverse-alternatives-iphone/", "Best PixVerse alternatives for iPhone in 2026 (Reditor)"),
         ]),
-        "es": (["dora/es/como-hacer-un-video-con-chatgpt.html", "dora/es/mejores-plugins-chatgpt-video-imagenes-2026.html", "blog/es/mejores-apps-generador-video-ia-iphone.html", "blog/es/mejores-apps-ia-anuncios-ugc-iphone.html", "blog/es/mejores-apps-ia-youtube-shorts-iphone.html", "blog/es/mejores-apps-ia-video-anime-iphone.html", "blog/es/mejores-apps-ia-foto-a-video-iphone.html", "dora/es/cuanto-cuesta-generar-video-con-chatgpt.html", "dora/es/como-hacer-imagenes-con-claude.html", "dora/es/como-animar-una-foto-con-claude.html"], [
+        "es": (["blog/es/mejores-apps-generador-video-ia-android.html", "dora/es/como-animar-fotos-antiguas-con-ia.html", "dora/es/como-hacer-un-video-con-chatgpt.html", "dora/es/mejores-plugins-chatgpt-video-imagenes-2026.html", "blog/es/mejores-apps-generador-video-ia-iphone.html", "blog/es/mejores-apps-ia-anuncios-ugc-iphone.html", "blog/es/mejores-apps-ia-youtube-shorts-iphone.html", "blog/es/mejores-apps-ia-video-anime-iphone.html", "blog/es/mejores-apps-ia-foto-a-video-iphone.html", "dora/es/cuanto-cuesta-generar-video-con-chatgpt.html", "dora/es/como-hacer-imagenes-con-claude.html", "dora/es/como-animar-una-foto-con-claude.html"], [
             (RD + "es/mejores-apps-ia-de-foto-a-video-iphone/", "Mejores apps de IA para convertir una foto en vídeo en iPhone (Reditor)"),
             (RD + "es/alternativas-a-sora-iphone/", "Mejores alternativas a la app de Sora en iPhone en 2026 (Reditor)"),
             (RD + "es/alternativas-a-viggle-ai-iphone/", "Alternativas a Viggle AI para iPhone en 2026 (Reditor)"),
@@ -182,6 +182,14 @@ GROUPS = {
             ("https://aisagalab.com/blog/fr/meilleures-apps-generateur-video-ia-iphone.html", "Les meilleures apps de génération de vidéo par IA sur iPhone en 2026"),
             ("https://aisagalab.com/blog/fr/meilleures-apps-generateur-video-ia-iphone.html", "Les meilleures apps de génération de vidéo par IA sur iPhone en 2026"),
         ]),
+    },
+    "CarScreen": {
+        "en": (["blog/best-apps-watch-video-carplay.html", "carscreen/play-m3u-playlists-carplay.html", "blog/best-carplay-widget-apps.html"], []),
+        "es": (["blog/es/mejores-apps-ver-videos-carplay.html", "blog/es/mejores-apps-widgets-carplay.html"], []),
+    },
+    "Bible Videos": {
+        "en": (["blog/best-bible-stories-apps-adults.html"], []),
+        "es": (["blog/es/mejores-apps-historias-biblia-adultos.html"], []),
     },
 }
 

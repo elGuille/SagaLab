@@ -50,7 +50,7 @@ APPS = [
      [("Pinku in detail", "../pinku.html"), ("Which model fits my iPhone", "../pinku/which-ai-model-fits-my-iphone-mac.html")]),
     ("photo-vault", "keeper", "Photo Vault", "Private photos · iPhone and Android",
      "Lock away private photos and videos.",
-     "Private albums, each with its own lock, on iPhone and Android.",
+     "Private albums, each with its own lock, on iPhone. On Android, a PIN-locked vault for your photos.",
      "linear-gradient(150deg,#1d3b8a 0%,#142a63 60%,#0a1533 100%)",
      [("App Store", AS("1532670722")), ("Google Play", GP("photovault"))],
      [1, 2, 4],
