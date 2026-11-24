@@ -206,7 +206,7 @@ h1, h2, h3 { font-family: var(--display); font-optical-sizing: auto; }
   html { scroll-behavior: auto; }
   .glow span, .fan figure { animation: none; }
   .js .reveal { opacity: 1; transform: none; transition: none; }
-  .ficha .shots img, .proof-card, .btn { transition: none; }
+  .ficha, .ficha .shots img, .ficha .card-link::after, .proof-card, .btn { transition: none; }
 }
 
 /* Store badges, styled after the official App Store and Google Play badges */
@@ -298,10 +298,24 @@ body.landing { background: var(--bg); min-height: 100vh; overflow-x: clip; }
 .l-foot a:hover { color: #fff; }
 
 /* Home cards open their landing */
-.ficha { position: relative; }
-.ficha .card-link { position: absolute; inset: 0; z-index: 1; border-radius: inherit; }
-.ficha .card-link:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
-.ficha .links { position: relative; z-index: 2; }
+.ficha { position: relative; clip-path: inset(0 round 30px); transition: transform .45s var(--ease), filter .45s var(--ease); }
+.ficha .shots { pointer-events: none; }
+.ficha .card-link { position: absolute; inset: 0; z-index: 3; border-radius: inherit; cursor: pointer; }
+.ficha .card-link:focus-visible { outline: 3px solid #fff; outline-offset: -6px; }
+.ficha .card-link::after { content: "\2192"; position: absolute; top: 26px; right: 26px; width: 46px; height: 46px; display: grid; place-items: center; border-radius: 50%; font: 600 20px/1 var(--sans); color: #fff; background: rgba(0, 0, 0, .22); border: 1px solid rgba(255, 255, 255, .35); transform: rotate(-45deg); transition: transform .45s var(--ease), background-color .3s var(--ease), color .3s var(--ease); }
+.ficha .links { position: relative; z-index: 4; }
+@media (hover: hover) {
+  .ficha:hover { transform: translateY(-6px); filter: brightness(1.06); }
+  .ficha:hover .card-link::after { transform: none; background: #fff; color: #111; }
+}
+.ficha:has(.card-link:active) { transform: translateY(-2px) scale(.985); transition-duration: .12s; }
+.ficha:has(.card-link:focus-visible) .card-link::after { transform: none; background: #fff; color: #111; }
+@view-transition { navigation: auto; }
+@media (max-width: 760px) { .ficha { clip-path: inset(0 round 26px); } }
+@media (prefers-reduced-motion: reduce) {
+  .ficha:hover, .ficha:has(.card-link:active) { transform: none; }
+  @view-transition { navigation: none; }
+}
 
 @media (max-width: 900px) {
   .l-hero { min-height: 0; padding-top: 104px; }
