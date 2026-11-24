@@ -70,7 +70,7 @@ def _fix(url, ct, plain=False):
 # Google Play (Android): junto a cada enlace nuestro al App Store de Dora y Photo Vault, otro a Google Play con
 # referrer de atribucion (Marta, 24 nov 2026). Idempotente.
 PLAY = {"6754180384": "com.sagalabs.aivideo", "1532670722": "com.sagalabs.photovault"}
-_A = re.compile(r'<a\b([^>]*?)href="https://apps\.apple\.com/[^"]*?id(6754180384|1532670722)[^"]*"([^>]*)>(.*?)</a>(?!\s*(?:\(|·)?\s*<a [^>]*play\.google\.com)', re.S)
+_A = re.compile(r'<a\b([^>]*?)href="https://apps\.apple\.com/[^"]*?id(6754180384|1532670722)[^"]*"([^>]*)>((?:(?!</a>).)*)</a>(?!\s*(?:\(|·)?\s*<a [^>]*play\.google\.com)', re.S)
 
 
 def play_url(app_id, path, site="aisagalab"):
