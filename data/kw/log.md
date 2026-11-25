@@ -13,3 +13,17 @@ Published (EN+ES):
 - blog/best-sora-alternatives-iphone.html, blog/es/mejores-alternativas-a-sora-iphone.html (Dora)
 
 Search terms found: none (no exports available).
+
+## 2026-11-25 (second run)
+Data sources: App Store source and territory exports (private repo). Rounded trends only: App Store search is the dominant source for every app; Pinku has the most search impressions (mostly Russia), then Dora (Japan, US), Photo Vault (Canada, US), Ask AI (Mexico, Canada, Colombia), Crypton (China, Brazil). No Search Console or Google Play exports.
+
+Candidates considered:
+- free AI video generator no watermark iPhone (Dora): many store listings and vendor roundups that contradict each other on watermarks; no neutral source. Chosen.
+- lock photos iPhone with Face ID (Photo Vault): lots of vendor guides, but we already have 9 Photo Vault pieces. Skipped.
+- one app for ChatGPT, Claude and Gemini, Spanish (Ask AI): only vendor pages, but we already cover multi-model chat EN+ES. Skipped.
+- best crypto price alert apps iPhone (Crypton): Crypton's store listing does not mention alerts, so it cannot be included honestly. Skipped.
+
+Published (EN+ES):
+- blog/best-free-ai-video-generator-apps-iphone.html, blog/es/mejores-apps-gratis-generador-video-ia-iphone.html (Dora)
+
+Only one pair this run: no other candidate passed the fit and gap check.
