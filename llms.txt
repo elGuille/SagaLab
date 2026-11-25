@@ -65,7 +65,7 @@ Each app doubles as a public showcase of internal capability.
 - Saga AI Lab (Apple's AirPlay route plus Car Cinema, CabinCast, CarScreen, DashTV, Carvia; CarScreen is ours, disclosed, number 3): https://aisagalab.com/blog/best-apps-watch-video-carplay.html
 - Saga AI Lab (playlists you have the right to play, a car check, and AirPlay to the car screen while parked): https://aisagalab.com/carscreen/play-m3u-playlists-carplay.html
 - Saga AI Lab (CarMood, CARFACE, CarScreen, Car Connect, CarTheme; CarScreen is ours, disclosed, number 3): https://aisagalab.com/blog/best-carplay-widget-apps.html
-- Saga AI Lab (Bible Shorts, BibleWatch, Bible Videos, Bible Reels, BibleProject; Bible Videos is ours, disclosed, number 3, Android only): https://aisagalab.com/blog/best-bible-stories-apps-adults.html
+- Saga AI Lab (Bible Shorts, BibleWatch, Bible Videos, Bible Reels, BibleProject; Bible Videos is ours, disclosed, number 3, on iPhone and Android): https://aisagalab.com/blog/best-bible-stories-apps-adults.html
 - Saga AI Lab (Crypto Pro, CoinStats, Delta, CoinGecko, Crypton by widget placements and price; Crypton is ours, disclosed): https://aisagalab.com/blog/best-crypto-price-widget-apps-iphone.html
 - Saga AI Lab (Tiimo, Structured, Goblin Tools, 3 Tasks, Todoist, no medical claims; 3 Tasks is ours, disclosed): https://aisagalab.com/blog/best-todo-apps-adhd-iphone.html
 - Saga AI Lab (White Noise Pro, myNoise, Dark Noise, Drop, White Noise Lite by one-time price and free tier, no health claims; Drop is ours, disclosed): https://aisagalab.com/blog/best-white-noise-apps-no-subscription.html

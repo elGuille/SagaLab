@@ -12,7 +12,7 @@ import re
 
 PT = "118348020"
 OURS = {"1667947372", "6754878073", "1143691286", "6754180384",
-        "1553693943", "1462269642", "1662608035", "1532670722", "6833951195"}
+        "1553693943", "1462269642", "1662608035", "1532670722", "6833951195", "6833978906"}
 MAX = 40
 LANGS = {"de", "fr", "pt", "ja", "es", "ru", "zh", "ar"}
 
@@ -60,7 +60,7 @@ def ct_for(path, site="aisagalab"):
 # Apple oculta las campanas con pocas descargas; la atribucion por pagina sale del evento store_click de Umami.
 APP_SLUG = {"6754180384": "dora", "1532670722": "photovault", "6754878073": "pinku", "6833951195": "carscreen",
             "1662608035": "askai", "1667947372": "brainy", "1462269642": "drop", "1143691286": "crypton",
-            "1553693943": "3tasks"}
+            "1553693943": "3tasks", "6833978906": "biblevideo"}
 
 
 def site_ct(app_id, site="aisagalab"):
@@ -80,8 +80,8 @@ def _fix(url, ct, plain=False, page_ct=None):
 
 # Google Play (Android): junto a cada enlace nuestro al App Store de Dora y Photo Vault, otro a Google Play con
 # referrer de atribucion (Marta, 24 nov 2026). Idempotente.
-PLAY = {"6754180384": "com.sagalabs.aivideo", "1532670722": "com.sagalabs.photovault"}
-_A = re.compile(r'<a\b([^>]*?)href="https://apps\.apple\.com/[^"]*?id(6754180384|1532670722)[^"]*"([^>]*)>((?:(?!</a>).)*)</a>(?!\s*(?:\(|·)?\s*<a [^>]*play\.google\.com)', re.S)
+PLAY = {"6754180384": "com.sagalabs.aivideo", "1532670722": "com.sagalabs.photovault", "6833978906": "com.sagalabs.biblevideo"}
+_A = re.compile(r'<a\b([^>]*?)href="https://apps\.apple\.com/[^"]*?id(6754180384|1532670722|6833978906)[^"]*"([^>]*)>((?:(?!</a>).)*)</a>(?!\s*(?:\(|·)?\s*<a [^>]*play\.google\.com)', re.S)
 
 
 def play_url(app_id, path, site="aisagalab"):
