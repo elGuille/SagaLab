@@ -1,0 +1,277 @@
+app,date,source_type,event,counts,unique_counts
+3 Tasks a Day: To Do List,2026-10-19,App Store browse,Impression,358,136
+3 Tasks a Day: To Do List,2026-10-19,App Store browse,Page view,22,17
+3 Tasks a Day: To Do List,2026-10-19,App Store browse,Tap,36,29
+3 Tasks a Day: To Do List,2026-10-19,App Store search,Impression,937,738
+3 Tasks a Day: To Do List,2026-10-19,App Store search,Page view,44,30
+3 Tasks a Day: To Do List,2026-10-19,App Store search,Tap,2,2
+3 Tasks a Day: To Do List,2026-10-19,App referrer,Page view,3,3
+3 Tasks a Day: To Do List,2026-10-26,App Store browse,Impression,286,117
+3 Tasks a Day: To Do List,2026-10-26,App Store browse,Page view,28,22
+3 Tasks a Day: To Do List,2026-10-26,App Store browse,Tap,29,28
+3 Tasks a Day: To Do List,2026-10-26,App Store search,Impression,594,468
+3 Tasks a Day: To Do List,2026-10-26,App Store search,Page view,28,22
+3 Tasks a Day: To Do List,2026-10-26,App Store search,Tap,3,2
+3 Tasks a Day: To Do List,2026-10-26,App referrer,Page view,6,6
+3 Tasks a Day: To Do List,2026-10-26,Web referrer,Page view,2,2
+3 Tasks a Day: To Do List,2026-11-02,App Store browse,Impression,509,168
+3 Tasks a Day: To Do List,2026-11-02,App Store browse,Page view,23,18
+3 Tasks a Day: To Do List,2026-11-02,App Store browse,Tap,62,45
+3 Tasks a Day: To Do List,2026-11-02,App Store search,Impression,1083,883
+3 Tasks a Day: To Do List,2026-11-02,App Store search,Page view,42,32
+3 Tasks a Day: To Do List,2026-11-02,App Store search,Tap,4,4
+3 Tasks a Day: To Do List,2026-11-02,App referrer,Page view,7,6
+3 Tasks a Day: To Do List,2026-11-09,App Store browse,Impression,169,82
+3 Tasks a Day: To Do List,2026-11-09,App Store browse,Page view,12,8
+3 Tasks a Day: To Do List,2026-11-09,App Store browse,Tap,16,16
+3 Tasks a Day: To Do List,2026-11-09,App Store search,Impression,706,561
+3 Tasks a Day: To Do List,2026-11-09,App Store search,Page view,31,21
+3 Tasks a Day: To Do List,2026-11-09,App Store search,Tap,3,3
+3 Tasks a Day: To Do List,2026-11-09,App referrer,Page view,15,11
+All AI Models in One: Ask AI,2026-10-19,App Store browse,Impression,38,23
+All AI Models in One: Ask AI,2026-10-19,App Store browse,Page view,7,5
+All AI Models in One: Ask AI,2026-10-19,App Store browse,Tap,20,16
+All AI Models in One: Ask AI,2026-10-19,App Store search,Impression,1763,1553
+All AI Models in One: Ask AI,2026-10-19,App Store search,Page view,36,29
+All AI Models in One: Ask AI,2026-10-19,App Store search,Tap,13,13
+All AI Models in One: Ask AI,2026-10-19,App referrer,Page view,11,4
+All AI Models in One: Ask AI,2026-10-19,Web referrer,Page view,2,2
+All AI Models in One: Ask AI,2026-10-26,App Store browse,Impression,37,22
+All AI Models in One: Ask AI,2026-10-26,App Store browse,Page view,14,13
+All AI Models in One: Ask AI,2026-10-26,App Store browse,Tap,21,21
+All AI Models in One: Ask AI,2026-10-26,App Store search,Impression,2909,2583
+All AI Models in One: Ask AI,2026-10-26,App Store search,Page view,58,49
+All AI Models in One: Ask AI,2026-10-26,App Store search,Tap,41,32
+All AI Models in One: Ask AI,2026-10-26,App referrer,Page view,7,7
+All AI Models in One: Ask AI,2026-10-26,Web referrer,Page view,6,6
+All AI Models in One: Ask AI,2026-11-02,App Store browse,Impression,50,39
+All AI Models in One: Ask AI,2026-11-02,App Store browse,Page view,14,9
+All AI Models in One: Ask AI,2026-11-02,App Store browse,Tap,24,19
+All AI Models in One: Ask AI,2026-11-02,App Store search,Impression,2900,2559
+All AI Models in One: Ask AI,2026-11-02,App Store search,Page view,70,53
+All AI Models in One: Ask AI,2026-11-02,App Store search,Tap,25,23
+All AI Models in One: Ask AI,2026-11-02,App referrer,Page view,9,8
+All AI Models in One: Ask AI,2026-11-02,Unavailable,Tap,1,1
+All AI Models in One: Ask AI,2026-11-02,Web referrer,Page view,6,5
+All AI Models in One: Ask AI,2026-11-09,App Store browse,Impression,61,32
+All AI Models in One: Ask AI,2026-11-09,App Store browse,Page view,21,13
+All AI Models in One: Ask AI,2026-11-09,App Store browse,Tap,29,29
+All AI Models in One: Ask AI,2026-11-09,App Store search,Impression,2609,2276
+All AI Models in One: Ask AI,2026-11-09,App Store search,Page view,63,52
+All AI Models in One: Ask AI,2026-11-09,App Store search,Tap,14,13
+All AI Models in One: Ask AI,2026-11-09,App referrer,Page view,11,9
+All AI Models in One: Ask AI,2026-11-09,Web referrer,Page view,11,10
+Crypto Tracker & Bitcoin Price,2026-10-19,App Store browse,Impression,1994,858
+Crypto Tracker & Bitcoin Price,2026-10-19,App Store browse,Page view,16,14
+Crypto Tracker & Bitcoin Price,2026-10-19,App Store browse,Tap,162,154
+Crypto Tracker & Bitcoin Price,2026-10-19,App Store search,Impression,1946,1611
+Crypto Tracker & Bitcoin Price,2026-10-19,App Store search,Page view,71,51
+Crypto Tracker & Bitcoin Price,2026-10-19,App Store search,Tap,32,31
+Crypto Tracker & Bitcoin Price,2026-10-19,App referrer,Page view,7,6
+Crypto Tracker & Bitcoin Price,2026-10-19,Web referrer,Page view,1,1
+Crypto Tracker & Bitcoin Price,2026-10-26,App Store browse,Impression,926,480
+Crypto Tracker & Bitcoin Price,2026-10-26,App Store browse,Page view,44,23
+Crypto Tracker & Bitcoin Price,2026-10-26,App Store browse,Tap,57,51
+Crypto Tracker & Bitcoin Price,2026-10-26,App Store search,Impression,1839,1490
+Crypto Tracker & Bitcoin Price,2026-10-26,App Store search,Page view,56,47
+Crypto Tracker & Bitcoin Price,2026-10-26,App Store search,Tap,32,29
+Crypto Tracker & Bitcoin Price,2026-10-26,App referrer,Page view,7,6
+Crypto Tracker & Bitcoin Price,2026-10-26,Unavailable,Tap,1,1
+Crypto Tracker & Bitcoin Price,2026-10-26,Web referrer,Page view,2,1
+Crypto Tracker & Bitcoin Price,2026-11-02,App Store browse,Impression,331,181
+Crypto Tracker & Bitcoin Price,2026-11-02,App Store browse,Page view,17,11
+Crypto Tracker & Bitcoin Price,2026-11-02,App Store browse,Tap,28,26
+Crypto Tracker & Bitcoin Price,2026-11-02,App Store search,Impression,1879,1531
+Crypto Tracker & Bitcoin Price,2026-11-02,App Store search,Page view,64,49
+Crypto Tracker & Bitcoin Price,2026-11-02,App Store search,Tap,36,30
+Crypto Tracker & Bitcoin Price,2026-11-02,App referrer,Page view,11,9
+Crypto Tracker & Bitcoin Price,2026-11-09,App Store browse,Impression,278,172
+Crypto Tracker & Bitcoin Price,2026-11-09,App Store browse,Page view,17,13
+Crypto Tracker & Bitcoin Price,2026-11-09,App Store browse,Tap,39,37
+Crypto Tracker & Bitcoin Price,2026-11-09,App Store search,Impression,4092,3762
+Crypto Tracker & Bitcoin Price,2026-11-09,App Store search,Page view,59,44
+Crypto Tracker & Bitcoin Price,2026-11-09,App Store search,Tap,41,36
+Crypto Tracker & Bitcoin Price,2026-11-09,App referrer,Page view,15,13
+Crypto Tracker & Bitcoin Price,2026-11-09,Web referrer,Page view,1,1
+DORA: AI Video Generator Maker,2026-10-19,App Store browse,Impression,148,107
+DORA: AI Video Generator Maker,2026-10-19,App Store browse,Page view,54,43
+DORA: AI Video Generator Maker,2026-10-19,App Store browse,Tap,243,210
+DORA: AI Video Generator Maker,2026-10-19,App Store search,Impression,3586,3076
+DORA: AI Video Generator Maker,2026-10-19,App Store search,Page view,97,68
+DORA: AI Video Generator Maker,2026-10-19,App Store search,Tap,50,44
+DORA: AI Video Generator Maker,2026-10-19,App referrer,Page view,87,75
+DORA: AI Video Generator Maker,2026-10-19,Unavailable,Tap,1,1
+DORA: AI Video Generator Maker,2026-10-19,Web referrer,Page view,161,142
+DORA: AI Video Generator Maker,2026-10-26,App Store browse,Impression,352,211
+DORA: AI Video Generator Maker,2026-10-26,App Store browse,Page view,92,68
+DORA: AI Video Generator Maker,2026-10-26,App Store browse,Tap,508,396
+DORA: AI Video Generator Maker,2026-10-26,App Store search,Impression,5432,4670
+DORA: AI Video Generator Maker,2026-10-26,App Store search,Page view,121,97
+DORA: AI Video Generator Maker,2026-10-26,App Store search,Tap,104,90
+DORA: AI Video Generator Maker,2026-10-26,App referrer,Page view,178,150
+DORA: AI Video Generator Maker,2026-10-26,Unavailable,Tap,5,5
+DORA: AI Video Generator Maker,2026-10-26,Web referrer,Page view,221,196
+DORA: AI Video Generator Maker,2026-11-02,App Store browse,Impression,137,105
+DORA: AI Video Generator Maker,2026-11-02,App Store browse,Page view,111,75
+DORA: AI Video Generator Maker,2026-11-02,App Store browse,Tap,363,286
+DORA: AI Video Generator Maker,2026-11-02,App Store search,Impression,4520,3860
+DORA: AI Video Generator Maker,2026-11-02,App Store search,Page view,108,78
+DORA: AI Video Generator Maker,2026-11-02,App Store search,Tap,118,95
+DORA: AI Video Generator Maker,2026-11-02,App referrer,Page view,178,152
+DORA: AI Video Generator Maker,2026-11-02,Unavailable,Tap,2,2
+DORA: AI Video Generator Maker,2026-11-02,Web referrer,Page view,130,116
+DORA: AI Video Generator Maker,2026-11-09,App Store browse,Impression,295,175
+DORA: AI Video Generator Maker,2026-11-09,App Store browse,Page view,68,46
+DORA: AI Video Generator Maker,2026-11-09,App Store browse,Tap,421,313
+DORA: AI Video Generator Maker,2026-11-09,App Store search,Impression,5350,4523
+DORA: AI Video Generator Maker,2026-11-09,App Store search,Page view,122,96
+DORA: AI Video Generator Maker,2026-11-09,App Store search,Tap,76,64
+DORA: AI Video Generator Maker,2026-11-09,App referrer,Page view,231,164
+DORA: AI Video Generator Maker,2026-11-09,Unavailable,Tap,1,1
+DORA: AI Video Generator Maker,2026-11-09,Web referrer,Page view,89,84
+Easy AI Assistant: Chat Bot,2026-10-19,App Store browse,Impression,30,24
+Easy AI Assistant: Chat Bot,2026-10-19,App Store browse,Tap,4,3
+Easy AI Assistant: Chat Bot,2026-10-19,App Store search,Impression,934,806
+Easy AI Assistant: Chat Bot,2026-10-19,App Store search,Page view,20,17
+Easy AI Assistant: Chat Bot,2026-10-19,App Store search,Tap,9,9
+Easy AI Assistant: Chat Bot,2026-10-19,App referrer,Page view,1,1
+Easy AI Assistant: Chat Bot,2026-10-26,App Store browse,Impression,37,23
+Easy AI Assistant: Chat Bot,2026-10-26,App Store browse,Page view,5,5
+Easy AI Assistant: Chat Bot,2026-10-26,App Store browse,Tap,8,8
+Easy AI Assistant: Chat Bot,2026-10-26,App Store search,Impression,713,595
+Easy AI Assistant: Chat Bot,2026-10-26,App Store search,Page view,16,13
+Easy AI Assistant: Chat Bot,2026-10-26,App Store search,Tap,15,13
+Easy AI Assistant: Chat Bot,2026-10-26,App referrer,Page view,3,3
+Easy AI Assistant: Chat Bot,2026-11-02,App Store browse,Impression,53,39
+Easy AI Assistant: Chat Bot,2026-11-02,App Store browse,Page view,9,6
+Easy AI Assistant: Chat Bot,2026-11-02,App Store browse,Tap,5,4
+Easy AI Assistant: Chat Bot,2026-11-02,App Store search,Impression,1206,1035
+Easy AI Assistant: Chat Bot,2026-11-02,App Store search,Page view,26,23
+Easy AI Assistant: Chat Bot,2026-11-02,App Store search,Tap,17,15
+Easy AI Assistant: Chat Bot,2026-11-02,App referrer,Page view,5,5
+Easy AI Assistant: Chat Bot,2026-11-02,Web referrer,Page view,1,1
+Easy AI Assistant: Chat Bot,2026-11-09,App Store browse,Impression,54,28
+Easy AI Assistant: Chat Bot,2026-11-09,App Store browse,Page view,7,4
+Easy AI Assistant: Chat Bot,2026-11-09,App Store browse,Tap,5,5
+Easy AI Assistant: Chat Bot,2026-11-09,App Store search,Impression,1078,887
+Easy AI Assistant: Chat Bot,2026-11-09,App Store search,Page view,23,21
+Easy AI Assistant: Chat Bot,2026-11-09,App Store search,Tap,13,12
+Easy AI Assistant: Chat Bot,2026-11-09,App referrer,Page view,3,3
+Easy AI Assistant: Chat Bot,2026-11-09,Web referrer,Page view,2,2
+M3U IPTV Player: CarScreen,2026-11-09,App Store browse,Impression,10,5
+M3U IPTV Player: CarScreen,2026-11-09,App Store browse,Page view,3,3
+M3U IPTV Player: CarScreen,2026-11-09,App Store browse,Tap,36,29
+M3U IPTV Player: CarScreen,2026-11-09,App Store search,Impression,752,514
+M3U IPTV Player: CarScreen,2026-11-09,App Store search,Page view,75,61
+M3U IPTV Player: CarScreen,2026-11-09,App Store search,Tap,44,42
+M3U IPTV Player: CarScreen,2026-11-09,App referrer,Page view,7,5
+Photo Vault: Hide Pics Video,2026-10-19,App Store browse,Impression,127,85
+Photo Vault: Hide Pics Video,2026-10-19,App Store browse,Page view,47,35
+Photo Vault: Hide Pics Video,2026-10-19,App Store browse,Tap,169,148
+Photo Vault: Hide Pics Video,2026-10-19,App Store search,Impression,5301,4659
+Photo Vault: Hide Pics Video,2026-10-19,App Store search,Page view,61,52
+Photo Vault: Hide Pics Video,2026-10-19,App Store search,Tap,32,31
+Photo Vault: Hide Pics Video,2026-10-19,App referrer,Page view,162,137
+Photo Vault: Hide Pics Video,2026-10-19,Unavailable,Tap,10,9
+Photo Vault: Hide Pics Video,2026-10-19,Web referrer,Page view,13,12
+Photo Vault: Hide Pics Video,2026-10-26,App Store browse,Impression,180,98
+Photo Vault: Hide Pics Video,2026-10-26,App Store browse,Page view,44,35
+Photo Vault: Hide Pics Video,2026-10-26,App Store browse,Tap,160,140
+Photo Vault: Hide Pics Video,2026-10-26,App Store search,Impression,3621,2945
+Photo Vault: Hide Pics Video,2026-10-26,App Store search,Page view,56,47
+Photo Vault: Hide Pics Video,2026-10-26,App Store search,Tap,46,37
+Photo Vault: Hide Pics Video,2026-10-26,App referrer,Page view,135,109
+Photo Vault: Hide Pics Video,2026-10-26,Unavailable,Tap,4,4
+Photo Vault: Hide Pics Video,2026-10-26,Web referrer,Page view,24,19
+Photo Vault: Hide Pics Video,2026-11-02,App Store browse,Impression,201,115
+Photo Vault: Hide Pics Video,2026-11-02,App Store browse,Page view,29,22
+Photo Vault: Hide Pics Video,2026-11-02,App Store browse,Tap,157,143
+Photo Vault: Hide Pics Video,2026-11-02,App Store search,Impression,2841,2306
+Photo Vault: Hide Pics Video,2026-11-02,App Store search,Page view,57,44
+Photo Vault: Hide Pics Video,2026-11-02,App Store search,Tap,45,43
+Photo Vault: Hide Pics Video,2026-11-02,App referrer,Page view,113,101
+Photo Vault: Hide Pics Video,2026-11-02,Unavailable,Tap,12,9
+Photo Vault: Hide Pics Video,2026-11-02,Web referrer,Page view,20,17
+Photo Vault: Hide Pics Video,2026-11-09,App Store browse,Impression,191,126
+Photo Vault: Hide Pics Video,2026-11-09,App Store browse,Page view,50,38
+Photo Vault: Hide Pics Video,2026-11-09,App Store browse,Tap,204,180
+Photo Vault: Hide Pics Video,2026-11-09,App Store search,Impression,3109,2454
+Photo Vault: Hide Pics Video,2026-11-09,App Store search,Page view,72,50
+Photo Vault: Hide Pics Video,2026-11-09,App Store search,Tap,57,37
+Photo Vault: Hide Pics Video,2026-11-09,App referrer,Page view,172,141
+Photo Vault: Hide Pics Video,2026-11-09,Unavailable,Tap,7,7
+Photo Vault: Hide Pics Video,2026-11-09,Web referrer,Page view,13,12
+Private AI Chat: Pinku,2026-10-19,App Store browse,Impression,1144,401
+Private AI Chat: Pinku,2026-10-19,App Store browse,Page view,61,47
+Private AI Chat: Pinku,2026-10-19,App Store browse,Tap,281,223
+Private AI Chat: Pinku,2026-10-19,App Store search,Impression,12033,10114
+Private AI Chat: Pinku,2026-10-19,App Store search,Page view,681,466
+Private AI Chat: Pinku,2026-10-19,App Store search,Tap,111,92
+Private AI Chat: Pinku,2026-10-19,App referrer,Page view,32,29
+Private AI Chat: Pinku,2026-10-19,Unavailable,Tap,6,6
+Private AI Chat: Pinku,2026-10-19,Web referrer,Page view,4,4
+Private AI Chat: Pinku,2026-10-26,App Store browse,Impression,1128,408
+Private AI Chat: Pinku,2026-10-26,App Store browse,Page view,66,46
+Private AI Chat: Pinku,2026-10-26,App Store browse,Tap,259,216
+Private AI Chat: Pinku,2026-10-26,App Store search,Impression,9159,7880
+Private AI Chat: Pinku,2026-10-26,App Store search,Page view,559,338
+Private AI Chat: Pinku,2026-10-26,App Store search,Tap,62,57
+Private AI Chat: Pinku,2026-10-26,App referrer,Page view,42,35
+Private AI Chat: Pinku,2026-10-26,Unavailable,Tap,10,9
+Private AI Chat: Pinku,2026-10-26,Web referrer,Page view,7,6
+Private AI Chat: Pinku,2026-11-02,App Store browse,Impression,479,262
+Private AI Chat: Pinku,2026-11-02,App Store browse,Page view,72,60
+Private AI Chat: Pinku,2026-11-02,App Store browse,Tap,218,192
+Private AI Chat: Pinku,2026-11-02,App Store search,Impression,9844,8269
+Private AI Chat: Pinku,2026-11-02,App Store search,Page view,570,366
+Private AI Chat: Pinku,2026-11-02,App Store search,Tap,70,58
+Private AI Chat: Pinku,2026-11-02,App referrer,Page view,73,64
+Private AI Chat: Pinku,2026-11-02,Unavailable,Tap,10,9
+Private AI Chat: Pinku,2026-11-02,Web referrer,Page view,43,42
+Private AI Chat: Pinku,2026-11-09,App Store browse,Impression,1236,411
+Private AI Chat: Pinku,2026-11-09,App Store browse,Page view,58,39
+Private AI Chat: Pinku,2026-11-09,App Store browse,Tap,370,297
+Private AI Chat: Pinku,2026-11-09,App Store search,Impression,14305,11956
+Private AI Chat: Pinku,2026-11-09,App Store search,Page view,906,599
+Private AI Chat: Pinku,2026-11-09,App Store search,Tap,148,127
+Private AI Chat: Pinku,2026-11-09,App referrer,Page view,24,22
+Private AI Chat: Pinku,2026-11-09,Unavailable,Tap,11,8
+Private AI Chat: Pinku,2026-11-09,Web referrer,Page view,13,11
+White Noise Sleep Sounds: Drop,2026-10-19,App Store browse,Impression,1292,428
+White Noise Sleep Sounds: Drop,2026-10-19,App Store browse,Page view,20,17
+White Noise Sleep Sounds: Drop,2026-10-19,App Store browse,Tap,116,86
+White Noise Sleep Sounds: Drop,2026-10-19,App Store search,Impression,1729,1386
+White Noise Sleep Sounds: Drop,2026-10-19,App Store search,Page view,36,25
+White Noise Sleep Sounds: Drop,2026-10-19,App Store search,Tap,17,13
+White Noise Sleep Sounds: Drop,2026-10-19,App referrer,Page view,10,8
+White Noise Sleep Sounds: Drop,2026-10-19,Unavailable,Tap,3,3
+White Noise Sleep Sounds: Drop,2026-10-19,Web referrer,Page view,4,4
+White Noise Sleep Sounds: Drop,2026-10-26,App Store browse,Impression,1432,504
+White Noise Sleep Sounds: Drop,2026-10-26,App Store browse,Page view,15,11
+White Noise Sleep Sounds: Drop,2026-10-26,App Store browse,Tap,125,89
+White Noise Sleep Sounds: Drop,2026-10-26,App Store search,Impression,2057,1671
+White Noise Sleep Sounds: Drop,2026-10-26,App Store search,Page view,27,22
+White Noise Sleep Sounds: Drop,2026-10-26,App Store search,Tap,11,9
+White Noise Sleep Sounds: Drop,2026-10-26,App referrer,Page view,3,3
+White Noise Sleep Sounds: Drop,2026-10-26,Unavailable,Page view,25,10
+White Noise Sleep Sounds: Drop,2026-10-26,Unavailable,Tap,1,1
+White Noise Sleep Sounds: Drop,2026-10-26,Web referrer,Page view,3,2
+White Noise Sleep Sounds: Drop,2026-11-02,App Store browse,Impression,1365,436
+White Noise Sleep Sounds: Drop,2026-11-02,App Store browse,Page view,10,6
+White Noise Sleep Sounds: Drop,2026-11-02,App Store browse,Tap,131,97
+White Noise Sleep Sounds: Drop,2026-11-02,App Store search,Impression,1757,1443
+White Noise Sleep Sounds: Drop,2026-11-02,App Store search,Page view,26,18
+White Noise Sleep Sounds: Drop,2026-11-02,App Store search,Tap,7,7
+White Noise Sleep Sounds: Drop,2026-11-02,App referrer,Page view,5,5
+White Noise Sleep Sounds: Drop,2026-11-02,Unavailable,Page view,39,10
+White Noise Sleep Sounds: Drop,2026-11-02,Web referrer,Page view,6,5
+White Noise Sleep Sounds: Drop,2026-11-09,App Store browse,Impression,1187,414
+White Noise Sleep Sounds: Drop,2026-11-09,App Store browse,Page view,14,11
+White Noise Sleep Sounds: Drop,2026-11-09,App Store browse,Tap,119,83
+White Noise Sleep Sounds: Drop,2026-11-09,App Store search,Impression,1877,1552
+White Noise Sleep Sounds: Drop,2026-11-09,App Store search,Page view,27,15
+White Noise Sleep Sounds: Drop,2026-11-09,App Store search,Tap,11,10
+White Noise Sleep Sounds: Drop,2026-11-09,App referrer,Page view,5,5
+White Noise Sleep Sounds: Drop,2026-11-09,Unavailable,Page view,28,11
+White Noise Sleep Sounds: Drop,2026-11-09,Unavailable,Tap,2,2
+White Noise Sleep Sounds: Drop,2026-11-09,Web referrer,Page view,4,4
