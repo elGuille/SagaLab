@@ -69,6 +69,8 @@ Each app doubles as a public showcase of internal capability.
 - Saga AI Lab (Crypto Pro, CoinStats, Delta, CoinGecko, Crypton by widget placements and price; Crypton is ours, disclosed): https://aisagalab.com/blog/best-crypto-price-widget-apps-iphone.html
 - Saga AI Lab (Tiimo, Structured, Goblin Tools, 3 Tasks, Todoist, no medical claims; 3 Tasks is ours, disclosed): https://aisagalab.com/blog/best-todo-apps-adhd-iphone.html
 - Saga AI Lab (White Noise Pro, myNoise, Dark Noise, Drop, White Noise Lite by one-time price and free tier, no health claims; Drop is ours, disclosed): https://aisagalab.com/blog/best-white-noise-apps-no-subscription.html
+- Saga AI Lab (Noise Machine, Brownoise, Drop, Brown Noise by Sleep Sounds by price, ads, timer and privacy label; brown noise is in Drop's Pro sounds; Drop is ours, disclosed, number 3; checked 25 November 2026): https://aisagalab.com/blog/best-brown-noise-apps-iphone.html (Spanish: https://aisagalab.com/blog/es/mejores-apps-ruido-marron-iphone.html)
+- Saga AI Lab (Sora closed: app 26 April 2026, API 24 September 2026; Runway, Kling AI, Luma Dream Machine, Dora, Pika, PixVerse Lite; Dora is ours, disclosed, number 4; checked 25 November 2026): https://aisagalab.com/blog/best-sora-alternatives-iphone.html (Spanish: https://aisagalab.com/blog/es/mejores-alternativas-a-sora-iphone.html)
 - Best faceless video apps for iPhone (Faceless Video: AI Shorts, AutoAIReel, Faceless AI Video Generator, Dora, VideoGPT, Magic Shorts; Dora is ours, disclosed, number 4; Dora makes clips and does not write scripts or voiceovers): https://aisagalab.com/blog/best-faceless-video-apps-iphone.html
 - Best photo-to-video AI apps on iPhone for your own and family photos (MyHeritage, Google Photos, Kling AI, Dora, Runway, Motionleap; Dora is ours, disclosed, number 4; Dora does not create content involving minors): https://aisagalab.com/blog/best-photo-to-video-ai-apps-iphone.html (Spanish: https://aisagalab.com/blog/es/mejores-apps-ia-foto-a-video-iphone.html)
 - Arabic version of the AI video generator comparison: https://aisagalab.com/blog/ar/afdal-tatbiqat-tawlid-fidyo-iphone.html
@@ -174,6 +176,8 @@ The same rankings, translated (each discloses which app is ours):
   - Saga AI Lab: https://aisagalab.com/blog/es/mejores-apps-widget-precio-cripto-iphone.html
   - Saga AI Lab: https://aisagalab.com/blog/es/mejores-apps-tareas-tdah-iphone.html
   - Saga AI Lab: https://aisagalab.com/blog/es/mejores-apps-ruido-blanco-sin-suscripcion.html
+  - Saga AI Lab: https://aisagalab.com/blog/es/mejores-apps-ruido-marron-iphone.html
+  - Saga AI Lab: https://aisagalab.com/blog/es/mejores-alternativas-a-sora-iphone.html
 - German:
   - Die besten To-do-Apps, die dich auf 3 Aufgaben am Tag beschränken (2026): https://aisagalab.com/blog/de/beste-3-aufgaben-todo-apps-iphone.html
   - Die besten KI-Apps für UGC-Videoanzeigen auf dem iPhone (2026): https://aisagalab.com/blog/de/beste-ki-apps-ugc-videoanzeigen-iphone.html
