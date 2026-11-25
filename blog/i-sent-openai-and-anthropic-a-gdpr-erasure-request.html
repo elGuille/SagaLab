@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
 <meta name="apple-itunes-app" content="app-id=1532670722, affiliate-data=ct=aisagalab-pv-banner&amp;pt=118348020">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I sent OpenAI and Anthropic a GDPR erasure request. Neither told me what they kept. — Saga Labs</title>
+    <title>I sent OpenAI and Anthropic a GDPR erasure request. Neither told me what they kept. | Saga Labs</title>
     <meta name="description" content="Five layers sit between the delete button and the conversation being gone: storage, model weights, the reviewer's copy, the safety flag and the court. With the OpenAI privacy team's reply, and Anthropic's.">
     <link rel="canonical" href="https://aisagalab.com/blog/i-sent-openai-and-anthropic-a-gdpr-erasure-request.html">
     <link rel="alternate" hreflang="en" href="https://aisagalab.com/blog/i-sent-openai-and-anthropic-a-gdpr-erasure-request.html">
@@ -102,7 +102,7 @@ running software at scale, and some of it is legally required. But the gap
 between what the button looks like it does and what it does is wide enough to be
 worth writing down.</p>
 
-<h2>Layer 1 — your view, and then the storage</h2>
+<h2>Layer 1: your view, and then the storage</h2>
 
 <p>The row vanishing is instant and local. Behind it, both OpenAI and Anthropic
 publish the same window: a deleted conversation is removed from back-end systems
@@ -116,7 +116,7 @@ that deleted from every replica synchronously would be a system that could not b
 restored after an incident. But it does mean that &ldquo;deleted&rdquo; means
 &ldquo;scheduled for deletion&rdquo; for a month.</p>
 
-<h2>Layer 2 — the weights, which cannot be edited</h2>
+<h2>Layer 2: the weights, which cannot be edited</h2>
 
 <p>If your conversation was used in a training run that has already finished,
 deleting the conversation does not remove its influence from the resulting model.
@@ -131,7 +131,7 @@ progress, or in models that have been trained.&rdquo;</p>
 <p>This is the layer people underestimate. Deletion is a storage operation.
 Training is not storage.</p>
 
-<h2>Layer 3 — the copy a person read</h2>
+<h2>Layer 3: the copy a person read</h2>
 
 <p>All three major providers use human reviewers on some fraction of
 conversations. Google's Gemini Apps Privacy Notice is the only one that spells out
@@ -145,15 +145,15 @@ your activity. Instead, they are retained for up to three years.</blockquote>
 independently of anything in your account settings, and there is no control
 surface for it.</p>
 
-<h2>Layer 4 — the safety flag</h2>
+<h2>Layer 4: the safety flag</h2>
 
 <p>If an automated system decides a conversation might violate a usage policy,
 different rules apply. Anthropic publishes the numbers: inputs and outputs kept
 for <strong>up to two years</strong>, and the trust-and-safety classification
 scores for <strong>up to seven years</strong>.</p>
 
-<p>Note the asymmetry. The classification score &mdash; a machine's judgement
-about you &mdash; outlives the conversation that produced it by five years.</p>
+<p>Note the asymmetry. The classification score, a machine's judgement
+about you, outlives the conversation that produced it by five years.</p>
 
 <p>Which conversations get flagged is not published. What is published is the
 policy the flag keys off, and it names four domains as
@@ -177,13 +177,13 @@ the document that names those four domains. Whether conversations in them are
 more likely to be flagged is not disclosed, and there is no mechanism for you to
 find out whether any particular conversation of yours was.</p>
 
-<p>So the categories where you would most want to know &mdash; your health, your
-money, your legal exposure &mdash; are exactly the categories where you cannot.
+<p>So the categories where you would most want to know, your health, your
+money, your legal exposure, are exactly the categories where you cannot.
 That is not an accusation. It is the honest shape of the information available to
 you, and it is the reason some conversations are worth keeping off a network
 entirely.</p>
 
-<h2>Layer 5 — the court</h2>
+<h2>Layer 5: the court</h2>
 
 <p>The clearest demonstration that the delete button is not the last word came out
 of the copyright litigation brought against OpenAI by The New York Times and
@@ -192,7 +192,7 @@ misreported in both directions.</p>
 
 <ul>
 <li><strong>13 May 2025.</strong> Magistrate Judge Ona T. Wang orders OpenAI to
-preserve and segregate all output log data that would otherwise be deleted &mdash;
+preserve and segregate all output log data that would otherwise be deleted,
 including conversations users had deleted.</li>
 <li><strong>June 2025.</strong> District Judge Sidney Stein rejects OpenAI's
 objection. The order stands.</li>
@@ -222,8 +222,8 @@ and a court can suspend it for everyone at once.</strong></p>
 
 <h2>I sent both companies a GDPR erasure request</h2>
 
-<p>From my own personal accounts &mdash; the consumer tier this article is
-about, not a business plan with different defaults &mdash; I sent OpenAI and
+<p>From my own personal accounts, the consumer tier this article is
+about, not a business plan with different defaults, I sent OpenAI and
 Anthropic a formal request under the GDPR, and kept what came back.</p>
 
 <p>Not a support ticket. A request under Article 15, the right of access, and
@@ -251,7 +251,7 @@ a controller has one month to respond.</p>
 Team.&rdquo;</li>
 <li><strong>17 April.</strong> OpenAI replies. Two days, which is faster than
 most companies manage.</li>
-<li><strong>16 May.</strong> Anthropic's human reply arrives &mdash; one month
+<li><strong>16 May.</strong> Anthropic's human reply arrives, one month
 and one day after the request.</li>
 </ul>
 
@@ -266,7 +266,7 @@ account active, is to use our self-service tools outlined below.</blockquote>
 <p>What followed were links: the Delete all chats button, the memory FAQ, the
 privacy portal. Read the clause emphasised above. The self-service tools cover
 data that is <em>not necessary to maintain the account or the service</em>. That
-implies a second category &mdash; data that is necessary &mdash; and the reply
+implies a second category, data that is necessary, and the reply
 does not say what is in it, how long it is kept, or on what legal basis. Those
 were the questions.</p>
 
@@ -282,8 +282,7 @@ deleted <strong>in accordance with our retention periods</strong>.</blockquote>
 question; it is a pointer back to it. Those periods are the ones earlier in this
 article: 30 days for ordinary storage, up to two years for a flagged
 conversation, up to five years for de-identified training data, up to seven years
-for a classification score. Deleting your account does not reset those clocks
-&mdash; it hands you to them.</p>
+for a classification score. Deleting your account does not reset those clocks; it hands you to them.</p>
 
 <p>The same reply added something most people have never considered:</p>
 
@@ -339,7 +338,7 @@ than we would like to admit.</p>
 
 <p>So this is not an argument for quitting them. It is an argument for knowing
 which rules you are playing by, and then choosing deliberately for the
-conversations where it matters &mdash; the ones you would mind someone reading,
+conversations where it matters, the ones you would mind someone reading,
 which for most people is a small fraction of the total.</p>
 
 <p>For that fraction, the only arrangement in which none of the five layers
@@ -351,20 +350,20 @@ typing into someone else's computer because it is easier.</p>
 
 <p class="article-note">Every figure in this article is quoted from a provider's
 own published policy or a court filing, all linked below. Check them rather than
-taking our word for it &mdash; and if one is out of date,
+taking our word for it, and if one is out of date,
 <a href="mailto:aisagalab@gmail.com">tell us</a> and we will correct the page.</p>
 </div>
         <div class="article-body article-sources">
 <h2>Sources</h2>
 <ul>
-<li><a href="https://privacy.anthropic.com/en/articles/10023548-how-long-do-you-store-my-data" rel="nofollow noopener" target="_blank">How long do you store my data?</a> &mdash; Anthropic Privacy Center, updated 1 July 2026. The 30-day, 2-year, 5-year and 7-year windows.</li>
-<li><a href="https://gdpr-info.eu/art-15-gdpr/" rel="nofollow noopener" target="_blank">Article 15</a>, <a href="https://gdpr-info.eu/art-17-gdpr/" rel="nofollow noopener" target="_blank">Article 17</a> and <a href="https://gdpr-info.eu/art-12-gdpr/" rel="nofollow noopener" target="_blank">Article 12(3)</a> GDPR &mdash; right of access, right to erasure, and the one-month deadline to respond.</li>
-<li><a href="https://www.anthropic.com/legal/aup" rel="nofollow noopener" target="_blank">Usage Policy</a> &mdash; Anthropic. The High-Risk Use Case Requirements naming legal, healthcare, insurance and finance.</li>
-<li><a href="https://support.google.com/gemini/answer/13594961" rel="nofollow noopener" target="_blank">Gemini Apps Privacy Notice</a> &mdash; Google. Human review and the three-year retention of reviewed chats.</li>
-<li><a href="https://help.openai.com/en/articles/8983778-chat-and-file-retention-policies-in-chatgpt" rel="nofollow noopener" target="_blank">Chat and file retention policies in ChatGPT</a> &mdash; OpenAI Help Center.</li>
-<li><a href="https://openai.com/index/response-to-nyt-data-demands/" rel="nofollow noopener" target="_blank">How we're responding to The New York Times' data demands</a> &mdash; OpenAI, on the May 2025 preservation order.</li>
-<li><a href="https://www.engadget.com/ai/openai-no-longer-has-to-preserve-all-of-its-chatgpt-data-with-some-exceptions-192422093.html" rel="nofollow noopener" target="_blank">OpenAI no longer has to preserve all of its ChatGPT data, with some exceptions</a> &mdash; Engadget, October 2025, on the order being terminated.</li>
-<li><a href="https://www.dataprivacyandsecurityinsider.com/2026/01/when-chats-become-evidence-court-affirms-order-requiring-openai-to-produce-20-million-de-identified-chatgpt-logs/" rel="nofollow noopener" target="_blank">Court affirms order requiring OpenAI to produce 20 million de-identified ChatGPT logs</a> &mdash; January 2026.</li>
+<li><a href="https://privacy.anthropic.com/en/articles/10023548-how-long-do-you-store-my-data" rel="nofollow noopener" target="_blank">How long do you store my data?</a>, Anthropic Privacy Center, updated 1 July 2026. The 30-day, 2-year, 5-year and 7-year windows.</li>
+<li><a href="https://gdpr-info.eu/art-15-gdpr/" rel="nofollow noopener" target="_blank">Article 15</a>, <a href="https://gdpr-info.eu/art-17-gdpr/" rel="nofollow noopener" target="_blank">Article 17</a> and <a href="https://gdpr-info.eu/art-12-gdpr/" rel="nofollow noopener" target="_blank">Article 12(3)</a> GDPR, right of access, right to erasure, and the one-month deadline to respond.</li>
+<li><a href="https://www.anthropic.com/legal/aup" rel="nofollow noopener" target="_blank">Usage Policy</a>, Anthropic. The High-Risk Use Case Requirements naming legal, healthcare, insurance and finance.</li>
+<li><a href="https://support.google.com/gemini/answer/13594961" rel="nofollow noopener" target="_blank">Gemini Apps Privacy Notice</a>, Google. Human review and the three-year retention of reviewed chats.</li>
+<li><a href="https://help.openai.com/en/articles/8983778-chat-and-file-retention-policies-in-chatgpt" rel="nofollow noopener" target="_blank">Chat and file retention policies in ChatGPT</a>, OpenAI Help Center.</li>
+<li><a href="https://openai.com/index/response-to-nyt-data-demands/" rel="nofollow noopener" target="_blank">How we're responding to The New York Times' data demands</a>, OpenAI, on the May 2025 preservation order.</li>
+<li><a href="https://www.engadget.com/ai/openai-no-longer-has-to-preserve-all-of-its-chatgpt-data-with-some-exceptions-192422093.html" rel="nofollow noopener" target="_blank">OpenAI no longer has to preserve all of its ChatGPT data, with some exceptions</a>, Engadget, October 2025, on the order being terminated.</li>
+<li><a href="https://www.dataprivacyandsecurityinsider.com/2026/01/when-chats-become-evidence-court-affirms-order-requiring-openai-to-produce-20-million-de-identified-chatgpt-logs/" rel="nofollow noopener" target="_blank">Court affirms order requiring OpenAI to produce 20 million de-identified ChatGPT logs</a>, January 2026.</li>
 </ul>
 <p>Checked on 5 September 2026.</p>
 <!-- related:start -->
