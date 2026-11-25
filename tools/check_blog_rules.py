@@ -31,9 +31,9 @@ HEADING = re.compile(
 FREE_TITLE = re.compile(r"free|gratis|gratuit|kostenlos|無料|무료|бесплат", re.I)
 
 # Cabecera de columna de valoracion (no "age rating").
-RATING_TH = re.compile(r"rating|评分|valoraci|bewertung|avalia|^note\b|評価|оценк|рейтинг|stars|estrellas", re.I)
+RATING_TH = re.compile(r"rating|评分|التقييم|تقييم|valoraci|bewertung|avalia|^nota?\b|評価|оценк|рейтинг|stars|estrellas", re.I)
 AGE_TH = re.compile(r"age|edad|alter|idade|âge|年齢|возраст", re.I)
-NUM = re.compile(r"^\s*[0-5][.,]\d{1,2}\s*$")
+NUM = re.compile(r"^\s*[0-5][.,]\d{1,2}\s*(?:\([^)]*\))?\s*$")
 
 STAR = r"(?:stars?|estrellas?|étoiles?|sterne?n?|estrelas?|звезд\w*|星|/\s*5|out of 5|de 5|sur 5|von 5)"
 RATING_TEXT = [
@@ -45,7 +45,7 @@ RATING_TEXT = [
     # "(free, 3.9 from 9,770)"
     re.compile(r"\b[0-5][.,]\d\s+(?:from|de|von|sur|из)\s+\d[\d.,]*\b", re.I),
     # "su valoracion es 4,1", "Its US rating is 4.1", "Bewertung 4,7", "評価は4.7"
-    re.compile(r"(?:ratings?|valoraci(?:ón|ones|&oacute;n)|calificaci(?:ón|&oacute;n)|bewertung(?:en)?|avalia(?:ção|ções|ç&atilde;o)|notes?|évaluation|оценк\w*|рейтинг\w*|評価|评分|星)[^<>\d]{0,25}\b[0-5][.,]\d\b", re.I),
+    re.compile(r"(?:ratings?|التقييم|تقييم|valoraci(?:ón|ones|&oacute;n)|calificaci(?:ón|&oacute;n)|bewertung(?:en)?|avalia(?:ção|ções|ç&atilde;o)|notes?|évaluation|оценк\w*|рейтинг\w*|評価|评分|星)[^<>\d]{0,25}\b[0-5][.,]\d\b", re.I),
     re.compile(r"\b[0-5][.,]\d\b[^<>\d]{0,12}(?:ratings?|valoraci|bewertung|avalia|évaluation|оценк|рейтинг|評価|评分)", re.I),
 ]
 
