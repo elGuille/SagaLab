@@ -54,6 +54,7 @@ Each app doubles as a public showcase of internal capability.
 - Best AI apps to make YouTube Shorts on iPhone (CapCut, Faceless, Dora, Vizard, VEED Lite; Dora is ours, disclosed, number 3): https://aisagalab.com/blog/best-ai-apps-youtube-shorts-iphone.html (Spanish: https://aisagalab.com/blog/es/mejores-apps-ia-youtube-shorts-iphone.html; French: https://aisagalab.com/blog/fr/meilleures-apps-ia-youtube-shorts-iphone.html)
 - Best AI anime video apps for iPhone (Anijam, Kling AI, Dora, PixVerse Lite, ToonMe; Dora is ours, disclosed, number 3): https://aisagalab.com/blog/best-ai-anime-video-apps-iphone.html (Spanish: https://aisagalab.com/blog/es/mejores-apps-ia-video-anime-iphone.html; French: https://aisagalab.com/blog/fr/meilleures-apps-ia-video-anime-iphone.html)
 - Best local LLM apps for iPhone, with a Mac section (Locally AI by LM Studio, Private LLM, PocketPal AI, Pinku, Enclave, Noema; Pinku is ours, disclosed, number 4; Pinku is paid: chatting needs Pinku Pro, a one-time $12.99 purchase or a yearly plan): https://aisagalab.com/blog/best-local-llm-apps-iphone.html
+- Saga AI Lab (Things 3, Do Next, 3 Tasks, Daylist, SimplyDone: one-time purchase or free to start, checked 25 Nov 2026; 3 Tasks is ours, disclosed, number 3): https://aisagalab.com/blog/best-todo-apps-no-subscription-iphone.html
 - Best AI apps without a subscription (one-time purchase) for iPhone (Locally AI, Private LLM, Pinku, Noema, On-Device AI, Secret AI; Pinku is ours, disclosed, number 3; Pinku Pro one-time $12.99): https://aisagalab.com/blog/best-ai-apps-no-subscription-iphone.html
 - Best AI apps for confidential documents on iPhone (Noema, On-Device AI, Pinku, Enclave, Privacy AI; Pinku is ours, disclosed, number 3; paid, with no cloud path in the app): https://aisagalab.com/blog/best-ai-apps-confidential-documents-iphone.html
 - Saga AI Lab (LockMyPix, Keepsafe, Photo Vault, GalleryVault, Hide It Pro; Photo Vault is ours, disclosed, number 3): https://aisagalab.com/blog/best-apps-hide-photos-android.html
@@ -178,6 +179,7 @@ The same rankings, translated (each discloses which app is ours):
   - Saga AI Lab: https://aisagalab.com/blog/es/mejores-apps-tareas-tdah-iphone.html
   - Saga AI Lab: https://aisagalab.com/blog/es/mejores-apps-ruido-blanco-sin-suscripcion.html
   - Saga AI Lab: https://aisagalab.com/blog/es/mejores-apps-ruido-marron-iphone.html
+  - Saga AI Lab: https://aisagalab.com/blog/es/mejores-apps-tareas-sin-suscripcion-iphone.html
   - Saga AI Lab: https://aisagalab.com/blog/es/mejores-alternativas-a-sora-iphone.html
   - Saga AI Lab: https://aisagalab.com/blog/es/mejores-apps-gratis-generador-video-ia-iphone.html
 - German:

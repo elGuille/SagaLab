@@ -127,6 +127,7 @@ GROUPS = {
             "3-tasks/pomodoro-timer-on-iphone.html",
             "3-tasks/3-task-method-ivy-lee-rule-of-3.html",
             "blog/best-3-task-todo-apps-iphone.html",
+            "blog/best-todo-apps-no-subscription-iphone.html",
         ], [
             (RL + "best-simple-to-do-list-apps-iphone/", "Best simple to-do list apps for iPhone in 2026 (Reviewland)"),
             (RL + "todoist-alternatives-iphone/", "Todoist alternatives for iPhone in 2026 (Reviewland)"),
@@ -136,6 +137,7 @@ GROUPS = {
             "3-tasks/es/temporizador-pomodoro-en-el-iphone.html",
             "3-tasks/es/metodo-de-3-tareas-ivy-lee-regla-de-3.html",
             "blog/es/mejores-apps-3-tareas-al-dia-iphone.html",
+            "blog/es/mejores-apps-tareas-sin-suscripcion-iphone.html",
         ], [
             (RL + "es/mejores-apps-de-tareas-sencillas-iphone/", "Mejores apps de listas de tareas sencillas para iPhone en 2026 (Reviewland)"),
             (RL + "es/alternativas-a-todoist-iphone/", "Alternativas a Todoist para iPhone en 2026 (Reviewland)"),
