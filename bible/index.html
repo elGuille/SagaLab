@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bible Videos: Stories &amp; Verses</title>
-<meta name="description" content="Watch short cinematic Bible stories. Open this video in Bible Videos for iPhone.">
+<meta name="description" content="Watch short cinematic Bible stories. Open this video in Bible Videos for iPhone and Android.">
 <meta property="og:title" content="Watch this Bible story on Bible Videos">
 <meta property="og:description" content="Short cinematic Bible stories, a daily devotional and the full Bible.">
 <meta property="og:image" content="https://aisagalab.com/bible/og.jpg">
@@ -24,12 +24,16 @@
 <main>
   <img src="icon.png" alt="">
   <h1>Bible Videos</h1>
-  <p>This Bible story opens in the Bible Videos app for iPhone.</p>
-  <a class="btn" id="go" href="https://apps.apple.com/app/id6833978906">Get it on the App Store</a>
+  <p>This Bible story opens in the Bible Videos app, on iPhone and Android.</p>
+  <a class="btn" href="https://apps.apple.com/app/apple-store/id6833978906?pt=118348020&amp;ct=bible-share&amp;mt=8">Get it on the App Store</a><br>
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.sagalabs.biblevideo&amp;referrer=utm_source%3Dshare%26utm_medium%3Dlink">Get it on Google Play</a>
 </main>
 <script>
-  // Con la app instalada, iOS abre el vídeo antes de llegar aquí (enlace universal). Si no, al App Store.
-  setTimeout(function () { location.replace("https://apps.apple.com/app/id6833978906"); }, 600);
+  // Con la app instalada, el enlace abre el vídeo antes de llegar aquí. Si no: Android a Google Play, iPhone al App Store; en un ordenador se quedan los dos botones.
+  var ua = navigator.userAgent, to = null;
+  if (/android/i.test(ua)) to = "https://play.google.com/store/apps/details?id=com.sagalabs.biblevideo&referrer=utm_source%3Dshare%26utm_medium%3Dlink";
+  else if (/iphone|ipad|ipod/i.test(ua)) to = "https://apps.apple.com/app/apple-store/id6833978906?pt=118348020&ct=bible-share&mt=8";
+  if (to) setTimeout(function () { location.replace(to); }, 600);
 </script>
 </body>
 </html>
