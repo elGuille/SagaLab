@@ -27,3 +27,16 @@ Published (EN+ES):
 - blog/best-free-ai-video-generator-apps-iphone.html, blog/es/mejores-apps-gratis-generador-video-ia-iphone.html (Dora)
 
 Only one pair this run: no other candidate passed the fit and gap check.
+
+## 2026-11-25 (third run)
+Data sources: store-click export (private repo, rounded): only a handful of store clicks in 28 days, nearly all on one Android ranking, so no page-level click signal to optimise from; App Store source and territory exports as before.
+
+Candidates considered:
+- best to-do apps with no subscription / one-time purchase iPhone (3 Tasks): store listings only, several new small apps, no neutral roundup; 3 Tasks now has a one-time Pro, which fits honestly. Chosen.
+- best offline translator app iPhone: results are store listings and vendor blogs, but none of our apps is a translator. Skipped.
+
+Actions:
+- New (EN+ES): blog/best-todo-apps-no-subscription-iphone.html, blog/es/mejores-apps-tareas-sin-suscripcion-iphone.html (3 Tasks)
+- Improved (EN+ES): best-3-task-todo-apps-iphone and mejores-apps-3-tareas-al-dia-iphone: 3 Tasks was described as free with no in-app purchases and without history or daily repeat; corrected to the current listing (one-time Pro, Repeat Daily). DE, FR, JA and PT versions still carry the old wording and need the same fix.
+
+Apps not touched this run: Dora, Pinku, Brainy, Drop, Ask AI, Crypton, CarScreen and Bible Videos each got an article in the earlier runs today or in the last days; no further candidate passed the fit check. Photo Vault already has nine pieces.
