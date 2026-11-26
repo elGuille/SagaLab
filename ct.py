@@ -67,6 +67,18 @@ def site_ct(app_id, site="aisagalab"):
     return "%s-%s" % (site, APP_SLUG.get(app_id, app_id))
 
 
+# Excepciones al ct unico: paginas cuyas descargas se miden aparte en App Store Connect -> Campaigns.
+# Ask AI, 26 nov 2026 (palanca 3 del informe de crecimiento): la comparativa «all AI models in one place».
+PAGE_CT = {
+    ("blog/best-apps-all-ai-models-one-place-iphone.html", "1662608035"): "aisagalab-askai-all-models",
+    ("blog/ja/best-apps-all-ai-models-one-place-iphone.html", "1662608035"): "aisagalab-askai-all-models-ja",
+}
+
+
+def link_ct(app_id, path, site="aisagalab"):
+    return PAGE_CT.get((path.replace("\\", "/"), app_id)) or site_ct(app_id, site)
+
+
 def _fix(url, ct, plain=False, page_ct=None):
     m = _URL.match(url)
     if not m or m.group(1) not in OURS:
@@ -131,7 +143,7 @@ def retag(html, path, site="aisagalab"):
     page_ct = ct_for(path, site)
     out = []
     for i, chunk in enumerate(_LD.split(html)):
-        out.append(chunk if i % 2 else _URL.sub(lambda m: _fix(m.group(0), site_ct(m.group(1), site), path.endswith(".txt"), page_ct), chunk))
+        out.append(chunk if i % 2 else _URL.sub(lambda m: _fix(m.group(0), link_ct(m.group(1), path, site), path.endswith(".txt"), page_ct), chunk))
     html = "".join(out)
     if not path.endswith(".txt"):
         html = "".join(c if i % 2 else add_play(c, path, site) for i, c in enumerate(_LD.split(html)))
