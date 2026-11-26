@@ -22,8 +22,10 @@ CSS = """
 @keyframes sbp{50%{transform:scaleY(.35)}}
 .sb-demo{background:rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.2);border-radius:22px;padding:26px;min-width:0}
 .sb-demo p{margin:0;font-size:20px;line-height:1.4}
-.sb-demo .raw{opacity:.65;text-decoration:line-through;font-size:16px;margin-bottom:10px}
+.sb-demo .raw{opacity:.7;font-size:16px;margin-bottom:10px}
 .landing .btn.mac{background:#fff;color:#111;min-height:44px;border-radius:9px;padding:0 18px;font-size:16px}
+.l-hero h1{max-width:none}
+.sb-grid+.sb-note{margin-top:24px}
 .sb-note{margin:14px 0 0;font-size:14px;opacity:.8}
 .sb-sec{padding:72px 0;border-top:1px solid rgba(255,255,255,.16)}
 .sb-sec h2{margin:0 0 28px;font-size:clamp(30px,4vw,52px);line-height:1.05;letter-spacing:-.035em;font-weight:800;max-width:20ch}
@@ -54,15 +56,15 @@ T = {
   plat="Dictation · iPhone and Mac", h1="Speak. It types.",
   lead="Voice dictation for iPhone and Mac that runs on your device. Your voice is never uploaded.",
   mac="Download for Mac", macn="macOS 14+ · Apple silicon", ios_small="Download on the", ios_aria="Download Speakboard on the App Store",
-  raw="um so the meeting is like thursday no wait friday at three", clean="The meeting is on Friday at 3 pm.",
-  how="How it works", steps=[("Press the key or the microphone", "On iPhone, switch to the Speakboard keyboard. On Mac, use the menu-bar shortcut."), ("Speak normally", "Speech is recognized on your device, with no connection needed."), ("Text appears in any app", "Messages, mail, notes or a browser: it is typed where your cursor is.")],
-  priv="Your voice stays on your device", privp=("Speech recognition runs locally on your iPhone and your Mac. Audio is never sent to a server and never stored by us.", "Because nothing is processed in the cloud, dictation also works offline."), privl="Privacy policy", privu="/privacy.html",
-  price="Pricing", free="Free", freeli=["Dictation with limited use", "iPhone keyboard and Mac app"], mo="/ month", yr="/ year",
-  pro="Pro Monthly", proa="Pro Annual", proli=["Unlimited dictation", "One account on iPhone and Mac"], annli=["Unlimited dictation", "One account on iPhone and Mac", "3-day free trial"],
+  raw="you say: can you send me the report by friday", clean="You get: Can you send me the report by Friday?",
+  how="How it works", steps=[("Press the key or the microphone", "On iPhone, switch to the Speakboard keyboard and tap the microphone. On Mac, hold the dictation key (Fn by default) and release it when you finish."), ("Speak normally", "Speech is recognized on your device, with no connection needed."), ("Text appears in any app", "Messages, mail, notes or a browser: it is inserted where your cursor is. The Mac app also drops hesitation sounds such as um and uh.")],
+  priv="Your voice stays on your device", privp=("Speech recognition runs locally on your iPhone and your Mac. Audio is never sent to a server.", "Because nothing is processed in the cloud, dictation also works offline."), privl="Privacy policy", privu="/privacy.html",
+  price="Pricing", free="Free", freeli=["Unlimited dictation", "Sessions up to 5 minutes", "Last 20 dictations in history"], mo="/ month", yr="/ year",
+  pro="Pro Monthly", proa="Pro Annual", proli=["Sessions of 20 minutes or unlimited", "Large turbo model", "Full history with audio", "One account on iPhone and Mac"], annli=["Sessions of 20 minutes or unlimited", "Large turbo model", "Full history with audio", "One account on iPhone and Mac", "3-day free trial"],
   getfree="Start free", sub="Subscribe", tryb="Try free for 3 days",
   pn="One Pro account works on iPhone and Mac. On iPhone you subscribe in the app. On Mac you subscribe on this site after signing in.",
   faq="Questions",
-  faqs=[("Does it work offline?", "Yes. Recognition runs on the device, so no internet connection is needed to dictate."), ("Which languages are supported?", "The languages of the Whisper speech model, about 99. The app lists them in settings."), ("Is one subscription enough for iPhone and Mac?", "Yes. Pro is tied to one account and works on both devices."), ("Can I cancel anytime?", "Yes. Cancel whenever you want and Pro stays active until the end of the paid period."), ("Is my voice uploaded?", "No. Audio is processed on your device and is not sent anywhere.")],
+  faqs=[("Does it work offline?", "Yes. Recognition runs on the device, so no internet connection is needed to dictate."), ("Which languages are supported?", "Speakboard uses the Whisper speech model, which supports about 99 languages."), ("Is one subscription enough for iPhone and Mac?", "Yes. Pro is tied to one account and works on both devices."), ("Can I cancel anytime?", "Yes. Cancel whenever you want and Pro stays active until the end of the paid period."), ("Is my voice uploaded?", "No. Audio is processed on your device and is not sent anywhere.")],
   foot=("Saga Lab", "Privacy", "Terms", "Support"), termsu="/terms.html", supu="/support.html", home="/index.html", hreflang_other="es"),
  "es": dict(lang="es", path="/speakboard/es/", other="/speakboard/", back="Todas las apps", skip="Saltar al contenido",
   title="Speakboard: dictado por voz para iPhone y Mac, en tu dispositivo | Saga Lab",
@@ -70,15 +72,15 @@ T = {
   plat="Dictado · iPhone y Mac", h1="Habla. Se escribe.",
   lead="Dictado por voz para iPhone y Mac que funciona en tu dispositivo. Tu voz nunca se sube a ningún servidor.",
   mac="Descargar para Mac", macn="macOS 14+ · Apple silicon", ios_small="Descargar en la", ios_aria="Descargar Speakboard en la App Store",
-  raw="eh pues la reunión es el jueves no espera el viernes a las tres", clean="La reunión es el viernes a las 15:00.",
-  how="Cómo funciona", steps=[("Pulsa la tecla o el micrófono", "En iPhone, cambia al teclado Speakboard. En Mac, usa el atajo de la barra de menús."), ("Habla con normalidad", "La voz se reconoce en tu dispositivo, sin necesidad de conexión."), ("El texto aparece en cualquier app", "Mensajes, correo, notas o el navegador: se escribe donde está el cursor.")],
-  priv="Tu voz no sale de tu dispositivo", privp=("El reconocimiento de voz se ejecuta en local, en tu iPhone y en tu Mac. El audio no se envía a ningún servidor ni lo guardamos.", "Como no se procesa nada en la nube, el dictado también funciona sin conexión."), privl="Política de privacidad", privu="/privacy.html",
-  price="Precios", free="Gratis", freeli=["Dictado con uso limitado", "Teclado de iPhone y app de Mac"], mo="/ mes", yr="/ año",
-  pro="Pro mensual", proa="Pro anual", proli=["Dictado sin límites", "Una cuenta en iPhone y Mac"], annli=["Dictado sin límites", "Una cuenta en iPhone y Mac", "3 días de prueba gratis"],
+  raw="dices: puedes enviarme el informe antes del viernes", clean="Obtienes: ¿Puedes enviarme el informe antes del viernes?",
+  how="Cómo funciona", steps=[("Pulsa la tecla o el micrófono", "En iPhone, cambia al teclado Speakboard y toca el micrófono. En Mac, mantén pulsada la tecla de dictado (Fn por defecto) y suéltala al terminar."), ("Habla con normalidad", "La voz se reconoce en tu dispositivo, sin necesidad de conexión."), ("El texto aparece en cualquier app", "Mensajes, correo, notas o el navegador: se inserta donde está el cursor. La app de Mac también quita muletillas como eh y um.")],
+  priv="Tu voz no sale de tu dispositivo", privp=("El reconocimiento de voz se ejecuta en local, en tu iPhone y en tu Mac. El audio no se envía a ningún servidor.", "Como no se procesa nada en la nube, el dictado también funciona sin conexión."), privl="Política de privacidad", privu="/privacy.html",
+  price="Precios", free="Gratis", freeli=["Dictado ilimitado", "Sesiones de hasta 5 minutos", "Últimos 20 dictados en el historial"], mo="/ mes", yr="/ año",
+  pro="Pro mensual", proa="Pro anual", proli=["Sesiones de 20 minutos o sin límite", "Modelo Large turbo", "Historial completo con audio", "Una cuenta en iPhone y Mac"], annli=["Sesiones de 20 minutos o sin límite", "Modelo Large turbo", "Historial completo con audio", "Una cuenta en iPhone y Mac", "3 días de prueba gratis"],
   getfree="Empezar gratis", sub="Suscribirme", tryb="Probar 3 días gratis",
   pn="Una cuenta Pro funciona en iPhone y Mac. En iPhone te suscribes en la app. En Mac te suscribes en esta web tras iniciar sesión.",
   faq="Preguntas frecuentes",
-  faqs=[("¿Funciona sin conexión?", "Sí. El reconocimiento se ejecuta en el dispositivo, así que no hace falta internet para dictar."), ("¿Qué idiomas admite?", "Los del modelo de voz Whisper, unos 99. La app los lista en los ajustes."), ("¿Una suscripción sirve para iPhone y Mac?", "Sí. Pro va ligado a una cuenta y funciona en ambos dispositivos."), ("¿Puedo cancelar cuando quiera?", "Sí. Cancela en cualquier momento y Pro sigue activo hasta el final del periodo pagado."), ("¿Se sube mi voz?", "No. El audio se procesa en tu dispositivo y no se envía a ningún sitio.")],
+  faqs=[("¿Funciona sin conexión?", "Sí. El reconocimiento se ejecuta en el dispositivo, así que no hace falta internet para dictar."), ("¿Qué idiomas admite?", "Speakboard usa el modelo de voz Whisper, que admite unos 99 idiomas."), ("¿Una suscripción sirve para iPhone y Mac?", "Sí. Pro va ligado a una cuenta y funciona en ambos dispositivos."), ("¿Puedo cancelar cuando quiera?", "Sí. Cancela en cualquier momento y Pro sigue activo hasta el final del periodo pagado."), ("¿Se sube mi voz?", "No. El audio se procesa en tu dispositivo y no se envía a ningún sitio.")],
   foot=("Saga Lab", "Privacidad", "Términos", "Soporte"), termsu="/terms.html", supu="/support.html", home="/index.html", hreflang_other="en"),
 }
 
