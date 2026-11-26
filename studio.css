@@ -120,6 +120,12 @@ h1, h2, h3 { font-family: var(--display); font-optical-sizing: auto; }
 .ficha:hover .shots img:nth-child(1) { transform: translateX(-150%) rotate(-10deg) translateY(16px); }
 .ficha:hover .shots img:nth-child(2) { transform: translateX(-50%) translateY(-26px); }
 .ficha:hover .shots img:nth-child(3) { transform: translateX(50%) rotate(10deg) translateY(16px); }
+.ficha-light { color: #3a0a20; }
+.ficha-light::before { background: radial-gradient(110% 80% at 85% 0%, rgba(255, 255, 255, 0.55), transparent 60%); }
+.ficha-light .platform { color: #3a0a20; opacity: .75; }
+.ficha-light .card-link::after { background: #3a0a20; border-color: transparent; }
+.ficha-light .card-link:focus-visible { outline-color: #3a0a20; }
+.ficha-light .shots img { box-shadow: 0 26px 46px -18px rgba(90, 10, 45, 0.45); }
 .ficha.wide { grid-column: 1 / -1; min-height: 440px; display: grid; grid-template-columns: 1fr 1.2fr; align-items: center; }
 .ficha.wide .copy { padding: 48px 0 48px 52px; }
 .ficha.wide .shots { height: 440px; margin: 0; }
