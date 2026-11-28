@@ -16,38 +16,134 @@ APPLE = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d
 LOGO = '<svg viewBox="0 0 22 22" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff4f8f"/><stop offset=".55" stop-color="#ff9f1c"/><stop offset="1" stop-color="#19c3b4"/></linearGradient></defs><rect width="22" height="22" rx="6.5" fill="url(#lg)"/><path d="M7 14.6c.9.8 2.3 1.3 3.9 1.3 2 0 3.3-.9 3.3-2.3 0-3.2-6.8-1.6-6.8-4.7 0-1.3 1.2-2.3 3.1-2.3 1.3 0 2.5.4 3.3 1.1" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>'
 DMG = "/speakboard/downloads/Speakboard-1.0.0-7.dmg"  # subir con cada release (build) y borrar el anterior
 
+# Ilustraciones: SVG a mano, trazo unico de 3 px, violeta de la app + neutros. Sin texto dentro (no necesitan traduccion).
+SW = 'stroke="#1d1233" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"'
+ICON = '<svg class="sb-icon" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#7113fb"/><rect x="22" y="9" width="20" height="30" rx="10" fill="#fff"/><circle cx="28" cy="20" r="2" fill="#7113fb"/><circle cx="36" cy="20" r="2" fill="#7113fb"/><path d="M15 31a17 17 0 0 0 34 0M32 48v6M24 54h16" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/></svg>'
+PILL_BARS = [(0, 18, "#7a7a85"), (1, 26, "#6f5a8f"), (2, 38, "#5b2d9c"), (3, 34, "#5b2d9c"), (4, 46, "#5a1fb5"), (5, 34, "#5b2d9c"), (6, 38, "#5b2d9c"), (7, 26, "#6f5a8f"), (8, 18, "#7a7a85")]
+
+
+def pill(cx, cy):
+    bars = "".join('<path d="M%d %d v%d" stroke="%s" stroke-width="7" stroke-linecap="round"/>' % (cx - 52 + i * 13, cy - h / 2 + 3.5, h - 7, c) for i, h, c in PILL_BARS)
+    return '<rect x="%d" y="%d" width="150" height="52" rx="26" fill="#ecebf4" %s/>%s' % (cx - 75, cy - 26, SW, bars)
+
+
+HERO_SVG = f"""<svg class="sb-art" viewBox="0 0 720 510" aria-hidden="true" focusable="false">
+<ellipse cx="360" cy="478" rx="330" ry="14" fill="#e6def7"/>
+<g transform="translate(0 40)">
+<rect x="10" y="40" width="520" height="320" rx="22" fill="#fff" {SW}/>
+<rect x="26" y="56" width="488" height="288" rx="10" fill="#efe9fd"/>
+<g fill="#d8d0ea"><circle cx="46" cy="76" r="5"/><circle cx="62" cy="76" r="5"/></g>
+{pill(270, 84)}
+<rect x="80" y="150" width="380" height="170" rx="14" fill="#fff" {SW}/>
+<path d="M104 190h150M104 218h250M104 246h200" stroke="#d8d0ea" stroke-width="10" stroke-linecap="round"/>
+<path d="M312 246h40" stroke="#7113fb" stroke-width="10" stroke-linecap="round"/>
+<path d="M362 236v20" stroke="#1d1233" stroke-width="3" stroke-linecap="round"/>
+<path d="M236 360l-10 40h88l-10-40" fill="#d8d0ea" {SW}/>
+<rect x="166" y="398" width="208" height="18" rx="9" fill="#fff" {SW}/>
+</g>
+<g transform="translate(0 40)">
+<rect x="470" y="70" width="220" height="380" rx="40" fill="#fff" {SW}/>
+<rect x="484" y="84" width="192" height="352" rx="28" fill="#faf8ff"/>
+<rect x="550" y="94" width="60" height="14" rx="7" fill="#1d1233"/>
+<path d="M500 144h92a14 14 0 0 1 0 0v26a14 14 0 0 1-14 14h-64a14 14 0 0 1-14-14v-12a14 14 0 0 1 14-14z" fill="#e6def7"/>
+<rect x="540" y="196" width="124" height="40" rx="16" fill="#7113fb"/>
+<path d="M556 212h72M556 224h44" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+<path d="M484 296h192v112a28 28 0 0 1-28 28h-136a28 28 0 0 1-28-28z" fill="#ece8f6"/>
+<g fill="#fff" {SW}><rect x="494" y="308" width="30" height="26" rx="8"/><rect x="530" y="308" width="30" height="26" rx="8"/><rect x="566" y="308" width="30" height="26" rx="8"/><rect x="602" y="308" width="30" height="26" rx="8"/><rect x="638" y="308" width="30" height="26" rx="8"/><rect x="494" y="342" width="30" height="26" rx="8"/><rect x="530" y="342" width="30" height="26" rx="8"/><rect x="566" y="342" width="30" height="26" rx="8"/><rect x="602" y="342" width="30" height="26" rx="8"/><rect x="638" y="342" width="30" height="26" rx="8"/></g>
+<rect x="494" y="376" width="174" height="44" rx="16" fill="#7113fb" {SW}/>
+<g stroke="#fff" stroke-width="5" stroke-linecap="round"><path d="M531 392v12M545 388v20M559 384v28M573 390v16M587 386v24M601 391v14M615 388v20M629 393v10"/></g>
+</g>
+<rect x="430" y="10" width="200" height="66" rx="33" fill="#fff" {SW}/>
+<path d="M590 74l14 36 18-40" fill="#fff" {SW}/>
+<g stroke="#7113fb" stroke-width="7" stroke-linecap="round"><path d="M464 33v20M480 26v34M496 21v44M512 28v30M528 17v52M544 28v30M560 22v42M576 31v24M592 37v12"/></g>
+<g fill="#7113fb"><circle cx="410" cy="150" r="5"/><circle cx="650" cy="20" r="5"/></g>
+<path d="M690 120v18M681 129h18" stroke="#7113fb" stroke-width="3" stroke-linecap="round"/>
+</svg>"""
+
+
+def spot(body):
+    return '<svg class="sb-spot" viewBox="0 0 140 110" aria-hidden="true" focusable="false"><ellipse cx="70" cy="58" rx="62" ry="48" fill="#efe9fd"/>%s</svg>' % body
+
+
+SPOTS = [
+    # 1. pulsar la tecla
+    spot(f'<rect x="32" y="60" width="76" height="36" rx="12" fill="#7113fb" {SW}/><rect x="62" y="67" width="16" height="16" rx="8" fill="#fff"/><path d="M57 82a13 13 0 0 0 26 0M70 95v-4" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" transform="translate(0 -3)"/><rect x="58" y="8" width="24" height="56" rx="12" fill="#fff" {SW}/><path d="M36 50l-8-6M104 50l8-6M32 62l-10 0M108 62l10 0" stroke="#7113fb" stroke-width="3" stroke-linecap="round"/>'),
+    # 2. hablar: el micro con ojos del icono y ondas
+    spot(f'<rect x="52" y="14" width="36" height="54" rx="18" fill="#fff" {SW}/><circle cx="62" cy="34" r="3" fill="#1d1233"/><circle cx="78" cy="34" r="3" fill="#1d1233"/><path d="M42 54a28 28 0 0 0 56 0M70 82v10M58 94h24" fill="none" {SW}/><path d="M18 38q-6 14 0 28M28 44q-4 8 0 16M122 38q6 14 0 28M112 44q4 8 0 16" fill="none" stroke="#7113fb" stroke-width="3" stroke-linecap="round"/>'),
+    # 3. aparece el texto
+    spot(f'<rect x="16" y="24" width="104" height="66" rx="12" fill="#fff" {SW}/><path d="M16 44h104" stroke="#1d1233" stroke-width="3"/><circle cx="29" cy="34" r="3" fill="#d8d0ea"/><circle cx="40" cy="34" r="3" fill="#d8d0ea"/><path d="M30 60h56M30 74h30" stroke="#d8d0ea" stroke-width="7" stroke-linecap="round"/><path d="M68 74h22" stroke="#7113fb" stroke-width="7" stroke-linecap="round"/><path d="M98 66v16" stroke="#1d1233" stroke-width="3" stroke-linecap="round"/><path d="M118 8l3 8 8 3-8 3-3 8-3-8-8-3 8-3z" fill="#7113fb"/>'),
+]
+
+PRIV_SVG = f"""<svg class="sb-art priv" viewBox="0 0 260 190" aria-hidden="true" focusable="false">
+<ellipse cx="108" cy="92" rx="100" ry="82" fill="#efe9fd"/>
+<rect x="62" y="14" width="92" height="160" rx="22" fill="#fff" {SW}/>
+<rect x="92" y="24" width="32" height="8" rx="4" fill="#1d1233"/>
+<g stroke="#7113fb" stroke-width="7" stroke-linecap="round"><path d="M80 90v14M92 78v38M104 66v62M116 74v46M128 84v26M140 92v10"/></g>
+<path d="M170 60q18 0 18 18M170 44q34 0 34 34" fill="none" stroke="#d8d0ea" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 7"/>
+<path d="M158 86h4" stroke="#d8d0ea" stroke-width="3" stroke-linecap="round"/>
+<path d="M206 130c-14 0-20-8-20-16s7-15 16-15c3-9 11-14 20-12 10 2 15 10 14 18 8 1 12 6 12 12 0 7-6 13-14 13z" transform="translate(-6 -14)" fill="#fff" stroke="#9a90b5" stroke-width="3" stroke-linejoin="round" stroke-dasharray="1 8" stroke-linecap="round"/>
+<path d="M200 80l48 52" stroke="#1d1233" stroke-width="3" stroke-linecap="round" transform="translate(-6 -14)"/>
+<rect x="116" y="124" width="52" height="46" rx="12" fill="#7113fb" {SW}/>
+<path d="M128 124v-12a14 14 0 0 1 28 0v12" fill="none" {SW}/>
+<circle cx="142" cy="144" r="5" fill="#fff"/><path d="M142 147v10" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+</svg>"""
+
 CSS = """
-.sb-wave{display:flex;align-items:center;gap:4px;height:64px;margin-bottom:20px}
-.sb-wave i{flex:1;background:#fff;border-radius:3px;height:var(--h);opacity:.9;animation:sbp 1.4s ease-in-out infinite;animation-delay:var(--d)}
-@keyframes sbp{50%{transform:scaleY(.35)}}
-.sb-demo{background:rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.2);border-radius:22px;padding:26px;min-width:0}
-.sb-demo p{margin:0;font-size:20px;line-height:1.4}
-.sb-demo .raw{opacity:.7;font-size:16px;margin-bottom:10px}
-.landing .btn.mac{background:#fff;color:#111;min-height:44px;border-radius:9px;padding:0 18px;font-size:16px}
-.l-hero h1{max-width:none}
-.sb-grid+.sb-note{margin-top:24px}
-.sb-note{margin:14px 0 0;font-size:14px;opacity:.8}
-.sb-sec{padding:72px 0;border-top:1px solid rgba(255,255,255,.16)}
-.sb-sec h2{margin:0 0 28px;font-size:clamp(30px,4vw,52px);line-height:1.05;letter-spacing:-.035em;font-weight:800;max-width:20ch}
-.sb-grid{display:grid;gap:24px;grid-template-columns:repeat(3,minmax(0,1fr))}
-.sb-grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
-.sb-grid h3{margin:0 0 6px;font-size:20px}
-.sb-grid p,.sb-sec p{margin:0;opacity:.88;line-height:1.55;max-width:60ch}
-.sb-plan{background:rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.2);border-radius:18px;padding:24px;min-width:0}
-.sb-plan.best{border:2px solid #fff}
-.sb-plan h3{margin:0}
-.sb-price{font-size:40px;font-weight:800;letter-spacing:-.03em;margin:6px 0 10px}
-.sb-price small{font-size:16px;font-weight:500;opacity:.8}
-.sb-plan ul{margin:0;padding-left:20px;opacity:.88;line-height:1.6}
-.sb-sec details{border-bottom:1px solid rgba(255,255,255,.16);padding:16px 0}
-.sb-sec summary{cursor:pointer;font-weight:650;font-size:18px}
-.sb-sec details p{margin-top:8px}
-.sb-sec a:not(.btn){color:#fff}
-.sb-lang{position:static}
-@media(max-width:800px){.sb-grid,.sb-grid.two{grid-template-columns:minmax(0,1fr)}.l-hero{min-height:0}.l-hero .wrap{grid-template-columns:minmax(0,1fr)}.sb-sec{padding:48px 0}}
-@media(prefers-reduced-motion:reduce){.sb-wave i{animation:none}}
+:root{--ink:#1d1233;--ink2:#4b4266;--v:#7113fb;--vt:#efe9fd;--line:#d8d0ea}
+body.landing{background:#fbfaff;color:var(--ink)}
+.landing .brand,.landing .l-back{color:var(--ink);opacity:1}
+.landing .brand svg{border-radius:7px}
+.l-back{font-weight:600;padding:8px 14px;border:3px solid var(--ink);border-radius:999px;background:#fff}
+.landing a:focus-visible,.landing summary:focus-visible{outline:3px solid var(--v);outline-offset:3px;border-radius:8px}
+.nav .wrap{padding:0 24px}
+.l-hero{min-height:0;padding:120px 0 72px}
+.l-hero .wrap{grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:40px}
+.l-hero h1{max-width:none;margin-top:28px;font-size:clamp(44px,4.6vw,68px)}
+.l-desc{color:var(--ink2);max-width:36ch}
+.landing .platform{opacity:1;color:var(--ink2)}
+.l-name{color:var(--ink)}
+.sb-icon{width:64px;height:64px;flex:none;border:3px solid var(--ink);border-radius:18px;box-sizing:border-box;background:#7113fb}
+.app-id{display:flex;align-items:center;gap:16px}
+.sb-art{display:block;width:100%;height:auto}
+.sb-spot{display:block;width:140px;height:110px;margin-bottom:12px}
+.landing .btn{min-height:48px;border:3px solid var(--ink);border-radius:14px;box-shadow:0 4px 0 var(--ink);background:var(--v);color:#fff;font-weight:700;transition:transform .15s,box-shadow .15s}
+.landing .btn:hover{transform:translateY(2px);box-shadow:0 2px 0 var(--ink)}
+.landing .btn.mac,.landing .btn.btn-light{background:var(--v);color:#fff;border-radius:14px;padding:0 20px;font-size:16px}
+.landing .badge{border:3px solid var(--ink);border-radius:14px;height:48px;box-shadow:0 4px 0 var(--ink)}
+.landing .badge:hover{border-color:var(--ink);transform:translateY(2px);box-shadow:0 2px 0 var(--ink)}
+.sb-grid+.sb-note{margin-top:28px}
+.sb-note{margin:16px 0 0;font-size:14px;color:var(--ink2)}
+.sb-demo{margin-top:28px;background:#fff;border:3px solid var(--ink);border-radius:22px;padding:18px 20px;max-width:440px}
+.sb-demo p{margin:0;font-size:18px;line-height:1.4;color:var(--ink)}
+.sb-demo .raw{color:var(--ink2);font-size:15px;margin-bottom:8px}
+.sb-sec{padding:72px 0}
+.sb-sec.tint{background:var(--vt);border-block:3px solid var(--ink)}
+.sb-sec h2{margin:0 0 32px;font-size:clamp(30px,4vw,52px);line-height:1.05;letter-spacing:-.035em;font-weight:800;max-width:20ch;color:var(--ink)}
+.sb-grid{display:grid;gap:28px;grid-template-columns:repeat(3,minmax(0,1fr))}
+.sb-grid h3{margin:0 0 6px;font-size:21px;color:var(--ink)}
+.sb-grid p,.sb-sec p{margin:0;color:var(--ink2);line-height:1.55;max-width:60ch}
+.sb-priv{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,320px);gap:40px;align-items:center}
+.sb-priv p+p{margin-top:12px}
+.sb-priv .sb-art{max-width:320px}
+.sb-plan{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:24px;min-width:0;display:flex;flex-direction:column}
+.sb-plan.best{background:var(--vt);box-shadow:8px 8px 0 var(--v)}
+.sb-plan h3{margin:0;color:var(--ink)}
+.sb-price{font-size:42px;font-weight:800;letter-spacing:-.03em;margin:6px 0 12px;color:var(--ink)}
+.sb-price small{font-size:16px;font-weight:500;color:var(--ink2)}
+.sb-plan ul{margin:0;padding-left:20px;color:var(--ink2);line-height:1.6;flex:1}
+.sb-plan .links{margin-top:22px}
+.sb-sec details{background:#fff;border:3px solid var(--ink);border-radius:16px;padding:16px 20px;margin-bottom:12px;max-width:820px}
+.sb-sec summary{cursor:pointer;font-weight:650;font-size:18px;color:var(--ink);list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center}
+.sb-sec summary::-webkit-details-marker{display:none}
+.sb-sec summary::after{content:"+";font-size:26px;line-height:1;color:var(--v);flex:none}
+.sb-sec details[open] summary::after{content:"\\2212"}
+.sb-sec details p{margin-top:10px}
+.sb-sec a:not(.btn){color:var(--v);font-weight:600}
+.l-foot{color:var(--ink2);padding:32px 0 36px}
+.l-foot a{color:var(--ink2)}
+@media(max-width:800px){.sb-grid{grid-template-columns:minmax(0,1fr)}.sb-priv{grid-template-columns:minmax(0,1fr)}.sb-priv .sb-art{max-width:240px}.l-hero{padding-top:96px}.l-hero .wrap{grid-template-columns:minmax(0,1fr);gap:32px}.l-hero .wrap,.nav .wrap,.sb-sec .wrap,.l-foot .wrap{padding-left:16px;padding-right:16px}.sb-sec{padding:48px 0}.sb-sec.tint{border-block-width:3px}.sb-plan.best{box-shadow:5px 5px 0 var(--v)}}
+@media(prefers-reduced-motion:reduce){.landing .btn,.landing .badge{transition:none}}
 """
-HEIGHTS = [30, 55, 80, 45, 95, 60, 35, 70, 100, 50, 75, 40, 85, 55, 30, 65, 90, 45, 70, 35]
 
 T = {
  "en": dict(lang="en", path="/speakboard/", other="/speakboard/es/", back="All apps", skip="Skip to content",
@@ -88,8 +184,7 @@ T = {
 def page(t):
     up = "../../" if t["lang"] == "es" else "../"
     e = H.escape
-    bars = "".join('<i style="--h:%d%%;--d:%.2fs"></i>' % (h, i * 0.09) for i, h in enumerate(HEIGHTS))
-    steps = "".join('<div><h3>%s</h3><p>%s</p></div>' % (e(a), e(b)) for a, b in t["steps"])
+    steps = "".join('<div>%s<h3>%s</h3><p>%s</p></div>' % (SPOTS[i], e(a), e(b)) for i, (a, b) in enumerate(t["steps"]))
     faqs = "".join('<details><summary>%s</summary><p>%s</p></details>' % (e(q), e(a)) for q, a in t["faqs"])
     li = lambda xs: "".join("<li>%s</li>" % e(x) for x in xs)
     en_url, es_url = SITE + "/speakboard/", SITE + "/speakboard/es/"
@@ -131,17 +226,18 @@ def page(t):
   <section class="l-hero">
     <div class="wrap">
       <div class="l-copy">
-        <div class="app-id"><img src="{up}images/apps/speakboard/icon.webp" alt="" width="64" height="64"><div><p class="l-name">Speakboard</p><span class="platform">{e(t['plat'])}</span></div></div>
+        <div class="app-id">{ICON}<div><p class="l-name">Speakboard</p><span class="platform">{e(t['plat'])}</span></div></div>
         <h1>{e(t['h1'])}</h1>
         <p class="l-desc">{e(t['lead'])}</p>
         <div class="links">{mac}{ios}</div>
         <p class="sb-note">{e(t['macn'])}</p>
+        <div class="sb-demo" aria-hidden="true"><p class="raw">{e(t['raw'])}</p><p>{e(t['clean'])}</p></div>
       </div>
-      <div class="sb-demo" aria-hidden="true"><div class="sb-wave">{bars}</div><p class="raw">{e(t['raw'])}</p><p>{e(t['clean'])}</p></div>
+      <div>{HERO_SVG}</div>
     </div>
   </section>
   <section class="sb-sec" id="how"><div class="wrap"><h2>{e(t['how'])}</h2><div class="sb-grid">{steps}</div></div></section>
-  <section class="sb-sec" id="privacy"><div class="wrap"><h2>{e(t['priv'])}</h2><div class="sb-grid two"><p>{e(t['privp'][0])}</p><p>{e(t['privp'][1])} <a href="{t['privu']}">{e(t['privl'])}</a></p></div></div></section>
+  <section class="sb-sec tint" id="privacy"><div class="wrap"><div class="sb-priv"><div><h2>{e(t['priv'])}</h2><p>{e(t['privp'][0])}</p><p>{e(t['privp'][1])} <a href="{t['privu']}">{e(t['privl'])}</a></p></div>{PRIV_SVG}</div></div></section>
   <section class="sb-sec" id="pricing"><div class="wrap"><h2>{e(t['price'])}</h2><div class="sb-grid">
     <div class="sb-plan"><h3>{e(t['free'])}</h3><div class="sb-price">$0</div><ul>{li(t['freeli'])}</ul><div class="links"><a class="btn btn-light btn-sm" href="https://apps.apple.com/app/id6834709098">{e(t['getfree'])}</a></div></div>
     <div class="sb-plan"><h3>{e(t['pro'])}</h3><div class="sb-price">$5.99 <small>{e(t['mo'])}</small></div><ul>{li(t['proli'])}</ul><div class="links"><a class="btn btn-light btn-sm" href="{DMG}" download>{e(t['mac'])}</a></div></div>
