@@ -39,3 +39,20 @@ document.addEventListener('DOMContentLoaded', function () {
   }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
   items.forEach(function (el) { io.observe(el); });
 });
+
+/* Hero background light follows the pointer (desktop, motion allowed). */
+(function () {
+  if (!matchMedia('(pointer: fine)').matches || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  document.querySelectorAll('.glow').forEach(function (g) {
+    var host = g.parentElement, raf = 0;
+    host.addEventListener('pointermove', function (e) {
+      if (raf) return;
+      raf = requestAnimationFrame(function () {
+        var r = host.getBoundingClientRect();
+        g.style.setProperty('--mx', ((e.clientX - r.left) / r.width * 100).toFixed(1) + '%');
+        g.style.setProperty('--my', ((e.clientY - r.top) / r.height * 100).toFixed(1) + '%');
+        raf = 0;
+      });
+    });
+  });
+})();

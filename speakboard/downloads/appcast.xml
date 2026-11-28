@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Speakboard</title>
+        <item>
+            <title>1.0.0</title>
+            <pubDate>Sat, 28 Nov 2026 11:53:26 +0900</pubDate>
+            <sparkle:version>7</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://aisagalab.com/speakboard/downloads/Speakboard-1.0.0-7.dmg" length="34715161" type="application/octet-stream" sparkle:edSignature="3iGBxpP2YdENzB0K3S/WLVq31hd0ygYGPFWj4xQD1evlzcRkbNpWTTjbiMg/MAU7etMUIh5Hwz+pqvxl9pphCw=="/>
+        </item>
+        <item>
+            <title>1.0.0</title>
+            <pubDate>Thu, 26 Nov 2026 23:38:26 +0900</pubDate>
+            <sparkle:version>6</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://aisagalab.com/speakboard/downloads/Speakboard-1.0.0-6.dmg" length="34648620" type="application/octet-stream" sparkle:edSignature="NGQp64XjDr86CkmBsHDdRL//lMuxfn7N6Yy/p8PGSpwEAX4Jl2z+NvcDDNlHIWEHux2BYGzhAD4/mfU1LQQcBw=="/>
+        </item>
+        <item>
+            <title>1.0.0</title>
+            <pubDate>Thu, 26 Nov 2026 22:32:20 +0900</pubDate>
+            <sparkle:version>5</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://aisagalab.com/speakboard/downloads/Speakboard-1.0.0-5.dmg" length="34637494" type="application/octet-stream" sparkle:edSignature="+KqLp9DNG8u21EInFEMb39CLGKmePSNjzkuTQ7hQ0AsoLC3xhjDi08syC/lVnxoW0/pZ566wCMKz03AXhKamBA=="/>
+        </item>
+    </channel>
+</rss>

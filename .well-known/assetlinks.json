@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.sagalabs.biblevideo",
+      "sha256_cert_fingerprints": [
+        "3C:D7:66:31:60:0F:3A:A8:34:45:E1:E7:C0:0A:1F:84:D2:5D:32:60:91:C4:82:9A:E0:46:46:C1:F5:81:1C:E4"
+      ]
+    }
+  }
+]
